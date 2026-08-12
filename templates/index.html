@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title %}传奇3 · 资料站{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <h1 class="hero-title">传奇3 · 资料站</h1>
+  <p class="hero-sub">怪物图鉴 · 物品大全 · 技能资料 · 任务攻略 · 地图资料</p>
+  <div class="hero-search">
+    <input type="search" id="global-search" placeholder="搜索怪物 / 物品 / 技能…（回车跳转）" autocomplete="off">
+  </div>
+  <div class="hero-stats">
+    <div class="stat"><span class="stat-num">{{ stats.monsters }}</span><span class="stat-label">怪物</span></div>
+    <div class="stat"><span class="stat-num">{{ stats['items'] }}</span><span class="stat-label">物品</span></div>
+    <div class="stat"><span class="stat-num">{{ stats.skills }}</span><span class="stat-label">技能</span></div>
+    <div class="stat"><span class="stat-num">{{ stats.missions }}</span><span class="stat-label">任务</span></div>
+    <div class="stat"><span class="stat-num">{{ stats.maps }}</span><span class="stat-label">地图</span></div>
+  </div>
+</section>
+
+<section class="home-cats">
+  <h2 class="section-title">资料分类</h2>
+  <div class="cat-grid">
+    <a class="cat-card cat-mob" href="{{ prefix }}/mobs/index.html">
+      <span class="cat-icon">🐉</span>
+      <span class="cat-name">怪物图鉴</span>
+      <span class="cat-count">{{ stats.monsters }} 种怪物 · {{ cats['mobs']|length }} 个区域</span>
+      <span class="cat-more">进入 →</span>
+    </a>
+    <a class="cat-card cat-item" href="{{ prefix }}/items/index.html">
+      <span class="cat-icon">⚔️</span>
+      <span class="cat-name">物品大全</span>
+      <span class="cat-count">{{ stats['items'] }} 件物品 · {{ cats['items']|length }} 个类型</span>
+      <span class="cat-more">进入 →</span>
+    </a>
+    <a class="cat-card cat-skill" href="{{ prefix }}/skills/index.html">
+      <span class="cat-icon">✨</span>
+      <span class="cat-name">技能资料</span>
+      <span class="cat-count">{{ stats.skills }} 项技能 · 战士 / 法师 / 道士</span>
+      <span class="cat-more">进入 →</span>
+    </a>
+    <a class="cat-card cat-mission" href="{{ prefix }}/missions/index.html">
+      <span class="cat-icon">📜</span>
+      <span class="cat-name">任务攻略</span>
+      <span class="cat-count">{{ stats.missions }} 个任务 · 初级 / 中级 / 技能学习 / 万事通</span>
+      <span class="cat-more">进入 →</span>
+    </a>
+    <a class="cat-card cat-map" href="{{ prefix }}/maps/index.html">
+      <span class="cat-icon">🗺️</span>
+      <span class="cat-name">地图资料</span>
+      <span class="cat-count">迷宫地图 · 世界地图 · 神舰地图</span>
+      <span class="cat-more">进入 →</span>
+    </a>
+  </div>
+</section>
+{% endblock %}

@@ -3,47 +3,97 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>传奇3 · 怪物图鉴</title>
-<style>
-  body { font-family: "PingFang SC", "Microsoft YaHei", sans-serif; background: #1a1a2e; color: #eee; margin: 0; padding: 40px 20px; }
-  h1 { text-align: center; color: #ffcc00; letter-spacing: 4px; margin: 0 0 8px; }
-  p.sub { text-align: center; color: #999; margin: 0 0 36px; font-size: 14px; }
-  .grid { max-width: 960px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; }
-  a.card { display: block; background: #24243e; border: 1px solid #333; border-radius: 8px; padding: 18px; text-align: center; text-decoration: none; color: #ddd; font-size: 16px; transition: all .15s; }
-  a.card:hover { background: #2f2f52; border-color: #ffcc00; color: #ffcc00; transform: translateY(-2px); }
-  footer { text-align: center; color: #666; margin-top: 40px; font-size: 12px; }
-</style>
+<title>传奇3 · 资料站</title>
+<meta name="description" content="传奇3 资料站 · 怪物图鉴 / 物品大全 / 技能资料 / 任务攻略 / 地图资料">
+<link rel="stylesheet" href="/static/css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚔️</text></svg>">
 </head>
 <body>
-<h1>传奇3 · 资料站</h1>
-<p class="sub">Mir3 怪物 / 物品 / 技能 / 任务 / 地图资料 · 镜像自 17173.com</p>
-<div class="grid">
-  <a class="card" href="mob/mob1.htm">一般怪物</a>
-  <a class="card" href="mob/mob2.htm">毒蛇山谷</a>
-  <a class="card" href="mob/mob3.htm">盟重</a>
-  <a class="card" href="mob/mob4.htm">天然洞穴</a>
-  <a class="card" href="mob/mob5.htm">银杏废矿</a>
-  <a class="card" href="mob/mob6.htm">矿区</a>
-  <a class="card" href="mob/mob7.htm">潘夜岛</a>
-  <a class="card" href="mob/mob8.htm">沙漠绿洲</a>
-  <a class="card" href="mob/mob9.htm">灌木林</a>
-  <a class="card" href="mob/mob10.htm">失乐园</a>
-  <a class="card" href="mob/mob11.htm">赤月山谷</a>
-  <a class="card" href="mob/mob12.htm">蚂蚁洞</a>
-  <a class="card" href="mob/mob13.htm">虫峡谷</a>
-  <a class="card" href="mob/mob14.htm">罪孽洞穴</a>
-  <a class="card" href="mob/mob15.htm">石阁庙</a>
-  <a class="card" href="mob/mob16.htm">沃玛神殿</a>
-  <a class="card" href="mob/mob17.htm">祖玛神殿</a>
-  <a class="card" href="mob/mob18.htm">潘夜石窟</a>
-  <a class="card" href="mob/mob19.htm">潘夜神殿</a>
-  <a class="card" href="mob/mob20.htm">神舰</a>
-  <a class="card" href="mob/mob21.htm">真天黑度</a>
-  <a class="card" href="item/item1.htm">物品资料</a>
-  <a class="card" href="skill/skill.htm">技能资料</a>
-  <a class="card" href="mission/mission.htm">任务资料</a>
-  <a class="card" href="map/map.htm">地图资料</a>
-</div>
-<footer>数据与图片版权归 17173.com 所有 · 本镜像仅供个人研究使用</footer>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="/index.html">
+      <span class="logo-mark">传</span>
+      <span class="logo-text">传奇3<span class="logo-sub">资料站</span></span>
+    </a>
+    <nav class="main-nav">
+      
+      <a href="/index.html" class="nav-link active">首页</a>
+      
+      <a href="/mobs/index.html" class="nav-link">怪物图鉴</a>
+      
+      <a href="/items/index.html" class="nav-link">物品大全</a>
+      
+      <a href="/skills/index.html" class="nav-link">技能资料</a>
+      
+      <a href="/missions/index.html" class="nav-link">任务攻略</a>
+      
+      <a href="/maps/index.html" class="nav-link">地图资料</a>
+      
+    </nav>
+  </div>
+</header>
+
+<main class="container page-main">
+  
+<section class="hero">
+  <h1 class="hero-title">传奇3 · 资料站</h1>
+  <p class="hero-sub">怪物图鉴 · 物品大全 · 技能资料 · 任务攻略 · 地图资料</p>
+  <div class="hero-search">
+    <input type="search" id="global-search" placeholder="搜索怪物 / 物品 / 技能…（回车跳转）" autocomplete="off">
+  </div>
+  <div class="hero-stats">
+    <div class="stat"><span class="stat-num">154</span><span class="stat-label">怪物</span></div>
+    <div class="stat"><span class="stat-num">&lt;built-in method items of dict object at 0x7fb93c3f1540&gt;</span><span class="stat-label">物品</span></div>
+    <div class="stat"><span class="stat-num">61</span><span class="stat-label">技能</span></div>
+    <div class="stat"><span class="stat-num">24</span><span class="stat-label">任务</span></div>
+    <div class="stat"><span class="stat-num">3</span><span class="stat-label">地图</span></div>
+  </div>
+</section>
+
+<section class="home-cats">
+  <h2 class="section-title">资料分类</h2>
+  <div class="cat-grid">
+    <a class="cat-card cat-mob" href="/mobs/index.html">
+      <span class="cat-icon">🐉</span>
+      <span class="cat-name">怪物图鉴</span>
+      <span class="cat-count">154 种怪物 · 21 个区域</span>
+      <span class="cat-more">进入 →</span>
+    </a>
+    <a class="cat-card cat-item" href="/items/index.html">
+      <span class="cat-icon">⚔️</span>
+      <span class="cat-name">物品大全</span>
+      <span class="cat-count">&lt;built-in method items of dict object at 0x7fb93c3f1540&gt; 件物品 · 12 个类型</span>
+      <span class="cat-more">进入 →</span>
+    </a>
+    <a class="cat-card cat-skill" href="/skills/index.html">
+      <span class="cat-icon">✨</span>
+      <span class="cat-name">技能资料</span>
+      <span class="cat-count">61 项技能 · 战士 / 法师 / 道士</span>
+      <span class="cat-more">进入 →</span>
+    </a>
+    <a class="cat-card cat-mission" href="/missions/index.html">
+      <span class="cat-icon">📜</span>
+      <span class="cat-name">任务攻略</span>
+      <span class="cat-count">24 个任务 · 初级 / 中级 / 技能学习 / 万事通</span>
+      <span class="cat-more">进入 →</span>
+    </a>
+    <a class="cat-card cat-map" href="/maps/index.html">
+      <span class="cat-icon">🗺️</span>
+      <span class="cat-name">地图资料</span>
+      <span class="cat-count">迷宫地图 · 世界地图 · 神舰地图</span>
+      <span class="cat-more">进入 →</span>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>数据与图片版权归 17173.com 所有 · 本镜像仅供个人研究使用</p>
+    <p class="footer-meta">数据提取自 17173 传奇3 专区镜像 · 本站为静态资料站, 无任何商业用途</p>
+  </div>
+</footer>
+<script src="/static/js/main.js"></script>
 </body>
 </html>

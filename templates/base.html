@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% block title %}{{ site.name }}{% endblock %}</title>
+<meta name="description" content="传奇3 资料站 · 怪物图鉴 / 物品大全 / 技能资料 / 任务攻略 / 地图资料">
+<link rel="stylesheet" href="{{ prefix }}/static/css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚔️</text></svg>">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="{{ prefix }}/index.html">
+      <span class="logo-mark">传</span>
+      <span class="logo-text">传奇3<span class="logo-sub">资料站</span></span>
+    </a>
+    <nav class="main-nav">
+      {% for n, url, key in NAV %}
+      <a href="{{ prefix }}/{{ url }}" class="nav-link{% if section == key %} active{% endif %}">{{ n }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+</header>
+
+<main class="container page-main">
+  {% block content %}{% endblock %}
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>{{ site.copyright }}</p>
+    <p class="footer-meta">数据提取自 17173 传奇3 专区镜像 · 本站为静态资料站, 无任何商业用途</p>
+  </div>
+</footer>
+<script src="{{ prefix }}/static/js/main.js"></script>
+</body>
+</html>

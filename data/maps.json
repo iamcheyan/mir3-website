@@ -1,0 +1,111 @@
+[
+ {
+  "id": "map-maze",
+  "title": "迷宫地图",
+  "category": "地图",
+  "areas": [
+   {
+    "name": "东部石矿",
+    "image": "../images/map/mgmap/sk.jpg"
+   },
+   {
+    "name": "天然洞穴、半兽人洞穴和废矿",
+    "image": "../images/map/mgmap/tr.jpg"
+   },
+   {
+    "name": "银杏废矿",
+    "image": "../images/map/mgmap/yx.jpg"
+   },
+   {
+    "name": "虫峡谷",
+    "image": "../images/map/mgmap/cx.jpg"
+   },
+   {
+    "name": "绝命谷和万年谷",
+    "image": "../images/map/mgmap/jm.jpg"
+   },
+   {
+    "name": "矿山",
+    "image": "../images/map/mgmap/k.jpg"
+   },
+   {
+    "name": "赤月山谷1",
+    "image": "../images/map/mgmap/c1.jpg"
+   },
+   {
+    "name": "赤月山谷2",
+    "image": "../images/map/mgmap/c2.jpg"
+   },
+   {
+    "name": "赤月山谷3",
+    "image": "../images/map/mgmap/c3.jpg"
+   },
+   {
+    "name": "石阁阵",
+    "image": "../images/map/mgmap/sg.jpg"
+   },
+   {
+    "name": "沃玛神殿地图",
+    "image": "../images/map/mgmap/wm.jpg"
+   },
+   {
+    "name": "祖玛神殿",
+    "image": "../images/map/mgmap/mz.jpg"
+   },
+   {
+    "name": "蚂蚁洞穴",
+    "image": "../images/map/mgmap/my.jpg"
+   },
+   {
+    "name": "潘夜神殿",
+    "image": "../images/map/mgmap/py.jpg"
+   },
+   {
+    "name": "潘夜石窟",
+    "image": "../images/map/mgmap/pys.jpg"
+   },
+   {
+    "name": "真天宫和黑度宫",
+    "image": "../images/map/mgmap/zh.jpg"
+   },
+   {
+    "name": "罪孽洞穴",
+    "image": "../images/map/mgmap/zn.jpg"
+   }
+  ]
+ },
+ {
+  "id": "map-world",
+  "title": "世界地图",
+  "category": "地图",
+  "areas": [
+   {
+    "name": "世界地图",
+    "image": "../images/map/pic/mainmap.jpg"
+   }
+  ]
+ },
+ {
+  "id": "map-sj",
+  "title": "神舰地图",
+  "category": "地图",
+  "areas": [
+   {
+    "name": "[神舰3楼地图]",
+    "image": "../images/map/mgmap/sj04.jpg"
+   },
+   {
+    "name": "[神舰2楼A地图]",
+    "image": "../images/map/mgmap/sj03.jpg"
+   },
+   {
+    "name": "[神舰2楼B地图]",
+    "image": "../images/map/mgmap/sj02.jpg"
+   },
+   {
+    "name": "[神舰1楼地图]",
+    "image": "../images/map/mgmap/sj01.jpg"
+   }
+  ]
+ }
+]

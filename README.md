@@ -1,73 +1,92 @@
-# 传奇3 · 资料站镜像
+# 传奇3 · 资料站
 
-17173 传奇3 资料站(`mir3.17173.com`)的静态镜像,部署于 GitHub Pages:
+17173 传奇3 资料站(`mir3.17173.com`)重构版,全新风格的静态资料站,部署于 GitHub Pages:
 
 - 线上地址:https://mir3.iamcheyan.com
 - 源仓库:https://github.com/iamcheyan/mir3-website
 - 数据与图片版权归 17173.com 所有,仅供个人研究使用
 
-## 内容清单
+## 新架构
 
-| 分类 | 页面 | 说明 |
+```
+原 42 个 htm 页面(已删除)
+        │  解析
+        ▼
+data/*.json ──┐  结构化数据(怪物/物品/技能/任务/地图/站点元信息)
+tools/extract.py
+              │  渲染
+              ▼
+app.py + templates/* + static/css/style.css (Flask + Jinja2)
+              │  python app.py build
+              ▼
+dist/ ──同步──▶ 仓库根(静态站, GitHub Pages 部署)
+```
+
+- **数据层**:`tools/extract.py` 把原站 HTML 解析为 JSON,存于 `data/`
+- **渲染层**:`app.py` 读 JSON → Jinja2 模板 → 输出静态 HTML
+- **部署层**:`dist/` 为构建产物,内容同步到仓库根(页面在 `mobs/ items/ skills/ missions/ maps/` 子目录,图片用 `images/` 相对路径)
+
+## 内容统计
+
+| 分类 | 数量 | 说明 |
 |------|------|------|
-| `mob/` | 21 页 | 怪物图鉴(一般怪物 ~ 真天黑度) |
-| `item/` | 12 页 | 物品资料(item1 ~ item12 分页) |
-| `skill/` | 3 页 | 技能资料(skill.htm + 2/3) |
-| `mission/` | 4 页 | 任务资料(mission + mission1/2 + wan) |
-| `map/` | 2 页 | 地图资料(map + sj) |
-| `images/` | 582 张 | 全部本地化图片(mob/item/skill/mission/map/up/class/images) |
+| 怪物 | 154 | 21 个区域分类 |
+| 物品 | 371 | 12 个类型(武器/盔甲/手镯/戒指/项链/套装/普通道具/任务道具等) |
+| 技能 | 61 | 战士 13 / 法师 26 / 道士 22 |
+| 任务 | 24 | 初级 3 / 中级 9 / 技能学习 3 / 万事通随机 9 |
+| 地图 | 3 | 迷宫地图 17 区域 / 世界地图 / 神舰 4 层 |
 
-首页 `index.html` 提供全部分类入口。站内分页互链(如 item1~12、skill/2/3、mission1/2/wan)保持原站结构。
-
-## 镜像方法
-
-源站结构:HTML 页面在 `mir3.17173.com`(curl 直接可下,200);图片/CSS 在 `i.17173cdn.com`,被腾讯 EdgeOne 反爬拦截(curl 一律 HTTP 567 JS 验证)。
-
-### 抓取 HTML
+## 构建与维护
 
 ```bash
-wget --mirror --no-parent --page-requisites --convert-links \
-  --span-hosts --domains=mir3.17173.com,i.17173cdn.com \
-  --exclude-domains=log.17173.com,js.17173.com,ue.17173cdn.com \
-  -e robots=off -w 1 --timeout=20 --tries=3 -P <dest> <url>
-```
+# 1. 重新提取数据(原 htm 已删除, 无需重复执行; 如需重抓镜像按旧 README 方法)
+python tools/extract.py          # 生成 data/*.json
 
-### 抓取 CDN 图片(必须过 EdgeOne)
+# 2. 构建静态站
+python app.py build              # 生成 dist/
 
-1. 浏览器打开任意源页面(如 `https://mir3.17173.com/item/item1.htm`),页面内图片全部加载即验证通过。
-2. 取 cookie:`page.cookies()` 拼 `name=value; ...`。
-3. Node 侧 fetch,带 `Cookie` + `Referer`(源页面 URL)+ Chrome `User-Agent`。
-4. 落盘路径规则:URL `https://i.17173cdn.com/z6mhfw/mir3/<rest>` → 仓库 `images/<rest>`。
+# 3. 本地预览(可选, Flask 动态渲染)
+python app.py serve 5000
 
-### 反爬避坑(实测)
-
-- **请求速率**:连续快速请求会返回假图 —— EdgeOne 降级为一个 17660 字节的占位 GIF(魔数是合法 GIF 头,内容同尺寸 800×600 占位)。**间隔 ≥3s** 可避免。
-- **Accept 头**:`Accept: image/jpeg,image/gif,image/*` 拿真 JPG/GIF;带 `image/webp` 时 jpg 会被转成 WebP 返回。
-- **校验**:落盘前检查魔数(`GIF8` / `FFD8FF`)**且 size ≠ 17660**,否则重试。
-- **IP 级限流**:触发后所有 CDN 请求一段窗口内全失败,需开**全新浏览器 tab**(重新过验证)或等待冷却。
-
-### 链接重写
-
-页面入仓后重写图片引用(两种形式都要处理):
-
-```bash
-sed -i 's|//i\.17173cdn\.com/z6mhfw/mir3/images/|../images/|g; s|https://i\.17173cdn\.com/z6mhfw/mir3/images/|../images/|g' <page>
-```
-
-站内导航保留绝对路径 `/mob/mob1.htm`、`/item/item1.htm`(Pages 域根 = 仓库根)。
-
-## 已知限制
-
-- 各页顶部 `ue.17173cdn.com` 栏(CSS/JS/装饰图)未本地化,在线可能被 567 拦截,不影响正文(内容表格为内联样式)。
-- 站内导航指向未镜像栏目(`guide/`、`jinyan/`、`jiaoliu/` 等)的链接会 404;如需要可单独抓取对应页面入仓,无需改动现有页面。
-- 原站 `images/images/main.css`(skill 页引用)被 EdgeOne 特别保护且纯装饰,已从 skill 3 页移除引用。
-
-## 部署
-
-推送 `main` 分支即触发 Pages 构建(CNAME 文件自动绑定 `mir3.iamcheyan.com`):
-
-```bash
+# 4. 部署: 同步 dist 内容到仓库根并推送
+cp -r dist/index.html dist/mobs dist/items dist/skills dist/missions dist/maps dist/static ./
 git add -A && git commit -m "..." && git push origin main
 ```
 
-与个人站 `iamcheyan.github.io`(`iamcheyan.com`)互不干扰,GitHub 按 Host 路由。
+Python 环境:`/home/tetsuya/mir3-venv/bin/python3`(依赖 flask / jinja2 / beautifulsoup4 / lxml)。
+
+## 页面结构
+
+| 页面 | 路径 |
+|------|------|
+| 首页(统计 + 分类入口 + 搜索) | `index.html` |
+| 怪物图鉴(按区域分组 + 页内搜索) | `mobs/index.html`, 详情 `mobs/mob-N.html` |
+| 物品大全 | `items/index.html`, 详情 `items/item-N.html` |
+| 技能资料 | `skills/index.html`, 详情 `skills/skill-*.html` |
+| 任务攻略 | `missions/index.html`, 详情 `missions/mission-*.html` |
+| 地图资料 | `maps/index.html` |
+
+## 图片路径方案
+
+图片统一保留相对路径 `../images/...`:列表/详情页位于分类子目录(`mobs/`、`items/` 等),相对路径指向仓库根 `images/`(582 张本地化图片原样保留)。构建时 `app.py` 会把 `images/` 复制进 `dist/` 保证产物自包含;部署时直接用仓库根的 `images/`,不重复拷贝。
+
+## 数据提取说明
+
+原 42 个 htm 页面布局各异,解析器按实际结构处理:
+
+- **怪物页**:每页一个区域分类,卡片 = 图片 + 名字 + 描述 + 可选红字属性(生命/经验/所在地图/所爆物品)或神舰页的灰底能力数值
+- **物品页**:装备页为多列表格(道具/名称/重量/耐久/破坏/魔法/等级等),普通/任务道具页为名称+描述
+- **技能页**:每职业一页,卡片 = 图片 + 名字 + 描述(含等级修炼要求)
+- **任务页**:初级任务按职业分表,中级任务按章节(标题+步骤表),技能学习任务为职业文本,万事通为区域随机任务表(NPC/坐标/条件/奖励)
+- **地图页**:迷宫地图(区域链接图)、世界地图、神舰 4 层
+
+## 镜像方法(历史)
+
+原站 HTML 在 `mir3.17173.com`,图片在 `i.17173cdn.com`(EdgeOne 反爬,需浏览器 cookie + 间隔 ≥3s 抓取)。细节见 git 历史 `ce8fe01` 前的 README。
+
+## 已知限制
+
+- 怪物属性字段不完整:原站仅部分怪物页提供红字属性(生命/经验/所在地图),未提供的页(如 mob8 沙漠绿洲)字段为空
+- 神舰怪物的"能力数值"为 10 张属性图标对应数值,图标含义原站未标注文字
+- 技能描述中的等级要求为自由文本(未结构化),展示在详情页原文中
+- 万事通任务部分条件/奖励含原站排版噪声(如 `**` 打码),未逐条清洗

@@ -1,0 +1,5 @@
+# 构建产物(由 python app.py build 生成, 部署时同步到根目录)
+dist/
+__pycache__/
+*.pyc
+refactor_goal.md
