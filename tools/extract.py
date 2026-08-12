@@ -25,7 +25,10 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parent.parent
-DATA_DIR = ROOT / "data"
+# 允许从外部目录读原版 htm (如 /tmp/legacy_htm), 便于重构后重新提取
+if os.environ.get("EXTRACT_SRC"):
+    ROOT = Path(os.environ["EXTRACT_SRC"])
+DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 
 # ---------------------------------------------------------------------------
 # 通用工具
@@ -371,7 +374,6 @@ def extract_skills():
         # 第 1 张是修炼方法说明, 其余为技能卡片
         for t in tables[1:]:
             trs = t.find_all("tr")
-            cur_name = ""
             cur_img = None
             cur_desc = ""
             for tr in trs:
@@ -379,21 +381,23 @@ def extract_skills():
                 if not tds:
                     continue
                 first = tds[0]
-                # 名字行: 黄底且文字短 → 结算上一个技能并开启新技能
+                # 名字行: 黄底且文字短。原版结构每两行一组:
+                #   trN   = [图片 + 白底描述]   → 填充 cur_img / cur_desc
+                #   trN+1 = [黄底名字]          → 此时 cur_img/cur_desc 正是本组的,
+                #                                  立即用「当前名字」结算(不能结算上一个)
                 if (first.get("bgcolor") or "").lower() == "#ffcc00":
                     nm = clean_text(first.get_text(" ", strip=True))
                     if nm and len(nm) <= 12:
-                        if cur_name and cur_img:
+                        if cur_img:
                             skills.append({
-                                "id": f"skill-{job}-{cur_name}",
-                                "name": cur_name,
+                                "id": f"skill-{job}-{nm}",
+                                "name": nm,
                                 "class": job,
                                 "image": cur_img,
                                 "description": cur_desc,
                             })
-                        cur_name = nm
+                        cur_img = None   # 本组已结算, 等待下一组图片行重新填充
                         cur_desc = ""
-                        # cur_img 保留, 由下一图片行覆盖
                         continue
                 # 图片
                 im = first.find("img")
@@ -405,14 +409,6 @@ def extract_skills():
                         txt = clean_text(td.get_text(" ", strip=True))
                         if len(txt) > len(cur_desc):
                             cur_desc = txt
-            if cur_name and cur_img:
-                skills.append({
-                    "id": f"skill-{job}-{cur_name}",
-                    "name": cur_name,
-                    "class": job,
-                    "image": cur_img,
-                    "description": cur_desc,
-                })
         print(f"  [skill] {rel} ({job}): {sum(1 for x in skills if x['class']==job)} 个")
     return skills
 
