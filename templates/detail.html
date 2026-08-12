@@ -1,0 +1,185 @@
+{% extends "base.html" %}
+{% block title %}{{ name }} · 传奇3 资料站{% endblock %}
+
+{% block content %}
+<nav class="breadcrumb">
+  <a href="{{ prefix }}/index.html">首页</a>
+  <span class="sep">/</span>
+  {% for label, url in crumbs %}
+    {% if url %}<a href="{{ prefix }}/{{ url }}">{{ label }}</a><span class="sep">/</span>
+    {% else %}<span>{{ label }}</span>{% endif %}
+  {% endfor %}
+  <span>{{ name }}</span>
+</nav>
+
+{% if kind == 'mob' %}
+<article class="detail">
+  <div class="detail-main">
+    <div class="detail-portrait">
+      {% if mob.image %}<img src="{{ mob.image|img }}" alt="{{ mob.name }}">{% endif %}
+      <h1 class="detail-name">{{ mob.name }}</h1>
+      <p class="detail-cat">所属区域：{{ mob.category }}</p>
+    </div>
+    <div class="detail-content">
+      {% if mob.description %}
+      <section class="detail-block">
+        <h2 class="detail-h2">怪物介绍</h2>
+        <p class="detail-text">{{ mob.description }}</p>
+      </section>
+      {% endif %}
+      {% if attrs %}
+      <section class="detail-block">
+        <h2 class="detail-h2">属性资料</h2>
+        <table class="attr-table">
+          {% for k, v in attrs.items() %}
+          <tr><th>{{ k }}</th><td>{{ v }}</td></tr>
+          {% endfor %}
+        </table>
+      </section>
+      {% endif %}
+      {% if stat %}
+      <section class="detail-block">
+        <h2 class="detail-h2">能力数值</h2>
+        <p class="stat-nums">{{ stat }}</p>
+        {% if icons %}
+        <div class="icon-strip">
+          {% for ic in icons %}<img src="{{ ic|img }}" alt="属性图标" loading="lazy">{% endfor %}
+        </div>
+        {% endif %}
+      </section>
+      {% endif %}
+    </div>
+  </div>
+  <div class="detail-back"><a href="{{ prefix }}/mobs/index.html" class="btn">← 返回怪物图鉴</a></div>
+</article>
+
+{% elif kind == 'item' %}
+<article class="detail">
+  <div class="detail-main">
+    <div class="detail-portrait">
+      {% if item.image %}<img src="{{ item.image|img }}" alt="{{ item.name }}">{% else %}<span class="img-placeholder big">?</span>{% endif %}
+      <h1 class="detail-name">{{ item.name }}</h1>
+      <p class="detail-cat">物品类型：{{ item.category }}</p>
+    </div>
+    <div class="detail-content">
+      {% if props %}
+      <section class="detail-block">
+        <h2 class="detail-h2">属性资料</h2>
+        <table class="attr-table">
+          {% for k, v in props %}
+          <tr><th>{{ k }}</th><td>{{ v }}</td></tr>
+          {% endfor %}
+        </table>
+      </section>
+      {% endif %}
+      {% if item.get('描述') %}
+      <section class="detail-block">
+        <h2 class="detail-h2">说明</h2>
+        <p class="detail-text">{{ item['描述'] }}</p>
+      </section>
+      {% endif %}
+    </div>
+  </div>
+  <div class="detail-back"><a href="{{ prefix }}/items/index.html" class="btn">← 返回物品大全</a></div>
+</article>
+
+{% elif kind == 'skill' %}
+<article class="detail">
+  <div class="detail-main">
+    <div class="detail-portrait">
+      {% if skill.image %}<img src="{{ skill.image|img }}" alt="{{ skill.name }}">{% endif %}
+      <h1 class="detail-name">{{ skill.name }}</h1>
+      <p class="detail-cat">职业：{{ skill['class'] }}</p>
+    </div>
+    <div class="detail-content">
+      <section class="detail-block">
+        <h2 class="detail-h2">技能介绍</h2>
+        {% for ln in desc_lines %}
+          {% if ln.strip() %}<p class="detail-text">{{ ln }}</p>{% endif %}
+        {% endfor %}
+      </section>
+    </div>
+  </div>
+  <div class="detail-back"><a href="{{ prefix }}/skills/index.html" class="btn">← 返回技能资料</a></div>
+</article>
+
+{% elif kind == 'mission' %}
+<article class="detail">
+  <div class="detail-main">
+    <div class="detail-content wide">
+      <h1 class="detail-name big">{{ mission.title }}</h1>
+      <p class="detail-cat">任务类型：{{ mission.category }}{% if mission.get('class') %} · 职业：{{ mission['class'] }}{% endif %}{% if mission.get('region') %} · 地区：{{ mission['region'] }}{% endif %}</p>
+
+      {% if mission.steps %}
+      <section class="detail-block">
+        <h2 class="detail-h2">任务流程</h2>
+        <table class="mission-table">
+          <thead><tr><th class="w-seq">顺序</th><th class="w-npc">NPC</th><th>任务内容</th></tr></thead>
+          <tbody>
+          {% for s in mission.steps %}
+            <tr><td class="seq-num">{{ s['顺序'] }}</td><td class="npc-name">{{ s['NPC'] }}</td><td>{{ s['内容'] }}</td></tr>
+          {% endfor %}
+          </tbody>
+        </table>
+      </section>
+      {% endif %}
+
+      {% if mission.content %}
+      <section class="detail-block">
+        <h2 class="detail-h2">任务详解</h2>
+        {% for ln in mission.content.split('\n') %}
+          {% if ln.strip() %}<p class="detail-text">{{ ln }}</p>{% endif %}
+        {% endfor %}
+      </section>
+      {% endif %}
+
+      {% if mission.quests %}
+      <section class="detail-block">
+        <h2 class="detail-h2">随机任务一览</h2>
+        <table class="mission-table">
+          <thead><tr><th class="w-npc">NPC</th><th>坐标 / 说明</th><th>任务条件</th><th>奖励</th></tr></thead>
+          <tbody>
+          {% for q in mission.quests %}
+            <tr><td class="npc-name">{{ q.npc }}</td><td>{{ q['坐标'] }}</td><td>{{ q['条件'] }}</td><td class="reward">{{ q['奖励'] }}</td></tr>
+          {% endfor %}
+          </tbody>
+        </table>
+      </section>
+      {% endif %}
+    </div>
+  </div>
+  <div class="detail-back"><a href="{{ prefix }}/missions/index.html" class="btn">← 返回任务攻略</a></div>
+</article>
+
+{% elif kind == 'map' %}
+<article class="detail">
+  <div class="detail-content wide">
+    {% for grp in groups %}
+      {% for m in grp['items'] %}
+      <section class="detail-block">
+        <h2 class="detail-h2">{{ m.title }}</h2>
+        {% if m.areas %}
+          {% if m.areas|length == 1 %}
+          <div class="map-single">
+            <img src="{{ m.areas[0].image|img }}" alt="{{ m.title }}" class="map-img">
+            <p class="map-caption">{{ m.areas[0].name }}</p>
+          </div>
+          {% else %}
+          <div class="map-grid">
+            {% for a in m.areas %}
+            <figure class="map-item">
+              <img src="{{ a.image|img }}" alt="{{ a.name }}" loading="lazy" class="map-img">
+              <figcaption>{{ a.name }}</figcaption>
+            </figure>
+            {% endfor %}
+          </div>
+          {% endif %}
+        {% endif %}
+      </section>
+      {% endfor %}
+    {% endfor %}
+  </div>
+  <div class="detail-back"><a href="{{ prefix }}/maps/index.html" class="btn">← 返回地图资料</a></div>
+</article>
+{% endif %}
+{% endblock %}

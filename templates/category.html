@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block title %}{{ title }} · 传奇3 资料站{% endblock %}
+
+{% block content %}
+<nav class="breadcrumb">
+  <a href="{{ prefix }}/index.html">首页</a>
+  <span class="sep">/</span>
+  <span>{{ title }}</span>
+</nav>
+
+<div class="list-head">
+  <h1 class="page-title">{{ title }}</h1>
+  <p class="page-desc">{{ desc }}</p>
+  <div class="list-search">
+    <input type="search" class="filter-input" placeholder="在此页内搜索…" autocomplete="off">
+  </div>
+</div>
+
+{% for g in groups %}
+<section class="group">
+  <h2 class="group-title">{{ g.name }}<span class="group-count">{{ g['items']|length }}</span></h2>
+  <div class="card-grid">
+    {% for it in g['items'] %}
+    {% if kind == 'map' %}
+    <div class="data-card" data-name="{{ it.title }}">
+      <div class="card-img map-card-img">
+        {% if it.areas %}
+        <img src="{{ it.areas[0].image|img }}" alt="{{ it.title }}" loading="lazy">
+        {% else %}<span class="img-placeholder">?</span>{% endif %}
+      </div>
+      <div class="card-body">
+        <h3 class="card-name">{{ it.title }}</h3>
+        <p class="card-tags"><span class="tag">{{ it.areas|length }} 张地图</span></p>
+      </div>
+      <p class="map-card-hint">见页内地图展示</p>
+    </div>
+    {% else %}
+    <a class="data-card" href="{{ prefix }}/{{ kind }}s/{{ it.id }}.html" data-name="{{ it.name }}">
+      {% if kind == 'mob' %}
+      <div class="card-img">
+        {% if it.image %}<img src="{{ it.image|img }}" alt="{{ it.name }}" loading="lazy">{% else %}<span class="img-placeholder">?</span>{% endif %}
+      </div>
+      <div class="card-body">
+        <h3 class="card-name">{{ it.name }}</h3>
+        <p class="card-desc">{{ it.description[:44] }}{% if it.description|length > 44 %}…{% endif %}</p>
+      </div>
+      {% elif kind == 'item' %}
+      <div class="card-img">
+        {% if it.image %}<img src="{{ it.image|img }}" alt="{{ it.name }}" loading="lazy">{% else %}<span class="img-placeholder">?</span>{% endif %}
+      </div>
+      <div class="card-body">
+        <h3 class="card-name">{{ it.name }}</h3>
+        <p class="card-tags">
+          {% if it.get('等级') %}<span class="tag">等级 {{ it['等级'] }}</span>{% endif %}
+          {% if it.get('破坏') %}<span class="tag">破坏 {{ it['破坏'] }}</span>{% endif %}
+          {% if it.get('魔法') %}<span class="tag">魔法 {{ it['魔法'] }}</span>{% endif %}
+          {% if it.get('描述') %}<span class="tag">{{ it['描述'][:16] }}</span>{% endif %}
+        </p>
+      </div>
+      {% elif kind == 'skill' %}
+      <div class="card-img">
+        {% if it.image %}<img src="{{ it.image|img }}" alt="{{ it.name }}" loading="lazy">{% else %}<span class="img-placeholder">?</span>{% endif %}
+      </div>
+      <div class="card-body">
+        <h3 class="card-name">{{ it.name }}</h3>
+        <p class="card-desc">{{ it.description[:44] }}{% if it.description|length > 44 %}…{% endif %}</p>
+      </div>
+      {% elif kind == 'mission' %}
+      <div class="card-body mission-card">
+        <h3 class="card-name">{{ it.title }}</h3>
+        {% if it.steps %}<p class="card-tags"><span class="tag">{{ it.steps|length }} 步</span></p>{% endif %}
+        {% if it.quests %}<p class="card-tags"><span class="tag">{{ it.quests|length }} 条随机任务</span></p>{% endif %}
+        {% if it.content %}<p class="card-desc">{{ it.content[:40] }}{% if it.content|length > 40 %}…{% endif %}</p>{% endif %}
+      </div>
+      {% endif %}
+    </a>
+    {% endif %}
+    {% endfor %}
+  </div>
+</section>
+{% endfor %}
+{% endblock %}
