@@ -18,8 +18,7 @@
     {% if kind == 'map' %}
     <div class="data-card" data-name="{{ it.title }}">
       <div class="card-img map-card-img">{% if it.areas %}<img src="{{ it.areas[0].image|img }}" alt="{{ it.title }}" loading="lazy">{% else %}<span class="img-placeholder">?</span>{% endif %}</div>
-      <div class="card-body"><h3 class="card-name">{{ it.title }}</h3><p class="card-tags"><span class="tag">{{ it.areas|length }} 张地图</span></p></div>
-      <p class="map-card-hint">见页内地图展示</p>
+      <div class="card-body"><h3 class="card-name">{{ it.title }}</h3><p class="card-tags"><span class="tag">{{ it.areas|length }} 张地图</span></p><p class="map-card-hint">见页内地图展示</p></div>
     </div>
     {% else %}
     <a class="data-card" href="{{ prefix }}/{{ kind }}s/{{ it.id }}.html" data-name="{{ it.name }}">
