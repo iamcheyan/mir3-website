@@ -1,55 +1,40 @@
 {% extends "base.html" %}
-{% block title %}传奇3 · 资料站{% endblock %}
+{% block title %}传奇三 · 资料 archive{% endblock %}
 
 {% block content %}
-<section class="hero">
-  <h1 class="hero-title">传奇3 · 资料站</h1>
-  <p class="hero-sub">怪物图鉴 · 物品大全 · 技能资料 · 任务攻略 · 地图资料</p>
-  <div class="hero-search">
-    <input type="search" id="global-search" placeholder="搜索怪物 / 物品 / 技能…（回车跳转）" autocomplete="off">
+<section class="home-lead">
+  <div class="lead-copy">
+    <p class="kicker">THE CONTINENT OF MIR · 伝説の記録</p>
+    <h1>传奇三<br><em>资料 archive</em></h1>
+    <p class="lead-intro">把旧大陆的地图、怪物与冒险记录，整理成一册可以慢慢翻阅的资料志。</p>
+    <div class="hero-search">
+      <label for="global-search">检索资料</label>
+      <div class="search-line"><span aria-hidden="true">⌕</span><input type="search" id="global-search" placeholder="搜索怪物、物品或技能…" autocomplete="off"><kbd>ENTER</kbd></div>
+    </div>
+    <div class="hero-stats" aria-label="资料统计">
+      <span><b>{{ stats.monsters }}</b> 怪物</span>
+      <span><b>{{ stats['items'] }}</b> 物品</span>
+      <span><b>{{ stats.skills }}</b> 技能</span>
+      <span><b>{{ stats.missions }}</b> 任务</span>
+      <span><b>{{ stats.maps }}</b> 地图</span>
+    </div>
   </div>
-  <div class="hero-stats">
-    <div class="stat"><span class="stat-num">{{ stats.monsters }}</span><span class="stat-label">怪物</span></div>
-    <div class="stat"><span class="stat-num">{{ stats['items'] }}</span><span class="stat-label">物品</span></div>
-    <div class="stat"><span class="stat-num">{{ stats.skills }}</span><span class="stat-label">技能</span></div>
-    <div class="stat"><span class="stat-num">{{ stats.missions }}</span><span class="stat-label">任务</span></div>
-    <div class="stat"><span class="stat-num">{{ stats.maps }}</span><span class="stat-label">地图</span></div>
+  <figure class="lead-map">
+    <div class="map-frame"><img src="{{ prefix }}/images/map/pic/newmap.jpg" alt="传奇3 世界地图"></div>
+    <figcaption><span>MAP 01</span> 比奇大陆 · 世界地图</figcaption>
+  </figure>
+</section>
+
+<section class="archive-index" aria-labelledby="archive-title">
+  <div class="section-heading"><p class="kicker">ARCHIVE INDEX</p><h2 id="archive-title">资料目录</h2><span>五册 / {{ stats.monsters|int + stats['items']|int + stats.skills|int + stats.missions|int + stats.maps|int }} 条记录</span></div>
+  <div class="archive-list">
+    <a class="archive-row" href="{{ prefix }}/mobs/index.html"><span class="archive-no">01</span><span class="archive-symbol">怪</span><span class="archive-name"><strong>怪物图鉴</strong><small>{{ stats.monsters }} 种生物 · 按出没区域整理</small></span><span class="archive-arrow">↗</span></a>
+    <a class="archive-row" href="{{ prefix }}/items/index.html"><span class="archive-no">02</span><span class="archive-symbol">物</span><span class="archive-name"><strong>物品大全</strong><small>{{ stats['items'] }} 件物品 · 装备、道具与套装</small></span><span class="archive-arrow">↗</span></a>
+    <a class="archive-row" href="{{ prefix }}/skills/index.html"><span class="archive-no">03</span><span class="archive-symbol">術</span><span class="archive-name"><strong>技能资料</strong><small>{{ stats.skills }} 项技能 · 战士 / 法师 / 道士</small></span><span class="archive-arrow">↗</span></a>
+    <a class="archive-row" href="{{ prefix }}/missions/index.html"><span class="archive-no">04</span><span class="archive-symbol">道</span><span class="archive-name"><strong>任务攻略</strong><small>{{ stats.missions }} 个任务 · 从初级到万事通</small></span><span class="archive-arrow">↗</span></a>
+    <a class="archive-row" href="{{ prefix }}/maps/index.html"><span class="archive-no">05</span><span class="archive-symbol">図</span><span class="archive-name"><strong>地图资料</strong><small>迷宫、世界与神舰地图</small></span><span class="archive-arrow">↗</span></a>
   </div>
 </section>
 
-<section class="home-cats">
-  <h2 class="section-title">资料分类</h2>
-  <div class="cat-grid">
-    <a class="cat-card cat-mob" href="{{ prefix }}/mobs/index.html">
-      <span class="cat-icon">🐉</span>
-      <span class="cat-name">怪物图鉴</span>
-      <span class="cat-count">{{ stats.monsters }} 种怪物 · {{ cats['mobs']|length }} 个区域</span>
-      <span class="cat-more">进入 →</span>
-    </a>
-    <a class="cat-card cat-item" href="{{ prefix }}/items/index.html">
-      <span class="cat-icon">⚔️</span>
-      <span class="cat-name">物品大全</span>
-      <span class="cat-count">{{ stats['items'] }} 件物品 · {{ cats['items']|length }} 个类型</span>
-      <span class="cat-more">进入 →</span>
-    </a>
-    <a class="cat-card cat-skill" href="{{ prefix }}/skills/index.html">
-      <span class="cat-icon">✨</span>
-      <span class="cat-name">技能资料</span>
-      <span class="cat-count">{{ stats.skills }} 项技能 · 战士 / 法师 / 道士</span>
-      <span class="cat-more">进入 →</span>
-    </a>
-    <a class="cat-card cat-mission" href="{{ prefix }}/missions/index.html">
-      <span class="cat-icon">📜</span>
-      <span class="cat-name">任务攻略</span>
-      <span class="cat-count">{{ stats.missions }} 个任务 · 初级 / 中级 / 技能学习 / 万事通</span>
-      <span class="cat-more">进入 →</span>
-    </a>
-    <a class="cat-card cat-map" href="{{ prefix }}/maps/index.html">
-      <span class="cat-icon">🗺️</span>
-      <span class="cat-name">地图资料</span>
-      <span class="cat-count">迷宫地图 · 世界地图 · 神舰地图</span>
-      <span class="cat-more">进入 →</span>
-    </a>
-  </div>
-</section>
+<section class="home-note"><span class="note-line"></span><p>旧大陆的故事不会消失。<br>它们只是被藏在下一张地图之后。</p><span class="note-seal">記</span></section>
 {% endblock %}
