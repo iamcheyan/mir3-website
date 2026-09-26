@@ -140,6 +140,8 @@ def render_all(data, env):
 
     def render(tpl, name, ctx):
         out = env.get_template(tpl).render(**ctx)
+        # 生成静态文件前清理模板空白，避免批量产物出现无意义的行尾空格。
+        out = "\n".join(line.rstrip() for line in out.splitlines()) + "\n"
         p = DIST_DIR / name
         p.parent.mkdir(parents=True, exist_ok=True)
         p.write_text(out, encoding="utf-8")
