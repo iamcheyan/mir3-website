@@ -23,6 +23,7 @@ class PublicEvidenceUrlTests(unittest.TestCase):
         self.assertEqual(public_publisher("mir2ei.iamcheyan.com"), "mir2ei.iamcheyan.com")
         self.assertEqual(public_metadata_text("本地文献 /data/archive/source.json"),
                          "本地文献 [本地路径已脱敏]")
+        self.assertEqual(public_metadata_text("客户端 Data/ 图库"), "客户端 资源 图库")
 
 class MasterShardTests(unittest.TestCase):
     def test_sharded_master_loads_in_manifest_order_and_checks_hashes(self):

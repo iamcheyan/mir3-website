@@ -79,7 +79,8 @@ def public_metadata_text(value: str | None) -> str | None:
         return value
     parts = re.split(r"(https?://\S+)", value, flags=re.I)
     for index in range(0, len(parts), 2):
-        parts[index] = LOCAL_PATH_RE.sub("[本地路径已脱敏]", parts[index])
+        cleaned = LOCAL_PATH_RE.sub("[本地路径已脱敏]", parts[index])
+        parts[index] = re.sub(r"(?<![A-Za-z0-9])Data/\s*", "资源 ", cleaned, flags=re.I)
     return "".join(parts)
 
 
