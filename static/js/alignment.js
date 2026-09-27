@@ -1,3 +1,9 @@
+import {
+  MATCH_CONFIG, buildGameNamesExport as createGameNamesExport,
+  buildMatchManifest as createMatchManifest, createMatchSelection,
+  matchConfigFor, validateWorkspaceBundle, zirconIdentityKey,
+} from "./alignment-workspace.mjs";
+
 (() => {
   "use strict";
 
@@ -23,19 +29,20 @@
   ];
   const COLUMN_DEFS = [
     ["index", "Index / ID"], ["identity", "实体身份"], ["website", "网站标准名"],
-    ["game", "游戏显示名"], ["status", "复核状态"], ["evidence", "来源 / 证据"]
+    ["game", "游戏显示名"], ["status", "复核状态"], ["evidence", "来源 / 证据"], ["match", "人工匹配"]
   ];
-  const EDIT_FIELDS = ["standard_name_zh", "overall_status", "identity_mapping_status", "display_name_status",
-    "resource_status", "game_data_status", "relations_status", "reason", "export_enabled"];
+  const MATCH_PAGE_SIZE = 48;
 
   const el = id => document.getElementById(id);
   const app = {
     master: null, masterHash: "", records: [], byId: new Map(),
-    observationsByEntity: new Map(), findingsByEntity: new Map(), sourceById: new Map(),
-    externalSourceById: new Map(), searchQueryById: new Map(),
     database: null, currentCategory: "monster", page: 0, selectedId: null,
+    sourceById: new Map(), observationsByEntity: new Map(), findingsByEntity: new Map(),
     originalDraft: {}, dirtyFields: new Set(), visibleColumns: new Set(COLUMN_DEFS.map(c => c[0])),
-    candidateDownload: null, broadcast: null, sourceFilterIds: new Map()
+    candidateDownload: null, broadcast: null, sourceFilterIds: new Map(), previewById: new Map(),
+    candidatesByType: new Map(), matchSourceId: null, matchPage: 0, matchShowSelected: false, matchBusy: false,
+    priorFocus: null, modalReturnFocus: null, modalAction: null, onlyUnmatched: false, storagePersistence: false,
+    state: { id: "workspace", revision: 0, drafts: {}, matches: {}, events: [] }
   };
 
   const safeText = value => value == null ? "—" : String(value);
@@ -68,7 +75,9 @@
   function searchValue(record) {
     const identity = record.identity || {};
     const names = [identity.zircon_internal_name, identity.current_game_name, identity.standard_name_zh,
-      identity.standard_name_ja, identity.website_name, identity.website_source_id,
+      identity.standard_name_ja, identity.current_translation?.zh, identity.current_translation?.ja,
+      identity.website_name, identity.website_source_id, zirconIdentityKey(record),
+      Number.isSafeInteger(identity.zircon_index) ? `Index ${identity.zircon_index}` : null,
       ...(identity.website_source_ids || []), ...(identity.aliases || []),
       ...(identity.candidate_website_names || []).flatMap(x => [x.name, x.source_id])];
     const scalarData = [];
@@ -80,9 +89,10 @@
   }
 
   function setStatus(message, isError = false) {
-    const status = el("workspace-status");
-    status.textContent = message;
-    status.classList.toggle("is-error", isError);
+    for (const status of [el("workspace-status"), el("action-status")].filter(Boolean)) {
+      status.textContent = message;
+      status.classList.toggle("is-error", isError);
+    }
   }
 
   function readRequest(request) {
@@ -104,10 +114,38 @@
     });
   }
 
+  function normalizeMatchEntries(matches) {
+    if (!matches || typeof matches !== "object" || Array.isArray(matches)) throw new Error("本地匹配工作区结构损坏；未覆盖已保存数据。");
+    const normalized = {};
+    for (const [sourceId, saved] of Object.entries(matches)) {
+      if (!saved || typeof saved !== "object" || !Array.isArray(saved.target_entity_ids)) {
+        throw new Error(`本地匹配记录结构损坏：${sourceId}；未覆盖已保存数据。`);
+      }
+      if (Object.hasOwn(saved, "updated_at")
+          && (typeof saved.updated_at !== "string" || !Number.isFinite(Date.parse(saved.updated_at)))) {
+        throw new Error(`本地匹配保存时间无效：${sourceId}；未覆盖已保存数据。`);
+      }
+      const selection = createMatchSelection(sourceId, saved.target_entity_ids, app.byId, saved.updated_at || undefined);
+      if (Object.hasOwn(saved, "target_identity_keys")
+          && (!Array.isArray(saved.target_identity_keys)
+            || JSON.stringify(saved.target_identity_keys) !== JSON.stringify(selection.target_identity_keys))) {
+        throw new Error(`本地匹配身份键与当前 Zircon 主数据不一致：${sourceId}；未覆盖已保存数据。`);
+      }
+      normalized[sourceId] = { ...selection, updated_at: saved.updated_at || selection.updated_at };
+    }
+    return normalized;
+  }
+
   async function readWorkspace() {
     const tx = app.database.transaction("workspace", "readonly");
     const saved = await readRequest(tx.objectStore("workspace").get("workspace"));
-    return saved || { id: "workspace", revision: 0, drafts: {}, events: [] };
+    const workspace = saved
+      ? { ...saved, drafts: saved.drafts || {}, matches: normalizeMatchEntries(saved.matches || {}), events: saved.events || [] }
+      : { id: "workspace", revision: 0, drafts: {}, matches: {}, events: [] };
+    return validateWorkspaceBundle({
+      schema_version: 2, format: "mir3-alignment-workspace", exported_at: new Date().toISOString(),
+      base_master_sha256: app.masterHash, workspace,
+    }, { masterHash: app.masterHash, recordsById: app.byId });
   }
 
   function saveWorkspaceUpdate(recordId, originalDraft, changes) {
@@ -118,7 +156,7 @@
       let nextState;
       let conflict = null;
       request.onsuccess = () => {
-        const current = request.result || { id: "workspace", revision: 0, drafts: {}, events: [] };
+        const current = request.result || { id: "workspace", revision: 0, drafts: {}, matches: {}, events: [] };
         const savedDraft = current.drafts[recordId] || {};
         for (const field of app.dirtyFields) {
           if (JSON.stringify(savedDraft[field]) !== JSON.stringify(originalDraft[field])) {
@@ -135,7 +173,8 @@
           at: new Date().toISOString(), entity_id: recordId, revision: current.revision + 1,
           action: "edit", before, after: { ...after }
         }];
-        nextState = { id: "workspace", revision: current.revision + 1, drafts, events };
+        nextState = { ...current, id: "workspace", revision: current.revision + 1, drafts,
+          matches: current.matches || {}, events };
         store.put(nextState);
       };
       tx.oncomplete = () => resolve(nextState);
@@ -173,7 +212,18 @@
         app.findingsByEntity.get(id).push(finding);
       }
     }
-    app.records.forEach(record => { record._search = searchValue(record); });
+    app.candidatesByType = new Map();
+    const candidateTypes = new Set(Object.values(MATCH_CONFIG).map(config => config.target));
+    for (const record of app.records) {
+      record._search = searchValue(record);
+      if (!candidateTypes.has(record.entity_type) || !Number.isInteger(record.identity?.zircon_index)) continue;
+      if (!app.candidatesByType.has(record.entity_type)) app.candidatesByType.set(record.entity_type, []);
+      app.candidatesByType.get(record.entity_type).push(record);
+    }
+    for (const candidates of app.candidatesByType.values()) {
+      candidates.sort((a, b) => indexValue(a) - indexValue(b)
+        || (a.identity?.zircon_internal_name || a.id).localeCompare(b.identity?.zircon_internal_name || b.id, "en"));
+    }
   }
 
   function categoryRecords(key) {
@@ -213,14 +263,119 @@
       }
       for (const ref of record.evidence || []) if (ref.source_id) sources.add(ref.source_id);
     }
-    const statusSelect = el("status-filter");
-    for (const value of [...statuses].sort()) statusSelect.add(new Option(statusLabel(value), value));
-    const sourceSelect = el("source-filter");
-    for (const value of [...sources].sort()) {
-      const label = app.sourceById.get(value)?.path || value;
-      sourceSelect.add(new Option(label, value));
-    }
+    const statusOptions = [{ value: "", label: "所有状态" }, ...[...statuses].sort()
+      .map(value => ({ value, label: statusLabel(value) }))];
+    setPickerOptions(el("status-filter"), statusOptions);
+    setPickerOptions(el("source-filter"), [{ value: "", label: "所有来源" }, ...[...sources].sort().map(value => ({
+      value, label: app.sourceById.get(value)?.path || value
+    }))]);
     createColumnOptions();
+  }
+
+  function setPickerOptions(picker, options) {
+    const menu = picker.querySelector(".custom-picker-menu");
+    menu.replaceChildren();
+    for (const option of options) {
+      const item = node("button", "custom-picker-option", option.label);
+      item.type = "button";
+      item.setAttribute("role", "option");
+      item.dataset.pickerValue = option.value;
+      item.setAttribute("aria-selected", String(picker.dataset.value === option.value));
+      menu.append(item);
+    }
+    if (![...menu.children].some(option => option.dataset.pickerValue === picker.dataset.value)) {
+      picker.dataset.value = options[0]?.value ?? "";
+    }
+    syncPicker(picker);
+  }
+
+  function syncPicker(picker) {
+    const options = [...picker.querySelectorAll(".custom-picker-option")];
+    const selected = options.find(option => option.dataset.pickerValue === picker.dataset.value);
+    picker.querySelector(".custom-picker-current").textContent = selected?.textContent || picker.dataset.placeholder || "";
+    for (const option of options) option.setAttribute("aria-selected", String(option === selected));
+  }
+
+  function setPickerValue(picker, value) {
+    picker.dataset.value = String(value);
+    syncPicker(picker);
+  }
+
+  function closePicker(picker, returnFocus = false) {
+    if (!picker?.classList.contains("is-open")) return;
+    picker.classList.remove("is-open");
+    picker.querySelector(".custom-picker-menu").hidden = true;
+    picker.querySelector(".custom-picker-trigger").setAttribute("aria-expanded", "false");
+    if (returnFocus) picker.querySelector(".custom-picker-trigger").focus();
+  }
+
+  function openPicker(picker) {
+    document.querySelectorAll(".custom-picker.is-open").forEach(item => closePicker(item));
+    const trigger = picker.querySelector(".custom-picker-trigger");
+    const menu = picker.querySelector(".custom-picker-menu");
+    picker.classList.add("is-open");
+    menu.hidden = false;
+    trigger.setAttribute("aria-expanded", "true");
+    const option = [...menu.children].find(item => item.dataset.pickerValue === picker.dataset.value) || menu.firstElementChild;
+    option?.focus();
+  }
+
+  function setupPickers() {
+    const editorOptions = {
+      "edit-overall": ["pending_review", "pending_evidence", "confirmed", "conflict", "cross_entity_conflict", "corrected", "approved", "rejected"],
+      "edit-identity": ["pending_review", "pending_evidence", "candidate", "source_confirmed", "confirmed", "conflict", "ambiguous", "rejected"],
+      "edit-display": ["pending_review", "pending_evidence", "conflict", "display_name_error", "corrected", "approved", "rejected"],
+      "edit-resource": ["pending_evidence", "pending_review", "candidate", "confirmed", "conflict", "not_applicable"],
+      "edit-game-data": ["pending_review", "pending_evidence", "confirmed", "conflict", "corrected", "rejected"],
+      "edit-relations": ["pending_review", "pending_evidence", "confirmed", "conflict", "rejected"],
+    };
+    for (const picker of document.querySelectorAll(".custom-picker")) {
+      Object.defineProperty(picker, "value", {
+        configurable: true,
+        get() { return this.dataset.value || ""; },
+        set(value) { setPickerValue(this, value); },
+      });
+      const id = picker.id;
+      const options = id in editorOptions
+        ? editorOptions[id].map(value => ({ value, label: statusLabel(value) }))
+        : id === "sort-select"
+          ? [{ value: "index", label: "Index 顺序" }, { value: "name", label: "名称顺序" }, { value: "status", label: "状态顺序" }]
+          : [{ value: "", label: picker.dataset.placeholder }];
+      setPickerOptions(picker, options);
+      const trigger = picker.querySelector(".custom-picker-trigger");
+      const menu = picker.querySelector(".custom-picker-menu");
+      trigger.addEventListener("click", () => picker.classList.contains("is-open") ? closePicker(picker) : openPicker(picker));
+      trigger.addEventListener("keydown", event => {
+        if (["ArrowDown", "ArrowUp", "Enter", " "].includes(event.key)) {
+          event.preventDefault();
+          openPicker(picker);
+        }
+      });
+      menu.addEventListener("click", event => {
+        const option = event.target.closest("[data-picker-value]");
+        if (!option) return;
+        const changed = picker.dataset.value !== option.dataset.pickerValue;
+        setPickerValue(picker, option.dataset.pickerValue);
+        closePicker(picker, true);
+        if (changed) picker.dispatchEvent(new Event("change", { bubbles: true }));
+      });
+      menu.addEventListener("keydown", event => {
+        const options = [...menu.querySelectorAll("[role=option]")];
+        const index = options.indexOf(document.activeElement);
+        let next = null;
+        if (event.key === "ArrowDown") next = Math.min(options.length - 1, index + 1);
+        else if (event.key === "ArrowUp") next = Math.max(0, index - 1);
+        else if (event.key === "Home") next = 0;
+        else if (event.key === "End") next = options.length - 1;
+        else if (event.key === "Escape") { event.preventDefault(); closePicker(picker, true); }
+        if (next != null && options[next]) { event.preventDefault(); options[next].focus(); }
+      });
+    }
+    document.addEventListener("pointerdown", event => {
+      for (const picker of document.querySelectorAll(".custom-picker.is-open")) {
+        if (!picker.contains(event.target)) closePicker(picker);
+      }
+    });
   }
 
   function createColumnOptions() {
@@ -246,6 +401,7 @@
     const source = el("source-filter").value;
     const rows = app.records.filter(record => {
       if (!predicate(record)) return false;
+      if (app.onlyUnmatched && (!matchConfigFor(record) || savedTargets(record.id).length > 0)) return false;
       if (query && !record._search.includes(query)) return false;
       if (status && effectiveStatus(record) !== status
         && !(app.findingsByEntity.get(record.id) || []).some(x => x.source_status === status)
@@ -289,6 +445,56 @@
     return button;
   }
 
+  function matchConfigFor(record) {
+    const config = MATCH_CONFIG[record?.entity_type];
+    const identity = record?.identity || {};
+    // A Zircon row carrying website_source_id is already cross-referenced. Only
+    // website-side records (no Zircon index) need a manual matching action.
+    return config && identity.website_source_id && !Number.isInteger(identity.zircon_index) ? config : null;
+  }
+
+  function savedTargets(sourceId) {
+    return app.state?.matches?.[sourceId]?.target_entity_ids || [];
+  }
+
+  function matchActionButton(record) {
+    const config = matchConfigFor(record);
+    const identity = record.identity || {};
+    if (!config) return node("span", identity.website_source_id && Number.isInteger(identity.zircon_index)
+      ? "match-linked-label" : "match-unavailable-label", identity.website_source_id && Number.isInteger(identity.zircon_index) ? "已有对照" : "—");
+    const targets = savedTargets(record.id);
+    const wrapper = node("div", "match-row");
+    const button = node("button", "match-row-button");
+    button.type = "button";
+    button.dataset.matchId = record.id;
+    button.classList.toggle("is-saved", targets.length > 0);
+    button.textContent = targets.length ? (config.multi ? `已选 ${targets.length}` : "已匹配") : "匹配";
+    button.setAttribute("aria-label", `${targets.length ? "修改" : "为"} ${displayName(record)} 的 Zircon 匹配`);
+    button.disabled = !app.database;
+    wrapper.append(button);
+    if (targets.length) {
+      const names = targets.map(id => app.byId.get(id)).filter(Boolean).map(target =>
+        `Index ${target.identity.zircon_index} · ${candidateEnglishName(target)} · ${zirconIdentityKey(target)}`);
+      appendText(wrapper, "span", "match-row-target", names.slice(0, 2).join("；")
+        + (names.length > 2 ? `；另有 ${names.length - 2} 项` : ""));
+    }
+    return wrapper;
+  }
+
+  function refreshMatchSummary() {
+    const host = el("match-summary");
+    if (!host || !app.state) return;
+    const sources = app.records.filter(matchConfigFor);
+    const matched = sources.filter(record => savedTargets(record.id).length > 0).length;
+    host.textContent = `本浏览器已保存 ${numberFormat(matched)} / ${numberFormat(sources.length)} 条匹配`;
+    const queue = el("match-queue-filter");
+    if (queue) {
+      const pending = sources.length - matched;
+      queue.textContent = app.onlyUnmatched ? `返回全部记录 · ${numberFormat(pending)} 待匹配` : `仅看待匹配 · ${numberFormat(pending)}`;
+      queue.setAttribute("aria-pressed", String(app.onlyUnmatched));
+    }
+  }
+
   function renderRows() {
     if (!app.master) return;
     const rows = filteredRecords();
@@ -308,6 +514,8 @@
         if (key === "status") {
           const chip = node("span", `status-chip status-${effectiveStatus(record)}`, statusLabel(effectiveStatus(record)));
           td.append(chip);
+        } else if (key === "match") {
+          td.append(matchActionButton(record));
         } else {
           const value = cellValue(record, key);
           const button = createRecordButton(record, value);
@@ -328,13 +536,18 @@
       card.append(createRecordButton(record, displayName(record), "audit-card-title"));
       appendText(card, "p", "audit-card-internal", `${cellValue(record, "identity")} · ${cellValue(record, "game")}`);
       appendText(card, "p", "audit-card-source", `网站：${cellValue(record, "website")} · ${(record.evidence || []).length} 个来源`);
-      card.append(createRecordButton(record, "查看对照与证据", "audit-card-action"));
+      const actions = node("div", "audit-card-actions");
+      actions.append(createRecordButton(record, "查看对照与证据", "audit-card-action"));
+      const matchAction = matchActionButton(record);
+      actions.append(matchAction);
+      card.append(actions);
       cards.append(card);
     }
     el("result-summary").textContent = `${numberFormat(rows.length)} 条记录 · 第 ${app.page + 1} / ${pageCount} 页 · 每页 ${PAGE_SIZE} 条`;
     el("page-label").textContent = `${app.page + 1} / ${pageCount}`;
     el("previous-page").disabled = app.page === 0;
     el("next-page").disabled = app.page >= pageCount - 1;
+    refreshMatchSummary();
   }
 
   function sourceUrl(sourceId, record) {
@@ -520,12 +733,24 @@
   function renderHistory(recordId) {
     const host = el("audit-history"); host.replaceChildren();
     const events = (app.state.events || []).filter(event => event.entity_id === recordId).slice(-20).reverse();
+    const matchTargets = targetIds => {
+      if (!Array.isArray(targetIds) || !targetIds.length) return "未匹配";
+      return targetIds.map(id => {
+        const target = app.byId.get(id);
+        return target ? `${candidateEnglishName(target)} (${zirconIdentityKey(target)})` : id;
+      }).join("、");
+    };
     for (const event of events) {
       const li = node("li", "history-entry");
       const time = new Date(event.at).toLocaleString("zh-CN", { hour12: false });
       appendText(li, "strong", "", `修订 ${event.revision} · ${time}`);
-      appendText(li, "small", "", Object.entries(event.after || {}).filter(([key, value]) => JSON.stringify(event.before?.[key]) !== JSON.stringify(value))
-        .map(([key, value]) => `${fieldLabel(key)} → ${typeof value === "boolean" ? (value ? "启用" : "关闭") : value}`).join("；") || "记录本地修改");
+      const summary = event.action === "match"
+        ? `匹配目标：${matchTargets(event.before)} → ${matchTargets(event.after)}`
+        : Object.entries(event.after || {})
+          .filter(([key, value]) => JSON.stringify(event.before?.[key]) !== JSON.stringify(value))
+          .map(([key, value]) => `${fieldLabel(key)} → ${typeof value === "boolean" ? (value ? "启用" : "关闭") : value}`)
+          .join("；") || "记录本地修改";
+      appendText(li, "small", "", summary);
       host.append(li);
     }
     if (!events.length) appendText(host, "li", "empty-note", "尚无本地修改记录。");
@@ -561,6 +786,285 @@
     } catch (error) {
       setStatus(error.message, true);
     }
+  }
+
+  function matchSourceName(record) {
+    const draft = effectiveDraft(record);
+    return (draft.standard_name_zh || record.identity?.standard_name_zh || record.identity?.website_name || displayName(record) || "").trim();
+  }
+
+  function selectedMatchIds(sourceId = app.matchSourceId) {
+    return [...savedTargets(sourceId)];
+  }
+
+  function candidateEnglishName(record) {
+    return record.identity?.zircon_internal_name || record.game_data?.QuestName || record.identity?.current_game_name || record.id;
+  }
+
+  function candidateExtra(record) {
+    const data = record.game_data || {};
+    if (record.entity_type === "monster") return [Number.isInteger(data.Level) && `Lv ${data.Level}`, data.Image && `Image ${data.Image}`].filter(Boolean).join(" · ");
+    if (record.entity_type === "item") return [data.ItemType, Number.isInteger(data.Image) && `Image ${data.Image}`].filter(Boolean).join(" · ");
+    if (record.entity_type === "skill") return [data.RequiredClass, data.School, Number.isInteger(data.Icon) && `Icon ${data.Icon}`].filter(Boolean).join(" · ");
+    if (record.entity_type === "map") return [data.FileName && `Map ${data.FileName}`, Number.isInteger(data.MiniMap) && `MiniMap ${data.MiniMap}`].filter(Boolean).join(" · ");
+    if (record.entity_type === "quest") return [data.QuestType, `Index ${record.identity?.zircon_index ?? "—"}`].filter(Boolean).join(" · ");
+    return "";
+  }
+
+  function candidateImageUrl(record) {
+    const path = app.previewById.get(record.id);
+    if (typeof path !== "string" || !path.startsWith("images/zircon-match/") || path.split("/").includes("..")) return null;
+    const rootPath = root.dataset.root || "";
+    return new URL(`${rootPath}/${path}`, window.location.href).href;
+  }
+
+  function appendCandidateThumb(parent, record) {
+    const thumb = node("div", "match-candidate-thumb");
+    const src = candidateImageUrl(record);
+    if (!src) {
+      const placeholder = record.entity_type === "quest" ? "任务" : record.entity_type === "map" ? "无小地图" : "无图像";
+      appendText(thumb, "span", "match-thumb-placeholder", placeholder);
+      parent.append(thumb);
+      return;
+    }
+    const image = document.createElement("img");
+    image.loading = "lazy";
+    image.decoding = "async";
+    image.alt = `${candidateEnglishName(record)} · Zircon 候选图`;
+    image.src = src;
+    image.addEventListener("error", () => thumb.replaceChildren(node("span", "match-thumb-placeholder", "图像不可用")), { once: true });
+    thumb.append(image);
+    parent.append(thumb);
+  }
+
+  function setMatchSaveStatus(message, isError = false) {
+    const status = el("match-save-status");
+    status.textContent = message;
+    status.classList.toggle("is-error", isError);
+  }
+
+  function currentMatchCandidates() {
+    const source = app.byId.get(app.matchSourceId);
+    const config = matchConfigFor(source);
+    if (!source || !config) return [];
+    const query = el("match-search-input").value.trim().toLocaleLowerCase("zh-CN");
+    const selected = new Set(selectedMatchIds());
+    return (app.candidatesByType.get(config.target) || []).filter(record =>
+      (!app.matchShowSelected || selected.has(record.id))
+      && (!query || (record._search || searchValue(record)).includes(query)));
+  }
+
+  function renderMatchCandidates() {
+    if (!app.matchSourceId || el("match-drawer").hidden) return;
+    const source = app.byId.get(app.matchSourceId);
+    const config = matchConfigFor(source);
+    if (!config) return;
+    const rows = currentMatchCandidates();
+    const pageCount = Math.max(1, Math.ceil(rows.length / MATCH_PAGE_SIZE));
+    app.matchPage = Math.min(app.matchPage, pageCount - 1);
+    const pageRows = rows.slice(app.matchPage * MATCH_PAGE_SIZE, (app.matchPage + 1) * MATCH_PAGE_SIZE);
+    const selected = new Set(selectedMatchIds());
+    const host = el("match-candidate-list");
+    host.replaceChildren();
+    if (!pageRows.length) appendText(host, "p", "match-empty", app.matchShowSelected ? "此条目还没有保存的匹配。" : "没有找到候选。试试英文名、中文名或 Index。 ");
+    for (const candidate of pageRows) {
+      const isSelected = selected.has(candidate.id);
+      const card = node("article", `match-candidate-card${isSelected ? " is-selected" : ""}`);
+      card.setAttribute("role", "group");
+      appendCandidateThumb(card, candidate);
+      const copy = node("div", "match-candidate-copy");
+      appendText(copy, "strong", "", candidateEnglishName(candidate));
+      appendText(copy, "p", "", `当前显示名：${candidate.identity?.current_translation?.zh || candidate.identity?.current_game_name || "—"}`);
+      appendText(copy, "small", "", [`Index ${candidate.identity.zircon_index}`, zirconIdentityKey(candidate), candidateExtra(candidate)].filter(Boolean).join(" · "));
+      card.append(copy);
+      const action = node("button", "match-choice-action", app.matchBusy ? "保存中" : isSelected ? (config.multi ? "✓ 已选" : "✓ 已匹配") : (config.multi ? "加入匹配" : "匹配此项"));
+      action.type = "button";
+      action.dataset.matchCandidateId = candidate.id;
+      action.setAttribute("aria-pressed", String(isSelected));
+      action.setAttribute("aria-label", `${isSelected ? "已选" : "选择"} ${candidateEnglishName(candidate)}，Index ${candidate.identity.zircon_index}`);
+      action.disabled = app.matchBusy || !app.database;
+      card.append(action);
+      host.append(card);
+    }
+    const countLabel = `${numberFormat(rows.length)} 个候选${app.matchShowSelected ? " · 仅显示已选" : ""}`;
+    el("match-candidate-count").textContent = countLabel;
+    el("match-page-label").textContent = `${app.matchPage + 1} / ${pageCount}`;
+    el("match-previous").disabled = app.matchPage === 0 || app.matchBusy;
+    el("match-next").disabled = app.matchPage >= pageCount - 1 || app.matchBusy;
+    el("match-selection-count").textContent = config.multi ? `已保存 ${selected.size} 项` : (selected.size ? "已保存 1 项" : "尚未匹配");
+    el("match-clear").disabled = selected.size === 0 || app.matchBusy || !app.database;
+    el("match-selected-filter").textContent = app.matchShowSelected ? "返回全部候选" : "只看已选";
+    el("match-selected-filter").setAttribute("aria-pressed", String(app.matchShowSelected));
+  }
+
+  function matchSourceImage(record) {
+    const media = el("match-source-media");
+    media.replaceChildren();
+    if (record.resources?.website?.path) appendImage(media, record.resources.website, `${matchSourceName(record)} · 网站资料图`);
+    else appendText(media, "span", "", (matchSourceName(record).slice(0, 2) || "条目"));
+  }
+
+  function openMatchDrawer(sourceId) {
+    const source = app.byId.get(sourceId);
+    const config = matchConfigFor(source);
+    if (!config) return;
+    app.priorFocus = document.activeElement;
+    app.matchSourceId = sourceId;
+    app.matchPage = 0;
+    app.matchShowSelected = false;
+    el("match-search-input").value = "";
+    el("match-drawer-title").textContent = matchSourceName(source);
+    el("match-source-id").textContent = `${source.identity.website_source_id} · ${source.entity_type}`;
+    el("match-type-label").textContent = config.label;
+    matchSourceImage(source);
+    const notes = {
+      monster: "按 Zircon 怪物实体匹配。图片由当前 MonsterInfo.Image → MonsterLookup → 客户端怪物图库生成；图片只辅助辨认，请同时核对英文名与 Index。",
+      item: "按 Zircon 道具实体匹配。缩略图按客户端当前 ItemInfo.Image → Storeitems.Zl 帧显示；已知不少数据库图号与正确物品外观存在错位，图片只是当前客户端画面参考，不能单凭图片确认，请同时核对英文名与 Index。",
+      skill: "按 Zircon 技能实体匹配。图标取 MagicInfo.Icon 对应帧；确认后会进入本地匹配工作区。",
+      mission: "任务攻略可能覆盖多个游戏任务，支持多选。QuestInfo 没有统一条目图像时会显示占位；清单会保留每个选择的 Index 与英文任务名。",
+      map_group: "网站地图条目是地图集合，支持多选 Zircon MapInfo。缩略图取游戏客户端 MiniMap 帧；该关系导出到匹配清单，不会把集合标题误写成单张地图名。"
+    };
+    el("match-drawer-note").textContent = `${notes[source.entity_type] || "选择同类型游戏候选。"} 每次选择都会立即写入此浏览器的 IndexedDB；不上传、不修改网站主数据或游戏文件。`;
+    el("match-drawer").hidden = false;
+    el("match-backdrop").hidden = false;
+    document.body.classList.add("match-open");
+    setMatchSaveStatus(!app.database ? "IndexedDB 不可用，当前只读"
+      : app.storagePersistence ? "此浏览器已授予持久存储；每次选择都会立即保存"
+        : "已即时写入浏览器 IndexedDB；浏览器仍可能清理站点数据，请定期导出工作区", !app.database);
+    renderMatchCandidates();
+    window.setTimeout(() => el("match-search-input").focus(), 0);
+  }
+
+  function closeMatchDrawer() {
+    el("match-drawer").hidden = true;
+    el("match-backdrop").hidden = true;
+    document.body.classList.remove("match-open");
+    app.matchSourceId = null;
+    if (app.priorFocus?.isConnected) app.priorFocus.focus();
+  }
+
+  function saveMatchSelection(sourceId, targetIds) {
+    return new Promise((resolve, reject) => {
+      if (!app.database) return reject(new Error("IndexedDB 不可用；匹配没有保存。"));
+      let selection;
+      try { selection = createMatchSelection(sourceId, targetIds, app.byId); }
+      catch (error) { return reject(error); }
+      const unique = selection.target_entity_ids;
+      const tx = app.database.transaction("workspace", "readwrite");
+      const store = tx.objectStore("workspace");
+      const request = store.get("workspace");
+      let nextState;
+      request.onsuccess = () => {
+        const current = request.result || { id: "workspace", revision: 0, drafts: {}, matches: {}, events: [] };
+        const matches = { ...(current.matches || {}) };
+        const before = matches[sourceId] || null;
+        if (unique.length) matches[sourceId] = selection;
+        else delete matches[sourceId];
+        const revision = (current.revision || 0) + 1;
+        const events = [...(current.events || []), {
+          id: `${Date.now()}-${crypto.randomUUID ? crypto.randomUUID() : Math.random().toString(36).slice(2)}`,
+          at: new Date().toISOString(), entity_id: sourceId, revision, action: "match",
+          before: before?.target_entity_ids || [], after: unique
+        }];
+        nextState = { ...current, id: "workspace", revision, drafts: current.drafts || {}, matches, events };
+        store.put(nextState);
+      };
+      tx.oncomplete = () => resolve(nextState);
+      tx.onerror = () => reject(tx.error || new Error("匹配保存失败。"));
+      tx.onabort = () => reject(tx.error || new Error("匹配保存事务中止。"));
+    });
+  }
+
+  async function chooseMatchCandidate(candidateId) {
+    if (app.matchBusy || !app.matchSourceId) return;
+    const source = app.byId.get(app.matchSourceId);
+    const config = matchConfigFor(source);
+    if (!config) return;
+    const chosen = new Set(selectedMatchIds());
+    if (config.multi) chosen.has(candidateId) ? chosen.delete(candidateId) : chosen.add(candidateId);
+    else chosen.clear(), chosen.add(candidateId);
+    app.matchBusy = true;
+    setMatchSaveStatus("正在写入本地 IndexedDB…");
+    renderMatchCandidates();
+    try {
+      app.state = await saveMatchSelection(source.id, [...chosen]);
+      app.broadcast?.postMessage({ revision: app.state.revision, entity_id: source.id, matches: true });
+      setMatchSaveStatus(`已保存到此浏览器 · 修订 ${app.state.revision}`);
+      renderRows();
+    } catch (error) {
+      setMatchSaveStatus(`${error.message} · 仍未保存`, true);
+    } finally {
+      app.matchBusy = false;
+      renderMatchCandidates();
+    }
+  }
+
+  async function clearCurrentMatch() {
+    if (!app.matchSourceId || app.matchBusy) return;
+    const sourceId = app.matchSourceId;
+    app.matchBusy = true;
+    setMatchSaveStatus("正在清除并保存…");
+    renderMatchCandidates();
+    try {
+      app.state = await saveMatchSelection(sourceId, []);
+      app.broadcast?.postMessage({ revision: app.state.revision, entity_id: sourceId, matches: true });
+      setMatchSaveStatus(`已清除此匹配 · 修订 ${app.state.revision}`);
+      renderRows();
+    } catch (error) {
+      setMatchSaveStatus(`${error.message} · 状态未改变`, true);
+    } finally {
+      app.matchBusy = false;
+      renderMatchCandidates();
+    }
+  }
+
+  function buildMatchManifest() {
+    return createMatchManifest({
+      masterHash: app.masterHash,
+      matches: app.state.matches || {},
+      recordsById: app.byId,
+      sourceNameFor: sourceId => matchSourceName(app.byId.get(sourceId)),
+    });
+  }
+
+  function buildGameNamesExport() {
+    return createGameNamesExport({
+      baseline: app.master.translation_baseline || {},
+      matches: app.state.matches || {},
+      recordsById: app.byId,
+      sourceNameFor: sourceId => matchSourceName(app.byId.get(sourceId)),
+    });
+  }
+
+  function downloadGameNames() {
+    try {
+      const result = buildGameNamesExport();
+      downloadJson("db_names.json", result.translation);
+      setStatus(`已下载游戏可用 db_names.json · ${result.changed_keys.length} 个游戏名称键由人工匹配更新。只下载，不写入游戏仓库。`);
+    } catch (error) {
+      setStatus(error.message, true);
+    }
+  }
+
+  function downloadMatchManifest() {
+    try {
+      const manifest = buildMatchManifest();
+      downloadJson("mir3-website-zircon-matches.json", manifest);
+      setStatus(`已下载匹配清单 · ${manifest.matches.length} 条 · 包含任务与地图分组对应关系。`);
+    } catch (error) {
+      setStatus(error.message, true);
+    }
+  }
+
+  function loadMatchPreviewIndex(url) {
+    return fetch(url, { cache: "no-cache", credentials: "same-origin" }).then(response => {
+      if (!response.ok) throw new Error(`候选缩略图清单 HTTP ${response.status}`);
+      return response.json();
+    }).then(index => {
+      if (index.schema_version !== 1 || !index.assets || typeof index.assets !== "object") throw new Error("候选缩略图清单版本无效。");
+      app.previewById = new Map(Object.entries(index.assets).filter(([, path]) => typeof path === "string"
+        && path.startsWith("images/zircon-match/") && !path.split("/").includes("..")));
+    });
   }
 
   function refreshStats() {
@@ -621,49 +1125,125 @@
   }
 
   function validateBundle(bundle) {
-    if (!bundle || bundle.schema_version !== 1 || bundle.base_master_sha256 !== app.masterHash || !bundle.workspace) {
-      throw new Error("导入文件版本或主数据 SHA-256 不匹配；拒绝覆盖当前工作区。");
-    }
-    const workspace = bundle.workspace;
-    if (!workspace.drafts || typeof workspace.drafts !== "object" || !Array.isArray(workspace.events)) throw new Error("工作区结构不正确。");
-    const allowed = new Set(EDIT_FIELDS);
-    for (const [id, draft] of Object.entries(workspace.drafts)) {
-      if (!app.byId.has(id) || !draft || typeof draft !== "object") throw new Error(`工作区包含未知记录：${id}`);
-      for (const key of Object.keys(draft)) if (!allowed.has(key)) throw new Error(`不支持的编辑字段：${key}`);
-      for (const field of ["overall_status", "identity_mapping_status", "display_name_status", "resource_status", "game_data_status", "relations_status"]) {
-        if (draft[field] != null && !Object.hasOwn(STATUS_LABELS, draft[field])) throw new Error(`状态不在允许清单中：${draft[field]}`);
-      }
-      if (draft.standard_name_zh != null && (typeof draft.standard_name_zh !== "string" || draft.standard_name_zh.length > 120)) throw new Error(`中文标准名不合法：${id}`);
-      if (draft.reason != null && (typeof draft.reason !== "string" || draft.reason.length > 1000)) throw new Error(`复核理由不合法：${id}`);
-      if (draft.export_enabled && (!draft.standard_name_zh || !["approved", "corrected"].includes(draft.overall_status)
-          || !["confirmed", "source_confirmed"].includes(draft.identity_mapping_status))) throw new Error(`翻译导出批准条件不完整：${id}`);
-    }
-    return workspace;
+    return validateWorkspaceBundle(bundle, { masterHash: app.masterHash, recordsById: app.byId });
   }
 
   function downloadJson(filename, value) {
     const blob = new Blob([JSON.stringify(value, null, 2) + "\n"], { type: "application/json;charset=utf-8" });
     const url = URL.createObjectURL(blob);
     const anchor = document.createElement("a"); anchor.href = url; anchor.download = filename;
-    document.body.append(anchor); anchor.click(); anchor.remove(); URL.revokeObjectURL(url);
+    document.body.append(anchor); anchor.click(); anchor.remove(); window.setTimeout(() => URL.revokeObjectURL(url), 1000);
+  }
+
+  function openWorkspaceDialog({ title, message, preview, actionLabel, action, returnFocus = document.activeElement }) {
+    app.modalReturnFocus = returnFocus;
+    app.modalAction = action || null;
+    el("export-dialog-title").textContent = title;
+    el("export-message").textContent = message;
+    el("export-preview").textContent = preview || "";
+    el("download-export").textContent = actionLabel || "确认";
+    el("download-export").disabled = !action;
+    el("export-dialog").hidden = false;
+    el("export-backdrop").hidden = false;
+    document.body.classList.add("export-open");
+    window.requestAnimationFrame(() => (action ? el("download-export") : el("close-export-footer")).focus());
+  }
+
+  function closeWorkspaceDialog() {
+    el("export-dialog").hidden = true;
+    el("export-backdrop").hidden = true;
+    document.body.classList.remove("export-open");
+    app.modalAction = null;
+    if (app.modalReturnFocus?.isConnected && !app.modalReturnFocus.hidden) app.modalReturnFocus.focus();
+  }
+  function trapFocus(container, event) {
+    if (event.key !== "Tab") return;
+    const focusable = [...container.querySelectorAll("a[href],button:not([disabled]),input:not([disabled]),textarea:not([disabled]),[tabindex]:not([tabindex='-1'])")]
+      .filter(item => !item.hidden && item.getClientRects().length > 0);
+    if (!focusable.length) { event.preventDefault(); container.focus(); return; }
+    const first = focusable[0], last = focusable[focusable.length - 1];
+    if (event.shiftKey && (document.activeElement === first || !container.contains(document.activeElement))) {
+      event.preventDefault(); last.focus();
+    } else if (!event.shiftKey && (document.activeElement === last || !container.contains(document.activeElement))) {
+      event.preventDefault(); first.focus();
+    }
+  }
+
+  function updateVisualViewport() {
+    const viewport = window.visualViewport;
+    root.style.setProperty("--visual-viewport-height", `${Math.ceil(viewport?.height || window.innerHeight)}px`);
+    root.style.setProperty("--visual-viewport-offset-top", `${Math.ceil(viewport?.offsetTop || 0)}px`);
+  }
+
+  async function runWorkspaceDialogAction() {
+    const action = app.modalAction;
+    if (!action) return;
+    const button = el("download-export");
+    button.disabled = true;
+    try {
+      const close = await action();
+      if (close !== false) closeWorkspaceDialog();
+      else button.disabled = false;
+    } catch (error) {
+      el("export-message").textContent = `操作未完成：${error.message}`;
+      button.disabled = false;
+    }
   }
 
   function exportWorkspace() {
-    const bundle = { schema_version: 1, exported_at: new Date().toISOString(), base_master_sha256: app.masterHash, workspace: app.state };
+    const bundle = {
+      schema_version: 2, format: "mir3-alignment-workspace", exported_at: new Date().toISOString(),
+      base_master_sha256: app.masterHash, workspace: app.state,
+    };
     downloadJson("mir3-alignment-workspace.json", bundle);
+    setStatus(`已下载完整本地工作区 · ${Object.keys(app.state.drafts).length} 条草稿 · ${Object.keys(app.state.matches).length} 条匹配。`);
   }
 
   async function importWorkspace(file) {
     const bundle = JSON.parse(await file.text());
     const workspace = validateBundle(bundle);
-    if (!window.confirm(`将用 ${Object.keys(workspace.drafts).length} 条草稿替换此浏览器中的本地工作区。公开主数据不会改变。继续？`)) return;
-    const tx = app.database.transaction("workspace", "readwrite");
-    tx.objectStore("workspace").put({ ...workspace, id: "workspace", revision: (app.state.revision || 0) + 1 });
-    await new Promise((resolve, reject) => { tx.oncomplete = resolve; tx.onerror = () => reject(tx.error); tx.onabort = () => reject(tx.error || new Error("导入已中止")); });
-    app.state = await readWorkspace(); refreshStats(); renderRows();
-    if (app.selectedId) openRecord(app.selectedId);
-    setStatus(`已导入 ${Object.keys(app.state.drafts).length} 条本地草稿。`);
-    app.broadcast?.postMessage({ revision: app.state.revision, imported: true });
+    const currentCounts = {
+      drafts: Object.keys(app.state.drafts).length,
+      matches: Object.keys(app.state.matches).length,
+      events: app.state.events.length,
+    };
+    const importCounts = {
+      drafts: Object.keys(workspace.drafts).length,
+      matches: Object.keys(workspace.matches).length,
+      events: workspace.events.length,
+    };
+    openWorkspaceDialog({
+      title: "替换当前浏览器工作区？",
+      message: `已验证 v${bundle.schema_version} 文件、主数据 SHA-256、草稿、事件、匹配类型与 Zircon 身份键。确认后将替换此浏览器现有内容；网站公开数据和游戏文件不会更改。`,
+      preview: JSON.stringify({ "当前工作区（将被替换）": currentCounts, "导入文件": importCounts }, null, 2),
+      actionLabel: "导入并替换",
+      returnFocus: el("import-button"),
+      action: async () => {
+        const tx = app.database.transaction("workspace", "readwrite");
+        const store = tx.objectStore("workspace");
+        const request = store.get("workspace");
+        request.onsuccess = () => {
+          const latestRevision = request.result?.revision || 0;
+          store.put({
+            ...workspace,
+            id: "workspace",
+            revision: Math.max(latestRevision, app.state.revision, workspace.revision) + 1,
+          });
+        };
+        await new Promise((resolve, reject) => {
+          tx.oncomplete = resolve;
+          tx.onerror = () => reject(tx.error || new Error("导入事务失败。"));
+          tx.onabort = () => reject(tx.error || new Error("导入已中止。"));
+        });
+        app.state = await readWorkspace();
+        refreshStats(); renderRows();
+        if (app.selectedId) openRecord(app.selectedId);
+        if (app.matchSourceId) renderMatchCandidates();
+        setStatus(`已导入 ${importCounts.drafts} 条草稿、${importCounts.matches} 条匹配。`);
+        app.broadcast?.postMessage({ revision: app.state.revision, imported: true });
+        return true;
+      },
+    });
   }
 
   function translationCandidate() {
@@ -719,35 +1299,78 @@
       const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(serialized));
       const candidateHash = [...new Uint8Array(digest)].map(x => x.toString(16).padStart(2, "0")).join("");
       app.candidateDownload = result.translation;
-      el("export-message").textContent = `${result.changes.length} 项中文值变化；${result.approved_record_count} 条记录显式批准。未批准项和所有未触及 locale 保持原样。候选 SHA-256：${candidateHash}。此文件不会写入 Zircon。`;
-      el("export-preview").textContent = JSON.stringify({ changes: result.changes, rollback: result.rollback }, null, 2);
-      el("export-dialog").showModal();
+      openWorkspaceDialog({
+        title: "审批翻译候选文件",
+        message: `${result.changes.length} 项中文值变化；${result.approved_record_count} 条记录显式批准。未批准项和所有未触及 locale 保持原样。候选 SHA-256：${candidateHash}。此文件不会写入 Zircon。`,
+        preview: JSON.stringify({ changes: result.changes, rollback: result.rollback }, null, 2),
+        actionLabel: "下载 JSON",
+        returnFocus: el("translation-button"),
+        action: () => {
+          downloadJson("mir3-db_names-translation-candidate.json", app.candidateDownload);
+          setStatus("已下载审批翻译候选；文件未写入游戏仓库。");
+          return false;
+        },
+      });
     } catch (error) {
-      el("export-message").textContent = error.message;
-      el("export-preview").textContent = "候选未生成；请解决身份键冲突或缺失的批准条件。";
       app.candidateDownload = null;
-      el("export-dialog").showModal();
+      openWorkspaceDialog({
+        title: "无法生成翻译候选",
+        message: error.message,
+        preview: "候选未生成；请解决身份键冲突或缺失的批准条件。",
+        actionLabel: "不可下载",
+        returnFocus: el("translation-button"),
+      });
     }
   }
 
   function bindEvents() {
+    setupPickers();
+    updateVisualViewport();
+    window.addEventListener("resize", updateVisualViewport);
+    window.visualViewport?.addEventListener("resize", updateVisualViewport);
+    window.visualViewport?.addEventListener("scroll", updateVisualViewport);
     el("search-input").addEventListener("input", () => { app.page = 0; renderRows(); });
     for (const id of ["status-filter", "source-filter", "sort-select"]) el(id).addEventListener("change", () => { app.page = 0; renderRows(); });
+    el("match-queue-filter").addEventListener("click", () => { app.onlyUnmatched = !app.onlyUnmatched; app.page = 0; renderRows(); });
     el("previous-page").addEventListener("click", () => { app.page = Math.max(0, app.page - 1); renderRows(); });
     el("next-page").addEventListener("click", () => { app.page += 1; renderRows(); });
     for (const host of [el("table-body"), el("card-list"), el("detail-comparison"), el("relations-view")]) {
       host.addEventListener("click", event => {
+        const matchButton = event.target.closest("[data-match-id]");
+        if (matchButton) { openMatchDrawer(matchButton.dataset.matchId); return; }
         const button = event.target.closest("[data-record-id]");
         if (button) openRecord(button.dataset.recordId);
       });
     }
+    el("match-close").addEventListener("click", closeMatchDrawer);
+    el("match-backdrop").addEventListener("click", closeMatchDrawer);
+    el("match-search-input").addEventListener("input", () => { app.matchPage = 0; renderMatchCandidates(); });
+    el("match-selected-filter").addEventListener("click", () => { app.matchShowSelected = !app.matchShowSelected; app.matchPage = 0; renderMatchCandidates(); });
+    el("match-previous").addEventListener("click", () => { app.matchPage = Math.max(0, app.matchPage - 1); renderMatchCandidates(); });
+    el("match-next").addEventListener("click", () => { app.matchPage += 1; renderMatchCandidates(); });
+    el("match-candidate-list").addEventListener("click", event => {
+      const button = event.target.closest("[data-match-candidate-id]");
+      if (button) chooseMatchCandidate(button.dataset.matchCandidateId);
+    });
+    el("match-clear").addEventListener("click", clearCurrentMatch);
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape" && !event.defaultPrevented) {
+        const picker = document.querySelector(".custom-picker.is-open");
+        if (picker) { event.preventDefault(); closePicker(picker, true); return; }
+        if (!el("export-dialog").hidden) { event.preventDefault(); closeWorkspaceDialog(); return; }
+        if (!el("match-drawer").hidden) { event.preventDefault(); closeMatchDrawer(); return; }
+      }
+      if (event.defaultPrevented) return;
+      if (!el("export-dialog").hidden) trapFocus(el("export-dialog"), event);
+      else if (!el("match-drawer").hidden) trapFocus(el("match-drawer"), event);
+    });
     el("close-detail").addEventListener("click", () => { el("record-detail").hidden = true; app.selectedId = null; });
     const fieldMap = { "edit-name": "standard_name_zh", "edit-overall": "overall_status", "edit-identity": "identity_mapping_status",
       "edit-display": "display_name_status", "edit-resource": "resource_status", "edit-game-data": "game_data_status",
       "edit-relations": "relations_status", "edit-reason": "reason", "edit-export": "export_enabled" };
     for (const [id, field] of Object.entries(fieldMap)) {
       const control = el(id); control.dataset.field = field;
-      control.addEventListener(control.type === "checkbox" || control.tagName === "SELECT" ? "change" : "input", markDirty);
+      control.addEventListener(control.type === "checkbox" || control.classList.contains("custom-picker") ? "change" : "input", markDirty);
     }
     el("save-draft").addEventListener("click", saveDraft);
     el("export-button").addEventListener("click", exportWorkspace);
@@ -758,18 +1381,19 @@
       event.target.value = "";
     });
     el("translation-button").addEventListener("click", showTranslationCandidate);
-    el("close-export").addEventListener("click", () => el("export-dialog").close());
-    el("close-export-footer").addEventListener("click", () => el("export-dialog").close());
-    el("download-export").addEventListener("click", () => {
-      if (!app.candidateDownload) return;
-      downloadJson("mir3-db_names-translation-candidate.json", app.candidateDownload);
-    });
+    el("download-game-names").addEventListener("click", downloadGameNames);
+    el("download-match-manifest").addEventListener("click", downloadMatchManifest);
+    el("close-export").addEventListener("click", closeWorkspaceDialog);
+    el("close-export-footer").addEventListener("click", closeWorkspaceDialog);
+    el("export-backdrop").addEventListener("click", closeWorkspaceDialog);
+    el("download-export").addEventListener("click", runWorkspaceDialogAction);
     if (window.BroadcastChannel) {
       app.broadcast = new BroadcastChannel("mir3-alignment-workspace");
       app.broadcast.onmessage = async event => {
         if (!Number.isInteger(event.data?.revision) || event.data.revision <= app.state.revision) return;
         app.state = await readWorkspace(); refreshStats(); renderRows();
         if (app.selectedId) setStatus("另一标签页已保存工作区；当前记录草稿未覆盖，请比较后再保存。", true);
+        if (app.matchSourceId) renderMatchCandidates();
       };
     }
   }
@@ -813,9 +1437,17 @@
       const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(`${source}\n${hashParts.join("\n")}\n`));
       app.masterHash = [...new Uint8Array(digest)].map(x => x.toString(16).padStart(2, "0")).join("");
       buildIndexes();
+      const rootPath = root.dataset.root || "";
+      const previewUrl = new URL(`${rootPath}/data/alignment/match-preview-index.json`, window.location.href);
+      try { await loadMatchPreviewIndex(previewUrl.href); }
+      catch (error) { app.previewById = new Map(); console.warn("Zircon 候选缩略图不可用：", error.message); }
       try {
         app.database = await openDatabase();
         app.state = await readWorkspace();
+        if (navigator.storage?.persist) {
+          try { app.storagePersistence = await navigator.storage.persist(); }
+          catch { app.storagePersistence = false; }
+        }
         setStatus(`本地工作区已载入 · 修订 ${app.state.revision}`);
       } catch (error) {
         app.database = null;

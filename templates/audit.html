@@ -16,7 +16,7 @@
 
   <div class="audit-notice" role="note">
     <span class="notice-mark" aria-hidden="true">!</span>
-    <p>数据审计与离线导出候选；不是线上写入工具。翻译只在记录明确批准并启用导出后才生成候选文件。当前未授权任何游戏数据自动改写。</p>
+    <p>匹配和草稿逐项立即保存在当前浏览器的 IndexedDB，不会上传；清除浏览器数据或换设备前请先导出工作区。匹配清单可完整导出；已匹配的怪物、物品、技能可合并生成游戏可用的 db_names.json。下载文件不会自动写入网站或游戏仓库。</p>
   </div>
 
   <details id="research-context" class="research-context">
@@ -45,17 +45,29 @@
     <section class="audit-results" aria-label="审计记录">
       <div class="audit-toolbar">
         <label class="audit-search"><span class="kicker">SEARCH</span><input id="search-input" type="search" placeholder="名称、Index、地图、别名或来源 ID" autocomplete="off"></label>
-        <label class="audit-filter"><span class="kicker">STATUS</span><select id="status-filter"><option value="">所有状态</option></select></label>
-        <label class="audit-filter"><span class="kicker">SOURCE</span><select id="source-filter"><option value="">所有来源</option></select></label>
-        <label class="audit-filter"><span class="kicker">SORT</span><select id="sort-select"><option value="index">Index 顺序</option><option value="name">名称</option><option value="status">复核状态</option></select></label>
+        <div class="audit-filter"><span class="kicker">STATUS</span><div id="status-filter" class="custom-picker audit-picker" data-value="" data-placeholder="所有状态" data-picker-label="状态">
+          <button class="custom-picker-trigger" type="button" aria-label="状态筛选" aria-haspopup="listbox" aria-expanded="false" aria-controls="status-filter-options"><span class="custom-picker-current">所有状态</span><span class="custom-picker-arrow" aria-hidden="true">⌄</span></button>
+          <div id="status-filter-options" class="custom-picker-menu" role="listbox" aria-label="状态筛选" hidden></div>
+        </div></div>
+        <div class="audit-filter"><span class="kicker">SOURCE</span><div id="source-filter" class="custom-picker audit-picker" data-value="" data-placeholder="所有来源" data-picker-label="来源">
+          <button class="custom-picker-trigger" type="button" aria-label="来源筛选" aria-haspopup="listbox" aria-expanded="false" aria-controls="source-filter-options"><span class="custom-picker-current">所有来源</span><span class="custom-picker-arrow" aria-hidden="true">⌄</span></button>
+          <div id="source-filter-options" class="custom-picker-menu" role="listbox" aria-label="来源筛选" hidden></div>
+        </div></div>
+        <div class="audit-filter"><span class="kicker">SORT</span><div id="sort-select" class="custom-picker audit-picker" data-value="index" data-placeholder="Index 顺序" data-picker-label="排序">
+          <button class="custom-picker-trigger" type="button" aria-label="排序方式" aria-haspopup="listbox" aria-expanded="false" aria-controls="sort-select-options"><span class="custom-picker-current">Index 顺序</span><span class="custom-picker-arrow" aria-hidden="true">⌄</span></button>
+          <div id="sort-select-options" class="custom-picker-menu" role="listbox" aria-label="排序方式" hidden></div>
+        </div></div>
         <details class="column-picker"><summary>列设置</summary><div id="column-options" class="column-options"></div></details>
       </div>
 
-      <div class="result-bar"><p id="result-summary" role="status" aria-live="polite">读取主数据…</p><div class="result-actions">
+      <div class="result-bar"><p id="result-summary" role="status" aria-live="polite">读取主数据…</p><div id="match-summary" class="match-summary" role="status" aria-live="polite">匹配工作区读取中</div><span id="action-status" class="action-status" role="status" aria-live="polite"></span><div class="result-actions">
+        <button class="button button-quiet" id="match-queue-filter" type="button" aria-pressed="false">仅看待匹配</button>
         <button class="button button-quiet" id="import-button" type="button">导入工作区</button>
         <input id="import-file" type="file" accept="application/json,.json" hidden>
         <button class="button button-quiet" id="export-button" type="button">导出工作区</button>
-        <button class="button button-gold" id="translation-button" type="button">生成翻译候选</button>
+        <button class="button button-quiet" id="download-match-manifest" type="button">导出匹配清单</button>
+        <button class="button button-gold" id="download-game-names" type="button">导出游戏 db_names.json</button>
+        <button class="button button-quiet" id="translation-button" type="button">生成审批翻译候选</button>
       </div></div>
 
       <div id="table-scroll" class="table-scroll">
@@ -79,12 +91,24 @@
       <p class="editor-help">草稿保存在此浏览器的 IndexedDB。冲突、错名和来源分歧都应记录理由；不确定时保留待复核。导出翻译需明确启用，且不会直接写入游戏仓库。</p>
       <div class="editor-grid">
         <label>中文标准名<input id="edit-name" type="text" maxlength="120" autocomplete="off"></label>
-        <label>实体整体判定<select id="edit-overall"><option value="pending_review">待复核</option><option value="pending_evidence">待补证据</option><option value="confirmed">已确认</option><option value="conflict">冲突</option><option value="cross_entity_conflict">跨实体冲突</option><option value="corrected">已更正</option><option value="approved">已批准</option><option value="rejected">不采纳</option></select></label>
-        <label>身份映射<select id="edit-identity"><option value="pending_review">待复核</option><option value="pending_evidence">待补证据</option><option value="candidate">候选</option><option value="source_confirmed">来源确认</option><option value="confirmed">已确认</option><option value="conflict">冲突</option><option value="ambiguous">存在歧义</option><option value="rejected">不采纳</option></select></label>
-        <label>显示名判定<select id="edit-display"><option value="pending_review">待复核</option><option value="pending_evidence">待补证据</option><option value="conflict">冲突</option><option value="display_name_error">显示名错误</option><option value="corrected">已更正</option><option value="approved">已批准</option><option value="rejected">不采纳</option></select></label>
-        <label>资源身份判定<select id="edit-resource"><option value="pending_evidence">待补证据</option><option value="pending_review">待复核</option><option value="candidate">候选</option><option value="confirmed">已确认</option><option value="conflict">冲突</option><option value="not_applicable">不适用</option></select></label>
-        <label>业务数据判定<select id="edit-game-data"><option value="pending_review">待复核</option><option value="pending_evidence">待补证据</option><option value="confirmed">已确认</option><option value="conflict">冲突</option><option value="corrected">已更正</option><option value="rejected">不采纳</option></select></label>
-        <label>关系判定<select id="edit-relations"><option value="pending_review">待复核</option><option value="pending_evidence">待补证据</option><option value="confirmed">已确认</option><option value="conflict">冲突</option><option value="rejected">不采纳</option></select></label>
+        <div class="editor-field"><span id="edit-overall-label" class="editor-field-label">实体整体判定</span><div id="edit-overall" class="custom-picker editor-picker" data-value="pending_review" data-placeholder="待复核" data-picker-label="实体整体判定">
+          <button class="custom-picker-trigger" type="button" aria-labelledby="edit-overall-label" aria-haspopup="listbox" aria-expanded="false" aria-controls="edit-overall-options"><span class="custom-picker-current">待复核</span><span class="custom-picker-arrow" aria-hidden="true">⌄</span></button><div id="edit-overall-options" class="custom-picker-menu" role="listbox" aria-labelledby="edit-overall-label" hidden></div>
+        </div></div>
+        <div class="editor-field"><span id="edit-identity-label" class="editor-field-label">身份映射</span><div id="edit-identity" class="custom-picker editor-picker" data-value="pending_review" data-placeholder="待复核" data-picker-label="身份映射">
+          <button class="custom-picker-trigger" type="button" aria-labelledby="edit-identity-label" aria-haspopup="listbox" aria-expanded="false" aria-controls="edit-identity-options"><span class="custom-picker-current">待复核</span><span class="custom-picker-arrow" aria-hidden="true">⌄</span></button><div id="edit-identity-options" class="custom-picker-menu" role="listbox" aria-labelledby="edit-identity-label" hidden></div>
+        </div></div>
+        <div class="editor-field"><span id="edit-display-label" class="editor-field-label">显示名判定</span><div id="edit-display" class="custom-picker editor-picker" data-value="pending_evidence" data-placeholder="待补证据" data-picker-label="显示名判定">
+          <button class="custom-picker-trigger" type="button" aria-labelledby="edit-display-label" aria-haspopup="listbox" aria-expanded="false" aria-controls="edit-display-options"><span class="custom-picker-current">待补证据</span><span class="custom-picker-arrow" aria-hidden="true">⌄</span></button><div id="edit-display-options" class="custom-picker-menu" role="listbox" aria-labelledby="edit-display-label" hidden></div>
+        </div></div>
+        <div class="editor-field"><span id="edit-resource-label" class="editor-field-label">资源身份判定</span><div id="edit-resource" class="custom-picker editor-picker" data-value="pending_evidence" data-placeholder="待补证据" data-picker-label="资源身份判定">
+          <button class="custom-picker-trigger" type="button" aria-labelledby="edit-resource-label" aria-haspopup="listbox" aria-expanded="false" aria-controls="edit-resource-options"><span class="custom-picker-current">待补证据</span><span class="custom-picker-arrow" aria-hidden="true">⌄</span></button><div id="edit-resource-options" class="custom-picker-menu" role="listbox" aria-labelledby="edit-resource-label" hidden></div>
+        </div></div>
+        <div class="editor-field"><span id="edit-game-data-label" class="editor-field-label">业务数据判定</span><div id="edit-game-data" class="custom-picker editor-picker" data-value="pending_review" data-placeholder="待复核" data-picker-label="业务数据判定">
+          <button class="custom-picker-trigger" type="button" aria-labelledby="edit-game-data-label" aria-haspopup="listbox" aria-expanded="false" aria-controls="edit-game-data-options"><span class="custom-picker-current">待复核</span><span class="custom-picker-arrow" aria-hidden="true">⌄</span></button><div id="edit-game-data-options" class="custom-picker-menu" role="listbox" aria-labelledby="edit-game-data-label" hidden></div>
+        </div></div>
+        <div class="editor-field"><span id="edit-relations-label" class="editor-field-label">关系判定</span><div id="edit-relations" class="custom-picker editor-picker" data-value="pending_review" data-placeholder="待复核" data-picker-label="关系判定">
+          <button class="custom-picker-trigger" type="button" aria-labelledby="edit-relations-label" aria-haspopup="listbox" aria-expanded="false" aria-controls="edit-relations-options"><span class="custom-picker-current">待复核</span><span class="custom-picker-arrow" aria-hidden="true">⌄</span></button><div id="edit-relations-options" class="custom-picker-menu" role="listbox" aria-labelledby="edit-relations-label" hidden></div>
+        </div></div>
         <label class="editor-reason">复核理由<textarea id="edit-reason" rows="3" maxlength="1000"></textarea></label>
         <label class="export-toggle"><input id="edit-export" type="checkbox">允许此记录参与翻译候选</label>
       </div>
@@ -93,7 +117,34 @@
     </section>
   </section>
 
-  <dialog id="export-dialog" class="export-dialog" aria-labelledby="export-dialog-title"><div class="dialog-inner"><button id="close-export" class="dialog-close" type="button" aria-label="关闭">×</button><p class="kicker">OFFLINE EXPORT</p><h2 id="export-dialog-title">离线候选文件</h2><p id="export-message"></p><pre id="export-preview"></pre><div class="dialog-actions"><button id="download-export" class="button button-gold" type="button">下载 JSON</button><button id="close-export-footer" class="button button-quiet" type="button">返回</button></div></div></dialog>
+  <div id="match-backdrop" class="match-backdrop" hidden></div>
+  <aside id="match-drawer" class="match-drawer" hidden role="dialog" aria-modal="true" aria-labelledby="match-drawer-title">
+    <header class="match-drawer-head">
+      <div id="match-source-media" class="match-source-media" aria-hidden="true"></div>
+      <div class="match-drawer-source"><p class="kicker">WEBSITE ENTRY</p><h2 id="match-drawer-title">选择对应的 Zircon 条目</h2><p id="match-source-id" class="match-source-id"></p></div>
+      <button id="match-close" class="button button-quiet match-close" type="button" aria-label="关闭匹配面板">关闭</button>
+    </header>
+    <div class="match-drawer-meta"><span id="match-type-label"></span><span id="match-selection-count"></span></div>
+    <p id="match-drawer-note" class="match-drawer-note"></p>
+    <label class="match-search"><span class="kicker">SEARCH ZIRCON</span><input id="match-search-input" type="search" placeholder="搜英文名、中文名、Index 或别名" autocomplete="off"></label>
+    <div class="match-list-toolbar"><span id="match-candidate-count" aria-live="polite">读取候选…</span><button id="match-selected-filter" class="match-text-toggle" type="button" aria-pressed="false">全部候选</button></div>
+    <div id="match-candidate-list" class="match-candidate-list" role="list" aria-label="Zircon 匹配候选"></div>
+    <div class="match-pager"><button id="match-previous" class="button button-quiet" type="button">上一页</button><span id="match-page-label">—</span><button id="match-next" class="button button-quiet" type="button">下一页</button></div>
+    <footer class="match-drawer-footer"><span id="match-save-status" role="status" aria-live="polite">每次选择会立即保存到此浏览器</span><button id="match-clear" class="button button-quiet" type="button">清除此条匹配</button></footer>
+  </aside>
+
+  <div id="export-backdrop" class="export-backdrop" hidden></div>
+  <section id="export-dialog" class="export-dialog" hidden role="dialog" aria-modal="true" aria-labelledby="export-dialog-title" aria-describedby="export-message" tabindex="-1">
+    <div class="dialog-inner">
+      <button id="close-export" class="dialog-close" type="button" aria-label="关闭">×</button>
+      <p class="kicker">OFFLINE WORKSPACE</p><h2 id="export-dialog-title">离线工作区</h2>
+      <p id="export-message"></p><pre id="export-preview"></pre>
+      <div class="dialog-actions">
+        <button id="download-export" class="button button-gold" type="button">下载 JSON</button>
+        <button id="close-export-footer" class="button button-quiet" type="button">返回</button>
+      </div>
+    </div>
+  </section>
 </section>
-<script src="{{ prefix }}/static/js/alignment.js" defer></script>
+<script type="module" src="{{ prefix }}/static/js/alignment.js?v=20260927-match3"></script>
 {% endblock %}

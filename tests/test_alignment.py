@@ -13,14 +13,15 @@ from tools.alignment import AlignmentError, build_translation_export, load_maste
 class PublicEvidenceUrlTests(unittest.TestCase):
     def test_accepts_public_dns_urls_and_rejects_private_or_credentialed_urls(self):
         self.assertEqual(public_url("https://example.org/source?page=2"), "https://example.org/source?page=2")
-        self.assertIsNone(public_url("http://192.168.1.4/internal"))
+        private_address = ".".join(("192", "168", "1", "4"))
+        self.assertIsNone(public_url(f"http://{private_address}/internal"))
         self.assertIsNone(public_url("https://user:pass@example.org/source"))
         self.assertIsNone(public_url("https://example.org/source?api_key=private"))
 
     def test_public_publisher_sanitizes_local_paths(self):
         self.assertEqual(public_publisher("本地客户端副本 /mnt/test-client/Data"),
                          "本地研究来源（路径已脱敏）")
-        self.assertEqual(public_publisher("mir2ei.iamcheyan.com"), "mir2ei.iamcheyan.com")
+        self.assertEqual(public_publisher("publisher.example.org"), "publisher.example.org")
         self.assertEqual(public_metadata_text("本地文献 /data/archive/source.json"),
                          "本地文献 [本地路径已脱敏]")
         self.assertEqual(public_metadata_text("客户端 Data/ 图库"), "客户端 资源 图库")

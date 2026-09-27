@@ -95,7 +95,7 @@
       "publisher": "本地研究来源（路径已脱敏）",
       "sha256": null,
       "title": "EI 3.0 客户端 资源 图库（Mon-1..16.wil 等 36 个怪物库）",
-      "url": "https://mir3.iamcheyan.com/library.html",
+      "url": null,
       "used_for": [
         "resource-library-scope"
       ]
@@ -183,7 +183,7 @@
       "publisher": null,
       "sha256": null,
       "title": "差异裁剪 · 三版本比对 (MUD3 / mir3ei / Zircon)",
-      "url": "https://mir2ei.iamcheyan.com/diff.html",
+      "url": null,
       "used_for": [
         "version-scope",
         "why-not-*-only"
@@ -193,10 +193,10 @@
       "accessed_at": "2026-09-26T19:00+09:00",
       "bytes": 2845679,
       "id": "mir2ei-wiki-json",
-      "publisher": "mir2ei.iamcheyan.com (GitHub Pages 静态发布)",
+      "publisher": "EI 传奇3.0 百科（发布者标识已脱敏）",
       "sha256": "013fff2fc624b6f3",
       "title": "EI 传奇3.0 百科 · 机器可读数据集 (wiki_data_v2.json)",
-      "url": "https://mir2ei.iamcheyan.com/data/wiki_data_v2.json",
+      "url": null,
       "used_for": [
         "zh-en-dictionary",
         "legacy-version-attestation",
@@ -210,7 +210,7 @@
       "publisher": null,
       "sha256": null,
       "title": "资源库 · EI 客户端 资源 图库清单",
-      "url": "https://mir2ei.iamcheyan.com/library.html",
+      "url": null,
       "used_for": [
         "resource-lib-names"
       ]
@@ -222,7 +222,7 @@
       "publisher": null,
       "sha256": null,
       "title": "怪物图鉴 · EI 传奇3.0 百科",
-      "url": "https://mir2ei.iamcheyan.com/monsters.html",
+      "url": null,
       "used_for": [
         "human-readable-page-for-json-dataset"
       ]
@@ -234,7 +234,7 @@
       "publisher": null,
       "sha256": null,
       "title": "术语表 · EI 传奇3.0 百科 (1701 词条)",
-      "url": "https://mir2ei.iamcheyan.com/terms.html",
+      "url": null,
       "used_for": [
         "zh-en-dictionary"
       ]
@@ -246,7 +246,7 @@
       "publisher": null,
       "sha256": null,
       "title": "传奇三 · 资料 archive（17173 传奇3 专区镜像）",
-      "url": "https://mir3.iamcheyan.com/",
+      "url": null,
       "used_for": [
         "website-side-provenance"
       ]
@@ -258,7 +258,7 @@
       "publisher": "本地研究来源（路径已脱敏）",
       "sha256": null,
       "title": "老版 MUD3 Merchant.txt 商人坐标表（318 条）↔ Zircon NPCInfo(Region 质心)",
-      "url": "https://mir2ei.iamcheyan.com/data/wiki_data_v2.json",
+      "url": null,
       "used_for": [
         "legacy-npc-coord"
       ]
@@ -270,7 +270,7 @@
       "publisher": "本地研究来源（路径已脱敏）",
       "sha256": null,
       "title": "老版 MUD3 monster.dat RaceImg → Zircon Mon-N.Zl 图库/shape 交叉表（本地推导 + 像素复核）",
-      "url": "https://mir3.iamcheyan.com/data/wiki_data_v2.json",
+      "url": null,
       "used_for": [
         "legacy-raceimg-image",
         "identity-without-names"
@@ -330,7 +330,7 @@
     "inputs": [
       {
         "path": "GodotClient/translations/db_names.json",
-        "repository": "iamcheyan/Zircon",
+        "repository": "Zircon",
         "revision": "9555c0c4973b0f7dd885d72eab2cdb3739bc4e13",
         "sha256": "736758509bfed713234b7e1716171f32cdec0c5ef2f81f57074e6fb6e515322a",
         "source_id": "game-translations",
@@ -338,7 +338,7 @@
       },
       {
         "path": "docs/research/ei-ui-layout/artifacts/npc-monster-alignment-2026-09-25/manifest.json",
-        "repository": "iamcheyan/Mir3-Research",
+        "repository": "Mir3-Research",
         "revision": "285d0a5b6e46d2bab3faa8dca0402631f8362557",
         "sha256": "edd9aa75dd2eb774abae9aba51bedd332db9984e46ad7779a5ff667f9b14e6ee",
         "source_id": "npc-monster-2025",
@@ -346,7 +346,7 @@
       },
       {
         "path": "docs/research/ei-ui-layout/artifacts/npc-monster-alignment-2026-09-25/approved-offline-plan.json",
-        "repository": "iamcheyan/Mir3-Research",
+        "repository": "Mir3-Research",
         "revision": "285d0a5b6e46d2bab3faa8dca0402631f8362557",
         "sha256": "a68450609d82554891b2fd93c146eaa08c75e89c0a8317cef08ce23da5fbe005",
         "source_id": "npc-monster-2025-plan",
@@ -354,7 +354,7 @@
       },
       {
         "path": "docs/research/ei-ui-layout/artifacts/npc-monster-alignment-2026-09-25/production-respawn-apply.json",
-        "repository": "iamcheyan/Mir3-Research",
+        "repository": "Mir3-Research",
         "revision": "285d0a5b6e46d2bab3faa8dca0402631f8362557",
         "sha256": "954606e6227b6d3863cf177a2d7d122296651ca03b195f0b82a52bf983713a32",
         "source_id": "npc-monster-2025-production-history",
@@ -362,7 +362,7 @@
       },
       {
         "path": "docs/research/ei-ui-layout/artifacts/npc-monster-alignment-2026-09-25/manual-review-summary.json",
-        "repository": "iamcheyan/Mir3-Research",
+        "repository": "Mir3-Research",
         "revision": "285d0a5b6e46d2bab3faa8dca0402631f8362557",
         "sha256": "fd2b8eb74b5ea92e263066745d63b40ccc82e598c20c58e2b77ce48a865128ca",
         "source_id": "npc-monster-2025-review",
@@ -370,7 +370,7 @@
       },
       {
         "path": "docs/research/ei-ui-layout/artifacts/web-entity-audit-2026-09-26/audit_ledger.tsv",
-        "repository": "iamcheyan/Mir3-Research",
+        "repository": "Mir3-Research",
         "revision": "285d0a5b6e46d2bab3faa8dca0402631f8362557",
         "sha256": "3c9c18ceea7e97833b997985d9f2ddee01b260459e41dec4eb2cb69bf8c9d61c",
         "source_id": "web-audit-ledger",
@@ -378,7 +378,7 @@
       },
       {
         "path": "docs/research/ei-ui-layout/artifacts/web-entity-audit-2026-09-26/search_queries.json",
-        "repository": "iamcheyan/Mir3-Research",
+        "repository": "Mir3-Research",
         "revision": "285d0a5b6e46d2bab3faa8dca0402631f8362557",
         "sha256": "b0cc1ef401d15b317cd375446c511643e3b989565c055d319e191eb1892a5c3f",
         "source_id": "web-audit-queries",
@@ -386,7 +386,7 @@
       },
       {
         "path": "docs/research/ei-ui-layout/artifacts/web-entity-audit-2026-09-26/external_sources.json",
-        "repository": "iamcheyan/Mir3-Research",
+        "repository": "Mir3-Research",
         "revision": "285d0a5b6e46d2bab3faa8dca0402631f8362557",
         "sha256": "e510492865e537683eecd102c13dfb23711623a6ab231c8886cd8b7bf0921729",
         "source_id": "web-audit-sources",
@@ -394,7 +394,7 @@
       },
       {
         "path": "docs/research/ei-ui-layout/artifacts/web-entity-audit-2026-09-26/audit_summary.json",
-        "repository": "iamcheyan/Mir3-Research",
+        "repository": "Mir3-Research",
         "revision": "285d0a5b6e46d2bab3faa8dca0402631f8362557",
         "sha256": "0191dd4a5149ee0d1cb8aed6b6e0f47658a043bbff63187a2bd69dbc2bb4f336",
         "source_id": "web-audit-summary",
@@ -402,7 +402,7 @@
       },
       {
         "path": "docs/research/ei-ui-layout/artifacts/web-entity-audit-2026-09-26/verification.json",
-        "repository": "iamcheyan/Mir3-Research",
+        "repository": "Mir3-Research",
         "revision": "285d0a5b6e46d2bab3faa8dca0402631f8362557",
         "sha256": "17b3e08b094b5675f68b07e46a7cfda68271513e633111a776702edabbbdfbdb",
         "source_id": "web-audit-verification",
@@ -410,7 +410,7 @@
       },
       {
         "path": "docs/research/ei-ui-layout/artifacts/website-alignment-2026-09-26/extension-manifest.json",
-        "repository": "iamcheyan/Mir3-Research",
+        "repository": "Mir3-Research",
         "revision": "285d0a5b6e46d2bab3faa8dca0402631f8362557",
         "sha256": "500b7c2ba4339544898484e07c5676fe786776cb2e700a85f9ff21e933413577",
         "source_id": "website-alignment-extension",
@@ -418,7 +418,7 @@
       },
       {
         "path": "docs/research/ei-ui-layout/artifacts/website-alignment-2026-09-26/extension-verification.json",
-        "repository": "iamcheyan/Mir3-Research",
+        "repository": "Mir3-Research",
         "revision": "285d0a5b6e46d2bab3faa8dca0402631f8362557",
         "sha256": "58ab5e12de1d01a33964c1e969097d3397795bceabbf79f9e91f1a2c7c2003ad",
         "source_id": "website-alignment-extension-verification",
@@ -426,7 +426,7 @@
       },
       {
         "path": "docs/research/ei-ui-layout/artifacts/website-alignment-2026-09-26/item-manifest.json",
-        "repository": "iamcheyan/Mir3-Research",
+        "repository": "Mir3-Research",
         "revision": "285d0a5b6e46d2bab3faa8dca0402631f8362557",
         "sha256": "2b9b40b246e0481dfef52a3fe8be649ee9557a93358100673c59eeb20ff30fba",
         "source_id": "website-alignment-item",
@@ -434,7 +434,7 @@
       },
       {
         "path": "docs/research/ei-ui-layout/artifacts/website-alignment-2026-09-26/manifest.json",
-        "repository": "iamcheyan/Mir3-Research",
+        "repository": "Mir3-Research",
         "revision": "285d0a5b6e46d2bab3faa8dca0402631f8362557",
         "sha256": "55c3663e72c1c7e69939f452701e23b76468b288b65202743e8c5595636218ac",
         "source_id": "website-alignment-manifest",
@@ -442,7 +442,7 @@
       },
       {
         "path": "docs/research/ei-ui-layout/artifacts/website-alignment-2026-09-26/map-ecology-manifest.json",
-        "repository": "iamcheyan/Mir3-Research",
+        "repository": "Mir3-Research",
         "revision": "285d0a5b6e46d2bab3faa8dca0402631f8362557",
         "sha256": "f205b260ef0b41f63fa90d1d2bf1623630aac61909a98e528770f3682db26788",
         "source_id": "website-alignment-map-ecology",
@@ -450,7 +450,7 @@
       },
       {
         "path": "docs/research/ei-ui-layout/artifacts/website-alignment-2026-09-26/map-family-manifest.json",
-        "repository": "iamcheyan/Mir3-Research",
+        "repository": "Mir3-Research",
         "revision": "285d0a5b6e46d2bab3faa8dca0402631f8362557",
         "sha256": "503732c0232271ddb4debd857ede76643ebaac7dceb31a2067cb66120e2af002",
         "source_id": "website-alignment-map-family",
@@ -458,7 +458,7 @@
       },
       {
         "path": "docs/research/ei-ui-layout/artifacts/website-alignment-2026-09-26/mission-cross-reference.json",
-        "repository": "iamcheyan/Mir3-Research",
+        "repository": "Mir3-Research",
         "revision": "285d0a5b6e46d2bab3faa8dca0402631f8362557",
         "sha256": "24017ecd35d82c581ab35ac9580845a40c1b0973837b3e91dd5a49a99f9d1301",
         "source_id": "website-alignment-mission-crossref",
@@ -466,7 +466,7 @@
       },
       {
         "path": "docs/research/ei-ui-layout/artifacts/website-alignment-2026-09-26/npc-manifest.json",
-        "repository": "iamcheyan/Mir3-Research",
+        "repository": "Mir3-Research",
         "revision": "285d0a5b6e46d2bab3faa8dca0402631f8362557",
         "sha256": "2f05430fc763e2604a6415f3e3dd09a1bebf98f9b52aef3317b65622b5817bc1",
         "source_id": "website-alignment-npc",
@@ -474,7 +474,7 @@
       },
       {
         "path": "docs/research/ei-ui-layout/artifacts/website-alignment-2026-09-26/production-apply-evidence-20260926.json",
-        "repository": "iamcheyan/Mir3-Research",
+        "repository": "Mir3-Research",
         "revision": "285d0a5b6e46d2bab3faa8dca0402631f8362557",
         "sha256": "9bdbe3a75b7c5c8d9831a141599836accbb04a2b71f93812b375cef3155e555c",
         "source_id": "website-alignment-production-evidence",
@@ -482,7 +482,7 @@
       },
       {
         "path": "docs/research/ei-ui-layout/artifacts/website-alignment-2026-09-26/final-production-targets-20260926.json",
-        "repository": "iamcheyan/Mir3-Research",
+        "repository": "Mir3-Research",
         "revision": "285d0a5b6e46d2bab3faa8dca0402631f8362557",
         "sha256": "24225ffe16d2b0208ee1b8e93a798dcf9ee065f94d2c553bfdaeff74124abe07",
         "source_id": "website-alignment-production-targets",
@@ -490,7 +490,7 @@
       },
       {
         "path": "docs/research/ei-ui-layout/artifacts/website-alignment-2026-09-26/respawn-manifest.json",
-        "repository": "iamcheyan/Mir3-Research",
+        "repository": "Mir3-Research",
         "revision": "285d0a5b6e46d2bab3faa8dca0402631f8362557",
         "sha256": "d3781f3138bd2123d4d6bdd15801117914aa0d5d339e04f9c10bcaa481e96875",
         "source_id": "website-alignment-respawn",
@@ -498,7 +498,7 @@
       },
       {
         "path": "docs/research/ei-ui-layout/artifacts/website-alignment-2026-09-26/skill-detail-manifest.json",
-        "repository": "iamcheyan/Mir3-Research",
+        "repository": "Mir3-Research",
         "revision": "285d0a5b6e46d2bab3faa8dca0402631f8362557",
         "sha256": "8ff270a21c06ccb6443b7070b539309829cd8e95f9de49108d5f2e7b1f78b767",
         "source_id": "website-alignment-skill-detail",
@@ -506,7 +506,7 @@
       },
       {
         "path": "docs/research/ei-ui-layout/artifacts/website-alignment-2026-09-26/verification.json",
-        "repository": "iamcheyan/Mir3-Research",
+        "repository": "Mir3-Research",
         "revision": "285d0a5b6e46d2bab3faa8dca0402631f8362557",
         "sha256": "9967b687d65d8d46eb9db94ceb8d21f20cafb1e71e0bf8d88baf01f2bfaa181b",
         "source_id": "website-alignment-verification",
@@ -514,7 +514,7 @@
       },
       {
         "path": "data/items.json",
-        "repository": "iamcheyan/mir3-website",
+        "repository": "mir3-website",
         "revision": "5243b2e14251929ed26796d52b2dc53885d8f51a",
         "sha256": "682d8eaf98cb2e9806416d0cd8b60c1a4ae1e3648164156b75154d7c6290c159",
         "source_id": "website-data",
@@ -522,7 +522,7 @@
       },
       {
         "path": "data/maps.json",
-        "repository": "iamcheyan/mir3-website",
+        "repository": "mir3-website",
         "revision": "5243b2e14251929ed26796d52b2dc53885d8f51a",
         "sha256": "a7c142eaff5eace41a1b92028845f81f40eabb9507176435effc5ad63b0e6e0b",
         "source_id": "website-data",
@@ -530,7 +530,7 @@
       },
       {
         "path": "data/missions.json",
-        "repository": "iamcheyan/mir3-website",
+        "repository": "mir3-website",
         "revision": "5243b2e14251929ed26796d52b2dc53885d8f51a",
         "sha256": "6aa03bb8e4f447655c8fa9e9a3babdbf4d2a5387fc82900ebd70c027d4258af8",
         "source_id": "website-data",
@@ -538,7 +538,7 @@
       },
       {
         "path": "data/monsters.json",
-        "repository": "iamcheyan/mir3-website",
+        "repository": "mir3-website",
         "revision": "5243b2e14251929ed26796d52b2dc53885d8f51a",
         "sha256": "bc84872907981f6567cf30d4aa5c3839ac9ec3e7c79f8f7b27530b4d4ed7ba99",
         "source_id": "website-data",
@@ -546,7 +546,7 @@
       },
       {
         "path": "data/skills.json",
-        "repository": "iamcheyan/mir3-website",
+        "repository": "mir3-website",
         "revision": "5243b2e14251929ed26796d52b2dc53885d8f51a",
         "sha256": "8bd461409a1c9cb67a444a672f3cf0811ede6401bc24c311e87a16fd6a1919d4",
         "source_id": "website-data",
@@ -1197,15 +1197,15 @@
     "repositories": {
       "research": {
         "commit": "285d0a5b6e46d2bab3faa8dca0402631f8362557",
-        "name": "iamcheyan/Mir3-Research"
+        "name": "Mir3-Research"
       },
       "website": {
         "commit": "5243b2e14251929ed26796d52b2dc53885d8f51a",
-        "name": "iamcheyan/mir3-website"
+        "name": "mir3-website"
       },
       "zircon": {
         "commit": "9555c0c4973b0f7dd885d72eab2cdb3739bc4e13",
-        "name": "iamcheyan/Zircon",
+        "name": "Zircon",
         "system_database_version": "2026.09.26.4"
       }
     }
@@ -1469,7 +1469,7 @@
       {
         "count": 5408,
         "path": "research_findings.json",
-        "sha256": "b41158ebbc6bd8bb037f06dbb5ee318e1cd0bdce4d7eaa21930da88f64b9b6b0"
+        "sha256": "93a8dda680bdd1973202552716f0b1673a200d12876ab43a093b47879ad85026"
       }
     ],
     "source_observations": [

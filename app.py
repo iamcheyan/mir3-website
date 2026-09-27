@@ -207,11 +207,13 @@ def render_all(data, env):
         shutil.rmtree(DIST_DIR)
     DIST_DIR.mkdir(parents=True)
 
-    # 复制静态资源、版本化对齐主数据与自定义域名配置；构建不读取研究仓库或 System.db。
+    # 复制静态资源、版本化对齐主数据与可选自定义域名配置；构建不读取研究仓库或 System.db。
     shutil.copytree(ROOT / "images", DIST_DIR / "images")
     shutil.copytree(STATIC_DIR, DIST_DIR / "static")
     shutil.copytree(DATA_DIR / "alignment", DIST_DIR / "data" / "alignment")
-    shutil.copy2(ROOT / "CNAME", DIST_DIR / "CNAME")
+    cname = ROOT / "CNAME"
+    if cname.is_file():
+        shutil.copy2(cname, DIST_DIR / "CNAME")
 
     meta = data["meta"]
     stats = meta["stats"]

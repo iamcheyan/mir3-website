@@ -206,8 +206,8 @@ def build(args) -> dict:
     # Commit-pinned, hashed source files. Source paths are repository-relative only.
     site_inputs = ["data/monsters.json", "data/items.json", "data/skills.json", "data/maps.json", "data/missions.json"]
     for rel in site_inputs:
-        add_provenance("website-data", root / rel, "iamcheyan/mir3-website", website_commit, rel)
-    add_provenance("game-translations", db_names_path, "iamcheyan/Zircon", zircon_commit, "GodotClient/translations/db_names.json")
+        add_provenance("website-data", root / rel, "mir3-website", website_commit, rel)
+    add_provenance("game-translations", db_names_path, "Zircon", zircon_commit, "GodotClient/translations/db_names.json")
     research_inputs = [
         ("website-alignment-manifest", "website-alignment-2026-09-26/manifest.json"),
         ("website-alignment-production-targets", "website-alignment-2026-09-26/final-production-targets-20260926.json"),
@@ -233,7 +233,7 @@ def build(args) -> dict:
         ("npc-monster-2025-production-history", "npc-monster-alignment-2026-09-25/production-respawn-apply.json"),
     ]
     for source_id, rel in research_inputs:
-        add_provenance(source_id, research_base / rel, "iamcheyan/Mir3-Research", research_commit,
+        add_provenance(source_id, research_base / rel, "Mir3-Research", research_commit,
                        f"docs/research/ei-ui-layout/artifacts/{rel}")
 
     # Read live SystemDbProbe output generated read-only from System.db.
@@ -933,7 +933,7 @@ def build(args) -> dict:
         "external_sources": sorted(source_registry, key=lambda source: source["id"]),
         "search_queries": search_queries,
         "provenance": {
-            "repositories": {"website": {"name": "iamcheyan/mir3-website", "commit": website_commit}, "zircon": {"name": "iamcheyan/Zircon", "commit": zircon_commit, "system_database_version": db_version}, "research": {"name": "iamcheyan/Mir3-Research", "commit": research_commit}},
+            "repositories": {"website": {"name": "mir3-website", "commit": website_commit}, "zircon": {"name": "Zircon", "commit": zircon_commit, "system_database_version": db_version}, "research": {"name": "Mir3-Research", "commit": research_commit}},
             "inputs": sorted(provenance, key=lambda x: (x["source_id"], x["path"])),
             "policy": "Dated snapshots are source observations, not current truth. Live Zircon tables came from a read-only SystemDbProbe export. Names are never inferred from similarity. No translation is export-approved by default.",
         },

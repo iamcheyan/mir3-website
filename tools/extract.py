@@ -650,7 +650,7 @@ def build_meta(monsters, items, skills, missions, maps):
     return {
         "site": {
             "name": "传奇3 · 资料站",
-            "domain": "https://mir3.iamcheyan.com",
+            "domain": "",
             "copyright": "数据与图片版权归 17173.com 所有 · 本镜像仅供个人研究使用",
         },
         "nav": [
