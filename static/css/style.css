@@ -398,6 +398,13 @@ a.data-card:hover .card-name { color: var(--gold-bright); }
 .zircon-match--conflict { border-color: #d17b69; }
 .zircon-match--conflict .zircon-match-label { color: #e5a092; }
 .zircon-match--unmatched { border-color: #7f8b9b; }
+.zircon-filter { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 16px; margin-top: 12px; }
+.zircon-filter-label { margin-right: 4px; color: var(--text-faint); font: 9px var(--latin); letter-spacing: .13em; }
+.zircon-filter-button { padding: 3px 0; border: 0; border-bottom: 1px solid transparent; color: var(--text-soft); background: transparent; font: 11px var(--sans); cursor: pointer; }
+.zircon-filter-button:hover,.zircon-filter-button:focus-visible { color: var(--gold-bright); }
+.zircon-filter-button.is-active { border-bottom-color: var(--gold); color: var(--gold-bright); }
+.zircon-filter-count { margin-left: auto; color: var(--text-faint); font-size: 10px; white-space: nowrap; }
+.zircon-filter-note { margin: 5px 0 0; color: var(--text-faint); font-size: 9px; line-height: 1.5; }
 
 @media (max-width: 1050px) {
   .audit-toolbar { grid-template-columns: repeat(4,minmax(0,1fr)); }

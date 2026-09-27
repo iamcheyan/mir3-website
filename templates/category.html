@@ -8,6 +8,15 @@
   <h1 class="page-title">{{ title }}</h1>
   <p class="page-desc">{{ desc }}</p>
   <div class="list-search"><label for="page-filter">快速检索</label><div class="search-line"><span aria-hidden="true">⌕</span><input id="page-filter" type="search" class="filter-input" placeholder="在此页内搜索…" autocomplete="off"></div></div>
+  <div class="zircon-filter" role="group" aria-label="按 Zircon 对照状态筛选">
+    <span class="zircon-filter-label">ZIRCON 状态</span>
+    <button type="button" class="zircon-filter-button is-active" data-match-filter="all" aria-pressed="true">全部</button>
+    <button type="button" class="zircon-filter-button" data-match-filter="review" aria-pressed="false">匹配 / 待复核</button>
+    <button type="button" class="zircon-filter-button" data-match-filter="unmatched" aria-pressed="false">未建立匹配</button>
+    <button type="button" class="zircon-filter-button" data-match-filter="unreviewed" aria-pressed="false">无对照记录</button>
+    <span class="zircon-filter-count" aria-live="polite"></span>
+  </div>
+  <p class="zircon-filter-note">“未建立匹配”不代表游戏中不存在；“无对照记录”表示当前审计资料尚无对应条目。</p>
 </div>
 
 {% for g in groups %}
@@ -16,12 +25,12 @@
   <div class="card-grid">
     {% for it in g['items'] %}
     {% if kind == 'map' %}
-    <div class="data-card" data-name="{{ it.title }}">
+    <div class="data-card" data-name="{{ it.title }}" data-zircon-state="{{ it.zircon_match.state }}">
       <div class="card-img map-card-img">{% if it.areas %}<img src="{{ it.areas[0].image|img }}" alt="{{ it.title }}" loading="lazy">{% else %}<span class="img-placeholder">?</span>{% endif %}</div>
       <div class="card-body"><h3 class="card-name">{{ it.title }}</h3>{% set zircon_match = it.zircon_match %}{% include "_zircon_match.html" %}<p class="card-tags"><span class="tag">{{ it.areas|length }} 张地图</span></p><p class="map-card-hint">见页内地图展示</p></div>
     </div>
     {% else %}
-    <a class="data-card" href="{{ prefix }}/{{ kind }}s/{{ it.id }}.html" data-name="{{ it.name }}">
+    <a class="data-card" href="{{ prefix }}/{{ kind }}s/{{ it.id }}.html" data-name="{{ it.name }}" data-zircon-state="{{ it.zircon_match.state }}">
       {% if kind == 'mob' or kind == 'item' or kind == 'skill' %}<div class="card-img">{% if it.image %}<img src="{{ it.image|img }}" alt="{{ it.name }}" loading="lazy">{% else %}<span class="img-placeholder">?</span>{% endif %}</div>{% endif %}
       <div class="card-body">
         <h3 class="card-name">{{ it.name if kind != 'mission' else it.title }}</h3>

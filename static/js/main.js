@@ -5,24 +5,50 @@
 (function () {
   "use strict";
 
-  // 列表页过滤
+  // 列表页检索 + Zircon 对照状态筛选
   var filterInput = document.querySelector(".filter-input");
-  if (filterInput) {
-    filterInput.addEventListener("input", function () {
-      var q = this.value.trim().toLowerCase();
-      var groups = document.querySelectorAll(".group");
-      groups.forEach(function (group) {
-        var cards = group.querySelectorAll(".data-card");
-        var visible = 0;
-        cards.forEach(function (card) {
-          var name = (card.getAttribute("data-name") || "").toLowerCase();
-          var show = !q || name.indexOf(q) !== -1;
-          card.classList.toggle("is-hidden", !show);
-          if (show) visible++;
-        });
+  var filterButtons = document.querySelectorAll("[data-match-filter]");
+  var filterCount = document.querySelector(".zircon-filter-count");
+  if (filterInput || filterButtons.length) {
+    var activeMatchFilter = "all";
+    var cards = Array.prototype.slice.call(document.querySelectorAll(".group .data-card"));
+    var totalCards = cards.length;
+
+    function applyListFilters() {
+      var q = filterInput ? filterInput.value.trim().toLowerCase() : "";
+      var visibleCount = 0;
+      cards.forEach(function (card) {
+        var name = (card.getAttribute("data-name") || "").toLowerCase();
+        var state = card.getAttribute("data-zircon-state") || "unreviewed";
+        var matchesQuery = !q || name.indexOf(q) !== -1;
+        var matchesState = activeMatchFilter === "all"
+          || (activeMatchFilter === "review" && ["matched", "candidate", "conflict"].indexOf(state) !== -1)
+          || (activeMatchFilter === "unmatched" && state === "unmatched")
+          || (activeMatchFilter === "unreviewed" && state === "unreviewed");
+        var show = matchesQuery && matchesState;
+        card.classList.toggle("is-hidden", !show);
+        if (show) visibleCount++;
+      });
+      document.querySelectorAll(".group").forEach(function (group) {
+        var visible = group.querySelectorAll(".data-card:not(.is-hidden)").length;
         group.classList.toggle("empty-group", visible === 0);
       });
+      if (filterCount) filterCount.textContent = "显示 " + visibleCount + " / " + totalCards + " 条";
+    }
+
+    if (filterInput) filterInput.addEventListener("input", applyListFilters);
+    filterButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        activeMatchFilter = button.getAttribute("data-match-filter") || "all";
+        filterButtons.forEach(function (item) {
+          var active = item === button;
+          item.classList.toggle("is-active", active);
+          item.setAttribute("aria-pressed", active ? "true" : "false");
+        });
+        applyListFilters();
+      });
     });
+    applyListFilters();
   }
 
   // 首页全局搜索: 回车跳转
