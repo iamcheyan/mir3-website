@@ -5,7 +5,7 @@ import json
 import tempfile
 from pathlib import Path
 
-from tools.import_alignment import public_url
+from tools.import_alignment import public_url, public_publisher, public_metadata_text
 from tools.alignment import AlignmentError, build_translation_export, load_master, validate_master
 
 
@@ -16,6 +16,13 @@ class PublicEvidenceUrlTests(unittest.TestCase):
         self.assertIsNone(public_url("http://192.168.1.4/internal"))
         self.assertIsNone(public_url("https://user:pass@example.org/source"))
         self.assertIsNone(public_url("https://example.org/source?api_key=private"))
+
+    def test_public_publisher_sanitizes_local_paths(self):
+        self.assertEqual(public_publisher("本地客户端副本 /mnt/test-client/Data"),
+                         "本地研究来源（路径已脱敏）")
+        self.assertEqual(public_publisher("mir2ei.iamcheyan.com"), "mir2ei.iamcheyan.com")
+        self.assertEqual(public_metadata_text("本地文献 /data/archive/source.json"),
+                         "本地文献 [本地路径已脱敏]")
 
 class MasterShardTests(unittest.TestCase):
     def test_sharded_master_loads_in_manifest_order_and_checks_hashes(self):
@@ -139,7 +146,7 @@ class TranslationExportTests(unittest.TestCase):
 
     def test_validator_rejects_unregistered_and_absolute_evidence_sources(self):
         record = entity(1, "Oma")
-        record["evidence"] = [{"source_id": "unregistered", "record": "/home/private/source.json"}]
+        record["evidence"] = [{"source_id": "unregistered", "record": "/data/research-snapshot/input.json"}]
         master = {"schema_version": 1, "entities": [record], "provenance": {"inputs": []}}
 
         errors = validate_master(master)

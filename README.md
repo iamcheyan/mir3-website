@@ -60,7 +60,7 @@ Python 环境需要 Python 3、Flask、Jinja2、BeautifulSoup4 与 lxml。
 
 ## 数据审计台
 
-`/audit/` 对照网站资料、当前 Zircon `System.db` 只读快照与研究证据。主数据为 `data/alignment/master.json` 清单及 `data/alignment/` 中带 SHA-256 的 JSON 分片；游戏实体以 `表名:Index` 作为身份键，网站记录以来源 ID 作为身份键。分片构建时限制单文件不超过 25 MiB，静态托管时浏览器逐片校验摘要与记录数。
+`/audit/` 对照网站资料、当前 Zircon `System.db` 只读快照与研究证据。主数据为 `data/alignment/master.json` 清单及 `data/alignment/` 中带 SHA-256 的 JSON 分片；游戏实体以 `表名:Index` 作为身份键，网站记录以来源 ID 作为身份键。分片构建时限制单文件不超过 25 MiB，静态托管时浏览器逐片校验摘要与记录数。来源元数据会脱敏本地路径，主数据校验拒绝常见 Unix/Windows 本机绝对路径和私网 IP。
 
 ### 生成和校验主数据
 

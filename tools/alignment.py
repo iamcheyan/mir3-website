@@ -12,6 +12,7 @@ from collections import defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+LOCAL_PATH_RE = re.compile(r"(?<![A-Za-z0-9])/(?:home|tmp|Users|private|mnt|var|data|srv|opt|root|etc|Volumes|media|run|proc|dev)/[^\s,;，；)）]+|(?<![A-Za-z0-9])[A-Za-z]:\\(?:[^\\\s]+\\)*[^\\\s]+")
 TYPE_TO_SECTION = {
     "monster": "monsters", "item": "items", "skill": "magics",
     "npc": "npcs", "map": "maps",
@@ -59,7 +60,8 @@ def _scan_public_strings(value, location="$"):
         for index, child in enumerate(value):
             errors.extend(_scan_public_strings(child, f"{location}[{index}]"))
     elif isinstance(value, str):
-        if re.search(r"(?<![A-Za-z0-9])/(?:home|tmp|Users|private|mnt|var/tmp)/", value):
+        path_free = re.sub(r"https?://\S+", "", value, flags=re.I)
+        if LOCAL_PATH_RE.search(path_free):
             errors.append(f"{location}: absolute path must not be published")
         if re.search(r"(?<!\d)(?:10\.\d{1,3}\.\d{1,3}\.\d{1,3}|127\.\d{1,3}\.\d{1,3}\.\d{1,3}|192\.168\.\d{1,3}\.\d{1,3}|172\.(?:1[6-9]|2\d|3[01])\.\d{1,3}\.\d{1,3})(?!\d)", value):
             errors.append(f"{location}: private/local IP address must not be published")

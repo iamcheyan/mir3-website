@@ -14,6 +14,7 @@ from urllib.parse import urlsplit
 import ipaddress
 
 ROOT = Path(__file__).resolve().parents[1]
+LOCAL_PATH_RE = re.compile(r"(?<![A-Za-z0-9])/(?:home|tmp|Users|private|mnt|var|data|srv|opt|root|etc|Volumes|media|run|proc|dev)/[^\s,;，；)）]+|(?<![A-Za-z0-9])[A-Za-z]:\\(?:[^\\\s]+\\)*[^\\\s]+")
 DB_SECTIONS = {
     "monster": ("MonsterInfo", "MonsterName", "monsters"),
     "item": ("ItemInfo", "ItemName", "items"),
@@ -71,6 +72,25 @@ def public_url(value: str) -> str | None:
     if parsed.query and re.search(r"token|secret|key|password|auth", parsed.query, re.I):
         return None
     return value.strip()
+
+
+def public_metadata_text(value: str | None) -> str | None:
+    if not isinstance(value, str):
+        return value
+    parts = re.split(r"(https?://\S+)", value, flags=re.I)
+    for index in range(0, len(parts), 2):
+        parts[index] = LOCAL_PATH_RE.sub("[本地路径已脱敏]", parts[index])
+    return "".join(parts)
+
+
+def public_publisher(value: str | None) -> str | None:
+    if not isinstance(value, str):
+        return value
+    if "本地" in value or public_metadata_text(value) != value:
+        return "本地研究来源（路径已脱敏）"
+    return value
+
+
 def safe_filename(value: str | None) -> str | None:
     if not isinstance(value, str) or not value:
         return None
@@ -601,8 +621,8 @@ def build(args) -> dict:
     for source_id, item in read_json(web_base / "external_sources.json").items():
         source_url = public_url(item.get("url", ""))
         entry = {
-            "id": source_id, "url": source_url, "title": item.get("title"),
-            "publisher": item.get("publisher"), "accessed_at": item.get("accessed_at"),
+            "id": source_id, "url": source_url, "title": public_metadata_text(item.get("title")),
+            "publisher": public_publisher(item.get("publisher")), "accessed_at": item.get("accessed_at"),
             "bytes": item.get("bytes"), "sha256": item.get("sha256"),
             "used_for": item.get("used_for", []),
         }
