@@ -48,6 +48,36 @@ class MasterShardTests(unittest.TestCase):
             with self.assertRaisesRegex(AlignmentError, "digest mismatch"):
                 load_master(base / "master.json")
 
+class SourceConflictFixtureTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        master_path = Path(__file__).resolve().parents[1] / "data/alignment/master.json"
+        cls.master = load_master(master_path)
+        cls.records = {record["id"]: record for record in cls.master["entities"]}
+
+    def test_oma_and_oma_warrior_remain_distinct_with_display_conflicts(self):
+        oma = self.records["monster:zircon:22"]
+        warrior = self.records["monster:zircon:18"]
+        self.assertNotEqual(oma["id"], warrior["id"])
+        self.assertEqual((oma["identity"]["zircon_internal_name"], oma["identity"]["website_name"],
+                          oma["identity"]["current_translation"]["zh"]), ("Oma", "半兽人", "祖玛"))
+        self.assertEqual((warrior["identity"]["zircon_internal_name"], warrior["identity"]["website_name"],
+                          warrior["identity"]["current_translation"]["zh"]), ("Oma Warrior", "半兽战士", "祖玛卫士"))
+        self.assertEqual(oma["assessment"]["overall_status"], "cross_entity_conflict")
+        self.assertEqual(warrior["assessment"]["fields"]["display_name"]["status"], "display_name_error")
+
+    def test_website_zuma_guard_retains_two_candidates_and_ledger_disagreement(self):
+        website = self.records["monster:website:mob-119"]
+        self.assertEqual(website["identity"]["zircon_candidate_indexes"], [78, 80])
+        self.assertEqual(website["relations"]["candidate_entity_ids"],
+                         ["monster:zircon:78", "monster:zircon:80"])
+        candidate_names = {self.records[target]["identity"]["zircon_internal_name"]
+                           for target in website["relations"]["candidate_entity_ids"]}
+        self.assertEqual(candidate_names, {"Zuma Guardian", "Zuma Keeper"})
+        ledger_rows = [finding for finding in self.master["research_findings"]
+                       if website["id"] in finding.get("entity_refs", [])]
+        self.assertEqual([(finding["zircon_index"], finding["direction"]) for finding in ledger_rows], [(78, "both")])
+
 def entity(index, internal_name, *, status="pending_review", export_enabled=False, standard_name=None):
     return {
         "id": f"monster:zircon:{index}",

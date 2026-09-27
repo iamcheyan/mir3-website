@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% block title %}数据审计台 · {{ site.name }}{% endblock %}
+{% block content %}
+<section id="alignment-app" class="alignment-shell" data-master-url="{{ prefix }}/data/alignment/master.json" data-root="{{ prefix }}" aria-labelledby="audit-title">
+  <div class="audit-heading">
+    <div>
+      <p class="kicker">MIR3 · DATA ALIGNMENT / LOCAL REVIEW WORKSPACE</p>
+      <h1 id="audit-title">数据审计台</h1>
+      <p class="audit-intro">网站资料 × Zircon 当前快照 × 研究证据。名称、资源索引与业务数据分栏；待核实项保持待核实。</p>
+    </div>
+    <div class="workspace-stamp" aria-label="本地编辑，不会写入线上数据库">
+      <span class="stamp-dot" aria-hidden="true"></span>
+      <span><strong>本地工作区</strong><small>仅保存在此浏览器 · 公开数据只读</small></span>
+    </div>
+  </div>
+
+  <div class="audit-notice" role="note">
+    <span class="notice-mark" aria-hidden="true">!</span>
+    <p>数据审计与离线导出候选；不是线上写入工具。翻译只在记录明确批准并启用导出后才生成候选文件。当前未授权任何游戏数据自动改写。</p>
+  </div>
+
+  <details id="research-context" class="research-context">
+    <summary><strong>外部来源与检索日志</strong><span id="research-context-summary">读取中</span></summary>
+    <div class="research-context-grid">
+      <section><h2>来源登记</h2><div id="research-source-list" class="research-source-list"></div></section>
+      <section><h2>检索记录</h2><div id="research-query-list" class="research-query-list"></div></section>
+    </div>
+  </details>
+
+  <section class="audit-snapshot" aria-label="数据快照与记录计数">
+    <div class="snapshot-copy"><span class="kicker">SNAPSHOT</span><strong id="snapshot-version">读取中</strong><small id="snapshot-source">正在读取来源清单…</small></div>
+    <div class="snapshot-stat"><span>主数据记录</span><b id="stat-entities">—</b></div>
+    <div class="snapshot-stat"><span>待复核</span><b id="stat-pending">—</b></div>
+    <div class="snapshot-stat"><span>冲突 / 错名</span><b id="stat-conflicts">—</b></div>
+    <div class="snapshot-stat"><span>研究发现</span><b id="stat-findings">—</b></div>
+  </section>
+
+  <div class="audit-workspace">
+    <aside class="audit-sidebar" aria-label="实体类别">
+      <div class="sidebar-heading"><span class="kicker">COLLECTIONS</span><span id="category-total">—</span></div>
+      <nav id="category-nav" class="category-nav" aria-label="筛选实体类别"></nav>
+      <div class="sidebar-help"><strong>身份键</strong><p>游戏实体使用表名 + Index；网站条目使用来源 ID。相同名称不会合并。</p></div>
+    </aside>
+
+    <section class="audit-results" aria-label="审计记录">
+      <div class="audit-toolbar">
+        <label class="audit-search"><span class="kicker">SEARCH</span><input id="search-input" type="search" placeholder="名称、Index、地图、别名或来源 ID" autocomplete="off"></label>
+        <label class="audit-filter"><span class="kicker">STATUS</span><select id="status-filter"><option value="">所有状态</option></select></label>
+        <label class="audit-filter"><span class="kicker">SOURCE</span><select id="source-filter"><option value="">所有来源</option></select></label>
+        <label class="audit-filter"><span class="kicker">SORT</span><select id="sort-select"><option value="index">Index 顺序</option><option value="name">名称</option><option value="status">复核状态</option></select></label>
+        <details class="column-picker"><summary>列设置</summary><div id="column-options" class="column-options"></div></details>
+      </div>
+
+      <div class="result-bar"><p id="result-summary" role="status" aria-live="polite">读取主数据…</p><div class="result-actions">
+        <button class="button button-quiet" id="import-button" type="button">导入工作区</button>
+        <input id="import-file" type="file" accept="application/json,.json" hidden>
+        <button class="button button-quiet" id="export-button" type="button">导出工作区</button>
+        <button class="button button-gold" id="translation-button" type="button">生成翻译候选</button>
+      </div></div>
+
+      <div id="table-scroll" class="table-scroll">
+        <table class="audit-table">
+          <thead><tr id="table-head"></tr></thead>
+          <tbody id="table-body"></tbody>
+        </table>
+      </div>
+      <div id="card-list" class="audit-card-list" aria-label="审计记录卡片"></div>
+      <div class="pager"><button id="previous-page" class="button button-quiet" type="button">上一页</button><span id="page-label">—</span><button id="next-page" class="button button-quiet" type="button">下一页</button></div>
+      <p id="load-error" class="load-error" role="alert" hidden></p>
+    </section>
+  </div>
+
+  <section id="record-detail" class="record-detail" hidden aria-labelledby="detail-title">
+    <div class="detail-heading"><div><p class="kicker">RECORD REVIEW</p><h2 id="detail-title">记录详情</h2><p id="detail-id" class="detail-id"></p></div><button id="close-detail" class="button button-quiet" type="button" aria-label="关闭记录详情">关闭</button></div>
+    <div id="detail-comparison" class="detail-comparison"></div>
+    <div class="detail-lower-grid"><section><h3>结构化游戏数据</h3><pre id="game-data-view"></pre></section><section><h3>关联实体</h3><div id="relations-view" class="relation-list"></div></section></div>
+    <section class="evidence-section"><div class="detail-section-heading"><div><p class="kicker">PROVENANCE</p><h3>来源与研究发现</h3></div><span id="evidence-count"></span></div><div id="evidence-view" class="evidence-list"></div></section>
+    <section class="local-editor"><div class="detail-section-heading"><div><p class="kicker">LOCAL EDITOR</p><h3>本地复核草稿</h3></div><span class="local-only-label">不会上传</span></div>
+      <p class="editor-help">草稿保存在此浏览器的 IndexedDB。冲突、错名和来源分歧都应记录理由；不确定时保留待复核。导出翻译需明确启用，且不会直接写入游戏仓库。</p>
+      <div class="editor-grid">
+        <label>中文标准名<input id="edit-name" type="text" maxlength="120" autocomplete="off"></label>
+        <label>实体整体判定<select id="edit-overall"><option value="pending_review">待复核</option><option value="pending_evidence">待补证据</option><option value="confirmed">已确认</option><option value="conflict">冲突</option><option value="cross_entity_conflict">跨实体冲突</option><option value="corrected">已更正</option><option value="approved">已批准</option><option value="rejected">不采纳</option></select></label>
+        <label>身份映射<select id="edit-identity"><option value="pending_review">待复核</option><option value="pending_evidence">待补证据</option><option value="candidate">候选</option><option value="source_confirmed">来源确认</option><option value="confirmed">已确认</option><option value="conflict">冲突</option><option value="ambiguous">存在歧义</option><option value="rejected">不采纳</option></select></label>
+        <label>显示名判定<select id="edit-display"><option value="pending_review">待复核</option><option value="pending_evidence">待补证据</option><option value="conflict">冲突</option><option value="display_name_error">显示名错误</option><option value="corrected">已更正</option><option value="approved">已批准</option><option value="rejected">不采纳</option></select></label>
+        <label>资源身份判定<select id="edit-resource"><option value="pending_evidence">待补证据</option><option value="pending_review">待复核</option><option value="candidate">候选</option><option value="confirmed">已确认</option><option value="conflict">冲突</option><option value="not_applicable">不适用</option></select></label>
+        <label>业务数据判定<select id="edit-game-data"><option value="pending_review">待复核</option><option value="pending_evidence">待补证据</option><option value="confirmed">已确认</option><option value="conflict">冲突</option><option value="corrected">已更正</option><option value="rejected">不采纳</option></select></label>
+        <label>关系判定<select id="edit-relations"><option value="pending_review">待复核</option><option value="pending_evidence">待补证据</option><option value="confirmed">已确认</option><option value="conflict">冲突</option><option value="rejected">不采纳</option></select></label>
+        <label class="editor-reason">复核理由<textarea id="edit-reason" rows="3" maxlength="1000"></textarea></label>
+        <label class="export-toggle"><input id="edit-export" type="checkbox">允许此记录参与翻译候选</label>
+      </div>
+      <div class="editor-footer"><span id="workspace-status" role="status" aria-live="polite">读取本地工作区…</span><button id="save-draft" class="button button-gold" type="button">保存本地草稿</button></div>
+      <ol id="audit-history" class="audit-history" aria-label="本地修改历史"></ol>
+    </section>
+  </section>
+
+  <dialog id="export-dialog" class="export-dialog" aria-labelledby="export-dialog-title"><div class="dialog-inner"><button id="close-export" class="dialog-close" type="button" aria-label="关闭">×</button><p class="kicker">OFFLINE EXPORT</p><h2 id="export-dialog-title">离线候选文件</h2><p id="export-message"></p><pre id="export-preview"></pre><div class="dialog-actions"><button id="download-export" class="button button-gold" type="button">下载 JSON</button><button id="close-export-footer" class="button button-quiet" type="button">返回</button></div></div></dialog>
+</section>
+<script src="{{ prefix }}/static/js/alignment.js" defer></script>
+{% endblock %}
