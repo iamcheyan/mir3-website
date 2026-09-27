@@ -2,7 +2,7 @@ import {
   MATCH_CONFIG, buildGameNamesExport as createGameNamesExport,
   buildMatchManifest as createMatchManifest, createMatchSelection,
   matchConfigFor, validateWorkspaceBundle, zirconIdentityKey,
-} from "./alignment-workspace.mjs";
+} from "./alignment-workspace.mjs?v=20260927-match5";
 
 (() => {
   "use strict";
@@ -924,7 +924,7 @@ import {
       mission: "任务攻略可能覆盖多个游戏任务，支持多选。QuestInfo 没有统一条目图像时会显示占位；清单会保留每个选择的 Index 与英文任务名。",
       map_group: "网站地图条目是地图集合，支持多选 Zircon MapInfo。缩略图取游戏客户端 MiniMap 帧；该关系导出到匹配清单，不会把集合标题误写成单张地图名。"
     };
-    el("match-drawer-note").textContent = `${notes[source.entity_type] || "选择同类型游戏候选。"} 每次选择都会立即写入此浏览器的 IndexedDB；不上传、不修改网站主数据或游戏文件。`;
+    el("match-drawer-note").textContent = `${notes[source.entity_type] || "选择同类型游戏候选。"} 每次选择都会立即写入此浏览器的 IndexedDB；工作区不会上传或同步到其他设备，也不会修改网站主数据或游戏文件。更换设备或清理站点数据前，请先导出工作区备份。`;
     el("match-drawer").hidden = false;
     el("match-backdrop").hidden = false;
     document.body.classList.add("match-open");

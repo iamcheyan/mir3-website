@@ -165,6 +165,7 @@ export function buildMatchManifest({ masterHash, matches, recordsById, sourceNam
   for (const [sourceId, saved] of Object.entries(matches)) {
     const { source, targets } = validateSavedMatch(sourceId, saved, recordsById);
     rows.push({
+      confirmation_status: "confirmed",
       website: {
         entity_id: source.id,
         entity_type: source.entity_type,

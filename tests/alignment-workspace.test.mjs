@@ -156,6 +156,25 @@ test("match manifest keeps quest攻略 and map集合 as explicit relations, not 
     sourceNameFor: (id) => records.get(id).identity.website_name,
   });
   assert.equal(result.matches.length, 2);
+  assert.deepEqual(result.matches.map((match) => ({
+    confirmation_status: match.confirmation_status,
+    website: { entity_type: match.website.entity_type, source_id: match.website.source_id },
+    zircon: match.zircon.map((target) => ({
+      entity_id: target.entity_id, entity_type: target.entity_type, table: target.table,
+      identity_key: target.identity_key, index: target.index,
+    })),
+  })), [
+    {
+      confirmation_status: "confirmed",
+      website: { entity_type: "map_group", source_id: "world-map" },
+      zircon: [{ entity_id: "map:zircon:3", entity_type: "map", table: "MapInfo", identity_key: "MapInfo:3", index: 3 }],
+    },
+    {
+      confirmation_status: "confirmed",
+      website: { entity_type: "mission", source_id: "mission-training" },
+      zircon: [{ entity_id: "quest:zircon:4", entity_type: "quest", table: "QuestInfo", identity_key: "QuestInfo:4", index: 4 }],
+    },
+  ]);
   assert.equal(result.matches[0].zircon[0].identity_key, "MapInfo:3");
   assert.equal(result.matches[1].zircon[0].identity_key, "QuestInfo:4");
   assert.equal(matchConfigFor(gameRecord("mission:zircon:1", "mission", 1, "Training")), null);
