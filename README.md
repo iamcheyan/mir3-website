@@ -56,7 +56,7 @@ git push
 ```
 
 Python 环境需要 Python 3、Flask、Jinja2、BeautifulSoup4 与 lxml。
-`.github/workflows/pages.yml` 使用 GitHub Pages Actions artifact 部署 `dist/`，不是仓库根目录；`app.py build` 把 `CNAME` 和 `data/alignment/` 一并写入产物。推送 `main` 自动部署；审阅并验证后的其他分支可通过 `workflow_dispatch` 明确触发。
+`.github/workflows/pages.yml` 使用 GitHub Pages Actions artifact 部署 `dist/`，不是仓库根目录；`app.py build` 把 `CNAME` 和 `data/alignment/` 一并写入产物。推送 `main` 或当前功能分支自动部署；其他分支可通过 `workflow_dispatch` 明确触发。
 
 ## 数据审计台
 

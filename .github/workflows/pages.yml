@@ -2,7 +2,7 @@ name: Build and deploy GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [main, feature/data-alignment-audit-20260927]
   workflow_dispatch:
 
 permissions:
