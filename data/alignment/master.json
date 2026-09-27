@@ -8,7 +8,7 @@
       "publisher": null,
       "sha256": null,
       "title": "17173 传奇3 专区 · 3G 江湖任务（王大人任务链，含 NPC 坐标）",
-      "url": null,
+      "url": "https://mir3.17173.com/mission/rw3.htm",
       "used_for": [
         "quest-mapping-attempt",
         "why-not-mir2ei-only"
@@ -21,7 +21,7 @@
       "publisher": null,
       "sha256": "d69aa72c674532f4",
       "title": "17173.com 网络游戏：《传奇3》专区 · 怪物资料",
-      "url": null,
+      "url": "https://mir3.17173.com/mob/mob17.htm",
       "used_for": [
         "website-archive-provenance",
         "legacy-chinese-attestation"
@@ -34,7 +34,7 @@
       "publisher": null,
       "sha256": null,
       "title": "异界神舰 · 传奇3 TAG 标签系统 (17173)",
-      "url": null,
+      "url": "http://mir3.17173.com/tag/%E5%BC%82%E7%95%8C%E7%A5%9E%E8%88%B0",
       "used_for": [
         "family-search-attestation"
       ]
@@ -46,7 +46,7 @@
       "publisher": null,
       "sha256": null,
       "title": "17173.com 网络游戏：《传奇3》专区 · 技能资料",
-      "url": null,
+      "url": "https://mir3.17173.com/skill/skill.htm",
       "used_for": [
         "website-archive-provenance"
       ]
@@ -58,7 +58,7 @@
       "publisher": null,
       "sha256": null,
       "title": "阿修罗神完全解密 · 17173 传奇世界专区 (2005-09-08)",
-      "url": null,
+      "url": "https://woool.17173.com/content/2005-9-8/n308_224251.html",
       "used_for": [
         "family-search-attestation"
       ]
@@ -70,7 +70,7 @@
       "publisher": null,
       "sha256": null,
       "title": "钉耙猫_百度百科",
-      "url": null,
+      "url": "https://baike.baidu.com/item/%E9%92%89%E8%80%99%E7%8C%AB/5630928",
       "used_for": [
         "alias-chain-zh-en",
         "resource-only-candidate"
@@ -83,7 +83,7 @@
       "publisher": null,
       "sha256": null,
       "title": "多钩猫_百度百科",
-      "url": null,
+      "url": "https://baike.baidu.com/item/%E5%A4%9A%E9%92%A9%E7%8C%AB/5630779",
       "used_for": [
         "alias-chain-zh-en"
       ]
@@ -95,7 +95,7 @@
       "publisher": "本地研究来源（路径已脱敏）",
       "sha256": null,
       "title": "EI 3.0 客户端 资源 图库（Mon-1..16.wil 等 36 个怪物库）",
-      "url": null,
+      "url": "https://mir3.iamcheyan.com/library.html",
       "used_for": [
         "resource-library-scope"
       ]
@@ -107,7 +107,7 @@
       "publisher": null,
       "sha256": null,
       "title": "GitHub forks of Suprcode/Zircon (100 newest)",
-      "url": null,
+      "url": "https://api.github.com/repos/Suprcode/Zircon/forks?per_page=100&sort=newest",
       "used_for": [
         "fork-inventory",
         "secondary-evidence-boundary"
@@ -120,7 +120,7 @@
       "publisher": null,
       "sha256": null,
       "title": "Zircon upstream · Client/Envir/Translations/ChineseMessages.cs (82,057 B)",
-      "url": null,
+      "url": "https://raw.githubusercontent.com/Suprcode/Zircon/master/Client/Envir/Translations/ChineseMessages.cs",
       "used_for": [
         "official-en-zh-skill-names"
       ]
@@ -132,7 +132,7 @@
       "publisher": null,
       "sha256": null,
       "title": "Suprcode/Zircon — Legend of Mir 3 server & client (C#)",
-      "url": null,
+      "url": "https://github.com/Suprcode/Zircon",
       "used_for": [
         "upstream-identity",
         "official-zh-strings"
@@ -145,7 +145,7 @@
       "publisher": null,
       "sha256": "6890d8feaabd6473",
       "title": "Monster Database - LOMCN Wiki (Legend of Mir 3)",
-      "url": null,
+      "url": "https://www.lomcn.net/wiki/index.php/Monster_Database",
       "used_for": [
         "wemade-english-name-list",
         "alias-chain"
@@ -158,7 +158,7 @@
       "publisher": null,
       "sha256": null,
       "title": "Zircon Mir3 Files (Open Source) - LOMCN 论坛",
-      "url": null,
+      "url": "https://www.lomcn.net/forum/forums/zircon-mir3-files-open-source.735/",
       "used_for": [
         "naming-provenance",
         "alias-chain"
@@ -171,7 +171,7 @@
       "publisher": null,
       "sha256": null,
       "title": "Zircon - LOMCN Wiki",
-      "url": null,
+      "url": "https://www.lomcn.net/wiki/index.php/Zircon",
       "used_for": [
         "project-provenance"
       ]
@@ -183,7 +183,7 @@
       "publisher": null,
       "sha256": null,
       "title": "差异裁剪 · 三版本比对 (MUD3 / mir3ei / Zircon)",
-      "url": null,
+      "url": "https://mir2ei.iamcheyan.com/diff.html",
       "used_for": [
         "version-scope",
         "why-not-*-only"
@@ -196,7 +196,7 @@
       "publisher": "mir2ei.iamcheyan.com (GitHub Pages 静态发布)",
       "sha256": "013fff2fc624b6f3",
       "title": "EI 传奇3.0 百科 · 机器可读数据集 (wiki_data_v2.json)",
-      "url": null,
+      "url": "https://mir2ei.iamcheyan.com/data/wiki_data_v2.json",
       "used_for": [
         "zh-en-dictionary",
         "legacy-version-attestation",
@@ -210,7 +210,7 @@
       "publisher": null,
       "sha256": null,
       "title": "资源库 · EI 客户端 资源 图库清单",
-      "url": null,
+      "url": "https://mir2ei.iamcheyan.com/library.html",
       "used_for": [
         "resource-lib-names"
       ]
@@ -222,7 +222,7 @@
       "publisher": null,
       "sha256": null,
       "title": "怪物图鉴 · EI 传奇3.0 百科",
-      "url": null,
+      "url": "https://mir2ei.iamcheyan.com/monsters.html",
       "used_for": [
         "human-readable-page-for-json-dataset"
       ]
@@ -234,7 +234,7 @@
       "publisher": null,
       "sha256": null,
       "title": "术语表 · EI 传奇3.0 百科 (1701 词条)",
-      "url": null,
+      "url": "https://mir2ei.iamcheyan.com/terms.html",
       "used_for": [
         "zh-en-dictionary"
       ]
@@ -246,7 +246,7 @@
       "publisher": null,
       "sha256": null,
       "title": "传奇三 · 资料 archive（17173 传奇3 专区镜像）",
-      "url": null,
+      "url": "https://mir3.iamcheyan.com/",
       "used_for": [
         "website-side-provenance"
       ]
@@ -258,7 +258,7 @@
       "publisher": "本地研究来源（路径已脱敏）",
       "sha256": null,
       "title": "老版 MUD3 Merchant.txt 商人坐标表（318 条）↔ Zircon NPCInfo(Region 质心)",
-      "url": null,
+      "url": "https://mir2ei.iamcheyan.com/data/wiki_data_v2.json",
       "used_for": [
         "legacy-npc-coord"
       ]
@@ -270,7 +270,7 @@
       "publisher": "本地研究来源（路径已脱敏）",
       "sha256": null,
       "title": "老版 MUD3 monster.dat RaceImg → Zircon Mon-N.Zl 图库/shape 交叉表（本地推导 + 像素复核）",
-      "url": null,
+      "url": "https://mir3.iamcheyan.com/data/wiki_data_v2.json",
       "used_for": [
         "legacy-raceimg-image",
         "identity-without-names"
@@ -283,7 +283,7 @@
       "publisher": null,
       "sha256": "1c21730f33d8f564",
       "title": "怪物等级排名_传奇三_新浪游戏 (2003-06-18)",
-      "url": null,
+      "url": "https://games.sina.com.cn/z/mir3/2003-06-18/13374.shtml",
       "used_for": [
         "legacy-chinese-attestation",
         "alias-chain"
@@ -296,7 +296,7 @@
       "publisher": null,
       "sha256": null,
       "title": "NPC功能列表_传奇三_新浪游戏 (2003-06-12)",
-      "url": null,
+      "url": "https://games.sina.com.cn/z/mir3/2003-06-12/12217.shtml",
       "used_for": [
         "legacy-npc-coord-corrob"
       ]
@@ -308,7 +308,7 @@
       "publisher": null,
       "sha256": null,
       "title": "怪物资料 - 网络游戏传奇3G_新浪游戏",
-      "url": null,
+      "url": "https://games.sina.com.cn/zhqu/mir3/2/gwzl/",
       "used_for": [
         "legacy-chinese-attestation"
       ]
@@ -320,7 +320,7 @@
       "publisher": null,
       "sha256": null,
       "title": "传奇3光通1.45版：三大职业最详细完美攻略（技能篇）",
-      "url": null,
+      "url": "https://zhuanlan.zhihu.com/p/649403177",
       "used_for": [
         "skill-zh-attestation"
       ]
@@ -515,7 +515,7 @@
       {
         "path": "data/items.json",
         "repository": "iamcheyan/mir3-website",
-        "revision": "02fdb6cd16c8009cf10f3aae6a21327b765a64bd",
+        "revision": "5243b2e14251929ed26796d52b2dc53885d8f51a",
         "sha256": "682d8eaf98cb2e9806416d0cd8b60c1a4ae1e3648164156b75154d7c6290c159",
         "source_id": "website-data",
         "version": null
@@ -523,7 +523,7 @@
       {
         "path": "data/maps.json",
         "repository": "iamcheyan/mir3-website",
-        "revision": "02fdb6cd16c8009cf10f3aae6a21327b765a64bd",
+        "revision": "5243b2e14251929ed26796d52b2dc53885d8f51a",
         "sha256": "a7c142eaff5eace41a1b92028845f81f40eabb9507176435effc5ad63b0e6e0b",
         "source_id": "website-data",
         "version": null
@@ -531,7 +531,7 @@
       {
         "path": "data/missions.json",
         "repository": "iamcheyan/mir3-website",
-        "revision": "02fdb6cd16c8009cf10f3aae6a21327b765a64bd",
+        "revision": "5243b2e14251929ed26796d52b2dc53885d8f51a",
         "sha256": "6aa03bb8e4f447655c8fa9e9a3babdbf4d2a5387fc82900ebd70c027d4258af8",
         "source_id": "website-data",
         "version": null
@@ -539,7 +539,7 @@
       {
         "path": "data/monsters.json",
         "repository": "iamcheyan/mir3-website",
-        "revision": "02fdb6cd16c8009cf10f3aae6a21327b765a64bd",
+        "revision": "5243b2e14251929ed26796d52b2dc53885d8f51a",
         "sha256": "bc84872907981f6567cf30d4aa5c3839ac9ec3e7c79f8f7b27530b4d4ed7ba99",
         "source_id": "website-data",
         "version": null
@@ -547,7 +547,7 @@
       {
         "path": "data/skills.json",
         "repository": "iamcheyan/mir3-website",
-        "revision": "02fdb6cd16c8009cf10f3aae6a21327b765a64bd",
+        "revision": "5243b2e14251929ed26796d52b2dc53885d8f51a",
         "sha256": "8bd461409a1c9cb67a444a672f3cf0811ede6401bc24c311e87a16fd6a1919d4",
         "source_id": "website-data",
         "version": null
@@ -1200,7 +1200,7 @@
         "name": "iamcheyan/Mir3-Research"
       },
       "website": {
-        "commit": "02fdb6cd16c8009cf10f3aae6a21327b765a64bd",
+        "commit": "5243b2e14251929ed26796d52b2dc53885d8f51a",
         "name": "iamcheyan/mir3-website"
       },
       "zircon": {
@@ -1222,19 +1222,27 @@
       "id": "web-query:02",
       "outcome": "命中 17173/新浪/百度百科 传奇3 怪物条目，确认 多钩猫/钉耙猫 等中文名与描述可用于语义映射",
       "query": "传奇3 怪物 名称 中英文对照 Zuma Oma Claw Cat 英文名",
-      "source_refs": []
+      "source_refs": [
+        "sina-mir3g-monster-index"
+      ]
     },
     {
       "id": "web-query:03",
       "outcome": "定位 LOMCN Mir3 怪物数据库（531 行英文名）与 Zircon 开源板块",
       "query": "site:lomcn.net Mir3 Zircon monster list",
-      "source_refs": []
+      "source_refs": [
+        "lomcn-mir3-monster-db",
+        "lomcn-zircon-forum"
+      ]
     },
     {
       "id": "web-query:04",
       "outcome": "确认 多钩猫(钩/hook) 与 钉耙猫(耙/rake) 是两个独立怪物，语义直译对应 HookingCat / RakingCat",
       "query": "传奇3 钉耙猫 多钩猫 怪物 英文名 Raking Cat",
-      "source_refs": []
+      "source_refs": [
+        "baike-dingpamao",
+        "baike-duogoumao"
+      ]
     },
     {
       "id": "web-query:05",
@@ -1252,7 +1260,9 @@
       "id": "web-query:07",
       "outcome": "命中新浪 2003 老版怪物全量排名表，作为老版中文名独立佐证清单",
       "query": "传奇3 怪物 英文名对照表 Wooma WhiteBoar RedMoonEvil 沃玛 白野猪 赤月恶魔",
-      "source_refs": []
+      "source_refs": [
+        "sina-mir3-monster-rank"
+      ]
     },
     {
       "id": "web-query:08",
@@ -1282,19 +1292,26 @@
       "id": "web-query:12",
       "outcome": "命中 17173 技能页与光通 1.45 技能攻略，佐证技能中文名；英文名由 Zircon 官方 ChineseMessages.cs 提供",
       "query": "传奇3 技能 英文名 Dragon Rise 翔空剑法 Blade Storm 十方斩 对照",
-      "source_refs": []
+      "source_refs": [
+        "17173-mir3-skill",
+        "zhihu-mir3-skills"
+      ]
     },
     {
       "id": "web-query:13",
       "outcome": "未找到公开的 RaceImg 交叉表；改为本地推导并用 EI 客户端 Mon-*.wil 与 Zircon Mon-*.Zl 的逐帧尺寸/像素复核验证（8/10 锚点尺寸序列一致）",
       "query": "传奇3 怪物 RaceImg 外观 图库 Mon-1.wil 对照 Zircon",
-      "source_refs": []
+      "source_refs": [
+        "lomcn-mir3-monster-db"
+      ]
     },
     {
       "id": "web-query:14",
       "outcome": "命中 17173 任务攻略页与新浪新手资料：确认资料站 mission 页是「任务攻略文/流程文」，不是任务定义表；王大人任务链在资料站与 Zircon QuestInfo 之间不存在逐条对应",
       "query": "传奇3 任务 名称 列表 万事通 王大人 英文 QuestInfo",
-      "source_refs": []
+      "source_refs": [
+        "17173-mir3-mission"
+      ]
     },
     {
       "id": "web-query:15",
@@ -1306,7 +1323,9 @@
       "id": "web-query:16",
       "outcome": "命中新浪 NPC 功能列表与官方 NPC 坐标指引；取得老版 NPC 中文名+坐标，与 MUD3 Merchant.txt 坐标通道互证",
       "query": "传奇3 NPC 商人 名称 列表 铁匠 药剂师 书店 中文",
-      "source_refs": []
+      "source_refs": [
+        "sina-mir3-npc-list"
+      ]
     },
     {
       "id": "web-query:17",
@@ -1318,25 +1337,33 @@
       "id": "web-query:18",
       "outcome": "确认「修罗」为传奇系后期内容（修罗神殿/阿修罗神），Zircon 的 Xiuluo Warrior/Mage/Taoist 属该族；不判为 Zircon 独创",
       "query": "传奇3 修罗 修罗战士 修罗法师 修罗道士 怪物 地图",
-      "source_refs": []
+      "source_refs": [
+        "17173-woool-xiuluo"
+      ]
     },
     {
       "id": "web-query:19",
       "outcome": "确认「异界神舰」为 1.45 沙漠随机出现的地图（35 级支线），其怪物含轻甲守卫/霸王幽灵；Zircon 的 Otherworld Guardian 系属该图内容",
       "query": "传奇3 异界 异界守护者 异界红衣法师 怪物 名称",
-      "source_refs": []
+      "source_refs": [
+        "17173-mir3-otherworld"
+      ]
     },
     {
       "id": "web-query:20",
       "outcome": "命中新浪 2003 怪物排名与怪物分布表；确认「护法天/护法」为老版怪物族，Zircon 的 Guardian * Disciple 为同族重命名",
       "query": "传奇3 护法 护法剑徒 护法法师 怪物 名称",
-      "source_refs": []
+      "source_refs": [
+        "sina-mir3-monster-rank"
+      ]
     },
     {
       "id": "web-query:21",
       "outcome": "确认这些名字都在老版怪物排名表/BOSS 表里（八脚首领、疯狂魔神盗、恶性怪、洞穴蜈蚣、白眼钳虫均为老版怪物）；因此不能判为 mir2ei 独有",
       "query": "传奇3 八脚首领 疯狂魔神盗 恶性怪 洞穴蜈蚣 白眼钳虫 怪物",
-      "source_refs": []
+      "source_refs": [
+        "sina-mir3-monster-rank"
+      ]
     },
     {
       "id": "web-query:22",
@@ -1442,7 +1469,7 @@
       {
         "count": 5408,
         "path": "research_findings.json",
-        "sha256": "0407cd3854929844433c77ace31f0c3871b12b935d18de7dcd4b3d47d54bcf36"
+        "sha256": "b41158ebbc6bd8bb037f06dbb5ee318e1cd0bdce4d7eaa21930da88f64b9b6b0"
       }
     ],
     "source_observations": [

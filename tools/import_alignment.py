@@ -55,11 +55,15 @@ def public_url(value: str) -> str | None:
     try:
         parsed = urlsplit(value.strip())
         host = parsed.hostname
-        address = ipaddress.ip_address(host) if host else None
+        parsed.port
     except ValueError:
         return None
     if parsed.scheme not in {"http", "https"} or not host or parsed.username or parsed.password:
         return None
+    try:
+        address = ipaddress.ip_address(host)
+    except ValueError:
+        address = None
     if address and not address.is_global:
         return None
     if not address and (host.casefold() in {"localhost", "localhost.localdomain"} or host.casefold().endswith((".local", ".lan", ".internal", ".home"))):

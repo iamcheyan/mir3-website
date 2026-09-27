@@ -5,8 +5,17 @@ import json
 import tempfile
 from pathlib import Path
 
+from tools.import_alignment import public_url
 from tools.alignment import AlignmentError, build_translation_export, load_master, validate_master
 
+
+
+class PublicEvidenceUrlTests(unittest.TestCase):
+    def test_accepts_public_dns_urls_and_rejects_private_or_credentialed_urls(self):
+        self.assertEqual(public_url("https://example.org/source?page=2"), "https://example.org/source?page=2")
+        self.assertIsNone(public_url("http://192.168.1.4/internal"))
+        self.assertIsNone(public_url("https://user:pass@example.org/source"))
+        self.assertIsNone(public_url("https://example.org/source?api_key=private"))
 
 class MasterShardTests(unittest.TestCase):
     def test_sharded_master_loads_in_manifest_order_and_checks_hashes(self):
