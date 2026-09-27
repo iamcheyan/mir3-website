@@ -48,12 +48,42 @@ python app.py build              # 生成 dist/
 # 3. 本地预览(可选, Flask 动态渲染)
 python app.py serve 5000
 
-# 4. 部署: 同步 dist 内容到仓库根并推送
-cp -r dist/index.html dist/mobs dist/items dist/skills dist/missions dist/maps dist/static ./
-git add -A && git commit -m "..." && git push origin main
+# 4. 本地可选同步 dist/ 到根目录,与 Pages workflow 的产物保持一致
+cp -r dist/index.html dist/mobs dist/items dist/skills dist/missions dist/maps dist/audit dist/data dist/images dist/static dist/CNAME ./
+git add index.html mobs items skills missions maps audit data images static CNAME
+git commit -m "..."
+git push
 ```
 
-Python 环境:`[本地路径已脱敏] flask / jinja2 / beautifulsoup4 / lxml)。
+Python 环境需要 Python 3、Flask、Jinja2、BeautifulSoup4 与 lxml。
+`.github/workflows/pages.yml` 使用 GitHub Pages Actions artifact 部署 `dist/`，不是仓库根目录；`app.py build` 把 `CNAME` 和 `data/alignment/` 一并写入产物。推送 `main` 自动部署；审阅并验证后的其他分支可通过 `workflow_dispatch` 明确触发。
+
+## 数据审计台
+
+`/audit/` 对照网站资料、当前 Zircon `System.db` 只读快照与研究证据。主数据为 `data/alignment/master.json` 清单及 `data/alignment/` 中带 SHA-256 的 JSON 分片；游戏实体以 `表名:Index` 作为身份键，网站记录以来源 ID 作为身份键。分片构建时限制单文件不超过 25 MiB，静态托管时浏览器逐片校验摘要与记录数。
+
+### 生成和校验主数据
+
+只从明确授权的只读 `SystemDbProbe` 导出和本地研究仓库生成；导入脚本不连接或修改 `System.db`：
+
+```bash
+python3 tools/import_alignment.py \\
+  --system-snapshot "$SYSTEM_DB_READ_ONLY_EXPORT" \\
+  --research "$MIR3_RESEARCH_CHECKOUT" \\
+  --zircon "$ZIRCON_CHECKOUT" \\
+  --db-names "$ZIRCON_CHECKOUT/GodotClient/translations/db_names.json"
+python3 tools/alignment.py validate data/alignment/master.json
+python3 app.py build
+```
+
+游戏名称候选默认零批准。离线导出需先在审计台本地逐条确认身份、显示名、理由及导出开关；导出工具读取基线并把 JSON 候选、差异与回滚清单写到站点和 Zircon 仓库之外。不会自动提交、修改 Zircon 或触碰生产数据。
+
+### 本地工作区与发布边界
+
+- 复核草稿和历史仅保存在当前浏览器 IndexedDB；使用“导出工作区”备份 JSON，导入时要求主数据 SHA-256 完全一致，并验证字段、状态和实体 ID。
+- 公开主数据保持只读。浏览器草稿不会同步到服务器、其他浏览器或线上数据库。
+- 现有发布资源中未发现受保护的在线编辑 API / Worker / 管理后台与获准写入凭据；因此生产在线编辑和 GitHub 自动写入处于 **BLOCKED**。启用前必须配置受 Cloudflare Access 保护的服务端写入端点、专用最小权限 GitHub App 凭据（仅由服务端保管）、受保护分支 / PR 审核流程及明确授权的审阅者；不得把令牌放进静态站点。
+- 无线上写入端点前，只发布只读审计页面；不要把浏览器 IndexedDB 当作共享或持久化生产存储。
 
 ## 页面结构
 
@@ -65,6 +95,7 @@ Python 环境:`[本地路径已脱敏] flask / jinja2 / beautifulsoup4 / lxml)�
 | 技能资料 | `skills/index.html`, 详情 `skills/skill-*.html` |
 | 任务攻略 | `missions/index.html`, 详情 `missions/mission-*.html` |
 | 地图资料 | `maps/index.html` |
+| 数据审计与本地复核 | `audit/index.html` |
 
 ## 图片路径方案
 

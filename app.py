@@ -42,6 +42,7 @@ NAV = [
     ("技能资料", "skills/index.html", "skills"),
     ("任务攻略", "missions/index.html", "missions"),
     ("地图资料", "maps/index.html", "maps"),
+    ("数据审计", "audit/index.html", "audit"),
 ]
 
 
@@ -125,15 +126,23 @@ def item_props(item):
 # ---------------------------------------------------------------------------
 
 def render_all(data, env):
-    """渲染全部页面到 DIST_DIR。"""
+    """Validate the canonical alignment bundle, then render and sync deployable output."""
+    from tools.alignment import load_master, validate_master
+
+    master_path = DATA_DIR / "alignment" / "master.json"
+    master = load_master(master_path)
+    errors = validate_master(master)
+    if errors:
+        raise ValueError("对齐主数据校验失败:\n" + "\n".join(errors[:30]))
     if DIST_DIR.exists():
         shutil.rmtree(DIST_DIR)
     DIST_DIR.mkdir(parents=True)
 
-    # 复制静态资源
+    # 复制静态资源、版本化对齐主数据与自定义域名配置；构建不读取研究仓库或 System.db。
     shutil.copytree(ROOT / "images", DIST_DIR / "images")
     shutil.copytree(STATIC_DIR, DIST_DIR / "static")
-    # 首页需要的 CNAME 由仓库根保留, dist 不需要
+    shutil.copytree(DATA_DIR / "alignment", DIST_DIR / "data" / "alignment")
+    shutil.copy2(ROOT / "CNAME", DIST_DIR / "CNAME")
 
     meta = data["meta"]
     stats = meta["stats"]
@@ -145,6 +154,10 @@ def render_all(data, env):
         p = DIST_DIR / name
         p.parent.mkdir(parents=True, exist_ok=True)
         p.write_text(out, encoding="utf-8")
+        if name == "audit/index.html":
+            root_page = ROOT / name
+            root_page.parent.mkdir(parents=True, exist_ok=True)
+            root_page.write_text(out, encoding="utf-8")
 
     # ---------- 首页 ----------
     render("index.html", "index.html", {
@@ -152,6 +165,8 @@ def render_all(data, env):
         "stats": stats,
         "cats": meta["categories"],
     })
+    # ---------- 数据审计台 ----------
+    render("audit.html", "audit/index.html", page_ctx(data, "audit", ".."))
 
     # ---------- 怪物 ----------
     mobs = data["monsters"]
@@ -381,6 +396,14 @@ def cmd_serve(port=5000):
             "groups": [{"name": "地图", "items": data["maps"]}], "kind": "map",
         })
 
+    @app.get("/audit/")
+    @app.get("/audit/index.html")
+    def audit_page():
+        return render_named("audit.html", "audit", page_ctx(data, "audit", ".."))
+
+    @app.get("/data/<path:path>")
+    def data_files(path):
+        return send_from_directory(str(DATA_DIR), path)
     @app.get("/images/<path:path>")
     def images(path):
         return send_from_directory(str(ROOT / "images"), path)
