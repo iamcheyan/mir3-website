@@ -1,0 +1,6 @@
+{% if zircon_match %}
+<div class="zircon-match zircon-match--{{ zircon_match.state }}" aria-label="Zircon：{{ zircon_match.label }}">
+  <span class="zircon-match-label">Zircon：{{ zircon_match.label }}</span>
+  {% if zircon_match.details %}<span class="zircon-match-details">{{ zircon_match.details|join(' · ') }}</span>{% endif %}
+</div>
+{% endif %}

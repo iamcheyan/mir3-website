@@ -50,18 +50,87 @@ NAV = [
 # 数据加载
 # ---------------------------------------------------------------------------
 
+def _zircon_match_index():
+    """Index website-origin alignment records by their stable source ID."""
+    master_path = DATA_DIR / "alignment" / "master.json"
+    master = json.loads(master_path.read_text(encoding="utf-8"))
+    records = {}
+    for shard in master.get("shards", {}).get("entities", []):
+        path = DATA_DIR / "alignment" / shard["path"]
+        for entity in json.loads(path.read_text(encoding="utf-8")):
+            identity = entity.get("identity") or {}
+            source_id = identity.get("website_source_id")
+            if source_id:
+                records[source_id] = entity
+    return records
+
+
+def _match_badge(entity):
+    """Summarize evidence without treating an unreviewed candidate as confirmed."""
+    if not entity:
+        return {"label": "尚无对照记录", "state": "unreviewed", "details": []}
+    identity = entity.get("identity") or {}
+    assessment = entity.get("assessment") or {}
+    status = assessment.get("overall_status", "pending_review")
+    indexes = []
+    direct = identity.get("zircon_index")
+    if isinstance(direct, int):
+        indexes.append(direct)
+    indexes.extend(i for i in identity.get("zircon_candidate_indexes", [])
+                   if isinstance(i, int) and i not in indexes)
+    names = []
+    if identity.get("zircon_internal_name"):
+        names.append(str(identity["zircon_internal_name"]))
+    for name in identity.get("zircon_candidate_names", []):
+        if name and str(name) not in names:
+            names.append(str(name))
+    if status in {"conflict", "cross_entity_conflict", "ambiguous"}:
+        label, state = "存在冲突 · 待复核", "conflict"
+    elif direct is not None and status in {"confirmed", "approved", "corrected"}:
+        label, state = "已确认匹配", "matched"
+    elif indexes:
+        label, state = "有 Zircon 候选 · 待复核", "candidate"
+    else:
+        label, state = "尚未建立匹配 · 待核对", "unmatched"
+    details = [f"Index {i}" for i in indexes]
+    details.extend(names)
+    current = identity.get("current_game_name")
+    if current and current not in names:
+        details.append(f"游戏当前名：{current}")
+    return {"label": label, "state": state, "details": details}
+
+
 def load_data():
-    """读取全部 data/*.json, 为缺失 id 的数据补稳定 id。"""
+    """Read site data and attach conservative Zircon cross-reference summaries."""
     out = {}
     for name in ("monsters", "items", "skills", "missions", "maps", "meta"):
         p = DATA_DIR / f"{name}.json"
         out[name] = json.loads(p.read_text(encoding="utf-8"))
-    # 详情页 URL 依赖稳定 id: 缺失时按数据顺序补 {type}-{index}
     id_keys = {"monsters": "mob", "items": "item", "skills": "skill",
                "missions": "mission", "maps": "map"}
     for name, prefix in id_keys.items():
         for i, it in enumerate(out[name]):
             it.setdefault("id", f"{prefix}-{i}")
+
+    crossrefs = _zircon_match_index()
+    for it in out["monsters"]:
+        record = crossrefs.get(it["id"])
+        it["zircon_match"] = _match_badge(record)
+    for it in out["items"]:
+        source_id = f"item-{it.get('category', '')}-{it.get('name', '')}"
+        it["zircon_match"] = _match_badge(crossrefs.get(source_id))
+    for it in out["skills"] + out["missions"]:
+        it["zircon_match"] = _match_badge(crossrefs.get(it["id"]))
+    for group in out["maps"]:
+        record = crossrefs.get(group["id"])
+        it = _match_badge(record)
+        identity = (record or {}).get("identity") or {}
+        candidate_areas = identity.get("zircon_candidate_indexes", [])
+        if candidate_areas:
+            it["details"] = [f"候选 MapInfo Index：{', '.join(map(str, candidate_areas))}"]
+        elif record:
+            it["details"] = ["网站地图是区域集合；游戏侧按单张地图记录，需逐区域核对。"]
+        group["zircon_match"] = it
     return out
 
 

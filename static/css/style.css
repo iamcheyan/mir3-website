@@ -388,6 +388,17 @@ a.data-card:hover .card-name { color: var(--gold-bright); }
 .research-source-card p { margin: 0; color: var(--text-soft); font-size: 9px; }
 .research-source-card .evidence-ref,.research-query-card .evidence-ref { overflow-wrap: anywhere; }
 
+.zircon-match { display: grid; gap: 3px; margin: 8px 0; padding: 6px 8px; border-left: 2px solid var(--line); background: rgba(15,21,31,.56); }
+.zircon-match-label { color: var(--text-soft); font-size: 10px; line-height: 1.45; }
+.zircon-match-details { color: var(--text-faint); font-size: 9px; line-height: 1.45; overflow-wrap: anywhere; }
+.zircon-match--matched { border-color: #7eb89a; }
+.zircon-match--matched .zircon-match-label { color: #a6d5b8; }
+.zircon-match--candidate { border-color: #c3a66c; }
+.zircon-match--candidate .zircon-match-label { color: #e0c387; }
+.zircon-match--conflict { border-color: #d17b69; }
+.zircon-match--conflict .zircon-match-label { color: #e5a092; }
+.zircon-match--unmatched { border-color: #7f8b9b; }
+
 @media (max-width: 1050px) {
   .audit-toolbar { grid-template-columns: repeat(4,minmax(0,1fr)); }
   .audit-search { grid-column: 1 / -1; }
