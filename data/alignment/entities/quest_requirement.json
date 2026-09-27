@@ -1,0 +1,2092 @@
+[
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=101",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 47,
+        "Name": "Isaac's Journal is missing"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:101",
+    "identity": {
+      "zircon_index": 101
+    },
+    "relations": {
+      "quest_id": "quest:zircon:47"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=103",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 48,
+        "Name": "Henry's Journal is missing"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:103",
+    "identity": {
+      "zircon_index": 103
+    },
+    "relations": {
+      "quest_id": "quest:zircon:48"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=106",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 50,
+        "Name": "Are they in Bichon Yeti?"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:106",
+    "identity": {
+      "zircon_index": 106
+    },
+    "relations": {
+      "quest_id": "quest:zircon:50"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=108",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 51,
+        "Name": "Are they in Banya Yeti?"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:108",
+    "identity": {
+      "zircon_index": 108
+    },
+    "relations": {
+      "quest_id": "quest:zircon:51"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=110",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 4,
+      "Requirement": "MinLevel"
+    },
+    "id": "quest_requirement:zircon:110",
+    "identity": {
+      "zircon_index": 110
+    },
+    "relations": {
+      "quest_id": "quest:zircon:50"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=111",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 4,
+      "Requirement": "MinLevel"
+    },
+    "id": "quest_requirement:zircon:111",
+    "identity": {
+      "zircon_index": 111
+    },
+    "relations": {
+      "quest_id": "quest:zircon:51"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=112",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 52,
+        "Name": "Are they in Lost Paradise Yeti?"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:112",
+    "identity": {
+      "zircon_index": 112
+    },
+    "relations": {
+      "quest_id": "quest:zircon:52"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=114",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 4,
+      "Requirement": "MinLevel"
+    },
+    "id": "quest_requirement:zircon:114",
+    "identity": {
+      "zircon_index": 114
+    },
+    "relations": {
+      "quest_id": "quest:zircon:52"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=115",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 53,
+        "Name": "Feeding Bichon Town"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:115",
+    "identity": {
+      "zircon_index": 115
+    },
+    "relations": {
+      "quest_id": "quest:zircon:53"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=117",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 54,
+        "Name": "Feeding Banya Village"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:117",
+    "identity": {
+      "zircon_index": 117
+    },
+    "relations": {
+      "quest_id": "quest:zircon:54"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=119",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 55,
+        "Name": "Feeding Lost Paradise"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:119",
+    "identity": {
+      "zircon_index": 119
+    },
+    "relations": {
+      "quest_id": "quest:zircon:55"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=121",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 56,
+        "Name": "Descent into Darkness Pt. 1"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:121",
+    "identity": {
+      "zircon_index": 121
+    },
+    "relations": {
+      "quest_id": "quest:zircon:56"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=122",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 14,
+      "Requirement": "MinLevel"
+    },
+    "id": "quest_requirement:zircon:122",
+    "identity": {
+      "zircon_index": 122
+    },
+    "relations": {
+      "quest_id": "quest:zircon:56"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=123",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 57,
+        "Name": "Descent into Darkness Pt. 2"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:123",
+    "identity": {
+      "zircon_index": 123
+    },
+    "relations": {
+      "quest_id": "quest:zircon:57"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=124",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 56,
+        "Name": "Descent into Darkness Pt. 1"
+      },
+      "Requirement": "HaveCompleted"
+    },
+    "id": "quest_requirement:zircon:124",
+    "identity": {
+      "zircon_index": 124
+    },
+    "relations": {
+      "quest_id": "quest:zircon:57"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=125",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 58,
+        "Name": "Descent into Darkness Pt. 3"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:125",
+    "identity": {
+      "zircon_index": 125
+    },
+    "relations": {
+      "quest_id": "quest:zircon:58"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=126",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 57,
+        "Name": "Descent into Darkness Pt. 2"
+      },
+      "Requirement": "HaveCompleted"
+    },
+    "id": "quest_requirement:zircon:126",
+    "identity": {
+      "zircon_index": 126
+    },
+    "relations": {
+      "quest_id": "quest:zircon:58"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=127",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 59,
+        "Name": "Descent into Darkness Pt. 4"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:127",
+    "identity": {
+      "zircon_index": 127
+    },
+    "relations": {
+      "quest_id": "quest:zircon:59"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=128",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 58,
+        "Name": "Descent into Darkness Pt. 3"
+      },
+      "Requirement": "HaveCompleted"
+    },
+    "id": "quest_requirement:zircon:128",
+    "identity": {
+      "zircon_index": 128
+    },
+    "relations": {
+      "quest_id": "quest:zircon:59"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=129",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 60,
+        "Name": "Wolves in Lost Paradise"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:129",
+    "identity": {
+      "zircon_index": 129
+    },
+    "relations": {
+      "quest_id": "quest:zircon:60"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=131",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 5,
+      "Requirement": "MinLevel"
+    },
+    "id": "quest_requirement:zircon:131",
+    "identity": {
+      "zircon_index": 131
+    },
+    "relations": {
+      "quest_id": "quest:zircon:60"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=132",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 61,
+        "Name": "Wolves in Bichon"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:132",
+    "identity": {
+      "zircon_index": 132
+    },
+    "relations": {
+      "quest_id": "quest:zircon:61"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=134",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 5,
+      "Requirement": "MinLevel"
+    },
+    "id": "quest_requirement:zircon:134",
+    "identity": {
+      "zircon_index": 134
+    },
+    "relations": {
+      "quest_id": "quest:zircon:61"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=135",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 62,
+        "Name": "Wolves in Banya"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:135",
+    "identity": {
+      "zircon_index": 135
+    },
+    "relations": {
+      "quest_id": "quest:zircon:62"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=137",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 5,
+      "Requirement": "MinLevel"
+    },
+    "id": "quest_requirement:zircon:137",
+    "identity": {
+      "zircon_index": 137
+    },
+    "relations": {
+      "quest_id": "quest:zircon:62"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=148",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 63,
+        "Name": "望海楼之约（战士）"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:148",
+    "identity": {
+      "zircon_index": 148
+    },
+    "relations": {
+      "quest_id": "quest:zircon:63"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=149",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "Warrior",
+      "IntParameter1": 0,
+      "Requirement": "Class"
+    },
+    "id": "quest_requirement:zircon:149",
+    "identity": {
+      "zircon_index": 149
+    },
+    "relations": {
+      "quest_id": "quest:zircon:63"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=150",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 13,
+      "Requirement": "MinLevel"
+    },
+    "id": "quest_requirement:zircon:150",
+    "identity": {
+      "zircon_index": 150
+    },
+    "relations": {
+      "quest_id": "quest:zircon:63"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=151",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 64,
+        "Name": "望海楼之约（法师）"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:151",
+    "identity": {
+      "zircon_index": 151
+    },
+    "relations": {
+      "quest_id": "quest:zircon:64"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=152",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "Wizard",
+      "IntParameter1": 0,
+      "Requirement": "Class"
+    },
+    "id": "quest_requirement:zircon:152",
+    "identity": {
+      "zircon_index": 152
+    },
+    "relations": {
+      "quest_id": "quest:zircon:64"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=153",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 13,
+      "Requirement": "MinLevel"
+    },
+    "id": "quest_requirement:zircon:153",
+    "identity": {
+      "zircon_index": 153
+    },
+    "relations": {
+      "quest_id": "quest:zircon:64"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=154",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 65,
+        "Name": "望海楼之约（道士）"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:154",
+    "identity": {
+      "zircon_index": 154
+    },
+    "relations": {
+      "quest_id": "quest:zircon:65"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=155",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "Taoist",
+      "IntParameter1": 0,
+      "Requirement": "Class"
+    },
+    "id": "quest_requirement:zircon:155",
+    "identity": {
+      "zircon_index": 155
+    },
+    "relations": {
+      "quest_id": "quest:zircon:65"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=156",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 13,
+      "Requirement": "MinLevel"
+    },
+    "id": "quest_requirement:zircon:156",
+    "identity": {
+      "zircon_index": 156
+    },
+    "relations": {
+      "quest_id": "quest:zircon:65"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=157",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 66,
+        "Name": "刺杀剑术觉醒"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:157",
+    "identity": {
+      "zircon_index": 157
+    },
+    "relations": {
+      "quest_id": "quest:zircon:66"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=158",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "Warrior",
+      "IntParameter1": 0,
+      "Requirement": "Class"
+    },
+    "id": "quest_requirement:zircon:158",
+    "identity": {
+      "zircon_index": 158
+    },
+    "relations": {
+      "quest_id": "quest:zircon:66"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=159",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 19,
+      "Requirement": "MinLevel"
+    },
+    "id": "quest_requirement:zircon:159",
+    "identity": {
+      "zircon_index": 159
+    },
+    "relations": {
+      "quest_id": "quest:zircon:66"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=16",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 9,
+        "Name": "Curing the Poison Pt. 1"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:16",
+    "identity": {
+      "zircon_index": 16
+    },
+    "relations": {
+      "quest_id": "quest:zircon:9"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=17",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 20,
+      "Requirement": "MinLevel"
+    },
+    "id": "quest_requirement:zircon:17",
+    "identity": {
+      "zircon_index": 17
+    },
+    "relations": {
+      "quest_id": "quest:zircon:9"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=18",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 10,
+        "Name": "Curing the Poison Pt. 2"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:18",
+    "identity": {
+      "zircon_index": 18
+    },
+    "relations": {
+      "quest_id": "quest:zircon:10"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=19",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 9,
+        "Name": "Curing the Poison Pt. 1"
+      },
+      "Requirement": "HaveCompleted"
+    },
+    "id": "quest_requirement:zircon:19",
+    "identity": {
+      "zircon_index": 19
+    },
+    "relations": {
+      "quest_id": "quest:zircon:10"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=20",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 11,
+        "Name": "Curing the Poison Pt. 3"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:20",
+    "identity": {
+      "zircon_index": 20
+    },
+    "relations": {
+      "quest_id": "quest:zircon:11"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=21",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 10,
+        "Name": "Curing the Poison Pt. 2"
+      },
+      "Requirement": "HaveCompleted"
+    },
+    "id": "quest_requirement:zircon:21",
+    "identity": {
+      "zircon_index": 21
+    },
+    "relations": {
+      "quest_id": "quest:zircon:11"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=22",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 12,
+        "Name": "Curing the Poison Pt. 4"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:22",
+    "identity": {
+      "zircon_index": 22
+    },
+    "relations": {
+      "quest_id": "quest:zircon:12"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=23",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 11,
+        "Name": "Curing the Poison Pt. 3"
+      },
+      "Requirement": "HaveCompleted"
+    },
+    "id": "quest_requirement:zircon:23",
+    "identity": {
+      "zircon_index": 23
+    },
+    "relations": {
+      "quest_id": "quest:zircon:12"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=24",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 13,
+        "Name": "Curing the Poison Pt. 5"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:24",
+    "identity": {
+      "zircon_index": 24
+    },
+    "relations": {
+      "quest_id": "quest:zircon:13"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=25",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 14,
+        "Name": "Curing the Poison Pt. 6"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:25",
+    "identity": {
+      "zircon_index": 25
+    },
+    "relations": {
+      "quest_id": "quest:zircon:14"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=26",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 13,
+        "Name": "Curing the Poison Pt. 5"
+      },
+      "Requirement": "HaveCompleted"
+    },
+    "id": "quest_requirement:zircon:26",
+    "identity": {
+      "zircon_index": 26
+    },
+    "relations": {
+      "quest_id": "quest:zircon:14"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=27",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 12,
+        "Name": "Curing the Poison Pt. 4"
+      },
+      "Requirement": "HaveCompleted"
+    },
+    "id": "quest_requirement:zircon:27",
+    "identity": {
+      "zircon_index": 27
+    },
+    "relations": {
+      "quest_id": "quest:zircon:13"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=29",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 16,
+        "Name": "Elephants on Parade"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:29",
+    "identity": {
+      "zircon_index": 29
+    },
+    "relations": {
+      "quest_id": "quest:zircon:16"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=30",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 25,
+      "Requirement": "MinLevel"
+    },
+    "id": "quest_requirement:zircon:30",
+    "identity": {
+      "zircon_index": 30
+    },
+    "relations": {
+      "quest_id": "quest:zircon:16"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=31",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 17,
+        "Name": "Time for the Fleas to Flee"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:31",
+    "identity": {
+      "zircon_index": 31
+    },
+    "relations": {
+      "quest_id": "quest:zircon:17"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=32",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 7,
+      "Requirement": "MinLevel"
+    },
+    "id": "quest_requirement:zircon:32",
+    "identity": {
+      "zircon_index": 32
+    },
+    "relations": {
+      "quest_id": "quest:zircon:17"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=77",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 34,
+        "Name": "Reclaiming the Carved Tomb Pt. 1"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:77",
+    "identity": {
+      "zircon_index": 77
+    },
+    "relations": {
+      "quest_id": "quest:zircon:34"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=78",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 25,
+      "Requirement": "MinLevel"
+    },
+    "id": "quest_requirement:zircon:78",
+    "identity": {
+      "zircon_index": 78
+    },
+    "relations": {
+      "quest_id": "quest:zircon:34"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=79",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 35,
+        "Name": "Reclaiming the Carved Tomb Pt. 2"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:79",
+    "identity": {
+      "zircon_index": 79
+    },
+    "relations": {
+      "quest_id": "quest:zircon:35"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=80",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 34,
+        "Name": "Reclaiming the Carved Tomb Pt. 1"
+      },
+      "Requirement": "HaveCompleted"
+    },
+    "id": "quest_requirement:zircon:80",
+    "identity": {
+      "zircon_index": 80
+    },
+    "relations": {
+      "quest_id": "quest:zircon:35"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=81",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 36,
+        "Name": "Reclaiming the Carved Tomb Pt. 3"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:81",
+    "identity": {
+      "zircon_index": 81
+    },
+    "relations": {
+      "quest_id": "quest:zircon:36"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=82",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 35,
+        "Name": "Reclaiming the Carved Tomb Pt. 2"
+      },
+      "Requirement": "HaveCompleted"
+    },
+    "id": "quest_requirement:zircon:82",
+    "identity": {
+      "zircon_index": 82
+    },
+    "relations": {
+      "quest_id": "quest:zircon:36"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=83",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 37,
+        "Name": "Reclaiming the Carved Tomb Pt. 4"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:83",
+    "identity": {
+      "zircon_index": 83
+    },
+    "relations": {
+      "quest_id": "quest:zircon:37"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=84",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 36,
+        "Name": "Reclaiming the Carved Tomb Pt. 3"
+      },
+      "Requirement": "HaveCompleted"
+    },
+    "id": "quest_requirement:zircon:84",
+    "identity": {
+      "zircon_index": 84
+    },
+    "relations": {
+      "quest_id": "quest:zircon:37"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=87",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 39,
+        "Name": "Crushing the Remains Pt. 1"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:87",
+    "identity": {
+      "zircon_index": 87
+    },
+    "relations": {
+      "quest_id": "quest:zircon:39"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=88",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 40,
+        "Name": "Crushing the Remains Pt. 2"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:88",
+    "identity": {
+      "zircon_index": 88
+    },
+    "relations": {
+      "quest_id": "quest:zircon:40"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=89",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 39,
+        "Name": "Crushing the Remains Pt. 1"
+      },
+      "Requirement": "HaveCompleted"
+    },
+    "id": "quest_requirement:zircon:89",
+    "identity": {
+      "zircon_index": 89
+    },
+    "relations": {
+      "quest_id": "quest:zircon:40"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=91",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 42,
+        "Name": "Hunting for David's Key"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:91",
+    "identity": {
+      "zircon_index": 91
+    },
+    "relations": {
+      "quest_id": "quest:zircon:42"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=92",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 43,
+        "Name": "Hunting for Haylee's Key"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:92",
+    "identity": {
+      "zircon_index": 92
+    },
+    "relations": {
+      "quest_id": "quest:zircon:43"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=94",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 44,
+        "Name": "Hunting for Kacy's Key"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:94",
+    "identity": {
+      "zircon_index": 94
+    },
+    "relations": {
+      "quest_id": "quest:zircon:44"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=97",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 45,
+        "Name": "Let's try something new"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:97",
+    "identity": {
+      "zircon_index": 97
+    },
+    "relations": {
+      "quest_id": "quest:zircon:45"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=98",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 7,
+      "Requirement": "MinLevel"
+    },
+    "id": "quest_requirement:zircon:98",
+    "identity": {
+      "zircon_index": 98
+    },
+    "relations": {
+      "quest_id": "quest:zircon:45"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_requirement",
+    "evidence": [
+      {
+        "record": "QuestRequirement.Index=99",
+        "source_id": "zircon-table-QuestRequirement"
+      }
+    ],
+    "game_data": {
+      "Class": "None",
+      "IntParameter1": 0,
+      "QuestParameter": {
+        "Index": 46,
+        "Name": "Gresham's Journal is missing"
+      },
+      "Requirement": "HaveNotCompleted"
+    },
+    "id": "quest_requirement:zircon:99",
+    "identity": {
+      "zircon_index": 99
+    },
+    "relations": {
+      "quest_id": "quest:zircon:46"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  }
+]

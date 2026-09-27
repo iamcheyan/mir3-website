@@ -1,0 +1,1639 @@
+[
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=10",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "Hello [PLAYERNAME], The Venon is only the first Ingredient we need, I need you to travel south and gather Arachnid Teeth from the Spiders in Phantom Forest.",
+      "ArchiveText": "At the request from [STARTNAME] You gathered the second set of ingredients for [FINISHNAME]",
+      "CompletedText": "Thank you very much [PLAYERNAME], I think this should be enough to complete the Antidote.",
+      "ProgressText": "[STARTNAME] has asked you to gather Arachnid Teeth from Spiders located in Phantom Forest.",
+      "QuestName": "Curing the Poison Pt. 2",
+      "QuestType": "General"
+    },
+    "id": "quest:zircon:10",
+    "identity": {
+      "zircon_index": 10,
+      "zircon_internal_name": "Curing the Poison Pt. 2"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:13"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:18",
+        "quest_requirement:zircon:19"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:32"
+      ],
+      "task_ids": [
+        "quest_task:zircon:15"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=11",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "Hello [PLAYERNAME], It would seem the Poison is more advanced than we first suspected. We need to find the source of the paralysis, Could you gather some samples from the Spider Bats located in Phantom Forest?.",
+      "ArchiveText": "At the request from [STARTNAME] You gathered the final set of ingredients for [FINISHNAME]",
+      "CompletedText": "Thank you very much [PLAYERNAME], This should be enough to complete the antitode.",
+      "ProgressText": "[STARTNAME] has asked you to gather Spider Curare from Spider Bats located in Phantom Forest.",
+      "QuestName": "Curing the Poison Pt. 3",
+      "QuestType": "General"
+    },
+    "id": "quest:zircon:11",
+    "identity": {
+      "zircon_index": 11,
+      "zircon_internal_name": "Curing the Poison Pt. 3"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:13"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:20",
+        "quest_requirement:zircon:21"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:34"
+      ],
+      "task_ids": [
+        "quest_task:zircon:16"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=12",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "Hello [PLAYERNAME], I can't thank you enough for doing this, Please take the ingredients to [FINISHNAME] at the Bichon Town Potion Store.",
+      "ArchiveText": "At the request from [STARTNAME] You gathered the final set of ingredients for [FINISHNAME]",
+      "CompletedText": "Thank you very much [PLAYERNAME], It won't take me long to complete the antidote.",
+      "ProgressText": "[STARTNAME] has asked you to deliver the Ingredients to [FINISHNAME].",
+      "QuestName": "Curing the Poison Pt. 4",
+      "QuestType": "General"
+    },
+    "id": "quest:zircon:12",
+    "identity": {
+      "zircon_index": 12,
+      "zircon_internal_name": "Curing the Poison Pt. 4"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:13",
+        "npc:zircon:15"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:22",
+        "quest_requirement:zircon:23"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:36"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=13",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "Hello [PLAYERNAME], I have completed the Antidote, Please deliver it to [FINISHNAME].",
+      "ArchiveText": "At the request from [STARTNAME] you delivered the Antidote to [FINISHNAME]",
+      "CompletedText": "Thank you very much [PLAYERNAME], I'll get this to the soldiers immediately.",
+      "ProgressText": "[STARTNAME] has asked you to deliver the completed Antidote to [FINISHNAME].",
+      "QuestName": "Curing the Poison Pt. 5",
+      "QuestType": "General"
+    },
+    "id": "quest:zircon:13",
+    "identity": {
+      "zircon_index": 13,
+      "zircon_internal_name": "Curing the Poison Pt. 5"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:13",
+        "npc:zircon:15"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:24",
+        "quest_requirement:zircon:27"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:38"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=14",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "Hello [PLAYERNAME], It's time we ended this threat, kill the ArachnidBroodmother responsible for spawning these defiled creatures.",
+      "ArchiveText": "At the request from [STARTNAME] You defeated the Arachnid Broodmother.",
+      "CompletedText": "Great work [PLAYERNAME]!, With the threat of the Broodmother gone we should be much safer.",
+      "ProgressText": "[STARTNAME] has asked you to slay the Arachnid Broodmother located in Phantom Forest.",
+      "QuestName": "Curing the Poison Pt. 6",
+      "QuestType": "General"
+    },
+    "id": "quest:zircon:14",
+    "identity": {
+      "zircon_index": 14,
+      "zircon_internal_name": "Curing the Poison Pt. 6"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:13"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:25",
+        "quest_requirement:zircon:26"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:40"
+      ],
+      "task_ids": [
+        "quest_task:zircon:17"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=16",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "Hello [PLAYERNAME], The Evil Elephants in Lost Paradise Forest have been trampling everything. Maybe you could lower their numbers in some way?",
+      "ArchiveText": "[STARTNAME] had you successfully lower the population of Evil Elephants in Lost Paradise Forest.",
+      "CompletedText": "That should give some breathing room for groups to grow, Thanks [PLAYERNAME].",
+      "ProgressText": "[STARTNAME] has asked you to kill Evil Elephants in Lost Paradise Forest.",
+      "QuestName": "Elephants on Parade",
+      "QuestType": "General"
+    },
+    "id": "quest:zircon:16",
+    "identity": {
+      "zircon_index": 16,
+      "zircon_internal_name": "Elephants on Parade"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:21"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:29",
+        "quest_requirement:zircon:30"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:44"
+      ],
+      "task_ids": [
+        "quest_task:zircon:19"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=17",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "Over here [PLAYERNAME]!, We could really do with clearing out the Flea Cave north west of here. Mind giving us a hand?",
+      "ArchiveText": "You managed to clear out the Flea population that had infested Flea Cave at the request of [FINISHNAME]",
+      "CompletedText": "That will do nicely [PLAYERNAME].",
+      "ProgressText": "[STARTNAME] has asked you to Clear out the Flea population in the cave to the North west of Banya Village.",
+      "QuestName": "Time for the Fleas to Flee",
+      "QuestType": "General"
+    },
+    "id": "quest:zircon:17",
+    "identity": {
+      "zircon_index": 17,
+      "zircon_internal_name": "Time for the Fleas to Flee"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:30"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:31",
+        "quest_requirement:zircon:32"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:46"
+      ],
+      "task_ids": [
+        "quest_task:zircon:20",
+        "quest_task:zircon:21",
+        "quest_task:zircon:22",
+        "quest_task:zircon:23"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=34",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "Greetings [PLAYERNAME], It's time for us reclaim the Carved Stone Tomb for ourselves. We need to work our way downwards into the bowels of the tomb and unlock the treasure within, Let's start with the Red and Black Boars that guard the tomb.",
+      "ArchiveText": "You helped [STARTNAME] to clear out Black and Red Boars within the Carved Stone Tomb [FINISHNAME]",
+      "CompletedText": "That's a great start [PLAYERNAME], Come back later for the next step in our plan.",
+      "ProgressText": "[STARTNAME] has asked you to kill the Red and Black Boars within the Carved Stone Tomb",
+      "QuestName": "Reclaiming the Carved Tomb Pt. 1",
+      "QuestType": "General"
+    },
+    "id": "quest:zircon:34",
+    "identity": {
+      "zircon_index": 34,
+      "zircon_internal_name": "Reclaiming the Carved Tomb Pt. 1"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:25"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:77",
+        "quest_requirement:zircon:78"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:80"
+      ],
+      "task_ids": [
+        "quest_task:zircon:41",
+        "quest_task:zircon:42"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=35",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "That was a great job you did with the Boars[PLAYERNAME], We sent some explorer further into the Tomb and they returned with stories of Serpent like creatures and paralysing moths down there, Can you investigate and eliminate the threat for us?",
+      "ArchiveText": "You helped [STARTNAME] to defeat the Claw Serpents and Wedge Moths found within the Carved Stone Tomb [FINISHNAME]",
+      "CompletedText": "I can only wish we never see those horrors again [PLAYERNAME], Have a rest and then we will discuss our next step.",
+      "ProgressText": "[STARTNAME] has asked you to Travel deeper into the Carved Stone Tomb in order to defeat the Claw Serpents and Wedge moths found within.",
+      "QuestName": "Reclaiming the Carved Tomb Pt. 2",
+      "QuestType": "General"
+    },
+    "id": "quest:zircon:35",
+    "identity": {
+      "zircon_index": 35,
+      "zircon_internal_name": "Reclaiming the Carved Tomb Pt. 2"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:25"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:79",
+        "quest_requirement:zircon:80"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:82"
+      ],
+      "task_ids": [
+        "quest_task:zircon:43",
+        "quest_task:zircon:44"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=36",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "We are closing in on the deepest sections of the Carved Stone Tomb [PLAYERNAME], We've come across a grand entrance that we wish to enter. The room however is closely guarded by 2 TuskLords and creatures that continually overwhelm our explorers with their young, I don't like asking over and over but could you deal with it?",
+      "ArchiveText": "You helped [STARTNAME] to defeat the Tusklords and Wedge Moth Larva protecting the deepest sections of the Carved Stone Tomb [FINISHNAME]",
+      "CompletedText": "It's done!, we can finally breach the door and seek the treasures within.",
+      "ProgressText": "[STARTNAME] has asked you to descend into some of the deepest sections of the Carved Stone Tomb in order to slay the TuskLords and WedgeMothLarva found there.",
+      "QuestName": "Reclaiming the Carved Tomb Pt. 3",
+      "QuestType": "General"
+    },
+    "id": "quest:zircon:36",
+    "identity": {
+      "zircon_index": 36,
+      "zircon_internal_name": "Reclaiming the Carved Tomb Pt. 3"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:25"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:81",
+        "quest_requirement:zircon:82"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:84"
+      ],
+      "task_ids": [
+        "quest_task:zircon:45",
+        "quest_task:zircon:46"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=37",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "[PLAYERNAME] You must save us!, We didn't mean to unleash the creature within the Kings room. I cannot begin to describe the monstrosity ..... Please save us!",
+      "ArchiveText": "At the request of [STARTNAME] you travelled to the deepest section of the Carved Stone Tomb and elimnated the threat of Razortusk[FINISHNAME]",
+      "CompletedText": "Thank you [PLAYERNAME]!, You have saved the Lost Paradise and given us access to the treasures within the Carved Stone Tomb.",
+      "ProgressText": "[STARTNAME] has awoken the creature within the Carved Stone Tomb, You have been tasked with defeating the creature known as Razortusk in the deepest section of the Carved Stone Tomb.",
+      "QuestName": "Reclaiming the Carved Tomb Pt. 4",
+      "QuestType": "General"
+    },
+    "id": "quest:zircon:37",
+    "identity": {
+      "zircon_index": 37,
+      "zircon_internal_name": "Reclaiming the Carved Tomb Pt. 4"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:25"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:83",
+        "quest_requirement:zircon:84"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:86"
+      ],
+      "task_ids": [
+        "quest_task:zircon:47"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=39",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "Good day to you [PLAYERNAME], It seems a slight problem has arisen, namely in the form of Skeletons that have taken over a number of caves. How about you deal with those for me and bring me back some spines to prove it?",
+      "ArchiveText": "You have defeated the horde of Skeletal mobs within the caves at the request of [FINISHNAME]",
+      "CompletedText": "Thank you [PLAYERNAME], Looks like we have another problem to deal with however.",
+      "ProgressText": "[STARTNAME] has asked you to remove the Skeleton threat from within the caves.",
+      "QuestName": "Crushing the Remains Pt. 1",
+      "QuestType": "General"
+    },
+    "id": "quest:zircon:39",
+    "identity": {
+      "zircon_index": 39,
+      "zircon_internal_name": "Crushing the Remains Pt. 1"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:16"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:87"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:90"
+      ],
+      "task_ids": [
+        "quest_task:zircon:49"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=40",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "It seems something more sinister is at hand, Those skeletons seemed to be receiving instructions from elsewhere, Maybe you should check that out?",
+      "ArchiveText": "You cleared the Skeleton Lord out of the caves, [FINISHNAME] was very happy with your work.",
+      "CompletedText": "Fantastic [PLAYERNAME], That seems to have done the job.",
+      "ProgressText": "[STARTNAME] has asked you to find the SkeletonLord.",
+      "QuestName": "Crushing the Remains Pt. 2",
+      "QuestType": "General"
+    },
+    "id": "quest:zircon:40",
+    "identity": {
+      "zircon_index": 40,
+      "zircon_internal_name": "Crushing the Remains Pt. 2"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:16"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:88",
+        "quest_requirement:zircon:89"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:92"
+      ],
+      "task_ids": [
+        "quest_task:zircon:50"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=42",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "Hello [PLAYERNAME], I have a bit of a problem, one of those Scarecrows has gotten hold of the key for the Bichon Town Potion store. Could you get it for me?",
+      "ArchiveText": "You managed to find [FINISHNAME]'s key for the Bichon Town Potion store, they were attached to a wandering Scarecrow.",
+      "CompletedText": "Thank you [PLAYERNAME] for returning my key, here is a little reward for you.",
+      "ProgressText": "[STARTNAME] has asked you to get his key back from the Scarecrow.",
+      "QuestName": "Hunting for David's Key",
+      "QuestType": "General"
+    },
+    "id": "quest:zircon:42",
+    "identity": {
+      "zircon_index": 42,
+      "zircon_internal_name": "Hunting for David's Key"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:15"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:91"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:96"
+      ],
+      "task_ids": [
+        "quest_task:zircon:52"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=43",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "Hello [PLAYERNAME], I have a bit of a problem, one of those Scarecrows has gotten hold of the key for the Lost Paradise Potion store. Could you get it for me?",
+      "ArchiveText": "You managed to find [FINISHNAME]'s key for the Lost Paradise Potion store, they were attached to a wandering Scarecrow.",
+      "CompletedText": "Thank you [PLAYERNAME] for returning my key, here is a little reward for you.",
+      "ProgressText": "[STARTNAME] has asked you to get his key back from the Scarecrow.",
+      "QuestName": "Hunting for Haylee's Key",
+      "QuestType": "General"
+    },
+    "id": "quest:zircon:43",
+    "identity": {
+      "zircon_index": 43,
+      "zircon_internal_name": "Hunting for Haylee's Key"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:23"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:92"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:100"
+      ],
+      "task_ids": [
+        "quest_task:zircon:53"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=44",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "Hello [PLAYERNAME], I have a bit of a problem, one of those Scarecrows has gotten hold of the key for the Banya Village Potion store. Could you get it for me?",
+      "ArchiveText": "You managed to find [FINISHNAME]'s key for the Banya Village Potion store, they were attached to a wandering Scarecrow.",
+      "CompletedText": "Thank you [PLAYERNAME] for returning my key, here is a little reward for you.",
+      "ProgressText": "[STARTNAME] has asked you to get his key back from the Scarecrow.",
+      "QuestName": "Hunting for Kacy's Key",
+      "QuestType": "General"
+    },
+    "id": "quest:zircon:44",
+    "identity": {
+      "zircon_index": 44,
+      "zircon_internal_name": "Hunting for Kacy's Key"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:32"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:94"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:104"
+      ],
+      "task_ids": [
+        "quest_task:zircon:54"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=45",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "How can I help you today [PLAYERNAME], actually maybe you could me. I've always wanted to try adding some Zombie flesh to my recipes, maybe you can acquire some?",
+      "ArchiveText": "[STARTNAME] asked you to find some Zombie Flesh from the Bichon Mines, apparently it didn't taste nice.",
+      "CompletedText": "Well that certainly didn't taste as good as I expected, thank you anyway [PLAYERNAME]",
+      "ProgressText": "[STARTNAME] has asked you to gather Zombie Flesh from the Bichon Mines",
+      "QuestName": "Let's try something new",
+      "QuestType": "General"
+    },
+    "id": "quest:zircon:45",
+    "identity": {
+      "zircon_index": 45,
+      "zircon_internal_name": "Let's try something new"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:20"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:97",
+        "quest_requirement:zircon:98"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:108"
+      ],
+      "task_ids": [
+        "quest_task:zircon:55"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=46",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "Why hello there [PLAYERNAME]. I appear to have misplaced my journal. I'm fairly sure I saw one of those Claw Cats walking off with it though. Could you find it for me?.",
+      "ArchiveText": "You returned the journal to [FINISHNAME] in Lost Paradise after recovering it from a Claw Cat.",
+      "CompletedText": "[PLAYERNAME] I cannot thank you enough!.",
+      "ProgressText": "[STARTNAME] in Lost Paradise has asked you to find the his journal, He thinks a Claw Cat stole it.",
+      "QuestName": "Gresham's Journal is missing",
+      "QuestType": "General"
+    },
+    "id": "quest:zircon:46",
+    "identity": {
+      "zircon_index": 46,
+      "zircon_internal_name": "Gresham's Journal is missing"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:22"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:99"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:110"
+      ],
+      "task_ids": [
+        "quest_task:zircon:56"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=47",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "Why hello there [PLAYERNAME]. I appear to have misplaced my journal. I'm fairly sure I saw one of those Claw Cats walking off with it though. Could you find it for me?.",
+      "ArchiveText": "You returned the journal to [FINISHNAME] in Bichon Town after recovering it from a Claw Cat.",
+      "CompletedText": "[PLAYERNAME] I cannot thank you enough!.",
+      "ProgressText": "[STARTNAME] in Bichon Town has asked you to find the his journal, He thinks a Claw Cat stole it.",
+      "QuestName": "Isaac's Journal is missing",
+      "QuestType": "General"
+    },
+    "id": "quest:zircon:47",
+    "identity": {
+      "zircon_index": 47,
+      "zircon_internal_name": "Isaac's Journal is missing"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:14"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:101"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:112"
+      ],
+      "task_ids": [
+        "quest_task:zircon:57"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=48",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "Why hello there [PLAYERNAME]. I appear to have misplaced my journal. I'm fairly sure I saw one of those Claw Cats walking off with it though. Could you find it for me?.",
+      "ArchiveText": "You returned the journal to [FINISHNAME] in Banya Village after recovering it from a Claw Cat.",
+      "CompletedText": "[PLAYERNAME] I cannot thank you enough!.",
+      "ProgressText": "[STARTNAME] in Banya Village has asked you to find the his journal, He thinks a Claw Cat stole it.",
+      "QuestName": "Henry's Journal is missing",
+      "QuestType": "General"
+    },
+    "id": "quest:zircon:48",
+    "identity": {
+      "zircon_index": 48,
+      "zircon_internal_name": "Henry's Journal is missing"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:31"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:103"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:114"
+      ],
+      "task_ids": [
+        "quest_task:zircon:58"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=50",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "Hello [PLAYERNAME], Those pesky Forest Yeti have made a nuisance of themselves around Bichon Town, Could you go kill a few so we can open our trade routes again.",
+      "ArchiveText": "You helped [STARTNAME] to defeat the Forest Yeti around Bichon Town.",
+      "CompletedText": "Thanks for that [PLAYERNAME], we can move our wares freely now.",
+      "ProgressText": "[STARTNAME] has asked you to kill some of the Forest Yeti population around Bichon Town.",
+      "QuestName": "Are they in Bichon Yeti?",
+      "QuestType": "General"
+    },
+    "id": "quest:zircon:50",
+    "identity": {
+      "zircon_index": 50,
+      "zircon_internal_name": "Are they in Bichon Yeti?"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:19"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:106",
+        "quest_requirement:zircon:110"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:116"
+      ],
+      "task_ids": [
+        "quest_task:zircon:59"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=51",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "Hello [PLAYERNAME], Those pesky Forest Yeti have made a nuisance of themselves around Banya Village, Could you go kill a few so we can open our trade routes again.",
+      "ArchiveText": "You helped [STARTNAME] to defeat the Forest Yeti around Banya Village.",
+      "CompletedText": "Thanks for that [PLAYERNAME], we can move our wares freely now.",
+      "ProgressText": "[STARTNAME] has asked you to kill some of the Forest Yeti population around Banya Village.",
+      "QuestName": "Are they in Banya Yeti?",
+      "QuestType": "General"
+    },
+    "id": "quest:zircon:51",
+    "identity": {
+      "zircon_index": 51,
+      "zircon_internal_name": "Are they in Banya Yeti?"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:36"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:108",
+        "quest_requirement:zircon:111"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:118"
+      ],
+      "task_ids": [
+        "quest_task:zircon:60"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=52",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "Hello [PLAYERNAME], Those pesky Forest Yeti have made a nuisance of themselves around Lost Paradise, Could you go kill a few so we can open our trade routes again.",
+      "ArchiveText": "You helped [STARTNAME] to defeat the Forest Yeti around Lost Paradise.",
+      "CompletedText": "Thanks for that [PLAYERNAME], we can move our wares freely now.",
+      "ProgressText": "[STARTNAME] has asked you to kill some of the Forest Yeti population around Lost Paradise.",
+      "QuestName": "Are they in Lost Paradise Yeti?",
+      "QuestType": "General"
+    },
+    "id": "quest:zircon:52",
+    "identity": {
+      "zircon_index": 52,
+      "zircon_internal_name": "Are they in Lost Paradise Yeti?"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:27"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:112",
+        "quest_requirement:zircon:114"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:120"
+      ],
+      "task_ids": [
+        "quest_task:zircon:61"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=53",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "Hello [PLAYERNAME], Bichon Town supplies have been running low recently, could you help us restock our supplies of Edible Chestnuts?",
+      "ArchiveText": "You were able to forage enough Edible Chestnuts to assist the people of Bichon Town.",
+      "CompletedText": "These will help out greatly, Thank you [PLAYERNAME].",
+      "ProgressText": "[STARTNAME] has asked you to gather Edible chestnuts from Chestnut trees around Bichon Town.",
+      "QuestName": "Feeding Bichon Town",
+      "QuestType": "General"
+    },
+    "id": "quest:zircon:53",
+    "identity": {
+      "zircon_index": 53,
+      "zircon_internal_name": "Feeding Bichon Town"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:18"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:115"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:122"
+      ],
+      "task_ids": [
+        "quest_task:zircon:62"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=54",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "Hello [PLAYERNAME], Banya Village supplies have been running low recently, could you help us restock our supplies of Edible Chestnuts?",
+      "ArchiveText": "You were able to forage enough Edible Chestnuts to assist the people of Banya Village.",
+      "CompletedText": "These will help out greatly, Thank you [PLAYERNAME].",
+      "ProgressText": "[STARTNAME] has asked you to gather Edible chestnuts from Chestnut trees around Banya Village.",
+      "QuestName": "Feeding Banya Village",
+      "QuestType": "General"
+    },
+    "id": "quest:zircon:54",
+    "identity": {
+      "zircon_index": 54,
+      "zircon_internal_name": "Feeding Banya Village"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:35"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:117"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:124"
+      ],
+      "task_ids": [
+        "quest_task:zircon:63"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=55",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "Hello [PLAYERNAME], Lost Paradise supplies have been running low recently, could you help us restock our supplies of Edible Chestnuts?",
+      "ArchiveText": "You were able to forage enough Edible Chestnuts to assist the people of Lost Paradise.",
+      "CompletedText": "These will help out greatly, Thank you [PLAYERNAME].",
+      "ProgressText": "[STARTNAME] has asked you to gather Edible chestnuts from Chestnut trees around Lost Paradise.",
+      "QuestName": "Feeding Lost Paradise",
+      "QuestType": "General"
+    },
+    "id": "quest:zircon:55",
+    "identity": {
+      "zircon_index": 55,
+      "zircon_internal_name": "Feeding Lost Paradise"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:26"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:119"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:126"
+      ],
+      "task_ids": [
+        "quest_task:zircon:64"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=56",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "[PLAYERNAME] please I must speak with you, Strange rumours are emanating from travellers venturing in to the Banya Stone Caves. Talk of the undead rising once again are rife, could you check it out?",
+      "ArchiveText": "[STARTNAME] asked you to venture into the Banya Stone Caves in order to validate the rumours circulating around Banya Village.",
+      "CompletedText": "I can't believe it [PLAYERNAME], This is an ominous sign.",
+      "ProgressText": "[STARTNAME] has asked you to venture into the Banya Stone Caves in order to identify if the rumours were true or not.",
+      "QuestName": "Descent into Darkness Pt. 1",
+      "QuestType": "General"
+    },
+    "id": "quest:zircon:56",
+    "identity": {
+      "zircon_index": 56,
+      "zircon_internal_name": "Descent into Darkness Pt. 1"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:33"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:121",
+        "quest_requirement:zircon:122"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:128"
+      ],
+      "task_ids": [
+        "quest_task:zircon:65",
+        "quest_task:zircon:66"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=57",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "[PLAYERNAME] We must investigate this further, I'm concerned that even fiercer creatures may lurk deeper into the Banya Stone Caves, You must go quickly and find out for me.",
+      "ArchiveText": "[STARTNAME] requested you travel deeper into the Banya Stone Caves in order to confirm his fears of even more dangerous creatures.",
+      "CompletedText": "It's exactly as I feared, We must stop this threat before it becomes too much.",
+      "ProgressText": "[STARTNAME] is concerned that even more dangerous creatures inhabit the deeper sections of Banya Stone Cave, you have been sent to investigate.",
+      "QuestName": "Descent into Darkness Pt. 2",
+      "QuestType": "General"
+    },
+    "id": "quest:zircon:57",
+    "identity": {
+      "zircon_index": 57,
+      "zircon_internal_name": "Descent into Darkness Pt. 2"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:33"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:123",
+        "quest_requirement:zircon:124"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:130"
+      ],
+      "task_ids": [
+        "quest_task:zircon:67",
+        "quest_task:zircon:68"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=58",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "[PLAYERNAME] we have to hit back and hit hard, The entrance to the kings room is guarded by a small army of undead and the generals that control them, please go and slay them.",
+      "ArchiveText": "[STARTNAME] sent you to destroy the skeletal forces located deep within Banya Stone Caves.",
+      "CompletedText": "This was exactly what we needed, take some time to prepare yourself for the final encounter.",
+      "ProgressText": "[STARTNAME] has sent you to strike back at the Skeletal enemies found within Banya Stone Cave and the Bone Enforcer that controls them.",
+      "QuestName": "Descent into Darkness Pt. 3",
+      "QuestType": "General"
+    },
+    "id": "quest:zircon:58",
+    "identity": {
+      "zircon_index": 58,
+      "zircon_internal_name": "Descent into Darkness Pt. 3"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:33"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:125",
+        "quest_requirement:zircon:126"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:132"
+      ],
+      "task_ids": [
+        "quest_task:zircon:69",
+        "quest_task:zircon:70"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=59",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "[PLAYERNAME] It's time for us to end this, You must travel to the Deepest floor of Banya Stone Cave and destroy Arch Lich Taedu who lives within.",
+      "ArchiveText": "[STARTNAME] sent you to defeat Arch Lich Taedu in the deepest sections of Banya Stone Caves.",
+      "CompletedText": "You are a true Hero [PLAYERNAME], The Village is safe once again.",
+      "ProgressText": "[STARTNAME] has sent you to defeat Arch Lich Taedu in Banya Stone Cave",
+      "QuestName": "Descent into Darkness Pt. 4",
+      "QuestType": "General"
+    },
+    "id": "quest:zircon:59",
+    "identity": {
+      "zircon_index": 59,
+      "zircon_internal_name": "Descent into Darkness Pt. 4"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:33"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:127",
+        "quest_requirement:zircon:128"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:134"
+      ],
+      "task_ids": [
+        "quest_task:zircon:71"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=60",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "Welcome to Lost Paradise [PLAYERNAME], If you could spare a moment of time it would be greatly appreciated if you could rid the Town of some Wolves.",
+      "ArchiveText": "You helped [STARTNAME] to defeat the Wolves around Lost Paradise. ",
+      "CompletedText": "Marvelous [PLAYERNAME], That should keep the town safer for a while",
+      "ProgressText": "[STARTNAME] has asked you to kill some of the Wolves stalking around Lost Paradise.",
+      "QuestName": "Wolves in Lost Paradise",
+      "QuestType": "General"
+    },
+    "id": "quest:zircon:60",
+    "identity": {
+      "zircon_index": 60,
+      "zircon_internal_name": "Wolves in Lost Paradise"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:27"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:129",
+        "quest_requirement:zircon:131"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:136"
+      ],
+      "task_ids": [
+        "quest_task:zircon:72"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=61",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "Welcome to Bichon Town [PLAYERNAME], If you could spare a moment of time it would be greatly appreciated if you could rid the Town of some Wolves.",
+      "ArchiveText": "You helped [STARTNAME] to defeat the Wolves around Bichon Town. ",
+      "CompletedText": "Marvelous [PLAYERNAME], That should keep the town safer for a while",
+      "ProgressText": "[STARTNAME] has asked you to kill some of the Wolves stalking around Bichon Town.",
+      "QuestName": "Wolves in Bichon",
+      "QuestType": "General"
+    },
+    "id": "quest:zircon:61",
+    "identity": {
+      "zircon_index": 61,
+      "zircon_internal_name": "Wolves in Bichon"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:19"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:132",
+        "quest_requirement:zircon:134"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:138"
+      ],
+      "task_ids": [
+        "quest_task:zircon:73"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=62",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "Welcome to Banya Village [PLAYERNAME], If you could spare a moment of time it would be greatly appreciated if you could rid the Town of some Wolves.",
+      "ArchiveText": "You helped [STARTNAME] to defeat the Wolves around Banya Village. ",
+      "CompletedText": "Marvelous [PLAYERNAME], That should keep the town safer for a while",
+      "ProgressText": "[STARTNAME] has asked you to kill some of the Wolves stalking around Banya Village.",
+      "QuestName": "Wolves in Banya",
+      "QuestType": "General"
+    },
+    "id": "quest:zircon:62",
+    "identity": {
+      "zircon_index": 62,
+      "zircon_internal_name": "Wolves in Banya"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:36"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:135",
+        "quest_requirement:zircon:137"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:140"
+      ],
+      "task_ids": [
+        "quest_task:zircon:74"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=63",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "万事通在望海楼设宴相邀。[PLAYERNAME]携本线的神舰线索赴约，与万事通对谈，拼出老矿工\"三态\"之谜，获赠船歌谣残片，正式接入共享主线。",
+      "ArchiveText": "望海楼之约，[PLAYERNAME]拼出老矿工三态之谜，得知\"海上大船是牢笼\"的真相，自万事通处获赠船歌谣残片。共享主线自此开启。",
+      "CompletedText": "三态之谜拼成：老矿工陈永年，肉身在比奇矿、神志在废矿、魂锁在白日门矿井——同一人，三种状态，全是\"船\"留下的伤。万事通把一枚旧铜哨推到你面前：\"这是船上的规矩。船，要开了。\"",
+      "ProgressText": "前往比奇城望海楼，与万事通会面（0/1）。",
+      "QuestName": "望海楼之约（战士）",
+      "QuestType": "Story"
+    },
+    "id": "quest:zircon:63",
+    "identity": {
+      "zircon_index": 63,
+      "zircon_internal_name": "望海楼之约（战士）"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:155"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:148",
+        "quest_requirement:zircon:149",
+        "quest_requirement:zircon:150"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:142",
+        "quest_reward:zircon:143"
+      ],
+      "task_ids": [
+        "quest_task:zircon:75"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=64",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "万事通在望海楼设宴相邀。[PLAYERNAME]携本线的神舰线索赴约，与万事通对谈，拼出老矿工\"三态\"之谜，获赠船歌谣残片，正式接入共享主线。",
+      "ArchiveText": "望海楼之约，[PLAYERNAME]拼出老矿工三态之谜，得知\"海上大船是牢笼\"的真相，自万事通处获赠船歌谣残片。共享主线自此开启。",
+      "CompletedText": "三态之谜拼成：老矿工陈永年，肉身在比奇矿、神志在废矿、魂锁在白日门矿井——同一人，三种状态，全是\"船\"留下的伤。万事通把一枚旧铜哨推到你面前：\"这是船上的规矩。船，要开了。\"",
+      "ProgressText": "前往比奇城望海楼，与万事通会面（0/1）。",
+      "QuestName": "望海楼之约（法师）",
+      "QuestType": "Story"
+    },
+    "id": "quest:zircon:64",
+    "identity": {
+      "zircon_index": 64,
+      "zircon_internal_name": "望海楼之约（法师）"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:155"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:151",
+        "quest_requirement:zircon:152",
+        "quest_requirement:zircon:153"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:144",
+        "quest_reward:zircon:145"
+      ],
+      "task_ids": [
+        "quest_task:zircon:76"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=65",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "万事通在望海楼设宴相邀。[PLAYERNAME]携本线的神舰线索赴约，与万事通对谈，拼出老矿工\"三态\"之谜，获赠船歌谣残片，正式接入共享主线。",
+      "ArchiveText": "望海楼之约，[PLAYERNAME]拼出老矿工三态之谜，得知\"海上大船是牢笼\"的真相，自万事通处获赠船歌谣残片。共享主线自此开启。",
+      "CompletedText": "三态之谜拼成：老矿工陈永年，肉身在比奇矿、神志在废矿、魂锁在白日门矿井——同一人，三种状态，全是\"船\"留下的伤。万事通把一枚旧铜哨推到你面前：\"这是船上的规矩。船，要开了。\"",
+      "ProgressText": "前往比奇城望海楼，与万事通会面（0/1）。",
+      "QuestName": "望海楼之约（道士）",
+      "QuestType": "Story"
+    },
+    "id": "quest:zircon:65",
+    "identity": {
+      "zircon_index": 65,
+      "zircon_internal_name": "望海楼之约（道士）"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:155"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:154",
+        "quest_requirement:zircon:155",
+        "quest_requirement:zircon:156"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:146",
+        "quest_reward:zircon:147"
+      ],
+      "task_ids": [
+        "quest_task:zircon:77"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=66",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "老矿工陈永年兑现\"一刺保命\"的承诺：请[PLAYERNAME]以骷髅祭坛旧址为靶，猎取骷髅战将的骨粉，磨砺\"洞穴里活命的一刺\"。",
+      "ArchiveText": "老矿工将毕生保命的一刺传予[PLAYERNAME]，刺杀剑术习得。矿洞之约，兑现。",
+      "CompletedText": "骨粉入怀，老矿工以矿镐为剑，演示那记千年矿洞里磨出来的刺杀：\"怪物扑来时，怕的人先死。这一刺，要快，要狠，要往它最软的地方去。\"",
+      "ProgressText": "前往骷髅祭坛旧址，击杀骷髅战将（0/6），收集骨粉（0/3）。",
+      "QuestName": "刺杀剑术觉醒",
+      "QuestType": "Story"
+    },
+    "id": "quest:zircon:66",
+    "identity": {
+      "zircon_index": 66,
+      "zircon_internal_name": "刺杀剑术觉醒"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:160"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:157",
+        "quest_requirement:zircon:158",
+        "quest_requirement:zircon:159"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:148",
+        "quest_reward:zircon:149"
+      ],
+      "task_ids": [
+        "quest_task:zircon:78"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest",
+    "evidence": [
+      {
+        "record": "QuestInfo.Index=9",
+        "source_id": "zircon-table-QuestInfo"
+      }
+    ],
+    "game_data": {
+      "AcceptText": "Hello [PLAYERNAME], A number of our soldiers have been poisoned by spiders, could you help me gather the ingredients for an antidote?. The Spitting Spiders located around town should provide you with the necessary Venom for the antidote.",
+      "ArchiveText": "At the request from [STARTNAME] You gathered the first set of ingredients for [FINISHNAME]",
+      "CompletedText": "Thank you very much [PLAYERNAME], We still need a few more ingredients.",
+      "ProgressText": "[STARTNAME] has asked you to gather Venom from Spitting Spiders around town.",
+      "QuestName": "Curing the Poison Pt. 1",
+      "QuestType": "General"
+    },
+    "id": "quest:zircon:9",
+    "identity": {
+      "zircon_index": 9,
+      "zircon_internal_name": "Curing the Poison Pt. 1"
+    },
+    "relations": {
+      "npc_ids": [
+        "npc:zircon:13"
+      ],
+      "requirement_ids": [
+        "quest_requirement:zircon:16",
+        "quest_requirement:zircon:17"
+      ],
+      "reward_ids": [
+        "quest_reward:zircon:30"
+      ],
+      "task_ids": [
+        "quest_task:zircon:14"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  }
+]

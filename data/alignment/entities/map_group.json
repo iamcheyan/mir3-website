@@ -1,0 +1,198 @@
+[
+  {
+    "assessment": {
+      "export_enabled": false,
+      "fields": {
+        "display_name": {
+          "reason": "网站地图是区域家族索引，不等同于 Zircon 的逐张 MapInfo。",
+          "status": "pending_review"
+        },
+        "game_data": {
+          "reason": "网站地图是区域家族索引，不等同于 Zircon 的逐张 MapInfo。",
+          "status": "pending_review"
+        },
+        "identity_mapping": {
+          "reason": "网站地图是区域家族索引，不等同于 Zircon 的逐张 MapInfo。",
+          "status": "pending_review"
+        },
+        "relations": {
+          "reason": "网站地图是区域家族索引，不等同于 Zircon 的逐张 MapInfo。",
+          "status": "pending_review"
+        },
+        "resource_identity": {
+          "reason": "资源身份必须由可视/索引证据确认。",
+          "status": "pending_evidence"
+        }
+      },
+      "overall_status": "pending_review",
+      "reason": "网站地图是区域家族索引，不等同于 Zircon 的逐张 MapInfo。",
+      "reviewed_at": null,
+      "reviewer": null,
+      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+    },
+    "entity_type": "map_group",
+    "evidence": [
+      {
+        "record": "maps.json#map-maze",
+        "source_id": "website-data"
+      }
+    ],
+    "game_data": {
+      "area_count": 17
+    },
+    "id": "map_group:website:map-maze",
+    "identity": {
+      "standard_name_zh": "迷宫地图",
+      "website_name": "迷宫地图",
+      "website_source_id": "map-maze"
+    },
+    "relations": {
+      "area_ids": [
+        "map_area:website:map-maze:01",
+        "map_area:website:map-maze:02",
+        "map_area:website:map-maze:03",
+        "map_area:website:map-maze:04",
+        "map_area:website:map-maze:05",
+        "map_area:website:map-maze:06",
+        "map_area:website:map-maze:07",
+        "map_area:website:map-maze:08",
+        "map_area:website:map-maze:09",
+        "map_area:website:map-maze:10",
+        "map_area:website:map-maze:11",
+        "map_area:website:map-maze:12",
+        "map_area:website:map-maze:13",
+        "map_area:website:map-maze:14",
+        "map_area:website:map-maze:15",
+        "map_area:website:map-maze:16",
+        "map_area:website:map-maze:17"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "assessment": {
+      "export_enabled": false,
+      "fields": {
+        "display_name": {
+          "reason": "网站地图是区域家族索引，不等同于 Zircon 的逐张 MapInfo。",
+          "status": "pending_review"
+        },
+        "game_data": {
+          "reason": "网站地图是区域家族索引，不等同于 Zircon 的逐张 MapInfo。",
+          "status": "pending_review"
+        },
+        "identity_mapping": {
+          "reason": "网站地图是区域家族索引，不等同于 Zircon 的逐张 MapInfo。",
+          "status": "pending_review"
+        },
+        "relations": {
+          "reason": "网站地图是区域家族索引，不等同于 Zircon 的逐张 MapInfo。",
+          "status": "pending_review"
+        },
+        "resource_identity": {
+          "reason": "资源身份必须由可视/索引证据确认。",
+          "status": "pending_evidence"
+        }
+      },
+      "overall_status": "pending_review",
+      "reason": "网站地图是区域家族索引，不等同于 Zircon 的逐张 MapInfo。",
+      "reviewed_at": null,
+      "reviewer": null,
+      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+    },
+    "entity_type": "map_group",
+    "evidence": [
+      {
+        "record": "maps.json#map-sj",
+        "source_id": "website-data"
+      }
+    ],
+    "game_data": {
+      "area_count": 4
+    },
+    "id": "map_group:website:map-sj",
+    "identity": {
+      "standard_name_zh": "神舰地图",
+      "website_name": "神舰地图",
+      "website_source_id": "map-sj"
+    },
+    "relations": {
+      "area_ids": [
+        "map_area:website:map-sj:01",
+        "map_area:website:map-sj:02",
+        "map_area:website:map-sj:03",
+        "map_area:website:map-sj:04"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "assessment": {
+      "export_enabled": false,
+      "fields": {
+        "display_name": {
+          "reason": "网站地图是区域家族索引，不等同于 Zircon 的逐张 MapInfo。",
+          "status": "pending_review"
+        },
+        "game_data": {
+          "reason": "网站地图是区域家族索引，不等同于 Zircon 的逐张 MapInfo。",
+          "status": "pending_review"
+        },
+        "identity_mapping": {
+          "reason": "网站地图是区域家族索引，不等同于 Zircon 的逐张 MapInfo。",
+          "status": "pending_review"
+        },
+        "relations": {
+          "reason": "网站地图是区域家族索引，不等同于 Zircon 的逐张 MapInfo。",
+          "status": "pending_review"
+        },
+        "resource_identity": {
+          "reason": "资源身份必须由可视/索引证据确认。",
+          "status": "pending_evidence"
+        }
+      },
+      "overall_status": "pending_review",
+      "reason": "网站地图是区域家族索引，不等同于 Zircon 的逐张 MapInfo。",
+      "reviewed_at": null,
+      "reviewer": null,
+      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+    },
+    "entity_type": "map_group",
+    "evidence": [
+      {
+        "record": "maps.json#map-world",
+        "source_id": "website-data"
+      }
+    ],
+    "game_data": {
+      "area_count": 1
+    },
+    "id": "map_group:website:map-world",
+    "identity": {
+      "standard_name_zh": "世界地图",
+      "website_name": "世界地图",
+      "website_source_id": "map-world"
+    },
+    "relations": {
+      "area_ids": [
+        "map_area:website:map-world:01"
+      ]
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  }
+]

@@ -1,0 +1,1622 @@
+[
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=24",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 2,
+      "DropSet": 0
+    },
+    "id": "quest_task_monster_detail:zircon:24",
+    "identity": {
+      "zircon_index": 24
+    },
+    "relations": {
+      "monster_id": "monster:zircon:20",
+      "task_id": "quest_task:zircon:14"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=25",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 2,
+      "Chance": 3,
+      "DropSet": 0,
+      "Map": {
+        "Index": 12,
+        "Name": "D001"
+      }
+    },
+    "id": "quest_task_monster_detail:zircon:25",
+    "identity": {
+      "zircon_index": 25
+    },
+    "relations": {
+      "monster_id": "monster:zircon:72",
+      "task_id": "quest_task:zircon:15"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=26",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 2,
+      "Chance": 3,
+      "DropSet": 0,
+      "Map": {
+        "Index": 12,
+        "Name": "D001"
+      }
+    },
+    "id": "quest_task_monster_detail:zircon:26",
+    "identity": {
+      "zircon_index": 26
+    },
+    "relations": {
+      "monster_id": "monster:zircon:71",
+      "task_id": "quest_task:zircon:15"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=27",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 2,
+      "Chance": 2,
+      "DropSet": 0,
+      "Map": {
+        "Index": 12,
+        "Name": "D001"
+      }
+    },
+    "id": "quest_task_monster_detail:zircon:27",
+    "identity": {
+      "zircon_index": 27
+    },
+    "relations": {
+      "monster_id": "monster:zircon:66",
+      "task_id": "quest_task:zircon:16"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=28",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 1,
+      "DropSet": 0,
+      "Map": {
+        "Index": 12,
+        "Name": "D001"
+      }
+    },
+    "id": "quest_task_monster_detail:zircon:28",
+    "identity": {
+      "zircon_index": 28
+    },
+    "relations": {
+      "monster_id": "monster:zircon:73",
+      "task_id": "quest_task:zircon:17"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=30",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 1,
+      "DropSet": 0,
+      "Map": {
+        "Index": 14,
+        "Name": "D003"
+      }
+    },
+    "id": "quest_task_monster_detail:zircon:30",
+    "identity": {
+      "zircon_index": 30
+    },
+    "relations": {
+      "monster_id": "monster:zircon:85",
+      "task_id": "quest_task:zircon:19"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=31",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 1,
+      "DropSet": 0
+    },
+    "id": "quest_task_monster_detail:zircon:31",
+    "identity": {
+      "zircon_index": 31
+    },
+    "relations": {
+      "monster_id": "monster:zircon:46",
+      "task_id": "quest_task:zircon:20"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=32",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 1,
+      "DropSet": 0
+    },
+    "id": "quest_task_monster_detail:zircon:32",
+    "identity": {
+      "zircon_index": 32
+    },
+    "relations": {
+      "monster_id": "monster:zircon:49",
+      "task_id": "quest_task:zircon:23"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=33",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 1,
+      "DropSet": 0
+    },
+    "id": "quest_task_monster_detail:zircon:33",
+    "identity": {
+      "zircon_index": 33
+    },
+    "relations": {
+      "monster_id": "monster:zircon:47",
+      "task_id": "quest_task:zircon:22"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=34",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 1,
+      "DropSet": 0
+    },
+    "id": "quest_task_monster_detail:zircon:34",
+    "identity": {
+      "zircon_index": 34
+    },
+    "relations": {
+      "monster_id": "monster:zircon:48",
+      "task_id": "quest_task:zircon:21"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=51",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 1,
+      "DropSet": 0
+    },
+    "id": "quest_task_monster_detail:zircon:51",
+    "identity": {
+      "zircon_index": 51
+    },
+    "relations": {
+      "monster_id": "monster:zircon:125",
+      "task_id": "quest_task:zircon:42"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=52",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 1,
+      "DropSet": 0
+    },
+    "id": "quest_task_monster_detail:zircon:52",
+    "identity": {
+      "zircon_index": 52
+    },
+    "relations": {
+      "monster_id": "monster:zircon:127",
+      "task_id": "quest_task:zircon:41"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=53",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 1,
+      "DropSet": 0
+    },
+    "id": "quest_task_monster_detail:zircon:53",
+    "identity": {
+      "zircon_index": 53
+    },
+    "relations": {
+      "monster_id": "monster:zircon:124",
+      "task_id": "quest_task:zircon:44"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=54",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 1,
+      "DropSet": 0
+    },
+    "id": "quest_task_monster_detail:zircon:54",
+    "identity": {
+      "zircon_index": 54
+    },
+    "relations": {
+      "monster_id": "monster:zircon:126",
+      "task_id": "quest_task:zircon:43"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=55",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 1,
+      "DropSet": 0
+    },
+    "id": "quest_task_monster_detail:zircon:55",
+    "identity": {
+      "zircon_index": 55
+    },
+    "relations": {
+      "monster_id": "monster:zircon:128",
+      "task_id": "quest_task:zircon:45"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=56",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 1,
+      "DropSet": 0
+    },
+    "id": "quest_task_monster_detail:zircon:56",
+    "identity": {
+      "zircon_index": 56
+    },
+    "relations": {
+      "monster_id": "monster:zircon:122",
+      "task_id": "quest_task:zircon:46"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=57",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 1,
+      "DropSet": 0
+    },
+    "id": "quest_task_monster_detail:zircon:57",
+    "identity": {
+      "zircon_index": 57
+    },
+    "relations": {
+      "monster_id": "monster:zircon:129",
+      "task_id": "quest_task:zircon:47"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=59",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 2,
+      "DropSet": 0
+    },
+    "id": "quest_task_monster_detail:zircon:59",
+    "identity": {
+      "zircon_index": 59
+    },
+    "relations": {
+      "monster_id": "monster:zircon:27",
+      "task_id": "quest_task:zircon:49"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=60",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 2,
+      "DropSet": 0
+    },
+    "id": "quest_task_monster_detail:zircon:60",
+    "identity": {
+      "zircon_index": 60
+    },
+    "relations": {
+      "monster_id": "monster:zircon:28",
+      "task_id": "quest_task:zircon:49"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=61",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 2,
+      "DropSet": 0
+    },
+    "id": "quest_task_monster_detail:zircon:61",
+    "identity": {
+      "zircon_index": 61
+    },
+    "relations": {
+      "monster_id": "monster:zircon:29",
+      "task_id": "quest_task:zircon:49"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=62",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 2,
+      "DropSet": 0
+    },
+    "id": "quest_task_monster_detail:zircon:62",
+    "identity": {
+      "zircon_index": 62
+    },
+    "relations": {
+      "monster_id": "monster:zircon:26",
+      "task_id": "quest_task:zircon:49"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=63",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 1,
+      "DropSet": 0
+    },
+    "id": "quest_task_monster_detail:zircon:63",
+    "identity": {
+      "zircon_index": 63
+    },
+    "relations": {
+      "monster_id": "monster:zircon:30",
+      "task_id": "quest_task:zircon:50"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=65",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 20,
+      "DropSet": 0,
+      "Map": {
+        "Index": 1,
+        "Name": "0"
+      }
+    },
+    "id": "quest_task_monster_detail:zircon:65",
+    "identity": {
+      "zircon_index": 65
+    },
+    "relations": {
+      "monster_id": "monster:zircon:21",
+      "task_id": "quest_task:zircon:52"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=66",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 20,
+      "DropSet": 0,
+      "Map": {
+        "Index": 5,
+        "Name": "1"
+      }
+    },
+    "id": "quest_task_monster_detail:zircon:66",
+    "identity": {
+      "zircon_index": 66
+    },
+    "relations": {
+      "monster_id": "monster:zircon:21",
+      "task_id": "quest_task:zircon:53"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=67",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 20,
+      "DropSet": 0,
+      "Map": {
+        "Index": 6,
+        "Name": "2"
+      }
+    },
+    "id": "quest_task_monster_detail:zircon:67",
+    "identity": {
+      "zircon_index": 67
+    },
+    "relations": {
+      "monster_id": "monster:zircon:21",
+      "task_id": "quest_task:zircon:54"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=68",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 2,
+      "DropSet": 0
+    },
+    "id": "quest_task_monster_detail:zircon:68",
+    "identity": {
+      "zircon_index": 68
+    },
+    "relations": {
+      "monster_id": "monster:zircon:32",
+      "task_id": "quest_task:zircon:55"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=69",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 2,
+      "DropSet": 0
+    },
+    "id": "quest_task_monster_detail:zircon:69",
+    "identity": {
+      "zircon_index": 69
+    },
+    "relations": {
+      "monster_id": "monster:zircon:33",
+      "task_id": "quest_task:zircon:55"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=70",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 2,
+      "DropSet": 0
+    },
+    "id": "quest_task_monster_detail:zircon:70",
+    "identity": {
+      "zircon_index": 70
+    },
+    "relations": {
+      "monster_id": "monster:zircon:34",
+      "task_id": "quest_task:zircon:55"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=71",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 2,
+      "DropSet": 0
+    },
+    "id": "quest_task_monster_detail:zircon:71",
+    "identity": {
+      "zircon_index": 71
+    },
+    "relations": {
+      "monster_id": "monster:zircon:35",
+      "task_id": "quest_task:zircon:55"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=72",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 2,
+      "DropSet": 0
+    },
+    "id": "quest_task_monster_detail:zircon:72",
+    "identity": {
+      "zircon_index": 72
+    },
+    "relations": {
+      "monster_id": "monster:zircon:36",
+      "task_id": "quest_task:zircon:55"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=73",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 5,
+      "Chance": 1,
+      "DropSet": 0
+    },
+    "id": "quest_task_monster_detail:zircon:73",
+    "identity": {
+      "zircon_index": 73
+    },
+    "relations": {
+      "monster_id": "monster:zircon:37",
+      "task_id": "quest_task:zircon:55"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=74",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 20,
+      "DropSet": 0,
+      "Map": {
+        "Index": 5,
+        "Name": "1"
+      }
+    },
+    "id": "quest_task_monster_detail:zircon:74",
+    "identity": {
+      "zircon_index": 74
+    },
+    "relations": {
+      "monster_id": "monster:zircon:13",
+      "task_id": "quest_task:zircon:56"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=75",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 20,
+      "DropSet": 0,
+      "Map": {
+        "Index": 1,
+        "Name": "0"
+      }
+    },
+    "id": "quest_task_monster_detail:zircon:75",
+    "identity": {
+      "zircon_index": 75
+    },
+    "relations": {
+      "monster_id": "monster:zircon:13",
+      "task_id": "quest_task:zircon:57"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=76",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 20,
+      "DropSet": 0,
+      "Map": {
+        "Index": 6,
+        "Name": "2"
+      }
+    },
+    "id": "quest_task_monster_detail:zircon:76",
+    "identity": {
+      "zircon_index": 76
+    },
+    "relations": {
+      "monster_id": "monster:zircon:13",
+      "task_id": "quest_task:zircon:58"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=77",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 1,
+      "DropSet": 0,
+      "Map": {
+        "Index": 1,
+        "Name": "0"
+      }
+    },
+    "id": "quest_task_monster_detail:zircon:77",
+    "identity": {
+      "zircon_index": 77
+    },
+    "relations": {
+      "monster_id": "monster:zircon:15",
+      "task_id": "quest_task:zircon:59"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=78",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 1,
+      "DropSet": 0,
+      "Map": {
+        "Index": 6,
+        "Name": "2"
+      }
+    },
+    "id": "quest_task_monster_detail:zircon:78",
+    "identity": {
+      "zircon_index": 78
+    },
+    "relations": {
+      "monster_id": "monster:zircon:15",
+      "task_id": "quest_task:zircon:60"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=79",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 1,
+      "DropSet": 0,
+      "Map": {
+        "Index": 5,
+        "Name": "1"
+      }
+    },
+    "id": "quest_task_monster_detail:zircon:79",
+    "identity": {
+      "zircon_index": 79
+    },
+    "relations": {
+      "monster_id": "monster:zircon:15",
+      "task_id": "quest_task:zircon:61"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=80",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 2,
+      "Chance": 1,
+      "DropSet": 0,
+      "Map": {
+        "Index": 1,
+        "Name": "0"
+      }
+    },
+    "id": "quest_task_monster_detail:zircon:80",
+    "identity": {
+      "zircon_index": 80
+    },
+    "relations": {
+      "monster_id": "monster:zircon:16",
+      "task_id": "quest_task:zircon:62"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=81",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 2,
+      "Chance": 1,
+      "DropSet": 0,
+      "Map": {
+        "Index": 6,
+        "Name": "2"
+      }
+    },
+    "id": "quest_task_monster_detail:zircon:81",
+    "identity": {
+      "zircon_index": 81
+    },
+    "relations": {
+      "monster_id": "monster:zircon:16",
+      "task_id": "quest_task:zircon:63"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=82",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 2,
+      "Chance": 1,
+      "DropSet": 0,
+      "Map": {
+        "Index": 5,
+        "Name": "1"
+      }
+    },
+    "id": "quest_task_monster_detail:zircon:82",
+    "identity": {
+      "zircon_index": 82
+    },
+    "relations": {
+      "monster_id": "monster:zircon:16",
+      "task_id": "quest_task:zircon:64"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=83",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 1,
+      "DropSet": 0
+    },
+    "id": "quest_task_monster_detail:zircon:83",
+    "identity": {
+      "zircon_index": 83
+    },
+    "relations": {
+      "monster_id": "monster:zircon:117",
+      "task_id": "quest_task:zircon:65"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=85",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 1,
+      "DropSet": 0
+    },
+    "id": "quest_task_monster_detail:zircon:85",
+    "identity": {
+      "zircon_index": 85
+    },
+    "relations": {
+      "monster_id": "monster:zircon:119",
+      "task_id": "quest_task:zircon:66"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=86",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 1,
+      "DropSet": 0
+    },
+    "id": "quest_task_monster_detail:zircon:86",
+    "identity": {
+      "zircon_index": 86
+    },
+    "relations": {
+      "monster_id": "monster:zircon:116",
+      "task_id": "quest_task:zircon:68"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=87",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 1,
+      "DropSet": 0
+    },
+    "id": "quest_task_monster_detail:zircon:87",
+    "identity": {
+      "zircon_index": 87
+    },
+    "relations": {
+      "monster_id": "monster:zircon:118",
+      "task_id": "quest_task:zircon:67"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=88",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 1,
+      "DropSet": 0
+    },
+    "id": "quest_task_monster_detail:zircon:88",
+    "identity": {
+      "zircon_index": 88
+    },
+    "relations": {
+      "monster_id": "monster:zircon:118",
+      "task_id": "quest_task:zircon:69"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=89",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 1,
+      "DropSet": 0
+    },
+    "id": "quest_task_monster_detail:zircon:89",
+    "identity": {
+      "zircon_index": 89
+    },
+    "relations": {
+      "monster_id": "monster:zircon:116",
+      "task_id": "quest_task:zircon:69"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=90",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 1,
+      "DropSet": 0
+    },
+    "id": "quest_task_monster_detail:zircon:90",
+    "identity": {
+      "zircon_index": 90
+    },
+    "relations": {
+      "monster_id": "monster:zircon:117",
+      "task_id": "quest_task:zircon:69"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=91",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 1,
+      "DropSet": 0
+    },
+    "id": "quest_task_monster_detail:zircon:91",
+    "identity": {
+      "zircon_index": 91
+    },
+    "relations": {
+      "monster_id": "monster:zircon:119",
+      "task_id": "quest_task:zircon:69"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=92",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 1,
+      "DropSet": 0
+    },
+    "id": "quest_task_monster_detail:zircon:92",
+    "identity": {
+      "zircon_index": 92
+    },
+    "relations": {
+      "monster_id": "monster:zircon:120",
+      "task_id": "quest_task:zircon:69"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=93",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 1,
+      "DropSet": 0
+    },
+    "id": "quest_task_monster_detail:zircon:93",
+    "identity": {
+      "zircon_index": 93
+    },
+    "relations": {
+      "monster_id": "monster:zircon:120",
+      "task_id": "quest_task:zircon:70"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=94",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 1,
+      "DropSet": 0
+    },
+    "id": "quest_task_monster_detail:zircon:94",
+    "identity": {
+      "zircon_index": 94
+    },
+    "relations": {
+      "monster_id": "monster:zircon:121",
+      "task_id": "quest_task:zircon:71"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=95",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 1,
+      "DropSet": 0,
+      "Map": {
+        "Index": 5,
+        "Name": "1"
+      }
+    },
+    "id": "quest_task_monster_detail:zircon:95",
+    "identity": {
+      "zircon_index": 95
+    },
+    "relations": {
+      "monster_id": "monster:zircon:14",
+      "task_id": "quest_task:zircon:72"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=96",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 1,
+      "DropSet": 0,
+      "Map": {
+        "Index": 1,
+        "Name": "0"
+      }
+    },
+    "id": "quest_task_monster_detail:zircon:96",
+    "identity": {
+      "zircon_index": 96
+    },
+    "relations": {
+      "monster_id": "monster:zircon:14",
+      "task_id": "quest_task:zircon:73"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=97",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 1,
+      "DropSet": 0,
+      "Map": {
+        "Index": 6,
+        "Name": "2"
+      }
+    },
+    "id": "quest_task_monster_detail:zircon:97",
+    "identity": {
+      "zircon_index": 97
+    },
+    "relations": {
+      "monster_id": "monster:zircon:14",
+      "task_id": "quest_task:zircon:74"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task_monster_detail",
+    "evidence": [
+      {
+        "record": "QuestTaskMonsterDetails.Index=98",
+        "source_id": "zircon-table-QuestTaskMonsterDetails"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Chance": 1,
+      "DropSet": 0
+    },
+    "id": "quest_task_monster_detail:zircon:98",
+    "identity": {
+      "zircon_index": 98
+    },
+    "relations": {
+      "monster_id": "monster:zircon:29",
+      "task_id": "quest_task:zircon:78"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  }
+]

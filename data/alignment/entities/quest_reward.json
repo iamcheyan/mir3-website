@@ -1,0 +1,1262 @@
+[
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=100",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 750,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:100",
+    "identity": {
+      "zircon_index": 100
+    },
+    "relations": {
+      "item_id": "item:zircon:801",
+      "quest_id": "quest:zircon:43"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=104",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 288,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:104",
+    "identity": {
+      "zircon_index": 104
+    },
+    "relations": {
+      "item_id": "item:zircon:801",
+      "quest_id": "quest:zircon:44"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=108",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 28640,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:108",
+    "identity": {
+      "zircon_index": 108
+    },
+    "relations": {
+      "item_id": "item:zircon:801",
+      "quest_id": "quest:zircon:45"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=110",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 320,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:110",
+    "identity": {
+      "zircon_index": 110
+    },
+    "relations": {
+      "item_id": "item:zircon:801",
+      "quest_id": "quest:zircon:46"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=112",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 320,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:112",
+    "identity": {
+      "zircon_index": 112
+    },
+    "relations": {
+      "item_id": "item:zircon:801",
+      "quest_id": "quest:zircon:47"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=114",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 320,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:114",
+    "identity": {
+      "zircon_index": 114
+    },
+    "relations": {
+      "item_id": "item:zircon:801",
+      "quest_id": "quest:zircon:48"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=116",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 960,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:116",
+    "identity": {
+      "zircon_index": 116
+    },
+    "relations": {
+      "item_id": "item:zircon:801",
+      "quest_id": "quest:zircon:50"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=118",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 960,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:118",
+    "identity": {
+      "zircon_index": 118
+    },
+    "relations": {
+      "item_id": "item:zircon:801",
+      "quest_id": "quest:zircon:51"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=120",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 960,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:120",
+    "identity": {
+      "zircon_index": 120
+    },
+    "relations": {
+      "item_id": "item:zircon:801",
+      "quest_id": "quest:zircon:52"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=122",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 200,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:122",
+    "identity": {
+      "zircon_index": 122
+    },
+    "relations": {
+      "item_id": "item:zircon:801",
+      "quest_id": "quest:zircon:53"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=124",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 200,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:124",
+    "identity": {
+      "zircon_index": 124
+    },
+    "relations": {
+      "item_id": "item:zircon:801",
+      "quest_id": "quest:zircon:54"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=126",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 200,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:126",
+    "identity": {
+      "zircon_index": 126
+    },
+    "relations": {
+      "item_id": "item:zircon:801",
+      "quest_id": "quest:zircon:55"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=128",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 49600,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:128",
+    "identity": {
+      "zircon_index": 128
+    },
+    "relations": {
+      "item_id": "item:zircon:801",
+      "quest_id": "quest:zircon:56"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=130",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 59200,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:130",
+    "identity": {
+      "zircon_index": 130
+    },
+    "relations": {
+      "item_id": "item:zircon:801",
+      "quest_id": "quest:zircon:57"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=132",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 158800,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:132",
+    "identity": {
+      "zircon_index": 132
+    },
+    "relations": {
+      "item_id": "item:zircon:801",
+      "quest_id": "quest:zircon:58"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=134",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 152000,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:134",
+    "identity": {
+      "zircon_index": 134
+    },
+    "relations": {
+      "item_id": "item:zircon:801",
+      "quest_id": "quest:zircon:59"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=136",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 1680,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:136",
+    "identity": {
+      "zircon_index": 136
+    },
+    "relations": {
+      "item_id": "item:zircon:801",
+      "quest_id": "quest:zircon:60"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=138",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 1680,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:138",
+    "identity": {
+      "zircon_index": 138
+    },
+    "relations": {
+      "item_id": "item:zircon:801",
+      "quest_id": "quest:zircon:61"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=140",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 1680,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:140",
+    "identity": {
+      "zircon_index": 140
+    },
+    "relations": {
+      "item_id": "item:zircon:801",
+      "quest_id": "quest:zircon:62"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=142",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 5000,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:142",
+    "identity": {
+      "zircon_index": 142
+    },
+    "relations": {
+      "item_id": "item:zircon:1",
+      "quest_id": "quest:zircon:63"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=143",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 2,
+      "Bound": true,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:143",
+    "identity": {
+      "zircon_index": 143
+    },
+    "relations": {
+      "item_id": "item:zircon:133",
+      "quest_id": "quest:zircon:63"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=144",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 5000,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:144",
+    "identity": {
+      "zircon_index": 144
+    },
+    "relations": {
+      "item_id": "item:zircon:1",
+      "quest_id": "quest:zircon:64"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=145",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 2,
+      "Bound": true,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:145",
+    "identity": {
+      "zircon_index": 145
+    },
+    "relations": {
+      "item_id": "item:zircon:133",
+      "quest_id": "quest:zircon:64"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=146",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 5000,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:146",
+    "identity": {
+      "zircon_index": 146
+    },
+    "relations": {
+      "item_id": "item:zircon:1",
+      "quest_id": "quest:zircon:65"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=147",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 2,
+      "Bound": true,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:147",
+    "identity": {
+      "zircon_index": 147
+    },
+    "relations": {
+      "item_id": "item:zircon:133",
+      "quest_id": "quest:zircon:65"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=148",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "Bound": true,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:148",
+    "identity": {
+      "zircon_index": 148
+    },
+    "relations": {
+      "item_id": "item:zircon:5",
+      "quest_id": "quest:zircon:66"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=149",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 3000,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:149",
+    "identity": {
+      "zircon_index": 149
+    },
+    "relations": {
+      "item_id": "item:zircon:1",
+      "quest_id": "quest:zircon:66"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=30",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 352,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:30",
+    "identity": {
+      "zircon_index": 30
+    },
+    "relations": {
+      "item_id": "item:zircon:801",
+      "quest_id": "quest:zircon:9"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=32",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 26100,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:32",
+    "identity": {
+      "zircon_index": 32
+    },
+    "relations": {
+      "item_id": "item:zircon:801",
+      "quest_id": "quest:zircon:10"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=34",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 10400,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:34",
+    "identity": {
+      "zircon_index": 34
+    },
+    "relations": {
+      "item_id": "item:zircon:801",
+      "quest_id": "quest:zircon:11"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=36",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 1000,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:36",
+    "identity": {
+      "zircon_index": 36
+    },
+    "relations": {
+      "item_id": "item:zircon:801",
+      "quest_id": "quest:zircon:12"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=38",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 1000,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:38",
+    "identity": {
+      "zircon_index": 38
+    },
+    "relations": {
+      "item_id": "item:zircon:801",
+      "quest_id": "quest:zircon:13"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=40",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 28000,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:40",
+    "identity": {
+      "zircon_index": 40
+    },
+    "relations": {
+      "item_id": "item:zircon:801",
+      "quest_id": "quest:zircon:14"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=44",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 160000,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:44",
+    "identity": {
+      "zircon_index": 44
+    },
+    "relations": {
+      "item_id": "item:zircon:801",
+      "quest_id": "quest:zircon:16"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=46",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 54800,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:46",
+    "identity": {
+      "zircon_index": 46
+    },
+    "relations": {
+      "item_id": "item:zircon:801",
+      "quest_id": "quest:zircon:17"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=80",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 36800,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:80",
+    "identity": {
+      "zircon_index": 80
+    },
+    "relations": {
+      "item_id": "item:zircon:801",
+      "quest_id": "quest:zircon:34"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=82",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 54000,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:82",
+    "identity": {
+      "zircon_index": 82
+    },
+    "relations": {
+      "item_id": "item:zircon:801",
+      "quest_id": "quest:zircon:35"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=84",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 51200,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:84",
+    "identity": {
+      "zircon_index": 84
+    },
+    "relations": {
+      "item_id": "item:zircon:801",
+      "quest_id": "quest:zircon:36"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=86",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 136000,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:86",
+    "identity": {
+      "zircon_index": 86
+    },
+    "relations": {
+      "item_id": "item:zircon:801",
+      "quest_id": "quest:zircon:37"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=90",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 13700,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:90",
+    "identity": {
+      "zircon_index": 90
+    },
+    "relations": {
+      "item_id": "item:zircon:801",
+      "quest_id": "quest:zircon:39"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=92",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 8000,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:92",
+    "identity": {
+      "zircon_index": 92
+    },
+    "relations": {
+      "item_id": "item:zircon:801",
+      "quest_id": "quest:zircon:40"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_reward",
+    "evidence": [
+      {
+        "record": "QuestReward.Index=96",
+        "source_id": "zircon-table-QuestReward"
+      }
+    ],
+    "game_data": {
+      "Amount": 288,
+      "Bound": false,
+      "Choice": false,
+      "Class": "All",
+      "Duration": 0
+    },
+    "id": "quest_reward:zircon:96",
+    "identity": {
+      "zircon_index": 96
+    },
+    "relations": {
+      "item_id": "item:zircon:801",
+      "quest_id": "quest:zircon:42"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  }
+]

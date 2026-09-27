@@ -1,0 +1,3836 @@
+[
+  {
+    "assessment": {
+      "export_enabled": false,
+      "fields": {
+        "display_name": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "game_data": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "identity_mapping": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "relations": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "resource_identity": {
+          "reason": "资源身份必须由可视/索引证据确认。",
+          "status": "pending_evidence"
+        }
+      },
+      "overall_status": "pending_evidence",
+      "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+      "reviewed_at": null,
+      "reviewer": null,
+      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+    },
+    "entity_type": "map_area",
+    "evidence": [
+      {
+        "record": "maps.json#map-maze/areas/0",
+        "source_id": "website-data"
+      },
+      {
+        "record": "map-family-manifest.json#map-maze/东部石矿",
+        "source_id": "website-alignment-map-family"
+      }
+    ],
+    "game_data": {
+      "area_order": 1,
+      "category": "地图",
+      "ecology_candidate_details": [
+        {
+          "description": "矿石空间",
+          "file": "B115_001",
+          "index": 715
+        },
+        {
+          "description": "北部石矿1层",
+          "file": "D1411",
+          "index": 827
+        },
+        {
+          "description": "北部石矿2层",
+          "file": "D1412",
+          "index": 828
+        },
+        {
+          "description": "北部石矿3层",
+          "file": "D1413",
+          "index": 829
+        },
+        {
+          "description": "北部石矿4层",
+          "file": "D1414",
+          "index": 830
+        },
+        {
+          "description": "北部石矿5层",
+          "file": "D1415",
+          "index": 831
+        },
+        {
+          "description": "西部石矿1层",
+          "file": "D1421",
+          "index": 832
+        },
+        {
+          "description": "西部石矿2层",
+          "file": "D1422",
+          "index": 833
+        },
+        {
+          "description": "西部石矿3层",
+          "file": "D1423",
+          "index": 834
+        },
+        {
+          "description": "西部石矿4层",
+          "file": "D1424",
+          "index": 835
+        },
+        {
+          "description": "西部石矿5层",
+          "file": "D1425",
+          "index": 836
+        },
+        {
+          "description": "废矿矿山地下2层",
+          "file": "D404_002",
+          "index": 844
+        },
+        {
+          "description": "矿石储藏所",
+          "file": "D405",
+          "index": 845
+        },
+        {
+          "description": "矿山1层",
+          "file": "D421",
+          "index": 856
+        },
+        {
+          "description": "矿山2层",
+          "file": "D422",
+          "index": 858
+        },
+        {
+          "description": "矿山2层",
+          "file": "D422_002",
+          "index": 860
+        },
+        {
+          "description": "北部矿山入口",
+          "file": "D431",
+          "index": 862
+        },
+        {
+          "description": "北部矿山东面洞穴",
+          "file": "D432",
+          "index": 864
+        },
+        {
+          "description": "北部矿石储藏所",
+          "file": "D435",
+          "index": 871
+        },
+        {
+          "description": "南部矿山1层",
+          "file": "D451",
+          "index": 881
+        },
+        {
+          "description": "南部矿山2层",
+          "file": "D452",
+          "index": 883
+        }
+      ],
+      "group_title": "迷宫地图"
+    },
+    "id": "map_area:website:map-maze:01",
+    "identity": {
+      "standard_name_zh": "东部石矿",
+      "website_name": "东部石矿",
+      "website_source_id": "map_area:website:map-maze:01",
+      "zircon_candidate_indexes": [
+        715,
+        827,
+        828,
+        829,
+        830,
+        831,
+        832,
+        833,
+        834,
+        835,
+        836,
+        844,
+        845,
+        856,
+        858,
+        860,
+        862,
+        864,
+        871,
+        881,
+        883
+      ]
+    },
+    "relations": {
+      "candidate_entity_ids": [
+        "map:zircon:715",
+        "map:zircon:827",
+        "map:zircon:828",
+        "map:zircon:829",
+        "map:zircon:830",
+        "map:zircon:831",
+        "map:zircon:832",
+        "map:zircon:833",
+        "map:zircon:834",
+        "map:zircon:835",
+        "map:zircon:836",
+        "map:zircon:844",
+        "map:zircon:845",
+        "map:zircon:856",
+        "map:zircon:858",
+        "map:zircon:860",
+        "map:zircon:862",
+        "map:zircon:864",
+        "map:zircon:871",
+        "map:zircon:881",
+        "map:zircon:883"
+      ],
+      "map_group_id": "map_group:website:map-maze"
+    },
+    "resources": {
+      "website": {
+        "bytes": 144308,
+        "exists": true,
+        "format": "JPEG",
+        "frames": 1,
+        "height": 2200,
+        "mode": "RGB",
+        "path": "images/map/mgmap/sk.jpg",
+        "sha256": "73ce7dec705f6e79d0bb48308d6e87cde65bbba432f104a9dfbd65bc65484dee",
+        "width": 700
+      }
+    }
+  },
+  {
+    "assessment": {
+      "export_enabled": false,
+      "fields": {
+        "display_name": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "game_data": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "identity_mapping": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "relations": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "resource_identity": {
+          "reason": "资源身份必须由可视/索引证据确认。",
+          "status": "pending_evidence"
+        }
+      },
+      "overall_status": "pending_evidence",
+      "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+      "reviewed_at": null,
+      "reviewer": null,
+      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+    },
+    "entity_type": "map_area",
+    "evidence": [
+      {
+        "record": "maps.json#map-maze/areas/1",
+        "source_id": "website-data"
+      },
+      {
+        "record": "map-family-manifest.json#map-maze/天然洞穴、半兽人洞穴和废矿",
+        "source_id": "website-alignment-map-family"
+      }
+    ],
+    "game_data": {
+      "area_order": 2,
+      "category": "地图",
+      "ecology_candidate_details": [
+        {
+          "description": "矿石空间",
+          "file": "B115_001",
+          "index": 715
+        },
+        {
+          "description": "北部石矿1层",
+          "file": "D1411",
+          "index": 827
+        },
+        {
+          "description": "北部石矿2层",
+          "file": "D1412",
+          "index": 828
+        },
+        {
+          "description": "北部石矿3层",
+          "file": "D1413",
+          "index": 829
+        },
+        {
+          "description": "北部石矿4层",
+          "file": "D1414",
+          "index": 830
+        },
+        {
+          "description": "北部石矿5层",
+          "file": "D1415",
+          "index": 831
+        },
+        {
+          "description": "西部石矿1层",
+          "file": "D1421",
+          "index": 832
+        },
+        {
+          "description": "西部石矿2层",
+          "file": "D1422",
+          "index": 833
+        },
+        {
+          "description": "西部石矿3层",
+          "file": "D1423",
+          "index": 834
+        },
+        {
+          "description": "西部石矿4层",
+          "file": "D1424",
+          "index": 835
+        },
+        {
+          "description": "西部石矿5层",
+          "file": "D1425",
+          "index": 836
+        },
+        {
+          "description": "废矿矿山地下2层",
+          "file": "D404_002",
+          "index": 844
+        },
+        {
+          "description": "矿石储藏所",
+          "file": "D405",
+          "index": 845
+        },
+        {
+          "description": "矿山1层",
+          "file": "D421",
+          "index": 856
+        },
+        {
+          "description": "矿山2层",
+          "file": "D422",
+          "index": 858
+        },
+        {
+          "description": "矿山2层",
+          "file": "D422_002",
+          "index": 860
+        },
+        {
+          "description": "北部矿山入口",
+          "file": "D431",
+          "index": 862
+        },
+        {
+          "description": "北部矿山东面洞穴",
+          "file": "D432",
+          "index": 864
+        },
+        {
+          "description": "北部矿石储藏所",
+          "file": "D435",
+          "index": 871
+        },
+        {
+          "description": "南部矿山1层",
+          "file": "D451",
+          "index": 881
+        },
+        {
+          "description": "南部矿山2层",
+          "file": "D452",
+          "index": 883
+        },
+        {
+          "description": "半兽勇士洞",
+          "file": "D001_001",
+          "index": 753
+        },
+        {
+          "description": "天然洞穴1层",
+          "file": "D011",
+          "index": 755
+        },
+        {
+          "description": "天然洞穴2层",
+          "file": "D012",
+          "index": 756
+        },
+        {
+          "description": "天然洞穴2层",
+          "file": "D012_001",
+          "index": 757
+        },
+        {
+          "description": "东部银杏废矿2层",
+          "file": "D1302",
+          "index": 816
+        },
+        {
+          "description": "北部银杏废矿1层",
+          "file": "D1311",
+          "index": 817
+        },
+        {
+          "description": "北部银杏废矿2层",
+          "file": "D1312",
+          "index": 818
+        },
+        {
+          "description": "北部银杏废矿3层",
+          "file": "D1313",
+          "index": 819
+        },
+        {
+          "description": "北部银杏废矿4层",
+          "file": "D1314",
+          "index": 820
+        },
+        {
+          "description": "北部银杏废矿5层",
+          "file": "D1315",
+          "index": 821
+        },
+        {
+          "description": "西部银杏废矿1层",
+          "file": "D1321",
+          "index": 822
+        },
+        {
+          "description": "西部银杏废矿2层",
+          "file": "D1322",
+          "index": 823
+        },
+        {
+          "description": "西部银杏废矿3层",
+          "file": "D1323",
+          "index": 824
+        },
+        {
+          "description": "西部银杏废矿4层",
+          "file": "D1324",
+          "index": 825
+        },
+        {
+          "description": "西部银杏废矿5层",
+          "file": "D1325",
+          "index": 826
+        },
+        {
+          "description": "废矿矿山地下2层",
+          "file": "D404_002",
+          "index": 844
+        },
+        {
+          "description": "废矿南部洞穴",
+          "file": "D406",
+          "index": 847
+        },
+        {
+          "description": "北部废矿南面洞穴",
+          "file": "D436",
+          "index": 873
+        },
+        {
+          "description": "半兽天然洞穴",
+          "file": "E002",
+          "index": 1062
+        },
+        {
+          "description": "半兽天然洞穴",
+          "file": "E002_001",
+          "index": 1063
+        },
+        {
+          "description": "废矿秘密通路",
+          "file": "E603",
+          "index": 1071
+        },
+        {
+          "description": "废矿秘密通路",
+          "file": "E604",
+          "index": 1072
+        },
+        {
+          "description": "废矿秘密通路",
+          "file": "E605",
+          "index": 1073
+        },
+        {
+          "description": "东部银杏废矿2层",
+          "file": "D1302",
+          "index": 816
+        },
+        {
+          "description": "北部银杏废矿1层",
+          "file": "D1311",
+          "index": 817
+        },
+        {
+          "description": "北部银杏废矿2层",
+          "file": "D1312",
+          "index": 818
+        },
+        {
+          "description": "北部银杏废矿3层",
+          "file": "D1313",
+          "index": 819
+        },
+        {
+          "description": "北部银杏废矿4层",
+          "file": "D1314",
+          "index": 820
+        },
+        {
+          "description": "北部银杏废矿5层",
+          "file": "D1315",
+          "index": 821
+        },
+        {
+          "description": "西部银杏废矿1层",
+          "file": "D1321",
+          "index": 822
+        },
+        {
+          "description": "西部银杏废矿2层",
+          "file": "D1322",
+          "index": 823
+        },
+        {
+          "description": "西部银杏废矿3层",
+          "file": "D1323",
+          "index": 824
+        },
+        {
+          "description": "西部银杏废矿4层",
+          "file": "D1324",
+          "index": 825
+        },
+        {
+          "description": "西部银杏废矿5层",
+          "file": "D1325",
+          "index": 826
+        },
+        {
+          "description": "矿石空间",
+          "file": "B115_001",
+          "index": 715
+        },
+        {
+          "description": "废矿矿山地下2层",
+          "file": "D404_002",
+          "index": 844
+        },
+        {
+          "description": "矿石储藏所",
+          "file": "D405",
+          "index": 845
+        },
+        {
+          "description": "矿山1层",
+          "file": "D421",
+          "index": 856
+        },
+        {
+          "description": "矿山2层",
+          "file": "D422",
+          "index": 858
+        },
+        {
+          "description": "矿山2层",
+          "file": "D422_002",
+          "index": 860
+        },
+        {
+          "description": "北部矿山入口",
+          "file": "D431",
+          "index": 862
+        },
+        {
+          "description": "北部矿山东面洞穴",
+          "file": "D432",
+          "index": 864
+        },
+        {
+          "description": "北部矿石储藏所",
+          "file": "D435",
+          "index": 871
+        },
+        {
+          "description": "南部矿山1层",
+          "file": "D451",
+          "index": 881
+        },
+        {
+          "description": "南部矿山2层",
+          "file": "D452",
+          "index": 883
+        }
+      ],
+      "group_title": "迷宫地图"
+    },
+    "id": "map_area:website:map-maze:02",
+    "identity": {
+      "standard_name_zh": "天然洞穴、半兽人洞穴和废矿",
+      "website_name": "天然洞穴、半兽人洞穴和废矿",
+      "website_source_id": "map_area:website:map-maze:02",
+      "zircon_candidate_indexes": [
+        715,
+        753,
+        755,
+        756,
+        757,
+        816,
+        817,
+        818,
+        819,
+        820,
+        821,
+        822,
+        823,
+        824,
+        825,
+        826,
+        827,
+        828,
+        829,
+        830,
+        831,
+        832,
+        833,
+        834,
+        835,
+        836,
+        844,
+        845,
+        847,
+        856,
+        858,
+        860,
+        862,
+        864,
+        871,
+        873,
+        881,
+        883,
+        1062,
+        1063,
+        1071,
+        1072,
+        1073
+      ]
+    },
+    "relations": {
+      "candidate_entity_ids": [
+        "map:zircon:1062",
+        "map:zircon:1063",
+        "map:zircon:1071",
+        "map:zircon:1072",
+        "map:zircon:1073",
+        "map:zircon:715",
+        "map:zircon:753",
+        "map:zircon:755",
+        "map:zircon:756",
+        "map:zircon:757",
+        "map:zircon:816",
+        "map:zircon:817",
+        "map:zircon:818",
+        "map:zircon:819",
+        "map:zircon:820",
+        "map:zircon:821",
+        "map:zircon:822",
+        "map:zircon:823",
+        "map:zircon:824",
+        "map:zircon:825",
+        "map:zircon:826",
+        "map:zircon:827",
+        "map:zircon:828",
+        "map:zircon:829",
+        "map:zircon:830",
+        "map:zircon:831",
+        "map:zircon:832",
+        "map:zircon:833",
+        "map:zircon:834",
+        "map:zircon:835",
+        "map:zircon:836",
+        "map:zircon:844",
+        "map:zircon:845",
+        "map:zircon:847",
+        "map:zircon:856",
+        "map:zircon:858",
+        "map:zircon:860",
+        "map:zircon:862",
+        "map:zircon:864",
+        "map:zircon:871",
+        "map:zircon:873",
+        "map:zircon:881",
+        "map:zircon:883"
+      ],
+      "map_group_id": "map_group:website:map-maze"
+    },
+    "resources": {
+      "website": {
+        "bytes": 315727,
+        "exists": true,
+        "format": "JPEG",
+        "frames": 1,
+        "height": 2356,
+        "mode": "RGB",
+        "path": "images/map/mgmap/tr.jpg",
+        "sha256": "78c9c0e8d616653b112ea3307859238452a89133b9480b44ff40b77a86047a65",
+        "width": 2380
+      }
+    }
+  },
+  {
+    "assessment": {
+      "export_enabled": false,
+      "fields": {
+        "display_name": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "game_data": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "identity_mapping": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "relations": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "resource_identity": {
+          "reason": "资源身份必须由可视/索引证据确认。",
+          "status": "pending_evidence"
+        }
+      },
+      "overall_status": "pending_evidence",
+      "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+      "reviewed_at": null,
+      "reviewer": null,
+      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+    },
+    "entity_type": "map_area",
+    "evidence": [
+      {
+        "record": "maps.json#map-maze/areas/2",
+        "source_id": "website-data"
+      },
+      {
+        "record": "map-family-manifest.json#map-maze/银杏废矿",
+        "source_id": "website-alignment-map-family"
+      }
+    ],
+    "game_data": {
+      "area_order": 3,
+      "category": "地图",
+      "ecology_candidate_details": [
+        {
+          "description": "半兽勇士洞",
+          "file": "D001_001",
+          "index": 753
+        },
+        {
+          "description": "天然洞穴1层",
+          "file": "D011",
+          "index": 755
+        },
+        {
+          "description": "天然洞穴2层",
+          "file": "D012",
+          "index": 756
+        },
+        {
+          "description": "天然洞穴2层",
+          "file": "D012_001",
+          "index": 757
+        },
+        {
+          "description": "东部银杏废矿2层",
+          "file": "D1302",
+          "index": 816
+        },
+        {
+          "description": "北部银杏废矿1层",
+          "file": "D1311",
+          "index": 817
+        },
+        {
+          "description": "北部银杏废矿2层",
+          "file": "D1312",
+          "index": 818
+        },
+        {
+          "description": "北部银杏废矿3层",
+          "file": "D1313",
+          "index": 819
+        },
+        {
+          "description": "北部银杏废矿4层",
+          "file": "D1314",
+          "index": 820
+        },
+        {
+          "description": "北部银杏废矿5层",
+          "file": "D1315",
+          "index": 821
+        },
+        {
+          "description": "西部银杏废矿1层",
+          "file": "D1321",
+          "index": 822
+        },
+        {
+          "description": "西部银杏废矿2层",
+          "file": "D1322",
+          "index": 823
+        },
+        {
+          "description": "西部银杏废矿3层",
+          "file": "D1323",
+          "index": 824
+        },
+        {
+          "description": "西部银杏废矿4层",
+          "file": "D1324",
+          "index": 825
+        },
+        {
+          "description": "西部银杏废矿5层",
+          "file": "D1325",
+          "index": 826
+        },
+        {
+          "description": "废矿矿山地下2层",
+          "file": "D404_002",
+          "index": 844
+        },
+        {
+          "description": "废矿南部洞穴",
+          "file": "D406",
+          "index": 847
+        },
+        {
+          "description": "北部废矿南面洞穴",
+          "file": "D436",
+          "index": 873
+        },
+        {
+          "description": "半兽天然洞穴",
+          "file": "E002",
+          "index": 1062
+        },
+        {
+          "description": "半兽天然洞穴",
+          "file": "E002_001",
+          "index": 1063
+        },
+        {
+          "description": "废矿秘密通路",
+          "file": "E603",
+          "index": 1071
+        },
+        {
+          "description": "废矿秘密通路",
+          "file": "E604",
+          "index": 1072
+        },
+        {
+          "description": "废矿秘密通路",
+          "file": "E605",
+          "index": 1073
+        },
+        {
+          "description": "东部银杏废矿2层",
+          "file": "D1302",
+          "index": 816
+        },
+        {
+          "description": "北部银杏废矿1层",
+          "file": "D1311",
+          "index": 817
+        },
+        {
+          "description": "北部银杏废矿2层",
+          "file": "D1312",
+          "index": 818
+        },
+        {
+          "description": "北部银杏废矿3层",
+          "file": "D1313",
+          "index": 819
+        },
+        {
+          "description": "北部银杏废矿4层",
+          "file": "D1314",
+          "index": 820
+        },
+        {
+          "description": "北部银杏废矿5层",
+          "file": "D1315",
+          "index": 821
+        },
+        {
+          "description": "西部银杏废矿1层",
+          "file": "D1321",
+          "index": 822
+        },
+        {
+          "description": "西部银杏废矿2层",
+          "file": "D1322",
+          "index": 823
+        },
+        {
+          "description": "西部银杏废矿3层",
+          "file": "D1323",
+          "index": 824
+        },
+        {
+          "description": "西部银杏废矿4层",
+          "file": "D1324",
+          "index": 825
+        },
+        {
+          "description": "西部银杏废矿5层",
+          "file": "D1325",
+          "index": 826
+        }
+      ],
+      "group_title": "迷宫地图"
+    },
+    "id": "map_area:website:map-maze:03",
+    "identity": {
+      "standard_name_zh": "银杏废矿",
+      "website_name": "银杏废矿",
+      "website_source_id": "map_area:website:map-maze:03",
+      "zircon_candidate_indexes": [
+        753,
+        755,
+        756,
+        757,
+        816,
+        817,
+        818,
+        819,
+        820,
+        821,
+        822,
+        823,
+        824,
+        825,
+        826,
+        844,
+        847,
+        873,
+        1062,
+        1063,
+        1071,
+        1072,
+        1073
+      ]
+    },
+    "relations": {
+      "candidate_entity_ids": [
+        "map:zircon:1062",
+        "map:zircon:1063",
+        "map:zircon:1071",
+        "map:zircon:1072",
+        "map:zircon:1073",
+        "map:zircon:753",
+        "map:zircon:755",
+        "map:zircon:756",
+        "map:zircon:757",
+        "map:zircon:816",
+        "map:zircon:817",
+        "map:zircon:818",
+        "map:zircon:819",
+        "map:zircon:820",
+        "map:zircon:821",
+        "map:zircon:822",
+        "map:zircon:823",
+        "map:zircon:824",
+        "map:zircon:825",
+        "map:zircon:826",
+        "map:zircon:844",
+        "map:zircon:847",
+        "map:zircon:873"
+      ],
+      "map_group_id": "map_group:website:map-maze"
+    },
+    "resources": {
+      "website": {
+        "bytes": 140541,
+        "exists": true,
+        "format": "JPEG",
+        "frames": 1,
+        "height": 2200,
+        "mode": "RGB",
+        "path": "images/map/mgmap/yx.jpg",
+        "sha256": "b16744b5ecef0d07d095fefc070b05134287706a26bcfaa1df442bf77d7c949f",
+        "width": 644
+      }
+    }
+  },
+  {
+    "assessment": {
+      "export_enabled": false,
+      "fields": {
+        "display_name": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "game_data": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "identity_mapping": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "relations": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "resource_identity": {
+          "reason": "资源身份必须由可视/索引证据确认。",
+          "status": "pending_evidence"
+        }
+      },
+      "overall_status": "pending_evidence",
+      "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+      "reviewed_at": null,
+      "reviewer": null,
+      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+    },
+    "entity_type": "map_area",
+    "evidence": [
+      {
+        "record": "maps.json#map-maze/areas/3",
+        "source_id": "website-data"
+      },
+      {
+        "record": "map-family-manifest.json#map-maze/虫峡谷",
+        "source_id": "website-alignment-map-family"
+      }
+    ],
+    "game_data": {
+      "area_order": 4,
+      "category": "地图",
+      "ecology_candidate_details": [
+        {
+          "description": "虫峡谷1层",
+          "file": "d6021",
+          "index": 920
+        },
+        {
+          "description": "虫峡谷2层",
+          "file": "d6022",
+          "index": 921
+        },
+        {
+          "description": "虫峡谷3层",
+          "file": "D6023",
+          "index": 922
+        },
+        {
+          "description": "虫峡谷4层",
+          "file": "d6024",
+          "index": 923
+        },
+        {
+          "description": "虫峡谷5层",
+          "file": "D6025",
+          "index": 924
+        }
+      ],
+      "group_title": "迷宫地图"
+    },
+    "id": "map_area:website:map-maze:04",
+    "identity": {
+      "standard_name_zh": "虫峡谷",
+      "website_name": "虫峡谷",
+      "website_source_id": "map_area:website:map-maze:04",
+      "zircon_candidate_indexes": [
+        920,
+        921,
+        922,
+        923,
+        924
+      ]
+    },
+    "relations": {
+      "candidate_entity_ids": [
+        "map:zircon:920",
+        "map:zircon:921",
+        "map:zircon:922",
+        "map:zircon:923",
+        "map:zircon:924"
+      ],
+      "map_group_id": "map_group:website:map-maze"
+    },
+    "resources": {
+      "website": {
+        "bytes": 92452,
+        "exists": true,
+        "format": "JPEG",
+        "frames": 1,
+        "height": 1425,
+        "mode": "RGB",
+        "path": "images/map/mgmap/cx.jpg",
+        "sha256": "1b54afa54ea2c7c34649afdf2610ee7339de0770cf30f4ca4910b43a2a31e18c",
+        "width": 681
+      }
+    }
+  },
+  {
+    "assessment": {
+      "export_enabled": false,
+      "fields": {
+        "display_name": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "game_data": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "identity_mapping": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "relations": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "resource_identity": {
+          "reason": "资源身份必须由可视/索引证据确认。",
+          "status": "pending_evidence"
+        }
+      },
+      "overall_status": "pending_evidence",
+      "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+      "reviewed_at": null,
+      "reviewer": null,
+      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+    },
+    "entity_type": "map_area",
+    "evidence": [
+      {
+        "record": "maps.json#map-maze/areas/4",
+        "source_id": "website-data"
+      },
+      {
+        "record": "map-family-manifest.json#map-maze/绝命谷和万年谷",
+        "source_id": "website-alignment-map-family"
+      }
+    ],
+    "game_data": {
+      "area_order": 5,
+      "category": "地图",
+      "ecology_candidate_details": [
+        {
+          "description": "绝命谷1层南部",
+          "file": "d60011",
+          "index": 904
+        },
+        {
+          "description": "绝命谷1层西部",
+          "file": "d60012",
+          "index": 905
+        },
+        {
+          "description": "绝命谷1层北部",
+          "file": "d60013",
+          "index": 906
+        },
+        {
+          "description": "绝命谷2层西部",
+          "file": "d60021",
+          "index": 907
+        },
+        {
+          "description": "绝命谷2层北部",
+          "file": "d60022",
+          "index": 908
+        },
+        {
+          "description": "绝命谷3层",
+          "file": "d6004",
+          "index": 910
+        },
+        {
+          "description": "万年谷",
+          "file": "d6011",
+          "index": 911
+        },
+        {
+          "description": "万年谷中部",
+          "file": "D60131",
+          "index": 913
+        },
+        {
+          "description": "万年谷南部",
+          "file": "D60132",
+          "index": 914
+        },
+        {
+          "description": "万年谷西部",
+          "file": "D60133",
+          "index": 915
+        },
+        {
+          "description": "万年谷北部",
+          "file": "D60134",
+          "index": 916
+        },
+        {
+          "description": "万年谷东部",
+          "file": "D60135",
+          "index": 917
+        },
+        {
+          "description": "生死关",
+          "file": "d6015",
+          "index": 919
+        }
+      ],
+      "group_title": "迷宫地图"
+    },
+    "id": "map_area:website:map-maze:05",
+    "identity": {
+      "standard_name_zh": "绝命谷和万年谷",
+      "website_name": "绝命谷和万年谷",
+      "website_source_id": "map_area:website:map-maze:05",
+      "zircon_candidate_indexes": [
+        904,
+        905,
+        906,
+        907,
+        908,
+        910,
+        911,
+        913,
+        914,
+        915,
+        916,
+        917,
+        919
+      ]
+    },
+    "relations": {
+      "candidate_entity_ids": [
+        "map:zircon:904",
+        "map:zircon:905",
+        "map:zircon:906",
+        "map:zircon:907",
+        "map:zircon:908",
+        "map:zircon:910",
+        "map:zircon:911",
+        "map:zircon:913",
+        "map:zircon:914",
+        "map:zircon:915",
+        "map:zircon:916",
+        "map:zircon:917",
+        "map:zircon:919"
+      ],
+      "map_group_id": "map_group:website:map-maze"
+    },
+    "resources": {
+      "website": {
+        "bytes": 228530,
+        "exists": true,
+        "format": "JPEG",
+        "frames": 1,
+        "height": 1716,
+        "mode": "RGB",
+        "path": "images/map/mgmap/jm.jpg",
+        "sha256": "46f0e9c34b5cd4c6c56ea47f279a43eb7f072ef0542dcbc431e8837574ad539d",
+        "width": 1402
+      }
+    }
+  },
+  {
+    "assessment": {
+      "export_enabled": false,
+      "fields": {
+        "display_name": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "game_data": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "identity_mapping": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "relations": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "resource_identity": {
+          "reason": "资源身份必须由可视/索引证据确认。",
+          "status": "pending_evidence"
+        }
+      },
+      "overall_status": "pending_evidence",
+      "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+      "reviewed_at": null,
+      "reviewer": null,
+      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+    },
+    "entity_type": "map_area",
+    "evidence": [
+      {
+        "record": "maps.json#map-maze/areas/5",
+        "source_id": "website-data"
+      },
+      {
+        "record": "map-family-manifest.json#map-maze/矿山",
+        "source_id": "website-alignment-map-family"
+      }
+    ],
+    "game_data": {
+      "area_order": 6,
+      "category": "地图",
+      "ecology_candidate_details": [
+        {
+          "description": "矿石空间",
+          "file": "B115_001",
+          "index": 715
+        },
+        {
+          "description": "北部石矿1层",
+          "file": "D1411",
+          "index": 827
+        },
+        {
+          "description": "北部石矿2层",
+          "file": "D1412",
+          "index": 828
+        },
+        {
+          "description": "北部石矿3层",
+          "file": "D1413",
+          "index": 829
+        },
+        {
+          "description": "北部石矿4层",
+          "file": "D1414",
+          "index": 830
+        },
+        {
+          "description": "北部石矿5层",
+          "file": "D1415",
+          "index": 831
+        },
+        {
+          "description": "西部石矿1层",
+          "file": "D1421",
+          "index": 832
+        },
+        {
+          "description": "西部石矿2层",
+          "file": "D1422",
+          "index": 833
+        },
+        {
+          "description": "西部石矿3层",
+          "file": "D1423",
+          "index": 834
+        },
+        {
+          "description": "西部石矿4层",
+          "file": "D1424",
+          "index": 835
+        },
+        {
+          "description": "西部石矿5层",
+          "file": "D1425",
+          "index": 836
+        },
+        {
+          "description": "废矿矿山地下2层",
+          "file": "D404_002",
+          "index": 844
+        },
+        {
+          "description": "矿石储藏所",
+          "file": "D405",
+          "index": 845
+        },
+        {
+          "description": "矿山1层",
+          "file": "D421",
+          "index": 856
+        },
+        {
+          "description": "矿山2层",
+          "file": "D422",
+          "index": 858
+        },
+        {
+          "description": "矿山2层",
+          "file": "D422_002",
+          "index": 860
+        },
+        {
+          "description": "北部矿山入口",
+          "file": "D431",
+          "index": 862
+        },
+        {
+          "description": "北部矿山东面洞穴",
+          "file": "D432",
+          "index": 864
+        },
+        {
+          "description": "北部矿石储藏所",
+          "file": "D435",
+          "index": 871
+        },
+        {
+          "description": "南部矿山1层",
+          "file": "D451",
+          "index": 881
+        },
+        {
+          "description": "南部矿山2层",
+          "file": "D452",
+          "index": 883
+        },
+        {
+          "description": "半兽勇士洞",
+          "file": "D001_001",
+          "index": 753
+        },
+        {
+          "description": "天然洞穴1层",
+          "file": "D011",
+          "index": 755
+        },
+        {
+          "description": "天然洞穴2层",
+          "file": "D012",
+          "index": 756
+        },
+        {
+          "description": "天然洞穴2层",
+          "file": "D012_001",
+          "index": 757
+        },
+        {
+          "description": "东部银杏废矿2层",
+          "file": "D1302",
+          "index": 816
+        },
+        {
+          "description": "北部银杏废矿1层",
+          "file": "D1311",
+          "index": 817
+        },
+        {
+          "description": "北部银杏废矿2层",
+          "file": "D1312",
+          "index": 818
+        },
+        {
+          "description": "北部银杏废矿3层",
+          "file": "D1313",
+          "index": 819
+        },
+        {
+          "description": "北部银杏废矿4层",
+          "file": "D1314",
+          "index": 820
+        },
+        {
+          "description": "北部银杏废矿5层",
+          "file": "D1315",
+          "index": 821
+        },
+        {
+          "description": "西部银杏废矿1层",
+          "file": "D1321",
+          "index": 822
+        },
+        {
+          "description": "西部银杏废矿2层",
+          "file": "D1322",
+          "index": 823
+        },
+        {
+          "description": "西部银杏废矿3层",
+          "file": "D1323",
+          "index": 824
+        },
+        {
+          "description": "西部银杏废矿4层",
+          "file": "D1324",
+          "index": 825
+        },
+        {
+          "description": "西部银杏废矿5层",
+          "file": "D1325",
+          "index": 826
+        },
+        {
+          "description": "废矿矿山地下2层",
+          "file": "D404_002",
+          "index": 844
+        },
+        {
+          "description": "废矿南部洞穴",
+          "file": "D406",
+          "index": 847
+        },
+        {
+          "description": "北部废矿南面洞穴",
+          "file": "D436",
+          "index": 873
+        },
+        {
+          "description": "半兽天然洞穴",
+          "file": "E002",
+          "index": 1062
+        },
+        {
+          "description": "半兽天然洞穴",
+          "file": "E002_001",
+          "index": 1063
+        },
+        {
+          "description": "废矿秘密通路",
+          "file": "E603",
+          "index": 1071
+        },
+        {
+          "description": "废矿秘密通路",
+          "file": "E604",
+          "index": 1072
+        },
+        {
+          "description": "废矿秘密通路",
+          "file": "E605",
+          "index": 1073
+        },
+        {
+          "description": "矿石空间",
+          "file": "B115_001",
+          "index": 715
+        },
+        {
+          "description": "废矿矿山地下2层",
+          "file": "D404_002",
+          "index": 844
+        },
+        {
+          "description": "矿石储藏所",
+          "file": "D405",
+          "index": 845
+        },
+        {
+          "description": "矿山1层",
+          "file": "D421",
+          "index": 856
+        },
+        {
+          "description": "矿山2层",
+          "file": "D422",
+          "index": 858
+        },
+        {
+          "description": "矿山2层",
+          "file": "D422_002",
+          "index": 860
+        },
+        {
+          "description": "北部矿山入口",
+          "file": "D431",
+          "index": 862
+        },
+        {
+          "description": "北部矿山东面洞穴",
+          "file": "D432",
+          "index": 864
+        },
+        {
+          "description": "北部矿石储藏所",
+          "file": "D435",
+          "index": 871
+        },
+        {
+          "description": "南部矿山1层",
+          "file": "D451",
+          "index": 881
+        },
+        {
+          "description": "南部矿山2层",
+          "file": "D452",
+          "index": 883
+        }
+      ],
+      "group_title": "迷宫地图"
+    },
+    "id": "map_area:website:map-maze:06",
+    "identity": {
+      "standard_name_zh": "矿山",
+      "website_name": "矿山",
+      "website_source_id": "map_area:website:map-maze:06",
+      "zircon_candidate_indexes": [
+        715,
+        753,
+        755,
+        756,
+        757,
+        816,
+        817,
+        818,
+        819,
+        820,
+        821,
+        822,
+        823,
+        824,
+        825,
+        826,
+        827,
+        828,
+        829,
+        830,
+        831,
+        832,
+        833,
+        834,
+        835,
+        836,
+        844,
+        845,
+        847,
+        856,
+        858,
+        860,
+        862,
+        864,
+        871,
+        873,
+        881,
+        883,
+        1062,
+        1063,
+        1071,
+        1072,
+        1073
+      ]
+    },
+    "relations": {
+      "candidate_entity_ids": [
+        "map:zircon:1062",
+        "map:zircon:1063",
+        "map:zircon:1071",
+        "map:zircon:1072",
+        "map:zircon:1073",
+        "map:zircon:715",
+        "map:zircon:753",
+        "map:zircon:755",
+        "map:zircon:756",
+        "map:zircon:757",
+        "map:zircon:816",
+        "map:zircon:817",
+        "map:zircon:818",
+        "map:zircon:819",
+        "map:zircon:820",
+        "map:zircon:821",
+        "map:zircon:822",
+        "map:zircon:823",
+        "map:zircon:824",
+        "map:zircon:825",
+        "map:zircon:826",
+        "map:zircon:827",
+        "map:zircon:828",
+        "map:zircon:829",
+        "map:zircon:830",
+        "map:zircon:831",
+        "map:zircon:832",
+        "map:zircon:833",
+        "map:zircon:834",
+        "map:zircon:835",
+        "map:zircon:836",
+        "map:zircon:844",
+        "map:zircon:845",
+        "map:zircon:847",
+        "map:zircon:856",
+        "map:zircon:858",
+        "map:zircon:860",
+        "map:zircon:862",
+        "map:zircon:864",
+        "map:zircon:871",
+        "map:zircon:873",
+        "map:zircon:881",
+        "map:zircon:883"
+      ],
+      "map_group_id": "map_group:website:map-maze"
+    },
+    "resources": {
+      "website": {
+        "bytes": 102785,
+        "exists": true,
+        "format": "JPEG",
+        "frames": 1,
+        "height": 758,
+        "mode": "RGB",
+        "path": "images/map/mgmap/k.jpg",
+        "sha256": "5edc921a0a396ad1a8af6d3cba15c80ee62617a8ddad070d5cbd436480cf4851",
+        "width": 1392
+      }
+    }
+  },
+  {
+    "assessment": {
+      "export_enabled": false,
+      "fields": {
+        "display_name": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "game_data": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "identity_mapping": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "relations": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "resource_identity": {
+          "reason": "资源身份必须由可视/索引证据确认。",
+          "status": "pending_evidence"
+        }
+      },
+      "overall_status": "pending_evidence",
+      "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+      "reviewed_at": null,
+      "reviewer": null,
+      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+    },
+    "entity_type": "map_area",
+    "evidence": [
+      {
+        "record": "maps.json#map-maze/areas/6",
+        "source_id": "website-data"
+      },
+      {
+        "record": "map-family-manifest.json#map-maze/赤月山谷1",
+        "source_id": "website-alignment-map-family"
+      }
+    ],
+    "game_data": {
+      "area_order": 7,
+      "category": "地图",
+      "ecology_candidate_details": [
+        {
+          "description": "赤月山谷1层",
+          "file": "D1021",
+          "index": 787
+        }
+      ],
+      "group_title": "迷宫地图"
+    },
+    "id": "map_area:website:map-maze:07",
+    "identity": {
+      "standard_name_zh": "赤月山谷1",
+      "website_name": "赤月山谷1",
+      "website_source_id": "map_area:website:map-maze:07",
+      "zircon_candidate_indexes": [
+        787
+      ]
+    },
+    "relations": {
+      "candidate_entity_ids": [
+        "map:zircon:787"
+      ],
+      "map_group_id": "map_group:website:map-maze"
+    },
+    "resources": {
+      "website": {
+        "bytes": 154388,
+        "exists": true,
+        "format": "JPEG",
+        "frames": 1,
+        "height": 1800,
+        "mode": "RGB",
+        "path": "images/map/mgmap/c1.jpg",
+        "sha256": "026452c75126fc704591748418c9457c8e1cd7c3d5f4cbc9fa3926cebde469d9",
+        "width": 1040
+      }
+    }
+  },
+  {
+    "assessment": {
+      "export_enabled": false,
+      "fields": {
+        "display_name": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "game_data": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "identity_mapping": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "relations": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "resource_identity": {
+          "reason": "资源身份必须由可视/索引证据确认。",
+          "status": "pending_evidence"
+        }
+      },
+      "overall_status": "pending_evidence",
+      "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+      "reviewed_at": null,
+      "reviewer": null,
+      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+    },
+    "entity_type": "map_area",
+    "evidence": [
+      {
+        "record": "maps.json#map-maze/areas/7",
+        "source_id": "website-data"
+      },
+      {
+        "record": "map-family-manifest.json#map-maze/赤月山谷2",
+        "source_id": "website-alignment-map-family"
+      }
+    ],
+    "game_data": {
+      "area_order": 8,
+      "category": "地图",
+      "ecology_candidate_details": [
+        {
+          "description": "赤月山谷2层",
+          "file": "D1022",
+          "index": 788
+        }
+      ],
+      "group_title": "迷宫地图"
+    },
+    "id": "map_area:website:map-maze:08",
+    "identity": {
+      "standard_name_zh": "赤月山谷2",
+      "website_name": "赤月山谷2",
+      "website_source_id": "map_area:website:map-maze:08",
+      "zircon_candidate_indexes": [
+        788
+      ]
+    },
+    "relations": {
+      "candidate_entity_ids": [
+        "map:zircon:788"
+      ],
+      "map_group_id": "map_group:website:map-maze"
+    },
+    "resources": {
+      "website": {
+        "bytes": 140057,
+        "exists": true,
+        "format": "JPEG",
+        "frames": 1,
+        "height": 1720,
+        "mode": "RGB",
+        "path": "images/map/mgmap/c2.jpg",
+        "sha256": "b12a3831d24691d508a358e41f534038123149f668c47d3c0960f25302f143af",
+        "width": 976
+      }
+    }
+  },
+  {
+    "assessment": {
+      "export_enabled": false,
+      "fields": {
+        "display_name": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "game_data": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "identity_mapping": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "relations": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "resource_identity": {
+          "reason": "资源身份必须由可视/索引证据确认。",
+          "status": "pending_evidence"
+        }
+      },
+      "overall_status": "pending_evidence",
+      "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+      "reviewed_at": null,
+      "reviewer": null,
+      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+    },
+    "entity_type": "map_area",
+    "evidence": [
+      {
+        "record": "maps.json#map-maze/areas/8",
+        "source_id": "website-data"
+      },
+      {
+        "record": "map-family-manifest.json#map-maze/赤月山谷3",
+        "source_id": "website-alignment-map-family"
+      }
+    ],
+    "game_data": {
+      "area_order": 9,
+      "category": "地图",
+      "ecology_candidate_details": [
+        {
+          "description": "赤月山谷3层",
+          "file": "D10131",
+          "index": 781
+        },
+        {
+          "description": "赤月山谷3层",
+          "file": "D10132",
+          "index": 782
+        },
+        {
+          "description": "赤月山谷3层",
+          "file": "D10231",
+          "index": 789
+        },
+        {
+          "description": "赤月山谷3层",
+          "file": "D10232",
+          "index": 790
+        }
+      ],
+      "group_title": "迷宫地图"
+    },
+    "id": "map_area:website:map-maze:09",
+    "identity": {
+      "standard_name_zh": "赤月山谷3",
+      "website_name": "赤月山谷3",
+      "website_source_id": "map_area:website:map-maze:09",
+      "zircon_candidate_indexes": [
+        781,
+        782,
+        789,
+        790
+      ]
+    },
+    "relations": {
+      "candidate_entity_ids": [
+        "map:zircon:781",
+        "map:zircon:782",
+        "map:zircon:789",
+        "map:zircon:790"
+      ],
+      "map_group_id": "map_group:website:map-maze"
+    },
+    "resources": {
+      "website": {
+        "bytes": 155796,
+        "exists": true,
+        "format": "JPEG",
+        "frames": 1,
+        "height": 1772,
+        "mode": "RGB",
+        "path": "images/map/mgmap/c3.jpg",
+        "sha256": "2a63f1ff603afe5f0cc1779aa23d1efed8046f9d08746a9a3acd1e036a390339",
+        "width": 1012
+      }
+    }
+  },
+  {
+    "assessment": {
+      "export_enabled": false,
+      "fields": {
+        "display_name": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "game_data": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "identity_mapping": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "relations": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "resource_identity": {
+          "reason": "资源身份必须由可视/索引证据确认。",
+          "status": "pending_evidence"
+        }
+      },
+      "overall_status": "pending_evidence",
+      "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+      "reviewed_at": null,
+      "reviewer": null,
+      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+    },
+    "entity_type": "map_area",
+    "evidence": [
+      {
+        "record": "maps.json#map-maze/areas/9",
+        "source_id": "website-data"
+      },
+      {
+        "record": "map-family-manifest.json#map-maze/石阁阵",
+        "source_id": "website-alignment-map-family"
+      }
+    ],
+    "game_data": {
+      "area_order": 10,
+      "category": "地图",
+      "ecology_candidate_details": [
+        {
+          "description": "石阁庙",
+          "file": "75",
+          "index": 687
+        },
+        {
+          "description": "石阁入口",
+          "file": "d7101",
+          "index": 939
+        },
+        {
+          "description": "石阁入口",
+          "file": "d7102",
+          "index": 940
+        },
+        {
+          "description": "石阁1层",
+          "file": "d711",
+          "index": 941
+        },
+        {
+          "description": "石阁2层",
+          "file": "d712",
+          "index": 942
+        },
+        {
+          "description": "石阁3层",
+          "file": "d713",
+          "index": 943
+        },
+        {
+          "description": "石阁4层",
+          "file": "d714",
+          "index": 944
+        },
+        {
+          "description": "石阁5层",
+          "file": "D715",
+          "index": 945
+        },
+        {
+          "description": "石阁6层",
+          "file": "D716",
+          "index": 946
+        },
+        {
+          "description": "石阁7层",
+          "file": "D717",
+          "index": 976
+        }
+      ],
+      "group_title": "迷宫地图"
+    },
+    "id": "map_area:website:map-maze:10",
+    "identity": {
+      "standard_name_zh": "石阁阵",
+      "website_name": "石阁阵",
+      "website_source_id": "map_area:website:map-maze:10",
+      "zircon_candidate_indexes": [
+        687,
+        939,
+        940,
+        941,
+        942,
+        943,
+        944,
+        945,
+        946,
+        976
+      ]
+    },
+    "relations": {
+      "candidate_entity_ids": [
+        "map:zircon:687",
+        "map:zircon:939",
+        "map:zircon:940",
+        "map:zircon:941",
+        "map:zircon:942",
+        "map:zircon:943",
+        "map:zircon:944",
+        "map:zircon:945",
+        "map:zircon:946",
+        "map:zircon:976"
+      ],
+      "map_group_id": "map_group:website:map-maze"
+    },
+    "resources": {
+      "website": {
+        "bytes": 204555,
+        "exists": true,
+        "format": "JPEG",
+        "frames": 1,
+        "height": 2802,
+        "mode": "RGB",
+        "path": "images/map/mgmap/sg.jpg",
+        "sha256": "2732764672bfe9d75a096c9a83daad6743cdcf8ebc91c67df78589e8a14532c6",
+        "width": 816
+      }
+    }
+  },
+  {
+    "assessment": {
+      "export_enabled": false,
+      "fields": {
+        "display_name": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "game_data": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "identity_mapping": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "relations": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "resource_identity": {
+          "reason": "资源身份必须由可视/索引证据确认。",
+          "status": "pending_evidence"
+        }
+      },
+      "overall_status": "pending_evidence",
+      "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+      "reviewed_at": null,
+      "reviewer": null,
+      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+    },
+    "entity_type": "map_area",
+    "evidence": [
+      {
+        "record": "maps.json#map-maze/areas/10",
+        "source_id": "website-data"
+      },
+      {
+        "record": "map-family-manifest.json#map-maze/沃玛神殿地图",
+        "source_id": "website-alignment-map-family"
+      }
+    ],
+    "game_data": {
+      "area_order": 11,
+      "category": "地图",
+      "ecology_candidate_details": [
+        {
+          "description": "沃玛神殿入口",
+          "file": "D021",
+          "index": 758
+        },
+        {
+          "description": "沃玛神殿1层",
+          "file": "D022",
+          "index": 759
+        },
+        {
+          "description": "沃玛神殿1层",
+          "file": "D022_001",
+          "index": 760
+        },
+        {
+          "description": "沃玛神殿2层",
+          "file": "D023",
+          "index": 761
+        },
+        {
+          "description": "沃玛神殿师徒关",
+          "file": "D023_001",
+          "index": 762
+        },
+        {
+          "description": "沃玛神殿师徒关",
+          "file": "D023_002",
+          "index": 763
+        },
+        {
+          "description": "沃玛神殿",
+          "file": "D024",
+          "index": 764
+        },
+        {
+          "description": "沃玛神殿1层",
+          "file": "D032",
+          "index": 765
+        },
+        {
+          "description": "沃玛神殿2层",
+          "file": "D033",
+          "index": 766
+        },
+        {
+          "description": "沃玛神殿1层",
+          "file": "D042",
+          "index": 767
+        },
+        {
+          "description": "沃玛神殿2层",
+          "file": "D043",
+          "index": 768
+        },
+        {
+          "description": "沃玛神殿1层",
+          "file": "D052",
+          "index": 769
+        },
+        {
+          "description": "沃玛神殿2层",
+          "file": "D053",
+          "index": 770
+        }
+      ],
+      "group_title": "迷宫地图"
+    },
+    "id": "map_area:website:map-maze:11",
+    "identity": {
+      "standard_name_zh": "沃玛神殿地图",
+      "website_name": "沃玛神殿地图",
+      "website_source_id": "map_area:website:map-maze:11",
+      "zircon_candidate_indexes": [
+        758,
+        759,
+        760,
+        761,
+        762,
+        763,
+        764,
+        765,
+        766,
+        767,
+        768,
+        769,
+        770
+      ]
+    },
+    "relations": {
+      "candidate_entity_ids": [
+        "map:zircon:758",
+        "map:zircon:759",
+        "map:zircon:760",
+        "map:zircon:761",
+        "map:zircon:762",
+        "map:zircon:763",
+        "map:zircon:764",
+        "map:zircon:765",
+        "map:zircon:766",
+        "map:zircon:767",
+        "map:zircon:768",
+        "map:zircon:769",
+        "map:zircon:770"
+      ],
+      "map_group_id": "map_group:website:map-maze"
+    },
+    "resources": {
+      "website": {
+        "bytes": 290777,
+        "exists": true,
+        "format": "JPEG",
+        "frames": 1,
+        "height": 1700,
+        "mode": "RGB",
+        "path": "images/map/mgmap/wm.jpg",
+        "sha256": "1ec5eae74dbdc0e055bff783dda9d886735691f1a029c87b8e7f8f2d52dc99a1",
+        "width": 2324
+      }
+    }
+  },
+  {
+    "assessment": {
+      "export_enabled": false,
+      "fields": {
+        "display_name": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "game_data": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "identity_mapping": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "relations": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "resource_identity": {
+          "reason": "资源身份必须由可视/索引证据确认。",
+          "status": "pending_evidence"
+        }
+      },
+      "overall_status": "pending_evidence",
+      "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+      "reviewed_at": null,
+      "reviewer": null,
+      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+    },
+    "entity_type": "map_area",
+    "evidence": [
+      {
+        "record": "maps.json#map-maze/areas/11",
+        "source_id": "website-data"
+      },
+      {
+        "record": "map-family-manifest.json#map-maze/祖玛神殿",
+        "source_id": "website-alignment-map-family"
+      }
+    ],
+    "game_data": {
+      "area_order": 12,
+      "category": "地图",
+      "ecology_candidate_details": [
+        {
+          "description": "祖玛神殿大厅",
+          "file": "0157",
+          "index": 612
+        },
+        {
+          "description": "祖玛神殿",
+          "file": "31",
+          "index": 662
+        },
+        {
+          "description": "祖玛神殿5层",
+          "file": "D505",
+          "index": 885
+        },
+        {
+          "description": "祖玛神殿7层大厅",
+          "file": "D5071",
+          "index": 895
+        },
+        {
+          "description": "祖玛神殿7层",
+          "file": "D5072",
+          "index": 896
+        },
+        {
+          "description": "祖玛神殿7层",
+          "file": "D5073",
+          "index": 897
+        },
+        {
+          "description": "祖玛神殿7层",
+          "file": "D5074",
+          "index": 898
+        },
+        {
+          "description": "祖玛神殿",
+          "file": "d511",
+          "index": 899
+        },
+        {
+          "description": "祖玛神殿",
+          "file": "d512",
+          "index": 900
+        },
+        {
+          "description": "祖玛神殿",
+          "file": "d513",
+          "index": 901
+        },
+        {
+          "description": "祖玛神殿",
+          "file": "d514",
+          "index": 902
+        }
+      ],
+      "group_title": "迷宫地图"
+    },
+    "id": "map_area:website:map-maze:12",
+    "identity": {
+      "standard_name_zh": "祖玛神殿",
+      "website_name": "祖玛神殿",
+      "website_source_id": "map_area:website:map-maze:12",
+      "zircon_candidate_indexes": [
+        612,
+        662,
+        885,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902
+      ]
+    },
+    "relations": {
+      "candidate_entity_ids": [
+        "map:zircon:612",
+        "map:zircon:662",
+        "map:zircon:885",
+        "map:zircon:895",
+        "map:zircon:896",
+        "map:zircon:897",
+        "map:zircon:898",
+        "map:zircon:899",
+        "map:zircon:900",
+        "map:zircon:901",
+        "map:zircon:902"
+      ],
+      "map_group_id": "map_group:website:map-maze"
+    },
+    "resources": {
+      "website": {
+        "bytes": 150752,
+        "exists": true,
+        "format": "JPEG",
+        "frames": 1,
+        "height": 2256,
+        "mode": "RGB",
+        "path": "images/map/mgmap/mz.jpg",
+        "sha256": "e44e356e4ff50fdac7911c65b030d7f79e37564ebbd833c556c0f8f0f25013e8",
+        "width": 980
+      }
+    }
+  },
+  {
+    "assessment": {
+      "export_enabled": false,
+      "fields": {
+        "display_name": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "game_data": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "identity_mapping": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "relations": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "resource_identity": {
+          "reason": "资源身份必须由可视/索引证据确认。",
+          "status": "pending_evidence"
+        }
+      },
+      "overall_status": "pending_evidence",
+      "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+      "reviewed_at": null,
+      "reviewer": null,
+      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+    },
+    "entity_type": "map_area",
+    "evidence": [
+      {
+        "record": "maps.json#map-maze/areas/12",
+        "source_id": "website-data"
+      },
+      {
+        "record": "map-family-manifest.json#map-maze/蚂蚁洞穴",
+        "source_id": "website-alignment-map-family"
+      }
+    ],
+    "game_data": {
+      "area_order": 13,
+      "category": "地图",
+      "ecology_candidate_details": [
+        {
+          "description": "南部蚂蚁洞4层",
+          "file": "D8001",
+          "index": 977
+        },
+        {
+          "description": "南部蚂蚁洞1层",
+          "file": "D8002",
+          "index": 978
+        },
+        {
+          "description": "南部蚂蚁洞2层",
+          "file": "D8003",
+          "index": 979
+        },
+        {
+          "description": "南部蚂蚁洞3层",
+          "file": "D8004",
+          "index": 980
+        },
+        {
+          "description": "南部蚂蚁洞穴",
+          "file": "D8021",
+          "index": 981
+        },
+        {
+          "description": "南部蚂蚁洞穴",
+          "file": "d8022",
+          "index": 982
+        },
+        {
+          "description": "南部蚂蚁洞穴",
+          "file": "D8031",
+          "index": 983
+        },
+        {
+          "description": "南部蚂蚁洞穴",
+          "file": "D8032",
+          "index": 984
+        },
+        {
+          "description": "南部蚂蚁洞穴",
+          "file": "d8033",
+          "index": 985
+        },
+        {
+          "description": "南部蚂蚁洞穴",
+          "file": "D8041",
+          "index": 986
+        },
+        {
+          "description": "南部蚂蚁洞穴3层2",
+          "file": "D806",
+          "index": 988
+        },
+        {
+          "description": "南部蚂蚁洞穴",
+          "file": "D8061",
+          "index": 989
+        },
+        {
+          "description": "南部蚂蚁洞穴",
+          "file": "d8062",
+          "index": 990
+        },
+        {
+          "description": "南部蚂蚁洞穴3层3",
+          "file": "d807",
+          "index": 991
+        },
+        {
+          "description": "南部蚂蚁洞穴",
+          "file": "d8071",
+          "index": 992
+        },
+        {
+          "description": "南部蚂蚁洞穴",
+          "file": "d8072",
+          "index": 993
+        },
+        {
+          "description": "南部蚂蚁洞穴3层4",
+          "file": "d808",
+          "index": 994
+        },
+        {
+          "description": "北部蚂蚁洞穴1层4",
+          "file": "D8101",
+          "index": 995
+        },
+        {
+          "description": "北部蚂蚁洞穴1层1",
+          "file": "D8102",
+          "index": 996
+        },
+        {
+          "description": "北部蚂蚁洞穴1层2",
+          "file": "D8103",
+          "index": 997
+        },
+        {
+          "description": "北部蚂蚁洞穴1层3",
+          "file": "D8104",
+          "index": 998
+        },
+        {
+          "description": "东部蚂蚁洞穴1层4",
+          "file": "D8201",
+          "index": 1018
+        },
+        {
+          "description": "东部蚂蚁洞穴1层1",
+          "file": "D8202",
+          "index": 1019
+        },
+        {
+          "description": "东部蚂蚁洞穴1层2",
+          "file": "D8203",
+          "index": 1020
+        },
+        {
+          "description": "东部蚂蚁洞穴1层3",
+          "file": "D8204",
+          "index": 1021
+        }
+      ],
+      "group_title": "迷宫地图"
+    },
+    "id": "map_area:website:map-maze:13",
+    "identity": {
+      "standard_name_zh": "蚂蚁洞穴",
+      "website_name": "蚂蚁洞穴",
+      "website_source_id": "map_area:website:map-maze:13",
+      "zircon_candidate_indexes": [
+        977,
+        978,
+        979,
+        980,
+        981,
+        982,
+        983,
+        984,
+        985,
+        986,
+        988,
+        989,
+        990,
+        991,
+        992,
+        993,
+        994,
+        995,
+        996,
+        997,
+        998,
+        1018,
+        1019,
+        1020,
+        1021
+      ]
+    },
+    "relations": {
+      "candidate_entity_ids": [
+        "map:zircon:1018",
+        "map:zircon:1019",
+        "map:zircon:1020",
+        "map:zircon:1021",
+        "map:zircon:977",
+        "map:zircon:978",
+        "map:zircon:979",
+        "map:zircon:980",
+        "map:zircon:981",
+        "map:zircon:982",
+        "map:zircon:983",
+        "map:zircon:984",
+        "map:zircon:985",
+        "map:zircon:986",
+        "map:zircon:988",
+        "map:zircon:989",
+        "map:zircon:990",
+        "map:zircon:991",
+        "map:zircon:992",
+        "map:zircon:993",
+        "map:zircon:994",
+        "map:zircon:995",
+        "map:zircon:996",
+        "map:zircon:997",
+        "map:zircon:998"
+      ],
+      "map_group_id": "map_group:website:map-maze"
+    },
+    "resources": {
+      "website": {
+        "bytes": 143596,
+        "exists": true,
+        "format": "JPEG",
+        "frames": 1,
+        "height": 684,
+        "mode": "RGB",
+        "path": "images/map/mgmap/my.jpg",
+        "sha256": "e8bd0db16ea45c60b8a0ae0aa80b463bc7ace81816248e2c93ea529c8d573fc1",
+        "width": 1746
+      }
+    }
+  },
+  {
+    "assessment": {
+      "export_enabled": false,
+      "fields": {
+        "display_name": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "game_data": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "identity_mapping": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "relations": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "resource_identity": {
+          "reason": "资源身份必须由可视/索引证据确认。",
+          "status": "pending_evidence"
+        }
+      },
+      "overall_status": "pending_evidence",
+      "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+      "reviewed_at": null,
+      "reviewer": null,
+      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+    },
+    "entity_type": "map_area",
+    "evidence": [
+      {
+        "record": "maps.json#map-maze/areas/13",
+        "source_id": "website-data"
+      },
+      {
+        "record": "map-family-manifest.json#map-maze/潘夜神殿",
+        "source_id": "website-alignment-map-family"
+      }
+    ],
+    "game_data": {
+      "area_order": 14,
+      "category": "地图",
+      "ecology_candidate_details": [
+        {
+          "description": "潘夜神殿3层西部",
+          "file": "D11031",
+          "index": 797
+        },
+        {
+          "description": "潘夜神殿3层东部",
+          "file": "D11032",
+          "index": 798
+        },
+        {
+          "description": "潘夜神殿大厅",
+          "file": "D1110",
+          "index": 799
+        },
+        {
+          "description": "潘夜神殿4层",
+          "file": "D1111",
+          "index": 800
+        },
+        {
+          "description": "潘夜神殿5层",
+          "file": "D1112",
+          "index": 801
+        },
+        {
+          "description": "潘夜神殿6层",
+          "file": "D1113",
+          "index": 802
+        },
+        {
+          "description": "潘夜神殿7层西部",
+          "file": "D11141",
+          "index": 803
+        },
+        {
+          "description": "潘夜神殿7层东部",
+          "file": "D11142",
+          "index": 804
+        },
+        {
+          "description": "潘夜神殿8层",
+          "file": "D1115",
+          "index": 805
+        },
+        {
+          "description": "潘夜神殿",
+          "file": "D1116",
+          "index": 806
+        }
+      ],
+      "group_title": "迷宫地图"
+    },
+    "id": "map_area:website:map-maze:14",
+    "identity": {
+      "standard_name_zh": "潘夜神殿",
+      "website_name": "潘夜神殿",
+      "website_source_id": "map_area:website:map-maze:14",
+      "zircon_candidate_indexes": [
+        797,
+        798,
+        799,
+        800,
+        801,
+        802,
+        803,
+        804,
+        805,
+        806
+      ]
+    },
+    "relations": {
+      "candidate_entity_ids": [
+        "map:zircon:797",
+        "map:zircon:798",
+        "map:zircon:799",
+        "map:zircon:800",
+        "map:zircon:801",
+        "map:zircon:802",
+        "map:zircon:803",
+        "map:zircon:804",
+        "map:zircon:805",
+        "map:zircon:806"
+      ],
+      "map_group_id": "map_group:website:map-maze"
+    },
+    "resources": {
+      "website": {
+        "bytes": 384008,
+        "exists": true,
+        "format": "JPEG",
+        "frames": 1,
+        "height": 2148,
+        "mode": "RGB",
+        "path": "images/map/mgmap/py.jpg",
+        "sha256": "d31adb8ef92dc92117d5b63f525cae51eeccd058ae320633153a89fa290cf1df",
+        "width": 1968
+      }
+    }
+  },
+  {
+    "assessment": {
+      "export_enabled": false,
+      "fields": {
+        "display_name": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "game_data": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "identity_mapping": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "relations": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "resource_identity": {
+          "reason": "资源身份必须由可视/索引证据确认。",
+          "status": "pending_evidence"
+        }
+      },
+      "overall_status": "pending_evidence",
+      "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+      "reviewed_at": null,
+      "reviewer": null,
+      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+    },
+    "entity_type": "map_area",
+    "evidence": [
+      {
+        "record": "maps.json#map-maze/areas/14",
+        "source_id": "website-data"
+      },
+      {
+        "record": "map-family-manifest.json#map-maze/潘夜石窟",
+        "source_id": "website-alignment-map-family"
+      }
+    ],
+    "game_data": {
+      "area_order": 15,
+      "category": "地图",
+      "ecology_candidate_details": [
+        {
+          "description": "潘夜石窟1层",
+          "file": "D1211",
+          "index": 810
+        },
+        {
+          "description": "潘夜石窟2层西部",
+          "file": "D12121",
+          "index": 811
+        },
+        {
+          "description": "潘夜石窟3层",
+          "file": "D1213",
+          "index": 813
+        },
+        {
+          "description": "潘夜石窟4层",
+          "file": "D1214",
+          "index": 814
+        },
+        {
+          "description": "潘夜石窟5层",
+          "file": "D1215",
+          "index": 815
+        }
+      ],
+      "group_title": "迷宫地图"
+    },
+    "id": "map_area:website:map-maze:15",
+    "identity": {
+      "standard_name_zh": "潘夜石窟",
+      "website_name": "潘夜石窟",
+      "website_source_id": "map_area:website:map-maze:15",
+      "zircon_candidate_indexes": [
+        810,
+        811,
+        813,
+        814,
+        815
+      ]
+    },
+    "relations": {
+      "candidate_entity_ids": [
+        "map:zircon:810",
+        "map:zircon:811",
+        "map:zircon:813",
+        "map:zircon:814",
+        "map:zircon:815"
+      ],
+      "map_group_id": "map_group:website:map-maze"
+    },
+    "resources": {
+      "website": {
+        "bytes": 122878,
+        "exists": true,
+        "format": "JPEG",
+        "frames": 1,
+        "height": 1770,
+        "mode": "RGB",
+        "path": "images/map/mgmap/pys.jpg",
+        "sha256": "af58eadf49f2f114816e7c12100336351c1d458cc32359999531b0724c5f7e4e",
+        "width": 720
+      }
+    }
+  },
+  {
+    "assessment": {
+      "export_enabled": false,
+      "fields": {
+        "display_name": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "game_data": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "identity_mapping": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "relations": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "resource_identity": {
+          "reason": "资源身份必须由可视/索引证据确认。",
+          "status": "pending_evidence"
+        }
+      },
+      "overall_status": "pending_evidence",
+      "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+      "reviewed_at": null,
+      "reviewer": null,
+      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+    },
+    "entity_type": "map_area",
+    "evidence": [
+      {
+        "record": "maps.json#map-maze/areas/15",
+        "source_id": "website-data"
+      },
+      {
+        "record": "map-family-manifest.json#map-maze/真天宫和黑度宫",
+        "source_id": "website-alignment-map-family"
+      }
+    ],
+    "game_data": {
+      "area_order": 16,
+      "category": "地图",
+      "ecology_candidate_details": [
+        {
+          "description": "真天宫1层",
+          "file": "d15023",
+          "index": 1099
+        },
+        {
+          "description": "真天宫2层",
+          "file": "d15033",
+          "index": 1100
+        },
+        {
+          "description": "真天宫3层",
+          "file": "d15054",
+          "index": 1101
+        },
+        {
+          "description": "真天宫",
+          "file": "d1506",
+          "index": 1102
+        },
+        {
+          "description": "黑度宫1层",
+          "file": "d1510",
+          "index": 1103
+        },
+        {
+          "description": "黑度宫2层",
+          "file": "d15111",
+          "index": 1104
+        },
+        {
+          "description": "黑度宫3层",
+          "file": "d1512",
+          "index": 1105
+        },
+        {
+          "description": "黑度宫4层",
+          "file": "d1513",
+          "index": 1106
+        }
+      ],
+      "group_title": "迷宫地图"
+    },
+    "id": "map_area:website:map-maze:16",
+    "identity": {
+      "standard_name_zh": "真天宫和黑度宫",
+      "website_name": "真天宫和黑度宫",
+      "website_source_id": "map_area:website:map-maze:16",
+      "zircon_candidate_indexes": [
+        1099,
+        1100,
+        1101,
+        1102,
+        1103,
+        1104,
+        1105,
+        1106
+      ]
+    },
+    "relations": {
+      "candidate_entity_ids": [
+        "map:zircon:1099",
+        "map:zircon:1100",
+        "map:zircon:1101",
+        "map:zircon:1102",
+        "map:zircon:1103",
+        "map:zircon:1104",
+        "map:zircon:1105",
+        "map:zircon:1106"
+      ],
+      "map_group_id": "map_group:website:map-maze"
+    },
+    "resources": {
+      "website": {
+        "bytes": 470512,
+        "exists": true,
+        "format": "JPEG",
+        "frames": 1,
+        "height": 1320,
+        "mode": "RGB",
+        "path": "images/map/mgmap/zh.jpg",
+        "sha256": "6739ab5f96d7a0210637acb7775a7bfceae8e35dbede3b7edbed858b5137f823",
+        "width": 4515
+      }
+    }
+  },
+  {
+    "assessment": {
+      "export_enabled": false,
+      "fields": {
+        "display_name": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "game_data": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "identity_mapping": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "relations": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "resource_identity": {
+          "reason": "资源身份必须由可视/索引证据确认。",
+          "status": "pending_evidence"
+        }
+      },
+      "overall_status": "pending_evidence",
+      "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+      "reviewed_at": null,
+      "reviewer": null,
+      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+    },
+    "entity_type": "map_area",
+    "evidence": [
+      {
+        "record": "maps.json#map-maze/areas/16",
+        "source_id": "website-data"
+      },
+      {
+        "record": "map-family-manifest.json#map-maze/罪孽洞穴",
+        "source_id": "website-alignment-map-family"
+      }
+    ],
+    "game_data": {
+      "area_order": 17,
+      "category": "地图",
+      "ecology_candidate_details": [
+        {
+          "description": "罪孽洞穴1层",
+          "file": "D1201",
+          "index": 807
+        },
+        {
+          "description": "罪孽洞穴2层",
+          "file": "D1202",
+          "index": 808
+        },
+        {
+          "description": "罪孽洞穴4层",
+          "file": "D1204",
+          "index": 809
+        }
+      ],
+      "group_title": "迷宫地图"
+    },
+    "id": "map_area:website:map-maze:17",
+    "identity": {
+      "standard_name_zh": "罪孽洞穴",
+      "website_name": "罪孽洞穴",
+      "website_source_id": "map_area:website:map-maze:17",
+      "zircon_candidate_indexes": [
+        807,
+        808,
+        809
+      ]
+    },
+    "relations": {
+      "candidate_entity_ids": [
+        "map:zircon:807",
+        "map:zircon:808",
+        "map:zircon:809"
+      ],
+      "map_group_id": "map_group:website:map-maze"
+    },
+    "resources": {
+      "website": {
+        "bytes": 94738,
+        "exists": true,
+        "format": "JPEG",
+        "frames": 1,
+        "height": 948,
+        "mode": "RGB",
+        "path": "images/map/mgmap/zn.jpg",
+        "sha256": "d2bf104d06e76614ec7acdf9dc98c9e698c3175dc3ac01e599133121fd5ed5d2",
+        "width": 939
+      }
+    }
+  },
+  {
+    "assessment": {
+      "export_enabled": false,
+      "fields": {
+        "display_name": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "game_data": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "identity_mapping": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "relations": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "resource_identity": {
+          "reason": "资源身份必须由可视/索引证据确认。",
+          "status": "pending_evidence"
+        }
+      },
+      "overall_status": "pending_evidence",
+      "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+      "reviewed_at": null,
+      "reviewer": null,
+      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+    },
+    "entity_type": "map_area",
+    "evidence": [
+      {
+        "record": "maps.json#map-sj/areas/0",
+        "source_id": "website-data"
+      },
+      {
+        "record": "map-family-manifest.json#map-sj/[神舰3楼地图]",
+        "source_id": "website-alignment-map-family"
+      }
+    ],
+    "game_data": {
+      "area_order": 1,
+      "category": "地图",
+      "ecology_candidate_details": [
+        {
+          "description": "神舰入口",
+          "file": "D900",
+          "index": 1041
+        },
+        {
+          "description": "神舰地下2层",
+          "file": "D9021",
+          "index": 1042
+        },
+        {
+          "description": "神舰地下2层",
+          "file": "D9022",
+          "index": 1048
+        },
+        {
+          "description": "神舰地下1层",
+          "file": "d903",
+          "index": 1107
+        }
+      ],
+      "group_title": "神舰地图"
+    },
+    "id": "map_area:website:map-sj:01",
+    "identity": {
+      "standard_name_zh": "[神舰3楼地图]",
+      "website_name": "[神舰3楼地图]",
+      "website_source_id": "map_area:website:map-sj:01",
+      "zircon_candidate_indexes": [
+        1041,
+        1042,
+        1048,
+        1107
+      ]
+    },
+    "relations": {
+      "candidate_entity_ids": [
+        "map:zircon:1041",
+        "map:zircon:1042",
+        "map:zircon:1048",
+        "map:zircon:1107"
+      ],
+      "map_group_id": "map_group:website:map-sj"
+    },
+    "resources": {
+      "website": {
+        "bytes": 5492,
+        "exists": true,
+        "format": "JPEG",
+        "frames": 1,
+        "height": 300,
+        "mode": "RGB",
+        "path": "images/map/mgmap/sj04.jpg",
+        "sha256": "cf2e30d4c5bfedf1a88472ada8608996495a2782c13d4aee10625995d95da762",
+        "width": 400
+      }
+    }
+  },
+  {
+    "assessment": {
+      "export_enabled": false,
+      "fields": {
+        "display_name": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "game_data": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "identity_mapping": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "relations": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "resource_identity": {
+          "reason": "资源身份必须由可视/索引证据确认。",
+          "status": "pending_evidence"
+        }
+      },
+      "overall_status": "pending_evidence",
+      "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+      "reviewed_at": null,
+      "reviewer": null,
+      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+    },
+    "entity_type": "map_area",
+    "evidence": [
+      {
+        "record": "maps.json#map-sj/areas/1",
+        "source_id": "website-data"
+      },
+      {
+        "record": "map-family-manifest.json#map-sj/[神舰2楼A地图]",
+        "source_id": "website-alignment-map-family"
+      }
+    ],
+    "game_data": {
+      "area_order": 2,
+      "category": "地图",
+      "ecology_candidate_details": [
+        {
+          "description": "神舰入口",
+          "file": "D900",
+          "index": 1041
+        },
+        {
+          "description": "神舰地下2层",
+          "file": "D9021",
+          "index": 1042
+        },
+        {
+          "description": "神舰地下2层",
+          "file": "D9022",
+          "index": 1048
+        },
+        {
+          "description": "神舰地下1层",
+          "file": "d903",
+          "index": 1107
+        }
+      ],
+      "group_title": "神舰地图"
+    },
+    "id": "map_area:website:map-sj:02",
+    "identity": {
+      "standard_name_zh": "[神舰2楼A地图]",
+      "website_name": "[神舰2楼A地图]",
+      "website_source_id": "map_area:website:map-sj:02",
+      "zircon_candidate_indexes": [
+        1041,
+        1042,
+        1048,
+        1107
+      ]
+    },
+    "relations": {
+      "candidate_entity_ids": [
+        "map:zircon:1041",
+        "map:zircon:1042",
+        "map:zircon:1048",
+        "map:zircon:1107"
+      ],
+      "map_group_id": "map_group:website:map-sj"
+    },
+    "resources": {
+      "website": {
+        "bytes": 5633,
+        "exists": true,
+        "format": "JPEG",
+        "frames": 1,
+        "height": 300,
+        "mode": "RGB",
+        "path": "images/map/mgmap/sj03.jpg",
+        "sha256": "a73ca4ca3f61803ff18808d7bebe5aa08e3e84da8cdd5035f7a1831f0ce514f4",
+        "width": 400
+      }
+    }
+  },
+  {
+    "assessment": {
+      "export_enabled": false,
+      "fields": {
+        "display_name": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "game_data": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "identity_mapping": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "relations": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "resource_identity": {
+          "reason": "资源身份必须由可视/索引证据确认。",
+          "status": "pending_evidence"
+        }
+      },
+      "overall_status": "pending_evidence",
+      "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+      "reviewed_at": null,
+      "reviewer": null,
+      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+    },
+    "entity_type": "map_area",
+    "evidence": [
+      {
+        "record": "maps.json#map-sj/areas/2",
+        "source_id": "website-data"
+      },
+      {
+        "record": "map-family-manifest.json#map-sj/[神舰2楼B地图]",
+        "source_id": "website-alignment-map-family"
+      }
+    ],
+    "game_data": {
+      "area_order": 3,
+      "category": "地图",
+      "ecology_candidate_details": [
+        {
+          "description": "神舰入口",
+          "file": "D900",
+          "index": 1041
+        },
+        {
+          "description": "神舰地下2层",
+          "file": "D9021",
+          "index": 1042
+        },
+        {
+          "description": "神舰地下2层",
+          "file": "D9022",
+          "index": 1048
+        },
+        {
+          "description": "神舰地下1层",
+          "file": "d903",
+          "index": 1107
+        }
+      ],
+      "group_title": "神舰地图"
+    },
+    "id": "map_area:website:map-sj:03",
+    "identity": {
+      "standard_name_zh": "[神舰2楼B地图]",
+      "website_name": "[神舰2楼B地图]",
+      "website_source_id": "map_area:website:map-sj:03",
+      "zircon_candidate_indexes": [
+        1041,
+        1042,
+        1048,
+        1107
+      ]
+    },
+    "relations": {
+      "candidate_entity_ids": [
+        "map:zircon:1041",
+        "map:zircon:1042",
+        "map:zircon:1048",
+        "map:zircon:1107"
+      ],
+      "map_group_id": "map_group:website:map-sj"
+    },
+    "resources": {
+      "website": {
+        "bytes": 5755,
+        "exists": true,
+        "format": "JPEG",
+        "frames": 1,
+        "height": 300,
+        "mode": "RGB",
+        "path": "images/map/mgmap/sj02.jpg",
+        "sha256": "ab076cef57c0a07c20f6415ac34cdb306a7121a1acf17b3ac88a6f7e6b91c84f",
+        "width": 400
+      }
+    }
+  },
+  {
+    "assessment": {
+      "export_enabled": false,
+      "fields": {
+        "display_name": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "game_data": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "identity_mapping": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "relations": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "resource_identity": {
+          "reason": "资源身份必须由可视/索引证据确认。",
+          "status": "pending_evidence"
+        }
+      },
+      "overall_status": "pending_evidence",
+      "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+      "reviewed_at": null,
+      "reviewer": null,
+      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+    },
+    "entity_type": "map_area",
+    "evidence": [
+      {
+        "record": "maps.json#map-sj/areas/3",
+        "source_id": "website-data"
+      },
+      {
+        "record": "map-family-manifest.json#map-sj/[神舰1楼地图]",
+        "source_id": "website-alignment-map-family"
+      }
+    ],
+    "game_data": {
+      "area_order": 4,
+      "category": "地图",
+      "ecology_candidate_details": [
+        {
+          "description": "神舰入口",
+          "file": "D900",
+          "index": 1041
+        },
+        {
+          "description": "神舰地下2层",
+          "file": "D9021",
+          "index": 1042
+        },
+        {
+          "description": "神舰地下2层",
+          "file": "D9022",
+          "index": 1048
+        },
+        {
+          "description": "神舰地下1层",
+          "file": "d903",
+          "index": 1107
+        }
+      ],
+      "group_title": "神舰地图"
+    },
+    "id": "map_area:website:map-sj:04",
+    "identity": {
+      "standard_name_zh": "[神舰1楼地图]",
+      "website_name": "[神舰1楼地图]",
+      "website_source_id": "map_area:website:map-sj:04",
+      "zircon_candidate_indexes": [
+        1041,
+        1042,
+        1048,
+        1107
+      ]
+    },
+    "relations": {
+      "candidate_entity_ids": [
+        "map:zircon:1041",
+        "map:zircon:1042",
+        "map:zircon:1048",
+        "map:zircon:1107"
+      ],
+      "map_group_id": "map_group:website:map-sj"
+    },
+    "resources": {
+      "website": {
+        "bytes": 6133,
+        "exists": true,
+        "format": "JPEG",
+        "frames": 1,
+        "height": 300,
+        "mode": "RGB",
+        "path": "images/map/mgmap/sj01.jpg",
+        "sha256": "dd707928c808f9feb6c4a94d9f242a4c90fac2a0a735a585a8c623f3134e57c1",
+        "width": 400
+      }
+    }
+  },
+  {
+    "assessment": {
+      "export_enabled": false,
+      "fields": {
+        "display_name": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "game_data": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "identity_mapping": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "relations": {
+          "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+          "status": "pending_review"
+        },
+        "resource_identity": {
+          "reason": "资源身份必须由可视/索引证据确认。",
+          "status": "pending_evidence"
+        }
+      },
+      "overall_status": "pending_evidence",
+      "reason": "地图图片和名称来自网站；候选 MapInfo 来自地图族清单，粒度、别名与资源尚未逐项复核。",
+      "reviewed_at": null,
+      "reviewer": null,
+      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+    },
+    "entity_type": "map_area",
+    "evidence": [
+      {
+        "record": "maps.json#map-world/areas/0",
+        "source_id": "website-data"
+      },
+      {
+        "record": "map-family-manifest.json#map-world/世界地图",
+        "source_id": "website-alignment-map-family"
+      }
+    ],
+    "game_data": {
+      "area_order": 1,
+      "category": "地图",
+      "ecology_candidate_details": [
+        {
+          "description": "边境城市",
+          "file": "01",
+          "index": 610
+        },
+        {
+          "description": "沙巴克城堡",
+          "file": "0150",
+          "index": 611
+        },
+        {
+          "description": "比奇县",
+          "file": "0_003",
+          "index": 630
+        },
+        {
+          "description": "诺玛沙漠",
+          "file": "41",
+          "index": 663
+        },
+        {
+          "description": "沙漠",
+          "file": "42",
+          "index": 664
+        },
+        {
+          "description": "沙漠",
+          "file": "43",
+          "index": 665
+        },
+        {
+          "description": "沙漠",
+          "file": "44",
+          "index": 666
+        },
+        {
+          "description": "沙漠",
+          "file": "6",
+          "index": 682
+        },
+        {
+          "description": "沙漠",
+          "file": "71",
+          "index": 683
+        },
+        {
+          "description": "沙漠",
+          "file": "72",
+          "index": 684
+        },
+        {
+          "description": "沙漠",
+          "file": "73",
+          "index": 685
+        },
+        {
+          "description": "盟重县",
+          "file": "74",
+          "index": 686
+        },
+        {
+          "description": "沙漠",
+          "file": "76",
+          "index": 688
+        },
+        {
+          "description": "沙漠",
+          "file": "77",
+          "index": 689
+        },
+        {
+          "description": "沙漠",
+          "file": "78",
+          "index": 690
+        },
+        {
+          "description": "西沙漠1层",
+          "file": "d2001",
+          "index": 1111
+        },
+        {
+          "description": "西沙漠2层",
+          "file": "d20023",
+          "index": 1112
+        },
+        {
+          "description": "冰原雪城",
+          "file": "82",
+          "index": 1115
+        },
+        {
+          "description": "天空之城",
+          "file": "d2107",
+          "index": 1121
+        },
+        {
+          "description": "月河城",
+          "file": "14",
+          "index": 1149
+        },
+        {
+          "description": "幽暗森林",
+          "file": "TNakwon_001",
+          "index": 1156
+        }
+      ],
+      "group_title": "世界地图"
+    },
+    "id": "map_area:website:map-world:01",
+    "identity": {
+      "standard_name_zh": "世界地图",
+      "website_name": "世界地图",
+      "website_source_id": "map_area:website:map-world:01",
+      "zircon_candidate_indexes": [
+        610,
+        611,
+        630,
+        663,
+        664,
+        665,
+        666,
+        682,
+        683,
+        684,
+        685,
+        686,
+        688,
+        689,
+        690,
+        1111,
+        1112,
+        1115,
+        1121,
+        1149,
+        1156
+      ]
+    },
+    "relations": {
+      "candidate_entity_ids": [
+        "map:zircon:1111",
+        "map:zircon:1112",
+        "map:zircon:1115",
+        "map:zircon:1121",
+        "map:zircon:1149",
+        "map:zircon:1156",
+        "map:zircon:610",
+        "map:zircon:611",
+        "map:zircon:630",
+        "map:zircon:663",
+        "map:zircon:664",
+        "map:zircon:665",
+        "map:zircon:666",
+        "map:zircon:682",
+        "map:zircon:683",
+        "map:zircon:684",
+        "map:zircon:685",
+        "map:zircon:686",
+        "map:zircon:688",
+        "map:zircon:689",
+        "map:zircon:690"
+      ],
+      "map_group_id": "map_group:website:map-world"
+    },
+    "resources": {
+      "website": {
+        "bytes": 182837,
+        "exists": true,
+        "format": "JPEG",
+        "frames": 1,
+        "height": 488,
+        "mode": "RGB",
+        "path": "images/map/pic/mainmap.jpg",
+        "sha256": "d37ea8a8a730bc0ced5afca724c363036f19eb446933427878e94a6eb7a92dc8",
+        "width": 577
+      }
+    }
+  }
+]

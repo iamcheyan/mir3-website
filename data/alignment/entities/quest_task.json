@@ -1,0 +1,1588 @@
+[
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=14",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 10,
+      "ItemParameter": {
+        "Index": 803,
+        "Name": "Venom"
+      },
+      "MobDescription": "",
+      "Task": "GainItem"
+    },
+    "id": "quest_task:zircon:14",
+    "identity": {
+      "zircon_index": 14
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:24"
+      ],
+      "monster_ids": [
+        "monster:zircon:20"
+      ],
+      "quest_id": "quest:zircon:9"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=15",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 30,
+      "ItemParameter": {
+        "Index": 804,
+        "Name": "Arachnid Teeth"
+      },
+      "MobDescription": "Spiders in Phantom Forest",
+      "Task": "GainItem"
+    },
+    "id": "quest_task:zircon:15",
+    "identity": {
+      "zircon_index": 15
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:25",
+        "quest_task_monster_detail:zircon:26"
+      ],
+      "monster_ids": [
+        "monster:zircon:71",
+        "monster:zircon:72"
+      ],
+      "quest_id": "quest:zircon:10"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=16",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 20,
+      "ItemParameter": {
+        "Index": 805,
+        "Name": "Spider Curare"
+      },
+      "MobDescription": "",
+      "Task": "GainItem"
+    },
+    "id": "quest_task:zircon:16",
+    "identity": {
+      "zircon_index": 16
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:27"
+      ],
+      "monster_ids": [
+        "monster:zircon:66"
+      ],
+      "quest_id": "quest:zircon:11"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=17",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "MobDescription": "",
+      "Task": "KillMonster"
+    },
+    "id": "quest_task:zircon:17",
+    "identity": {
+      "zircon_index": 17
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:28"
+      ],
+      "monster_ids": [
+        "monster:zircon:73"
+      ],
+      "quest_id": "quest:zircon:14"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=19",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 50,
+      "MobDescription": "",
+      "Task": "KillMonster"
+    },
+    "id": "quest_task:zircon:19",
+    "identity": {
+      "zircon_index": 19
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:30"
+      ],
+      "monster_ids": [
+        "monster:zircon:85"
+      ],
+      "quest_id": "quest:zircon:16"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=20",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 50,
+      "MobDescription": "",
+      "Task": "KillMonster"
+    },
+    "id": "quest_task:zircon:20",
+    "identity": {
+      "zircon_index": 20
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:31"
+      ],
+      "monster_ids": [
+        "monster:zircon:46"
+      ],
+      "quest_id": "quest:zircon:17"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=21",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 50,
+      "MobDescription": "",
+      "Task": "KillMonster"
+    },
+    "id": "quest_task:zircon:21",
+    "identity": {
+      "zircon_index": 21
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:34"
+      ],
+      "monster_ids": [
+        "monster:zircon:48"
+      ],
+      "quest_id": "quest:zircon:17"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=22",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 50,
+      "MobDescription": "",
+      "Task": "KillMonster"
+    },
+    "id": "quest_task:zircon:22",
+    "identity": {
+      "zircon_index": 22
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:33"
+      ],
+      "monster_ids": [
+        "monster:zircon:47"
+      ],
+      "quest_id": "quest:zircon:17"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=23",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "MobDescription": "",
+      "Task": "KillMonster"
+    },
+    "id": "quest_task:zircon:23",
+    "identity": {
+      "zircon_index": 23
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:32"
+      ],
+      "monster_ids": [
+        "monster:zircon:49"
+      ],
+      "quest_id": "quest:zircon:17"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=35",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 0,
+      "MobDescription": "",
+      "Task": "KillMonster"
+    },
+    "id": "quest_task:zircon:35",
+    "identity": {
+      "zircon_index": 35
+    },
+    "relations": {},
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=41",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 50,
+      "MobDescription": "",
+      "Task": "KillMonster"
+    },
+    "id": "quest_task:zircon:41",
+    "identity": {
+      "zircon_index": 41
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:52"
+      ],
+      "monster_ids": [
+        "monster:zircon:127"
+      ],
+      "quest_id": "quest:zircon:34"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=42",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 50,
+      "MobDescription": "",
+      "Task": "KillMonster"
+    },
+    "id": "quest_task:zircon:42",
+    "identity": {
+      "zircon_index": 42
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:51"
+      ],
+      "monster_ids": [
+        "monster:zircon:125"
+      ],
+      "quest_id": "quest:zircon:34"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=43",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 50,
+      "MobDescription": "",
+      "Task": "KillMonster"
+    },
+    "id": "quest_task:zircon:43",
+    "identity": {
+      "zircon_index": 43
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:54"
+      ],
+      "monster_ids": [
+        "monster:zircon:126"
+      ],
+      "quest_id": "quest:zircon:35"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=44",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 50,
+      "MobDescription": "",
+      "Task": "KillMonster"
+    },
+    "id": "quest_task:zircon:44",
+    "identity": {
+      "zircon_index": 44
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:53"
+      ],
+      "monster_ids": [
+        "monster:zircon:124"
+      ],
+      "quest_id": "quest:zircon:35"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=45",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 2,
+      "MobDescription": "",
+      "Task": "KillMonster"
+    },
+    "id": "quest_task:zircon:45",
+    "identity": {
+      "zircon_index": 45
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:55"
+      ],
+      "monster_ids": [
+        "monster:zircon:128"
+      ],
+      "quest_id": "quest:zircon:36"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=46",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 20,
+      "MobDescription": "",
+      "Task": "KillMonster"
+    },
+    "id": "quest_task:zircon:46",
+    "identity": {
+      "zircon_index": 46
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:56"
+      ],
+      "monster_ids": [
+        "monster:zircon:122"
+      ],
+      "quest_id": "quest:zircon:36"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=47",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "MobDescription": "",
+      "Task": "KillMonster"
+    },
+    "id": "quest_task:zircon:47",
+    "identity": {
+      "zircon_index": 47
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:57"
+      ],
+      "monster_ids": [
+        "monster:zircon:129"
+      ],
+      "quest_id": "quest:zircon:37"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=49",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 50,
+      "ItemParameter": {
+        "Index": 807,
+        "Name": "Skeletal Spine"
+      },
+      "MobDescription": "Skeletons",
+      "Task": "GainItem"
+    },
+    "id": "quest_task:zircon:49",
+    "identity": {
+      "zircon_index": 49
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:59",
+        "quest_task_monster_detail:zircon:60",
+        "quest_task_monster_detail:zircon:61",
+        "quest_task_monster_detail:zircon:62"
+      ],
+      "monster_ids": [
+        "monster:zircon:26",
+        "monster:zircon:27",
+        "monster:zircon:28",
+        "monster:zircon:29"
+      ],
+      "quest_id": "quest:zircon:39"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=50",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "MobDescription": "",
+      "Task": "KillMonster"
+    },
+    "id": "quest_task:zircon:50",
+    "identity": {
+      "zircon_index": 50
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:63"
+      ],
+      "monster_ids": [
+        "monster:zircon:30"
+      ],
+      "quest_id": "quest:zircon:40"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=52",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "ItemParameter": {
+        "Index": 809,
+        "Name": "David's Key"
+      },
+      "MobDescription": "",
+      "Task": "GainItem"
+    },
+    "id": "quest_task:zircon:52",
+    "identity": {
+      "zircon_index": 52
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:65"
+      ],
+      "monster_ids": [
+        "monster:zircon:21"
+      ],
+      "quest_id": "quest:zircon:42"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=53",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "ItemParameter": {
+        "Index": 810,
+        "Name": "Haylee's Key"
+      },
+      "MobDescription": "",
+      "Task": "GainItem"
+    },
+    "id": "quest_task:zircon:53",
+    "identity": {
+      "zircon_index": 53
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:66"
+      ],
+      "monster_ids": [
+        "monster:zircon:21"
+      ],
+      "quest_id": "quest:zircon:43"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=54",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "ItemParameter": {
+        "Index": 811,
+        "Name": "Kacy's Key"
+      },
+      "MobDescription": "",
+      "Task": "GainItem"
+    },
+    "id": "quest_task:zircon:54",
+    "identity": {
+      "zircon_index": 54
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:67"
+      ],
+      "monster_ids": [
+        "monster:zircon:21"
+      ],
+      "quest_id": "quest:zircon:44"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=55",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 50,
+      "ItemParameter": {
+        "Index": 812,
+        "Name": "Zombie Flesh"
+      },
+      "MobDescription": "Zombies",
+      "Task": "GainItem"
+    },
+    "id": "quest_task:zircon:55",
+    "identity": {
+      "zircon_index": 55
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:68",
+        "quest_task_monster_detail:zircon:69",
+        "quest_task_monster_detail:zircon:70",
+        "quest_task_monster_detail:zircon:71",
+        "quest_task_monster_detail:zircon:72",
+        "quest_task_monster_detail:zircon:73"
+      ],
+      "monster_ids": [
+        "monster:zircon:32",
+        "monster:zircon:33",
+        "monster:zircon:34",
+        "monster:zircon:35",
+        "monster:zircon:36",
+        "monster:zircon:37"
+      ],
+      "quest_id": "quest:zircon:45"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=56",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "ItemParameter": {
+        "Index": 813,
+        "Name": "Gresham's Journal"
+      },
+      "MobDescription": "",
+      "Task": "GainItem"
+    },
+    "id": "quest_task:zircon:56",
+    "identity": {
+      "zircon_index": 56
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:74"
+      ],
+      "monster_ids": [
+        "monster:zircon:13"
+      ],
+      "quest_id": "quest:zircon:46"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=57",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "ItemParameter": {
+        "Index": 814,
+        "Name": "Isaac's Journal"
+      },
+      "MobDescription": "",
+      "Task": "GainItem"
+    },
+    "id": "quest_task:zircon:57",
+    "identity": {
+      "zircon_index": 57
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:75"
+      ],
+      "monster_ids": [
+        "monster:zircon:13"
+      ],
+      "quest_id": "quest:zircon:47"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=58",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "ItemParameter": {
+        "Index": 808,
+        "Name": "Henry's Journal"
+      },
+      "MobDescription": "",
+      "Task": "GainItem"
+    },
+    "id": "quest_task:zircon:58",
+    "identity": {
+      "zircon_index": 58
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:76"
+      ],
+      "monster_ids": [
+        "monster:zircon:13"
+      ],
+      "quest_id": "quest:zircon:48"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=59",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 30,
+      "MobDescription": "",
+      "Task": "KillMonster"
+    },
+    "id": "quest_task:zircon:59",
+    "identity": {
+      "zircon_index": 59
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:77"
+      ],
+      "monster_ids": [
+        "monster:zircon:15"
+      ],
+      "quest_id": "quest:zircon:50"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=60",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 30,
+      "MobDescription": "",
+      "Task": "KillMonster"
+    },
+    "id": "quest_task:zircon:60",
+    "identity": {
+      "zircon_index": 60
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:78"
+      ],
+      "monster_ids": [
+        "monster:zircon:15"
+      ],
+      "quest_id": "quest:zircon:51"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=61",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 30,
+      "MobDescription": "",
+      "Task": "KillMonster"
+    },
+    "id": "quest_task:zircon:61",
+    "identity": {
+      "zircon_index": 61
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:79"
+      ],
+      "monster_ids": [
+        "monster:zircon:15"
+      ],
+      "quest_id": "quest:zircon:52"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=62",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 25,
+      "ItemParameter": {
+        "Index": 806,
+        "Name": "Edible Chestnut"
+      },
+      "MobDescription": "",
+      "Task": "GainItem"
+    },
+    "id": "quest_task:zircon:62",
+    "identity": {
+      "zircon_index": 62
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:80"
+      ],
+      "monster_ids": [
+        "monster:zircon:16"
+      ],
+      "quest_id": "quest:zircon:53"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=63",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 25,
+      "ItemParameter": {
+        "Index": 806,
+        "Name": "Edible Chestnut"
+      },
+      "MobDescription": "",
+      "Task": "GainItem"
+    },
+    "id": "quest_task:zircon:63",
+    "identity": {
+      "zircon_index": 63
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:81"
+      ],
+      "monster_ids": [
+        "monster:zircon:16"
+      ],
+      "quest_id": "quest:zircon:54"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=64",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 25,
+      "ItemParameter": {
+        "Index": 806,
+        "Name": "Edible Chestnut"
+      },
+      "MobDescription": "",
+      "Task": "GainItem"
+    },
+    "id": "quest_task:zircon:64",
+    "identity": {
+      "zircon_index": 64
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:82"
+      ],
+      "monster_ids": [
+        "monster:zircon:16"
+      ],
+      "quest_id": "quest:zircon:55"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=65",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 40,
+      "MobDescription": "",
+      "Task": "KillMonster"
+    },
+    "id": "quest_task:zircon:65",
+    "identity": {
+      "zircon_index": 65
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:83"
+      ],
+      "monster_ids": [
+        "monster:zircon:117"
+      ],
+      "quest_id": "quest:zircon:56"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=66",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 40,
+      "MobDescription": "",
+      "Task": "KillMonster"
+    },
+    "id": "quest_task:zircon:66",
+    "identity": {
+      "zircon_index": 66
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:85"
+      ],
+      "monster_ids": [
+        "monster:zircon:119"
+      ],
+      "quest_id": "quest:zircon:56"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=67",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 50,
+      "MobDescription": "",
+      "Task": "KillMonster"
+    },
+    "id": "quest_task:zircon:67",
+    "identity": {
+      "zircon_index": 67
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:87"
+      ],
+      "monster_ids": [
+        "monster:zircon:118"
+      ],
+      "quest_id": "quest:zircon:57"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=68",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 30,
+      "MobDescription": "",
+      "Task": "KillMonster"
+    },
+    "id": "quest_task:zircon:68",
+    "identity": {
+      "zircon_index": 68
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:86"
+      ],
+      "monster_ids": [
+        "monster:zircon:116"
+      ],
+      "quest_id": "quest:zircon:57"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=69",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 200,
+      "MobDescription": "Bone Monsters",
+      "Task": "KillMonster"
+    },
+    "id": "quest_task:zircon:69",
+    "identity": {
+      "zircon_index": 69
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:88",
+        "quest_task_monster_detail:zircon:89",
+        "quest_task_monster_detail:zircon:90",
+        "quest_task_monster_detail:zircon:91",
+        "quest_task_monster_detail:zircon:92"
+      ],
+      "monster_ids": [
+        "monster:zircon:116",
+        "monster:zircon:117",
+        "monster:zircon:118",
+        "monster:zircon:119",
+        "monster:zircon:120"
+      ],
+      "quest_id": "quest:zircon:58"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=70",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "MobDescription": "",
+      "Task": "KillMonster"
+    },
+    "id": "quest_task:zircon:70",
+    "identity": {
+      "zircon_index": 70
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:93"
+      ],
+      "monster_ids": [
+        "monster:zircon:120"
+      ],
+      "quest_id": "quest:zircon:58"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=71",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "MobDescription": "",
+      "Task": "KillMonster"
+    },
+    "id": "quest_task:zircon:71",
+    "identity": {
+      "zircon_index": 71
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:94"
+      ],
+      "monster_ids": [
+        "monster:zircon:121"
+      ],
+      "quest_id": "quest:zircon:59"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=72",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 30,
+      "MobDescription": "",
+      "Task": "KillMonster"
+    },
+    "id": "quest_task:zircon:72",
+    "identity": {
+      "zircon_index": 72
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:95"
+      ],
+      "monster_ids": [
+        "monster:zircon:14"
+      ],
+      "quest_id": "quest:zircon:60"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=73",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 30,
+      "MobDescription": "",
+      "Task": "KillMonster"
+    },
+    "id": "quest_task:zircon:73",
+    "identity": {
+      "zircon_index": 73
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:96"
+      ],
+      "monster_ids": [
+        "monster:zircon:14"
+      ],
+      "quest_id": "quest:zircon:61"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=74",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 30,
+      "MobDescription": "",
+      "Task": "KillMonster"
+    },
+    "id": "quest_task:zircon:74",
+    "identity": {
+      "zircon_index": 74
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:97"
+      ],
+      "monster_ids": [
+        "monster:zircon:14"
+      ],
+      "quest_id": "quest:zircon:62"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=75",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "MobDescription": "赴望海楼之约（样板占位：边境城市·上官小姐处）",
+      "RegionParameter": {
+        "Index": 1766,
+        "Name": "01 / 上官小姐"
+      },
+      "Task": "VisitRegion"
+    },
+    "id": "quest_task:zircon:75",
+    "identity": {
+      "zircon_index": 75
+    },
+    "relations": {
+      "quest_id": "quest:zircon:63"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=76",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "MobDescription": "赴望海楼之约（样板占位：边境城市·上官小姐处）",
+      "RegionParameter": {
+        "Index": 1766,
+        "Name": "01 / 上官小姐"
+      },
+      "Task": "VisitRegion"
+    },
+    "id": "quest_task:zircon:76",
+    "identity": {
+      "zircon_index": 76
+    },
+    "relations": {
+      "quest_id": "quest:zircon:64"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=77",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 1,
+      "MobDescription": "赴望海楼之约（样板占位：边境城市·上官小姐处）",
+      "RegionParameter": {
+        "Index": 1766,
+        "Name": "01 / 上官小姐"
+      },
+      "Task": "VisitRegion"
+    },
+    "id": "quest_task:zircon:77",
+    "identity": {
+      "zircon_index": 77
+    },
+    "relations": {
+      "quest_id": "quest:zircon:65"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  },
+  {
+    "entity_type": "quest_task",
+    "evidence": [
+      {
+        "record": "QuestTask.Index=78",
+        "source_id": "zircon-table-QuestTask"
+      }
+    ],
+    "game_data": {
+      "Amount": 6,
+      "MobDescription": "击杀骷髅战将（Skeleton Warrior 骷髅战士）×6",
+      "Task": "KillMonster"
+    },
+    "id": "quest_task:zircon:78",
+    "identity": {
+      "zircon_index": 78
+    },
+    "relations": {
+      "monster_detail_ids": [
+        "quest_task_monster_detail:zircon:98"
+      ],
+      "monster_ids": [
+        "monster:zircon:29"
+      ],
+      "quest_id": "quest:zircon:66"
+    },
+    "resources": {
+      "zircon": {
+        "evidence_refs": [],
+        "verification": "not-applicable"
+      }
+    }
+  }
+]
