@@ -16,7 +16,7 @@
 
   <div class="audit-notice" role="note">
     <span class="notice-mark" aria-hidden="true">!</span>
-    <p>匹配和草稿逐项立即保存在当前浏览器的 IndexedDB，不会上传；清除浏览器数据或换设备前请先导出工作区。匹配清单可完整导出；已匹配的怪物、物品、技能可合并生成游戏可用的 db_names.json。下载文件不会自动写入网站或游戏仓库。</p>
+    <p>本地服务启动时，匹配和草稿逐项写入项目目录 .local/alignment-workspace.json；静态部署时保存在当前浏览器。匹配清单可完整导出；已匹配的怪物、物品、技能可合并生成游戏可用的 db_names.json。下载文件不会自动写入网站或游戏仓库。</p>
   </div>
 
   <details id="research-context" class="research-context">
@@ -146,5 +146,5 @@
     </div>
   </section>
 </section>
-<script type="module" src="{{ prefix }}/static/js/alignment.js?v=20260927-match5"></script>
+<script type="module" src="{{ prefix }}/static/js/alignment.js?v=20260928-local-workspace"></script>
 {% endblock %}

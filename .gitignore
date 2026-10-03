@@ -2,5 +2,7 @@
 dist/
 .cloudflare/
 __pycache__/
+.venv/
+.local/
 *.pyc
 refactor_goal.md

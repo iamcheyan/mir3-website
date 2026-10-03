@@ -6,7 +6,7 @@
 <title>数据审计台 · 传奇3 · 资料站</title>
 <meta name="description" content="传奇3 资料站 · 怪物图鉴 / 物品大全 / 技能资料 / 任务攻略 / 地图资料">
 <meta name="theme-color" content="#090c12">
-<link rel="stylesheet" href="../static/css/style.css?v=20260927-match3">
+<link rel="stylesheet" href="../static/css/style.css?v=20260928-local-workspace">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23090c12'/><text x='50' y='72' text-anchor='middle' font-size='68' fill='%23d6b266' font-family='serif'>奇</text></svg>">
 </head>
 <body>
@@ -54,7 +54,7 @@
 
   <div class="audit-notice" role="note">
     <span class="notice-mark" aria-hidden="true">!</span>
-    <p>匹配和草稿逐项立即保存在当前浏览器的 IndexedDB，不会上传；清除浏览器数据或换设备前请先导出工作区。匹配清单可完整导出；已匹配的怪物、物品、技能可合并生成游戏可用的 db_names.json。下载文件不会自动写入网站或游戏仓库。</p>
+    <p>本地服务启动时，匹配和草稿逐项写入项目目录 .local/alignment-workspace.json；静态部署时保存在当前浏览器。匹配清单可完整导出；已匹配的怪物、物品、技能可合并生成游戏可用的 db_names.json。下载文件不会自动写入网站或游戏仓库。</p>
   </div>
 
   <details id="research-context" class="research-context">
@@ -184,7 +184,7 @@
     </div>
   </section>
 </section>
-<script type="module" src="../static/js/alignment.js?v=20260927-match5"></script>
+<script type="module" src="../static/js/alignment.js?v=20260928-local-workspace"></script>
 
 </main>
 

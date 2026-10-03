@@ -30,19 +30,21 @@
       <div class="card-body"><h3 class="card-name">{{ it.title }}</h3>{% set zircon_match = it.zircon_match %}{% include "_zircon_match.html" %}<p class="card-tags"><span class="tag">{{ it.areas|length }} 张地图</span></p><p class="map-card-hint">见页内地图展示</p></div>
     </div>
     {% else %}
-    <a class="data-card" href="{{ prefix }}/{{ kind }}s/{{ it.id }}.html" data-name="{{ it.name }}" data-zircon-state="{{ it.zircon_match.state }}">
+    <div class="data-card" data-name="{{ it.name }}" data-zircon-state="{{ it.zircon_match.state }}">
       {% if kind == 'mob' or kind == 'item' or kind == 'skill' %}<div class="card-img">{% if it.image %}<img src="{{ it.image|img }}" alt="{{ it.name }}" loading="lazy">{% else %}<span class="img-placeholder">?</span>{% endif %}</div>{% endif %}
       <div class="card-body">
-        <h3 class="card-name">{{ it.name if kind != 'mission' else it.title }}</h3>
+        <h3 class="card-name"><a href="{{ prefix }}/{{ kind }}s/{{ it.id }}.html">{{ it.name if kind != 'mission' else it.title }}</a></h3>
         {% set zircon_match = it.zircon_match %}{% include "_zircon_match.html" %}
+        {% if kind in ['mob', 'item', 'skill'] %}<button type="button" class="match-row-button catalog-match-button" data-source-id="{{ it.alignment_source_id }}">{% if zircon_match.state == 'matched' %}已匹配 · 修改{% else %}匹配{% endif %}</button>{% endif %}
         {% if kind == 'mob' or kind == 'skill' %}<p class="card-desc">{{ it.description[:66] }}{% if it.description|length > 66 %}…{% endif %}</p>
         {% elif kind == 'item' %}<p class="card-tags">{% if it.get('等级') %}<span class="tag">等级 {{ it['等级'] }}</span>{% endif %}{% if it.get('破坏') %}<span class="tag">破坏 {{ it['破坏'] }}</span>{% endif %}{% if it.get('魔法') %}<span class="tag">魔法 {{ it['魔法'] }}</span>{% endif %}</p>
         {% elif kind == 'mission' %}<p class="card-tags">{% if it.steps %}<span class="tag">{{ it.steps|length }} 步</span>{% endif %}{% if it.quests %}<span class="tag">{{ it.quests|length }} 条任务</span>{% endif %}</p><p class="card-desc">{{ (it.get('content') or '')[:52] }}{% if (it.get('content') or '')|length > 52 %}…{% endif %}</p>{% endif %}
       </div>
-    </a>
+    </div>
     {% endif %}
     {% endfor %}
   </div>
 </section>
 {% endfor %}
+{% include "_zircon_match_drawer.html" %}
 {% endblock %}

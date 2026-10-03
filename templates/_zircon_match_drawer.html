@@ -1,0 +1,49 @@
+{% if kind in ['mob', 'item', 'skill'] %}
+<div id="catalog-match-backdrop" class="match-backdrop" hidden></div>
+<aside id="catalog-match-drawer" class="match-modal" hidden aria-labelledby="catalog-match-title" aria-modal="true" role="dialog">
+  <div class="match-modal-header">
+    <div class="match-modal-source">
+      <div id="catalog-match-source-media" class="match-source-media" aria-hidden="true"></div>
+      <div class="match-source-info">
+        <div class="match-source-tags">
+          <span class="match-kicker-tag">ZIRCON 对照</span>
+          <span id="catalog-match-type" class="match-scope-tag"></span>
+          <span id="catalog-match-source-id" class="match-source-id-tag"></span>
+        </div>
+        <h2 id="catalog-match-title" class="match-modal-title"></h2>
+      </div>
+    </div>
+    <div class="match-modal-controls">
+      <div class="match-search-box">
+        <span class="match-search-icon" aria-hidden="true">⌕</span>
+        <input id="catalog-match-search" type="search" placeholder="输入英文名、当前游戏名、中文或 Index..." autocomplete="off">
+      </div>
+      <button id="catalog-match-close" class="button button-quiet match-close" type="button" aria-label="关闭匹配窗口">✕ 关闭</button>
+    </div>
+  </div>
+
+  <div id="catalog-match-current" class="match-drawer-current" hidden></div>
+  
+  <div class="match-toolbar-row">
+    <div id="catalog-match-filter-bar" class="match-filter-tabs" hidden></div>
+    <div class="match-toolbar-meta">
+      <span id="catalog-match-count" class="match-count-badge">0 个候选</span>
+    </div>
+  </div>
+
+  <div id="catalog-match-list" class="match-candidate-grid"></div>
+
+  <footer class="match-modal-footer">
+    <div class="match-footer-left">
+      <span id="catalog-match-status" role="status" aria-live="polite">本地保存</span>
+      <button id="catalog-match-clear" class="button button-quiet match-clear-btn" type="button" hidden>清除当前匹配</button>
+    </div>
+    <div class="match-pager">
+      <button id="catalog-match-prev" class="button button-quiet" type="button">上一页</button>
+      <span id="catalog-match-page-label">—</span>
+      <button id="catalog-match-next" class="button button-quiet" type="button">下一页</button>
+    </div>
+  </footer>
+</aside>
+<script type="module" src="{{ prefix }}/static/js/catalog-match.js?v=20260928-v4"></script>
+{% endif %}

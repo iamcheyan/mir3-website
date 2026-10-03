@@ -18,13 +18,24 @@ tools/extract.py
               ▼
 app.py + templates/* + static/css/style.css (Flask + Jinja2)
               │  python app.py build
-              ▼
-dist/ ──同步──▶ 仓库根(静态站, GitHub Pages 部署)
+              ├── python app.py (本地动态工作站, 默认)
+              └── python app.py build ──▶ dist/(静态站, GitHub Pages 部署)
 ```
 
 - **数据层**:`tools/extract.py` 把原站 HTML 解析为 JSON,存于 `data/`
 - **渲染层**:`app.py` 读 JSON → Jinja2 模板 → 输出静态 HTML
 - **部署层**:`dist/` 为构建产物,内容同步到仓库根(页面在 `mobs/ items/ skills/ missions/ maps/` 子目录,图片用 `images/` 相对路径)
+
+## 本地工作站
+
+```sh
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python app.py
+```
+
+默认启动 `http://127.0.0.1:5000/`。审计草稿与人工匹配即时保存到项目目录下 `.local/alignment-workspace.json`，不依赖浏览器存储，也不会被静态构建复制。需要发布静态站时，显式运行 `python app.py build`；静态页面没有本地 API 时使用浏览器 IndexedDB。
 
 ## 内容统计
 

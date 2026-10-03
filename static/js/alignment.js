@@ -36,7 +36,7 @@ import {
   const el = id => document.getElementById(id);
   const app = {
     master: null, masterHash: "", records: [], byId: new Map(),
-    database: null, currentCategory: "monster", page: 0, selectedId: null,
+    database: null, serverWorkspace: false, currentCategory: "monster", page: 0, selectedId: null,
     sourceById: new Map(), observationsByEntity: new Map(), findingsByEntity: new Map(),
     originalDraft: {}, dirtyFields: new Set(), visibleColumns: new Set(COLUMN_DEFS.map(c => c[0])),
     candidateDownload: null, broadcast: null, sourceFilterIds: new Map(), previewById: new Map(),
@@ -137,6 +137,14 @@ import {
   }
 
   async function readWorkspace() {
+    if (app.serverWorkspace) {
+      const response = await fetch("/api/workspace", { cache: "no-store" });
+      if (!response.ok) throw new Error(`项目工作区读取失败（HTTP ${response.status}）`);
+      const workspace = await response.json();
+      return validateWorkspaceBundle({ schema_version: 2, format: "mir3-alignment-workspace",
+        exported_at: new Date().toISOString(), base_master_sha256: app.masterHash, workspace },
+      { masterHash: app.masterHash, recordsById: app.byId });
+    }
     const tx = app.database.transaction("workspace", "readonly");
     const saved = await readRequest(tx.objectStore("workspace").get("workspace"));
     const workspace = saved
@@ -149,6 +157,20 @@ import {
   }
 
   function saveWorkspaceUpdate(recordId, originalDraft, changes) {
+    if (app.serverWorkspace) return (async () => {
+      const current = await readWorkspace(), savedDraft = current.drafts[recordId] || {};
+      for (const field of app.dirtyFields) if (JSON.stringify(savedDraft[field]) !== JSON.stringify(originalDraft[field]))
+        throw new Error(`此记录的“${fieldLabel(field)}”已在另一页面修改。已阻止覆盖；请刷新详情后比较。`);
+      const after = { ...savedDraft, ...changes }, revision = current.revision + 1;
+      const next = { ...current, revision, drafts: { ...current.drafts, [recordId]: after }, events: [...current.events, {
+        id: `${Date.now()}-${crypto.randomUUID ? crypto.randomUUID() : Math.random().toString(36).slice(2)}`,
+        at: new Date().toISOString(), entity_id: recordId, revision, action: "edit", before: savedDraft, after,
+      }] };
+      const response = await fetch("/api/workspace", { method: "PUT", headers: { "Content-Type": "application/json", "If-Match-Revision": String(current.revision) }, body: JSON.stringify(next) });
+      if (response.status === 409) throw new Error("项目工作区已在另一页面更新，请刷新后重试。");
+      if (!response.ok) throw new Error(`项目工作区写入失败（HTTP ${response.status}）`);
+      return validateWorkspaceBundle({ schema_version: 2, format: "mir3-alignment-workspace", exported_at: new Date().toISOString(), base_master_sha256: app.masterHash, workspace: await response.json() }, { masterHash: app.masterHash, recordsById: app.byId });
+    })();
     return new Promise((resolve, reject) => {
       const tx = app.database.transaction("workspace", "readwrite");
       const store = tx.objectStore("workspace");
@@ -470,7 +492,7 @@ import {
     button.classList.toggle("is-saved", targets.length > 0);
     button.textContent = targets.length ? (config.multi ? `已选 ${targets.length}` : "已匹配") : "匹配";
     button.setAttribute("aria-label", `${targets.length ? "修改" : "为"} ${displayName(record)} 的 Zircon 匹配`);
-    button.disabled = !app.database;
+    button.disabled = !app.database && !app.serverWorkspace;
     wrapper.append(button);
     if (targets.length) {
       const names = targets.map(id => app.byId.get(id)).filter(Boolean).map(target =>
@@ -726,7 +748,7 @@ import {
     el("edit-export").disabled = !["approved", "corrected"].includes(el("edit-overall").value)
       || !["confirmed", "source_confirmed"].includes(el("edit-identity").value);
     renderHistory(recordId);
-    setStatus(app.database ? `工作区修订 ${app.state.revision}` : "本地存储不可用；只读模式", !app.database);
+    setStatus(app.database || app.serverWorkspace ? `工作区修订 ${app.state.revision}` : "本地存储不可用；只读模式", !app.database && !app.serverWorkspace);
     el("record-detail").scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
@@ -764,7 +786,7 @@ import {
   }
 
   async function saveDraft() {
-    if (!app.database || !app.selectedId) return;
+    if ((!app.database && !app.serverWorkspace) || !app.selectedId) return;
     const changes = formValues();
     if (!app.dirtyFields.size) { setStatus("没有修改需要保存。"); return; }
     if (changes.export_enabled && !["approved", "corrected"].includes(changes.overall_status)) {
@@ -882,7 +904,7 @@ import {
       action.dataset.matchCandidateId = candidate.id;
       action.setAttribute("aria-pressed", String(isSelected));
       action.setAttribute("aria-label", `${isSelected ? "已选" : "选择"} ${candidateEnglishName(candidate)}，Index ${candidate.identity.zircon_index}`);
-      action.disabled = app.matchBusy || !app.database;
+      action.disabled = app.matchBusy || (!app.database && !app.serverWorkspace);
       card.append(action);
       host.append(card);
     }
@@ -892,7 +914,7 @@ import {
     el("match-previous").disabled = app.matchPage === 0 || app.matchBusy;
     el("match-next").disabled = app.matchPage >= pageCount - 1 || app.matchBusy;
     el("match-selection-count").textContent = config.multi ? `已保存 ${selected.size} 项` : (selected.size ? "已保存 1 项" : "尚未匹配");
-    el("match-clear").disabled = selected.size === 0 || app.matchBusy || !app.database;
+    el("match-clear").disabled = selected.size === 0 || app.matchBusy || (!app.database && !app.serverWorkspace);
     el("match-selected-filter").textContent = app.matchShowSelected ? "返回全部候选" : "只看已选";
     el("match-selected-filter").setAttribute("aria-pressed", String(app.matchShowSelected));
   }
@@ -924,13 +946,17 @@ import {
       mission: "任务攻略可能覆盖多个游戏任务，支持多选。QuestInfo 没有统一条目图像时会显示占位；清单会保留每个选择的 Index 与英文任务名。",
       map_group: "网站地图条目是地图集合，支持多选 Zircon MapInfo。缩略图取游戏客户端 MiniMap 帧；该关系导出到匹配清单，不会把集合标题误写成单张地图名。"
     };
-    el("match-drawer-note").textContent = `${notes[source.entity_type] || "选择同类型游戏候选。"} 每次选择都会立即写入此浏览器的 IndexedDB；工作区不会上传或同步到其他设备，也不会修改网站主数据或游戏文件。更换设备或清理站点数据前，请先导出工作区备份。`;
+    const storageNote = app.serverWorkspace
+      ? "每次选择都会立即写入项目目录 .local/alignment-workspace.json。"
+      : "每次选择都会立即写入此浏览器的 IndexedDB；更换设备或清理站点数据前，请先导出工作区备份。";
+    el("match-drawer-note").textContent = `${notes[source.entity_type] || "选择同类型游戏候选。"} ${storageNote} 工作区不会上传，也不会修改网站主数据或游戏文件。`;
     el("match-drawer").hidden = false;
     el("match-backdrop").hidden = false;
     document.body.classList.add("match-open");
-    setMatchSaveStatus(!app.database ? "IndexedDB 不可用，当前只读"
-      : app.storagePersistence ? "此浏览器已授予持久存储；每次选择都会立即保存"
-        : "已即时写入浏览器 IndexedDB；浏览器仍可能清理站点数据，请定期导出工作区", !app.database);
+    setMatchSaveStatus(app.serverWorkspace ? "直接保存到项目目录 .local/alignment-workspace.json"
+      : !app.database ? "IndexedDB 不可用，当前只读"
+        : app.storagePersistence ? "此浏览器已授予持久存储；每次选择都会立即保存"
+          : "已即时写入浏览器 IndexedDB；浏览器仍可能清理站点数据，请定期导出工作区", !app.database && !app.serverWorkspace);
     renderMatchCandidates();
     window.setTimeout(() => el("match-search-input").focus(), 0);
   }
@@ -944,8 +970,22 @@ import {
   }
 
   function saveMatchSelection(sourceId, targetIds) {
+    if (app.serverWorkspace) return (async () => {
+      const selection = createMatchSelection(sourceId, targetIds, app.byId);
+      const current = await readWorkspace(), matches = { ...current.matches }, before = matches[sourceId]?.target_entity_ids || [];
+      if (selection.target_entity_ids.length) matches[sourceId] = selection; else delete matches[sourceId];
+      const revision = current.revision + 1;
+      const next = { ...current, revision, matches, events: [...current.events, {
+        id: `${Date.now()}-${crypto.randomUUID ? crypto.randomUUID() : Math.random().toString(36).slice(2)}`,
+        at: new Date().toISOString(), entity_id: sourceId, revision, action: "match", before, after: selection.target_entity_ids,
+      }] };
+      const response = await fetch("/api/workspace", { method: "PUT", headers: { "Content-Type": "application/json", "If-Match-Revision": String(current.revision) }, body: JSON.stringify(next) });
+      if (response.status === 409) throw new Error("项目工作区已在另一页面更新，请刷新后重试。");
+      if (!response.ok) throw new Error(`项目工作区写入失败（HTTP ${response.status}）`);
+      return validateWorkspaceBundle({ schema_version: 2, format: "mir3-alignment-workspace", exported_at: new Date().toISOString(), base_master_sha256: app.masterHash, workspace: await response.json() }, { masterHash: app.masterHash, recordsById: app.byId });
+    })();
     return new Promise((resolve, reject) => {
-      if (!app.database) return reject(new Error("IndexedDB 不可用；匹配没有保存。"));
+      if (!app.database && !app.serverWorkspace) return reject(new Error("本地存储不可用；匹配没有保存。"));
       let selection;
       try { selection = createMatchSelection(sourceId, targetIds, app.byId); }
       catch (error) { return reject(error); }
@@ -1219,6 +1259,13 @@ import {
       actionLabel: "导入并替换",
       returnFocus: el("import-button"),
       action: async () => {
+        if (app.serverWorkspace) {
+          const current = await readWorkspace();
+          const next = { ...workspace, id: "workspace", revision: Math.max(current.revision, app.state.revision, workspace.revision) + 1 };
+          const response = await fetch("/api/workspace", { method: "PUT", headers: { "Content-Type": "application/json", "If-Match-Revision": String(current.revision) }, body: JSON.stringify(next) });
+          if (response.status === 409) throw new Error("项目工作区已在其他页面更新，请重新导入。");
+          if (!response.ok) throw new Error(`项目工作区写入失败（HTTP ${response.status}）`);
+        } else {
         const tx = app.database.transaction("workspace", "readwrite");
         const store = tx.objectStore("workspace");
         const request = store.get("workspace");
@@ -1235,6 +1282,7 @@ import {
           tx.onerror = () => reject(tx.error || new Error("导入事务失败。"));
           tx.onabort = () => reject(tx.error || new Error("导入已中止。"));
         });
+        }
         app.state = await readWorkspace();
         refreshStats(); renderRows();
         if (app.selectedId) openRecord(app.selectedId);
@@ -1442,7 +1490,9 @@ import {
       try { await loadMatchPreviewIndex(previewUrl.href); }
       catch (error) { app.previewById = new Map(); console.warn("Zircon 候选缩略图不可用：", error.message); }
       try {
-        app.database = await openDatabase();
+        const serverWorkspace = await fetch("/api/workspace", { cache: "no-store" });
+        if (serverWorkspace.ok) app.serverWorkspace = true;
+        else app.database = await openDatabase();
         app.state = await readWorkspace();
         if (navigator.storage?.persist) {
           try { app.storagePersistence = await navigator.storage.persist(); }
@@ -1455,7 +1505,7 @@ import {
         el("save-draft").disabled = true; el("import-button").disabled = true;
       }
       createCategoryNav(); fillFilters(); refreshStats(); renderSnapshot(); renderResearchContext(); renderRows();
-      setStatus(app.database ? `本地工作区已载入 · 修订 ${app.state.revision}` : "本地编辑不可用；公开记录只读", !app.database);
+      setStatus(app.serverWorkspace ? `项目文件工作区已载入 · 修订 ${app.state.revision}` : app.database ? `本地工作区已载入 · 修订 ${app.state.revision}` : "本地编辑不可用；公开记录只读", !app.database && !app.serverWorkspace);
     } catch (error) {
       el("load-error").hidden = false;
       el("load-error").textContent = `无法载入审计数据：${error.message}。请通过网站或本地 HTTP 服务访问此页面。`;

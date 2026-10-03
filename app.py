@@ -22,8 +22,10 @@
 """
 
 import json
+import os
 import shutil
 import sys
+import threading
 from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
@@ -33,6 +35,8 @@ DATA_DIR = ROOT / "data"
 TPL_DIR = ROOT / "templates"
 STATIC_DIR = ROOT / "static"
 DIST_DIR = ROOT / "dist"
+LOCAL_WORKSPACE_PATH = ROOT / ".local" / "alignment-workspace.json"
+LOCAL_WORKSPACE_LOCK = threading.Lock()
 
 # 导航结构(与 data/meta.json 一致)
 NAV = [
@@ -59,9 +63,12 @@ def _zircon_match_index():
         path = DATA_DIR / "alignment" / shard["path"]
         for entity in json.loads(path.read_text(encoding="utf-8")):
             identity = entity.get("identity") or {}
-            source_id = identity.get("website_source_id")
-            if source_id:
-                records[source_id] = entity
+            source_ids = list(identity.get("website_source_ids") or [])
+            single_id = identity.get("website_source_id")
+            if single_id and single_id not in source_ids:
+                source_ids.append(single_id)
+            for sid in source_ids:
+                records[sid] = entity
     return records
 
 
@@ -116,11 +123,14 @@ def load_data():
     for it in out["monsters"]:
         record = crossrefs.get(it["id"])
         it["zircon_match"] = _match_badge(record)
+        it["alignment_source_id"] = it["id"]
     for it in out["items"]:
         source_id = f"item-{it.get('category', '')}-{it.get('name', '')}"
         it["zircon_match"] = _match_badge(crossrefs.get(source_id))
+        it["alignment_source_id"] = source_id
     for it in out["skills"] + out["missions"]:
         it["zircon_match"] = _match_badge(crossrefs.get(it["id"]))
+        it["alignment_source_id"] = it["id"]
     for group in out["maps"]:
         record = crossrefs.get(group["id"])
         it = _match_badge(record)
@@ -185,7 +195,7 @@ def mob_cards(mob):
 
 def item_props(item):
     """物品详情页: 把属性字段(非基础字段)整理为有序键值对。"""
-    base = {"id", "name", "category", "image", "description"}
+    base = {"id", "name", "category", "image", "description", "zircon_match", "alignment_source_id"}
     props = [(k, v) for k, v in item.items() if k not in base and v not in ("", "-", None)]
     return props
 
@@ -354,11 +364,60 @@ def cmd_build():
 
 def cmd_serve(port=5000):
     """Flask 动态预览(读 JSON + 模板, 不依赖 dist)。"""
-    from flask import Flask, abort, send_from_directory
+    from flask import Flask, abort, jsonify, request, send_from_directory
 
     data = load_data()
     env = build_env()
     app = Flask(__name__)
+
+    def read_local_workspace():
+        if not LOCAL_WORKSPACE_PATH.is_file():
+            return {"id": "workspace", "revision": 0, "drafts": {}, "matches": {}, "events": []}
+        try:
+            value = json.loads(LOCAL_WORKSPACE_PATH.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError) as exc:
+            raise ValueError("本地工作区文件无法读取或 JSON 格式错误。") from exc
+        if (not isinstance(value, dict) or value.get("id") != "workspace"
+                or not isinstance(value.get("revision"), int)
+                or not isinstance(value.get("drafts"), dict)
+                or not isinstance(value.get("matches"), dict)
+                or not isinstance(value.get("events"), list)):
+            raise ValueError("本地工作区文件结构不正确。")
+        return value
+
+    def write_local_workspace(value):
+        if (not isinstance(value, dict) or value.get("id") != "workspace"
+                or not isinstance(value.get("revision"), int)
+                or not isinstance(value.get("drafts"), dict)
+                or not isinstance(value.get("matches"), dict)
+                or not isinstance(value.get("events"), list)):
+            abort(400, description="工作区结构无效。")
+        LOCAL_WORKSPACE_PATH.parent.mkdir(parents=True, exist_ok=True)
+        temporary = LOCAL_WORKSPACE_PATH.with_suffix(".json.tmp")
+        temporary.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        os.replace(temporary, LOCAL_WORKSPACE_PATH)
+
+    @app.get("/api/workspace")
+    def get_workspace():
+        try:
+            with LOCAL_WORKSPACE_LOCK:
+                return jsonify(read_local_workspace())
+        except ValueError as exc:
+            abort(500, description=str(exc))
+
+    @app.put("/api/workspace")
+    def put_workspace():
+        value = request.get_json(silent=True)
+        with LOCAL_WORKSPACE_LOCK:
+            try:
+                current = read_local_workspace()
+            except ValueError as exc:
+                abort(500, description=str(exc))
+            expected = request.headers.get("If-Match-Revision")
+            if expected is not None and expected != str(current["revision"]):
+                return jsonify({"error": "工作区已在其他页面更新，请刷新后重试。", "revision": current["revision"]}), 409
+            write_local_workspace(value)
+        return jsonify(value)
 
     def render_named(tpl, name, ctx):
         return env.get_template(tpl).render(**ctx)
@@ -372,6 +431,7 @@ def cmd_serve(port=5000):
         return None
 
     @app.get("/")
+    @app.get("/index.html")
     def index():
         return render_named("index.html", "index", {
             **page_ctx(data, "home", ""),
@@ -380,6 +440,7 @@ def cmd_serve(port=5000):
         })
 
     @app.get("/mobs/")
+    @app.get("/mobs/index.html")
     def mobs_list():
         return render_named("category.html", "mobs", {
             **page_ctx(data, "mobs", ".."),
@@ -400,6 +461,7 @@ def cmd_serve(port=5000):
         })
 
     @app.get("/items/")
+    @app.get("/items/index.html")
     def items_list():
         return render_named("category.html", "items", {
             **page_ctx(data, "items", ".."),
@@ -420,6 +482,7 @@ def cmd_serve(port=5000):
         })
 
     @app.get("/skills/")
+    @app.get("/skills/index.html")
     def skills_list():
         return render_named("category.html", "skills", {
             **page_ctx(data, "skills", ".."),
@@ -440,6 +503,7 @@ def cmd_serve(port=5000):
         })
 
     @app.get("/missions/")
+    @app.get("/missions/index.html")
     def missions_list():
         return render_named("category.html", "missions", {
             **page_ctx(data, "missions", ".."),
@@ -460,6 +524,7 @@ def cmd_serve(port=5000):
         })
 
     @app.get("/maps/")
+    @app.get("/maps/index.html")
     def maps_list():
         return render_named("category.html", "maps", {
             **page_ctx(data, "maps", ".."),
@@ -483,21 +548,23 @@ def cmd_serve(port=5000):
     def static_files(path):
         return send_from_directory(str(STATIC_DIR), path)
 
-    print(f"[serve] http://127.0.0.1:{port}")
-    app.run(host="127.0.0.1", port=port, debug=False)
+    print(f"[serve] http://0.0.0.0:{port} (loopback + LAN)")
+    app.run(host="0.0.0.0", port=port, debug=False)
 
 
 def main():
     args = sys.argv[1:]
-    cmd = args[0] if args else "build"
-    if cmd == "build":
+    if args and args[0] == "build":
         cmd_build()
-    elif cmd == "serve":
-        port = int(args[1]) if len(args) > 1 else 5000
-        cmd_serve(port)
-    else:
-        print("用法: python app.py [build|serve [端口]]")
-        sys.exit(1)
+        return
+    if args and args[0] not in {"serve", "--help", "-h"}:
+        print("用法: python app.py [serve [端口] | build]")
+        sys.exit(2)
+    if args and args[0] in {"--help", "-h"}:
+        print("用法: python app.py [serve [端口] | build]\n默认命令启动本地动态工作站。")
+        return
+    port = int(args[1]) if len(args) > 1 else 5000
+    cmd_serve(port)
 
 
 if __name__ == "__main__":
