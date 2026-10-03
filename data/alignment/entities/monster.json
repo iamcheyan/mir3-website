@@ -162,8 +162,8 @@
           "status": "pending_review"
         },
         "identity_mapping": {
-          "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
-          "status": "pending_review"
+          "status": "candidate",
+          "reason": "石阁庙/猪洞经典Boss(Mud3 Index 393, HP 19000)；对应 Zircon 库中 Evil Snake (Index 277, Level 85)。"
         },
         "relations": {
           "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
@@ -192,7 +192,13 @@
     "identity": {
       "standard_name_zh": "邪恶毒蛇",
       "website_name": "邪恶毒蛇",
-      "website_source_id": "mob-107"
+      "website_source_id": "mob-107",
+      "zircon_candidate_indexes": [
+        277
+      ],
+      "zircon_candidate_names": [
+        "Evil Snake"
+      ]
     },
     "relations": {},
     "resources": {
@@ -1764,8 +1770,8 @@
           "status": "pending_review"
         },
         "identity_mapping": {
-          "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
-          "status": "pending_review"
+          "status": "candidate",
+          "reason": "毒蛇山谷招牌白蛇小Boss(Mud3 Index 14, HP 800)；Zircon 蛇类生态归入 Tiger Snake 与 Evil Snake。"
         },
         "relations": {
           "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
@@ -1794,7 +1800,15 @@
     "identity": {
       "standard_name_zh": "七点白蛇",
       "website_name": "七点白蛇",
-      "website_source_id": "mob-18"
+      "website_source_id": "mob-18",
+      "zircon_candidate_indexes": [
+        19,
+        277
+      ],
+      "zircon_candidate_names": [
+        "Tiger Snake",
+        "Evil Snake"
+      ]
     },
     "relations": {},
     "resources": {
@@ -1831,8 +1845,8 @@
           "status": "pending_review"
         },
         "identity_mapping": {
-          "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
-          "status": "pending_review"
+          "status": "candidate",
+          "reason": "毒蛇山谷变种毒蛇(Mud3 Index 309, HP 80)；Zircon 归入蛇类/虫类生态。"
         },
         "relations": {
           "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
@@ -1861,7 +1875,15 @@
     "identity": {
       "standard_name_zh": "千年毒蛇",
       "website_name": "千年毒蛇",
-      "website_source_id": "mob-19"
+      "website_source_id": "mob-19",
+      "zircon_candidate_indexes": [
+        19,
+        51
+      ],
+      "zircon_candidate_names": [
+        "Tiger Snake",
+        "Centipede"
+      ]
     },
     "relations": {},
     "resources": {
@@ -1898,8 +1920,8 @@
           "status": "pending_review"
         },
         "identity_mapping": {
-          "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
-          "status": "pending_review"
+          "status": "candidate",
+          "reason": "盟重野外空中猛禽(Mud3 Index 231, HP 50)；Zircon 库内鹰系怪为 Fierce Falcon (Index 388)。"
         },
         "relations": {
           "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
@@ -1928,7 +1950,13 @@
     "identity": {
       "standard_name_zh": "猎鹰",
       "website_name": "猎鹰",
-      "website_source_id": "mob-21"
+      "website_source_id": "mob-21",
+      "zircon_candidate_indexes": [
+        388
+      ],
+      "zircon_candidate_names": [
+        "Fierce Falcon"
+      ]
     },
     "relations": {},
     "resources": {
@@ -3325,8 +3353,8 @@
           "status": "pending_review"
         },
         "identity_mapping": {
-          "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
-          "status": "pending_review"
+          "status": "candidate",
+          "reason": "沙漠绿洲游荡鬼怪(Mud3 Index 403, HP 510)；对应 Zircon 荒漠/地牢鬼魂系列。"
         },
         "relations": {
           "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
@@ -3355,7 +3383,15 @@
     "identity": {
       "standard_name_zh": "夜行鬼",
       "website_name": "夜行鬼",
-      "website_source_id": "mob-52"
+      "website_source_id": "mob-52",
+      "zircon_candidate_indexes": [
+        35,
+        57
+      ],
+      "zircon_candidate_names": [
+        "Devouring Ghost",
+        "Rotting Ghoul"
+      ]
     },
     "relations": {},
     "resources": {
@@ -3618,8 +3654,8 @@
           "status": "pending_review"
         },
         "identity_mapping": {
-          "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
-          "status": "pending_review"
+          "status": "candidate",
+          "reason": "原版比奇新手肉食野怪(Mud3 Index 93, HP 19)；Zircon 数据库将比奇肉源归并为猪/羊/鸡等动物。"
         },
         "relations": {
           "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
@@ -3648,7 +3684,15 @@
     "identity": {
       "standard_name_zh": "蛤蟆",
       "website_name": "蛤蟆",
-      "website_source_id": "mob-6"
+      "website_source_id": "mob-6",
+      "zircon_candidate_indexes": [
+        9,
+        12
+      ],
+      "zircon_candidate_names": [
+        "Pig",
+        "Sheep"
+      ]
     },
     "relations": {},
     "resources": {
@@ -3833,8 +3877,8 @@
           "status": "pending_review"
         },
         "identity_mapping": {
-          "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
-          "status": "pending_review"
+          "status": "candidate",
+          "reason": "灌木林/赤月蜘蛛分身怪(Mud3 Index 123, HP 1500)；对应 Zircon 蜘蛛母体与凝视蜘蛛。"
         },
         "relations": {
           "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
@@ -3863,7 +3907,15 @@
     "identity": {
       "standard_name_zh": "幻影蜘蛛",
       "website_name": "幻影蜘蛛",
-      "website_source_id": "mob-62"
+      "website_source_id": "mob-62",
+      "zircon_candidate_indexes": [
+        67,
+        73
+      ],
+      "zircon_candidate_names": [
+        "Arachnid Gazer",
+        "Arachnid Broodmother"
+      ]
     },
     "relations": {},
     "resources": {
@@ -4946,8 +4998,8 @@
           "status": "pending_review"
         },
         "identity_mapping": {
-          "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
-          "status": "pending_review"
+          "status": "candidate",
+          "reason": "比奇森林猫怪，与多钩猫同源同外观(Mud3 Index 71, HP 20)；Zircon 统称为 Claw Cat (Index 13)。"
         },
         "relations": {
           "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
@@ -4976,7 +5028,13 @@
     "identity": {
       "standard_name_zh": "钉耙猫",
       "website_name": "钉耙猫",
-      "website_source_id": "mob-8"
+      "website_source_id": "mob-8",
+      "zircon_candidate_indexes": [
+        13
+      ],
+      "zircon_candidate_names": [
+        "Claw Cat"
+      ]
     },
     "relations": {},
     "resources": {
