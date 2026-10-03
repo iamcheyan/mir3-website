@@ -12,8 +12,8 @@
           "status": "pending_review"
         },
         "identity_mapping": {
-          "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
-          "status": "pending_review"
+          "status": "candidate",
+          "reason": "17173 法师 46 级技能，以生命换取自然魔法力提升，对应 Zircon Index 49 (Renounce, NeedLevel 46)。"
         },
         "relations": {
           "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
@@ -42,7 +42,13 @@
     "identity": {
       "standard_name_zh": "凝血离魂",
       "website_name": "凝血离魂",
-      "website_source_id": "skill-法师-凝血离魂"
+      "website_source_id": "skill-法师-凝血离魂",
+      "zircon_candidate_indexes": [
+        49
+      ],
+      "zircon_candidate_names": [
+        "Renounce"
+      ]
     },
     "relations": {},
     "resources": {
@@ -79,8 +85,8 @@
           "status": "pending_review"
         },
         "identity_mapping": {
-          "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
-          "status": "pending_review"
+          "status": "candidate",
+          "reason": "17173 道士 40 级技能，受创转移与反弹，对应 Zircon Index 18 (Reflect Damage)。"
         },
         "relations": {
           "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
@@ -109,7 +115,13 @@
     "identity": {
       "standard_name_zh": "移花接玉",
       "website_name": "移花接玉",
-      "website_source_id": "skill-道士-移花接玉"
+      "website_source_id": "skill-道士-移花接玉",
+      "zircon_candidate_indexes": [
+        18
+      ],
+      "zircon_candidate_names": [
+        "Reflect Damage"
+      ]
     },
     "relations": {},
     "resources": {
