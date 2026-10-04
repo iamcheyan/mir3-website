@@ -114,7 +114,7 @@ def load_data():
         p = DATA_DIR / f"{name}.json"
         out[name] = json.loads(p.read_text(encoding="utf-8"))
     id_keys = {"monsters": "mob", "items": "item", "skills": "skill",
-               "missions": "mission", "maps": "map"}
+               "missions": "mission"}
     for name, prefix in id_keys.items():
         for i, it in enumerate(out[name]):
             it.setdefault("id", f"{prefix}-{i}")
@@ -131,16 +131,20 @@ def load_data():
     for it in out["skills"] + out["missions"]:
         it["zircon_match"] = _match_badge(crossrefs.get(it["id"]))
         it["alignment_source_id"] = it["id"]
-    for group in out["maps"]:
-        record = crossrefs.get(group["id"])
-        it = _match_badge(record)
-        identity = (record or {}).get("identity") or {}
-        candidate_areas = identity.get("zircon_candidate_indexes", [])
-        if candidate_areas:
-            it["details"] = [f"候选 MapInfo Index：{', '.join(map(str, candidate_areas))}"]
-        elif record:
-            it["details"] = ["网站地图是区域集合；游戏侧按单张地图记录，需逐区域核对。"]
-        group["zircon_match"] = it
+    # maps.json 现为全服 627 张地图的结构化文档（旧版是 3 个图集卡片的列表）。
+    # 两种结构都要能读：列表走旧的图集对照，字典直接跳过——其内容已由
+    # Zircon System.db 精确导出，无需再做候选推断。
+    if isinstance(out["maps"], list):
+        for group in out["maps"]:
+            record = crossrefs.get(group["id"])
+            it = _match_badge(record)
+            identity = (record or {}).get("identity") or {}
+            candidate_areas = identity.get("zircon_candidate_indexes", [])
+            if candidate_areas:
+                it["details"] = [f"候选 MapInfo Index：{', '.join(map(str, candidate_areas))}"]
+            elif record:
+                it["details"] = ["网站地图是区域集合；游戏侧按单张地图记录，需逐区域核对。"]
+            group["zircon_match"] = it
     return out
 
 
@@ -324,14 +328,7 @@ def render_all(data, env):
         })
 
     # ---------- 地图 ----------
-    maps = data["maps"]
-    render("category.html", "maps/index.html", {
-        **page_ctx(data, "maps", ".."),
-        "title": "地图资料",
-        "desc": "传奇3 迷宫与世界地图资料",
-        "groups": [{"name": "地图", "items": maps}],
-        "kind": "map",
-    })
+    render("maps.html", "maps/index.html", maps_ctx(data))
 
 
 def _group_by(items, key):
@@ -351,12 +348,42 @@ def _group_by(items, key):
 # 命令入口
 # ---------------------------------------------------------------------------
 
+def maps_ctx(data):
+    """地图页上下文：全服 627 张地图按分类成套展示，并标注每条通道的两端坐标。"""
+    doc = data["maps"]
+    if isinstance(doc, list):          # 兼容旧结构（仅 3 个图集卡片）
+        return {**page_ctx(data, "maps", ".."),
+                "title": "地图资料", "desc": "传奇3 迷宫与世界地图资料",
+                "groups": [{"name": "地图", "items": doc}], "stats": None,
+                "exportedAt": ""}
+    return {**page_ctx(data, "maps", ".."),
+            "title": "地图资料",
+            "desc": "全服地图总览：按城镇与副本成套归类，逐条标注从哪张图怎么走到哪张图",
+            "groups": doc.get("groups", []),
+            "stats": doc.get("stats"),
+            "exportedAt": doc.get("exportedAt", "")}
+
+
+# 构建后需要同步回仓库根的产物（根目录页面才是 GitHub Pages 的部署对象，
+# dist/ 仅在 .gitignore 中）。地图页体量大，必须随数据重建，否则会与
+# data/maps.json 脱节。
+SYNC_TO_ROOT = ("maps/index.html", "static/css/style.css")
+
+
 def cmd_build():
     data = load_data()
     env = build_env()
     render_all(data, env)
     n = sum(1 for _ in (DIST_DIR / "images").rglob("*") if _.is_file())
     print(f"[build] 完成: dist/ 共 {n} 张图片")
+    for rel in SYNC_TO_ROOT:
+        src, dst = DIST_DIR / rel, ROOT / rel
+        if not src.is_file():
+            print(f"[build] [WARN] 缺少产物 {rel}，未同步")
+            continue
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(src, dst)
+        print(f"[build] 已同步到根目录: {rel}")
     print("[build] 页面清单:")
     for p in sorted(DIST_DIR.rglob("*.html")):
         print(f"  {p.relative_to(DIST_DIR)}")
@@ -526,11 +553,7 @@ def cmd_serve(port=5000):
     @app.get("/maps/")
     @app.get("/maps/index.html")
     def maps_list():
-        return render_named("category.html", "maps", {
-            **page_ctx(data, "maps", ".."),
-            "title": "地图资料", "desc": "传奇3 迷宫与世界地图资料",
-            "groups": [{"name": "地图", "items": data["maps"]}], "kind": "map",
-        })
+        return render_named("maps.html", "maps", maps_ctx(data))
 
     @app.get("/audit/")
     @app.get("/audit/index.html")

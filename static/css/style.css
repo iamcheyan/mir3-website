@@ -744,3 +744,81 @@ body.match-open,body.export-open { overflow: hidden; }
   .match-candidate-list { min-height: 70px; }
   .match-drawer-footer { flex: 0 0 auto; }
 }
+
+/* ---------------------------------------------------------------------------
+   地图资料页：全服地图分类成套浏览 + 通道坐标标注
+   --------------------------------------------------------------------------- */
+.map-stats { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 10px 0 0; }
+.map-stats-time { color: var(--text-soft); font-size: 11px; margin-left: 4px; }
+.map-legend {
+  margin: 0 0 18px; padding: 12px 14px;
+  border: 1px solid var(--line-soft); border-left: 3px solid var(--gold-dim);
+  background: var(--panel-deep); color: var(--text-soft); font-size: 12px; line-height: 1.75;
+}
+.map-legend strong { color: var(--gold-bright); }
+.map-legend em { color: var(--text); font-style: normal; }
+.group-desc { margin: 0 0 12px; color: var(--text-soft); font-size: 12px; }
+
+.map-suite-grid { display: grid; gap: 14px; }
+.map-suite {
+  border: 1px solid var(--line-soft); border-radius: 3px;
+  background: var(--panel-deep); overflow: hidden;
+}
+.map-suite-title {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px;
+  margin: 0; padding: 11px 14px;
+  border-bottom: 1px solid var(--line-soft); background: var(--panel);
+  font: 17px var(--display); color: var(--gold-bright);
+}
+.map-suite-code {
+  padding: 1px 7px; border: 1px solid var(--gold-dim); border-radius: 2px;
+  font: 11px var(--mono, monospace); color: var(--gold); letter-spacing: .5px;
+}
+.map-suite-en { font: 12px var(--sans); color: var(--text-soft); }
+.map-suite-count { margin-left: auto; font: 11px var(--sans); color: var(--text-soft); }
+.map-suite-desc { margin: 0; padding: 8px 14px; color: var(--text-soft); font-size: 11px; }
+
+.map-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.map-table th {
+  padding: 7px 10px; text-align: left; white-space: nowrap;
+  border-bottom: 1px solid var(--line-soft);
+  background: rgba(255, 255, 255, .02);
+  color: var(--gold-dim); font: 11px var(--sans); letter-spacing: .4px;
+}
+.map-table td { padding: 7px 10px; border-bottom: 1px solid var(--line-faint); vertical-align: top; }
+.map-table tbody tr:hover { background: rgba(214, 178, 102, .05); }
+.map-table code { font-family: var(--mono, monospace); }
+
+.map-td-id { width: 1%; white-space: nowrap; }
+.map-td-id code { color: var(--gold); font-size: 11px; }
+.map-td-name { width: 26%; color: var(--text); }
+.map-name-zh { display: block; color: var(--gold-bright); font-size: 12px; }
+.map-td-links { width: 60%; }
+
+.map-badge {
+  display: inline-block; margin: 3px 4px 0 0; padding: 0 5px;
+  border-radius: 2px; font-size: 10px; line-height: 16px; white-space: nowrap;
+}
+.map-badge-zone { border: 1px solid rgba(120, 190, 120, .5); color: var(--green); }
+.map-badge-nofile { border: 1px solid rgba(200, 140, 90, .5); color: #c88c5a; }
+
+.map-link-list { margin: 0; padding: 0; list-style: none; }
+.map-link-list li {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 5px;
+  padding: 1px 0; color: var(--text-soft); font-size: 11px;
+}
+.map-pt { color: #7fa8c9; font-size: 10px; }
+.map-arrow { color: var(--gold-dim); }
+.map-dest { color: var(--text); }
+.map-dest code { color: var(--gold); font-size: 10px; }
+.map-dest:hover { color: var(--gold-bright); }
+.map-none { color: var(--text-soft); opacity: .5; }
+
+@media (max-width: 760px) {
+  .map-td-name, .map-td-links { width: auto; }
+  .map-table, .map-table tbody, .map-table tr, .map-table td { display: block; width: 100%; }
+  .map-table thead { display: none; }
+  .map-table tr { border-bottom: 1px solid var(--line-soft); padding: 6px 0; }
+  .map-table td { border: 0; padding: 2px 10px; }
+  .map-suite-count { margin-left: 0; }
+}

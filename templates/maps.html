@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% block title %}{{ title }} · 传奇三资料 archive{% endblock %}
+
+{% block content %}
+<nav class="breadcrumb"><a href="{{ prefix }}/index.html">首页</a><span class="sep">/</span><span>{{ title }}</span></nav>
+<div class="list-head">
+  <p class="kicker">ARCHIVE / {{ "%02d"|format(NAV|length) }}</p>
+  <h1 class="page-title">{{ title }}</h1>
+  <p class="page-desc">{{ desc }}</p>
+  <div class="list-search"><label for="page-filter">快速检索</label><div class="search-line"><span aria-hidden="true">⌕</span><input id="page-filter" type="search" class="filter-input" placeholder="搜索地图名 / 编号，如 祖玛 或 D1101…" autocomplete="off"></div></div>
+  {% if stats %}
+  <p class="map-stats">
+    <span class="tag">全服地图 {{ stats.maps }}</span>
+    <span class="tag">连接点 {{ stats.links }}</span>
+    <span class="tag">安全区 {{ stats.safeZones }}</span>
+    <span class="tag">副本套系 {{ stats.suites }}</span>
+    {% if exportedAt %}<span class="map-stats-time">数据源：Zircon System.db{% if exportedAt %} · {{ exportedAt }}{% endif %}</span>{% endif %}
+  </p>
+  {% endif %}
+</div>
+
+<p class="map-legend">
+  <strong>怎么读这一页：</strong>地图按「城镇 / 城镇附属 / 副本套系 / 特殊」分类。
+  每张地图下方列出它的全部通道——<em>出发点坐标 → 目标地图 落点坐标</em>，
+  即玩家实际要走的路径。同一副本套系内的层级通道集中排列，可直接看出第几层通第几层。
+</p>
+
+{% for g in groups %}
+{% if g.suites %}
+<section class="group" data-map-group>
+  <div class="group-heading"><h2 class="group-title">{{ g.name }}</h2><span class="group-count">{{ '%02d'|format(g.suites|length) }} 套</span></div>
+  <p class="group-desc">{{ g.desc }}</p>
+  <div class="map-suite-grid">
+    {% for s in g.suites %}
+    <section class="map-suite" data-suite="{{ s.code }}" data-name="{{ s.name }} {{ s.code }} {{ s.nameEn }}">
+      <h3 class="map-suite-title"><span class="map-suite-code">{{ s.code }}</span>{{ s.name }}<span class="map-suite-en">{{ s.nameEn }}</span><span class="map-suite-count">{{ s['items']|length }} 张</span></h3>
+      <p class="map-suite-desc">{{ s.desc }}</p>
+      <table class="map-table">
+        <thead><tr><th scope="col">编号</th><th scope="col">地图</th><th scope="col">通道（出发点 → 落点）</th></tr></thead>
+        <tbody>
+        {% for it in s['items'] %}
+          <tr id="map-{{ it.id }}" data-name="{{ it.id }} {{ it.name }}" data-map-id="{{ it.id }}">
+            <td class="map-td-id"><code>{{ it.id }}</code></td>
+            <td class="map-td-name">
+              {{ it.name }}{% if it.get('nameZh') %}<span class="map-name-zh">{{ it.nameZh }}</span>{% endif %}
+              {% if it.safeZone %}<span class="map-badge map-badge-zone">安全区 {{ it.bindPt }}</span>{% endif %}
+              {% if not it.hasMapFile %}<span class="map-badge map-badge-nofile">缺地图文件</span>{% endif %}
+            </td>
+            <td class="map-td-links">
+              {% if it.links %}
+              <ul class="map-link-list">
+                {% for l in it.links %}
+                <li><code class="map-pt">{{ l.fromPt }}</code><span class="map-arrow" aria-hidden="true">→</span><a class="map-dest" href="#map-{{ l.to }}"><code>{{ l.to }}</code> {{ l.toName }}</a><code class="map-pt">{{ l.toPt }}</code></li>
+                {% endfor %}
+              </ul>
+              {% else %}<span class="map-none">—</span>{% endif %}
+            </td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </section>
+    {% endfor %}
+  </div>
+</section>
+{% else %}
+<section class="group" data-map-group>
+  <div class="group-heading"><h2 class="group-title">{{ g.name }}</h2><span class="group-count">{{ '%02d'|format(g['items']|length) }}</span></div>
+  <p class="group-desc">{{ g.desc }}</p>
+  <table class="map-table map-table-flat">
+    <thead><tr><th scope="col">编号</th><th scope="col">地图</th><th scope="col">通道（出发点 → 落点）</th></tr></thead>
+    <tbody>
+    {% for it in g['items'] %}
+      <tr data-name="{{ it.id }} {{ it.name }} {{ it.get('nameZh', '') }}" data-map-id="{{ it.id }}" id="map-{{ it.id }}">
+        <td class="map-td-id"><code>{{ it.id }}</code></td>
+        <td class="map-td-name">
+          {{ it.name }}{% if it.get('nameZh') %}<span class="map-name-zh">{{ it.nameZh }}</span>{% endif %}
+          {% if it.safeZone %}<span class="map-badge map-badge-zone">安全区 {{ it.bindPt }} · 半径 {{ it.safeRadius }} 点</span>{% endif %}
+          {% if not it.hasMapFile %}<span class="map-badge map-badge-nofile">缺地图文件</span>{% endif %}
+        </td>
+        <td class="map-td-links">
+          {% if it.links %}
+          <ul class="map-link-list">
+            {% for l in it.links %}
+            <li><code class="map-pt">{{ l.fromPt }}</code><span class="map-arrow" aria-hidden="true">→</span><a class="map-dest" href="#map-{{ l.to }}"><code>{{ l.to }}</code> {{ l.toName }}</a><code class="map-pt">{{ l.toPt }}</code></li>
+            {% endfor %}
+          </ul>
+          {% else %}<span class="map-none">—</span>{% endif %}
+        </td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</section>
+{% endif %}
+{% endfor %}
+{% endblock %}
