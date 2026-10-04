@@ -54,11 +54,8 @@ FAMILY_NAMES = {
 # 城镇主城（官方 StartPoint.txt 12 座中已登记的 11 座）
 TOWN_IDS = ["0", "01", "02", "1", "2", "4", "5", "8", "41", "74", "81"]
 
-TOWN_ZH = {
-    "0": "比奇县城", "01": "边境城市", "02": "银杏山谷", "1": "道馆",
-    "2": "蛇谷", "4": "盟重土城", "5": "沙漠绿洲", "8": "潘夜岛",
-    "41": "诺玛沙漠", "74": "盟重县", "81": "流放岛",
-}
+# 不再硬编码城镇中文名：游戏内显示什么，网页就显示什么。
+# 之前这层覆盖会把「比奇县」写成「比奇县城」，与游戏内不一致。
 
 
 def thumb_for(map_id, images_dir):
@@ -136,8 +133,7 @@ def main():
 
     # 1) 城镇主城
     town_items = [decorate(maps[i]) for i in TOWN_IDS if i in maps]
-    for t in town_items:
-        t["nameZh"] = TOWN_ZH.get(t["id"], t["name"])
+
     groups.append({"id": "towns", "name": "城镇主城", "desc": "玩家主城与安全区，回城/复活点", "items": town_items})
 
     # 2) 城镇附属（0_ / 1_ / 02_ 等城内建筑与副图）

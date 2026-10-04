@@ -55,6 +55,31 @@ class CatalogZirconMatchTests(unittest.TestCase):
         self.assertLessEqual(stats["linksShown"], stats["links"])
 
 
+    def test_map_chinese_names_match_the_game_db(self):
+        """网页中文名必须与游戏内 db_names.json 完全一致。
+
+        MapInfo.Description 是内部名，中文来自 db_names.json 的 maps 段
+        （游戏内 MapInfo.Local() 走的就是这张表）。若网页自行硬编码或改写，
+        就会出现「网页叫比奇县城、游戏里叫比奇县」的不一致。
+        """
+        import json
+        import pathlib
+        # 游戏客户端的显示名表在 Zircon 仓库内，不在本仓库
+        zr = pathlib.Path("/home/tetsuya/development/zircon")
+        db_path = zr / "GodotClient" / "translations" / "db_names.json"
+        if not db_path.is_file():
+            self.skipTest("Zircon 仓库不可用，跳过与游戏内显示名的一致性校验")
+        db = json.loads(db_path.read_text(encoding="utf-8"))["maps"]
+        maps = [m for g in self.data["maps"]["groups"] for m in g.get("items", [])]
+        maps += [m for g in self.data["maps"]["groups"] for s in g.get("suites", [])
+                 for m in s["items"]]
+        for m in maps:
+            expected = (db.get(m["name"]) or {}).get("zh")
+            if expected:
+                with self.subTest(map=m["id"]):
+                    self.assertEqual(m["nameZh"], expected,
+                                     f"{m['id']} 网页名与游戏内不一致")
+
     def test_every_map_shows_a_chinese_name(self):
         """中文显示名来自游戏内同一张表（db_names.json maps 段）。
 
