@@ -8,8 +8,11 @@
 import json
 import re
 import sys
+from pathlib import Path
 from collections import defaultdict
 
+SITE_ROOT = Path(__file__).resolve().parent.parent
+IMAGES_DIR = SITE_ROOT / "images" / "mapgen"
 EXPORT = sys.argv[1] if len(sys.argv) > 1 else "/tmp/maps_export.json"
 OUT = sys.argv[2] if len(sys.argv) > 2 else "data/maps.json"
 
@@ -58,6 +61,21 @@ TOWN_ZH = {
 }
 
 
+def thumb_for(map_id, images_dir):
+    """返回该地图缩略图的站点相对路径；缺失则 None（页面回退到占位）。
+
+    System.db 里同一张图可能登记成 d903，而渲染产物是 D903.jpg（Mud3 官方
+    写大写）。必须大小写不敏感地找实际文件，否则这批图会 404。
+    """
+    exact = images_dir / f"{map_id}.jpg"
+    if exact.is_file():
+        return f"../images/mapgen/{map_id}.jpg"
+    for p in images_dir.glob("*.jpg"):
+        if p.stem.lower() == map_id.lower():
+            return f"../images/mapgen/{p.stem}.jpg"
+    return None
+
+
 def family_of(fn):
     m = re.match(r"^[Dd](\d{3,4})", fn)
     return "D" + m.group(1)[:2] if m else None
@@ -84,6 +102,7 @@ def main():
         「同一个门」，故按 (目标地图, 落点) 归并，出发点合并成一组。
         """
         e = dict(m)
+        e["thumb"] = thumb_for(m["id"], IMAGES_DIR)
         merged = {}
         for l in out_links.get(m["id"], []):
             key = (l["to"], l["toPt"])

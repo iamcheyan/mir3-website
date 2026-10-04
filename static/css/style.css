@@ -832,3 +832,19 @@ body.match-open,body.export-open { overflow: hidden; }
   background: rgba(255, 255, 255, .02); font: 15px var(--display); color: var(--text);
 }
 .map-name-group-name { color: var(--gold-bright); }
+
+/* 地图缩略图列 */
+.map-td-thumb { width: 1%; white-space: nowrap; }
+.map-td-thumb img {
+  display: block; width: 96px; height: auto; border: 1px solid var(--line-faint);
+  border-radius: 2px; background: #05070b;
+}
+.map-td-thumb .img-placeholder {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 96px; height: 64px; border: 1px dashed var(--line-soft);
+  color: var(--text-soft); font-size: 10px;
+}
+@media (max-width: 760px) {
+  .map-td-thumb { width: auto; }
+  .map-td-thumb img { width: 72px; }
+}

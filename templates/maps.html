@@ -36,11 +36,12 @@
       <h3 class="map-suite-title"><span class="map-suite-code">{{ s.code }}</span>{{ s.name }}<span class="map-suite-en">{{ s.nameEn }}</span><span class="map-suite-count">{{ s['items']|length }} 张</span></h3>
       <p class="map-suite-desc">{{ s.desc }}</p>
       <table class="map-table">
-        <thead><tr><th scope="col">编号</th><th scope="col">地图</th><th scope="col">通道（出发点 → 落点）</th></tr></thead>
+        <thead><tr><th scope="col">编号</th><th scope="col">缩略图</th><th scope="col">地图</th><th scope="col">通道（出发点 → 落点）</th></tr></thead>
         <tbody>
         {% for it in s['items'] %}
           <tr id="map-{{ it.id }}" data-name="{{ it.id }} {{ it.name }}" data-map-id="{{ it.id }}">
             <td class="map-td-id"><code>{{ it.id }}</code></td>
+            <td class="map-td-thumb">{% if it.thumb %}<img src="{{ it.thumb|img }}" alt="{{ it.name }} 缩略图" loading="lazy" width="96">{% else %}<span class="img-placeholder">?</span>{% endif %}</td>
             <td class="map-td-name">
               {{ it.name }}{% if it.get('nameZh') %}<span class="map-name-zh">{{ it.nameZh }}</span>{% endif %}
               {% if it.safeZone %}<span class="map-badge map-badge-zone">安全区 {{ it.bindPt }}</span>{% endif %}
@@ -77,11 +78,12 @@
         <span class="map-suite-count">{{ ng['items']|length }} 张</span>
       </h3>
       <table class="map-table">
-        <thead><tr><th scope="col">编号</th><th scope="col">地图</th><th scope="col">通道（出发点 → 落点）</th></tr></thead>
+        <thead><tr><th scope="col">编号</th><th scope="col">缩略图</th><th scope="col">地图</th><th scope="col">通道（出发点 → 落点）</th></tr></thead>
         <tbody>
         {% for it in ng['items'] %}
           <tr id="map-{{ it.id }}" data-name="{{ it.id }} {{ it.name }}" data-map-id="{{ it.id }}">
             <td class="map-td-id"><code>{{ it.id }}</code></td>
+            <td class="map-td-thumb">{% if it.thumb %}<img src="{{ it.thumb|img }}" alt="{{ it.name }} 缩略图" loading="lazy" width="96">{% else %}<span class="img-placeholder">?</span>{% endif %}</td>
             <td class="map-td-name">{{ it.name }}{% if it.safeZone %}<span class="map-badge map-badge-zone">安全区 {{ it.bindPt }}</span>{% endif %}</td>
             <td class="map-td-links">
               {% if it.links %}
@@ -101,11 +103,12 @@
   </div>
   {% else %}
   <table class="map-table map-table-flat">
-    <thead><tr><th scope="col">编号</th><th scope="col">地图</th><th scope="col">通道（出发点 → 落点）</th></tr></thead>
+    <thead><tr><th scope="col">编号</th><th scope="col">缩略图</th><th scope="col">地图</th><th scope="col">通道（出发点 → 落点）</th></tr></thead>
     <tbody>
     {% for it in g['items'] %}
       <tr data-name="{{ it.id }} {{ it.name }} {{ it.get('nameZh', '') }}" data-map-id="{{ it.id }}" id="map-{{ it.id }}">
         <td class="map-td-id"><code>{{ it.id }}</code></td>
+        <td class="map-td-thumb">{% if it.thumb %}<img src="{{ it.thumb|img }}" alt="{{ it.name }} 缩略图" loading="lazy" width="96">{% else %}<span class="img-placeholder">?</span>{% endif %}</td>
         <td class="map-td-name">
           {{ it.name }}{% if it.get('nameZh') %}<span class="map-name-zh">{{ it.nameZh }}</span>{% endif %}
           {% if it.safeZone %}<span class="map-badge map-badge-zone">安全区 {{ it.bindPt }} · 半径 {{ it.safeRadius }} 点</span>{% endif %}
