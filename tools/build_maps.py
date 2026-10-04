@@ -77,8 +77,26 @@ def main():
         in_links[l["to"]].append(l)
 
     def decorate(m):
+        """折叠同一目标的多格门口。
+
+        官方把一个门口的 2~4 个可行走格各写一条通道（Bichon Town -> 01 有
+        3 个出发点），直接逐行渲染会让人误以为有三个传送门。实际语义是
+        「同一个门」，故按 (目标地图, 落点) 归并，出发点合并成一组。
+        """
         e = dict(m)
-        e["links"] = out_links.get(m["id"], [])
+        merged = {}
+        for l in out_links.get(m["id"], []):
+            key = (l["to"], l["toPt"])
+            if key in merged:
+                merged[key]["fromPts"].append(l["fromPt"])
+            else:
+                merged[key] = {"to": l["to"], "toName": l["toName"], "toPt": l["toPt"],
+                               "fromPts": [l["fromPt"]]}
+        e["links"] = [
+            {"to": v["to"], "toName": v["toName"], "toPt": v["toPt"],
+             "fromPts": v["fromPts"], "fromPt": "、".join(v["fromPts"])}
+            for v in merged.values()
+        ]
         e["inbound"] = in_links.get(m["id"], [])
         e["linkCount"] = len(e["links"]) + len(e["inbound"])
         z = zones.get(m["id"])
@@ -101,7 +119,20 @@ def main():
                  and re.match(r"^\d+_", m["id"])]
     if sub_items:
         sub_items.sort(key=lambda x: x["id"])
-        groups.append({"id": "town-sub", "name": "城镇附属", "desc": "城内建筑、行会区域与城镇子图", "items": sub_items})
+        # 多个编号共用一个显示名（如 18 张都叫「试练场」），逐条平铺会淹没页面。
+        # 按名称归组，编号合并成一行，既能看清是哪些图也便于检索。
+        sub_groups = []
+        by_name = {}
+        for m in sub_items:
+            by_name.setdefault(m["name"], []).append(m)
+        for name, items in sorted(by_name.items(), key=lambda kv: (-len(kv[1]), kv[0])):
+            sub_groups.append({"name": name, "ids": [i["id"] for i in items], "items": items})
+        groups.append({
+            "id": "town-sub", "name": "城镇附属",
+            "desc": "城内建筑、行会区域与城镇子图；同名地图已按名称归组",
+            "nameGroups": sub_groups,
+            "items": sub_items,
+        })
 
     # 3) 地下城/洞窟：按 D 家族成套
     fam = defaultdict(list)
@@ -132,6 +163,7 @@ def main():
     total = sum(len(g.get("items", [])) for g in groups) + \
         sum(len(s["items"]) for g in groups if "suites" in g for s in g["suites"])
 
+
     out = {
         "id": "map-index",
         "title": "全服地图与连接点",
@@ -145,6 +177,13 @@ def main():
         },
         "groups": groups,
     }
+
+    # 页面实际渲染的通道数（多格门口已折叠），与库内原始 Movement 行数不同，
+    # 两个数都给出，避免读者对不上。
+    out["stats"]["linksShown"] = (
+        sum(len(m["links"]) for g in groups for m in g.get("items", []))
+        + sum(len(m["links"]) for g in groups for s in g.get("suites", []) for m in s["items"])
+    )
 
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=1)

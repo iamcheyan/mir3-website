@@ -822,3 +822,13 @@ body.match-open,body.export-open { overflow: hidden; }
   .map-table td { border: 0; padding: 2px 10px; }
   .map-suite-count { margin-left: 0; }
 }
+
+/* 同名地图归组（城镇附属里 18 张都叫「试练场」这类） */
+.map-name-groups { display: grid; gap: 12px; }
+.map-name-group { border: 1px solid var(--line-faint); border-radius: 3px; background: var(--panel-deep); }
+.map-name-group-title {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px;
+  margin: 0; padding: 9px 13px; border-bottom: 1px solid var(--line-faint);
+  background: rgba(255, 255, 255, .02); font: 15px var(--display); color: var(--text);
+}
+.map-name-group-name { color: var(--gold-bright); }

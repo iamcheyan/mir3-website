@@ -29,16 +29,31 @@ class CatalogZirconMatchTests(unittest.TestCase):
         self.assertEqual(len(maps), stats["maps"], "地图条目数必须与 stats.maps 一致")
         self.assertEqual(len({m["id"] for m in maps}), stats["maps"], "地图编号不得重复")
 
-        # 每条通道的两端都必须能在页面里定位到，否则「怎么走」无法点开
+        # 每条通道的两端都必须能在页面里定位到，否则「怎么走」无法点开。
+        # 一个门口的多个可行走格会被折叠成一条通道，fromPts 保留全部出发点，
+        # 因此这里校验的是「折叠后的条数」与「出发点总数」两个维度。
         ids = {m["id"] for m in maps}
         links = [l for m in maps for l in m["links"]]
-        self.assertEqual(len(links), stats["links"])
-        for link in links:
-            with self.subTest(link=f"{link['from']}->{link['to']}"):
-                self.assertIn(link["from"], ids)
-                self.assertIn(link["to"], ids)
-                self.assertRegex(link["fromPt"], r"^\d+,\d+$")
-                self.assertRegex(link["toPt"], r"^\d+,\d+$")
+        self.assertEqual(len(links), sum(m["linkCount"] - len(m["inbound"]) for m in maps),
+                         "折叠后的通道条数必须与各地图出向条数之和一致")
+        for m in maps:
+            # 同一张源图内，指向同一落点的行必须已被折叠成一条
+            seen = set()
+            for link in m["links"]:
+                with self.subTest(link=f"{m['id']}->{link['to']}@{link['toPt']}"):
+                    self.assertIn(link["to"], ids)
+                    self.assertRegex(link["toPt"], r"^\d+,\d+$")
+                    self.assertTrue(link["fromPts"], "通道必须记录至少一个出发点")
+                    for pt in link["fromPts"]:
+                        self.assertRegex(pt, r"^\d+,\d+$")
+                    key = (link["to"], link["toPt"])
+                    self.assertNotIn(key, seen, "同一源图内出现重复落点的通道行")
+                    seen.add(key)
+        self.assertEqual(len(links), stats["linksShown"],
+                         "页面渲染的通道条数必须等于 linksShown")
+        # 折叠只会减少条数，不会凭空多出通道
+        self.assertLessEqual(stats["linksShown"], stats["links"])
+
 
     def test_towns_and_safe_zones_are_kept_together(self):
         towns = next(g for g in self.data["maps"]["groups"] if g["id"] == "towns")

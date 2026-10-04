@@ -67,6 +67,39 @@
 <section class="group" data-map-group>
   <div class="group-heading"><h2 class="group-title">{{ g.name }}</h2><span class="group-count">{{ '%02d'|format(g['items']|length) }}</span></div>
   <p class="group-desc">{{ g.desc }}</p>
+  {% if g.nameGroups %}
+  <div class="map-name-groups">
+    {% for ng in g.nameGroups %}
+    <section class="map-name-group" data-name="{{ ng.name }} {{ ng.ids|join(' ') }}">
+      <h3 class="map-name-group-title">
+        <span class="map-name-group-name">{{ ng.name }}</span>
+        <span class="map-suite-code">{{ ng.ids|join(' / ') }}</span>
+        <span class="map-suite-count">{{ ng['items']|length }} 张</span>
+      </h3>
+      <table class="map-table">
+        <thead><tr><th scope="col">编号</th><th scope="col">地图</th><th scope="col">通道（出发点 → 落点）</th></tr></thead>
+        <tbody>
+        {% for it in ng['items'] %}
+          <tr id="map-{{ it.id }}" data-name="{{ it.id }} {{ it.name }}" data-map-id="{{ it.id }}">
+            <td class="map-td-id"><code>{{ it.id }}</code></td>
+            <td class="map-td-name">{{ it.name }}{% if it.safeZone %}<span class="map-badge map-badge-zone">安全区 {{ it.bindPt }}</span>{% endif %}</td>
+            <td class="map-td-links">
+              {% if it.links %}
+              <ul class="map-link-list">
+                {% for l in it.links %}
+                <li><code class="map-pt">{{ l.fromPt }}</code><span class="map-arrow" aria-hidden="true">→</span><a class="map-dest" href="#map-{{ l.to }}"><code>{{ l.to }}</code> {{ l.toName }}</a><code class="map-pt">{{ l.toPt }}</code></li>
+                {% endfor %}
+              </ul>
+              {% else %}<span class="map-none">—</span>{% endif %}
+            </td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </section>
+    {% endfor %}
+  </div>
+  {% else %}
   <table class="map-table map-table-flat">
     <thead><tr><th scope="col">编号</th><th scope="col">地图</th><th scope="col">通道（出发点 → 落点）</th></tr></thead>
     <tbody>
@@ -91,6 +124,7 @@
     {% endfor %}
     </tbody>
   </table>
+  {% endif %}
 </section>
 {% endif %}
 {% endfor %}
