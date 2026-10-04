@@ -55,6 +55,24 @@ class CatalogZirconMatchTests(unittest.TestCase):
         self.assertLessEqual(stats["linksShown"], stats["links"])
 
 
+    def test_every_map_shows_a_chinese_name(self):
+        """中文显示名来自游戏内同一张表（db_names.json maps 段）。
+
+        MapInfo.Description 混着中文名、英文名和「EI 0_0031」这类工程代号，
+        若直接显示会出现「网页英文 / 游戏内中文」的不一致，也会让 EI 占位名
+        裸露给读者。必须保证每张地图都有中文主名。
+        """
+        maps = [m for g in self.data["maps"]["groups"] for m in g.get("items", [])]
+        maps += [m for g in self.data["maps"]["groups"] for s in g.get("suites", [])
+                 for m in s["items"]]
+        missing = [m["id"] for m in maps if not m.get("nameZh")]
+        self.assertEqual(missing, [], "以下地图缺少中文显示名")
+        # 通道目标同样要中文化
+        for m in maps:
+            for link in m["links"]:
+                with self.subTest(link=f"{m['id']}->{link['to']}"):
+                    self.assertTrue(link.get("toNameZh"), "通道目标必须有中文名")
+
     def test_towns_and_safe_zones_are_kept_together(self):
         towns = next(g for g in self.data["maps"]["groups"] if g["id"] == "towns")
         safe = {m["id"] for m in towns["items"] if m.get("safeZone")}

@@ -43,7 +43,8 @@
             <td class="map-td-id"><code>{{ it.id }}</code></td>
             <td class="map-td-thumb">{% if it.thumb %}<img src="{{ it.thumb|img }}" alt="{{ it.name }} 缩略图" loading="lazy" width="96">{% else %}<span class="img-placeholder">?</span>{% endif %}</td>
             <td class="map-td-name">
-              {{ it.name }}{% if it.get('nameZh') %}<span class="map-name-zh">{{ it.nameZh }}</span>{% endif %}
+              <span class="map-name-zh">{{ it.get('nameZh') or it.name }}</span>
+              {% if it.get('nameZh') and it.name != it.nameZh %}<span class="map-name-en">{{ it.name }}</span>{% endif %}
               {% if it.safeZone %}<span class="map-badge map-badge-zone">安全区 {{ it.bindPt }}</span>{% endif %}
               {% if not it.hasMapFile %}<span class="map-badge map-badge-nofile">缺地图文件</span>{% endif %}
             </td>
@@ -51,7 +52,7 @@
               {% if it.links %}
               <ul class="map-link-list">
                 {% for l in it.links %}
-                <li><code class="map-pt">{{ l.fromPt }}</code><span class="map-arrow" aria-hidden="true">→</span><a class="map-dest" href="#map-{{ l.to }}"><code>{{ l.to }}</code> {{ l.toName }}</a><code class="map-pt">{{ l.toPt }}</code></li>
+                <li><code class="map-pt">{{ l.fromPt }}</code><span class="map-arrow" aria-hidden="true">→</span><a class="map-dest" href="#map-{{ l.to }}"><code>{{ l.to }}</code> {{ l.toNameZh or l.toName }}</a><code class="map-pt">{{ l.toPt }}</code></li>
                 {% endfor %}
               </ul>
               {% else %}<span class="map-none">—</span>{% endif %}
@@ -84,12 +85,12 @@
           <tr id="map-{{ it.id }}" data-name="{{ it.id }} {{ it.name }}" data-map-id="{{ it.id }}">
             <td class="map-td-id"><code>{{ it.id }}</code></td>
             <td class="map-td-thumb">{% if it.thumb %}<img src="{{ it.thumb|img }}" alt="{{ it.name }} 缩略图" loading="lazy" width="96">{% else %}<span class="img-placeholder">?</span>{% endif %}</td>
-            <td class="map-td-name">{{ it.name }}{% if it.safeZone %}<span class="map-badge map-badge-zone">安全区 {{ it.bindPt }}</span>{% endif %}</td>
+            <td class="map-td-name"><span class="map-name-zh">{{ it.get('nameZh') or it.name }}</span>{% if it.get('nameZh') and it.name != it.nameZh %}<span class="map-name-en">{{ it.name }}</span>{% endif %}{% if it.safeZone %}<span class="map-badge map-badge-zone">安全区 {{ it.bindPt }}</span>{% endif %}</td>
             <td class="map-td-links">
               {% if it.links %}
               <ul class="map-link-list">
                 {% for l in it.links %}
-                <li><code class="map-pt">{{ l.fromPt }}</code><span class="map-arrow" aria-hidden="true">→</span><a class="map-dest" href="#map-{{ l.to }}"><code>{{ l.to }}</code> {{ l.toName }}</a><code class="map-pt">{{ l.toPt }}</code></li>
+                <li><code class="map-pt">{{ l.fromPt }}</code><span class="map-arrow" aria-hidden="true">→</span><a class="map-dest" href="#map-{{ l.to }}"><code>{{ l.to }}</code> {{ l.toNameZh or l.toName }}</a><code class="map-pt">{{ l.toPt }}</code></li>
                 {% endfor %}
               </ul>
               {% else %}<span class="map-none">—</span>{% endif %}
@@ -110,7 +111,8 @@
         <td class="map-td-id"><code>{{ it.id }}</code></td>
         <td class="map-td-thumb">{% if it.thumb %}<img src="{{ it.thumb|img }}" alt="{{ it.name }} 缩略图" loading="lazy" width="96">{% else %}<span class="img-placeholder">?</span>{% endif %}</td>
         <td class="map-td-name">
-          {{ it.name }}{% if it.get('nameZh') %}<span class="map-name-zh">{{ it.nameZh }}</span>{% endif %}
+          <span class="map-name-zh">{{ it.get('nameZh') or it.name }}</span>
+          {% if it.get('nameZh') and it.name != it.nameZh %}<span class="map-name-en">{{ it.name }}</span>{% endif %}
           {% if it.safeZone %}<span class="map-badge map-badge-zone">安全区 {{ it.bindPt }} · 半径 {{ it.safeRadius }} 点</span>{% endif %}
           {% if not it.hasMapFile %}<span class="map-badge map-badge-nofile">缺地图文件</span>{% endif %}
         </td>
@@ -118,7 +120,7 @@
           {% if it.links %}
           <ul class="map-link-list">
             {% for l in it.links %}
-            <li><code class="map-pt">{{ l.fromPt }}</code><span class="map-arrow" aria-hidden="true">→</span><a class="map-dest" href="#map-{{ l.to }}"><code>{{ l.to }}</code> {{ l.toName }}</a><code class="map-pt">{{ l.toPt }}</code></li>
+            <li><code class="map-pt">{{ l.fromPt }}</code><span class="map-arrow" aria-hidden="true">→</span><a class="map-dest" href="#map-{{ l.to }}"><code>{{ l.to }}</code> {{ l.toNameZh or l.toName }}</a><code class="map-pt">{{ l.toPt }}</code></li>
             {% endfor %}
           </ul>
           {% else %}<span class="map-none">—</span>{% endif %}

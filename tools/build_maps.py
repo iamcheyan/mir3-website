@@ -87,6 +87,9 @@ def main():
     links = d["links"]
     zones = {z["map"]: z for z in d["zones"]}
 
+    # 编号 -> 中文显示名，用于通道目标
+    zh_by_id = {m["id"]: m.get("nameZh") for m in d["maps"] if m.get("nameZh")}
+
     # 地图 -> 该图的出向连接（附目标与坐标）
     out_links = defaultdict(list)
     in_links = defaultdict(list)
@@ -116,6 +119,10 @@ def main():
              "fromPts": v["fromPts"], "fromPt": "、".join(v["fromPts"])}
             for v in merged.values()
         ]
+        for l in e["links"]:
+            tz = zh_by_id.get(l["to"])
+            if tz:
+                l["toNameZh"] = tz
         e["inbound"] = in_links.get(m["id"], [])
         e["linkCount"] = len(e["links"]) + len(e["inbound"])
         z = zones.get(m["id"])
@@ -143,7 +150,7 @@ def main():
         sub_groups = []
         by_name = {}
         for m in sub_items:
-            by_name.setdefault(m["name"], []).append(m)
+            by_name.setdefault(m.get("nameZh") or m["name"], []).append(m)
         for name, items in sorted(by_name.items(), key=lambda kv: (-len(kv[1]), kv[0])):
             sub_groups.append({"name": name, "ids": [i["id"] for i in items], "items": items})
         groups.append({
@@ -161,7 +168,7 @@ def main():
             fam[f].append(decorate(maps[fn]))
     dungeon_groups = []
     for f, items in sorted(fam.items(), key=lambda kv: -len(kv[1])):
-        zh, en = FAMILY_NAMES.get(f, (items[0]["name"], f))
+        zh, en = FAMILY_NAMES.get(f, (items[0].get("nameZh") or items[0]["name"], f))
         items.sort(key=lambda x: x["id"])
         dungeon_groups.append({
             "id": f.lower(), "code": f, "name": zh, "nameEn": en,
