@@ -9,12 +9,44 @@ class CatalogZirconMatchTests(unittest.TestCase):
         cls.data = app.load_data()
 
     def test_every_public_catalog_entry_has_a_cross_reference_status(self):
-        expected = {"monsters": 154, "items": 371, "skills": 61, "missions": 24, "maps": 3}
+        # maps 已从「3 个图集卡片」改为按 Zircon System.db 导出的全服地图文档，
+        # 不再走候选推断，因此单独断言其规模与完整性。
+        expected = {"monsters": 154, "items": 371, "skills": 61, "missions": 24}
         for collection, count in expected.items():
             with self.subTest(collection=collection):
                 self.assertEqual(len(self.data[collection]), count)
                 self.assertTrue(all(isinstance(row.get("zircon_match"), dict)
                                     for row in self.data[collection]))
+
+    def test_map_index_lists_every_registered_map_with_its_channels(self):
+        doc = self.data["maps"]
+        self.assertIsInstance(doc, dict)
+        stats = doc["stats"]
+        self.assertEqual(stats["maps"], 627)
+
+        maps = [m for g in doc["groups"] for m in g.get("items", [])]
+        maps += [m for g in doc["groups"] for s in g.get("suites", []) for m in s["items"]]
+        self.assertEqual(len(maps), stats["maps"], "地图条目数必须与 stats.maps 一致")
+        self.assertEqual(len({m["id"] for m in maps}), stats["maps"], "地图编号不得重复")
+
+        # 每条通道的两端都必须能在页面里定位到，否则「怎么走」无法点开
+        ids = {m["id"] for m in maps}
+        links = [l for m in maps for l in m["links"]]
+        self.assertEqual(len(links), stats["links"])
+        for link in links:
+            with self.subTest(link=f"{link['from']}->{link['to']}"):
+                self.assertIn(link["from"], ids)
+                self.assertIn(link["to"], ids)
+                self.assertRegex(link["fromPt"], r"^\d+,\d+$")
+                self.assertRegex(link["toPt"], r"^\d+,\d+$")
+
+    def test_towns_and_safe_zones_are_kept_together(self):
+        towns = next(g for g in self.data["maps"]["groups"] if g["id"] == "towns")
+        safe = {m["id"] for m in towns["items"] if m.get("safeZone")}
+        self.assertTrue(safe, "主城分组必须标出安全区")
+        for m in towns["items"]:
+            if m.get("safeZone"):
+                self.assertRegex(m["bindPt"], r"^\d+,\d+$")
 
     def test_oma_translation_conflict_shows_game_index_and_internal_name(self):
         rows = {row["name"]: row for row in self.data["monsters"]
