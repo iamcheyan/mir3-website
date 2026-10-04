@@ -80,6 +80,36 @@ class CatalogZirconMatchTests(unittest.TestCase):
                     self.assertEqual(m["nameZh"], expected,
                                      f"{m['id']} 网页名与游戏内不一致")
 
+    def test_main_town_names_match_mud3_official(self):
+        """主城名必须等于 Mud3 官方 Envir3/MapInfo.txt 的真名。
+
+        历史上出现过张冠李戴：4 号被叫「诺玛村」（官方是「绿洲」，真正
+        的诺玛村落是 41 号）、2 号被叫「潘夜村」（官方是「毒蛇山谷」）、
+        8 号被叫「冰雪村」（官方是「潘夜岛」）。这里钉死，防止再次漂移。
+        """
+        import pathlib
+        off = pathlib.Path("/home/tetsuya/development/Mir3-Research/reference/mir3-source"
+                            "/Mud3-Config/Envir3/MapInfo.txt")
+        if not off.is_file():
+            self.skipTest("Mud3 官方配置不可用，跳过主城名校验")
+        import re
+        official = {}
+        for m in re.finditer(r"^\[(\S+)\s+(\S+)\s+\d+\]",
+                             off.read_text(encoding="gb18030", errors="replace"), re.M):
+            official.setdefault(m.group(1), m.group(2))
+
+        maps = [m for g in self.data["maps"]["groups"] for m in g.get("items", [])]
+        maps += [m for g in self.data["maps"]["groups"] for s in g.get("suites", [])
+                 for m in s["items"]]
+        by_id = {m["id"]: m for m in maps}
+        for mid in ("0", "1", "2", "4", "8", "12", "41", "74"):
+            want = official.get(mid)
+            if not want:
+                continue
+            with self.subTest(map=mid):
+                self.assertEqual(by_id[mid]["nameZh"], want,
+                                 f"{mid} 号地图名应为 Mud3 官方的「{want}」")
+
     def test_every_map_shows_a_chinese_name(self):
         """中文显示名来自游戏内同一张表（db_names.json maps 段）。
 
