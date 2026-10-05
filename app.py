@@ -258,8 +258,8 @@ def render_all(data, env):
     render("category.html", "mobs/index.html", {
         **page_ctx(data, "mobs", ".."),
         "title": "怪物图鉴",
-        "desc": f"共 {len(mobs)} 种怪物, 按出没区域分类",
-        "groups": _group_by(mobs, "category"),
+        "desc": f"共 {len(mobs)} 种怪物, 按分类整理",
+        "groups": _mob_groups(mobs),
         "kind": "mob",
     })
     for m in mobs:
@@ -342,6 +342,17 @@ def _group_by(items, key):
             groups.append({"name": k, "items": []})
         groups[seen.index(k)]["items"].append(it)
     return groups
+
+
+# 怪物目录置顶的跨区域分类(召唤兽 / 城防守卫), 其余分组保持数据顺序。
+FEATURED_MOB_CATEGORIES = ("召唤类", "守卫类")
+
+
+def _mob_groups(mobs):
+    """怪物目录分组: 召唤类/守卫类置顶, 其余保持数据出现顺序。"""
+    groups = _group_by(mobs, "category")
+    rank = {name: i for i, name in enumerate(FEATURED_MOB_CATEGORIES)}
+    return sorted(groups, key=lambda g: rank.get(g["name"], len(rank)))
 
 
 # ---------------------------------------------------------------------------
@@ -471,8 +482,8 @@ def cmd_serve(port=5000):
     def mobs_list():
         return render_named("category.html", "mobs", {
             **page_ctx(data, "mobs", ".."),
-            "title": "怪物图鉴", "desc": f"共 {len(data['monsters'])} 种怪物",
-            "groups": _group_by(data["monsters"], "category"), "kind": "mob",
+            "title": "怪物图鉴", "desc": f"共 {len(data['monsters'])} 种怪物, 按分类整理",
+            "groups": _mob_groups(data["monsters"]), "kind": "mob",
         })
 
     @app.get("/mobs/<id_>")

@@ -18,9 +18,14 @@
   </div>
   <p class="zircon-filter-note">“未建立匹配”不代表游戏中不存在；“无对照记录”表示当前审计资料尚无对应条目。</p>
 </div>
+<nav class="cat-nav" aria-label="分类导航">
+  {% for g in groups %}
+  <a class="cat-chip" href="#cat-{{ loop.index }}"><span class="cat-chip-name">{{ g.name }}</span><span class="cat-chip-count">{{ g['items']|length }}</span></a>
+  {% endfor %}
+</nav>
 
 {% for g in groups %}
-<section class="group">
+<section class="group" id="cat-{{ loop.index }}">
   <div class="group-heading"><h2 class="group-title">{{ g.name }}</h2><span class="group-count">{{ '%02d'|format(g['items']|length) }}</span></div>
   <div class="card-grid">
     {% for it in g['items'] %}

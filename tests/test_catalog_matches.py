@@ -11,7 +11,7 @@ class CatalogZirconMatchTests(unittest.TestCase):
     def test_every_public_catalog_entry_has_a_cross_reference_status(self):
         # maps 已从「3 个图集卡片」改为按 Zircon System.db 导出的全服地图文档，
         # 不再走候选推断，因此单独断言其规模与完整性。
-        expected = {"monsters": 159, "items": 371, "skills": 61, "missions": 24}
+        expected = {"monsters": 162, "items": 371, "skills": 61, "missions": 24}
         for collection, count in expected.items():
             with self.subTest(collection=collection):
                 self.assertEqual(len(self.data[collection]), count)

@@ -120,7 +120,11 @@ a:focus-visible, input:focus-visible, button:focus-visible { outline: 1px solid 
 .page-title { margin: 0; font-family: var(--display); font-weight: 400; font-size: clamp(42px,6vw,70px); letter-spacing: .12em; line-height: 1.15; color: var(--text); text-shadow: 0 2px 30px rgba(214,178,102,.25); }
 .page-desc { margin: 6px 0 0; color: var(--text-soft); font-size: 13px; letter-spacing: .05em; }
 .list-search { grid-column: 2; grid-row: 1 / span 3; }
-.group { margin: 0 0 56px; }
+.cat-nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 48px; }
+.cat-chip { display: inline-flex; align-items: baseline; gap: 7px; padding: 6px 11px; border: 1px solid var(--line-soft); background: rgba(18,24,38,.6); color: var(--text-soft); text-decoration: none; font-size: 12px; letter-spacing: .04em; transition: border-color .18s, color .18s, background .18s; }
+.cat-chip:hover { border-color: var(--line); color: var(--gold-bright); background: rgba(214,178,102,.08); }
+.cat-chip-count { color: var(--gold-dim); font-family: var(--latin); font-size: 10px; }
+.group { margin: 0 0 56px; scroll-margin-top: 108px; }
 .group-heading { display: flex; align-items: baseline; gap: 12px; margin-bottom: 18px; padding-bottom: 10px; border-bottom: 1px solid var(--line); }
 .group-title { margin: 0; font-family: var(--display); font-weight: 400; font-size: 23px; letter-spacing: .1em; color: var(--gold); }
 .group-title::before { content: "◆"; margin-right: 10px; font-size: 11px; color: var(--gold-dim); vertical-align: 3px; }

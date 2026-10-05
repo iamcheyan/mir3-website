@@ -41,7 +41,7 @@ python app.py
 
 | 分类 | 数量 | 说明 |
 |------|------|------|
-| 怪物 | 159 | 22 个区域分类(含补录的 5 个城防守卫) |
+| 怪物 | 162 | 23 个分类(含 3 个道士召唤兽与 5 个城防守卫) |
 | 物品 | 371 | 12 个类型(武器/盔甲/手镯/戒指/项链/套装/普通道具/任务道具等) |
 | 技能 | 61 | 战士 13 / 法师 26 / 道士 22 |
 | 任务 | 24 | 初级 3 / 中级 9 / 技能学习 3 / 万事通随机 9 |
@@ -114,7 +114,7 @@ python3 app.py build
 | 页面 | 路径 |
 |------|------|
 | 首页(统计 + 分类入口 + 搜索) | `index.html` |
-| 怪物图鉴(按区域分组 + 页内搜索) | `mobs/index.html`, 详情 `mobs/mob-N.html` |
+| 怪物图鉴(按分类分组 + 分类导航 + 页内搜索) | `mobs/index.html`, 详情 `mobs/mob-N.html` |
 | 物品大全 | `items/index.html`, 详情 `items/item-N.html` |
 | 技能资料 | `skills/index.html`, 详情 `skills/skill-*.html` |
 | 任务攻略 | `missions/index.html`, 详情 `missions/mission-*.html` |
