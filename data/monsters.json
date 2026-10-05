@@ -1478,5 +1478,65 @@
   "image": "../images/mob/pic/ang_11.gif",
   "description": "真天宫里大BOSS。 震天魔神 能暴:特殊饰品,屠龙,嗜魂法杖,龙纹剑",
   "attrs": {}
+ },
+ {
+  "id": "mob-154",
+  "name": "大刀守卫",
+  "category": "城镇守卫",
+  "image": "../images/mob/pic/gate_guard.gif",
+  "description": "驻守比奇城、盟重土城与毒蛇山谷城门的重甲守卫，重盔重甲、手执巨型长柄大刀。站桩防守，一旦发现红名或 PK 玩家便瞬移跳劈，一击致命。",
+  "attrs": {
+   "类型": "城防守卫（NPC）",
+   "驻守": "比奇 / 盟重 / 毒蛇山谷城门",
+   "Zircon 模型": "Guard · Mon_3 Shape 6"
+  }
+ },
+ {
+  "id": "mob-155",
+  "name": "道馆带刀护卫",
+  "category": "城镇守卫",
+  "image": "../images/mob/pic/town_guard.gif",
+  "description": "道馆（失乐园）专属侍卫。身着深蓝色绫罗战袍，外衬铁叶锁子甲，头戴双翎战盔，双手横握佩刀于腰腹之间，形如大内锦衣卫。站桩防守，秒杀红名。",
+  "attrs": {
+   "类型": "城防守卫（NPC）",
+   "驻守": "道馆（失乐园）",
+   "Zircon 模型": "TownGuard · Mon_12 Shape 4"
+  }
+ },
+ {
+  "id": "mob-156",
+  "name": "白日门森林护卫",
+  "category": "城镇守卫",
+  "image": "../images/mob/pic/forest_guard.gif",
+  "description": "白日门天尊堂与城门专属的森林道家侍卫，身披道家战铠、内着劲装。站桩防守，秒杀红名。",
+  "attrs": {
+   "类型": "城防守卫（NPC）",
+   "驻守": "白日门",
+   "Zircon 模型": "ForestGuard · Mon_12 Shape 3"
+  }
+ },
+ {
+  "id": "mob-157",
+  "name": "沙漠卫士",
+  "category": "城镇守卫",
+  "image": "../images/mob/pic/sand_guard.gif",
+  "description": "绿洲（沙漠绿洲）专属卫士，身穿沙漠特制斗篷与沙地护甲，手持专属战戈。站桩防守，秒杀红名。",
+  "attrs": {
+   "类型": "城防守卫（NPC）",
+   "驻守": "绿洲（沙漠绿洲）",
+   "Zircon 模型": "SandGuard · Mon_12 Shape 5"
+  }
+ },
+ {
+  "id": "mob-158",
+  "name": "弓箭手守卫",
+  "category": "城镇守卫",
+  "image": "../images/mob/pic/archer_guard.gif",
+  "description": "驻守比奇大城与盟重土城墙垛、箭楼与高台哨卡的远程神射手。站桩防守、不被常规攻击消灭，拥有 15 格超远视野；发现红名玩家或入城野怪即发射致命箭矢。",
+  "attrs": {
+   "类型": "城防守卫（NPC）",
+   "驻守": "比奇 / 盟重城墙箭楼",
+   "Zircon 模型": "ArcherGuard · Mon_9 Shape 6"
+  }
  }
 ]
