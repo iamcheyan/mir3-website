@@ -28,6 +28,10 @@
   {
    "name": "地图资料",
    "url": "maps.html"
+  },
+  {
+   "name": "NPC名录",
+   "url": "npcs/index.html"
   }
  ],
  "categories": {
@@ -90,6 +94,7 @@
   "items": 371,
   "skills": 61,
   "missions": 24,
-  "maps": 3
+  "maps": 3,
+  "npcs": 230
  }
 }

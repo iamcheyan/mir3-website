@@ -1,0 +1,146 @@
+{% extends "base.html" %}
+{% block title %}{{ title }} · 传奇三资料 archive{% endblock %}
+
+{% block content %}
+<nav class="breadcrumb"><a href="{{ prefix }}/index.html">首页</a><span class="sep">/</span><span>{{ title }}</span></nav>
+<div class="list-head">
+  <p class="kicker">ARCHIVE / NPC ROSTER</p>
+  <h1 class="page-title">{{ title }}</h1>
+  <p class="page-desc">{{ desc }}</p>
+  <div class="list-search">
+    <label for="page-filter">快速检索</label>
+    <div class="search-line">
+      <span aria-hidden="true">⌕</span>
+      <input id="page-filter" type="search" class="filter-input" placeholder="搜索 NPC 名字 / 地图 / 职能，如 铁匠、药店、六面神石、比奇…" autocomplete="off">
+    </div>
+  </div>
+  {% if stats %}
+  <p class="map-stats">
+    <span class="tag">全服活动 NPC {{ stats.total }}</span>
+    <span class="tag">覆盖地图 {{ stats.maps }}</span>
+    <span class="tag">MUD3 原版对齐率 {{ stats.parity_rate }}</span>
+    <span class="tag">六面神石 {{ stats.stones }}</span>
+    <span class="map-stats-time">数据源：Zircon System.db (5 处强一致)</span>
+  </p>
+  {% endif %}
+</div>
+
+<div class="cat-filter-bar" style="display:flex; flex-wrap:wrap; gap:8px; margin: 24px 0 32px;">
+  <button type="button" class="tag active" data-filter-cat="all" style="cursor:pointer; background:var(--panel-2); border:1px solid var(--gold); color:var(--gold-bright);">全部 ({{ stats.total }})</button>
+  {% for cat, cnt in stats.categories %}
+  <button type="button" class="tag" data-filter-cat="{{ cat }}" style="cursor:pointer; background:var(--panel); border:1px solid var(--line-soft); color:var(--text-soft);">{{ cat }} ({{ cnt }})</button>
+  {% endfor %}
+</div>
+
+{% for g in groups %}
+<section class="group" data-npc-group style="margin-bottom: 48px;">
+  <div class="group-heading" style="display:flex; align-items:baseline; justify-content:space-between; border-bottom:1px solid var(--line); padding-bottom:8px; margin-bottom:16px;">
+    <h2 class="group-title" style="font-family:var(--display); font-size:22px; color:var(--text); margin:0;">
+      📍 {{ g.map_name_zh }} <span style="font-family:var(--latin); font-size:14px; color:var(--gold-dim); margin-left:8px;">{{ g.map_code }} · {{ g.map_desc_en }}</span>
+    </h2>
+    <span class="group-count" style="font-family:var(--latin); color:var(--gold-bright); font-size:12px;">{{ g['items']|length }} 位 NPC</span>
+  </div>
+  
+  <div style="overflow-x:auto;">
+    <table class="map-table" style="width:100%; border-collapse:collapse; background:var(--panel-deep); border:1px solid var(--line-soft);">
+      <thead>
+        <tr style="border-bottom:1px solid var(--line); background:var(--panel);">
+          <th style="padding:10px 14px; text-align:left; font-size:12px; color:var(--gold-dim); width:70px;">编号</th>
+          <th style="padding:10px 14px; text-align:left; font-size:12px; color:var(--gold-dim); width:130px;">NPC 姓名</th>
+          <th style="padding:10px 14px; text-align:left; font-size:12px; color:var(--gold-dim); width:140px;">原英文/脚本名</th>
+          <th style="padding:10px 14px; text-align:center; font-size:12px; color:var(--gold-dim); width:110px;">坐标 (X, Y)</th>
+          <th style="padding:10px 14px; text-align:center; font-size:12px; color:var(--gold-dim); width:90px;">职能分类</th>
+          <th style="padding:10px 14px; text-align:left; font-size:12px; color:var(--gold-dim);">详细服务</th>
+          <th style="padding:10px 14px; text-align:center; font-size:12px; color:var(--gold-dim); width:90px;">外观 (图/面)</th>
+          <th style="padding:10px 14px; text-align:center; font-size:12px; color:var(--gold-dim); width:100px;">原版状态</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for it in g['items'] %}
+        <tr class="npc-row" data-name="{{ it.name_zh }} {{ it.name_en }} {{ g.map_name_zh }} {{ it.category }} {{ it.services|join(' ') }}" data-cat="{{ it.category }}" style="border-bottom:1px solid var(--line-faint); transition:background .15s;">
+          <td style="padding:10px 14px;"><code style="color:var(--gold-dim); font-size:11px;">#{{ it.npc_index }}</code></td>
+          <td style="padding:10px 14px;">
+            <strong style="color:var(--gold-bright); font-size:14px; font-family:var(--sans);">{{ it.name_zh }}</strong>
+          </td>
+          <td style="padding:10px 14px;">
+            <code style="color:var(--text-soft); font-size:11px;">{{ it.name_en }}</code>
+          </td>
+          <td style="padding:10px 14px; text-align:center;">
+            <span style="display:inline-block; padding:2px 6px; background:rgba(214,178,102,.08); border:1px solid var(--line-soft); border-radius:3px; font-family:var(--latin); font-size:12px; color:var(--text);">({{ it.x }}, {{ it.y }})</span>
+          </td>
+          <td style="padding:10px 14px; text-align:center;">
+            <span class="tag" style="padding:2px 8px; font-size:11px; background:rgba(214,178,102,.12); border:1px solid var(--line); color:var(--gold);">{{ it.category }}</span>
+          </td>
+          <td style="padding:10px 14px; font-size:12px; color:var(--text-soft);">
+            {% for s in it.services %}
+            <span style="display:inline-block; margin-right:6px; color:var(--text-soft);">• {{ s }}</span>
+            {% endfor %}
+          </td>
+          <td style="padding:10px 14px; text-align:center; font-family:var(--latin); font-size:11px; color:var(--text-faint);">
+            {{ it.image }} / {{ it.face_image }}
+          </td>
+          <td style="padding:10px 14px; text-align:center;">
+            {% if it.mud3_match.coord_status == 'exact_match' %}
+            <span style="display:inline-block; font-size:10px; padding:1px 6px; border-radius:2px; background:rgba(143,191,127,.15); color:var(--green); border:1px solid rgba(143,191,127,.3);">MUD3精确</span>
+            {% else %}
+            <span style="display:inline-block; font-size:10px; padding:1px 6px; border-radius:2px; background:rgba(214,178,102,.1); color:var(--gold-dim); border:1px solid var(--line-soft);">经典扩展</span>
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endfor %}
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const input = document.getElementById("page-filter");
+  const catButtons = document.querySelectorAll("[data-filter-cat]");
+  const rows = document.querySelectorAll(".npc-row");
+  const groups = document.querySelectorAll("[data-npc-group]");
+  let activeCat = "all";
+
+  function applyFilter() {
+    const q = (input ? input.value : "").trim().toLowerCase();
+    groups.forEach(g => {
+      let visibleInGroup = 0;
+      const groupRows = g.querySelectorAll(".npc-row");
+      groupRows.forEach(row => {
+        const rowText = (row.getAttribute("data-name") || "").toLowerCase();
+        const rowCat = row.getAttribute("data-cat");
+        const matchQuery = !q || rowText.includes(q);
+        const matchCat = (activeCat === "all") || (rowCat === activeCat);
+        if (matchQuery && matchCat) {
+          row.style.display = "";
+          visibleInGroup++;
+        } else {
+          row.style.display = "none";
+        }
+      });
+      g.style.display = visibleInGroup > 0 ? "" : "none";
+    });
+  }
+
+  if (input) {
+    input.addEventListener("input", applyFilter);
+  }
+
+  catButtons.forEach(btn => {
+    btn.addEventListener("click", function () {
+      catButtons.forEach(b => {
+        b.style.background = "var(--panel)";
+        b.style.color = "var(--text-soft)";
+        b.style.borderColor = "var(--line-soft)";
+      });
+      this.style.background = "var(--panel-2)";
+      this.style.color = "var(--gold-bright)";
+      this.style.borderColor = "var(--gold)";
+      activeCat = this.getAttribute("data-filter-cat");
+      applyFilter();
+    });
+  });
+});
+</script>
+{% endblock %}

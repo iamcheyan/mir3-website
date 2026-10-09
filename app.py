@@ -46,6 +46,7 @@ NAV = [
     ("技能资料", "skills/index.html", "skills"),
     ("任务攻略", "missions/index.html", "missions"),
     ("地图资料", "maps/index.html", "maps"),
+    ("NPC名录", "npcs/index.html", "npcs"),
     ("数据审计", "audit/index.html", "audit"),
 ]
 
@@ -110,9 +111,10 @@ def _match_badge(entity):
 def load_data():
     """Read site data and attach conservative Zircon cross-reference summaries."""
     out = {}
-    for name in ("monsters", "items", "skills", "missions", "maps", "meta"):
+    for name in ("monsters", "items", "skills", "missions", "maps", "meta", "npcs"):
         p = DATA_DIR / f"{name}.json"
-        out[name] = json.loads(p.read_text(encoding="utf-8"))
+        if p.is_file():
+            out[name] = json.loads(p.read_text(encoding="utf-8"))
     id_keys = {"monsters": "mob", "items": "item", "skills": "skill",
                "missions": "mission"}
     for name, prefix in id_keys.items():
@@ -330,6 +332,10 @@ def render_all(data, env):
     # ---------- 地图 ----------
     render("maps.html", "maps/index.html", maps_ctx(data))
 
+    # ---------- NPC名录 ----------
+    if "npcs" in data:
+        render("npcs.html", "npcs/index.html", npcs_ctx(data))
+
 
 def _group_by(items, key):
     """按字段分组, 保持出现顺序。"""
@@ -375,10 +381,48 @@ def maps_ctx(data):
             "exportedAt": doc.get("exportedAt", "")}
 
 
+def npcs_ctx(data):
+    """NPC名录上下文：全服 230 位活动 NPC 按地图分组，展示坐标、分类、服务与外形。"""
+    npcs = data.get("npcs", [])
+    from collections import Counter, defaultdict
+    cat_counts = Counter(n.get("category", "未分类") for n in npcs)
+    map_groups_dict = defaultdict(list)
+    for n in npcs:
+        map_groups_dict[n.get("map_name_zh", "未知地图")].append(n)
+
+    groups = []
+    for map_name, items in map_groups_dict.items():
+        groups.append({
+            "map_name_zh": map_name,
+            "map_code": items[0].get("map_code", ""),
+            "map_desc_en": items[0].get("map_desc_en", ""),
+            "items": sorted(items, key=lambda x: (x.get("category", ""), x.get("x", 0))),
+        })
+
+    exact_cnt = sum(1 for n in npcs if n.get("mud3_match", {}).get("coord_status") == "exact_match")
+    parity_rate = f"{(exact_cnt / len(npcs) * 100):.1f}%" if npcs else "0%"
+
+    stats = {
+        "total": len(npcs),
+        "maps": len(groups),
+        "stones": sum(1 for n in npcs if "六面神石" in n.get("name_zh", "")),
+        "parity_rate": parity_rate,
+        "categories": [(cat, cnt) for cat, cnt in cat_counts.most_common()],
+    }
+
+    return {
+        **page_ctx(data, "npcs", ".."),
+        "title": "NPC名录",
+        "desc": f"共收录全服 {len(npcs)} 位活动 NPC，涵盖各大城镇与地牢，支持按地图与职能检索",
+        "groups": groups,
+        "stats": stats,
+    }
+
+
 # 构建后需要同步回仓库根的产物（根目录页面才是 GitHub Pages 的部署对象，
 # dist/ 仅在 .gitignore 中）。地图页体量大，必须随数据重建，否则会与
 # data/maps.json 脱节。
-SYNC_TO_ROOT = ("maps/index.html", "static/css/style.css")
+SYNC_TO_ROOT = ("maps/index.html", "npcs/index.html", "static/css/style.css")
 
 
 def cmd_build():
@@ -565,6 +609,11 @@ def cmd_serve(port=5000):
     @app.get("/maps/index.html")
     def maps_list():
         return render_named("maps.html", "maps", maps_ctx(data))
+
+    @app.get("/npcs/")
+    @app.get("/npcs/index.html")
+    def npcs_list():
+        return render_named("npcs.html", "npcs", npcs_ctx(data))
 
     @app.get("/audit/")
     @app.get("/audit/index.html")
