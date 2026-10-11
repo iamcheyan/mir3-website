@@ -313,9 +313,13 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function renderLayers() {
-    if (!currentMap || !ctx || !canvas) return;
-    const w = canvas.width = modalImg.naturalWidth || modalImg.clientWidth;
-    const h = canvas.height = modalImg.naturalHeight || modalImg.clientHeight;
+    if (!currentMap || !ctx || !canvas || !modalImg) return;
+    const w = modalImg.clientWidth || modalImg.naturalWidth || 400;
+    const h = modalImg.clientHeight || modalImg.naturalHeight || 266;
+    if (canvas.width !== w || canvas.height !== h) {
+      canvas.width = w;
+      canvas.height = h;
+    }
     ctx.clearRect(0, 0, w, h);
 
     const mapW = currentMap.width || 800;
