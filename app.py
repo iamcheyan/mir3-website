@@ -227,6 +227,9 @@ def render_all(data, env):
     shutil.copytree(ROOT / "images", DIST_DIR / "images")
     shutil.copytree(STATIC_DIR, DIST_DIR / "static")
     shutil.copytree(DATA_DIR / "alignment", DIST_DIR / "data" / "alignment")
+    viewer_json = DATA_DIR / "map_viewer_data.json"
+    if viewer_json.is_file():
+        shutil.copy2(viewer_json, DIST_DIR / "data" / "map_viewer_data.json")
     cname = ROOT / "CNAME"
     if cname.is_file():
         shutil.copy2(cname, DIST_DIR / "CNAME")

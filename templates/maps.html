@@ -7,22 +7,25 @@
   <p class="kicker">ARCHIVE / {{ "%02d"|format(NAV|length) }}</p>
   <h1 class="page-title">{{ title }}</h1>
   <p class="page-desc">{{ desc }}</p>
-  <div class="list-search"><label for="page-filter">快速检索</label><div class="search-line"><span aria-hidden="true">⌕</span><input id="page-filter" type="search" class="filter-input" placeholder="搜索地图名 / 编号，如 祖玛 或 D1101…" autocomplete="off"></div></div>
+  <div class="list-search"><label for="page-filter">快速检索</label><div class="search-line"><span aria-hidden="true">⌕</span><input id="page-filter" type="search" class="filter-input" placeholder="搜索地图名 / 编号 / 怪物名 / NPC，如 祖玛、沃玛教主 或 D1101…" autocomplete="off"></div></div>
   {% if stats %}
   <p class="map-stats">
     <span class="tag">全服地图 {{ stats.maps }}</span>
+    <span class="tag">有刷怪地图 {{ stats.get('spawnMaps', 282) }}</span>
+    <span class="tag">刷怪总量 {{ stats.get('totalSpawns', 2156) }} 只</span>
+    <span class="tag">活动NPC {{ stats.get('totalNpcs', 230) }} 位</span>
     <span class="tag">连接点 {{ stats.links }}</span>
     <span class="tag">安全区 {{ stats.safeZones }}</span>
     <span class="tag">副本套系 {{ stats.suites }}</span>
-    {% if exportedAt %}<span class="map-stats-time">数据源：Zircon System.db{% if exportedAt %} · {{ exportedAt }}{% endif %}</span>{% endif %}
+    {% if exportedAt %}<span class="map-stats-time">数据源：Mud3 官方基准 + Zircon System.db</span>{% endif %}
   </p>
   {% endif %}
 </div>
 
 <p class="map-legend">
-  <strong>怎么读这一页：</strong>地图按「城镇 / 城镇附属 / 副本套系 / 特殊」分类。
-  每张地图下方列出它的全部通道——<em>出发点坐标 → 目标地图 落点坐标</em>，
-  即玩家实际要走的路径。同一副本套系内的层级通道集中排列，可直接看出第几层通第几层。
+  <strong>地图与刷怪指引：</strong>本版已打通<strong>官方 Mud3 全服 2156 条刷怪点位与 230 位活动 NPC 坐标</strong>。
+  点击任意地图卡片缩略图或<strong>【查看地图/刷怪热力图】</strong>，即可唤起<strong>在线地图透视图</strong>，自由开启/关闭<strong>刷怪热力分布、NPC驻守点、传送连接门与安全区</strong>。
+  点击怪物标签可直接跳转至<strong>怪物图鉴百科</strong>。
 </p>
 
 {% for g in groups %}
@@ -36,17 +39,56 @@
       <h3 class="map-suite-title"><span class="map-suite-code">{{ s.code }}</span>{{ s.name }}<span class="map-suite-en">{{ s.nameEn }}</span><span class="map-suite-count">{{ s['items']|length }} 张</span></h3>
       <p class="map-suite-desc">{{ s.desc }}</p>
       <table class="map-table">
-        <thead><tr><th scope="col">编号</th><th scope="col">缩略图</th><th scope="col">地图</th><th scope="col">通道（出发点 → 落点）</th></tr></thead>
+        <thead><tr><th scope="col">编号</th><th scope="col">缩略图</th><th scope="col">地图信息</th><th scope="col">栖息怪物（刷新量/周期）</th><th scope="col">通道（出发点 → 落点）</th></tr></thead>
         <tbody>
         {% for it in s['items'] %}
-          <tr id="map-{{ it.id }}" data-name="{{ it.id }} {{ it.name }}" data-map-id="{{ it.id }}">
+          <tr id="map-{{ it.id }}" data-name="{{ it.id }} {{ it.name }} {{ it.get('nameZh', '') }} {% for sp in it.get('spawns', []) %}{{ sp.name }} {{ sp.nameEn }} {% endfor %}{% for n in it.get('npcs', []) %}{{ n.name }} {% endfor %}" data-map-id="{{ it.id }}">
             <td class="map-td-id"><code>{{ it.id }}</code></td>
-            <td class="map-td-thumb">{% if it.thumb %}<img src="{{ it.thumb|img }}" alt="{{ it.name }} 缩略图" loading="lazy" width="96">{% else %}<span class="img-placeholder">?</span>{% endif %}</td>
+            <td class="map-td-thumb">
+              {% if it.thumb %}
+              <img src="{{ it.thumb|img }}" alt="{{ it.name }} 缩略图" loading="lazy" width="96" class="map-thumb-clickable" data-view-map="{{ it.id }}" style="cursor:pointer;" title="点击打开在线热力地图">
+              {% else %}
+              <span class="img-placeholder">?</span>
+              {% endif %}
+              <button type="button" class="map-btn-view" data-view-map="{{ it.id }}">查看地图 🔍</button>
+            </td>
             <td class="map-td-name">
               <span class="map-name-zh">{{ it.get('nameZh') or it.name }}</span>
               {% if it.get('nameZh') and it.name != it.nameZh %}<span class="map-name-en">{{ it.name }}</span>{% endif %}
+              {% if it.width and it.height %}<span class="map-badge map-badge-dim">{{ it.width }}×{{ it.height }}格</span>{% endif %}
               {% if it.safeZone %}<span class="map-badge map-badge-zone">安全区 {{ it.bindPt }}</span>{% endif %}
+              {% if it.totalMobCount %}<span class="map-badge map-badge-spawn">怪量 {{ it.totalMobCount }}</span>{% endif %}
+              {% if it.npcs %}<span class="map-badge map-badge-npc">NPC {{ it.npcs|length }}</span>{% endif %}
               {% if not it.hasMapFile %}<span class="map-badge map-badge-nofile">缺地图文件</span>{% endif %}
+              {% if it.npcs %}
+              <div class="map-npc-summary">
+                <span class="npc-tag">NPC:</span>
+                {% for n in it.npcs[:4] %}<span>{{ n.name }}</span>{% if not loop.last %}、{% endif %}{% endfor %}
+                {% if it.npcs|length > 4 %}<span>等{{ it.npcs|length }}位</span>{% endif %}
+              </div>
+              {% endif %}
+            </td>
+            <td class="map-td-spawns" style="width:28%;">
+              {% if it.spawns %}
+              <div class="map-mob-pills">
+                {% for sp in it.spawns[:6] %}
+                  {% if sp.webId %}
+                  <a href="{{ prefix }}/mobs/{{ sp.webId }}.html" class="map-mob-pill" title="查看怪物详情：{{ sp.name }} (刷新周期: {{ sp.delay }})">
+                    <span class="mob-name">{{ sp.name }}</span><span class="mob-cnt">×{{ sp.count }}</span>
+                  </a>
+                  {% else %}
+                  <span class="map-mob-pill" title="怪物：{{ sp.name }} (刷新周期: {{ sp.delay }})">
+                    <span class="mob-name">{{ sp.name }}</span><span class="mob-cnt">×{{ sp.count }}</span>
+                  </span>
+                  {% endif %}
+                {% endfor %}
+                {% if it.spawns|length > 6 %}
+                <button type="button" class="map-mob-more" data-view-map="{{ it.id }}">+{{ it.spawns|length - 6 }} 种怪物</button>
+                {% endif %}
+              </div>
+              {% else %}
+              <span class="map-none">无野怪刷新（安全区/室内副本）</span>
+              {% endif %}
             </td>
             <td class="map-td-links">
               {% if it.links %}
@@ -79,13 +121,45 @@
         <span class="map-suite-count">{{ ng['items']|length }} 张</span>
       </h3>
       <table class="map-table">
-        <thead><tr><th scope="col">编号</th><th scope="col">缩略图</th><th scope="col">地图</th><th scope="col">通道（出发点 → 落点）</th></tr></thead>
+        <thead><tr><th scope="col">编号</th><th scope="col">缩略图</th><th scope="col">地图信息</th><th scope="col">栖息怪物（刷新量/周期）</th><th scope="col">通道（出发点 → 落点）</th></tr></thead>
         <tbody>
         {% for it in ng['items'] %}
-          <tr id="map-{{ it.id }}" data-name="{{ it.id }} {{ it.name }}" data-map-id="{{ it.id }}">
+          <tr id="map-{{ it.id }}" data-name="{{ it.id }} {{ it.name }} {{ it.get('nameZh', '') }} {% for sp in it.get('spawns', []) %}{{ sp.name }} {{ sp.nameEn }} {% endfor %}{% for n in it.get('npcs', []) %}{{ n.name }} {% endfor %}" data-map-id="{{ it.id }}">
             <td class="map-td-id"><code>{{ it.id }}</code></td>
-            <td class="map-td-thumb">{% if it.thumb %}<img src="{{ it.thumb|img }}" alt="{{ it.name }} 缩略图" loading="lazy" width="96">{% else %}<span class="img-placeholder">?</span>{% endif %}</td>
-            <td class="map-td-name"><span class="map-name-zh">{{ it.get('nameZh') or it.name }}</span>{% if it.get('nameZh') and it.name != it.nameZh %}<span class="map-name-en">{{ it.name }}</span>{% endif %}{% if it.safeZone %}<span class="map-badge map-badge-zone">安全区 {{ it.bindPt }}</span>{% endif %}</td>
+            <td class="map-td-thumb">
+              {% if it.thumb %}<img src="{{ it.thumb|img }}" alt="{{ it.name }} 缩略图" loading="lazy" width="96" class="map-thumb-clickable" data-view-map="{{ it.id }}" style="cursor:pointer;" title="点击打开在线热力地图">{% else %}<span class="img-placeholder">?</span>{% endif %}
+              <button type="button" class="map-btn-view" data-view-map="{{ it.id }}">查看地图 🔍</button>
+            </td>
+            <td class="map-td-name">
+              <span class="map-name-zh">{{ it.get('nameZh') or it.name }}</span>
+              {% if it.get('nameZh') and it.name != it.nameZh %}<span class="map-name-en">{{ it.name }}</span>{% endif %}
+              {% if it.width and it.height %}<span class="map-badge map-badge-dim">{{ it.width }}×{{ it.height }}格</span>{% endif %}
+              {% if it.safeZone %}<span class="map-badge map-badge-zone">安全区 {{ it.bindPt }}</span>{% endif %}
+              {% if it.totalMobCount %}<span class="map-badge map-badge-spawn">怪量 {{ it.totalMobCount }}</span>{% endif %}
+              {% if it.npcs %}<span class="map-badge map-badge-npc">NPC {{ it.npcs|length }}</span>{% endif %}
+            </td>
+            <td class="map-td-spawns" style="width:28%;">
+              {% if it.spawns %}
+              <div class="map-mob-pills">
+                {% for sp in it.spawns[:6] %}
+                  {% if sp.webId %}
+                  <a href="{{ prefix }}/mobs/{{ sp.webId }}.html" class="map-mob-pill" title="查看怪物详情：{{ sp.name }} (刷新周期: {{ sp.delay }})">
+                    <span class="mob-name">{{ sp.name }}</span><span class="mob-cnt">×{{ sp.count }}</span>
+                  </a>
+                  {% else %}
+                  <span class="map-mob-pill" title="怪物：{{ sp.name }} (刷新周期: {{ sp.delay }})">
+                    <span class="mob-name">{{ sp.name }}</span><span class="mob-cnt">×{{ sp.count }}</span>
+                  </span>
+                  {% endif %}
+                {% endfor %}
+                {% if it.spawns|length > 6 %}
+                <button type="button" class="map-mob-more" data-view-map="{{ it.id }}">+{{ it.spawns|length - 6 }} 种怪物</button>
+                {% endif %}
+              </div>
+              {% else %}
+              <span class="map-none">无野怪刷新（安全区/室内副本）</span>
+              {% endif %}
+            </td>
             <td class="map-td-links">
               {% if it.links %}
               <ul class="map-link-list">
@@ -104,17 +178,52 @@
   </div>
   {% else %}
   <table class="map-table map-table-flat">
-    <thead><tr><th scope="col">编号</th><th scope="col">缩略图</th><th scope="col">地图</th><th scope="col">通道（出发点 → 落点）</th></tr></thead>
+    <thead><tr><th scope="col">编号</th><th scope="col">缩略图</th><th scope="col">地图信息</th><th scope="col">栖息怪物（刷新量/周期）</th><th scope="col">通道（出发点 → 落点）</th></tr></thead>
     <tbody>
     {% for it in g['items'] %}
-      <tr data-name="{{ it.id }} {{ it.name }} {{ it.get('nameZh', '') }}" data-map-id="{{ it.id }}" id="map-{{ it.id }}">
+      <tr data-name="{{ it.id }} {{ it.name }} {{ it.get('nameZh', '') }} {% for sp in it.get('spawns', []) %}{{ sp.name }} {{ sp.nameEn }} {% endfor %}{% for n in it.get('npcs', []) %}{{ n.name }} {% endfor %}" data-map-id="{{ it.id }}" id="map-{{ it.id }}">
         <td class="map-td-id"><code>{{ it.id }}</code></td>
-        <td class="map-td-thumb">{% if it.thumb %}<img src="{{ it.thumb|img }}" alt="{{ it.name }} 缩略图" loading="lazy" width="96">{% else %}<span class="img-placeholder">?</span>{% endif %}</td>
+        <td class="map-td-thumb">
+          {% if it.thumb %}<img src="{{ it.thumb|img }}" alt="{{ it.name }} 缩略图" loading="lazy" width="96" class="map-thumb-clickable" data-view-map="{{ it.id }}" style="cursor:pointer;" title="点击打开在线热力地图">{% else %}<span class="img-placeholder">?</span>{% endif %}
+          <button type="button" class="map-btn-view" data-view-map="{{ it.id }}">查看地图 🔍</button>
+        </td>
         <td class="map-td-name">
           <span class="map-name-zh">{{ it.get('nameZh') or it.name }}</span>
           {% if it.get('nameZh') and it.name != it.nameZh %}<span class="map-name-en">{{ it.name }}</span>{% endif %}
+          {% if it.width and it.height %}<span class="map-badge map-badge-dim">{{ it.width }}×{{ it.height }}格</span>{% endif %}
           {% if it.safeZone %}<span class="map-badge map-badge-zone">安全区 {{ it.bindPt }} · 半径 {{ it.safeRadius }} 点</span>{% endif %}
+          {% if it.totalMobCount %}<span class="map-badge map-badge-spawn">怪量 {{ it.totalMobCount }}</span>{% endif %}
+          {% if it.npcs %}<span class="map-badge map-badge-npc">NPC {{ it.npcs|length }}</span>{% endif %}
           {% if not it.hasMapFile %}<span class="map-badge map-badge-nofile">缺地图文件</span>{% endif %}
+          {% if it.npcs %}
+          <div class="map-npc-summary">
+            <span class="npc-tag">NPC:</span>
+            {% for n in it.npcs[:4] %}<span>{{ n.name }}</span>{% if not loop.last %}、{% endif %}{% endfor %}
+            {% if it.npcs|length > 4 %}<span>等{{ it.npcs|length }}位</span>{% endif %}
+          </div>
+          {% endif %}
+        </td>
+        <td class="map-td-spawns" style="width:28%;">
+          {% if it.spawns %}
+          <div class="map-mob-pills">
+            {% for sp in it.spawns[:6] %}
+              {% if sp.webId %}
+              <a href="{{ prefix }}/mobs/{{ sp.webId }}.html" class="map-mob-pill" title="查看怪物详情：{{ sp.name }} (刷新周期: {{ sp.delay }})">
+                <span class="mob-name">{{ sp.name }}</span><span class="mob-cnt">×{{ sp.count }}</span>
+              </a>
+              {% else %}
+              <span class="map-mob-pill" title="怪物：{{ sp.name }} (刷新周期: {{ sp.delay }})">
+                <span class="mob-name">{{ sp.name }}</span><span class="mob-cnt">×{{ sp.count }}</span>
+              </span>
+              {% endif %}
+            {% endfor %}
+            {% if it.spawns|length > 6 %}
+            <button type="button" class="map-mob-more" data-view-map="{{ it.id }}">+{{ it.spawns|length - 6 }} 种怪物</button>
+            {% endif %}
+          </div>
+          {% else %}
+          <span class="map-none">无野怪刷新（安全区/室内副本）</span>
+          {% endif %}
         </td>
         <td class="map-td-links">
           {% if it.links %}
@@ -133,4 +242,264 @@
 </section>
 {% endif %}
 {% endfor %}
+
+<!-- 地图全景 / 热力图与标注模态框组件 -->
+<div id="map-modal" class="map-modal-backdrop" style="display:none;">
+  <div class="map-modal-dialog">
+    <div class="map-modal-header">
+      <h3 id="modal-map-title" class="map-modal-title">地图全景透视图</h3>
+      <button type="button" id="modal-close-btn" class="map-modal-close" aria-label="关闭">×</button>
+    </div>
+    <div class="map-modal-toolbar">
+      <div class="map-modal-toggles">
+        <label class="map-modal-toggle"><input type="checkbox" id="layer-heatmap" checked> 刷怪热力区域</label>
+        <label class="map-modal-toggle"><input type="checkbox" id="layer-npcs" checked> NPC驻守位置</label>
+        <label class="map-modal-toggle"><input type="checkbox" id="layer-links" checked> 传送门/连接点</label>
+        <label class="map-modal-toggle"><input type="checkbox" id="layer-safe" checked> 安全区</label>
+      </div>
+      <div style="color:var(--text-soft); font-size:11px;" id="modal-map-info">
+        尺寸: - × - 格
+      </div>
+    </div>
+    <div class="map-modal-body">
+      <div id="canvas-container" class="map-canvas-container">
+        <img id="modal-map-img" src="" alt="地图大图">
+        <canvas id="modal-map-canvas"></canvas>
+      </div>
+      <div class="map-modal-legend">
+        <span class="map-legend-item"><span class="map-legend-dot mob"></span> 刷怪热力点 (红晕带数量)</span>
+        <span class="map-legend-item"><span class="map-legend-dot npc"></span> NPC 驻留标点 (蓝点带名称)</span>
+        <span class="map-legend-item"><span class="map-legend-dot link"></span> 传送门出口 (橙色锚点)</span>
+        <span class="map-legend-item"><span class="map-legend-dot safe"></span> 安全区范围 (绿圈)</span>
+      </div>
+      <div class="map-modal-meta">
+        <div class="map-meta-box">
+          <h4>驻留 NPC 列表 (<span id="modal-npc-count">0</span>)</h4>
+          <ul id="modal-npc-list"><li>无 NPC 驻留</li></ul>
+        </div>
+        <div class="map-meta-box">
+          <h4>刷新怪物清单 (<span id="modal-mob-count">0</span>)</h4>
+          <ul id="modal-mob-list"><li>无野怪刷新</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  let viewerData = null;
+  const modal = document.getElementById("map-modal");
+  const modalImg = document.getElementById("modal-map-img");
+  const canvas = document.getElementById("modal-map-canvas");
+  const ctx = canvas ? canvas.getContext("2d") : null;
+  const closeBtn = document.getElementById("modal-close-btn");
+  const chkHeatmap = document.getElementById("layer-heatmap");
+  const chkNpcs = document.getElementById("layer-npcs");
+  const chkLinks = document.getElementById("layer-links");
+  const chkSafe = document.getElementById("layer-safe");
+
+  let currentMap = null;
+
+  async function loadViewerData() {
+    if (viewerData) return viewerData;
+    try {
+      const res = await fetch("{{ prefix }}/data/map_viewer_data.json");
+      viewerData = await res.json();
+    } catch (e) {
+      console.error("无法加载地图透视数据", e);
+    }
+    return viewerData;
+  }
+
+  function renderLayers() {
+    if (!currentMap || !ctx || !canvas) return;
+    const w = canvas.width = modalImg.naturalWidth || modalImg.clientWidth;
+    const h = canvas.height = modalImg.naturalHeight || modalImg.clientHeight;
+    ctx.clearRect(0, 0, w, h);
+
+    const mapW = currentMap.width || 800;
+    const mapH = currentMap.height || 800;
+
+    const scaleX = w / mapW;
+    const scaleY = h / mapH;
+
+    // 1. 安全区
+    if (chkSafe && chkSafe.checked && currentMap.safeZone && currentMap.bindPt) {
+      const pts = currentMap.bindPt.split(",");
+      if (pts.length === 2) {
+        const bx = parseFloat(pts[0]) * scaleX;
+        const by = parseFloat(pts[1]) * scaleY;
+        const radius = Math.max(15, (currentMap.safeRadius ? Math.sqrt(currentMap.safeRadius) * 0.8 : 25) * scaleX);
+
+        ctx.beginPath();
+        ctx.arc(bx, by, radius, 0, Math.PI * 2);
+        ctx.fillStyle = "rgba(76, 175, 80, 0.2)";
+        ctx.fill();
+        ctx.strokeStyle = "rgba(76, 175, 80, 0.8)";
+        ctx.lineWidth = 2;
+        ctx.stroke();
+
+        ctx.fillStyle = "#81c784";
+        ctx.font = "bold 11px sans-serif";
+        ctx.fillText("安全区", bx - 16, by - 4);
+      }
+    }
+
+    // 2. 刷怪热力图层
+    if (chkHeatmap && chkHeatmap.checked && currentMap.spawnRegions && currentMap.spawnRegions.length > 0) {
+      currentMap.spawnRegions.forEach(reg => {
+        const cx = reg.x * scaleX;
+        const cy = reg.y * scaleY;
+        const r = Math.max(16, (reg.radius || 15) * scaleX);
+
+        const radGrad = ctx.createRadialGradient(cx, cy, 2, cx, cy, r);
+        radGrad.addColorStop(0, "rgba(244, 67, 54, 0.75)");
+        radGrad.addColorStop(0.5, "rgba(255, 152, 0, 0.45)");
+        radGrad.addColorStop(1, "rgba(255, 235, 59, 0)");
+
+        ctx.beginPath();
+        ctx.arc(cx, cy, r, 0, Math.PI * 2);
+        ctx.fillStyle = radGrad;
+        ctx.fill();
+
+        ctx.fillStyle = "#ffeb3b";
+        ctx.font = "bold 10px sans-serif";
+        ctx.fillText(reg.total + "只", cx - 8, cy + 3);
+      });
+    }
+
+    // 3. 传送连接门
+    if (chkLinks && chkLinks.checked && currentMap.links && currentMap.links.length > 0) {
+      currentMap.links.forEach(l => {
+        if (!l.fromPts) return;
+        l.fromPts.forEach(ptStr => {
+          const p = ptStr.split(",");
+          if (p.length === 2) {
+            const lx = parseFloat(p[0]) * scaleX;
+            const ly = parseFloat(p[1]) * scaleY;
+
+            ctx.beginPath();
+            ctx.arc(lx, ly, 5, 0, Math.PI * 2);
+            ctx.fillStyle = "#ffa726";
+            ctx.fill();
+            ctx.strokeStyle = "#fff";
+            ctx.lineWidth = 1.5;
+            ctx.stroke();
+
+            ctx.fillStyle = "#ffe082";
+            ctx.font = "10px sans-serif";
+            ctx.fillText("→" + (l.toNameZh || l.to), lx + 7, ly + 3);
+          }
+        });
+      });
+    }
+
+    // 4. NPC 驻留点
+    if (chkNpcs && chkNpcs.checked && currentMap.npcs && currentMap.npcs.length > 0) {
+      currentMap.npcs.forEach(npc => {
+        const nx = npc.x * scaleX;
+        const ny = npc.y * scaleY;
+
+        ctx.beginPath();
+        ctx.arc(nx, ny, 4, 0, Math.PI * 2);
+        ctx.fillStyle = "#29b6f6";
+        ctx.fill();
+        ctx.strokeStyle = "#ffffff";
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
+
+        ctx.fillStyle = "#e1f5fe";
+        ctx.font = "bold 11px sans-serif";
+        ctx.fillText(npc.name, nx + 6, ny + 3);
+      });
+    }
+  }
+
+  async function openMapModal(mapId) {
+    const data = await loadViewerData();
+    if (!data || !data[mapId]) {
+      alert("未找到该地图的详细透视数据");
+      return;
+    }
+    currentMap = data[mapId];
+
+    document.getElementById("modal-map-title").innerHTML =
+      `<code>${currentMap.id}</code> ${currentMap.nameZh} <span style="font-size:12px; color:var(--text-soft); font-weight:normal;">(${currentMap.nameEn})</span>`;
+
+    document.getElementById("modal-map-info").innerText =
+      `地图尺寸：${currentMap.width || '未知'} × ${currentMap.height || '未知'} 格 · 总怪量：${currentMap.spawns ? currentMap.spawns.reduce((a, b) => a + b.count, 0) : 0} 只`;
+
+    // NPCs 列表
+    const npcsList = document.getElementById("modal-npc-list");
+    document.getElementById("modal-npc-count").innerText = currentMap.npcs ? currentMap.npcs.length : 0;
+    if (currentMap.npcs && currentMap.npcs.length > 0) {
+      npcsList.innerHTML = currentMap.npcs.map(n =>
+        `<li><strong style="color:#64b5f6;">${n.name}</strong> (${n.x}, ${n.y}) · <span style="color:var(--text-soft);">${n.category || '功能'}</span> ${n.services && n.services.length ? `[${n.services.join('/')}]` : ''}</li>`
+      ).join("");
+    } else {
+      npcsList.innerHTML = "<li>该地图无活动 NPC 驻留</li>";
+    }
+
+    // 怪物列表
+    const mobList = document.getElementById("modal-mob-list");
+    const totalMobCnt = currentMap.spawns ? currentMap.spawns.length : 0;
+    document.getElementById("modal-mob-count").innerText = totalMobCnt;
+    if (currentMap.spawns && currentMap.spawns.length > 0) {
+      mobList.innerHTML = currentMap.spawns.map(s =>
+        `<li><strong style="color:var(--gold-bright);">${s.name}</strong> (${s.nameEn})：<span style="color:#fff; font-weight:600;">${s.count}只</span> (刷新周期: ${s.delay}) ${s.webId ? `<a href="{{ prefix }}/mobs/${s.webId}.html" style="color:var(--gold); margin-left:8px; font-size:11px;" target="_blank">图鉴百科 ↗</a>` : ''}</li>`
+      ).join("");
+    } else {
+      mobList.innerHTML = "<li>该地图无野怪刷新（安全区/室内副本）</li>";
+    }
+
+    modalImg.onload = function() {
+      renderLayers();
+    };
+    modalImg.src = currentMap.thumb ? (currentMap.thumb.startsWith("../") ? "{{ prefix }}/" + currentMap.thumb.replace("../", "") : currentMap.thumb) : "";
+    modal.style.display = "flex";
+  }
+
+  // 绑定打开弹窗按钮
+  document.querySelectorAll("[data-view-map]").forEach(el => {
+    el.addEventListener("click", function(e) {
+      e.stopPropagation();
+      const mapId = this.getAttribute("data-view-map");
+      openMapModal(mapId);
+    });
+  });
+
+  // 关闭弹窗
+  if (closeBtn) {
+    closeBtn.addEventListener("click", () => { modal.style.display = "none"; });
+  }
+  if (modal) {
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) modal.style.display = "none";
+    });
+  }
+
+  // 图层切换重绘
+  [chkHeatmap, chkNpcs, chkLinks, chkSafe].forEach(chk => {
+    if (chk) chk.addEventListener("change", renderLayers);
+  });
+  window.addEventListener("resize", renderLayers);
+
+  // 快捷检索支持怪物名
+  const filterInput = document.getElementById("page-filter");
+  if (filterInput) {
+    filterInput.addEventListener("input", function() {
+      const q = this.value.trim().toLowerCase();
+      document.querySelectorAll(".map-suite, .map-table tbody tr").forEach(el => {
+        const text = (el.getAttribute("data-name") || "").toLowerCase();
+        if (!q || text.includes(q)) {
+          el.style.display = "";
+        } else {
+          el.style.display = "none";
+        }
+      });
+    });
+  }
+});
+</script>
 {% endblock %}
