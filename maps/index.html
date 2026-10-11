@@ -28442,9 +28442,14 @@
         <label class="map-modal-toggle"><input type="checkbox" id="layer-npcs" checked> NPC驻守位置</label>
         <label class="map-modal-toggle"><input type="checkbox" id="layer-links" checked> 传送门/连接点</label>
         <label class="map-modal-toggle"><input type="checkbox" id="layer-safe" checked> 安全区</label>
+        <label class="map-modal-toggle" style="color:var(--gold-bright);"><input type="checkbox" id="layer-hd" checked> 高清大图(1200px)</label>
       </div>
-      <div style="color:var(--text-soft); font-size:11px;" id="modal-map-info">
-        尺寸: - × - 格
+      <div style="display:flex; align-items:center; gap:12px;">
+        <span style="color:var(--text-soft); font-size:11px;" id="modal-map-info">尺寸: - × - 格</span>
+        <a id="btn-jump-editor" href="#" target="_blank" class="map-jump-editor-btn" title="在专业地图编辑器中打开，支持NPC坐标拖拽摆放与实时修改">
+          <span>🛠️ 进入专业地图/NPC编辑器 (8899)</span>
+          <span class="editor-status-dot up" id="editor-status-dot" title="编辑器运行中"></span>
+        </a>
       </div>
     </div>
     <div class="map-modal-body">
@@ -28484,6 +28489,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const chkNpcs = document.getElementById("layer-npcs");
   const chkLinks = document.getElementById("layer-links");
   const chkSafe = document.getElementById("layer-safe");
+  const chkHd = document.getElementById("layer-hd");
+  const btnJumpEditor = document.getElementById("btn-jump-editor");
+  const editorDot = document.getElementById("editor-status-dot");
 
   let currentMap = null;
 
@@ -28643,10 +28651,28 @@ document.addEventListener("DOMContentLoaded", function () {
       mobList.innerHTML = "<li>该地图无野怪刷新（安全区/室内副本）</li>";
     }
 
+    function updateMapImgSrc() {
+      if (!currentMap) return;
+      const isHd = chkHd && chkHd.checked;
+      if (isHd) {
+        modalImg.src = "../images/maphd/" + currentMap.id + ".jpg";
+      } else {
+        modalImg.src = currentMap.thumb ? (currentMap.thumb.startsWith("../") ? "../" + currentMap.thumb.replace("../", "") : currentMap.thumb) : "";
+      }
+    }
+
     modalImg.onload = function() {
       renderLayers();
     };
-    modalImg.src = currentMap.thumb ? (currentMap.thumb.startsWith("../") ? "../" + currentMap.thumb.replace("../", "") : currentMap.thumb) : "";
+
+    updateMapImgSrc();
+
+    // 设置跳转地图编辑器链接 (默认连接 8899 端口服务)
+    if (btnJumpEditor) {
+      const editorHost = window.location.hostname || "127.0.0.1";
+      btnJumpEditor.href = `http://${editorHost}:8899/#map=${currentMap.id}.map`;
+    }
+
     modal.style.display = "flex";
   }
 
@@ -28673,6 +28699,16 @@ document.addEventListener("DOMContentLoaded", function () {
   [chkHeatmap, chkNpcs, chkLinks, chkSafe].forEach(chk => {
     if (chk) chk.addEventListener("change", renderLayers);
   });
+  if (chkHd) {
+    chkHd.addEventListener("change", () => {
+      if (!currentMap) return;
+      if (chkHd.checked) {
+        modalImg.src = "../images/maphd/" + currentMap.id + ".jpg";
+      } else {
+        modalImg.src = currentMap.thumb ? (currentMap.thumb.startsWith("../") ? "../" + currentMap.thumb.replace("../", "") : currentMap.thumb) : "";
+      }
+    });
+  }
   window.addEventListener("resize", renderLayers);
 
   // 快捷检索支持怪物名
