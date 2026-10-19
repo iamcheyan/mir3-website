@@ -196,9 +196,9 @@
       }
     ],
     "game_data": {
-      "index": 277,
-      "name": "Red Snake",
-      "image": "Mon_6 shape 4"
+      "index": 80,
+      "name": "Evil Snake",
+      "image": "Mon_9 shape 0"
     },
     "id": "monster:website:mob-107",
     "identity": {
@@ -206,16 +206,16 @@
       "website_name": "邪恶毒蛇",
       "website_source_id": "mob-107",
       "zircon_candidate_indexes": [
-        277
+        80
       ],
       "zircon_candidate_names": [
         "Evil Snake"
       ],
-      "zircon_internal_name": "Red Snake"
+      "zircon_internal_name": "Evil Snake"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:277"
+        "monster:zircon:80"
       ]
     },
     "resources": {
@@ -231,7 +231,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Red_Snake.png",
+        "path": "/images/mob/game/Evil_Snake.png",
         "verification": "verified-by-image"
       }
     },
@@ -996,9 +996,9 @@
       }
     ],
     "game_data": {
-      "index": 152,
-      "name": "Light Armed Soldier",
-      "image": "Mon_1 shape 6"
+      "index": 111,
+      "name": "Banya Left Guard",
+      "image": "Mon_14 shape 1"
     },
     "id": "monster:website:mob-133",
     "identity": {
@@ -1006,13 +1006,16 @@
       "website_name": "潘夜左护卫",
       "website_source_id": "mob-133",
       "zircon_candidate_indexes": [
-        152
+        111
       ],
-      "zircon_internal_name": "Light Armed Soldier"
+      "zircon_internal_name": "Banya Left Guard",
+      "zircon_candidate_names": [
+        "Banya Left Guard"
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:152"
+        "monster:zircon:111"
       ]
     },
     "resources": {
@@ -1028,7 +1031,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Light_Armed_Soldier.png",
+        "path": "/images/mob/game/Banya_Left_Guard.png",
         "verification": "verified-by-image"
       }
     },
@@ -1075,9 +1078,9 @@
       }
     ],
     "game_data": {
-      "index": 152,
-      "name": "Light Armed Soldier",
-      "image": "Mon_1 shape 6"
+      "index": 109,
+      "name": "Banya Right Guard",
+      "image": "Mon_14 shape 0"
     },
     "id": "monster:website:mob-134",
     "identity": {
@@ -1085,13 +1088,16 @@
       "website_name": "潘夜右护卫",
       "website_source_id": "mob-134",
       "zircon_candidate_indexes": [
-        152
+        109
       ],
-      "zircon_internal_name": "Light Armed Soldier"
+      "zircon_internal_name": "Banya Right Guard",
+      "zircon_candidate_names": [
+        "Banya Right Guard"
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:152"
+        "monster:zircon:109"
       ]
     },
     "resources": {
@@ -1107,7 +1113,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Light_Armed_Soldier.png",
+        "path": "/images/mob/game/Banya_Right_Guard.png",
         "verification": "verified-by-image"
       }
     },
@@ -1866,8 +1872,8 @@
     ],
     "game_data": {
       "index": 126,
-      "name": "Red Snake",
-      "image": "Mon_6 shape 4"
+      "name": "Claw Serpent",
+      "image": "Mon_8 shape 9"
     },
     "id": "monster:website:mob-18",
     "identity": {
@@ -1878,10 +1884,9 @@
         126
       ],
       "zircon_candidate_names": [
-        "Tiger Snake",
-        "Evil Snake"
+        "Claw Serpent"
       ],
-      "zircon_internal_name": "Red Snake"
+      "zircon_internal_name": "Claw Serpent"
     },
     "relations": {
       "candidate_entity_ids": [
@@ -1901,7 +1906,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Red_Snake.png",
+        "path": "/images/mob/game/Claw_Serpent.png",
         "verification": "verified-by-image"
       }
     },
@@ -2515,9 +2520,9 @@
       }
     ],
     "game_data": {
-      "index": 20,
-      "name": "Spitting Spider",
-      "image": "Mon_3 shape 5"
+      "index": 47,
+      "name": "Poisonous Mutant Flea",
+      "image": "Mon_15 shape 9"
     },
     "id": "monster:website:mob-34",
     "identity": {
@@ -2525,13 +2530,16 @@
       "website_name": "蜘蛛娃",
       "website_source_id": "mob-34",
       "zircon_candidate_indexes": [
-        20
+        47
       ],
-      "zircon_internal_name": "Spitting Spider"
+      "zircon_internal_name": "Poisonous Mutant Flea",
+      "zircon_candidate_names": [
+        "Poisonous Mutant Flea"
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:20"
+        "monster:zircon:47"
       ]
     },
     "resources": {
@@ -2547,7 +2555,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Spitting_Spider.png",
+        "path": "/images/mob/game/Poisonous_Mutant_Flea.png",
         "verification": "verified-by-image"
       }
     },
@@ -2594,9 +2602,9 @@
       }
     ],
     "game_data": {
-      "index": 67,
-      "name": "Arachnid Gazer",
-      "image": "Mon_11 shape 6"
+      "index": 48,
+      "name": "Blaster Mutant Flea",
+      "image": "Mon_15 shape 7"
     },
     "id": "monster:website:mob-35",
     "identity": {
@@ -2604,13 +2612,16 @@
       "website_name": "胞眼虫",
       "website_source_id": "mob-35",
       "zircon_candidate_indexes": [
-        67
+        48
       ],
-      "zircon_internal_name": "Arachnid Gazer"
+      "zircon_internal_name": "Blaster Mutant Flea",
+      "zircon_candidate_names": [
+        "Blaster Mutant Flea"
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:67"
+        "monster:zircon:48"
       ]
     },
     "resources": {
@@ -2626,7 +2637,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Arachnid_Gazer.png",
+        "path": "/images/mob/game/Blaster_Mutant_Flea.png",
         "verification": "verified-by-image"
       }
     },
@@ -2673,9 +2684,9 @@
       }
     ],
     "game_data": {
-      "index": 67,
-      "name": "Arachnid Gazer",
-      "image": "Mon_11 shape 6"
+      "index": 48,
+      "name": "Blue Blaster Mutant Flea",
+      "image": "Mon_15 shape 8"
     },
     "id": "monster:website:mob-36",
     "identity": {
@@ -2683,13 +2694,16 @@
       "website_name": "胞眼虫",
       "website_source_id": "mob-36",
       "zircon_candidate_indexes": [
-        67
+        48
       ],
-      "zircon_internal_name": "Arachnid Gazer"
+      "zircon_internal_name": "Blue Blaster Mutant Flea",
+      "zircon_candidate_names": [
+        "Blue Blaster Mutant Flea"
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:67"
+        "monster:zircon:48"
       ]
     },
     "resources": {
@@ -2705,7 +2719,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Arachnid_Gazer.png",
+        "path": "/images/mob/game/Blue_Blaster_Mutant_Flea.png",
         "verification": "verified-by-image"
       }
     },
@@ -2752,9 +2766,9 @@
       }
     ],
     "game_data": {
-      "index": 88,
-      "name": "Spiked Beetle",
-      "image": "Mon_7 shape 4"
+      "index": 46,
+      "name": "Mutant Flea",
+      "image": "Mon_15 shape 5"
     },
     "id": "monster:website:mob-37",
     "identity": {
@@ -2762,13 +2776,16 @@
       "website_name": "多脚虫",
       "website_source_id": "mob-37",
       "zircon_candidate_indexes": [
-        88
+        46
       ],
-      "zircon_internal_name": "Spiked Beetle"
+      "zircon_internal_name": "Mutant Flea",
+      "zircon_candidate_names": [
+        "Mutant Flea"
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:88"
+        "monster:zircon:46"
       ]
     },
     "resources": {
@@ -2784,7 +2801,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Spiked_Beetle.png",
+        "path": "/images/mob/game/Mutant_Flea.png",
         "verification": "verified-by-image"
       }
     },
@@ -2831,9 +2848,9 @@
       }
     ],
     "game_data": {
-      "index": 88,
-      "name": "Spiked Beetle",
-      "image": "Mon_7 shape 4"
+      "index": 46,
+      "name": "Purple Flea",
+      "image": "Mon_15 shape 6"
     },
     "id": "monster:website:mob-38",
     "identity": {
@@ -2841,13 +2858,16 @@
       "website_name": "多脚虫",
       "website_source_id": "mob-38",
       "zircon_candidate_indexes": [
-        88
+        46
       ],
-      "zircon_internal_name": "Spiked Beetle"
+      "zircon_internal_name": "Purple Flea",
+      "zircon_candidate_names": [
+        "Purple Flea"
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:88"
+        "monster:zircon:46"
       ]
     },
     "resources": {
@@ -2863,7 +2883,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Spiked_Beetle.png",
+        "path": "/images/mob/game/Purple_Flea.png",
         "verification": "verified-by-image"
       }
     },
@@ -2910,9 +2930,9 @@
       }
     ],
     "game_data": {
-      "index": 43,
-      "name": "Beetle",
-      "image": "Mon_7 shape 3"
+      "index": 49,
+      "name": "Terror Spike",
+      "image": "Mon_15 shape 9"
     },
     "id": "monster:website:mob-39",
     "identity": {
@@ -2920,13 +2940,16 @@
       "website_name": "红甲虫",
       "website_source_id": "mob-39",
       "zircon_candidate_indexes": [
-        43
+        49
       ],
-      "zircon_internal_name": "Beetle"
+      "zircon_internal_name": "Terror Spike",
+      "zircon_candidate_names": [
+        "Terror Spike"
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:43"
+        "monster:zircon:49"
       ]
     },
     "resources": {
@@ -2942,7 +2965,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Beetle.png",
+        "path": "/images/mob/game/Terror_Spike.png",
         "verification": "verified-by-image"
       }
     },
@@ -2989,9 +3012,9 @@
       }
     ],
     "game_data": {
-      "index": 56,
-      "name": "Lord Ji'Nae",
-      "image": "Mon_7 shape 7"
+      "index": 37,
+      "name": "Ghoul Champion",
+      "image": "Mon_6 shape 3"
     },
     "id": "monster:website:mob-45",
     "identity": {
@@ -2999,13 +3022,16 @@
       "website_name": "尸王",
       "website_source_id": "mob-45",
       "zircon_candidate_indexes": [
-        56
+        37
       ],
-      "zircon_internal_name": "Lord Ji'Nae"
+      "zircon_internal_name": "Ghoul Champion",
+      "zircon_candidate_names": [
+        "Ghoul Champion"
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:56"
+        "monster:zircon:37"
       ]
     },
     "resources": {
@@ -3021,7 +3047,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Lord_JiNae.png",
+        "path": "/images/mob/game/Ghoul_Champion.png",
         "verification": "verified-by-image"
       }
     },
@@ -3068,9 +3094,9 @@
       }
     ],
     "game_data": {
-      "index": 221,
-      "name": "Oyoung Beast",
-      "image": "Mon_23 shape 3"
+      "index": 57,
+      "name": "Rotting Ghoul",
+      "image": "Mon_14 shape 8"
     },
     "id": "monster:website:mob-46",
     "identity": {
@@ -3078,13 +3104,16 @@
       "website_name": "浪子人鬼",
       "website_source_id": "mob-46",
       "zircon_candidate_indexes": [
-        221
+        57
       ],
-      "zircon_internal_name": "Oyoung Beast"
+      "zircon_internal_name": "Rotting Ghoul",
+      "zircon_candidate_names": [
+        "Rotting Ghoul"
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:221"
+        "monster:zircon:57"
       ]
     },
     "resources": {
@@ -3100,7 +3129,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Oyoung_Beast.png",
+        "path": "/images/mob/game/Rotting_Ghoul.png",
         "verification": "verified-by-image"
       }
     },
@@ -3147,9 +3176,9 @@
       }
     ],
     "game_data": {
-      "index": 57,
-      "name": "Rotting Ghoul",
-      "image": "Mon_14 shape 8"
+      "index": 58,
+      "name": "Decaying Ghoul",
+      "image": "Mon_14 shape 2"
     },
     "id": "monster:website:mob-47",
     "identity": {
@@ -3157,13 +3186,16 @@
       "website_name": "腐蚀人鬼",
       "website_source_id": "mob-47",
       "zircon_candidate_indexes": [
-        57
+        58
       ],
-      "zircon_internal_name": "Rotting Ghoul"
+      "zircon_internal_name": "Decaying Ghoul",
+      "zircon_candidate_names": [
+        "Decaying Ghoul"
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:57"
+        "monster:zircon:58"
       ]
     },
     "resources": {
@@ -3179,7 +3211,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Rotting_Ghoul.png",
+        "path": "/images/mob/game/Decaying_Ghoul.png",
         "verification": "verified-by-image"
       }
     },
@@ -3226,9 +3258,9 @@
       }
     ],
     "game_data": {
-      "index": 93,
-      "name": "Stone Golem",
-      "image": "Mon_1 shape 4"
+      "index": 92,
+      "name": "Sand Shark",
+      "image": "Mon_10 shape 4"
     },
     "id": "monster:website:mob-48",
     "identity": {
@@ -3236,13 +3268,16 @@
       "website_name": "沙鬼",
       "website_source_id": "mob-48",
       "zircon_candidate_indexes": [
-        93
+        92
       ],
-      "zircon_internal_name": "Stone Golem"
+      "zircon_internal_name": "Sand Shark",
+      "zircon_candidate_names": [
+        "Sand Shark"
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:93"
+        "monster:zircon:92"
       ]
     },
     "resources": {
@@ -3258,7 +3293,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Stone_Golem.png",
+        "path": "/images/mob/game/Sand_Shark.png",
         "verification": "verified-by-image"
       }
     },
@@ -3305,7 +3340,7 @@
       }
     ],
     "game_data": {
-      "index": 291,
+      "index": 93,
       "name": "Stone Golem",
       "image": "Mon_1 shape 4"
     },
@@ -3315,13 +3350,16 @@
       "website_name": "沙漠石人",
       "website_source_id": "mob-49",
       "zircon_candidate_indexes": [
-        291
+        93
       ],
-      "zircon_internal_name": "Stone Golem"
+      "zircon_internal_name": "Stone Golem",
+      "zircon_candidate_names": [
+        "Stone Golem"
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:291"
+        "monster:zircon:93"
       ]
     },
     "resources": {
@@ -3396,7 +3434,10 @@
       "zircon_candidate_indexes": [
         95
       ],
-      "zircon_internal_name": "Cursed Cactus"
+      "zircon_internal_name": "Cursed Cactus",
+      "zircon_candidate_names": [
+        "Cursed Cactus"
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
@@ -3475,7 +3516,10 @@
       "zircon_candidate_indexes": [
         102
       ],
-      "zircon_internal_name": "Giant Lizard"
+      "zircon_internal_name": "Giant Lizard",
+      "zircon_candidate_names": [
+        "Giant Lizard"
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
@@ -3542,9 +3586,9 @@
       }
     ],
     "game_data": {
-      "index": 35,
-      "name": "Devouring Ghost",
-      "image": "Mon_6 shape 1"
+      "index": 154,
+      "name": "Phantom",
+      "image": "Mon_2 shape 8"
     },
     "id": "monster:website:mob-52",
     "identity": {
@@ -3552,17 +3596,16 @@
       "website_name": "夜行鬼",
       "website_source_id": "mob-52",
       "zircon_candidate_indexes": [
-        35
+        154
       ],
       "zircon_candidate_names": [
-        "Devouring Ghost",
-        "Rotting Ghoul"
+        "Phantom"
       ],
-      "zircon_internal_name": "Devouring Ghost"
+      "zircon_internal_name": "Phantom"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:35"
+        "monster:zircon:154"
       ]
     },
     "resources": {
@@ -3578,7 +3621,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Devouring_Ghost.png",
+        "path": "/images/mob/game/Phantom.png",
         "verification": "verified-by-image"
       }
     },
@@ -3625,9 +3668,9 @@
       }
     ],
     "game_data": {
-      "index": 393,
-      "name": "Fierce Fish Demon",
-      "image": "Mon_9 shape 4"
+      "index": 156,
+      "name": "Aqua Lizard",
+      "image": "Mon_10 shape 2"
     },
     "id": "monster:website:mob-53",
     "identity": {
@@ -3635,13 +3678,16 @@
       "website_name": "沙漠鱼魔",
       "website_source_id": "mob-53",
       "zircon_candidate_indexes": [
-        393
+        156
       ],
-      "zircon_internal_name": "Fierce Fish Demon"
+      "zircon_internal_name": "Aqua Lizard",
+      "zircon_candidate_names": [
+        "Aqua Lizard"
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:393"
+        "monster:zircon:156"
       ]
     },
     "resources": {
@@ -3657,7 +3703,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Fierce_Fish_Demon.png",
+        "path": "/images/mob/game/Aqua_Lizard.png",
         "verification": "verified-by-image"
       }
     },
@@ -3704,9 +3750,9 @@
       }
     ],
     "game_data": {
-      "index": 292,
-      "name": "Fierce Wind Demon",
-      "image": "Mon_9 shape 7"
+      "index": 94,
+      "name": "Windfury Sorceress",
+      "image": "Mon_10 shape 7"
     },
     "id": "monster:website:mob-54",
     "identity": {
@@ -3714,13 +3760,16 @@
       "website_name": "沙漠风魔",
       "website_source_id": "mob-54",
       "zircon_candidate_indexes": [
-        292
+        94
       ],
-      "zircon_internal_name": "Fierce Wind Demon"
+      "zircon_internal_name": "Windfury Sorceress",
+      "zircon_candidate_names": [
+        "Windfury Sorceress"
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:292"
+        "monster:zircon:94"
       ]
     },
     "resources": {
@@ -3736,7 +3785,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Fierce_Wind_Demon.png",
+        "path": "/images/mob/game/Windfury_Sorceress.png",
         "verification": "verified-by-image"
       }
     },
@@ -3795,7 +3844,10 @@
       "zircon_candidate_indexes": [
         71
       ],
-      "zircon_internal_name": "Venomous Arachnid"
+      "zircon_internal_name": "Venomous Arachnid",
+      "zircon_candidate_names": [
+        "Venomous Arachnid"
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
@@ -3949,7 +4001,10 @@
       "zircon_candidate_indexes": [
         66
       ],
-      "zircon_internal_name": "Spider Bat"
+      "zircon_internal_name": "Spider Bat",
+      "zircon_candidate_names": [
+        "Spider Bat"
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
@@ -4016,9 +4071,9 @@
       }
     ],
     "game_data": {
-      "index": 303,
-      "name": "Venomous Arachnid",
-      "image": "Mon_12 shape 1"
+      "index": 70,
+      "name": "Red Moon Protector",
+      "image": "Mon_11 shape 8"
     },
     "id": "monster:website:mob-61",
     "identity": {
@@ -4026,13 +4081,16 @@
       "website_name": "天狼蜘蛛",
       "website_source_id": "mob-61",
       "zircon_candidate_indexes": [
-        303
+        70
       ],
-      "zircon_internal_name": "Venomous Arachnid"
+      "zircon_internal_name": "Red Moon Protector",
+      "zircon_candidate_names": [
+        "Red Moon Protector"
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:303"
+        "monster:zircon:70"
       ]
     },
     "resources": {
@@ -4048,7 +4106,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Venomous_Arachnid.png",
+        "path": "/images/mob/game/Red_Moon_Protector.png",
         "verification": "verified-by-image"
       }
     },
@@ -4108,8 +4166,7 @@
         67
       ],
       "zircon_candidate_names": [
-        "Arachnid Gazer",
-        "Arachnid Broodmother"
+        "Arachnid Gazer"
       ],
       "zircon_internal_name": "Arachnid Gazer"
     },
@@ -4178,9 +4235,9 @@
       }
     ],
     "game_data": {
-      "index": 20,
-      "name": "Spitting Spider",
-      "image": "Mon_3 shape 5"
+      "index": 68,
+      "name": "Larva",
+      "image": "Mon_11 shape 5"
     },
     "id": "monster:website:mob-63",
     "identity": {
@@ -4188,13 +4245,16 @@
       "website_name": "爆裂蜘蛛",
       "website_source_id": "mob-63",
       "zircon_candidate_indexes": [
-        20
+        68
       ],
-      "zircon_internal_name": "Spitting Spider"
+      "zircon_internal_name": "Larva",
+      "zircon_candidate_names": [
+        "Larva"
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:20"
+        "monster:zircon:68"
       ]
     },
     "resources": {
@@ -4210,7 +4270,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Spitting_Spider.png",
+        "path": "/images/mob/game/Larva.png",
         "verification": "verified-by-image"
       }
     },
@@ -4269,7 +4329,10 @@
       "zircon_candidate_indexes": [
         72
       ],
-      "zircon_internal_name": "Dark Arachnid"
+      "zircon_internal_name": "Dark Arachnid",
+      "zircon_candidate_names": [
+        "Dark Arachnid"
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
@@ -4336,9 +4399,9 @@
       }
     ],
     "game_data": {
-      "index": 302,
-      "name": "Venomous Arachnid",
-      "image": "Mon_12 shape 1"
+      "index": 69,
+      "name": "Red Moon Guardian",
+      "image": "Mon_11 shape 7"
     },
     "id": "monster:website:mob-65",
     "identity": {
@@ -4346,13 +4409,16 @@
       "website_name": "花色蜘蛛",
       "website_source_id": "mob-65",
       "zircon_candidate_indexes": [
-        302
+        69
       ],
-      "zircon_internal_name": "Venomous Arachnid"
+      "zircon_internal_name": "Red Moon Guardian",
+      "zircon_candidate_names": [
+        "Red Moon Guardian"
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:302"
+        "monster:zircon:69"
       ]
     },
     "resources": {
@@ -4368,7 +4434,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Venomous_Arachnid.png",
+        "path": "/images/mob/game/Red_Moon_Guardian.png",
         "verification": "verified-by-image"
       }
     },
@@ -4427,7 +4493,10 @@
       "zircon_candidate_indexes": [
         73
       ],
-      "zircon_internal_name": "Arachnid Broodmother"
+      "zircon_internal_name": "Arachnid Broodmother",
+      "zircon_candidate_names": [
+        "Arachnid Broodmother"
+      ]
     },
     "relations": {
       "candidate_entity_ids": [

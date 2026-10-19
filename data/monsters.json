@@ -801,13 +801,12 @@
   ],
   "totalSpawnCount": 150,
   "game": {
-   "sprite": "/images/mob/game/Red_Snake.png",
-   "eng_name": "Red Snake",
-   "library": "Mon_6",
-   "shape": 4,
+   "sprite": "/images/mob/game/Claw_Serpent.png",
+   "eng_name": "Claw Serpent",
+   "library": "Mon_8",
+   "shape": 9,
    "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.646
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
@@ -1301,16 +1300,28 @@
    "经验值": "400",
    "所在地图": "盟重"
   },
-  "spawns": [],
-  "totalSpawnCount": 0,
+  "spawns": [
+   {
+    "mapId": "74",
+    "mapNameZh": "盟重县",
+    "count": 2,
+    "delay": "120分"
+   },
+   {
+    "mapId": "75",
+    "mapNameZh": "石阁庙",
+    "count": 1,
+    "delay": "120分"
+   }
+  ],
+  "totalSpawnCount": 3,
   "game": {
    "sprite": "/images/mob/game/Spiked_Beetle.png",
    "eng_name": "Spiked Beetle",
    "library": "Mon_7",
    "shape": 4,
    "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.44
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
@@ -1856,21 +1867,111 @@
   "image": "../images/mob/pic/eun_01.gif",
   "description": "生活在银杏村周围废矿里的奇怪的虫子。它的样子像是把青蛙和蜘蛛糅合在了一起了。不要小看它长的小，它会在瞬间靠近你，用锋利的牙齿，给你致命伤。而且他的分泌液含有很强的毒性，一不小心就会中毒。",
   "attrs": {},
-  "spawns": [],
-  "totalSpawnCount": 0,
+  "spawns": [
+   {
+    "mapId": "d1301",
+    "mapNameZh": "黑宫1层",
+    "count": 50,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1302",
+    "mapNameZh": "东部银杏废矿2层",
+    "count": 50,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1303",
+    "mapNameZh": "黑宫3层",
+    "count": 55,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1304",
+    "mapNameZh": "黑宫4层",
+    "count": 55,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1305",
+    "mapNameZh": "黑宫",
+    "count": 55,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1311",
+    "mapNameZh": "北部银杏废矿1层",
+    "count": 50,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1312",
+    "mapNameZh": "北部银杏废矿2层",
+    "count": 50,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1313",
+    "mapNameZh": "北部银杏废矿3层",
+    "count": 55,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1314",
+    "mapNameZh": "北部银杏废矿4层",
+    "count": 55,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1315",
+    "mapNameZh": "北部银杏废矿5层",
+    "count": 55,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1321",
+    "mapNameZh": "西部银杏废矿1层",
+    "count": 50,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1322",
+    "mapNameZh": "西部银杏废矿2层",
+    "count": 50,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1323",
+    "mapNameZh": "西部银杏废矿3层",
+    "count": 55,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1324",
+    "mapNameZh": "西部银杏废矿4层",
+    "count": 55,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1325",
+    "mapNameZh": "西部银杏废矿5层",
+    "count": 55,
+    "delay": "10分"
+   }
+  ],
+  "totalSpawnCount": 795,
   "game": {
-   "sprite": "/images/mob/game/Spitting_Spider.png",
-   "eng_name": "Spitting Spider",
-   "library": "Mon_3",
-   "shape": 5,
+   "sprite": "/images/mob/game/Poisonous_Mutant_Flea.png",
+   "eng_name": "Poisonous Mutant Flea",
+   "library": "Mon_15",
+   "shape": 9,
    "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.418
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": 20
+  "zircon_index": 47
  },
  {
   "id": "mob-35",
@@ -1879,21 +1980,111 @@
   "image": "../images/mob/pic/eun_02.gif",
   "description": "生活在银杏村周围废矿里的奇怪的虫子，只有一只大眼睛和两只脚。它用它的大眼睛攻击你，虽然不能远距离进攻，一旦触到敌人身上，它就会爆炸。不要被它可爱小巧的外形骗了哦。",
   "attrs": {},
-  "spawns": [],
-  "totalSpawnCount": 0,
+  "spawns": [
+   {
+    "mapId": "d1301",
+    "mapNameZh": "黑宫1层",
+    "count": 50,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1302",
+    "mapNameZh": "东部银杏废矿2层",
+    "count": 50,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1303",
+    "mapNameZh": "黑宫3层",
+    "count": 55,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1304",
+    "mapNameZh": "黑宫4层",
+    "count": 55,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1305",
+    "mapNameZh": "黑宫",
+    "count": 55,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1311",
+    "mapNameZh": "北部银杏废矿1层",
+    "count": 50,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1312",
+    "mapNameZh": "北部银杏废矿2层",
+    "count": 50,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1313",
+    "mapNameZh": "北部银杏废矿3层",
+    "count": 55,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1314",
+    "mapNameZh": "北部银杏废矿4层",
+    "count": 55,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1315",
+    "mapNameZh": "北部银杏废矿5层",
+    "count": 55,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1321",
+    "mapNameZh": "西部银杏废矿1层",
+    "count": 50,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1322",
+    "mapNameZh": "西部银杏废矿2层",
+    "count": 50,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1323",
+    "mapNameZh": "西部银杏废矿3层",
+    "count": 55,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1324",
+    "mapNameZh": "西部银杏废矿4层",
+    "count": 55,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1325",
+    "mapNameZh": "西部银杏废矿5层",
+    "count": 55,
+    "delay": "10分"
+   }
+  ],
+  "totalSpawnCount": 795,
   "game": {
-   "sprite": "/images/mob/game/Arachnid_Gazer.png",
-   "eng_name": "Arachnid Gazer",
-   "library": "Mon_11",
-   "shape": 6,
+   "sprite": "/images/mob/game/Blaster_Mutant_Flea.png",
+   "eng_name": "Blaster Mutant Flea",
+   "library": "Mon_15",
+   "shape": 7,
    "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.382
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": 67
+  "zircon_index": 48
  },
  {
   "id": "mob-36",
@@ -1902,21 +2093,111 @@
   "image": "../images/mob/pic/eun_03.gif",
   "description": "生活在银杏村周围废矿里的奇怪的虫子，只有一只大眼睛和两只脚。它用它的大眼睛攻击你，虽然不能远距离进攻，一旦触到敌人身上，它就会爆炸。不要被它可爱小巧的外形骗了哦。",
   "attrs": {},
-  "spawns": [],
-  "totalSpawnCount": 0,
+  "spawns": [
+   {
+    "mapId": "d1301",
+    "mapNameZh": "黑宫1层",
+    "count": 50,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1302",
+    "mapNameZh": "东部银杏废矿2层",
+    "count": 50,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1303",
+    "mapNameZh": "黑宫3层",
+    "count": 55,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1304",
+    "mapNameZh": "黑宫4层",
+    "count": 55,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1305",
+    "mapNameZh": "黑宫",
+    "count": 55,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1311",
+    "mapNameZh": "北部银杏废矿1层",
+    "count": 50,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1312",
+    "mapNameZh": "北部银杏废矿2层",
+    "count": 50,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1313",
+    "mapNameZh": "北部银杏废矿3层",
+    "count": 55,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1314",
+    "mapNameZh": "北部银杏废矿4层",
+    "count": 55,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1315",
+    "mapNameZh": "北部银杏废矿5层",
+    "count": 55,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1321",
+    "mapNameZh": "西部银杏废矿1层",
+    "count": 50,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1322",
+    "mapNameZh": "西部银杏废矿2层",
+    "count": 50,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1323",
+    "mapNameZh": "西部银杏废矿3层",
+    "count": 55,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1324",
+    "mapNameZh": "西部银杏废矿4层",
+    "count": 55,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1325",
+    "mapNameZh": "西部银杏废矿5层",
+    "count": 55,
+    "delay": "10分"
+   }
+  ],
+  "totalSpawnCount": 795,
   "game": {
-   "sprite": "/images/mob/game/Arachnid_Gazer.png",
-   "eng_name": "Arachnid Gazer",
-   "library": "Mon_11",
-   "shape": 6,
+   "sprite": "/images/mob/game/Blue_Blaster_Mutant_Flea.png",
+   "eng_name": "Blue Blaster Mutant Flea",
+   "library": "Mon_15",
+   "shape": 8,
    "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.392
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": 67
+  "zircon_index": 48
  },
  {
   "id": "mob-37",
@@ -1925,21 +2206,111 @@
   "image": "../images/mob/pic/eun_04.gif",
   "description": "生活在银杏村周围的废矿里的奇怪的虫子，头上有无数只眼睛。它乍一看相只蜘蛛，走路一跳一跳的，发现食物就用大嘴和锋利的牙齿咬碎。如果敌人在远处，他就发射头上的眼睛来攻击。",
   "attrs": {},
-  "spawns": [],
-  "totalSpawnCount": 0,
+  "spawns": [
+   {
+    "mapId": "d1301",
+    "mapNameZh": "黑宫1层",
+    "count": 50,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1302",
+    "mapNameZh": "东部银杏废矿2层",
+    "count": 50,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1303",
+    "mapNameZh": "黑宫3层",
+    "count": 55,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1304",
+    "mapNameZh": "黑宫4层",
+    "count": 55,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1305",
+    "mapNameZh": "黑宫",
+    "count": 55,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1311",
+    "mapNameZh": "北部银杏废矿1层",
+    "count": 50,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1312",
+    "mapNameZh": "北部银杏废矿2层",
+    "count": 50,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1313",
+    "mapNameZh": "北部银杏废矿3层",
+    "count": 55,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1314",
+    "mapNameZh": "北部银杏废矿4层",
+    "count": 55,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1315",
+    "mapNameZh": "北部银杏废矿5层",
+    "count": 55,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1321",
+    "mapNameZh": "西部银杏废矿1层",
+    "count": 50,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1322",
+    "mapNameZh": "西部银杏废矿2层",
+    "count": 50,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1323",
+    "mapNameZh": "西部银杏废矿3层",
+    "count": 55,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1324",
+    "mapNameZh": "西部银杏废矿4层",
+    "count": 55,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1325",
+    "mapNameZh": "西部银杏废矿5层",
+    "count": 55,
+    "delay": "10分"
+   }
+  ],
+  "totalSpawnCount": 795,
   "game": {
-   "sprite": "/images/mob/game/Spiked_Beetle.png",
-   "eng_name": "Spiked Beetle",
-   "library": "Mon_7",
-   "shape": 4,
+   "sprite": "/images/mob/game/Mutant_Flea.png",
+   "eng_name": "Mutant Flea",
+   "library": "Mon_15",
+   "shape": 5,
    "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.474
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": 88
+  "zircon_index": 46
  },
  {
   "id": "mob-38",
@@ -1950,110 +2321,109 @@
   "attrs": {},
   "spawns": [
    {
-    "mapId": "d6014",
-    "mapNameZh": "万年独孤关",
-    "count": 27,
-    "delay": "10/60分"
-   },
-   {
-    "mapId": "d6012",
-    "mapNameZh": "万年原谷",
-    "count": 26,
-    "delay": "11/60分"
-   },
-   {
-    "mapId": "d1304",
-    "mapNameZh": "黑宫4层",
-    "count": 25,
-    "delay": "10/60分"
-   },
-   {
-    "mapId": "d6015",
-    "mapNameZh": "生死关",
-    "count": 22,
-    "delay": "10/60分"
-   },
-   {
-    "mapId": "d6011",
-    "mapNameZh": "万年谷",
-    "count": 21,
-    "delay": "10/60分"
-   },
-   {
     "mapId": "d1301",
     "mapNameZh": "黑宫1层",
-    "count": 20,
+    "count": 50,
     "delay": "10分"
    },
    {
     "mapId": "d1302",
     "mapNameZh": "东部银杏废矿2层",
-    "count": 20,
+    "count": 50,
     "delay": "10分"
    },
    {
     "mapId": "d1303",
     "mapNameZh": "黑宫3层",
-    "count": 20,
+    "count": 55,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1304",
+    "mapNameZh": "黑宫4层",
+    "count": 55,
     "delay": "10分"
    },
    {
     "mapId": "d1305",
     "mapNameZh": "黑宫",
-    "count": 20,
+    "count": 55,
     "delay": "10分"
    },
    {
-    "mapId": "d60131",
-    "mapNameZh": "万年谷中部",
-    "count": 15,
-    "delay": "11分"
-   },
-   {
-    "mapId": "d60132",
-    "mapNameZh": "万年谷南部",
-    "count": 15,
+    "mapId": "d1311",
+    "mapNameZh": "北部银杏废矿1层",
+    "count": 50,
     "delay": "10分"
    },
    {
-    "mapId": "d60133",
-    "mapNameZh": "万年谷西部",
-    "count": 15,
+    "mapId": "d1312",
+    "mapNameZh": "北部银杏废矿2层",
+    "count": 50,
     "delay": "10分"
    },
    {
-    "mapId": "d60134",
-    "mapNameZh": "万年谷北部",
-    "count": 15,
+    "mapId": "d1313",
+    "mapNameZh": "北部银杏废矿3层",
+    "count": 55,
     "delay": "10分"
    },
    {
-    "mapId": "d60135",
-    "mapNameZh": "万年谷东部",
-    "count": 15,
-    "delay": "11分"
+    "mapId": "d1314",
+    "mapNameZh": "北部银杏废矿4层",
+    "count": 55,
+    "delay": "10分"
    },
    {
-    "mapId": "b132_001",
-    "mapNameZh": "GM活动室",
-    "count": 2,
-    "delay": "30分"
+    "mapId": "d1315",
+    "mapNameZh": "北部银杏废矿5层",
+    "count": 55,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1321",
+    "mapNameZh": "西部银杏废矿1层",
+    "count": 50,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1322",
+    "mapNameZh": "西部银杏废矿2层",
+    "count": 50,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1323",
+    "mapNameZh": "西部银杏废矿3层",
+    "count": 55,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1324",
+    "mapNameZh": "西部银杏废矿4层",
+    "count": 55,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d1325",
+    "mapNameZh": "西部银杏废矿5层",
+    "count": 55,
+    "delay": "10分"
    }
   ],
-  "totalSpawnCount": 278,
+  "totalSpawnCount": 795,
   "game": {
-   "sprite": "/images/mob/game/Spiked_Beetle.png",
-   "eng_name": "Spiked Beetle",
-   "library": "Mon_7",
-   "shape": 4,
+   "sprite": "/images/mob/game/Purple_Flea.png",
+   "eng_name": "Purple Flea",
+   "library": "Mon_15",
+   "shape": 6,
    "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.444
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": 88
+  "zircon_index": 46
  },
  {
   "id": "mob-39",
@@ -2062,21 +2432,39 @@
   "image": "../images/mob/pic/eun_01.gif",
   "description": "小boss 暴钱,神水,祝福油",
   "attrs": {},
-  "spawns": [],
-  "totalSpawnCount": 0,
+  "spawns": [
+   {
+    "mapId": "d1305",
+    "mapNameZh": "黑宫",
+    "count": 1,
+    "delay": "60分"
+   },
+   {
+    "mapId": "d1315",
+    "mapNameZh": "北部银杏废矿5层",
+    "count": 1,
+    "delay": "60分"
+   },
+   {
+    "mapId": "d1325",
+    "mapNameZh": "西部银杏废矿5层",
+    "count": 1,
+    "delay": "60分"
+   }
+  ],
+  "totalSpawnCount": 3,
   "game": {
-   "sprite": "/images/mob/game/Beetle.png",
-   "eng_name": "Beetle",
-   "library": "Mon_7",
-   "shape": 3,
+   "sprite": "/images/mob/game/Terror_Spike.png",
+   "eng_name": "Terror Spike",
+   "library": "Mon_15",
+   "shape": 9,
    "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.464
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": 43
+  "zircon_index": 49
  },
  {
   "id": "mob-40",
@@ -2323,17 +2711,17 @@
   ],
   "totalSpawnCount": 4050,
   "game": {
-   "sprite": "/images/mob/game/Blood_Thristy_Zombie.png",
-   "eng_name": "Blood Thristy Zombie",
-   "library": "Mon_5",
-   "shape": 2,
-   "match_method": "exact",
+   "sprite": "/images/mob/game/Voracious_Ghost.png",
+   "eng_name": "Voracious Ghost",
+   "library": "Mon_6",
+   "shape": 0,
+   "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": 60
+  "zircon_index": 34
  },
  {
   "id": "mob-41",
@@ -2342,18 +2730,253 @@
   "image": "../images/mob/pic/17.gif",
   "description": "由腐烂程度较深的尸体复活而成，缺胳膊少腿四肢不全，只能爬行移动。不容易被发现，他们抓住人腿或用手抓破攻击。他具有复活力，可以重生很多次。只能像对付僵尸一样，将他打碎。但以为他是爬行的，速度慢，所以容易逃走。",
   "attrs": {},
-  "spawns": [],
-  "totalSpawnCount": 0,
+  "spawns": [
+   {
+    "mapId": "d203",
+    "mapNameZh": "废矿山3层",
+    "count": 500,
+    "delay": "1分"
+   },
+   {
+    "mapId": "d202",
+    "mapNameZh": "废矿山2层",
+    "count": 355,
+    "delay": "1分"
+   },
+   {
+    "mapId": "d1401",
+    "mapNameZh": "神舰入口",
+    "count": 127,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d1402",
+    "mapNameZh": "神舰4层",
+    "count": 127,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d1404",
+    "mapNameZh": "神舰2层",
+    "count": 127,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d1405",
+    "mapNameZh": "神舰1层",
+    "count": 127,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d1403",
+    "mapNameZh": "神舰3层",
+    "count": 112,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d421",
+    "mapNameZh": "矿山1层",
+    "count": 106,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d422",
+    "mapNameZh": "矿山2层",
+    "count": 106,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d451",
+    "mapNameZh": "南部矿山1层",
+    "count": 106,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d452",
+    "mapNameZh": "南部矿山2层",
+    "count": 106,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "b115_001",
+    "mapNameZh": "矿石空间",
+    "count": 100,
+    "delay": "30分"
+   },
+   {
+    "mapId": "d415",
+    "mapNameZh": "天桥1",
+    "count": 95,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d401",
+    "mapNameZh": "蚂蚁洞北",
+    "count": 93,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d402",
+    "mapNameZh": "蚂蚁洞南",
+    "count": 93,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d403",
+    "mapNameZh": "蚂蚁洞西",
+    "count": 93,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d404",
+    "mapNameZh": "蚂蚁洞东",
+    "count": 93,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d405",
+    "mapNameZh": "矿石储藏所",
+    "count": 93,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d406",
+    "mapNameZh": "废矿南部洞穴",
+    "count": 93,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d411",
+    "mapNameZh": "地下1层第一间房",
+    "count": 90,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d412",
+    "mapNameZh": "天桥2",
+    "count": 90,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d413",
+    "mapNameZh": "地下1层第二间房",
+    "count": 90,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d416",
+    "mapNameZh": "天桥3",
+    "count": 90,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d434",
+    "mapNameZh": "北部地下2层采矿所",
+    "count": 84,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d435",
+    "mapNameZh": "北部矿石储藏所",
+    "count": 84,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d431",
+    "mapNameZh": "北部矿山入口",
+    "count": 83,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d432",
+    "mapNameZh": "北部矿山东面洞穴",
+    "count": 83,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d433",
+    "mapNameZh": "北部地下1层采矿所",
+    "count": 83,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d436",
+    "mapNameZh": "北部废矿南面洞穴",
+    "count": 83,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d441",
+    "mapNameZh": "北部地下1层第一间房",
+    "count": 80,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d442",
+    "mapNameZh": "北部天桥2",
+    "count": 80,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d443",
+    "mapNameZh": "北部地下1层第二间房",
+    "count": 80,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d446",
+    "mapNameZh": "北部天桥3",
+    "count": 80,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d445",
+    "mapNameZh": "北部天桥1",
+    "count": 70,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d29031",
+    "mapNameZh": "经验.之地",
+    "count": 60,
+    "delay": "1分"
+   },
+   {
+    "mapId": "e402",
+    "mapNameZh": "连接通路",
+    "count": 25,
+    "delay": "20分"
+   },
+   {
+    "mapId": "e403",
+    "mapNameZh": "连接通路",
+    "count": 25,
+    "delay": "20分"
+   },
+   {
+    "mapId": "e404",
+    "mapNameZh": "连接通路",
+    "count": 25,
+    "delay": "20分"
+   },
+   {
+    "mapId": "d90212",
+    "mapNameZh": "机械室",
+    "count": 13,
+    "delay": "1分"
+   }
+  ],
+  "totalSpawnCount": 4050,
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": 57,
+  "zircon_index": 36,
   "game": {
-   "sprite": "/images/mob/game/Rotting_Ghoul.png",
-   "eng_name": "Rotting Ghoul",
-   "library": "Mon_14",
-   "shape": 8,
-   "match_method": "exact",
+   "sprite": "/images/mob/game/Corpse_Raising_Ghost.png",
+   "eng_name": "Corpse Raising Ghost",
+   "library": "Mon_6",
+   "shape": 2,
+   "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -2364,20 +2987,255 @@
   "image": "../images/mob/pic/18.gif",
   "description": "除了全身有看不懂的文字，和一般僵尸没什么两样。他也是主要以露着骨头的手猛击的方式攻击，如果不完全烧毁或弄碎，他仍会复活。",
   "attrs": {},
-  "spawns": [],
-  "totalSpawnCount": 0,
+  "spawns": [
+   {
+    "mapId": "d203",
+    "mapNameZh": "废矿山3层",
+    "count": 500,
+    "delay": "1分"
+   },
+   {
+    "mapId": "d202",
+    "mapNameZh": "废矿山2层",
+    "count": 355,
+    "delay": "1分"
+   },
+   {
+    "mapId": "d1401",
+    "mapNameZh": "神舰入口",
+    "count": 127,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d1402",
+    "mapNameZh": "神舰4层",
+    "count": 127,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d1404",
+    "mapNameZh": "神舰2层",
+    "count": 127,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d1405",
+    "mapNameZh": "神舰1层",
+    "count": 127,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d1403",
+    "mapNameZh": "神舰3层",
+    "count": 112,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d421",
+    "mapNameZh": "矿山1层",
+    "count": 106,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d422",
+    "mapNameZh": "矿山2层",
+    "count": 106,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d451",
+    "mapNameZh": "南部矿山1层",
+    "count": 106,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d452",
+    "mapNameZh": "南部矿山2层",
+    "count": 106,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "b115_001",
+    "mapNameZh": "矿石空间",
+    "count": 100,
+    "delay": "30分"
+   },
+   {
+    "mapId": "d415",
+    "mapNameZh": "天桥1",
+    "count": 95,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d401",
+    "mapNameZh": "蚂蚁洞北",
+    "count": 93,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d402",
+    "mapNameZh": "蚂蚁洞南",
+    "count": 93,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d403",
+    "mapNameZh": "蚂蚁洞西",
+    "count": 93,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d404",
+    "mapNameZh": "蚂蚁洞东",
+    "count": 93,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d405",
+    "mapNameZh": "矿石储藏所",
+    "count": 93,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d406",
+    "mapNameZh": "废矿南部洞穴",
+    "count": 93,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d411",
+    "mapNameZh": "地下1层第一间房",
+    "count": 90,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d412",
+    "mapNameZh": "天桥2",
+    "count": 90,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d413",
+    "mapNameZh": "地下1层第二间房",
+    "count": 90,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d416",
+    "mapNameZh": "天桥3",
+    "count": 90,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d434",
+    "mapNameZh": "北部地下2层采矿所",
+    "count": 84,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d435",
+    "mapNameZh": "北部矿石储藏所",
+    "count": 84,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d431",
+    "mapNameZh": "北部矿山入口",
+    "count": 83,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d432",
+    "mapNameZh": "北部矿山东面洞穴",
+    "count": 83,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d433",
+    "mapNameZh": "北部地下1层采矿所",
+    "count": 83,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d436",
+    "mapNameZh": "北部废矿南面洞穴",
+    "count": 83,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d441",
+    "mapNameZh": "北部地下1层第一间房",
+    "count": 80,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d442",
+    "mapNameZh": "北部天桥2",
+    "count": 80,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d443",
+    "mapNameZh": "北部地下1层第二间房",
+    "count": 80,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d446",
+    "mapNameZh": "北部天桥3",
+    "count": 80,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d445",
+    "mapNameZh": "北部天桥1",
+    "count": 70,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d29031",
+    "mapNameZh": "经验.之地",
+    "count": 60,
+    "delay": "1分"
+   },
+   {
+    "mapId": "e402",
+    "mapNameZh": "连接通路",
+    "count": 25,
+    "delay": "20分"
+   },
+   {
+    "mapId": "e403",
+    "mapNameZh": "连接通路",
+    "count": 25,
+    "delay": "20分"
+   },
+   {
+    "mapId": "e404",
+    "mapNameZh": "连接通路",
+    "count": 25,
+    "delay": "20分"
+   },
+   {
+    "mapId": "d90212",
+    "mapNameZh": "机械室",
+    "count": 13,
+    "delay": "1分"
+   }
+  ],
+  "totalSpawnCount": 4050,
   "game": {
-   "sprite": "/images/mob/game/GhostSorcerer.png",
-   "eng_name": "GhostSorcerer",
-   "library": "Mon_5",
-   "shape": 8,
-   "match_method": "exact",
+   "sprite": "/images/mob/game/Devouring_Ghost.png",
+   "eng_name": "Devouring Ghost",
+   "library": "Mon_6",
+   "shape": 1,
+   "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": 32
+  "zircon_index": 35
  },
  {
   "id": "mob-43",
@@ -2386,20 +3244,255 @@
   "image": "../images/mob/pic/19.gif",
   "description": "是因犯下错误而被赶出庙的和尚的尸体受山洞中奇怪力量复活而成。平常在地下，一旦听到有脚步声就会从地下爬出来，用双手猛抓。和其他僵尸不同，他不能重生。",
   "attrs": {},
-  "spawns": [],
-  "totalSpawnCount": 0,
+  "spawns": [
+   {
+    "mapId": "d203",
+    "mapNameZh": "废矿山3层",
+    "count": 500,
+    "delay": "1分"
+   },
+   {
+    "mapId": "d202",
+    "mapNameZh": "废矿山2层",
+    "count": 355,
+    "delay": "1分"
+   },
+   {
+    "mapId": "d1401",
+    "mapNameZh": "神舰入口",
+    "count": 127,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d1402",
+    "mapNameZh": "神舰4层",
+    "count": 127,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d1404",
+    "mapNameZh": "神舰2层",
+    "count": 127,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d1405",
+    "mapNameZh": "神舰1层",
+    "count": 127,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d1403",
+    "mapNameZh": "神舰3层",
+    "count": 112,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d421",
+    "mapNameZh": "矿山1层",
+    "count": 106,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d422",
+    "mapNameZh": "矿山2层",
+    "count": 106,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d451",
+    "mapNameZh": "南部矿山1层",
+    "count": 106,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d452",
+    "mapNameZh": "南部矿山2层",
+    "count": 106,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "b115_001",
+    "mapNameZh": "矿石空间",
+    "count": 100,
+    "delay": "30分"
+   },
+   {
+    "mapId": "d415",
+    "mapNameZh": "天桥1",
+    "count": 95,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d401",
+    "mapNameZh": "蚂蚁洞北",
+    "count": 93,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d402",
+    "mapNameZh": "蚂蚁洞南",
+    "count": 93,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d403",
+    "mapNameZh": "蚂蚁洞西",
+    "count": 93,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d404",
+    "mapNameZh": "蚂蚁洞东",
+    "count": 93,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d405",
+    "mapNameZh": "矿石储藏所",
+    "count": 93,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d406",
+    "mapNameZh": "废矿南部洞穴",
+    "count": 93,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d411",
+    "mapNameZh": "地下1层第一间房",
+    "count": 90,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d412",
+    "mapNameZh": "天桥2",
+    "count": 90,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d413",
+    "mapNameZh": "地下1层第二间房",
+    "count": 90,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d416",
+    "mapNameZh": "天桥3",
+    "count": 90,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d434",
+    "mapNameZh": "北部地下2层采矿所",
+    "count": 84,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d435",
+    "mapNameZh": "北部矿石储藏所",
+    "count": 84,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d431",
+    "mapNameZh": "北部矿山入口",
+    "count": 83,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d432",
+    "mapNameZh": "北部矿山东面洞穴",
+    "count": 83,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d433",
+    "mapNameZh": "北部地下1层采矿所",
+    "count": 83,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d436",
+    "mapNameZh": "北部废矿南面洞穴",
+    "count": 83,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d441",
+    "mapNameZh": "北部地下1层第一间房",
+    "count": 80,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d442",
+    "mapNameZh": "北部天桥2",
+    "count": 80,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d443",
+    "mapNameZh": "北部地下1层第二间房",
+    "count": 80,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d446",
+    "mapNameZh": "北部天桥3",
+    "count": 80,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d445",
+    "mapNameZh": "北部天桥1",
+    "count": 70,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d29031",
+    "mapNameZh": "经验.之地",
+    "count": 60,
+    "delay": "1分"
+   },
+   {
+    "mapId": "e402",
+    "mapNameZh": "连接通路",
+    "count": 25,
+    "delay": "20分"
+   },
+   {
+    "mapId": "e403",
+    "mapNameZh": "连接通路",
+    "count": 25,
+    "delay": "20分"
+   },
+   {
+    "mapId": "e404",
+    "mapNameZh": "连接通路",
+    "count": 25,
+    "delay": "20分"
+   },
+   {
+    "mapId": "d90212",
+    "mapNameZh": "机械室",
+    "count": 13,
+    "delay": "1分"
+   }
+  ],
+  "totalSpawnCount": 4050,
   "game": {
-   "sprite": "/images/mob/game/Ghoul_Champion.png",
-   "eng_name": "Ghoul Champion",
-   "library": "Mon_6",
-   "shape": 3,
-   "match_method": "exact",
+   "sprite": "/images/mob/game/Ghost_Mage.png",
+   "eng_name": "Ghost Mage",
+   "library": "Mon_5",
+   "shape": 9,
+   "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": 37
+  "zircon_index": 33
  },
  {
   "id": "mob-44",
@@ -2408,20 +3501,255 @@
   "image": "../images/mob/pic/20.gif",
   "description": "他生前是使用强有力的魔法的法师，他的尸体原先放在山洞附近，是受奇怪力量作用成为僵尸，会使用强大的电击魔法。这种魔法使聚在一起的人同时受攻击，所以最好尽量散开。",
   "attrs": {},
-  "spawns": [],
-  "totalSpawnCount": 0,
+  "spawns": [
+   {
+    "mapId": "d203",
+    "mapNameZh": "废矿山3层",
+    "count": 500,
+    "delay": "1分"
+   },
+   {
+    "mapId": "d202",
+    "mapNameZh": "废矿山2层",
+    "count": 355,
+    "delay": "1分"
+   },
+   {
+    "mapId": "d1401",
+    "mapNameZh": "神舰入口",
+    "count": 127,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d1402",
+    "mapNameZh": "神舰4层",
+    "count": 127,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d1404",
+    "mapNameZh": "神舰2层",
+    "count": 127,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d1405",
+    "mapNameZh": "神舰1层",
+    "count": 127,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d1403",
+    "mapNameZh": "神舰3层",
+    "count": 112,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d421",
+    "mapNameZh": "矿山1层",
+    "count": 106,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d422",
+    "mapNameZh": "矿山2层",
+    "count": 106,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d451",
+    "mapNameZh": "南部矿山1层",
+    "count": 106,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d452",
+    "mapNameZh": "南部矿山2层",
+    "count": 106,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "b115_001",
+    "mapNameZh": "矿石空间",
+    "count": 100,
+    "delay": "30分"
+   },
+   {
+    "mapId": "d415",
+    "mapNameZh": "天桥1",
+    "count": 95,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d401",
+    "mapNameZh": "蚂蚁洞北",
+    "count": 93,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d402",
+    "mapNameZh": "蚂蚁洞南",
+    "count": 93,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d403",
+    "mapNameZh": "蚂蚁洞西",
+    "count": 93,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d404",
+    "mapNameZh": "蚂蚁洞东",
+    "count": 93,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d405",
+    "mapNameZh": "矿石储藏所",
+    "count": 93,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d406",
+    "mapNameZh": "废矿南部洞穴",
+    "count": 93,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d411",
+    "mapNameZh": "地下1层第一间房",
+    "count": 90,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d412",
+    "mapNameZh": "天桥2",
+    "count": 90,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d413",
+    "mapNameZh": "地下1层第二间房",
+    "count": 90,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d416",
+    "mapNameZh": "天桥3",
+    "count": 90,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d434",
+    "mapNameZh": "北部地下2层采矿所",
+    "count": 84,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d435",
+    "mapNameZh": "北部矿石储藏所",
+    "count": 84,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d431",
+    "mapNameZh": "北部矿山入口",
+    "count": 83,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d432",
+    "mapNameZh": "北部矿山东面洞穴",
+    "count": 83,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d433",
+    "mapNameZh": "北部地下1层采矿所",
+    "count": 83,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d436",
+    "mapNameZh": "北部废矿南面洞穴",
+    "count": 83,
+    "delay": "10/60分"
+   },
+   {
+    "mapId": "d441",
+    "mapNameZh": "北部地下1层第一间房",
+    "count": 80,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d442",
+    "mapNameZh": "北部天桥2",
+    "count": 80,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d443",
+    "mapNameZh": "北部地下1层第二间房",
+    "count": 80,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d446",
+    "mapNameZh": "北部天桥3",
+    "count": 80,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d445",
+    "mapNameZh": "北部天桥1",
+    "count": 70,
+    "delay": "10分"
+   },
+   {
+    "mapId": "d29031",
+    "mapNameZh": "经验.之地",
+    "count": 60,
+    "delay": "1分"
+   },
+   {
+    "mapId": "e402",
+    "mapNameZh": "连接通路",
+    "count": 25,
+    "delay": "20分"
+   },
+   {
+    "mapId": "e403",
+    "mapNameZh": "连接通路",
+    "count": 25,
+    "delay": "20分"
+   },
+   {
+    "mapId": "e404",
+    "mapNameZh": "连接通路",
+    "count": 25,
+    "delay": "20分"
+   },
+   {
+    "mapId": "d90212",
+    "mapNameZh": "机械室",
+    "count": 13,
+    "delay": "1分"
+   }
+  ],
+  "totalSpawnCount": 4050,
   "game": {
-   "sprite": "/images/mob/game/Ghost_Mage.png",
-   "eng_name": "Ghost Mage",
+   "sprite": "/images/mob/game/GhostSorcerer.png",
+   "eng_name": "GhostSorcerer",
    "library": "Mon_5",
-   "shape": 9,
-   "match_method": "exact",
+   "shape": 8,
+   "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": 33
+  "zircon_index": 32
  },
  {
   "id": "mob-45",
@@ -2744,18 +4072,17 @@
   ],
   "totalSpawnCount": 1177,
   "game": {
-   "sprite": "/images/mob/game/Lord_JiNae.png",
-   "eng_name": "Lord Ji'Nae",
-   "library": "Mon_7",
-   "shape": 7,
+   "sprite": "/images/mob/game/Ghoul_Champion.png",
+   "eng_name": "Ghoul Champion",
+   "library": "Mon_6",
+   "shape": 3,
    "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.359
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": 56
+  "zircon_index": 37
  },
  {
   "id": "mob-46",
@@ -2768,24 +4095,23 @@
    {
     "mapId": "8",
     "mapNameZh": "潘夜岛",
-    "count": 8,
-    "delay": "60分"
+    "count": 1255,
+    "delay": "10分"
    }
   ],
-  "totalSpawnCount": 8,
+  "totalSpawnCount": 1255,
   "game": {
-   "sprite": "/images/mob/game/Oyoung_Beast.png",
-   "eng_name": "Oyoung Beast",
-   "library": "Mon_23",
-   "shape": 3,
+   "sprite": "/images/mob/game/Rotting_Ghoul.png",
+   "eng_name": "Rotting Ghoul",
+   "library": "Mon_14",
+   "shape": 8,
    "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.299
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": 221
+  "zircon_index": 57
  },
  {
   "id": "mob-47",
@@ -2798,24 +4124,23 @@
    {
     "mapId": "8",
     "mapNameZh": "潘夜岛",
-    "count": 1008,
-    "delay": "10/11/12/13/60分"
+    "count": 1250,
+    "delay": "10分"
    }
   ],
-  "totalSpawnCount": 1008,
+  "totalSpawnCount": 1250,
   "game": {
-   "sprite": "/images/mob/game/Rotting_Ghoul.png",
-   "eng_name": "Rotting Ghoul",
+   "sprite": "/images/mob/game/Decaying_Ghoul.png",
+   "eng_name": "Decaying Ghoul",
    "library": "Mon_14",
-   "shape": 8,
+   "shape": 2,
    "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.305
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": 57
+  "zircon_index": 58
  },
  {
   "id": "mob-48",
@@ -2826,61 +4151,84 @@
   "attrs": {},
   "spawns": [
    {
-    "mapId": "6",
-    "mapNameZh": "沙漠",
-    "count": 760,
-    "delay": "1分"
-   },
-   {
     "mapId": "41",
     "mapNameZh": "诺玛村落",
-    "count": 435,
-    "delay": "1分"
+    "count": 70,
+    "delay": "10分"
    },
    {
     "mapId": "42",
     "mapNameZh": "沙漠",
-    "count": 380,
-    "delay": "1分"
+    "count": 70,
+    "delay": "10分"
    },
    {
     "mapId": "43",
     "mapNameZh": "沙漠",
-    "count": 380,
-    "delay": "1分"
+    "count": 70,
+    "delay": "10分"
    },
    {
     "mapId": "44",
     "mapNameZh": "沙漠",
-    "count": 380,
-    "delay": "1分"
-   },
-   {
-    "mapId": "d2001",
-    "mapNameZh": "西沙漠1层",
-    "count": 290,
-    "delay": "1分"
-   },
-   {
-    "mapId": "d20023",
-    "mapNameZh": "西沙漠2层",
-    "count": 290,
-    "delay": "1分"
-   },
-   {
-    "mapId": "d2005",
-    "mapNameZh": "地下魔宫",
-    "count": 190,
-    "delay": "1分"
-   },
-   {
-    "mapId": "d2004",
-    "mapNameZh": "地底宫殿",
-    "count": 20,
-    "delay": "1分"
+    "count": 70,
+    "delay": "10分"
    }
   ],
-  "totalSpawnCount": 3125,
+  "totalSpawnCount": 280,
+  "game": {
+   "sprite": "/images/mob/game/Sand_Shark.png",
+   "eng_name": "Sand Shark",
+   "library": "Mon_10",
+   "shape": 4,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+  },
+  "zircon_match": {
+   "state": "matched"
+  },
+  "zircon_index": 92
+ },
+ {
+  "id": "mob-49",
+  "name": "沙漠石人",
+  "category": "沙漠绿洲",
+  "image": "../images/mob/pic/mop_13.gif",
+  "description": "由石头垒成的巨大怪物。 坚硬的石头身体使他具有超强的攻击力和防御力。 主要现身在戈壁上，有时也会在沙漠深处出现。",
+  "attrs": {},
+  "spawns": [
+   {
+    "mapId": "41",
+    "mapNameZh": "诺玛村落",
+    "count": 70,
+    "delay": "10分"
+   },
+   {
+    "mapId": "42",
+    "mapNameZh": "沙漠",
+    "count": 70,
+    "delay": "10分"
+   },
+   {
+    "mapId": "43",
+    "mapNameZh": "沙漠",
+    "count": 70,
+    "delay": "10分"
+   },
+   {
+    "mapId": "44",
+    "mapNameZh": "沙漠",
+    "count": 70,
+    "delay": "10分"
+   },
+   {
+    "mapId": "6",
+    "mapNameZh": "沙漠",
+    "count": 600,
+    "delay": "10分"
+   }
+  ],
+  "totalSpawnCount": 880,
   "game": {
    "sprite": "/images/mob/game/Stone_Golem.png",
    "eng_name": "Stone Golem",
@@ -2895,43 +4243,51 @@
   "zircon_index": 93
  },
  {
-  "id": "mob-49",
-  "name": "沙漠石人",
-  "category": "沙漠绿洲",
-  "image": "../images/mob/pic/mop_13.gif",
-  "description": "由石头垒成的巨大怪物。 坚硬的石头身体使他具有超强的攻击力和防御力。 主要现身在戈壁上，有时也会在沙漠深处出现。",
-  "attrs": {},
-  "spawns": [],
-  "totalSpawnCount": 0,
-  "game": {
-   "sprite": "/images/mob/game/Stone_Golem.png",
-   "eng_name": "Stone Golem",
-   "library": "Mon_1",
-   "shape": 4,
-   "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.45
-  },
-  "zircon_match": {
-   "state": "matched"
-  },
-  "zircon_index": 291
- },
- {
   "id": "mob-50",
   "name": "沙漠树魔",
   "category": "沙漠绿洲",
   "image": "../images/mob/pic/mop_09.gif",
   "description": "与沙漠中的仙人掌长得一摸一样，故敌人往往意识不到危险。但敌人靠近时，它会射出带刺的果实发动攻击。它本身并不能移动， 所以只要远离就可以避开它的攻击",
   "attrs": {},
-  "spawns": [],
-  "totalSpawnCount": 0,
+  "spawns": [
+   {
+    "mapId": "41",
+    "mapNameZh": "诺玛村落",
+    "count": 70,
+    "delay": "10分"
+   },
+   {
+    "mapId": "42",
+    "mapNameZh": "沙漠",
+    "count": 70,
+    "delay": "10分"
+   },
+   {
+    "mapId": "43",
+    "mapNameZh": "沙漠",
+    "count": 70,
+    "delay": "10分"
+   },
+   {
+    "mapId": "44",
+    "mapNameZh": "沙漠",
+    "count": 70,
+    "delay": "10分"
+   },
+   {
+    "mapId": "6",
+    "mapNameZh": "沙漠",
+    "count": 200,
+    "delay": "10分"
+   }
+  ],
+  "totalSpawnCount": 480,
   "game": {
    "sprite": "/images/mob/game/Cursed_Cactus.png",
    "eng_name": "Cursed Cactus",
    "library": "Mon_10",
    "shape": 5,
-   "match_method": "exact",
+   "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
@@ -2948,63 +4304,38 @@
   "attrs": {},
   "spawns": [
    {
-    "mapId": "d10051",
-    "mapNameZh": "赤月山谷5层",
-    "count": 300,
-    "delay": "1分"
+    "mapId": "41",
+    "mapNameZh": "诺玛村落",
+    "count": 70,
+    "delay": "10分"
    },
    {
-    "mapId": "d10052",
-    "mapNameZh": "赤月山谷5层",
-    "count": 300,
-    "delay": "1分"
+    "mapId": "42",
+    "mapNameZh": "沙漠",
+    "count": 80,
+    "delay": "10分"
    },
    {
-    "mapId": "d1021",
-    "mapNameZh": "赤月山谷1层",
-    "count": 300,
-    "delay": "1分"
+    "mapId": "43",
+    "mapNameZh": "沙漠",
+    "count": 80,
+    "delay": "10分"
    },
    {
-    "mapId": "d1022",
-    "mapNameZh": "赤月山谷2层",
-    "count": 300,
-    "delay": "1分"
-   },
-   {
-    "mapId": "d10231",
-    "mapNameZh": "赤月山谷3层",
-    "count": 300,
-    "delay": "1分"
-   },
-   {
-    "mapId": "d10232",
-    "mapNameZh": "赤月山谷3层",
-    "count": 300,
-    "delay": "1分"
-   },
-   {
-    "mapId": "d1024",
-    "mapNameZh": "赤月山谷4层",
-    "count": 300,
-    "delay": "1分"
-   },
-   {
-    "mapId": "d10251",
-    "mapNameZh": "赤月山谷5层",
-    "count": 150,
-    "delay": "1分"
+    "mapId": "44",
+    "mapNameZh": "沙漠",
+    "count": 80,
+    "delay": "10分"
    }
   ],
-  "totalSpawnCount": 2250,
+  "totalSpawnCount": 310,
   "game": {
    "sprite": "/images/mob/game/Giant_Lizard.png",
    "eng_name": "Giant Lizard",
    "library": "Mon_20",
    "shape": 6,
    "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.583
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
@@ -3020,32 +4351,43 @@
   "attrs": {},
   "spawns": [
    {
-    "mapId": "d203",
-    "mapNameZh": "废矿山3层",
-    "count": 200,
-    "delay": "1分"
+    "mapId": "41",
+    "mapNameZh": "诺玛村落",
+    "count": 70,
+    "delay": "10分"
    },
    {
-    "mapId": "d202",
-    "mapNameZh": "废矿山2层",
-    "count": 175,
-    "delay": "1分"
+    "mapId": "42",
+    "mapNameZh": "沙漠",
+    "count": 70,
+    "delay": "10分"
+   },
+   {
+    "mapId": "43",
+    "mapNameZh": "沙漠",
+    "count": 70,
+    "delay": "10分"
+   },
+   {
+    "mapId": "44",
+    "mapNameZh": "沙漠",
+    "count": 70,
+    "delay": "10分"
    }
   ],
-  "totalSpawnCount": 375,
+  "totalSpawnCount": 280,
   "game": {
-   "sprite": "/images/mob/game/Devouring_Ghost.png",
-   "eng_name": "Devouring Ghost",
-   "library": "Mon_6",
-   "shape": 1,
+   "sprite": "/images/mob/game/Phantom.png",
+   "eng_name": "Phantom",
+   "library": "Mon_2",
+   "shape": 8,
    "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.374
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": 35
+  "zircon_index": 154
  },
  {
   "id": "mob-53",
@@ -3058,42 +4400,41 @@
    {
     "mapId": "41",
     "mapNameZh": "诺玛村落",
-    "count": 510,
-    "delay": "1分"
+    "count": 70,
+    "delay": "10分"
    },
    {
     "mapId": "42",
     "mapNameZh": "沙漠",
-    "count": 400,
-    "delay": "1分"
+    "count": 70,
+    "delay": "10分"
    },
    {
     "mapId": "43",
     "mapNameZh": "沙漠",
-    "count": 400,
-    "delay": "1分"
+    "count": 70,
+    "delay": "10分"
    },
    {
     "mapId": "44",
     "mapNameZh": "沙漠",
-    "count": 400,
-    "delay": "1分"
+    "count": 70,
+    "delay": "10分"
    }
   ],
-  "totalSpawnCount": 1710,
+  "totalSpawnCount": 280,
   "game": {
-   "sprite": "/images/mob/game/Fierce_Fish_Demon.png",
-   "eng_name": "Fierce Fish Demon",
-   "library": "Mon_9",
-   "shape": 4,
+   "sprite": "/images/mob/game/Aqua_Lizard.png",
+   "eng_name": "Aqua Lizard",
+   "library": "Mon_10",
+   "shape": 2,
    "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.65
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": 393
+  "zircon_index": 156
  },
  {
   "id": "mob-54",
@@ -3102,21 +4443,45 @@
   "image": "../images/mob/pic/mop_27.gif",
   "description": "由于长期的沙漠生活，导致他的防御力很强，虽然没有直接的攻击力，但是手中的扇子据说可以呼风唤雨，碰到她一定要小心！",
   "attrs": {},
-  "spawns": [],
-  "totalSpawnCount": 0,
+  "spawns": [
+   {
+    "mapId": "41",
+    "mapNameZh": "诺玛村落",
+    "count": 70,
+    "delay": "10分"
+   },
+   {
+    "mapId": "42",
+    "mapNameZh": "沙漠",
+    "count": 70,
+    "delay": "10分"
+   },
+   {
+    "mapId": "43",
+    "mapNameZh": "沙漠",
+    "count": 70,
+    "delay": "10分"
+   },
+   {
+    "mapId": "44",
+    "mapNameZh": "沙漠",
+    "count": 70,
+    "delay": "10分"
+   }
+  ],
+  "totalSpawnCount": 280,
   "game": {
-   "sprite": "/images/mob/game/Fierce_Wind_Demon.png",
-   "eng_name": "Fierce Wind Demon",
-   "library": "Mon_9",
+   "sprite": "/images/mob/game/Windfury_Sorceress.png",
+   "eng_name": "Windfury Sorceress",
+   "library": "Mon_10",
    "shape": 7,
    "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.229
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": 292
+  "zircon_index": 94
  },
  {
   "id": "mob-55",
@@ -3125,14 +4490,45 @@
   "image": "../images/mob/pic/mop_08.gif",
   "description": "诺玛族中属于下级的诺玛，在沙漠里游荡，寻找周边的攻击对象和找出制造各种各样道具的资料来做必要的道具是主任务。当然战斗也是主任务，一旦进入战斗就会拼命打，决不退缩。以自己做的皮衣和用骨头做的护身服和武器来装备自己。",
   "attrs": {},
-  "spawns": [],
-  "totalSpawnCount": 0,
+  "spawns": [
+   {
+    "mapId": "41",
+    "mapNameZh": "诺玛村落",
+    "count": 70,
+    "delay": "10分"
+   },
+   {
+    "mapId": "42",
+    "mapNameZh": "沙漠",
+    "count": 70,
+    "delay": "10分"
+   },
+   {
+    "mapId": "43",
+    "mapNameZh": "沙漠",
+    "count": 70,
+    "delay": "10分"
+   },
+   {
+    "mapId": "44",
+    "mapNameZh": "沙漠",
+    "count": 70,
+    "delay": "10分"
+   },
+   {
+    "mapId": "6",
+    "mapNameZh": "沙漠",
+    "count": 700,
+    "delay": "10分"
+   }
+  ],
+  "totalSpawnCount": 980,
   "game": {
    "sprite": "/images/mob/game/Numa_Grunt.png",
    "eng_name": "Numa Grunt",
    "library": "Mon_13",
    "shape": 8,
-   "match_method": "exact",
+   "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
@@ -3147,14 +4543,45 @@
   "image": "../images/mob/pic/mop_06.gif",
   "description": "具有很强的体力和力气的长官级诺玛，性格暴躁。不像下级诺玛那样到沙漠里去采集和侦查，而是专门出现在战斗地点进行战斗。",
   "attrs": {},
-  "spawns": [],
-  "totalSpawnCount": 0,
+  "spawns": [
+   {
+    "mapId": "41",
+    "mapNameZh": "诺玛村落",
+    "count": 70,
+    "delay": "10分"
+   },
+   {
+    "mapId": "42",
+    "mapNameZh": "沙漠",
+    "count": 70,
+    "delay": "10分"
+   },
+   {
+    "mapId": "43",
+    "mapNameZh": "沙漠",
+    "count": 70,
+    "delay": "10分"
+   },
+   {
+    "mapId": "44",
+    "mapNameZh": "沙漠",
+    "count": 70,
+    "delay": "10分"
+   },
+   {
+    "mapId": "6",
+    "mapNameZh": "沙漠",
+    "count": 700,
+    "delay": "10分"
+   }
+  ],
+  "totalSpawnCount": 980,
   "game": {
    "sprite": "/images/mob/game/Numa_Armored_Soldier.png",
    "eng_name": "Numa Armored Soldier",
    "library": "Mon_19",
    "shape": 1,
-   "match_method": "exact",
+   "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
@@ -3169,20 +4596,51 @@
   "image": "../images/mob/pic/mop_19.gif",
   "description": "守卫诺玛王的守卫，它们具有出色的力气和体力，但最重要的是会用魔法。4只为一组，一旦诺玛王受到攻击就会分开在4个不同的方向，以诺马王为中心做一个一定的空间让诺玛王不受攻击。但这不是诺玛的力量而造成的，只是它们的魔法拐棍的力量，只要破坏拐棍，保护空间就会消失。",
   "attrs": {},
-  "spawns": [],
-  "totalSpawnCount": 0,
+  "spawns": [
+   {
+    "mapId": "41",
+    "mapNameZh": "诺玛村落",
+    "count": 70,
+    "delay": "10分"
+   },
+   {
+    "mapId": "42",
+    "mapNameZh": "沙漠",
+    "count": 70,
+    "delay": "10分"
+   },
+   {
+    "mapId": "43",
+    "mapNameZh": "沙漠",
+    "count": 70,
+    "delay": "10分"
+   },
+   {
+    "mapId": "44",
+    "mapNameZh": "沙漠",
+    "count": 70,
+    "delay": "10分"
+   },
+   {
+    "mapId": "6",
+    "mapNameZh": "沙漠",
+    "count": 600,
+    "delay": "10分"
+   }
+  ],
+  "totalSpawnCount": 880,
   "game": {
-   "sprite": "/images/mob/game/Numa_Assault_Captain.png",
-   "eng_name": "Numa Assault Captain",
+   "sprite": "/images/mob/game/Numa_High_Mage.png",
+   "eng_name": "Numa High Mage",
    "library": "Mon_19",
-   "shape": 5,
-   "match_method": "exact",
+   "shape": 4,
+   "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": 166
+  "zircon_index": 162
  },
  {
   "id": "mob-58",
@@ -3193,8 +4651,15 @@
   "attrs": {
    "可爆": "诺玛牌武器"
   },
-  "spawns": [],
-  "totalSpawnCount": 0,
+  "spawns": [
+   {
+    "mapId": "44",
+    "mapNameZh": "沙漠",
+    "count": 1,
+    "delay": "180分"
+   }
+  ],
+  "totalSpawnCount": 1,
   "game": {
    "sprite": "/images/mob/game/Great_Pharaoh.png",
    "eng_name": "Great Pharaoh",
@@ -3219,19 +4684,30 @@
    {
     "mapId": "12",
     "mapNameZh": "灌木林",
-    "count": 40,
+    "count": 154,
+    "delay": "10分"
+   },
+   {
+    "mapId": "122",
+    "mapNameZh": "灌木林",
+    "count": 154,
+    "delay": "10分"
+   },
+   {
+    "mapId": "125",
+    "mapNameZh": "灌木林",
+    "count": 154,
     "delay": "10分"
    }
   ],
-  "totalSpawnCount": 40,
+  "totalSpawnCount": 462,
   "game": {
    "sprite": "/images/mob/game/Venomous_Arachnid.png",
    "eng_name": "Venomous Arachnid",
    "library": "Mon_12",
    "shape": 1,
    "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.264
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
@@ -3245,16 +4721,34 @@
   "image": "../images/mob/pic/43.gif",
   "description": "同样也是被赤月恶魔改造过的怪物。虽然不大，但它有坚硬强壮的身体和剃刀一样锋利的牙齿，闪着独眼，一旦发现猎物，它就会迅速靠近并让撕裂它们。",
   "attrs": {},
-  "spawns": [],
-  "totalSpawnCount": 0,
+  "spawns": [
+   {
+    "mapId": "12",
+    "mapNameZh": "灌木林",
+    "count": 154,
+    "delay": "10分"
+   },
+   {
+    "mapId": "122",
+    "mapNameZh": "灌木林",
+    "count": 154,
+    "delay": "10分"
+   },
+   {
+    "mapId": "125",
+    "mapNameZh": "灌木林",
+    "count": 154,
+    "delay": "10分"
+   }
+  ],
+  "totalSpawnCount": 462,
   "game": {
    "sprite": "/images/mob/game/Spider_Bat.png",
    "eng_name": "Spider Bat",
    "library": "Mon_11",
    "shape": 1,
    "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.408
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
@@ -3270,38 +4764,37 @@
   "attrs": {},
   "spawns": [
    {
+    "mapId": "12",
+    "mapNameZh": "灌木林",
+    "count": 154,
+    "delay": "10分"
+   },
+   {
     "mapId": "122",
     "mapNameZh": "灌木林",
-    "count": 360,
-    "delay": "1分"
+    "count": 154,
+    "delay": "10分"
    },
    {
     "mapId": "125",
     "mapNameZh": "灌木林",
-    "count": 280,
-    "delay": "1分"
-   },
-   {
-    "mapId": "12",
-    "mapNameZh": "灌木林",
-    "count": 160,
-    "delay": "10/60分"
+    "count": 154,
+    "delay": "10分"
    }
   ],
-  "totalSpawnCount": 800,
+  "totalSpawnCount": 462,
   "game": {
-   "sprite": "/images/mob/game/Venomous_Arachnid.png",
-   "eng_name": "Venomous Arachnid",
-   "library": "Mon_12",
-   "shape": 1,
+   "sprite": "/images/mob/game/Red_Moon_Protector.png",
+   "eng_name": "Red Moon Protector",
+   "library": "Mon_11",
+   "shape": 8,
    "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.61
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": 303
+  "zircon_index": 70
  },
  {
   "id": "mob-62",
@@ -3310,16 +4803,34 @@
   "image": "../images/mob/pic/45.gif",
   "description": "这种蜘蛛的幼虫寄生在老树的根部或者一些动物的体内，从寄主身上获取营养。一旦找到合适的新居所，幼虫就会很快孵化为成熟的幻影蜘蛛。在忽隐忽现中，它们恐怖的攻击力和远程攻击方式、让人无法逃脱！",
   "attrs": {},
-  "spawns": [],
-  "totalSpawnCount": 0,
+  "spawns": [
+   {
+    "mapId": "12",
+    "mapNameZh": "灌木林",
+    "count": 60,
+    "delay": "10分"
+   },
+   {
+    "mapId": "122",
+    "mapNameZh": "灌木林",
+    "count": 65,
+    "delay": "10分"
+   },
+   {
+    "mapId": "125",
+    "mapNameZh": "灌木林",
+    "count": 65,
+    "delay": "10分"
+   }
+  ],
+  "totalSpawnCount": 190,
   "game": {
    "sprite": "/images/mob/game/Arachnid_Gazer.png",
    "eng_name": "Arachnid Gazer",
    "library": "Mon_11",
    "shape": 6,
    "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.631
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
@@ -3333,21 +4844,39 @@
   "image": "../images/mob/pic/46.gif",
   "description": "它是幻影蜘蛛的幼虫，平时隐藏在幻影蜘蛛身体里。当幻影蜘蛛受到攻击或猎物靠近时会不顾一切的冲向敌人，同敌人同归于尽！母体死后，有生殖功能的爆裂蜘蛛分散成长为幻影蜘蛛。",
   "attrs": {},
-  "spawns": [],
-  "totalSpawnCount": 0,
+  "spawns": [
+   {
+    "mapId": "12",
+    "mapNameZh": "灌木林",
+    "count": 60,
+    "delay": "10分"
+   },
+   {
+    "mapId": "122",
+    "mapNameZh": "灌木林",
+    "count": 65,
+    "delay": "10分"
+   },
+   {
+    "mapId": "125",
+    "mapNameZh": "灌木林",
+    "count": 65,
+    "delay": "10分"
+   }
+  ],
+  "totalSpawnCount": 190,
   "game": {
-   "sprite": "/images/mob/game/Spitting_Spider.png",
-   "eng_name": "Spitting Spider",
-   "library": "Mon_3",
+   "sprite": "/images/mob/game/Larva.png",
+   "eng_name": "Larva",
+   "library": "Mon_11",
    "shape": 5,
    "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.541
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": 20
+  "zircon_index": 68
  },
  {
   "id": "mob-64",
@@ -3358,33 +4887,32 @@
   "attrs": {},
   "spawns": [
    {
-    "mapId": "125",
+    "mapId": "12",
     "mapNameZh": "灌木林",
-    "count": 360,
-    "delay": "1分"
+    "count": 154,
+    "delay": "10分"
    },
    {
     "mapId": "122",
     "mapNameZh": "灌木林",
-    "count": 280,
-    "delay": "1分"
+    "count": 154,
+    "delay": "10分"
    },
    {
-    "mapId": "12",
+    "mapId": "125",
     "mapNameZh": "灌木林",
-    "count": 60,
-    "delay": "10/60分"
+    "count": 154,
+    "delay": "10分"
    }
   ],
-  "totalSpawnCount": 700,
+  "totalSpawnCount": 462,
   "game": {
    "sprite": "/images/mob/game/Dark_Arachnid.png",
    "eng_name": "Dark Arachnid",
    "library": "Mon_12",
    "shape": 2,
    "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.534
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
@@ -3398,21 +4926,39 @@
   "image": "../images/mob/pic/48.gif",
   "description": "这种蜘蛛看起来就像一朵美丽的花。赤月恶魔把这种巨大的怪物变成了一种用外表诱惑猎物，再用毒液毒死它们的魔鬼。毫无疑问，它的毒液是致命的。",
   "attrs": {},
-  "spawns": [],
-  "totalSpawnCount": 0,
+  "spawns": [
+   {
+    "mapId": "12",
+    "mapNameZh": "灌木林",
+    "count": 154,
+    "delay": "10分"
+   },
+   {
+    "mapId": "122",
+    "mapNameZh": "灌木林",
+    "count": 154,
+    "delay": "10分"
+   },
+   {
+    "mapId": "125",
+    "mapNameZh": "灌木林",
+    "count": 154,
+    "delay": "10分"
+   }
+  ],
+  "totalSpawnCount": 462,
   "game": {
-   "sprite": "/images/mob/game/Venomous_Arachnid.png",
-   "eng_name": "Venomous Arachnid",
-   "library": "Mon_12",
-   "shape": 1,
+   "sprite": "/images/mob/game/Red_Moon_Guardian.png",
+   "eng_name": "Red Moon Guardian",
+   "library": "Mon_11",
+   "shape": 7,
    "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.466
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": 302
+  "zircon_index": 69
  },
  {
   "id": "mob-66",
@@ -3426,16 +4972,28 @@
    "所在地图": "道馆灌木林",
    "可爆": "魔血套装"
   },
-  "spawns": [],
-  "totalSpawnCount": 0,
+  "spawns": [
+   {
+    "mapId": "122",
+    "mapNameZh": "灌木林",
+    "count": 1,
+    "delay": "120分"
+   },
+   {
+    "mapId": "125",
+    "mapNameZh": "灌木林",
+    "count": 1,
+    "delay": "120分"
+   }
+  ],
+  "totalSpawnCount": 2,
   "game": {
    "sprite": "/images/mob/game/Arachnid_Broodmother.png",
    "eng_name": "Arachnid Broodmother",
    "library": "Mon_12",
    "shape": 2,
    "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.534
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
@@ -5658,18 +7216,17 @@
   "spawns": [],
   "totalSpawnCount": 0,
   "game": {
-   "sprite": "/images/mob/game/Red_Snake.png",
-   "eng_name": "Red Snake",
-   "library": "Mon_6",
-   "shape": 4,
-   "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.417
+   "sprite": "/images/mob/game/Evil_Snake.png",
+   "eng_name": "Evil Snake",
+   "library": "Mon_9",
+   "shape": 0,
+   "match_method": "exact",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": 277
+  "zircon_index": 80
  },
  {
   "id": "mob-108",
@@ -7377,18 +8934,17 @@
   ],
   "totalSpawnCount": 674,
   "game": {
-   "sprite": "/images/mob/game/Light_Armed_Soldier.png",
-   "eng_name": "Light Armed Soldier",
-   "library": "Mon_1",
-   "shape": 6,
-   "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.393
+   "sprite": "/images/mob/game/Banya_Left_Guard.png",
+   "eng_name": "Banya Left Guard",
+   "library": "Mon_14",
+   "shape": 1,
+   "match_method": "exact",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": 152
+  "zircon_index": 111
  },
  {
   "id": "mob-134",
@@ -7476,18 +9032,17 @@
   ],
   "totalSpawnCount": 603,
   "game": {
-   "sprite": "/images/mob/game/Light_Armed_Soldier.png",
-   "eng_name": "Light Armed Soldier",
-   "library": "Mon_1",
-   "shape": 6,
-   "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.609
+   "sprite": "/images/mob/game/Banya_Right_Guard.png",
+   "eng_name": "Banya Right Guard",
+   "library": "Mon_14",
+   "shape": 0,
+   "match_method": "exact",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": 152
+  "zircon_index": 109
  },
  {
   "id": "mob-135",
