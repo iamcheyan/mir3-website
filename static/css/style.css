@@ -1025,3 +1025,8 @@ body.match-open,body.export-open { overflow: hidden; }
 .game-badge.missing { color: var(--text-soft); background: rgba(0,0,0,.62); border: 1px solid var(--line-soft); }
 .mm-alias { color: #c98b4b; }
 .mm-exact { color: #6f9f6f; }
+
+/* 游戏形象筛选：选中态更明显 + 分组空态提示 */
+.game-filter .zircon-filter-button.is-active { color: var(--gold-bright); border-bottom-color: var(--gold); font-weight: 600; }
+.game-filter .zircon-filter-button.is-active .gf-count { color: var(--gold-dim); }
+.group.empty-group .group-heading { opacity: .45; }
