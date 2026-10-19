@@ -8,11 +8,25 @@
   // 列表页检索 + Zircon 对照状态筛选
   var filterInput = document.querySelector(".filter-input");
   var filterButtons = document.querySelectorAll("[data-match-filter]");
-  var filterCount = document.querySelector(".zircon-filter-count");
+  var filterCount = document.querySelector(".game-filter-count");
+  var gameButtons = document.querySelectorAll("[data-game-filter]");
   if (filterInput || filterButtons.length) {
     var activeMatchFilter = "all";
+    var activeGameFilter = "all";
     var cards = Array.prototype.slice.call(document.querySelectorAll(".group .data-card"));
     var totalCards = cards.length;
+
+    // 顶部"游戏内形象"筛选的分项计数
+    var gameCounts = { all: totalCards, has: 0, missing: 0 };
+    cards.forEach(function (card) {
+      var g = card.getAttribute("data-game-image");
+      if (g === "has") gameCounts.has++;
+      else if (g === "missing") gameCounts.missing++;
+    });
+    document.querySelectorAll(".gf-count").forEach(function (el) {
+      var key = el.getAttribute("data-gf");
+      el.textContent = gameCounts[key] === undefined ? "" : "(" + gameCounts[key] + ")";
+    });
 
     function applyListFilters() {
       var q = filterInput ? filterInput.value.trim().toLowerCase() : "";
@@ -25,7 +39,9 @@
           || (activeMatchFilter === "review" && ["matched", "candidate", "conflict"].indexOf(state) !== -1)
           || (activeMatchFilter === "unmatched" && state === "unmatched")
           || (activeMatchFilter === "unreviewed" && state === "unreviewed");
-        var show = matchesQuery && matchesState;
+        var gameImage = card.getAttribute("data-game-image") || "";
+        var matchesGame = activeGameFilter === "all" || gameImage === activeGameFilter;
+        var show = matchesQuery && matchesState && matchesGame;
         card.classList.toggle("is-hidden", !show);
         if (show) visibleCount++;
       });
@@ -37,6 +53,17 @@
     }
 
     if (filterInput) filterInput.addEventListener("input", applyListFilters);
+    gameButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        activeGameFilter = button.getAttribute("data-game-filter") || "all";
+        gameButtons.forEach(function (item) {
+          var active = item === button;
+          item.classList.toggle("is-active", active);
+          item.setAttribute("aria-pressed", active ? "true" : "false");
+        });
+        applyListFilters();
+      });
+    });
     filterButtons.forEach(function (button) {
       button.addEventListener("click", function () {
         activeMatchFilter = button.getAttribute("data-match-filter") || "all";

@@ -8,6 +8,16 @@
   <h1 class="page-title">{{ title }}</h1>
   <p class="page-desc">{{ desc }}</p>
   <div class="list-search"><label for="page-filter">快速检索</label><div class="search-line"><span aria-hidden="true">⌕</span><input id="page-filter" type="search" class="filter-input" placeholder="在此页内搜索…" autocomplete="off"></div></div>
+  {% if kind == 'mob' %}
+  <div class="game-filter" role="group" aria-label="按游戏内形象有无筛选">
+    <span class="zircon-filter-label">游戏内形象</span>
+    <button type="button" class="zircon-filter-button is-active" data-game-filter="all" aria-pressed="true">全部 <span class="gf-count" data-gf="all"></span></button>
+    <button type="button" class="zircon-filter-button" data-game-filter="has" aria-pressed="false">有（可对比） <span class="gf-count" data-gf="has"></span></button>
+    <button type="button" class="zircon-filter-button" data-game-filter="missing" aria-pressed="false">没有（待补） <span class="gf-count" data-gf="missing"></span></button>
+    <span class="zircon-filter-count game-filter-count" aria-live="polite"></span>
+  </div>
+  <p class="zircon-filter-note">“没有”= 游戏侧中文名表里找不到该怪物（译名差异或游戏中不存在），因此还无法生成游戏内形象对比。</p>
+  {% endif %}
   <div class="zircon-filter" role="group" aria-label="按 Zircon 对照状态筛选">
     <span class="zircon-filter-label">ZIRCON 状态</span>
     <button type="button" class="zircon-filter-button is-active" data-match-filter="all" aria-pressed="true">全部</button>
@@ -35,8 +45,8 @@
       <div class="card-body"><h3 class="card-name">{{ it.title }}</h3>{% set zircon_match = it.zircon_match %}{% include "_zircon_match.html" %}<p class="card-tags"><span class="tag">{{ it.areas|length }} 张地图</span></p><p class="map-card-hint">见页内地图展示</p></div>
     </div>
     {% else %}
-    <div class="data-card" data-name="{{ it.name }}" data-zircon-state="{{ it.zircon_match.state }}">
-      {% if kind == 'mob' or kind == 'item' or kind == 'skill' %}<div class="card-img">{% if it.image %}<img src="{{ it.image|img }}" alt="{{ it.name }}" loading="lazy">{% else %}<span class="img-placeholder">?</span>{% endif %}{% if kind == 'mob' and it.game %}<img class="card-img-game" src="{{ it.game.sprite|img }}" alt="{{ it.name }} 游戏内形象" loading="lazy" title="游戏内实际形象">{% endif %}</div>{% endif %}
+    <div class="data-card" data-name="{{ it.name }}" data-zircon-state="{{ it.zircon_match.state }}"{% if kind == 'mob' %} data-game-image="{{ 'has' if it.game else 'missing' }}"{% endif %}>
+      {% if kind == 'mob' or kind == 'item' or kind == 'skill' %}<div class="card-img">{% if it.image %}<img src="{{ it.image|img }}" alt="{{ it.name }}" loading="lazy">{% else %}<span class="img-placeholder">?</span>{% endif %}{% if kind == 'mob' %}{% if it.game %}<img class="card-img-game" src="{{ it.game.sprite|img }}" alt="{{ it.name }} 游戏内形象" loading="lazy" title="游戏内实际形象"><span class="game-badge has" title="有游戏内形象">有形象</span>{% else %}<span class="game-badge missing" title="暂无游戏内形象">无形象</span>{% endif %}{% endif %}</div>{% endif %}
       <div class="card-body">
         <h3 class="card-name"><a href="{{ prefix }}/{{ kind }}s/{{ it.id }}.html">{{ it.name if kind != 'mission' else it.title }}</a></h3>
         {% set zircon_match = it.zircon_match %}{% include "_zircon_match.html" %}

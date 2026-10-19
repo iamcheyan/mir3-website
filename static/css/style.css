@@ -1015,3 +1015,11 @@ body.match-open,body.export-open { overflow: hidden; }
 /* 列表卡片：左下角叠加游戏内实际形象缩略图，方便一眼比对 */
 .card-img { position: relative; }
 .card-img-game { position: absolute; right: 6px; bottom: 6px; max-width: 46% !important; max-height: 42px !important; background: rgba(0,0,0,.55); border: 1px solid var(--line-soft); border-radius: 6px; padding: 2px 4px; }
+
+/* 怪物列表：游戏内形象有无 的徽标与筛选 */
+.game-filter { display: flex; flex-wrap: wrap; align-items: baseline; gap: 14px; margin-top: 14px; }
+.game-filter .zircon-filter-label { margin-right: 2px; }
+.gf-count { color: var(--text-soft); font-size: 10px; }
+.game-badge { position: absolute; left: 6px; top: 6px; font-size: 10px; line-height: 1.5; padding: 0 6px; border-radius: 999px; letter-spacing: .04em; }
+.game-badge.has { color: #14100a; background: var(--gold-bright); }
+.game-badge.missing { color: var(--text-soft); background: rgba(0,0,0,.62); border: 1px solid var(--line-soft); }
