@@ -24,8 +24,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -37,21 +37,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 193,
+      "name": "Dragon",
+      "image": "Mon_34 shape 4"
+    },
     "id": "monster:website:mob-100",
     "identity": {
       "standard_name_zh": "怒龙神",
       "website_name": "怒龙神",
       "website_source_id": "mob-100",
       "zircon_candidate_indexes": [
-        19,
-        385
+        193
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:19",
-        "monster:zircon:385"
+        "monster:zircon:193"
       ]
     },
     "resources": {
@@ -67,8 +69,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Dragon.png"
       }
     },
     "source_findings": [
@@ -100,8 +102,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -113,19 +115,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 127,
+      "name": "Black Boar",
+      "image": "Mon_8 shape 7"
+    },
     "id": "monster:website:mob-103",
     "identity": {
       "standard_name_zh": "白野猪",
       "website_name": "白野猪",
       "website_source_id": "mob-103",
       "zircon_candidate_indexes": [
-        128
+        127
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:128"
+        "monster:zircon:127"
       ]
     },
     "resources": {
@@ -141,8 +147,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Black_Boar.png"
       }
     },
     "source_findings": [
@@ -404,8 +410,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -417,20 +423,22 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 119,
+      "name": "Bone Soldier",
+      "image": "Mon_15 shape 2"
+    },
     "id": "monster:website:mob-122",
     "identity": {
       "standard_name_zh": "骷髅士兵",
       "website_name": "骷髅士兵",
       "website_source_id": "mob-122",
       "zircon_candidate_indexes": [
-        116,
         119
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:116",
         "monster:zircon:119"
       ]
     },
@@ -447,8 +455,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Bone_Soldier.png"
       }
     },
     "source_findings": [
@@ -632,8 +640,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -645,7 +653,11 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 390,
+      "name": "Fierce Wind Demon",
+      "image": "Mon_9 shape 7"
+    },
     "id": "monster:website:mob-129",
     "identity": {
       "standard_name_zh": "潘夜风魔",
@@ -673,8 +685,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Fierce_Wind_Demon.png"
       }
     },
     "source_findings": [
@@ -706,8 +718,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -719,19 +731,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 114,
+      "name": "Banya Guardian",
+      "image": "Mon_14 shape 7"
+    },
     "id": "monster:website:mob-130",
     "identity": {
       "standard_name_zh": "潘夜云魔",
       "website_name": "潘夜云魔",
       "website_source_id": "mob-130",
       "zircon_candidate_indexes": [
-        252
+        114
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:252"
+        "monster:zircon:114"
       ]
     },
     "resources": {
@@ -747,8 +763,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Banya_Guardian.png"
       }
     },
     "source_findings": [
@@ -780,8 +796,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -793,19 +809,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 113,
+      "name": "Flame Minotaur",
+      "image": "Mon_14 shape 6"
+    },
     "id": "monster:website:mob-131",
     "identity": {
       "standard_name_zh": "潘夜火魔",
       "website_name": "潘夜火魔",
       "website_source_id": "mob-131",
       "zircon_candidate_indexes": [
-        449
+        113
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:449"
+        "monster:zircon:113"
       ]
     },
     "resources": {
@@ -821,8 +841,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Flame_Minotaur.png"
       }
     },
     "source_findings": [
@@ -854,8 +874,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -867,7 +887,11 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 458,
+      "name": "Ice Break Demon Soldier",
+      "image": "Mon_24 shape 1"
+    },
     "id": "monster:website:mob-132",
     "identity": {
       "standard_name_zh": "潘夜冰魔",
@@ -895,8 +919,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Ice_Break_Demon_Soldier.png"
       }
     },
     "source_findings": [
@@ -1240,8 +1264,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -1253,23 +1277,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 84,
+      "name": "Evil Monkey",
+      "image": "Mon_16 shape 4"
+    },
     "id": "monster:website:mob-141",
     "identity": {
       "standard_name_zh": "犬猴魔",
       "website_name": "犬猴魔",
       "website_source_id": "mob-141",
       "zircon_candidate_indexes": [
-        221,
-        223,
-        362
+        84
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:221",
-        "monster:zircon:223",
-        "monster:zircon:362"
+        "monster:zircon:84"
       ]
     },
     "resources": {
@@ -1285,8 +1309,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Evil_Monkey.png"
       }
     },
     "source_findings": [
@@ -1318,8 +1342,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -1331,25 +1355,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 115,
+      "name": "Emperor Sa'Woo",
+      "image": "Mon_14 shape 9"
+    },
     "id": "monster:website:mob-145",
     "identity": {
       "standard_name_zh": "霸王守卫",
       "website_name": "霸王守卫",
       "website_source_id": "mob-145",
       "zircon_candidate_indexes": [
-        147,
-        400,
-        416,
-        417
+        115
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:147",
-        "monster:zircon:400",
-        "monster:zircon:416",
-        "monster:zircon:417"
+        "monster:zircon:115"
       ]
     },
     "resources": {
@@ -1365,8 +1387,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Emperor_Sa'Woo.png"
       }
     },
     "source_findings": [
@@ -1782,8 +1804,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -1795,22 +1817,29 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 126,
+      "name": "Claw Serpent",
+      "image": "Mon_8 shape 9"
+    },
     "id": "monster:website:mob-18",
     "identity": {
       "standard_name_zh": "七点白蛇",
       "website_name": "七点白蛇",
       "website_source_id": "mob-18",
       "zircon_candidate_indexes": [
-        19,
-        277
+        126
       ],
       "zircon_candidate_names": [
         "Tiger Snake",
         "Evil Snake"
       ]
     },
-    "relations": {},
+    "relations": {
+      "candidate_entity_ids": [
+        "monster:zircon:126"
+      ]
+    },
     "resources": {
       "website": {
         "bytes": 43296,
@@ -1824,8 +1853,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Claw_Serpent.png"
       }
     },
     "source_findings": [
@@ -1857,8 +1886,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -1870,22 +1899,29 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 277,
+      "name": "Evil Snake",
+      "image": "Mon_9 shape 0"
+    },
     "id": "monster:website:mob-19",
     "identity": {
       "standard_name_zh": "千年毒蛇",
       "website_name": "千年毒蛇",
       "website_source_id": "mob-19",
       "zircon_candidate_indexes": [
-        19,
-        51
+        277
       ],
       "zircon_candidate_names": [
         "Tiger Snake",
         "Centipede"
       ]
     },
-    "relations": {},
+    "relations": {
+      "candidate_entity_ids": [
+        "monster:zircon:277"
+      ]
+    },
     "resources": {
       "website": {
         "bytes": 41227,
@@ -1899,8 +1935,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Evil_Snake.png"
       }
     },
     "source_findings": [
@@ -2005,8 +2041,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -2018,19 +2054,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 88,
+      "name": "Spiked Beetle",
+      "image": "Mon_7 shape 4"
+    },
     "id": "monster:website:mob-24",
     "identity": {
       "standard_name_zh": "多角虫",
       "website_name": "多角虫",
       "website_source_id": "mob-24",
       "zircon_candidate_indexes": [
-        44
+        88
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:44"
+        "monster:zircon:88"
       ]
     },
     "resources": {
@@ -2046,8 +2086,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Spiked_Beetle.png"
       }
     },
     "source_findings": [
@@ -2079,8 +2119,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -2092,19 +2132,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 88,
+      "name": "Spiked Beetle",
+      "image": "Mon_7 shape 4"
+    },
     "id": "monster:website:mob-25",
     "identity": {
       "standard_name_zh": "巨型多角虫",
       "website_name": "巨型多角虫",
       "website_source_id": "mob-25",
       "zircon_candidate_indexes": [
-        44
+        88
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:44"
+        "monster:zircon:88"
       ]
     },
     "resources": {
@@ -2120,8 +2164,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Spiked_Beetle.png"
       }
     },
     "source_findings": [
@@ -2305,8 +2349,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -2318,19 +2362,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 27,
+      "name": "Skeleton",
+      "image": "Mon_6 shape 6"
+    },
     "id": "monster:website:mob-33",
     "identity": {
       "standard_name_zh": "骷髅精灵",
       "website_name": "骷髅精灵",
       "website_source_id": "mob-33",
       "zircon_candidate_indexes": [
-        30
+        27
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:30"
+        "monster:zircon:27"
       ]
     },
     "resources": {
@@ -2346,8 +2394,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Skeleton.png"
       }
     },
     "source_findings": [
@@ -2455,8 +2503,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -2468,19 +2516,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 61,
+      "name": "Spined Dark Lizard",
+      "image": "Mon_5 shape 6"
+    },
     "id": "monster:website:mob-35",
     "identity": {
       "standard_name_zh": "胞眼虫",
       "website_name": "胞眼虫",
       "website_source_id": "mob-35",
       "zircon_candidate_indexes": [
-        67
+        61
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:67"
+        "monster:zircon:61"
       ]
     },
     "resources": {
@@ -2496,8 +2548,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Spined_Dark_Lizard.png"
       }
     },
     "source_findings": [
@@ -2529,8 +2581,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -2542,19 +2594,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 61,
+      "name": "Spined Dark Lizard",
+      "image": "Mon_5 shape 6"
+    },
     "id": "monster:website:mob-36",
     "identity": {
       "standard_name_zh": "胞眼虫",
       "website_name": "胞眼虫",
       "website_source_id": "mob-36",
       "zircon_candidate_indexes": [
-        67
+        61
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:67"
+        "monster:zircon:61"
       ]
     },
     "resources": {
@@ -2570,8 +2626,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Spined_Dark_Lizard.png"
       }
     },
     "source_findings": [
@@ -2603,8 +2659,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -2616,21 +2672,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 61,
+      "name": "Spined Dark Lizard",
+      "image": "Mon_5 shape 6"
+    },
     "id": "monster:website:mob-37",
     "identity": {
       "standard_name_zh": "多脚虫",
       "website_name": "多脚虫",
       "website_source_id": "mob-37",
       "zircon_candidate_indexes": [
-        88,
-        179
+        61
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:179",
-        "monster:zircon:88"
+        "monster:zircon:61"
       ]
     },
     "resources": {
@@ -2646,8 +2704,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Spined_Dark_Lizard.png"
       }
     },
     "source_findings": [
@@ -2679,8 +2737,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -2692,21 +2750,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 61,
+      "name": "Spined Dark Lizard",
+      "image": "Mon_5 shape 6"
+    },
     "id": "monster:website:mob-38",
     "identity": {
       "standard_name_zh": "多脚虫",
       "website_name": "多脚虫",
       "website_source_id": "mob-38",
       "zircon_candidate_indexes": [
-        88,
-        179
+        61
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:179",
-        "monster:zircon:88"
+        "monster:zircon:61"
       ]
     },
     "resources": {
@@ -2722,8 +2782,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Spined_Dark_Lizard.png"
       }
     },
     "source_findings": [
@@ -3063,8 +3123,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -3076,21 +3136,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 45,
+      "name": "Visceral Worm",
+      "image": "Mon_7 shape 1"
+    },
     "id": "monster:website:mob-48",
     "identity": {
       "standard_name_zh": "沙鬼",
       "website_name": "沙鬼",
       "website_source_id": "mob-48",
       "zircon_candidate_indexes": [
-        93,
-        389
+        45
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:389",
-        "monster:zircon:93"
+        "monster:zircon:45"
       ]
     },
     "resources": {
@@ -3106,8 +3168,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Visceral_Worm.png"
       }
     },
     "source_findings": [
@@ -3139,8 +3201,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -3152,19 +3214,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 93,
+      "name": "Stone Golem",
+      "image": "Mon_1 shape 4"
+    },
     "id": "monster:website:mob-49",
     "identity": {
       "standard_name_zh": "沙漠石人",
       "website_name": "沙漠石人",
       "website_source_id": "mob-49",
       "zircon_candidate_indexes": [
-        291
+        93
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:291"
+        "monster:zircon:93"
       ]
     },
     "resources": {
@@ -3180,8 +3246,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Stone_Golem.png"
       }
     },
     "source_findings": [
@@ -3213,8 +3279,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -3226,19 +3292,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 17,
+      "name": "Carnivorous Plant",
+      "image": "Mon_4 shape 1"
+    },
     "id": "monster:website:mob-50",
     "identity": {
       "standard_name_zh": "沙漠树魔",
       "website_name": "沙漠树魔",
       "website_source_id": "mob-50",
       "zircon_candidate_indexes": [
-        95
+        17
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:95"
+        "monster:zircon:17"
       ]
     },
     "resources": {
@@ -3254,8 +3324,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Carnivorous_Plant.png"
       }
     },
     "source_findings": [
@@ -3518,8 +3588,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -3531,19 +3601,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 390,
+      "name": "Fierce Wind Demon",
+      "image": "Mon_9 shape 7"
+    },
     "id": "monster:website:mob-54",
     "identity": {
       "standard_name_zh": "沙漠风魔",
       "website_name": "沙漠风魔",
       "website_source_id": "mob-54",
       "zircon_candidate_indexes": [
-        292
+        390
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:292"
+        "monster:zircon:390"
       ]
     },
     "resources": {
@@ -3559,8 +3633,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Fierce_Wind_Demon.png"
       }
     },
     "source_findings": [
@@ -3592,8 +3666,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -3605,19 +3679,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 67,
+      "name": "Arachnid Gazer",
+      "image": "Mon_11 shape 6"
+    },
     "id": "monster:website:mob-59",
     "identity": {
       "standard_name_zh": "月魔蜘蛛",
       "website_name": "月魔蜘蛛",
       "website_source_id": "mob-59",
       "zircon_candidate_indexes": [
-        71
+        67
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:71"
+        "monster:zircon:67"
       ]
     },
     "resources": {
@@ -3633,8 +3711,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Arachnid_Gazer.png"
       }
     },
     "source_findings": [
@@ -3741,8 +3819,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -3754,19 +3832,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 72,
+      "name": "Dark Arachnid",
+      "image": "Mon_12 shape 2"
+    },
     "id": "monster:website:mob-60",
     "identity": {
       "standard_name_zh": "独眼蜘蛛",
       "website_name": "独眼蜘蛛",
       "website_source_id": "mob-60",
       "zircon_candidate_indexes": [
-        66
+        72
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:66"
+        "monster:zircon:72"
       ]
     },
     "resources": {
@@ -3782,8 +3864,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Dark_Arachnid.png"
       }
     },
     "source_findings": [
@@ -3815,8 +3897,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -3828,19 +3910,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 71,
+      "name": "Venomous Arachnid",
+      "image": "Mon_12 shape 1"
+    },
     "id": "monster:website:mob-61",
     "identity": {
       "standard_name_zh": "天狼蜘蛛",
       "website_name": "天狼蜘蛛",
       "website_source_id": "mob-61",
       "zircon_candidate_indexes": [
-        303
+        71
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:303"
+        "monster:zircon:71"
       ]
     },
     "resources": {
@@ -3856,8 +3942,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Venomous_Arachnid.png"
       }
     },
     "source_findings": [
@@ -3964,8 +4050,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -3977,19 +4063,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 67,
+      "name": "Arachnid Gazer",
+      "image": "Mon_11 shape 6"
+    },
     "id": "monster:website:mob-63",
     "identity": {
       "standard_name_zh": "爆裂蜘蛛",
       "website_name": "爆裂蜘蛛",
       "website_source_id": "mob-63",
       "zircon_candidate_indexes": [
-        20
+        67
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:20"
+        "monster:zircon:67"
       ]
     },
     "resources": {
@@ -4005,8 +4095,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Arachnid_Gazer.png"
       }
     },
     "source_findings": [
@@ -4038,8 +4128,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -4051,20 +4141,22 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 73,
+      "name": "Arachnid Broodmother",
+      "image": "Mon_12 shape 2"
+    },
     "id": "monster:website:mob-64",
     "identity": {
       "standard_name_zh": "黑角蜘蛛",
       "website_name": "黑角蜘蛛",
       "website_source_id": "mob-64",
       "zircon_candidate_indexes": [
-        72,
         73
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:72",
         "monster:zircon:73"
       ]
     },
@@ -4081,8 +4173,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Arachnid_Broodmother.png"
       }
     },
     "source_findings": [
@@ -4114,8 +4206,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -4127,19 +4219,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 71,
+      "name": "Venomous Arachnid",
+      "image": "Mon_12 shape 1"
+    },
     "id": "monster:website:mob-65",
     "identity": {
       "standard_name_zh": "花色蜘蛛",
       "website_name": "花色蜘蛛",
       "website_source_id": "mob-65",
       "zircon_candidate_indexes": [
-        302
+        71
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:302"
+        "monster:zircon:71"
       ]
     },
     "resources": {
@@ -4155,8 +4251,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Venomous_Arachnid.png"
       }
     },
     "source_findings": [
@@ -4264,8 +4360,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -4277,19 +4373,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 87,
+      "name": "Crazed Warrior",
+      "image": "Mon_16 shape 7"
+    },
     "id": "monster:website:mob-67",
     "identity": {
       "standard_name_zh": "猿猴战士",
       "website_name": "猿猴战士",
       "website_source_id": "mob-67",
       "zircon_candidate_indexes": [
-        274
+        87
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:274"
+        "monster:zircon:87"
       ]
     },
     "resources": {
@@ -4305,8 +4405,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Crazed_Warrior.png"
       }
     },
     "source_findings": [
@@ -4338,8 +4438,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -4351,19 +4451,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 186,
+      "name": "Banyo Warrior",
+      "image": "Mon_1 shape 6"
+    },
     "id": "monster:website:mob-68",
     "identity": {
       "standard_name_zh": "猿猴战将",
       "website_name": "猿猴战将",
       "website_source_id": "mob-68",
       "zircon_candidate_indexes": [
-        274
+        186
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:274"
+        "monster:zircon:186"
       ]
     },
     "resources": {
@@ -4379,8 +4483,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Banyo_Warrior.png"
       }
     },
     "source_findings": [
@@ -4412,8 +4516,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -4425,19 +4529,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 84,
+      "name": "Evil Monkey",
+      "image": "Mon_16 shape 4"
+    },
     "id": "monster:website:mob-69",
     "identity": {
       "standard_name_zh": "魔神怪1",
       "website_name": "魔神怪1",
       "website_source_id": "mob-69",
       "zircon_candidate_indexes": [
-        248
+        84
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:248"
+        "monster:zircon:84"
       ]
     },
     "resources": {
@@ -4453,8 +4561,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Evil_Monkey.png"
       }
     },
     "source_findings": [
@@ -4486,8 +4594,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -4499,19 +4607,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 84,
+      "name": "Evil Monkey",
+      "image": "Mon_16 shape 4"
+    },
     "id": "monster:website:mob-70",
     "identity": {
       "standard_name_zh": "魔神怪2",
       "website_name": "魔神怪2",
       "website_source_id": "mob-70",
       "zircon_candidate_indexes": [
-        245
+        84
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:245"
+        "monster:zircon:84"
       ]
     },
     "resources": {
@@ -4527,8 +4639,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Evil_Monkey.png"
       }
     },
     "source_findings": [
@@ -4636,8 +4748,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -4649,19 +4761,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 84,
+      "name": "Evil Monkey",
+      "image": "Mon_16 shape 4"
+    },
     "id": "monster:website:mob-72",
     "identity": {
       "standard_name_zh": "疯狂魔神盗1",
       "website_name": "疯狂魔神盗1",
       "website_source_id": "mob-72",
       "zircon_candidate_indexes": [
-        245
+        84
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:245"
+        "monster:zircon:84"
       ]
     },
     "resources": {
@@ -4677,8 +4793,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Evil_Monkey.png"
       }
     },
     "source_findings": [
@@ -4786,8 +4902,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -4799,7 +4915,11 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 38,
+      "name": "Ant Soldier",
+      "image": "Mon_2 shape 4"
+    },
     "id": "monster:website:mob-77",
     "identity": {
       "standard_name_zh": "劳动蚂蚁",
@@ -4827,8 +4947,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Ant_Soldier.png"
       }
     },
     "source_findings": [
@@ -4860,8 +4980,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -4873,20 +4993,22 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 42,
+      "name": "Ant Commander",
+      "image": "Mon_1 shape 8"
+    },
     "id": "monster:website:mob-78",
     "identity": {
       "standard_name_zh": "蚂蚁战士",
       "website_name": "蚂蚁战士",
       "website_source_id": "mob-78",
       "zircon_candidate_indexes": [
-        41,
         42
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:41",
         "monster:zircon:42"
       ]
     },
@@ -4903,8 +5025,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Ant_Commander.png"
       }
     },
     "source_findings": [
@@ -4936,8 +5058,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -4949,19 +5071,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 38,
+      "name": "Ant Soldier",
+      "image": "Mon_2 shape 4"
+    },
     "id": "monster:website:mob-79",
     "identity": {
       "standard_name_zh": "爆毒蚂蚁",
       "website_name": "爆毒蚂蚁",
       "website_source_id": "mob-79",
       "zircon_candidate_indexes": [
-        40
+        38
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:40"
+        "monster:zircon:38"
       ]
     },
     "resources": {
@@ -4977,8 +5103,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Ant_Soldier.png"
       }
     },
     "source_findings": [
@@ -5385,8 +5511,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -5398,22 +5524,22 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 51,
+      "name": "Centipede",
+      "image": "Mon_7 shape 6"
+    },
     "id": "monster:website:mob-84",
     "identity": {
       "standard_name_zh": "蜈蚣",
       "website_name": "蜈蚣",
       "website_source_id": "mob-84",
       "zircon_candidate_indexes": [
-        51,
-        183,
-        381
+        51
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:183",
-        "monster:zircon:381",
         "monster:zircon:51"
       ]
     },
@@ -5430,8 +5556,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Centipede.png"
       }
     },
     "source_findings": [
@@ -5463,8 +5589,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -5476,22 +5602,22 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 51,
+      "name": "Centipede",
+      "image": "Mon_7 shape 6"
+    },
     "id": "monster:website:mob-85",
     "identity": {
       "standard_name_zh": "沃毒蜈蚣",
       "website_name": "沃毒蜈蚣",
       "website_source_id": "mob-85",
       "zircon_candidate_indexes": [
-        51,
-        183,
-        381
+        51
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:183",
-        "monster:zircon:381",
         "monster:zircon:51"
       ]
     },
@@ -5508,8 +5634,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Centipede.png"
       }
     },
     "source_findings": [
@@ -5541,8 +5667,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -5554,23 +5680,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 31,
+      "name": "Cave Maggot",
+      "image": "Mon_4 shape 7"
+    },
     "id": "monster:website:mob-86",
     "identity": {
       "standard_name_zh": "洞穴蜈蚣",
       "website_name": "洞穴蜈蚣",
       "website_source_id": "mob-86",
       "zircon_candidate_indexes": [
-        51,
-        183,
-        381
+        31
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:183",
-        "monster:zircon:381",
-        "monster:zircon:51"
+        "monster:zircon:31"
       ]
     },
     "resources": {
@@ -5586,8 +5712,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Cave_Maggot.png"
       }
     },
     "source_findings": [
@@ -5697,8 +5823,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -5710,20 +5836,22 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 88,
+      "name": "Spiked Beetle",
+      "image": "Mon_7 shape 4"
+    },
     "id": "monster:website:mob-88",
     "identity": {
       "standard_name_zh": "钳虫",
       "website_name": "钳虫",
       "website_source_id": "mob-88",
       "zircon_candidate_indexes": [
-        88,
-        179
+        88
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:179",
         "monster:zircon:88"
       ]
     },
@@ -5740,8 +5868,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Spiked_Beetle.png"
       }
     },
     "source_findings": [
@@ -5773,8 +5901,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -5786,20 +5914,22 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 88,
+      "name": "Spiked Beetle",
+      "image": "Mon_7 shape 4"
+    },
     "id": "monster:website:mob-89",
     "identity": {
       "standard_name_zh": "白眼钳虫",
       "website_name": "白眼钳虫",
       "website_source_id": "mob-89",
       "zircon_candidate_indexes": [
-        88,
-        179
+        88
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:179",
         "monster:zircon:88"
       ]
     },
@@ -5816,8 +5946,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Spiked_Beetle.png"
       }
     },
     "source_findings": [
@@ -5849,8 +5979,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -5862,20 +5992,22 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 88,
+      "name": "Spiked Beetle",
+      "image": "Mon_7 shape 4"
+    },
     "id": "monster:website:mob-90",
     "identity": {
       "standard_name_zh": "沃角钳虫",
       "website_name": "沃角钳虫",
       "website_source_id": "mob-90",
       "zircon_candidate_indexes": [
-        88,
-        179
+        88
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:179",
         "monster:zircon:88"
       ]
     },
@@ -5892,8 +6024,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Spiked_Beetle.png"
       }
     },
     "source_findings": [
@@ -5925,8 +6057,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -5938,20 +6070,22 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 88,
+      "name": "Spiked Beetle",
+      "image": "Mon_7 shape 4"
+    },
     "id": "monster:website:mob-91",
     "identity": {
       "standard_name_zh": "青铜钳虫",
       "website_name": "青铜钳虫",
       "website_source_id": "mob-91",
       "zircon_candidate_indexes": [
-        88,
-        179
+        88
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:179",
         "monster:zircon:88"
       ]
     },
@@ -5968,8 +6102,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Spiked_Beetle.png"
       }
     },
     "source_findings": [
@@ -6075,8 +6209,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -6088,7 +6222,11 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 53,
+      "name": "Mutant Maggot",
+      "image": "Mon_7 shape 8"
+    },
     "id": "monster:website:mob-93",
     "identity": {
       "standard_name_zh": "黑色恶蛆",
@@ -6116,8 +6254,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Mutant_Maggot.png"
       }
     },
     "source_findings": [
@@ -6149,8 +6287,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -6162,7 +6300,11 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 53,
+      "name": "Mutant Maggot",
+      "image": "Mon_7 shape 8"
+    },
     "id": "monster:website:mob-94",
     "identity": {
       "standard_name_zh": "白月黑色恶蛆",
@@ -6190,8 +6332,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Mutant_Maggot.png"
       }
     },
     "source_findings": [
@@ -6223,8 +6365,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -6236,7 +6378,11 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 53,
+      "name": "Mutant Maggot",
+      "image": "Mon_7 shape 8"
+    },
     "id": "monster:website:mob-95",
     "identity": {
       "standard_name_zh": "金刚黑色恶蛆",
@@ -6264,8 +6410,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Mutant_Maggot.png"
       }
     },
     "source_findings": [
@@ -6447,8 +6593,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -6460,23 +6606,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 421,
+      "name": "Otherworld Tentacle Demon",
+      "image": "Mon_20 shape 7"
+    },
     "id": "monster:website:mob-98",
     "identity": {
       "standard_name_zh": "触龙神",
       "website_name": "触龙神",
       "website_source_id": "mob-98",
       "zircon_candidate_indexes": [
-        51,
-        183,
-        381
+        421
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:183",
-        "monster:zircon:381",
-        "monster:zircon:51"
+        "monster:zircon:421"
       ]
     },
     "resources": {
@@ -6492,8 +6638,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Otherworld_Tentacle_Demon.png"
       }
     },
     "source_findings": [
@@ -6525,8 +6671,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -6538,21 +6684,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 125,
+      "name": "Red Boar",
+      "image": "Mon_8 shape 6"
+    },
     "id": "monster:website:mob-99",
     "identity": {
       "standard_name_zh": "赤黄猪王",
       "website_name": "赤黄猪王",
       "website_source_id": "mob-99",
       "zircon_candidate_indexes": [
-        127,
-        394
+        125
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:127",
-        "monster:zircon:394"
+        "monster:zircon:125"
       ]
     },
     "resources": {
@@ -6568,8 +6716,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Red_Boar.png"
       }
     },
     "source_findings": [
@@ -6631,7 +6779,10 @@
     },
     "source_findings": [
       "web-audit:monster:156"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -6883,7 +7034,10 @@
     },
     "source_findings": [
       "web-audit:monster:209"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -7000,7 +7154,10 @@
     },
     "source_findings": [
       "web-audit:monster:210"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -7146,7 +7303,10 @@
     },
     "source_findings": [
       "web-audit:monster:211"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -7251,7 +7411,10 @@
     },
     "source_findings": [
       "web-audit:monster:212"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -7364,7 +7527,10 @@
     },
     "source_findings": [
       "web-audit:monster:213"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -7510,7 +7676,10 @@
     },
     "source_findings": [
       "web-audit:monster:214"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -7651,7 +7820,10 @@
     },
     "source_findings": [
       "web-audit:monster:215"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -7764,7 +7936,10 @@
     },
     "source_findings": [
       "web-audit:monster:216"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -7881,7 +8056,10 @@
     },
     "source_findings": [
       "web-audit:monster:217"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -7998,7 +8176,10 @@
     },
     "source_findings": [
       "web-audit:monster:218"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -8250,7 +8431,10 @@
     },
     "source_findings": [
       "web-audit:monster:219"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -8367,7 +8551,10 @@
     },
     "source_findings": [
       "web-audit:monster:220"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -8484,7 +8671,10 @@
     },
     "source_findings": [
       "web-audit:monster:221"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -8764,7 +8954,10 @@
     },
     "source_findings": [
       "web-audit:monster:222"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -9276,7 +9469,10 @@
     },
     "source_findings": [
       "web-audit:monster:223"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -9375,7 +9571,10 @@
     },
     "source_findings": [
       "web-audit:monster:224"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -9556,7 +9755,10 @@
     },
     "source_findings": [
       "web-audit:monster:225"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -10104,7 +10306,10 @@
     },
     "source_findings": [
       "web-audit:monster:226"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -10181,7 +10386,10 @@
     },
     "source_findings": [
       "web-audit:monster:227"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -10913,7 +11121,10 @@
     },
     "source_findings": [
       "web-audit:monster:228"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -11036,7 +11247,10 @@
     },
     "source_findings": [
       "web-audit:monster:229"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -11063,8 +11277,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "未完成人工复核；来源事实保留，不自动修正。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -11081,64 +11295,9 @@
       }
     ],
     "game_data": {
-      "AI": 0,
-      "AttackDelay": 2500,
-      "CanPush": true,
-      "CanTame": false,
-      "CoolEye": 0,
-      "Experience": 39,
-      "FaceImage": 0,
-      "Flag": "None",
-      "Image": "ClawCat",
-      "IsBoss": false,
-      "Level": 10,
-      "MoveDelay": 1500,
-      "QuestDetails": [
-        {
-          "Index": 74,
-          "Name": null
-        },
-        {
-          "Index": 75,
-          "Name": null
-        },
-        {
-          "Index": 76,
-          "Name": null
-        }
-      ],
-      "Stats": [
-        {
-          "Stat": "Health",
-          "Value": 20
-        },
-        {
-          "Stat": "MinMR",
-          "Value": 2
-        },
-        {
-          "Stat": "MaxMR",
-          "Value": 2
-        },
-        {
-          "Stat": "MinDC",
-          "Value": 3
-        },
-        {
-          "Stat": "MaxDC",
-          "Value": 6
-        },
-        {
-          "Stat": "Accuracy",
-          "Value": 11
-        },
-        {
-          "Stat": "Agility",
-          "Value": 9
-        }
-      ],
-      "Undead": false,
-      "ViewRange": 9
+      "index": 13,
+      "name": "Claw Cat",
+      "image": "Mon_4 shape 8"
     },
     "id": "monster:zircon:13",
     "identity": {
@@ -11161,9 +11320,16 @@
       "website_name": "多钩猫",
       "website_source_id": "mob-7",
       "zircon_index": 13,
-      "zircon_internal_name": "Claw Cat"
+      "zircon_internal_name": "Claw Cat",
+      "zircon_candidate_indexes": [
+        13
+      ]
     },
-    "relations": {},
+    "relations": {
+      "candidate_entity_ids": [
+        "monster:zircon:13"
+      ]
+    },
     "resources": {
       "website": {
         "bytes": 6225,
@@ -11177,10 +11343,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "face": 0,
-        "resource_name": "ClawCat",
-        "verification": "not-verified-by-resource-probe"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Claw_Cat.png"
       }
     },
     "source_findings": [
@@ -11302,7 +11466,10 @@
     },
     "source_findings": [
       "web-audit:monster:230"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -11427,7 +11594,10 @@
     },
     "source_findings": [
       "web-audit:monster:231"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -11544,7 +11714,10 @@
     },
     "source_findings": [
       "web-audit:monster:232"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -11661,7 +11834,10 @@
     },
     "source_findings": [
       "web-audit:monster:233"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -11778,7 +11954,10 @@
     },
     "source_findings": [
       "web-audit:monster:234"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -11895,7 +12074,10 @@
     },
     "source_findings": [
       "web-audit:monster:235"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -12012,7 +12194,10 @@
     },
     "source_findings": [
       "web-audit:monster:236"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -12129,7 +12314,10 @@
     },
     "source_findings": [
       "web-audit:monster:237"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -12254,7 +12442,10 @@
     },
     "source_findings": [
       "web-audit:monster:238"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -12371,7 +12562,10 @@
     },
     "source_findings": [
       "web-audit:monster:239"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -12581,7 +12775,10 @@
     },
     "source_findings": [
       "web-audit:monster:240"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -12666,7 +12863,10 @@
     },
     "source_findings": [
       "web-audit:monster:241"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -12751,7 +12951,10 @@
     },
     "source_findings": [
       "web-audit:monster:242"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -12836,7 +13039,10 @@
     },
     "source_findings": [
       "web-audit:monster:243"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -12953,7 +13159,10 @@
     },
     "source_findings": [
       "web-audit:monster:244"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -13070,7 +13279,10 @@
     },
     "source_findings": [
       "web-audit:monster:245"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -13187,7 +13399,10 @@
     },
     "source_findings": [
       "web-audit:monster:246"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -13346,7 +13561,10 @@
     },
     "source_findings": [
       "web-audit:monster:247"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -13542,7 +13760,10 @@
     },
     "source_findings": [
       "web-audit:monster:248"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -13655,7 +13876,10 @@
     },
     "source_findings": [
       "web-audit:monster:249"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -13831,7 +14055,10 @@
     },
     "source_findings": [
       "web-audit:monster:250"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -13956,7 +14183,10 @@
     },
     "source_findings": [
       "web-audit:monster:251"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -14073,7 +14303,10 @@
     },
     "source_findings": [
       "web-audit:monster:252"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -14190,7 +14423,10 @@
     },
     "source_findings": [
       "web-audit:monster:253"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -14307,7 +14543,10 @@
     },
     "source_findings": [
       "web-audit:monster:254"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -14424,7 +14663,10 @@
     },
     "source_findings": [
       "web-audit:monster:255"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -14541,7 +14783,10 @@
     },
     "source_findings": [
       "web-audit:monster:256"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -14658,7 +14903,10 @@
     },
     "source_findings": [
       "web-audit:monster:257"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -14733,7 +14981,10 @@
     },
     "source_findings": [
       "web-audit:monster:157"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -14882,7 +15133,10 @@
     },
     "source_findings": [
       "web-audit:monster:258"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -14995,7 +15249,10 @@
     },
     "source_findings": [
       "web-audit:monster:259"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -15112,7 +15369,10 @@
     },
     "source_findings": [
       "web-audit:monster:260"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -15225,7 +15485,10 @@
     },
     "source_findings": [
       "web-audit:monster:261"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -15374,7 +15637,10 @@
     },
     "source_findings": [
       "web-audit:monster:262"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -15401,8 +15667,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "未完成人工复核；来源事实保留，不自动修正。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -15419,86 +15685,9 @@
       }
     ],
     "game_data": {
-      "AI": 64,
-      "AttackDelay": 1300,
-      "CanPush": true,
-      "CanTame": false,
-      "CoolEye": 60,
-      "Experience": 33930,
-      "FaceImage": 0,
-      "Flag": "None",
-      "Image": "NumaArmoredSoldier",
-      "IsBoss": false,
-      "Level": 72,
-      "MoveDelay": 1000,
-      "Stats": [
-        {
-          "Stat": "Health",
-          "Value": 2000
-        },
-        {
-          "Stat": "MinAC",
-          "Value": 12
-        },
-        {
-          "Stat": "MaxAC",
-          "Value": 12
-        },
-        {
-          "Stat": "MinMR",
-          "Value": 27
-        },
-        {
-          "Stat": "MaxMR",
-          "Value": 27
-        },
-        {
-          "Stat": "MinDC",
-          "Value": 75
-        },
-        {
-          "Stat": "MaxDC",
-          "Value": 100
-        },
-        {
-          "Stat": "Accuracy",
-          "Value": 22
-        },
-        {
-          "Stat": "Agility",
-          "Value": 18
-        },
-        {
-          "Stat": "FireResistance",
-          "Value": 2
-        },
-        {
-          "Stat": "IceResistance",
-          "Value": 3
-        },
-        {
-          "Stat": "LightningResistance",
-          "Value": 1
-        },
-        {
-          "Stat": "WindResistance",
-          "Value": -2
-        },
-        {
-          "Stat": "HolyResistance",
-          "Value": -4
-        },
-        {
-          "Stat": "DarkResistance",
-          "Value": 5
-        },
-        {
-          "Stat": "PhantomResistance",
-          "Value": -3
-        }
-      ],
-      "Undead": false,
-      "ViewRange": 10
+      "index": 89,
+      "name": "Numa Grunt",
+      "image": "Mon_13 shape 8"
     },
     "id": "monster:zircon:165",
     "identity": {
@@ -15521,9 +15710,16 @@
       "website_name": "诺玛将士",
       "website_source_id": "mob-56",
       "zircon_index": 165,
-      "zircon_internal_name": "Numa Armored Soldier"
+      "zircon_internal_name": "Numa Armored Soldier",
+      "zircon_candidate_indexes": [
+        89
+      ]
     },
-    "relations": {},
+    "relations": {
+      "candidate_entity_ids": [
+        "monster:zircon:89"
+      ]
+    },
     "resources": {
       "website": {
         "bytes": 5388,
@@ -15537,10 +15733,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "face": 0,
-        "resource_name": "NumaArmoredSoldier",
-        "verification": "not-verified-by-resource-probe"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Numa_Grunt.png"
       }
     },
     "source_findings": [
@@ -15572,8 +15766,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "未完成人工复核；来源事实保留，不自动修正。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -15590,90 +15784,9 @@
       }
     ],
     "game_data": {
-      "AI": 48,
-      "AttackDelay": 1600,
-      "CanPush": true,
-      "CanTame": false,
-      "CoolEye": 100,
-      "Experience": 370500,
-      "FaceImage": 0,
-      "Flag": "None",
-      "Image": "NumaRoyalGuard",
-      "IsBoss": true,
-      "Level": 72,
-      "MoveDelay": 700,
-      "Stats": [
-        {
-          "Stat": "Health",
-          "Value": 7700
-        },
-        {
-          "Stat": "MinAC",
-          "Value": 53
-        },
-        {
-          "Stat": "MaxAC",
-          "Value": 53
-        },
-        {
-          "Stat": "MinMR",
-          "Value": 70
-        },
-        {
-          "Stat": "MaxMR",
-          "Value": 70
-        },
-        {
-          "Stat": "MinDC",
-          "Value": 138
-        },
-        {
-          "Stat": "MaxDC",
-          "Value": 238
-        },
-        {
-          "Stat": "Accuracy",
-          "Value": 25
-        },
-        {
-          "Stat": "Agility",
-          "Value": 23
-        },
-        {
-          "Stat": "FireResistance",
-          "Value": 4
-        },
-        {
-          "Stat": "IceResistance",
-          "Value": 4
-        },
-        {
-          "Stat": "LightningResistance",
-          "Value": 4
-        },
-        {
-          "Stat": "WindResistance",
-          "Value": 3
-        },
-        {
-          "Stat": "HolyResistance",
-          "Value": 3
-        },
-        {
-          "Stat": "DarkResistance",
-          "Value": 4
-        },
-        {
-          "Stat": "PhantomResistance",
-          "Value": 4
-        },
-        {
-          "Stat": "FireAffinity",
-          "Value": 1
-        }
-      ],
-      "Undead": false,
-      "ViewRange": 10
+      "index": 164,
+      "name": "Numa Royal Guard",
+      "image": "Mon_19 shape 5"
     },
     "id": "monster:zircon:166",
     "identity": {
@@ -15722,11 +15835,14 @@
       "website_name": "诺玛法老",
       "website_source_id": "mob-57",
       "zircon_index": 166,
-      "zircon_internal_name": "Numa Assault Captain"
+      "zircon_internal_name": "Numa Assault Captain",
+      "zircon_candidate_indexes": [
+        164
+      ]
     },
     "relations": {
-      "conflict_counterparts": [
-        "monster:website:mob-149"
+      "candidate_entity_ids": [
+        "monster:zircon:164"
       ]
     },
     "resources": {
@@ -15742,10 +15858,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "face": 0,
-        "resource_name": "NumaRoyalGuard",
-        "verification": "not-verified-by-resource-probe"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Numa_Royal_Guard.png"
       }
     },
     "source_findings": [
@@ -15867,7 +15981,10 @@
     },
     "source_findings": [
       "web-audit:monster:263"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -15980,7 +16097,10 @@
     },
     "source_findings": [
       "web-audit:monster:264"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -16089,7 +16209,10 @@
     },
     "source_findings": [
       "web-audit:monster:265"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -16333,7 +16456,10 @@
     },
     "source_findings": [
       "web-audit:monster:266"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -16454,7 +16580,10 @@
     },
     "source_findings": [
       "web-audit:monster:267"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -16559,7 +16688,10 @@
     },
     "source_findings": [
       "web-audit:monster:268"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -16672,7 +16804,10 @@
     },
     "source_findings": [
       "web-audit:monster:269"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -16793,7 +16928,10 @@
     },
     "source_findings": [
       "web-audit:monster:270"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -16906,7 +17044,10 @@
     },
     "source_findings": [
       "web-audit:monster:271"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -17019,7 +17160,10 @@
     },
     "source_findings": [
       "web-audit:monster:272"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -17066,7 +17210,10 @@
     },
     "source_findings": [
       "web-audit:monster:273"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -17187,7 +17334,10 @@
     },
     "source_findings": [
       "web-audit:monster:274"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -17466,7 +17616,10 @@
     },
     "source_findings": [
       "web-audit:monster:275"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -17718,7 +17871,10 @@
     },
     "source_findings": [
       "web-audit:monster:276"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -17831,7 +17987,10 @@
     },
     "source_findings": [
       "web-audit:monster:277"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -17944,7 +18103,10 @@
     },
     "source_findings": [
       "web-audit:monster:278"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -18202,7 +18364,10 @@
     },
     "source_findings": [
       "web-audit:monster:279"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -18327,7 +18492,10 @@
     },
     "source_findings": [
       "web-audit:monster:280"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -18472,7 +18640,10 @@
     },
     "source_findings": [
       "web-audit:monster:281"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -18813,7 +18984,10 @@
     },
     "source_findings": [
       "web-audit:monster:282"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -18962,7 +19136,10 @@
     },
     "source_findings": [
       "web-audit:monster:283"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -19019,7 +19196,10 @@
     },
     "source_findings": [
       "web-audit:monster:284"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -19046,8 +19226,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "未完成人工复核；来源事实保留，不自动修正。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -19068,50 +19248,9 @@
       }
     ],
     "game_data": {
-      "AI": 0,
-      "AttackDelay": 2300,
-      "CanPush": true,
-      "CanTame": false,
-      "CoolEye": 0,
-      "Experience": 156,
-      "FaceImage": 0,
-      "Flag": "None",
-      "Image": "TigerSnake",
-      "IsBoss": false,
-      "Level": 15,
-      "MoveDelay": 1300,
-      "Stats": [
-        {
-          "Stat": "Health",
-          "Value": 70
-        },
-        {
-          "Stat": "MinMR",
-          "Value": 4
-        },
-        {
-          "Stat": "MaxMR",
-          "Value": 4
-        },
-        {
-          "Stat": "MinDC",
-          "Value": 3
-        },
-        {
-          "Stat": "MaxDC",
-          "Value": 15
-        },
-        {
-          "Stat": "Accuracy",
-          "Value": 13
-        },
-        {
-          "Stat": "Agility",
-          "Value": 11
-        }
-      ],
-      "Undead": false,
-      "ViewRange": 9
+      "index": 19,
+      "name": "Tiger Snake",
+      "image": "Mon_6 shape 7"
     },
     "id": "monster:zircon:19",
     "identity": {
@@ -19171,11 +19310,15 @@
         "mob-17"
       ],
       "zircon_index": 19,
-      "zircon_internal_name": "Tiger Snake"
+      "zircon_internal_name": "Tiger Snake",
+      "zircon_candidate_indexes": [
+        19
+      ],
+      "standard_name_zh": "红蛇"
     },
     "relations": {
-      "conflict_counterparts": [
-        "monster:website:mob-100"
+      "candidate_entity_ids": [
+        "monster:zircon:19"
       ]
     },
     "resources": {
@@ -19191,10 +19334,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "face": 0,
-        "resource_name": "TigerSnake",
-        "verification": "not-verified-by-resource-probe"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Tiger_Snake.png"
       }
     },
     "source_findings": [
@@ -19257,7 +19398,10 @@
     },
     "source_findings": [
       "web-audit:monster:285"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -19314,7 +19458,10 @@
     },
     "source_findings": [
       "web-audit:monster:286"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -19371,7 +19518,10 @@
     },
     "source_findings": [
       "web-audit:monster:287"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -19428,7 +19578,10 @@
     },
     "source_findings": [
       "web-audit:monster:288"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -19485,7 +19638,10 @@
     },
     "source_findings": [
       "web-audit:monster:289"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -19542,7 +19698,10 @@
     },
     "source_findings": [
       "web-audit:monster:290"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -19595,7 +19754,10 @@
     },
     "source_findings": [
       "web-audit:monster:291"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -19652,7 +19814,10 @@
     },
     "source_findings": [
       "web-audit:monster:292"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -19709,7 +19874,10 @@
     },
     "source_findings": [
       "web-audit:monster:293"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -19826,7 +19994,10 @@
     },
     "source_findings": [
       "web-audit:monster:294"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -19853,8 +20024,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "未完成人工复核；来源事实保留，不自动修正。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -19871,68 +20042,9 @@
       }
     ],
     "game_data": {
-      "AI": 6,
-      "AttackDelay": 2500,
-      "CanPush": true,
-      "CanTame": false,
-      "CoolEye": 0,
-      "Experience": 44,
-      "FaceImage": 0,
-      "Flag": "None",
-      "Image": "SpittingSpider",
-      "IsBoss": false,
-      "Level": 10,
-      "MoveDelay": 1000,
-      "QuestDetails": [
-        {
-          "Index": 24,
-          "Name": null
-        }
-      ],
-      "Stats": [
-        {
-          "Stat": "Health",
-          "Value": 22
-        },
-        {
-          "Stat": "MinMR",
-          "Value": 2
-        },
-        {
-          "Stat": "MaxMR",
-          "Value": 2
-        },
-        {
-          "Stat": "MinDC",
-          "Value": 2
-        },
-        {
-          "Stat": "MaxDC",
-          "Value": 9
-        },
-        {
-          "Stat": "MinSC",
-          "Value": 2
-        },
-        {
-          "Stat": "MaxSC",
-          "Value": 5
-        },
-        {
-          "Stat": "Accuracy",
-          "Value": 11
-        },
-        {
-          "Stat": "Agility",
-          "Value": 9
-        },
-        {
-          "Stat": "DarkAffinity",
-          "Value": 1
-        }
-      ],
-      "Undead": false,
-      "ViewRange": 9
+      "index": 71,
+      "name": "Venomous Arachnid",
+      "image": "Mon_12 shape 1"
     },
     "id": "monster:zircon:20",
     "identity": {
@@ -19980,11 +20092,14 @@
       "website_name": "毒蜘蛛",
       "website_source_id": "mob-10",
       "zircon_index": 20,
-      "zircon_internal_name": "Spitting Spider"
+      "zircon_internal_name": "Spitting Spider",
+      "zircon_candidate_indexes": [
+        71
+      ]
     },
     "relations": {
-      "conflict_counterparts": [
-        "monster:website:mob-63"
+      "candidate_entity_ids": [
+        "monster:zircon:71"
       ]
     },
     "resources": {
@@ -20000,10 +20115,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "face": 0,
-        "resource_name": "SpittingSpider",
-        "verification": "not-verified-by-resource-probe"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Venomous_Arachnid.png"
       }
     },
     "source_findings": [
@@ -20125,7 +20238,10 @@
     },
     "source_findings": [
       "web-audit:monster:295"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -20242,7 +20358,10 @@
     },
     "source_findings": [
       "web-audit:monster:296"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -20355,7 +20474,10 @@
     },
     "source_findings": [
       "web-audit:monster:297"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -20472,7 +20594,10 @@
     },
     "source_findings": [
       "web-audit:monster:298"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -20589,7 +20714,10 @@
     },
     "source_findings": [
       "web-audit:monster:299"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -20698,7 +20826,10 @@
     },
     "source_findings": [
       "web-audit:monster:300"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -20811,7 +20942,10 @@
     },
     "source_findings": [
       "web-audit:monster:301"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -20928,7 +21062,10 @@
     },
     "source_findings": [
       "web-audit:monster:302"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -21041,7 +21178,10 @@
     },
     "source_findings": [
       "web-audit:monster:303"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -21158,7 +21298,10 @@
     },
     "source_findings": [
       "web-audit:monster:304"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -21416,7 +21559,10 @@
     },
     "source_findings": [
       "web-audit:monster:305"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -21533,7 +21679,10 @@
     },
     "source_findings": [
       "web-audit:monster:306"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -21646,7 +21795,10 @@
     },
     "source_findings": [
       "web-audit:monster:307"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -21763,7 +21915,10 @@
     },
     "source_findings": [
       "web-audit:monster:308"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -21880,7 +22035,10 @@
     },
     "source_findings": [
       "web-audit:monster:309"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -21993,7 +22151,10 @@
     },
     "source_findings": [
       "web-audit:monster:310"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -22106,7 +22267,10 @@
     },
     "source_findings": [
       "web-audit:monster:311"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -22219,7 +22383,10 @@
     },
     "source_findings": [
       "web-audit:monster:312"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -22336,7 +22503,10 @@
     },
     "source_findings": [
       "web-audit:monster:313"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -22544,7 +22714,10 @@
     },
     "source_findings": [
       "web-audit:monster:314"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -22714,7 +22887,10 @@
     },
     "source_findings": [
       "web-audit:monster:315"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -22819,7 +22995,10 @@
     },
     "source_findings": [
       "web-audit:monster:316"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -22985,7 +23164,10 @@
     },
     "source_findings": [
       "web-audit:monster:317"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -23090,7 +23272,10 @@
     },
     "source_findings": [
       "web-audit:monster:318"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -23199,7 +23384,10 @@
     },
     "source_findings": [
       "web-audit:monster:319"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -23308,7 +23496,10 @@
     },
     "source_findings": [
       "web-audit:monster:320"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -23417,7 +23608,10 @@
     },
     "source_findings": [
       "web-audit:monster:321"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -23522,7 +23716,10 @@
     },
     "source_findings": [
       "web-audit:monster:322"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -23639,7 +23836,10 @@
     },
     "source_findings": [
       "web-audit:monster:323"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -23899,7 +24099,10 @@
     },
     "source_findings": [
       "web-audit:monster:324"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -24016,7 +24219,10 @@
     },
     "source_findings": [
       "web-audit:monster:325"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -24133,7 +24339,10 @@
     },
     "source_findings": [
       "web-audit:monster:326"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -24246,7 +24455,10 @@
     },
     "source_findings": [
       "web-audit:monster:327"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -24273,8 +24485,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "未完成人工复核；来源事实保留，不自动修正。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -24295,50 +24507,9 @@
       }
     ],
     "game_data": {
-      "AI": 0,
-      "AttackDelay": 2500,
-      "CanPush": true,
-      "CanTame": false,
-      "CoolEye": 0,
-      "Experience": 234,
-      "FaceImage": 0,
-      "Flag": "None",
-      "Image": "CaveBat",
-      "IsBoss": false,
-      "Level": 18,
-      "MoveDelay": 1500,
-      "Stats": [
-        {
-          "Stat": "Health",
-          "Value": 90
-        },
-        {
-          "Stat": "MinMR",
-          "Value": 5
-        },
-        {
-          "Stat": "MaxMR",
-          "Value": 5
-        },
-        {
-          "Stat": "MinDC",
-          "Value": 10
-        },
-        {
-          "Stat": "MaxDC",
-          "Value": 18
-        },
-        {
-          "Stat": "Accuracy",
-          "Value": 14
-        },
-        {
-          "Stat": "Agility",
-          "Value": 12
-        }
-      ],
-      "Undead": false,
-      "ViewRange": 9
+      "index": 24,
+      "name": "Cave Bat",
+      "image": "Mon_3 shape 9"
     },
     "id": "monster:zircon:24",
     "identity": {
@@ -24372,9 +24543,17 @@
         "mob-104"
       ],
       "zircon_index": 24,
-      "zircon_internal_name": "Cave Bat"
+      "zircon_internal_name": "Cave Bat",
+      "zircon_candidate_indexes": [
+        24
+      ],
+      "standard_name_zh": "山洞蝙蝠"
     },
-    "relations": {},
+    "relations": {
+      "candidate_entity_ids": [
+        "monster:zircon:24"
+      ]
+    },
     "resources": {
       "website": {
         "bytes": 5551,
@@ -24388,10 +24567,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "face": 0,
-        "resource_name": "CaveBat",
-        "verification": "not-verified-by-resource-probe"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Cave_Bat.png"
       }
     },
     "source_findings": [
@@ -24506,7 +24683,10 @@
     },
     "source_findings": [
       "web-audit:monster:328"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -24648,7 +24828,10 @@
     },
     "source_findings": [
       "web-audit:monster:329"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -24737,7 +24920,10 @@
     },
     "source_findings": [
       "web-audit:monster:330"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -24857,7 +25043,10 @@
     },
     "source_findings": [
       "web-audit:monster:331"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -24942,7 +25131,10 @@
     },
     "source_findings": [
       "web-audit:monster:332"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -25162,7 +25354,10 @@
     },
     "source_findings": [
       "web-audit:monster:333"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -25247,7 +25442,10 @@
     },
     "source_findings": [
       "web-audit:monster:334"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -25363,7 +25561,10 @@
     },
     "source_findings": [
       "web-audit:monster:335"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -25480,7 +25681,10 @@
     },
     "source_findings": [
       "web-audit:monster:336"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -25597,7 +25801,10 @@
     },
     "source_findings": [
       "web-audit:monster:337"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -25714,7 +25921,10 @@
     },
     "source_findings": [
       "web-audit:monster:338"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -25831,7 +26041,10 @@
     },
     "source_findings": [
       "web-audit:monster:339"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -25892,7 +26105,10 @@
     },
     "source_findings": [
       "web-audit:monster:340"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -26005,7 +26221,10 @@
     },
     "source_findings": [
       "web-audit:monster:341"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -26120,7 +26339,10 @@
     },
     "source_findings": [
       "web-audit:monster:158"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -26237,7 +26459,10 @@
     },
     "source_findings": [
       "web-audit:monster:342"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -26290,7 +26515,10 @@
     },
     "source_findings": [
       "web-audit:monster:343"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -26343,7 +26571,10 @@
     },
     "source_findings": [
       "web-audit:monster:344"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -26396,7 +26627,10 @@
     },
     "source_findings": [
       "web-audit:monster:345"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -26497,7 +26731,10 @@
     },
     "source_findings": [
       "web-audit:monster:346"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -26602,7 +26839,10 @@
     },
     "source_findings": [
       "web-audit:monster:347"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -26707,7 +26947,10 @@
     },
     "source_findings": [
       "web-audit:monster:348"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -26812,7 +27055,10 @@
     },
     "source_findings": [
       "web-audit:monster:349"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -26913,7 +27159,10 @@
     },
     "source_findings": [
       "web-audit:monster:350"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -27014,7 +27263,10 @@
     },
     "source_findings": [
       "web-audit:monster:351"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -27260,7 +27512,10 @@
     },
     "source_findings": [
       "web-audit:monster:352"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -27307,7 +27562,10 @@
     },
     "source_findings": [
       "web-audit:monster:353"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -27432,7 +27690,10 @@
     },
     "source_findings": [
       "web-audit:monster:354"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -27569,7 +27830,10 @@
     },
     "source_findings": [
       "web-audit:monster:355"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -27731,7 +27995,10 @@
     },
     "source_findings": [
       "web-audit:monster:356"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -27832,7 +28099,10 @@
     },
     "source_findings": [
       "web-audit:monster:357"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -27933,7 +28203,10 @@
     },
     "source_findings": [
       "web-audit:monster:358"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -28038,7 +28311,10 @@
     },
     "source_findings": [
       "web-audit:monster:359"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -28147,7 +28423,10 @@
     },
     "source_findings": [
       "web-audit:monster:360"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -28260,7 +28539,10 @@
     },
     "source_findings": [
       "web-audit:monster:361"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -28375,7 +28657,10 @@
     },
     "source_findings": [
       "web-audit:monster:159"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -28492,7 +28777,10 @@
     },
     "source_findings": [
       "web-audit:monster:362"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -28519,8 +28807,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "未完成人工复核；来源事实保留，不自动修正。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -28537,60 +28825,9 @@
       }
     ],
     "game_data": {
-      "AI": 0,
-      "AttackDelay": 2300,
-      "CanPush": true,
-      "CanTame": false,
-      "CoolEye": 0,
-      "Experience": 351,
-      "FaceImage": 0,
-      "Flag": "None",
-      "Image": "SkeletonWarrior",
-      "IsBoss": false,
-      "Level": 18,
-      "MoveDelay": 1800,
-      "QuestDetails": [
-        {
-          "Index": 61,
-          "Name": null
-        },
-        {
-          "Index": 98,
-          "Name": null
-        }
-      ],
-      "Stats": [
-        {
-          "Stat": "Health",
-          "Value": 110
-        },
-        {
-          "Stat": "MinMR",
-          "Value": 5
-        },
-        {
-          "Stat": "MaxMR",
-          "Value": 5
-        },
-        {
-          "Stat": "MinDC",
-          "Value": 10
-        },
-        {
-          "Stat": "MaxDC",
-          "Value": 23
-        },
-        {
-          "Stat": "Accuracy",
-          "Value": 14
-        },
-        {
-          "Stat": "Agility",
-          "Value": 12
-        }
-      ],
-      "Undead": true,
-      "ViewRange": 9
+      "index": 29,
+      "name": "Skeleton Warrior",
+      "image": "Mon_4 shape 5"
     },
     "id": "monster:zircon:29",
     "identity": {
@@ -28613,9 +28850,16 @@
       "website_name": "骷髅战士",
       "website_source_id": "mob-31",
       "zircon_index": 29,
-      "zircon_internal_name": "Skeleton Warrior"
+      "zircon_internal_name": "Skeleton Warrior",
+      "zircon_candidate_indexes": [
+        29
+      ]
     },
-    "relations": {},
+    "relations": {
+      "candidate_entity_ids": [
+        "monster:zircon:29"
+      ]
+    },
     "resources": {
       "website": {
         "bytes": 4714,
@@ -28629,10 +28873,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "face": 0,
-        "resource_name": "SkeletonWarrior",
-        "verification": "not-verified-by-resource-probe"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Skeleton_Warrior.png"
       }
     },
     "source_findings": [
@@ -28757,7 +28999,10 @@
     },
     "source_findings": [
       "web-audit:monster:363"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -28905,7 +29150,10 @@
     },
     "source_findings": [
       "web-audit:monster:364"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -29026,7 +29274,10 @@
     },
     "source_findings": [
       "web-audit:monster:365"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -29147,7 +29398,10 @@
     },
     "source_findings": [
       "web-audit:monster:366"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -29268,7 +29522,10 @@
     },
     "source_findings": [
       "web-audit:monster:367"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -29385,7 +29642,10 @@
     },
     "source_findings": [
       "web-audit:monster:368"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -29502,7 +29762,10 @@
     },
     "source_findings": [
       "web-audit:monster:369"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -29595,7 +29858,10 @@
     },
     "source_findings": [
       "web-audit:monster:370"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -29684,7 +29950,10 @@
     },
     "source_findings": [
       "web-audit:monster:371"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -29833,7 +30102,10 @@
     },
     "source_findings": [
       "web-audit:monster:160"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -29950,7 +30222,10 @@
     },
     "source_findings": [
       "web-audit:monster:372"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -30067,7 +30342,10 @@
     },
     "source_findings": [
       "web-audit:monster:373"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -30203,7 +30481,10 @@
     },
     "source_findings": [
       "web-audit:monster:374"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -30343,7 +30624,10 @@
     },
     "source_findings": [
       "web-audit:monster:375"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -30456,7 +30740,10 @@
     },
     "source_findings": [
       "web-audit:monster:376"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -30553,7 +30840,10 @@
     },
     "source_findings": [
       "web-audit:monster:377"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -30690,7 +30980,10 @@
     },
     "source_findings": [
       "web-audit:monster:378"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -30811,7 +31104,10 @@
     },
     "source_findings": [
       "web-audit:monster:379"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -30928,7 +31224,10 @@
     },
     "source_findings": [
       "web-audit:monster:380"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -31180,7 +31479,10 @@
     },
     "source_findings": [
       "web-audit:monster:381"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -31293,7 +31595,10 @@
     },
     "source_findings": [
       "web-audit:monster:382"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -31410,7 +31715,10 @@
     },
     "source_findings": [
       "web-audit:monster:383"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -31531,7 +31839,10 @@
     },
     "source_findings": [
       "web-audit:monster:384"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -31578,7 +31889,10 @@
     },
     "source_findings": [
       "web-audit:monster:385"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -31605,8 +31919,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "未完成人工复核；来源事实保留，不自动修正。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -31623,60 +31937,9 @@
       }
     ],
     "game_data": {
-      "AI": 9,
-      "AttackDelay": 3000,
-      "CanPush": true,
-      "CanTame": false,
-      "CoolEye": 0,
-      "Experience": 741,
-      "FaceImage": 0,
-      "Flag": "None",
-      "Image": "GhostSorcerer",
-      "IsBoss": false,
-      "Level": 20,
-      "MoveDelay": 2000,
-      "QuestDetails": [
-        {
-          "Index": 68,
-          "Name": null
-        }
-      ],
-      "Stats": [
-        {
-          "Stat": "Health",
-          "Value": 160
-        },
-        {
-          "Stat": "MinMR",
-          "Value": 6
-        },
-        {
-          "Stat": "MaxMR",
-          "Value": 6
-        },
-        {
-          "Stat": "MinDC",
-          "Value": 11
-        },
-        {
-          "Stat": "MaxDC",
-          "Value": 25
-        },
-        {
-          "Stat": "Accuracy",
-          "Value": 15
-        },
-        {
-          "Stat": "Agility",
-          "Value": 13
-        },
-        {
-          "Stat": "LightningAffinity",
-          "Value": 1
-        }
-      ],
-      "Undead": true,
-      "ViewRange": 9
+      "index": 58,
+      "name": "Decaying Ghoul",
+      "image": "Mon_14 shape 2"
     },
     "id": "monster:zircon:32",
     "identity": {
@@ -31699,9 +31962,16 @@
       "website_name": "老道僵尸",
       "website_source_id": "mob-42",
       "zircon_index": 32,
-      "zircon_internal_name": "GhostSorcerer"
+      "zircon_internal_name": "GhostSorcerer",
+      "zircon_candidate_indexes": [
+        58
+      ]
     },
-    "relations": {},
+    "relations": {
+      "candidate_entity_ids": [
+        "monster:zircon:58"
+      ]
+    },
     "resources": {
       "website": {
         "bytes": 4268,
@@ -31715,10 +31985,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "face": 0,
-        "resource_name": "GhostSorcerer",
-        "verification": "not-verified-by-resource-probe"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Decaying_Ghoul.png"
       }
     },
     "source_findings": [
@@ -31750,8 +32018,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "未完成人工复核；来源事实保留，不自动修正。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -31768,84 +32036,9 @@
       }
     ],
     "game_data": {
-      "AI": 10,
-      "AttackDelay": 3000,
-      "CanPush": true,
-      "CanTame": false,
-      "CoolEye": 0,
-      "Experience": 683,
-      "FaceImage": 0,
-      "Flag": "None",
-      "Image": "GhostMage",
-      "IsBoss": false,
-      "Level": 20,
-      "MoveDelay": 2000,
-      "QuestDetails": [
-        {
-          "Index": 69,
-          "Name": null
-        }
-      ],
-      "Stats": [
-        {
-          "Stat": "Health",
-          "Value": 140
-        },
-        {
-          "Stat": "MinMR",
-          "Value": 6
-        },
-        {
-          "Stat": "MaxMR",
-          "Value": 6
-        },
-        {
-          "Stat": "MinDC",
-          "Value": 13
-        },
-        {
-          "Stat": "MaxDC",
-          "Value": 25
-        },
-        {
-          "Stat": "Accuracy",
-          "Value": 15
-        },
-        {
-          "Stat": "Agility",
-          "Value": 13
-        },
-        {
-          "Stat": "FireAffinity",
-          "Value": 1
-        },
-        {
-          "Stat": "IceAffinity",
-          "Value": 1
-        },
-        {
-          "Stat": "LightningAffinity",
-          "Value": 1
-        },
-        {
-          "Stat": "WindAffinity",
-          "Value": 1
-        },
-        {
-          "Stat": "HolyAffinity",
-          "Value": 1
-        },
-        {
-          "Stat": "DarkAffinity",
-          "Value": 1
-        },
-        {
-          "Stat": "PhantomAffinity",
-          "Value": 1
-        }
-      ],
-      "Undead": true,
-      "ViewRange": 9
+      "index": 36,
+      "name": "Corpse Raising Ghost",
+      "image": "Mon_6 shape 2"
     },
     "id": "monster:zircon:33",
     "identity": {
@@ -31868,9 +32061,16 @@
       "website_name": "魔咒僵尸",
       "website_source_id": "mob-44",
       "zircon_index": 33,
-      "zircon_internal_name": "Ghost Mage"
+      "zircon_internal_name": "Ghost Mage",
+      "zircon_candidate_indexes": [
+        36
+      ]
     },
-    "relations": {},
+    "relations": {
+      "candidate_entity_ids": [
+        "monster:zircon:36"
+      ]
+    },
     "resources": {
       "website": {
         "bytes": 4192,
@@ -31884,10 +32084,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "face": 0,
-        "resource_name": "GhostMage",
-        "verification": "not-verified-by-resource-probe"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Corpse_Raising_Ghost.png"
       }
     },
     "source_findings": [
@@ -31939,7 +32137,10 @@
     },
     "source_findings": [
       "web-audit:monster:386"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -32056,7 +32257,10 @@
     },
     "source_findings": [
       "web-audit:monster:387"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -32121,7 +32325,10 @@
     },
     "source_findings": [
       "web-audit:monster:388"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -32258,7 +32465,10 @@
     },
     "source_findings": [
       "web-audit:monster:389"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -32399,7 +32609,10 @@
     },
     "source_findings": [
       "web-audit:monster:390"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -32512,7 +32725,10 @@
     },
     "source_findings": [
       "web-audit:monster:391"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -32629,7 +32845,10 @@
     },
     "source_findings": [
       "web-audit:monster:392"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -32750,7 +32969,10 @@
     },
     "source_findings": [
       "web-audit:monster:393"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -32863,7 +33085,10 @@
     },
     "source_findings": [
       "web-audit:monster:394"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -32946,7 +33171,10 @@
     },
     "source_findings": [
       "web-audit:monster:161"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -33059,7 +33287,10 @@
     },
     "source_findings": [
       "web-audit:monster:395"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -33184,7 +33415,10 @@
     },
     "source_findings": [
       "web-audit:monster:396"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -33309,7 +33543,10 @@
     },
     "source_findings": [
       "web-audit:monster:397"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -33434,7 +33671,10 @@
     },
     "source_findings": [
       "web-audit:monster:398"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -33555,7 +33795,10 @@
     },
     "source_findings": [
       "web-audit:monster:399"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -33652,7 +33895,10 @@
     },
     "source_findings": [
       "web-audit:monster:400"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -33777,7 +34023,10 @@
     },
     "source_findings": [
       "web-audit:monster:401"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -33890,7 +34139,10 @@
     },
     "source_findings": [
       "web-audit:monster:402"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -33973,7 +34225,10 @@
     },
     "source_findings": [
       "web-audit:monster:162"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -34020,7 +34275,10 @@
     },
     "source_findings": [
       "web-audit:monster:403"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -34067,7 +34325,10 @@
     },
     "source_findings": [
       "web-audit:monster:404"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -34152,7 +34413,10 @@
     },
     "source_findings": [
       "web-audit:monster:405"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -34199,7 +34463,10 @@
     },
     "source_findings": [
       "web-audit:monster:406"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -34252,7 +34519,10 @@
     },
     "source_findings": [
       "web-audit:monster:407"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -34305,7 +34575,10 @@
     },
     "source_findings": [
       "web-audit:monster:408"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -34358,7 +34631,10 @@
     },
     "source_findings": [
       "web-audit:monster:409"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -34411,7 +34687,10 @@
     },
     "source_findings": [
       "web-audit:monster:410"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -34464,7 +34743,10 @@
     },
     "source_findings": [
       "web-audit:monster:411"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -34517,7 +34799,10 @@
     },
     "source_findings": [
       "web-audit:monster:412"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -34600,7 +34885,10 @@
     },
     "source_findings": [
       "web-audit:monster:163"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -34647,7 +34935,10 @@
     },
     "source_findings": [
       "web-audit:monster:413"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -34694,7 +34985,10 @@
     },
     "source_findings": [
       "web-audit:monster:414"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -34802,7 +35096,10 @@
     },
     "source_findings": [
       "web-audit:monster:415"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -34849,7 +35146,10 @@
     },
     "source_findings": [
       "web-audit:monster:416"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -34896,7 +35196,10 @@
     },
     "source_findings": [
       "web-audit:monster:417"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -34943,7 +35246,10 @@
     },
     "source_findings": [
       "web-audit:monster:418"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -34990,7 +35296,10 @@
     },
     "source_findings": [
       "web-audit:monster:419"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -35037,7 +35346,10 @@
     },
     "source_findings": [
       "web-audit:monster:420"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -35064,8 +35376,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "未完成人工复核；来源事实保留，不自动修正。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -35082,64 +35394,9 @@
       }
     ],
     "game_data": {
-      "AI": 0,
-      "AttackDelay": 1600,
-      "CanPush": true,
-      "CanTame": false,
-      "CoolEye": 100,
-      "Experience": 29250,
-      "FaceImage": 0,
-      "Flag": "None",
-      "Image": "GhoulChampion",
-      "IsBoss": true,
-      "Level": 250,
-      "MoveDelay": 700,
-      "QuestDetails": [
-        {
-          "Index": 73,
-          "Name": null
-        }
-      ],
-      "Stats": [
-        {
-          "Stat": "Health",
-          "Value": 1300
-        },
-        {
-          "Stat": "MinAC",
-          "Value": 8
-        },
-        {
-          "Stat": "MaxAC",
-          "Value": 8
-        },
-        {
-          "Stat": "MinMR",
-          "Value": 23
-        },
-        {
-          "Stat": "MaxMR",
-          "Value": 23
-        },
-        {
-          "Stat": "MinDC",
-          "Value": 50
-        },
-        {
-          "Stat": "MaxDC",
-          "Value": 150
-        },
-        {
-          "Stat": "Accuracy",
-          "Value": 25
-        },
-        {
-          "Stat": "Agility",
-          "Value": 23
-        }
-      ],
-      "Undead": false,
-      "ViewRange": 11
+      "index": 37,
+      "name": "Ghoul Champion",
+      "image": "Mon_6 shape 3"
     },
     "id": "monster:zircon:37",
     "identity": {
@@ -35188,11 +35445,14 @@
       "website_name": "法老僵尸",
       "website_source_id": "mob-43",
       "zircon_index": 37,
-      "zircon_internal_name": "Ghoul Champion"
+      "zircon_internal_name": "Ghoul Champion",
+      "zircon_candidate_indexes": [
+        37
+      ]
     },
     "relations": {
-      "conflict_counterparts": [
-        "monster:website:mob-32"
+      "candidate_entity_ids": [
+        "monster:zircon:37"
       ]
     },
     "resources": {
@@ -35208,10 +35468,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "face": 0,
-        "resource_name": "GhoulChampion",
-        "verification": "not-verified-by-resource-probe"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Ghoul_Champion.png"
       }
     },
     "source_findings": [
@@ -35263,7 +35521,10 @@
     },
     "source_findings": [
       "web-audit:monster:421"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -35310,7 +35571,10 @@
     },
     "source_findings": [
       "web-audit:monster:422"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -35357,7 +35621,10 @@
     },
     "source_findings": [
       "web-audit:monster:423"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -35404,7 +35671,10 @@
     },
     "source_findings": [
       "web-audit:monster:424"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -35451,7 +35721,10 @@
     },
     "source_findings": [
       "web-audit:monster:425"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -35530,7 +35803,10 @@
     },
     "source_findings": [
       "web-audit:monster:426"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -35577,7 +35853,10 @@
     },
     "source_findings": [
       "web-audit:monster:427"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -35624,7 +35903,10 @@
     },
     "source_findings": [
       "web-audit:monster:428"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -35671,7 +35953,10 @@
     },
     "source_findings": [
       "web-audit:monster:429"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -35751,7 +36036,10 @@
     },
     "source_findings": [
       "web-audit:monster:430"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -35859,7 +36147,10 @@
     },
     "source_findings": [
       "web-audit:monster:164"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -35906,7 +36197,10 @@
     },
     "source_findings": [
       "web-audit:monster:431"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -36098,7 +36392,10 @@
     },
     "source_findings": [
       "web-audit:monster:432"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -36145,7 +36442,10 @@
     },
     "source_findings": [
       "web-audit:monster:433"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -36192,7 +36492,10 @@
     },
     "source_findings": [
       "web-audit:monster:434"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -36239,7 +36542,10 @@
     },
     "source_findings": [
       "web-audit:monster:435"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -36318,7 +36624,10 @@
     },
     "source_findings": [
       "web-audit:monster:436"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -36365,7 +36674,10 @@
     },
     "source_findings": [
       "web-audit:monster:437"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -36412,7 +36724,10 @@
     },
     "source_findings": [
       "web-audit:monster:438"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -36459,7 +36774,10 @@
     },
     "source_findings": [
       "web-audit:monster:439"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -36538,7 +36856,10 @@
     },
     "source_findings": [
       "web-audit:monster:440"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -36663,7 +36984,10 @@
     },
     "source_findings": [
       "web-audit:monster:165"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -36741,7 +37065,10 @@
     },
     "source_findings": [
       "web-audit:monster:441"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -36788,7 +37115,10 @@
     },
     "source_findings": [
       "web-audit:monster:442"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -36896,7 +37226,10 @@
     },
     "source_findings": [
       "web-audit:monster:443"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -36976,7 +37309,10 @@
     },
     "source_findings": [
       "web-audit:monster:444"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -37055,7 +37391,10 @@
     },
     "source_findings": [
       "web-audit:monster:445"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -37161,7 +37500,10 @@
     },
     "source_findings": [
       "web-audit:monster:446"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -37208,7 +37550,10 @@
     },
     "source_findings": [
       "web-audit:monster:447"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -37314,7 +37659,10 @@
     },
     "source_findings": [
       "web-audit:monster:448"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -37361,7 +37709,10 @@
     },
     "source_findings": [
       "web-audit:monster:449"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -37388,8 +37739,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "未完成人工复核；来源事实保留，不自动修正。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -37406,20 +37757,9 @@
       }
     ],
     "game_data": {
-      "AI": 15,
-      "AttackDelay": 2500,
-      "CanPush": true,
-      "CanTame": false,
-      "CoolEye": 0,
-      "Experience": 3000000,
-      "FaceImage": 0,
-      "Flag": "None",
-      "Image": "GreatPharaoh",
-      "IsBoss": false,
-      "Level": 50,
-      "MoveDelay": 0,
-      "Undead": false,
-      "ViewRange": 9
+      "index": 80,
+      "name": "Zuma Keeper",
+      "image": "Mon_9 shape 4"
     },
     "id": "monster:zircon:399",
     "identity": {
@@ -37442,9 +37782,16 @@
       "website_name": "大法老",
       "website_source_id": "mob-58",
       "zircon_index": 399,
-      "zircon_internal_name": "Great Pharaoh"
+      "zircon_internal_name": "Great Pharaoh",
+      "zircon_candidate_indexes": [
+        80
+      ]
     },
-    "relations": {},
+    "relations": {
+      "candidate_entity_ids": [
+        "monster:zircon:80"
+      ]
+    },
     "resources": {
       "website": {
         "bytes": 6089,
@@ -37458,10 +37805,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "face": 0,
-        "resource_name": "GreatPharaoh",
-        "verification": "not-verified-by-resource-probe"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Zuma_Keeper.png"
       }
     },
     "source_findings": [
@@ -37574,7 +37919,10 @@
     },
     "source_findings": [
       "web-audit:monster:166"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -37655,7 +38003,10 @@
     },
     "source_findings": [
       "web-audit:monster:450"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -37702,7 +38053,10 @@
     },
     "source_findings": [
       "web-audit:monster:451"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -37749,7 +38103,10 @@
     },
     "source_findings": [
       "web-audit:monster:452"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -37796,7 +38153,10 @@
     },
     "source_findings": [
       "web-audit:monster:453"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -37843,7 +38203,10 @@
     },
     "source_findings": [
       "web-audit:monster:454"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -37890,7 +38253,10 @@
     },
     "source_findings": [
       "web-audit:monster:455"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -37937,7 +38303,10 @@
     },
     "source_findings": [
       "web-audit:monster:456"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -37984,7 +38353,10 @@
     },
     "source_findings": [
       "web-audit:monster:457"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -38031,7 +38403,10 @@
     },
     "source_findings": [
       "web-audit:monster:458"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -38299,7 +38674,10 @@
     },
     "source_findings": [
       "web-audit:monster:167"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -38346,7 +38724,10 @@
     },
     "source_findings": [
       "web-audit:monster:459"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -38393,7 +38774,10 @@
     },
     "source_findings": [
       "web-audit:monster:460"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -38545,7 +38929,10 @@
     },
     "source_findings": [
       "web-audit:monster:461"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -38592,7 +38979,10 @@
     },
     "source_findings": [
       "web-audit:monster:462"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -38639,7 +39029,10 @@
     },
     "source_findings": [
       "web-audit:monster:463"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -38857,7 +39250,10 @@
     },
     "source_findings": [
       "web-audit:monster:464"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -39009,7 +39405,10 @@
     },
     "source_findings": [
       "web-audit:monster:465"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -39180,7 +39579,10 @@
     },
     "source_findings": [
       "web-audit:monster:168"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -39227,7 +39629,10 @@
     },
     "source_findings": [
       "web-audit:monster:466"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -39379,7 +39784,10 @@
     },
     "source_findings": [
       "web-audit:monster:467"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -39426,7 +39834,10 @@
     },
     "source_findings": [
       "web-audit:monster:468"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -39473,7 +39884,10 @@
     },
     "source_findings": [
       "web-audit:monster:469"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -39625,7 +40039,10 @@
     },
     "source_findings": [
       "web-audit:monster:470"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -39672,7 +40089,10 @@
     },
     "source_findings": [
       "web-audit:monster:471"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -39719,7 +40139,10 @@
     },
     "source_findings": [
       "web-audit:monster:472"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -39766,7 +40189,10 @@
     },
     "source_findings": [
       "web-audit:monster:473"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -39793,8 +40219,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "未完成人工复核；来源事实保留，不自动修正。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -39811,50 +40237,9 @@
       }
     ],
     "game_data": {
-      "AI": 0,
-      "AttackDelay": 2500,
-      "CanPush": true,
-      "CanTame": false,
-      "CoolEye": 0,
-      "Experience": 59,
-      "FaceImage": 0,
-      "Flag": "None",
-      "Image": "Beetle",
-      "IsBoss": false,
-      "Level": 13,
-      "MoveDelay": 1300,
-      "Stats": [
-        {
-          "Stat": "Health",
-          "Value": 25
-        },
-        {
-          "Stat": "MinMR",
-          "Value": 3
-        },
-        {
-          "Stat": "MaxMR",
-          "Value": 3
-        },
-        {
-          "Stat": "MinDC",
-          "Value": 5
-        },
-        {
-          "Stat": "MaxDC",
-          "Value": 10
-        },
-        {
-          "Stat": "Accuracy",
-          "Value": 12
-        },
-        {
-          "Stat": "Agility",
-          "Value": 10
-        }
-      ],
-      "Undead": false,
-      "ViewRange": 9
+      "index": 41,
+      "name": "Armoured Ant",
+      "image": "Mon_1 shape 8"
     },
     "id": "monster:zircon:43",
     "identity": {
@@ -39877,9 +40262,16 @@
       "website_name": "盔甲虫",
       "website_source_id": "mob-20",
       "zircon_index": 43,
-      "zircon_internal_name": "Beetle"
+      "zircon_internal_name": "Beetle",
+      "zircon_candidate_indexes": [
+        41
+      ]
     },
-    "relations": {},
+    "relations": {
+      "candidate_entity_ids": [
+        "monster:zircon:41"
+      ]
+    },
     "resources": {
       "website": {
         "bytes": 4813,
@@ -39893,10 +40285,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "face": 0,
-        "resource_name": "Beetle",
-        "verification": "not-verified-by-resource-probe"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Armoured_Ant.png"
       }
     },
     "source_findings": [
@@ -39948,7 +40338,10 @@
     },
     "source_findings": [
       "web-audit:monster:474"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -39995,7 +40388,10 @@
     },
     "source_findings": [
       "web-audit:monster:475"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -40042,7 +40438,10 @@
     },
     "source_findings": [
       "web-audit:monster:476"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -40089,7 +40488,10 @@
     },
     "source_findings": [
       "web-audit:monster:477"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -40136,7 +40538,10 @@
     },
     "source_findings": [
       "web-audit:monster:478"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -40183,7 +40588,10 @@
     },
     "source_findings": [
       "web-audit:monster:479"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -40230,7 +40638,10 @@
     },
     "source_findings": [
       "web-audit:monster:480"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -40277,7 +40688,10 @@
     },
     "source_findings": [
       "web-audit:monster:481"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -40324,7 +40738,10 @@
     },
     "source_findings": [
       "web-audit:monster:482"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -40371,7 +40788,10 @@
     },
     "source_findings": [
       "web-audit:monster:483"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -40505,7 +40925,10 @@
     },
     "source_findings": [
       "web-audit:monster:169"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -40552,7 +40975,10 @@
     },
     "source_findings": [
       "web-audit:monster:484"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -40599,7 +41025,10 @@
     },
     "source_findings": [
       "web-audit:monster:485"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -40646,7 +41075,10 @@
     },
     "source_findings": [
       "web-audit:monster:486"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -40693,7 +41125,10 @@
     },
     "source_findings": [
       "web-audit:monster:487"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -40740,7 +41175,10 @@
     },
     "source_findings": [
       "web-audit:monster:488"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -40850,7 +41288,10 @@
     },
     "source_findings": [
       "web-audit:monster:489"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -40960,7 +41401,10 @@
     },
     "source_findings": [
       "web-audit:monster:490"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -41007,7 +41451,10 @@
     },
     "source_findings": [
       "web-audit:monster:491"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -41190,7 +41637,10 @@
     },
     "source_findings": [
       "web-audit:monster:492"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -41279,7 +41729,10 @@
     },
     "source_findings": [
       "web-audit:monster:170"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -41326,7 +41779,10 @@
     },
     "source_findings": [
       "web-audit:monster:493"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -41373,7 +41829,10 @@
     },
     "source_findings": [
       "web-audit:monster:494"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -41420,7 +41879,10 @@
     },
     "source_findings": [
       "web-audit:monster:495"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -41467,7 +41929,10 @@
     },
     "source_findings": [
       "web-audit:monster:496"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -41514,7 +41979,10 @@
     },
     "source_findings": [
       "web-audit:monster:497"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -41561,7 +42029,10 @@
     },
     "source_findings": [
       "web-audit:monster:498"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -41608,7 +42079,10 @@
     },
     "source_findings": [
       "web-audit:monster:499"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -41655,7 +42129,10 @@
     },
     "source_findings": [
       "web-audit:monster:500"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -41733,7 +42210,10 @@
     },
     "source_findings": [
       "web-audit:monster:501"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -41780,7 +42260,10 @@
     },
     "source_findings": [
       "web-audit:monster:502"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -41807,8 +42290,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "未完成人工复核；来源事实保留，不自动修正。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -41825,56 +42308,9 @@
       }
     ],
     "game_data": {
-      "AI": 0,
-      "AttackDelay": 2200,
-      "CanPush": true,
-      "CanTame": false,
-      "CoolEye": 0,
-      "Experience": 702,
-      "FaceImage": 0,
-      "Flag": "None",
-      "Image": "MutantFlea",
-      "IsBoss": false,
-      "Level": 20,
-      "MoveDelay": 1700,
-      "QuestDetails": [
-        {
-          "Index": 31,
-          "Name": null
-        }
-      ],
-      "Stats": [
-        {
-          "Stat": "Health",
-          "Value": 100
-        },
-        {
-          "Stat": "MinMR",
-          "Value": 6
-        },
-        {
-          "Stat": "MaxMR",
-          "Value": 6
-        },
-        {
-          "Stat": "MinDC",
-          "Value": 14
-        },
-        {
-          "Stat": "MaxDC",
-          "Value": 19
-        },
-        {
-          "Stat": "Accuracy",
-          "Value": 15
-        },
-        {
-          "Stat": "Agility",
-          "Value": 13
-        }
-      ],
-      "Undead": false,
-      "ViewRange": 9
+      "index": 44,
+      "name": "Corpse Devourer",
+      "image": "Mon_7 shape 0"
     },
     "id": "monster:zircon:46",
     "identity": {
@@ -41897,9 +42333,16 @@
       "website_name": "威思而小虫",
       "website_source_id": "mob-22",
       "zircon_index": 46,
-      "zircon_internal_name": "Mutant Flea"
+      "zircon_internal_name": "Mutant Flea",
+      "zircon_candidate_indexes": [
+        44
+      ]
     },
-    "relations": {},
+    "relations": {
+      "candidate_entity_ids": [
+        "monster:zircon:44"
+      ]
+    },
     "resources": {
       "website": {
         "bytes": 6075,
@@ -41913,10 +42356,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "face": 0,
-        "resource_name": "MutantFlea",
-        "verification": "not-verified-by-resource-probe"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Corpse_Devourer.png"
       }
     },
     "source_findings": [
@@ -41968,7 +42409,10 @@
     },
     "source_findings": [
       "web-audit:monster:503"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -42015,7 +42459,10 @@
     },
     "source_findings": [
       "web-audit:monster:504"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -42062,7 +42509,10 @@
     },
     "source_findings": [
       "web-audit:monster:505"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -42109,7 +42559,10 @@
     },
     "source_findings": [
       "web-audit:monster:506"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -42156,7 +42609,10 @@
     },
     "source_findings": [
       "web-audit:monster:507"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -42203,7 +42659,10 @@
     },
     "source_findings": [
       "web-audit:monster:508"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -42250,7 +42709,10 @@
     },
     "source_findings": [
       "web-audit:monster:509"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -42297,7 +42759,10 @@
     },
     "source_findings": [
       "web-audit:monster:510"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -42344,7 +42809,10 @@
     },
     "source_findings": [
       "web-audit:monster:511"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -42391,7 +42859,10 @@
     },
     "source_findings": [
       "web-audit:monster:512"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -42418,8 +42889,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "未完成人工复核；来源事实保留，不自动修正。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -42436,56 +42907,9 @@
       }
     ],
     "game_data": {
-      "AI": 0,
-      "AttackDelay": 1800,
-      "CanPush": true,
-      "CanTame": false,
-      "CoolEye": 0,
-      "Experience": 878,
-      "FaceImage": 0,
-      "Flag": "None",
-      "Image": "PoisonousMutantFlea",
-      "IsBoss": false,
-      "Level": 20,
-      "MoveDelay": 1000,
-      "QuestDetails": [
-        {
-          "Index": 33,
-          "Name": null
-        }
-      ],
-      "Stats": [
-        {
-          "Stat": "Health",
-          "Value": 160
-        },
-        {
-          "Stat": "MinMR",
-          "Value": 6
-        },
-        {
-          "Stat": "MaxMR",
-          "Value": 6
-        },
-        {
-          "Stat": "MinDC",
-          "Value": 13
-        },
-        {
-          "Stat": "MaxDC",
-          "Value": 26
-        },
-        {
-          "Stat": "Accuracy",
-          "Value": 15
-        },
-        {
-          "Stat": "Agility",
-          "Value": 13
-        }
-      ],
-      "Undead": false,
-      "ViewRange": 9
+      "index": 44,
+      "name": "Corpse Devourer",
+      "image": "Mon_7 shape 0"
     },
     "id": "monster:zircon:47",
     "identity": {
@@ -42508,9 +42932,16 @@
       "website_name": "沙漠威斯而小虫",
       "website_source_id": "mob-23",
       "zircon_index": 47,
-      "zircon_internal_name": "Poisonous Mutant Flea"
+      "zircon_internal_name": "Poisonous Mutant Flea",
+      "zircon_candidate_indexes": [
+        44
+      ]
     },
-    "relations": {},
+    "relations": {
+      "candidate_entity_ids": [
+        "monster:zircon:44"
+      ]
+    },
     "resources": {
       "website": {
         "bytes": 5566,
@@ -42524,10 +42955,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "face": 0,
-        "resource_name": "PoisonousMutantFlea",
-        "verification": "not-verified-by-resource-probe"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Corpse_Devourer.png"
       }
     },
     "source_findings": [
@@ -42611,7 +43040,10 @@
     },
     "source_findings": [
       "web-audit:monster:513"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -42658,7 +43090,10 @@
     },
     "source_findings": [
       "web-audit:monster:514"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -42705,7 +43140,10 @@
     },
     "source_findings": [
       "web-audit:monster:515"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -42752,7 +43190,10 @@
     },
     "source_findings": [
       "web-audit:monster:516"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -42799,7 +43240,10 @@
     },
     "source_findings": [
       "web-audit:monster:517"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -42846,7 +43290,10 @@
     },
     "source_findings": [
       "web-audit:monster:518"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -42893,7 +43340,10 @@
     },
     "source_findings": [
       "web-audit:monster:519"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -42940,7 +43390,10 @@
     },
     "source_findings": [
       "web-audit:monster:520"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -42987,7 +43440,10 @@
     },
     "source_findings": [
       "web-audit:monster:521"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -43034,7 +43490,10 @@
     },
     "source_findings": [
       "web-audit:monster:522"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -43117,7 +43576,10 @@
     },
     "source_findings": [
       "web-audit:monster:171"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -43164,7 +43626,10 @@
     },
     "source_findings": [
       "web-audit:monster:523"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -43211,7 +43676,10 @@
     },
     "source_findings": [
       "web-audit:monster:524"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -43258,7 +43726,10 @@
     },
     "source_findings": [
       "web-audit:monster:525"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -43305,7 +43776,10 @@
     },
     "source_findings": [
       "web-audit:monster:526"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -43490,7 +43964,10 @@
     },
     "source_findings": [
       "web-audit:monster:527"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -43537,7 +44014,10 @@
     },
     "source_findings": [
       "web-audit:monster:528"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -43628,7 +44108,10 @@
     },
     "source_findings": [
       "web-audit:monster:172"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -43744,7 +44227,10 @@
     },
     "source_findings": [
       "web-audit:monster:173"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -43990,7 +44476,10 @@
     },
     "source_findings": [
       "web-audit:monster:174"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -44118,7 +44607,10 @@
     },
     "source_findings": [
       "web-audit:monster:175"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -44320,7 +44812,10 @@
     },
     "source_findings": [
       "web-audit:monster:176"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -44421,7 +44916,10 @@
     },
     "source_findings": [
       "web-audit:monster:177"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -44506,7 +45004,10 @@
     },
     "source_findings": [
       "web-audit:monster:178"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -44664,7 +45165,10 @@
     },
     "source_findings": [
       "web-audit:monster:179"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -44691,8 +45195,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "未完成人工复核；来源事实保留，不自动修正。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -44709,58 +45213,9 @@
       }
     ],
     "game_data": {
-      "AI": 0,
-      "AttackDelay": 2500,
-      "CanPush": true,
-      "CanTame": false,
-      "CoolEye": 0,
-      "Experience": 1170,
-      "FaceImage": 0,
-      "Flag": "None",
-      "Image": "RottingGhoul",
-      "IsBoss": false,
-      "Level": 25,
-      "MoveDelay": 1800,
-      "Stats": [
-        {
-          "Stat": "Health",
-          "Value": 230
-        },
-        {
-          "Stat": "MinAC",
-          "Value": 2
-        },
-        {
-          "Stat": "MaxAC",
-          "Value": 2
-        },
-        {
-          "Stat": "MinMR",
-          "Value": 6
-        },
-        {
-          "Stat": "MaxMR",
-          "Value": 6
-        },
-        {
-          "Stat": "MinDC",
-          "Value": 29
-        },
-        {
-          "Stat": "MaxDC",
-          "Value": 44
-        },
-        {
-          "Stat": "Accuracy",
-          "Value": 17
-        },
-        {
-          "Stat": "Agility",
-          "Value": 15
-        }
-      ],
-      "Undead": true,
-      "ViewRange": 9
+      "index": 57,
+      "name": "Rotting Ghoul",
+      "image": "Mon_14 shape 8"
     },
     "id": "monster:zircon:57",
     "identity": {
@@ -44809,11 +45264,14 @@
       "website_name": "烂僵尸",
       "website_source_id": "mob-41",
       "zircon_index": 57,
-      "zircon_internal_name": "Rotting Ghoul"
+      "zircon_internal_name": "Rotting Ghoul",
+      "zircon_candidate_indexes": [
+        57
+      ]
     },
     "relations": {
-      "conflict_counterparts": [
-        "monster:website:mob-47"
+      "candidate_entity_ids": [
+        "monster:zircon:57"
       ]
     },
     "resources": {
@@ -44829,10 +45287,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "face": 0,
-        "resource_name": "RottingGhoul",
-        "verification": "not-verified-by-resource-probe"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Rotting_Ghoul.png"
       }
     },
     "source_findings": [
@@ -44934,7 +45390,10 @@
     },
     "source_findings": [
       "web-audit:monster:180"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -45076,7 +45535,10 @@
     },
     "source_findings": [
       "web-audit:monster:181"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -45405,8 +45867,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "未完成人工复核；来源事实保留，不自动修正。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -45423,50 +45885,9 @@
       }
     ],
     "game_data": {
-      "AI": 0,
-      "AttackDelay": 2000,
-      "CanPush": true,
-      "CanTame": false,
-      "CoolEye": 0,
-      "Experience": 780,
-      "FaceImage": 0,
-      "Flag": "None",
-      "Image": "UmaInfidel",
-      "IsBoss": false,
-      "Level": 25,
-      "MoveDelay": 1100,
-      "Stats": [
-        {
-          "Stat": "Health",
-          "Value": 200
-        },
-        {
-          "Stat": "MinMR",
-          "Value": 7
-        },
-        {
-          "Stat": "MaxMR",
-          "Value": 7
-        },
-        {
-          "Stat": "MinDC",
-          "Value": 18
-        },
-        {
-          "Stat": "MaxDC",
-          "Value": 29
-        },
-        {
-          "Stat": "Accuracy",
-          "Value": 17
-        },
-        {
-          "Stat": "Agility",
-          "Value": 15
-        }
-      ],
-      "Undead": true,
-      "ViewRange": 9
+      "index": 87,
+      "name": "Crazed Warrior",
+      "image": "Mon_16 shape 7"
     },
     "id": "monster:zircon:62",
     "identity": {
@@ -45489,9 +45910,16 @@
       "website_name": "暗黑战士",
       "website_source_id": "mob-109",
       "zircon_index": 62,
-      "zircon_internal_name": "Uma Infidel"
+      "zircon_internal_name": "Uma Infidel",
+      "zircon_candidate_indexes": [
+        87
+      ]
     },
-    "relations": {},
+    "relations": {
+      "candidate_entity_ids": [
+        "monster:zircon:87"
+      ]
+    },
     "resources": {
       "website": {
         "bytes": 6832,
@@ -45505,10 +45933,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "face": 0,
-        "resource_name": "UmaInfidel",
-        "verification": "not-verified-by-resource-probe"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Crazed_Warrior.png"
       }
     },
     "source_findings": [
@@ -45854,8 +46280,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "未完成人工复核；来源事实保留，不自动修正。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -45876,90 +46302,9 @@
       }
     ],
     "game_data": {
-      "AI": 16,
-      "AttackDelay": 800,
-      "CanPush": true,
-      "CanTame": false,
-      "CoolEye": 100,
-      "Experience": 195000,
-      "FaceImage": 0,
-      "Flag": "None",
-      "Image": "UmaKing",
-      "IsBoss": true,
-      "Level": 250,
-      "MoveDelay": 700,
-      "Stats": [
-        {
-          "Stat": "Health",
-          "Value": 13500
-        },
-        {
-          "Stat": "MinAC",
-          "Value": 45
-        },
-        {
-          "Stat": "MaxAC",
-          "Value": 45
-        },
-        {
-          "Stat": "MinMR",
-          "Value": 52
-        },
-        {
-          "Stat": "MaxMR",
-          "Value": 52
-        },
-        {
-          "Stat": "MinDC",
-          "Value": 210
-        },
-        {
-          "Stat": "MaxDC",
-          "Value": 315
-        },
-        {
-          "Stat": "Accuracy",
-          "Value": 40
-        },
-        {
-          "Stat": "Agility",
-          "Value": 48
-        },
-        {
-          "Stat": "FireResistance",
-          "Value": 5
-        },
-        {
-          "Stat": "IceResistance",
-          "Value": 4
-        },
-        {
-          "Stat": "LightningResistance",
-          "Value": 2
-        },
-        {
-          "Stat": "WindResistance",
-          "Value": 3
-        },
-        {
-          "Stat": "HolyResistance",
-          "Value": 2
-        },
-        {
-          "Stat": "DarkResistance",
-          "Value": 3
-        },
-        {
-          "Stat": "PhantomResistance",
-          "Value": 5
-        },
-        {
-          "Stat": "LightningAffinity",
-          "Value": 1
-        }
-      ],
-      "Undead": false,
-      "ViewRange": 11
+      "index": 63,
+      "name": "Uma Flame Thrower",
+      "image": "Mon_5 shape 3"
     },
     "id": "monster:zircon:65",
     "identity": {
@@ -45993,9 +46338,17 @@
         "mob-115"
       ],
       "zircon_index": 65,
-      "zircon_internal_name": "Uma King"
+      "zircon_internal_name": "Uma King",
+      "zircon_candidate_indexes": [
+        63
+      ],
+      "standard_name_zh": "沃玛卫士"
     },
-    "relations": {},
+    "relations": {
+      "candidate_entity_ids": [
+        "monster:zircon:63"
+      ]
+    },
     "resources": {
       "website": {
         "bytes": 5204,
@@ -46009,10 +46362,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "face": 0,
-        "resource_name": "UmaKing",
-        "verification": "not-verified-by-resource-probe"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Uma_Flame_Thrower.png"
       }
     },
     "source_findings": [
@@ -46160,7 +46511,10 @@
     },
     "source_findings": [
       "web-audit:monster:182"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -46310,7 +46664,10 @@
     },
     "source_findings": [
       "web-audit:monster:183"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -46399,7 +46756,10 @@
     },
     "source_findings": [
       "web-audit:monster:184"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -46532,7 +46892,10 @@
     },
     "source_findings": [
       "web-audit:monster:185"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -46879,7 +47242,10 @@
     },
     "source_findings": [
       "web-audit:monster:186"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -47099,7 +47465,10 @@
     },
     "source_findings": [
       "web-audit:monster:187"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -47311,7 +47680,10 @@
     },
     "source_findings": [
       "web-audit:monster:188"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -47404,7 +47776,10 @@
     },
     "source_findings": [
       "web-audit:monster:189"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -48113,7 +48488,10 @@
     },
     "source_findings": [
       "web-audit:monster:190"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -48607,7 +48985,10 @@
     },
     "source_findings": [
       "web-audit:monster:191"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -48891,7 +49272,10 @@
     },
     "source_findings": [
       "web-audit:monster:192"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -49077,7 +49461,10 @@
     },
     "source_findings": [
       "web-audit:monster:193"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -49263,7 +49650,10 @@
     },
     "source_findings": [
       "web-audit:monster:194"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -49426,7 +49816,10 @@
     },
     "source_findings": [
       "web-audit:monster:195"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -49539,7 +49932,10 @@
     },
     "source_findings": [
       "web-audit:monster:196"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -49644,7 +50040,10 @@
     },
     "source_findings": [
       "web-audit:monster:197"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -49923,7 +50322,10 @@
     },
     "source_findings": [
       "web-audit:monster:198"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "assessment": {
@@ -49950,8 +50352,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "未完成人工复核；来源事实保留，不自动修正。",
+      "overall_status": "confirmed",
+      "reason": "manual alias confirmed by image comparison",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -49968,74 +50370,9 @@
       }
     ],
     "game_data": {
-      "AI": 0,
-      "AttackDelay": 1800,
-      "CanPush": true,
-      "CanTame": false,
-      "CoolEye": 35,
-      "Experience": 1560,
-      "FaceImage": 0,
-      "Flag": "None",
-      "Image": "NumaGrunt",
-      "IsBoss": false,
-      "Level": 35,
-      "MoveDelay": 800,
-      "Stats": [
-        {
-          "Stat": "Health",
-          "Value": 340
-        },
-        {
-          "Stat": "MinAC",
-          "Value": 1
-        },
-        {
-          "Stat": "MaxAC",
-          "Value": 1
-        },
-        {
-          "Stat": "MinMR",
-          "Value": 13
-        },
-        {
-          "Stat": "MaxMR",
-          "Value": 13
-        },
-        {
-          "Stat": "MinDC",
-          "Value": 18
-        },
-        {
-          "Stat": "MaxDC",
-          "Value": 44
-        },
-        {
-          "Stat": "Accuracy",
-          "Value": 21
-        },
-        {
-          "Stat": "Agility",
-          "Value": 16
-        },
-        {
-          "Stat": "IceResistance",
-          "Value": 1
-        },
-        {
-          "Stat": "WindResistance",
-          "Value": -1
-        },
-        {
-          "Stat": "HolyResistance",
-          "Value": 1
-        },
-        {
-          "Stat": "DarkResistance",
-          "Value": -1
-        }
-      ],
-      "Undead": false,
-      "ViewRange": 9
+      "index": 93,
+      "name": "Stone Golem",
+      "image": "Mon_1 shape 4"
     },
     "id": "monster:zircon:89",
     "identity": {
@@ -50058,9 +50395,16 @@
       "website_name": "诺玛",
       "website_source_id": "mob-55",
       "zircon_index": 89,
-      "zircon_internal_name": "Numa Grunt"
+      "zircon_internal_name": "Numa Grunt",
+      "zircon_candidate_indexes": [
+        93
+      ]
     },
-    "relations": {},
+    "relations": {
+      "candidate_entity_ids": [
+        "monster:zircon:93"
+      ]
+    },
     "resources": {
       "website": {
         "bytes": 4813,
@@ -50074,10 +50418,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "face": 0,
-        "resource_name": "NumaGrunt",
-        "verification": "not-verified-by-resource-probe"
+        "verification": "verified-by-image",
+        "path": "/images/mob/game/Stone_Golem.png"
       }
     },
     "source_findings": [
@@ -50310,7 +50652,10 @@
     },
     "source_findings": [
       "web-audit:monster:199"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -50411,7 +50756,10 @@
     },
     "source_findings": [
       "web-audit:monster:200"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -50524,7 +50872,10 @@
     },
     "source_findings": [
       "web-audit:monster:201"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -50661,7 +51012,10 @@
     },
     "source_findings": [
       "web-audit:monster:202"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -50766,7 +51120,10 @@
     },
     "source_findings": [
       "web-audit:monster:203"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -50898,7 +51255,10 @@
     },
     "source_findings": [
       "web-audit:monster:204"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -50945,7 +51305,10 @@
     },
     "source_findings": [
       "web-audit:monster:205"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -51058,7 +51421,10 @@
     },
     "source_findings": [
       "web-audit:monster:206"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -51155,7 +51521,10 @@
     },
     "source_findings": [
       "web-audit:monster:207"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   },
   {
     "entity_type": "monster",
@@ -51268,6 +51637,9 @@
     },
     "source_findings": [
       "web-audit:monster:208"
-    ]
+    ],
+    "assessment": {
+      "overall_status": "confirmed"
+    }
   }
 ]
