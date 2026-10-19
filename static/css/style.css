@@ -1000,3 +1000,18 @@ body.match-open,body.export-open { overflow: hidden; }
 .map-meta-box h4 { margin: 0 0 6px; font-size: 12px; color: var(--gold-bright); border-bottom: 1px solid var(--line-faint); padding-bottom: 4px; }
 .map-meta-box ul { margin: 0; padding-left: 16px; list-style: disc; color: var(--text-soft); }
 .map-meta-box li { margin-bottom: 3px; }
+
+/* 怪物形象对比：网站图鉴 vs 游戏内实际 */
+.mob-compare .compare-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: 10px 0 6px; }
+.compare-card { margin: 0; border: 1px solid var(--line-soft); background: rgba(255,255,255,.02); border-radius: 10px; padding: 12px; }
+.compare-label { font-size: 12px; letter-spacing: .06em; color: var(--gold-bright); margin-bottom: 8px; }
+.compare-shot { display: flex; align-items: center; justify-content: center; min-height: 150px; background: rgba(0,0,0,.28); border-radius: 8px; padding: 8px; overflow: auto; }
+.compare-shot img { max-width: 100%; max-height: 200px; object-fit: contain; image-rendering: pixelated; }
+.compare-shot.game-shot img { max-height: 180px; max-width: none; }
+.compare-card figcaption { margin-top: 8px; font-size: 12px; color: var(--text-soft); text-align: center; }
+.compare-hint { font-size: 12px; color: var(--text-soft); margin-top: 8px; }
+@media (max-width: 700px) { .compare-shot img { max-height: 140px; } .compareshot.game-shot img, .compare-shot.game-shot img { max-height: 130px; } }
+
+/* 列表卡片：左下角叠加游戏内实际形象缩略图，方便一眼比对 */
+.card-img { position: relative; }
+.card-img-game { position: absolute; right: 6px; bottom: 6px; max-width: 46% !important; max-height: 42px !important; background: rgba(0,0,0,.55); border: 1px solid var(--line-soft); border-radius: 6px; padding: 2px 4px; }
