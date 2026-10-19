@@ -9827,21 +9827,42 @@
      ],
      "spawns": [
       {
-       "name": "猎鹰",
-       "nameEn": "Fierce Falcon",
-       "webId": "mob-21",
-       "count": 5,
-       "delay": "10分"
-      },
-      {
        "name": "盔甲虫",
        "nameEn": "Beetle",
        "webId": "mob-20",
        "count": 4,
        "delay": "10分"
+      },
+      {
+       "name": "猎鹰",
+       "nameEn": "SkyStinger",
+       "webId": "mob-21",
+       "count": 5,
+       "delay": "10分"
+      },
+      {
+       "name": "多角虫",
+       "nameEn": "ShellNipper",
+       "webId": "mob-24",
+       "count": 5,
+       "delay": "10分"
+      },
+      {
+       "name": "威思而小虫",
+       "nameEn": "Visceral Worm",
+       "webId": "mob-22",
+       "count": 5,
+       "delay": "10分"
+      },
+      {
+       "name": "沙漠威思而小虫",
+       "nameEn": "Visceral Worm",
+       "webId": "mob-23",
+       "count": 2,
+       "delay": "10分"
       }
      ],
-     "totalMobCount": 9,
+     "totalMobCount": 21,
      "spawnRegions": [
       {
        "x": 300,
@@ -9851,15 +9872,27 @@
        "minY": 51,
        "maxX": 542,
        "maxY": 548,
-       "total": 9,
+       "total": 21,
        "mobList": [
         {
          "name": "盔甲虫",
          "count": 4
         },
         {
+         "name": "多角虫",
+         "count": 5
+        },
+        {
          "name": "猎鹰",
          "count": 5
+        },
+        {
+         "name": "威思而小虫",
+         "count": 5
+        },
+        {
+         "name": "沙漠威思而小虫",
+         "count": 2
         }
        ]
       }
@@ -66334,13 +66367,34 @@
       },
       {
        "name": "猎鹰",
-       "nameEn": "Fierce Falcon",
+       "nameEn": "SkyStinger",
        "webId": "mob-21",
+       "count": 2,
+       "delay": "10分"
+      },
+      {
+       "name": "多角虫",
+       "nameEn": "ShellNipper",
+       "webId": "mob-24",
+       "count": 2,
+       "delay": "10分"
+      },
+      {
+       "name": "威思而小虫",
+       "nameEn": "Visceral Worm",
+       "webId": "mob-22",
+       "count": 5,
+       "delay": "10分"
+      },
+      {
+       "name": "沙漠威思而小虫",
+       "nameEn": "Visceral Worm",
+       "webId": "mob-23",
        "count": 2,
        "delay": "10分"
       }
      ],
-     "totalMobCount": 12,
+     "totalMobCount": 21,
      "spawnRegions": [
       {
        "x": 206,
@@ -66350,14 +66404,26 @@
        "minY": 61,
        "maxX": 347,
        "maxY": 342,
-       "total": 12,
+       "total": 21,
        "mobList": [
         {
          "name": "盔甲虫",
          "count": 10
         },
         {
+         "name": "多角虫",
+         "count": 2
+        },
+        {
          "name": "猎鹰",
+         "count": 2
+        },
+        {
+         "name": "威思而小虫",
+         "count": 5
+        },
+        {
+         "name": "沙漠威思而小虫",
          "count": 2
         }
        ]

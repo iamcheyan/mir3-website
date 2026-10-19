@@ -2032,8 +2032,8 @@
     ],
     "game_data": {
       "index": 388,
-      "name": "Fierce Falcon",
-      "image": "Mon_10 shape 0"
+      "name": "SkyStinger",
+      "image": "Mon_6 shape 9"
     },
     "id": "monster:website:mob-21",
     "identity": {
@@ -2044,9 +2044,9 @@
         388
       ],
       "zircon_candidate_names": [
-        "Fierce Falcon"
+        "SkyStinger"
       ],
-      "zircon_internal_name": "Fierce Falcon"
+      "zircon_internal_name": "SkyStinger"
     },
     "relations": {
       "candidate_entity_ids": [
@@ -2066,7 +2066,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Fierce_Falcon.png",
+        "path": "/images/mob/game/Sky_Stinger.png",
         "verification": "verified-by-image"
       }
     },
@@ -2114,7 +2114,7 @@
     ],
     "game_data": {
       "index": 44,
-      "name": "Corpse Devourer",
+      "name": "ShellNipper",
       "image": "Mon_7 shape 0"
     },
     "id": "monster:website:mob-24",
@@ -2125,7 +2125,11 @@
       "zircon_candidate_indexes": [
         44
       ],
-      "zircon_internal_name": "Corpse Devourer"
+      "zircon_internal_name": "ShellNipper",
+      "zircon_candidate_names": [
+        "Corpse Devourer",
+        "ShellNipper"
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
@@ -2145,7 +2149,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Corpse_Devourer.png",
+        "path": "/images/mob/game/Shell_Nipper.png",
         "verification": "verified-by-image"
       }
     },
@@ -2192,9 +2196,9 @@
       }
     ],
     "game_data": {
-      "index": 44,
-      "name": "Corpse Devourer",
-      "image": "Mon_7 shape 0"
+      "index": 88,
+      "name": "Spiked Beetle",
+      "image": "Mon_7 shape 4"
     },
     "id": "monster:website:mob-25",
     "identity": {
@@ -2202,13 +2206,16 @@
       "website_name": "巨型多角虫",
       "website_source_id": "mob-25",
       "zircon_candidate_indexes": [
-        44
+        88
       ],
-      "zircon_internal_name": "Corpse Devourer"
+      "zircon_internal_name": "Spiked Beetle",
+      "zircon_candidate_names": [
+        "Spiked Beetle"
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:44"
+        "monster:zircon:88"
       ]
     },
     "resources": {
@@ -2224,7 +2231,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Corpse_Devourer.png",
+        "path": "/images/mob/game/Spiked_Beetle.png",
         "verification": "verified-by-image"
       }
     },

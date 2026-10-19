@@ -1169,13 +1169,13 @@
   ],
   "totalSpawnCount": 227,
   "game": {
-   "sprite": "/images/mob/game/Fierce_Falcon.png",
-   "eng_name": "Fierce Falcon",
-   "library": "Mon_10",
-   "shape": 0,
+   "sprite": "/images/mob/game/Sky_Stinger.png",
+   "eng_name": "SkyStinger",
+   "library": "Mon_6",
+   "shape": 9,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.473
+   "similarity": 0.35
   },
   "zircon_match": {
    "state": "matched"
@@ -1189,20 +1189,34 @@
   "image": "../images/mob/pic/f16.gif",
   "description": "全身由内脏组成的奇怪生物，通过喷口喷出的毒液进行攻击。毒液腐蚀性强，味臭，使人昏迷。",
   "attrs": {},
-  "spawns": [],
-  "totalSpawnCount": 0,
+  "spawns": [
+   {
+    "mapId": "74",
+    "mapNameZh": "盟重县",
+    "count": 5,
+    "delay": "10分"
+   },
+   {
+    "mapId": "75",
+    "mapNameZh": "石阁庙",
+    "count": 5,
+    "delay": "10分"
+   }
+  ],
+  "totalSpawnCount": 10,
   "game": {
-   "sprite": "/images/mob/game/Mutant_Flea.png",
-   "eng_name": "Mutant Flea",
-   "library": "Mon_15",
-   "shape": 5,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "sprite": "/images/mob/game/Visceral_Worm.png",
+   "eng_name": "Visceral Worm",
+   "library": "Mon_7",
+   "shape": 1,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.44
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": 46
+  "zircon_index": 45
  },
  {
   "id": "mob-23",
@@ -1211,20 +1225,34 @@
   "image": "../images/mob/pic/f17.gif",
   "description": "威斯而小虫适应沙漠变形而成的。和威斯而小虫一样用毒性很强的毒液进行攻击。",
   "attrs": {},
-  "spawns": [],
-  "totalSpawnCount": 0,
+  "spawns": [
+   {
+    "mapId": "74",
+    "mapNameZh": "盟重县",
+    "count": 2,
+    "delay": "10分"
+   },
+   {
+    "mapId": "75",
+    "mapNameZh": "石阁庙",
+    "count": 2,
+    "delay": "10分"
+   }
+  ],
+  "totalSpawnCount": 4,
   "game": {
-   "sprite": "/images/mob/game/Poisonous_Mutant_Flea.png",
-   "eng_name": "Poisonous Mutant Flea",
-   "library": "Mon_15",
-   "shape": 9,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "sprite": "/images/mob/game/Visceral_Worm.png",
+   "eng_name": "Visceral Worm",
+   "library": "Mon_7",
+   "shape": 1,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.47
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": 47
+  "zircon_index": 45
  },
  {
   "id": "mob-24",
@@ -1233,16 +1261,29 @@
   "image": "../images/mob/pic/f19.gif",
   "description": "一种生活在牧场的飞行昆虫，它用长在前额的坚硬的角攻击你。一般的攻击是不能杀死它们的，因为它们身上有层硬壳。不过，你能够从硬壳与硬壳间的裂缝或空隙很容易地杀掉它们。",
   "attrs": {},
-  "spawns": [],
-  "totalSpawnCount": 0,
+  "spawns": [
+   {
+    "mapId": "74",
+    "mapNameZh": "盟重县",
+    "count": 5,
+    "delay": "10分"
+   },
+   {
+    "mapId": "75",
+    "mapNameZh": "石阁庙",
+    "count": 2,
+    "delay": "10分"
+   }
+  ],
+  "totalSpawnCount": 7,
   "game": {
-   "sprite": "/images/mob/game/Corpse_Devourer.png",
-   "eng_name": "Corpse Devourer",
+   "sprite": "/images/mob/game/Shell_Nipper.png",
+   "eng_name": "ShellNipper",
    "library": "Mon_7",
    "shape": 0,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.597
+   "similarity": 0.52
   },
   "zircon_match": {
    "state": "matched"
@@ -1263,18 +1304,18 @@
   "spawns": [],
   "totalSpawnCount": 0,
   "game": {
-   "sprite": "/images/mob/game/Corpse_Devourer.png",
-   "eng_name": "Corpse Devourer",
+   "sprite": "/images/mob/game/Spiked_Beetle.png",
+   "eng_name": "Spiked Beetle",
    "library": "Mon_7",
-   "shape": 0,
+   "shape": 4,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.513
+   "similarity": 0.44
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": 44
+  "zircon_index": 88
  },
  {
   "id": "mob-26",
