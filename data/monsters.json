@@ -44,7 +44,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 8
  },
  {
   "id": "mob-1",
@@ -91,7 +91,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 9
  },
  {
   "id": "mob-2",
@@ -138,7 +138,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 11
  },
  {
   "id": "mob-3",
@@ -173,7 +173,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 12
  },
  {
   "id": "mob-4",
@@ -220,7 +220,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 10
  },
  {
   "id": "mob-5",
@@ -267,7 +267,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 21
  },
  {
   "id": "mob-6",
@@ -278,7 +278,12 @@
   "attrs": {},
   "spawns": [],
   "totalSpawnCount": 0,
-  "game_missing_reason": "游戏侧没有独立形象（该条为站内独有条目）"
+  "game_missing_reason": "站内独有条目，游戏侧客户端图库无此怪物模型。",
+  "game": null,
+  "zircon_match": {
+   "state": "unmatched"
+  },
+  "zircon_index": null
  },
  {
   "id": "mob-7",
@@ -325,14 +330,13 @@
    "eng_name": "Claw Cat",
    "library": "Mon_4",
    "shape": 8,
-   "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.319
+   "match_method": "exact",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 13
  },
  {
   "id": "mob-8",
@@ -348,13 +352,14 @@
    "eng_name": "Claw Cat",
    "library": "Mon_4",
    "shape": 8,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.446
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 13
  },
  {
   "id": "mob-9",
@@ -413,7 +418,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 14
  },
  {
   "id": "mob-10",
@@ -492,18 +497,17 @@
   ],
   "totalSpawnCount": 1384,
   "game": {
-   "sprite": "/images/mob/game/Venomous_Arachnid.png",
-   "eng_name": "Venomous Arachnid",
-   "library": "Mon_12",
-   "shape": 1,
-   "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.39
+   "sprite": "/images/mob/game/Spitting_Spider.png",
+   "eng_name": "Spitting Spider",
+   "library": "Mon_3",
+   "shape": 5,
+   "match_method": "exact",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 20
  },
  {
   "id": "mob-11",
@@ -544,7 +548,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 17
  },
  {
   "id": "mob-12",
@@ -603,7 +607,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 22
  },
  {
   "id": "mob-13",
@@ -632,7 +636,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 18
  },
  {
   "id": "mob-14",
@@ -691,7 +695,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 15
  },
  {
   "id": "mob-15",
@@ -717,7 +721,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 23
  },
  {
   "id": "mob-16",
@@ -742,18 +746,18 @@
   ],
   "totalSpawnCount": 480,
   "game": {
-   "sprite": "/images/mob/game/Tiger_Snake.png",
-   "eng_name": "Tiger Snake",
+   "sprite": "/images/mob/game/Red_Snake.png",
+   "eng_name": "Red Snake",
    "library": "Mon_6",
-   "shape": 7,
+   "shape": 4,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.357
+   "similarity": 0.429
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 19
  },
  {
   "id": "mob-17",
@@ -775,7 +779,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 19
  },
  {
   "id": "mob-18",
@@ -797,18 +801,18 @@
   ],
   "totalSpawnCount": 150,
   "game": {
-   "sprite": "/images/mob/game/Claw_Serpent.png",
-   "eng_name": "Claw Serpent",
-   "library": "Mon_8",
-   "shape": 9,
+   "sprite": "/images/mob/game/Red_Snake.png",
+   "eng_name": "Red Snake",
+   "library": "Mon_6",
+   "shape": 4,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.574
+   "similarity": 0.646
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 126
  },
  {
   "id": "mob-19",
@@ -992,18 +996,18 @@
   ],
   "totalSpawnCount": 3926,
   "game": {
-   "sprite": "/images/mob/game/Evil_Snake.png",
-   "eng_name": "Evil Snake",
-   "library": "Mon_9",
-   "shape": 0,
+   "sprite": "/images/mob/game/Red_Snake.png",
+   "eng_name": "Red Snake",
+   "library": "Mon_6",
+   "shape": 4,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.523
+   "similarity": 0.668
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 277
  },
  {
   "id": "mob-20",
@@ -1118,18 +1122,17 @@
   ],
   "totalSpawnCount": 29,
   "game": {
-   "sprite": "/images/mob/game/Armoured_Ant.png",
-   "eng_name": "Armoured Ant",
-   "library": "Mon_1",
-   "shape": 8,
-   "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.343
+   "sprite": "/images/mob/game/Beetle.png",
+   "eng_name": "Beetle",
+   "library": "Mon_7",
+   "shape": 3,
+   "match_method": "exact",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 43
  },
  {
   "id": "mob-21",
@@ -1170,13 +1173,14 @@
    "eng_name": "Fierce Falcon",
    "library": "Mon_10",
    "shape": 0,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.473
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 388
  },
  {
   "id": "mob-22",
@@ -1188,18 +1192,17 @@
   "spawns": [],
   "totalSpawnCount": 0,
   "game": {
-   "sprite": "/images/mob/game/Corpse_Devourer.png",
-   "eng_name": "Corpse Devourer",
-   "library": "Mon_7",
-   "shape": 0,
-   "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.486
+   "sprite": "/images/mob/game/Mutant_Flea.png",
+   "eng_name": "Mutant Flea",
+   "library": "Mon_15",
+   "shape": 5,
+   "match_method": "exact",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 46
  },
  {
   "id": "mob-23",
@@ -1211,18 +1214,17 @@
   "spawns": [],
   "totalSpawnCount": 0,
   "game": {
-   "sprite": "/images/mob/game/Corpse_Devourer.png",
-   "eng_name": "Corpse Devourer",
-   "library": "Mon_7",
-   "shape": 0,
-   "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.478
+   "sprite": "/images/mob/game/Poisonous_Mutant_Flea.png",
+   "eng_name": "Poisonous Mutant Flea",
+   "library": "Mon_15",
+   "shape": 9,
+   "match_method": "exact",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 47
  },
  {
   "id": "mob-24",
@@ -1234,18 +1236,18 @@
   "spawns": [],
   "totalSpawnCount": 0,
   "game": {
-   "sprite": "/images/mob/game/Spiked_Beetle.png",
-   "eng_name": "Spiked Beetle",
+   "sprite": "/images/mob/game/Corpse_Devourer.png",
+   "eng_name": "Corpse Devourer",
    "library": "Mon_7",
-   "shape": 4,
+   "shape": 0,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.487
+   "similarity": 0.597
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 44
  },
  {
   "id": "mob-25",
@@ -1261,18 +1263,18 @@
   "spawns": [],
   "totalSpawnCount": 0,
   "game": {
-   "sprite": "/images/mob/game/Spiked_Beetle.png",
-   "eng_name": "Spiked Beetle",
+   "sprite": "/images/mob/game/Corpse_Devourer.png",
+   "eng_name": "Corpse Devourer",
    "library": "Mon_7",
-   "shape": 4,
+   "shape": 0,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.466
+   "similarity": 0.513
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 44
  },
  {
   "id": "mob-26",
@@ -1337,14 +1339,13 @@
    "eng_name": "Cave Bat",
    "library": "Mon_3",
    "shape": 9,
-   "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.382
+   "match_method": "exact",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 24
  },
  {
   "id": "mob-27",
@@ -1385,7 +1386,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 25
  },
  {
   "id": "mob-28",
@@ -1480,7 +1481,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 31
  },
  {
   "id": "mob-29",
@@ -1543,15 +1544,15 @@
   "game": {
    "sprite": "/images/mob/game/Skeleton.png",
    "eng_name": "Skeleton",
-   "library": "Mon_6",
-   "shape": 6,
+   "library": "Mon_4",
+   "shape": 2,
    "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 27
  },
  {
   "id": "mob-30",
@@ -1616,7 +1617,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 28
  },
  {
   "id": "mob-31",
@@ -1693,14 +1694,13 @@
    "eng_name": "Skeleton Warrior",
    "library": "Mon_4",
    "shape": 5,
-   "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.433
+   "match_method": "exact",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 29
  },
  {
   "id": "mob-32",
@@ -1773,17 +1773,17 @@
   ],
   "totalSpawnCount": 96,
   "game": {
-   "sprite": "/images/mob/game/Skeleton_Lord.png",
-   "eng_name": "Skeleton Lord",
+   "sprite": "/images/mob/game/Skeleton_Axeman.png",
+   "eng_name": "Skeleton Axeman",
    "library": "Mon_4",
-   "shape": 6,
+   "shape": 4,
    "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 26
  },
  {
   "id": "mob-33",
@@ -1795,18 +1795,18 @@
   "spawns": [],
   "totalSpawnCount": 0,
   "game": {
-   "sprite": "/images/mob/game/Skeleton.png",
-   "eng_name": "Skeleton",
-   "library": "Mon_6",
+   "sprite": "/images/mob/game/Skeleton_Lord.png",
+   "eng_name": "Skeleton Lord",
+   "library": "Mon_4",
    "shape": 6,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.326
+   "similarity": 0.455
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 30
  },
  {
   "id": "mob-34",
@@ -1822,13 +1822,14 @@
    "eng_name": "Spitting Spider",
    "library": "Mon_3",
    "shape": 5,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.418
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 20
  },
  {
   "id": "mob-35",
@@ -1840,18 +1841,18 @@
   "spawns": [],
   "totalSpawnCount": 0,
   "game": {
-   "sprite": "/images/mob/game/Spined_Dark_Lizard.png",
-   "eng_name": "Spined Dark Lizard",
-   "library": "Mon_5",
+   "sprite": "/images/mob/game/Arachnid_Gazer.png",
+   "eng_name": "Arachnid Gazer",
+   "library": "Mon_11",
    "shape": 6,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.266
+   "similarity": 0.382
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 67
  },
  {
   "id": "mob-36",
@@ -1863,18 +1864,18 @@
   "spawns": [],
   "totalSpawnCount": 0,
   "game": {
-   "sprite": "/images/mob/game/Spined_Dark_Lizard.png",
-   "eng_name": "Spined Dark Lizard",
-   "library": "Mon_5",
+   "sprite": "/images/mob/game/Arachnid_Gazer.png",
+   "eng_name": "Arachnid Gazer",
+   "library": "Mon_11",
    "shape": 6,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.266
+   "similarity": 0.392
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 67
  },
  {
   "id": "mob-37",
@@ -1886,18 +1887,18 @@
   "spawns": [],
   "totalSpawnCount": 0,
   "game": {
-   "sprite": "/images/mob/game/Spined_Dark_Lizard.png",
-   "eng_name": "Spined Dark Lizard",
-   "library": "Mon_5",
-   "shape": 6,
+   "sprite": "/images/mob/game/Spiked_Beetle.png",
+   "eng_name": "Spiked Beetle",
+   "library": "Mon_7",
+   "shape": 4,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.341
+   "similarity": 0.474
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 88
  },
  {
   "id": "mob-38",
@@ -2000,18 +2001,18 @@
   ],
   "totalSpawnCount": 278,
   "game": {
-   "sprite": "/images/mob/game/Spined_Dark_Lizard.png",
-   "eng_name": "Spined Dark Lizard",
-   "library": "Mon_5",
-   "shape": 6,
+   "sprite": "/images/mob/game/Spiked_Beetle.png",
+   "eng_name": "Spiked Beetle",
+   "library": "Mon_7",
+   "shape": 4,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.341
+   "similarity": 0.444
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 88
  },
  {
   "id": "mob-39",
@@ -2027,13 +2028,14 @@
    "eng_name": "Beetle",
    "library": "Mon_7",
    "shape": 3,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.464
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 43
  },
  {
   "id": "mob-40",
@@ -2280,17 +2282,17 @@
   ],
   "totalSpawnCount": 4050,
   "game": {
-   "sprite": "/images/mob/game/GhostSorcerer.png",
-   "eng_name": "GhostSorcerer",
+   "sprite": "/images/mob/game/Blood_Thristy_Zombie.png",
+   "eng_name": "Blood Thristy Zombie",
    "library": "Mon_5",
-   "shape": 8,
+   "shape": 2,
    "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 60
  },
  {
   "id": "mob-41",
@@ -2301,19 +2303,18 @@
   "attrs": {},
   "spawns": [],
   "totalSpawnCount": 0,
+  "zircon_match": {
+   "state": "matched"
+  },
+  "zircon_index": 57,
   "game": {
    "sprite": "/images/mob/game/Rotting_Ghoul.png",
    "eng_name": "Rotting Ghoul",
    "library": "Mon_14",
    "shape": 8,
-   "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.297
-  },
-  "zircon_match": {
-   "state": "matched"
-  },
-  "zircon_index": null
+   "match_method": "exact",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+  }
  },
  {
   "id": "mob-42",
@@ -2325,18 +2326,17 @@
   "spawns": [],
   "totalSpawnCount": 0,
   "game": {
-   "sprite": "/images/mob/game/Decaying_Ghoul.png",
-   "eng_name": "Decaying Ghoul",
-   "library": "Mon_14",
-   "shape": 2,
-   "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.334
+   "sprite": "/images/mob/game/GhostSorcerer.png",
+   "eng_name": "GhostSorcerer",
+   "library": "Mon_5",
+   "shape": 8,
+   "match_method": "exact",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 32
  },
  {
   "id": "mob-43",
@@ -2352,14 +2352,13 @@
    "eng_name": "Ghoul Champion",
    "library": "Mon_6",
    "shape": 3,
-   "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.296
+   "match_method": "exact",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 37
  },
  {
   "id": "mob-44",
@@ -2371,18 +2370,17 @@
   "spawns": [],
   "totalSpawnCount": 0,
   "game": {
-   "sprite": "/images/mob/game/Corpse_Raising_Ghost.png",
-   "eng_name": "Corpse Raising Ghost",
-   "library": "Mon_6",
-   "shape": 2,
-   "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.32
+   "sprite": "/images/mob/game/Ghost_Mage.png",
+   "eng_name": "Ghost Mage",
+   "library": "Mon_5",
+   "shape": 9,
+   "match_method": "exact",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 33
  },
  {
   "id": "mob-45",
@@ -2705,17 +2703,18 @@
   ],
   "totalSpawnCount": 1177,
   "game": {
-   "sprite": "/images/mob/game/Ghoul_Champion.png",
-   "eng_name": "Ghoul Champion",
-   "library": "Mon_6",
-   "shape": 3,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "sprite": "/images/mob/game/Lord_JiNae.png",
+   "eng_name": "Lord Ji'Nae",
+   "library": "Mon_7",
+   "shape": 7,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.359
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 56
  },
  {
   "id": "mob-46",
@@ -2734,17 +2733,18 @@
   ],
   "totalSpawnCount": 8,
   "game": {
-   "sprite": "/images/mob/game/Rotting_Ghoul.png",
-   "eng_name": "Rotting Ghoul",
-   "library": "Mon_14",
-   "shape": 8,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "sprite": "/images/mob/game/Oyoung_Beast.png",
+   "eng_name": "Oyoung Beast",
+   "library": "Mon_23",
+   "shape": 3,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.299
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 221
  },
  {
   "id": "mob-47",
@@ -2763,17 +2763,18 @@
   ],
   "totalSpawnCount": 1008,
   "game": {
-   "sprite": "/images/mob/game/Decaying_Ghoul.png",
-   "eng_name": "Decaying Ghoul",
+   "sprite": "/images/mob/game/Rotting_Ghoul.png",
+   "eng_name": "Rotting Ghoul",
    "library": "Mon_14",
-   "shape": 2,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "shape": 8,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.305
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 57
  },
  {
   "id": "mob-48",
@@ -2840,18 +2841,17 @@
   ],
   "totalSpawnCount": 3125,
   "game": {
-   "sprite": "/images/mob/game/Visceral_Worm.png",
-   "eng_name": "Visceral Worm",
-   "library": "Mon_7",
-   "shape": 1,
-   "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.327
+   "sprite": "/images/mob/game/Stone_Golem.png",
+   "eng_name": "Stone Golem",
+   "library": "Mon_1",
+   "shape": 4,
+   "match_method": "exact",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 93
  },
  {
   "id": "mob-49",
@@ -2869,12 +2869,12 @@
    "shape": 4,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.407
+   "similarity": 0.45
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 291
  },
  {
   "id": "mob-50",
@@ -2886,18 +2886,17 @@
   "spawns": [],
   "totalSpawnCount": 0,
   "game": {
-   "sprite": "/images/mob/game/Carnivorous_Plant.png",
-   "eng_name": "Carnivorous Plant",
-   "library": "Mon_4",
-   "shape": 1,
-   "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.191
+   "sprite": "/images/mob/game/Cursed_Cactus.png",
+   "eng_name": "Cursed Cactus",
+   "library": "Mon_10",
+   "shape": 5,
+   "match_method": "exact",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 95
  },
  {
   "id": "mob-51",
@@ -2962,13 +2961,14 @@
    "eng_name": "Giant Lizard",
    "library": "Mon_20",
    "shape": 6,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.583
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 102
  },
  {
   "id": "mob-52",
@@ -2997,13 +2997,14 @@
    "eng_name": "Devouring Ghost",
    "library": "Mon_6",
    "shape": 1,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.374
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 35
  },
  {
   "id": "mob-53",
@@ -3040,17 +3041,18 @@
   ],
   "totalSpawnCount": 1710,
   "game": {
-   "sprite": "/images/mob/game/Sand_Shark.png",
-   "eng_name": "Sand Shark",
-   "library": "Mon_10",
+   "sprite": "/images/mob/game/Fierce_Fish_Demon.png",
+   "eng_name": "Fierce Fish Demon",
+   "library": "Mon_9",
    "shape": 4,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.65
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 393
  },
  {
   "id": "mob-54",
@@ -3068,12 +3070,12 @@
    "shape": 7,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.207
+   "similarity": 0.229
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 292
  },
  {
   "id": "mob-55",
@@ -3085,18 +3087,17 @@
   "spawns": [],
   "totalSpawnCount": 0,
   "game": {
-   "sprite": "/images/mob/game/Stone_Golem.png",
-   "eng_name": "Stone Golem",
-   "library": "Mon_1",
-   "shape": 4,
-   "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.361
+   "sprite": "/images/mob/game/Numa_Grunt.png",
+   "eng_name": "Numa Grunt",
+   "library": "Mon_13",
+   "shape": 8,
+   "match_method": "exact",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 89
  },
  {
   "id": "mob-56",
@@ -3108,18 +3109,17 @@
   "spawns": [],
   "totalSpawnCount": 0,
   "game": {
-   "sprite": "/images/mob/game/Numa_Grunt.png",
-   "eng_name": "Numa Grunt",
-   "library": "Mon_13",
-   "shape": 8,
-   "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.355
+   "sprite": "/images/mob/game/Numa_Armored_Soldier.png",
+   "eng_name": "Numa Armored Soldier",
+   "library": "Mon_19",
+   "shape": 1,
+   "match_method": "exact",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 165
  },
  {
   "id": "mob-57",
@@ -3131,18 +3131,17 @@
   "spawns": [],
   "totalSpawnCount": 0,
   "game": {
-   "sprite": "/images/mob/game/Numa_Royal_Guard.png",
-   "eng_name": "Numa Royal Guard",
+   "sprite": "/images/mob/game/Numa_Assault_Captain.png",
+   "eng_name": "Numa Assault Captain",
    "library": "Mon_19",
    "shape": 5,
-   "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.391
+   "match_method": "exact",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 166
  },
  {
   "id": "mob-58",
@@ -3156,18 +3155,17 @@
   "spawns": [],
   "totalSpawnCount": 0,
   "game": {
-   "sprite": "/images/mob/game/Zuma_Keeper.png",
-   "eng_name": "Zuma Keeper",
-   "library": "Mon_9",
-   "shape": 4,
-   "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.316
+   "sprite": "/images/mob/game/Great_Pharaoh.png",
+   "eng_name": "Great Pharaoh",
+   "library": "Mon_1",
+   "shape": 3,
+   "match_method": "exact",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 399
  },
  {
   "id": "mob-59",
@@ -3186,18 +3184,18 @@
   ],
   "totalSpawnCount": 40,
   "game": {
-   "sprite": "/images/mob/game/Arachnid_Gazer.png",
-   "eng_name": "Arachnid Gazer",
-   "library": "Mon_11",
-   "shape": 6,
+   "sprite": "/images/mob/game/Venomous_Arachnid.png",
+   "eng_name": "Venomous Arachnid",
+   "library": "Mon_12",
+   "shape": 1,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": -1
+   "similarity": 0.264
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 71
  },
  {
   "id": "mob-60",
@@ -3209,18 +3207,18 @@
   "spawns": [],
   "totalSpawnCount": 0,
   "game": {
-   "sprite": "/images/mob/game/Dark_Arachnid.png",
-   "eng_name": "Dark Arachnid",
-   "library": "Mon_12",
-   "shape": 2,
+   "sprite": "/images/mob/game/Spider_Bat.png",
+   "eng_name": "Spider Bat",
+   "library": "Mon_11",
+   "shape": 1,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.447
+   "similarity": 0.408
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 66
  },
  {
   "id": "mob-61",
@@ -3257,12 +3255,12 @@
    "shape": 1,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.532
+   "similarity": 0.61
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 303
  },
  {
   "id": "mob-62",
@@ -3278,13 +3276,14 @@
    "eng_name": "Arachnid Gazer",
    "library": "Mon_11",
    "shape": 6,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.631
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 67
  },
  {
   "id": "mob-63",
@@ -3296,18 +3295,18 @@
   "spawns": [],
   "totalSpawnCount": 0,
   "game": {
-   "sprite": "/images/mob/game/Arachnid_Gazer.png",
-   "eng_name": "Arachnid Gazer",
-   "library": "Mon_11",
-   "shape": 6,
+   "sprite": "/images/mob/game/Spitting_Spider.png",
+   "eng_name": "Spitting Spider",
+   "library": "Mon_3",
+   "shape": 5,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": -1
+   "similarity": 0.541
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 20
  },
  {
   "id": "mob-64",
@@ -3338,18 +3337,18 @@
   ],
   "totalSpawnCount": 700,
   "game": {
-   "sprite": "/images/mob/game/Arachnid_Broodmother.png",
-   "eng_name": "Arachnid Broodmother",
+   "sprite": "/images/mob/game/Dark_Arachnid.png",
+   "eng_name": "Dark Arachnid",
    "library": "Mon_12",
    "shape": 2,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.435
+   "similarity": 0.534
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 72
  },
  {
   "id": "mob-65",
@@ -3367,12 +3366,12 @@
    "shape": 1,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.398
+   "similarity": 0.466
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 302
  },
  {
   "id": "mob-66",
@@ -3393,13 +3392,14 @@
    "eng_name": "Arachnid Broodmother",
    "library": "Mon_12",
    "shape": 2,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.534
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 73
  },
  {
   "id": "mob-67",
@@ -3411,18 +3411,18 @@
   "spawns": [],
   "totalSpawnCount": 0,
   "game": {
-   "sprite": "/images/mob/game/Crazed_Warrior.png",
-   "eng_name": "Crazed Warrior",
+   "sprite": "/images/mob/game/Monkey.png",
+   "eng_name": "Monkey",
    "library": "Mon_16",
-   "shape": 7,
+   "shape": 4,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.386
+   "similarity": 0.57
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 83
  },
  {
   "id": "mob-68",
@@ -3434,18 +3434,18 @@
   "spawns": [],
   "totalSpawnCount": 0,
   "game": {
-   "sprite": "/images/mob/game/Banyo_Warrior.png",
-   "eng_name": "Banyo Warrior",
-   "library": "Mon_1",
-   "shape": 6,
+   "sprite": "/images/mob/game/Monkey.png",
+   "eng_name": "Monkey",
+   "library": "Mon_16",
+   "shape": 4,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.488
+   "similarity": 0.601
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 83
  },
  {
   "id": "mob-69",
@@ -3463,12 +3463,12 @@
    "shape": 4,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.307
+   "similarity": 0.339
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 84
  },
  {
   "id": "mob-70",
@@ -3486,12 +3486,12 @@
    "shape": 4,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.355
+   "similarity": 0.404
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 84
  },
  {
   "id": "mob-71",
@@ -3513,7 +3513,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 85
  },
  {
   "id": "mob-72",
@@ -3533,12 +3533,12 @@
    "shape": 4,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.355
+   "similarity": 0.404
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 84
  },
  {
   "id": "mob-73",
@@ -3651,13 +3651,14 @@
    "eng_name": "Red Moon Guardian",
    "library": "Mon_11",
    "shape": 7,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.487
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 69
  },
  {
   "id": "mob-74",
@@ -3722,13 +3723,14 @@
    "eng_name": "Red Moon Protector",
    "library": "Mon_11",
    "shape": 8,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.448
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 70
  },
  {
   "id": "mob-75",
@@ -3744,18 +3746,18 @@
   "spawns": [],
   "totalSpawnCount": 0,
   "game": {
-   "sprite": "/images/mob/game/Ghoul_Champion.png",
-   "eng_name": "Ghoul Champion",
-   "library": "Mon_6",
-   "shape": 3,
+   "sprite": "/images/mob/game/Red_Moon_Protector.png",
+   "eng_name": "Red Moon Protector",
+   "library": "Mon_11",
+   "shape": 8,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.377
+   "similarity": 0.448
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 70
  },
  {
   "id": "mob-76",
@@ -3790,7 +3792,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 75
  },
  {
   "id": "mob-77",
@@ -3808,12 +3810,12 @@
    "shape": 4,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.357
+   "similarity": 0.457
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 38
  },
  {
   "id": "mob-78",
@@ -4012,12 +4014,12 @@
    "shape": 8,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.35
+   "similarity": 0.456
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 42
  },
  {
   "id": "mob-79",
@@ -4029,18 +4031,18 @@
   "spawns": [],
   "totalSpawnCount": 0,
   "game": {
-   "sprite": "/images/mob/game/Ant_Soldier.png",
-   "eng_name": "Ant Soldier",
-   "library": "Mon_2",
-   "shape": 4,
+   "sprite": "/images/mob/game/Ant_Needler.png",
+   "eng_name": "Ant Needler",
+   "library": "Mon_10",
+   "shape": 6,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.363
+   "similarity": 0.417
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 40
  },
  {
   "id": "mob-80",
@@ -4255,13 +4257,14 @@
    "eng_name": "Armoured Ant",
    "library": "Mon_1",
    "shape": 8,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.457
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 41
  },
  {
   "id": "mob-81",
@@ -4332,13 +4335,14 @@
    "eng_name": "Ant Healer",
    "library": "Mon_1",
    "shape": 7,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.519
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 39
  },
  {
   "id": "mob-82",
@@ -4469,17 +4473,18 @@
   ],
   "totalSpawnCount": 742,
   "game": {
-   "sprite": "/images/mob/game/Ant_Commander.png",
-   "eng_name": "Ant Commander",
+   "sprite": "/images/mob/game/Armoured_Ant.png",
+   "eng_name": "Armoured Ant",
    "library": "Mon_1",
    "shape": 8,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.457
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 41
  },
  {
   "id": "mob-83",
@@ -4616,13 +4621,14 @@
    "eng_name": "Wasp Hatchling",
    "library": "Mon_8",
    "shape": 1,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.409
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 50
  },
  {
   "id": "mob-84",
@@ -4638,14 +4644,13 @@
    "eng_name": "Centipede",
    "library": "Mon_7",
    "shape": 6,
-   "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.263
+   "match_method": "exact",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 51
  },
  {
   "id": "mob-85",
@@ -4663,12 +4668,12 @@
    "shape": 6,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.229
+   "similarity": 0.288
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 51
  },
  {
   "id": "mob-86",
@@ -4680,18 +4685,18 @@
   "spawns": [],
   "totalSpawnCount": 0,
   "game": {
-   "sprite": "/images/mob/game/Cave_Maggot.png",
-   "eng_name": "Cave Maggot",
-   "library": "Mon_4",
-   "shape": 7,
+   "sprite": "/images/mob/game/Centipede.png",
+   "eng_name": "Centipede",
+   "library": "Mon_7",
+   "shape": 6,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.188
+   "similarity": 0.263
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 51
  },
  {
   "id": "mob-87",
@@ -4707,13 +4712,14 @@
    "eng_name": "Centipede",
    "library": "Mon_7",
    "shape": 6,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.297
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 51
  },
  {
   "id": "mob-88",
@@ -4731,12 +4737,12 @@
    "shape": 4,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.36
+   "similarity": 0.425
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 88
  },
  {
   "id": "mob-89",
@@ -4754,12 +4760,12 @@
    "shape": 4,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.41
+   "similarity": 0.487
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 88
  },
  {
   "id": "mob-90",
@@ -4777,12 +4783,12 @@
    "shape": 4,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.376
+   "similarity": 0.447
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 88
  },
  {
   "id": "mob-91",
@@ -4800,12 +4806,12 @@
    "shape": 4,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.328
+   "similarity": 0.395
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 88
  },
  {
   "id": "mob-92",
@@ -4948,7 +4954,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 52
  },
  {
   "id": "mob-93",
@@ -5021,12 +5027,12 @@
    "shape": 8,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.349
+   "similarity": 0.393
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 53
  },
  {
   "id": "mob-94",
@@ -5044,12 +5050,12 @@
    "shape": 8,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.375
+   "similarity": 0.409
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 53
  },
  {
   "id": "mob-95",
@@ -5067,12 +5073,12 @@
    "shape": 8,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.33
+   "similarity": 0.368
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 53
  },
  {
   "id": "mob-96",
@@ -5088,13 +5094,14 @@
    "eng_name": "Mutant Maggot",
    "library": "Mon_7",
    "shape": 8,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.367
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 53
  },
  {
   "id": "mob-97",
@@ -5114,13 +5121,14 @@
    "eng_name": "Spiked Beetle",
    "library": "Mon_7",
    "shape": 4,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.428
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 88
  },
  {
   "id": "mob-98",
@@ -5175,18 +5183,18 @@
   ],
   "totalSpawnCount": 25,
   "game": {
-   "sprite": "/images/mob/game/Otherworld_Tentacle_Demon.png",
-   "eng_name": "Otherworld Tentacle Demon",
-   "library": "Mon_20",
-   "shape": 7,
+   "sprite": "/images/mob/game/Centipede.png",
+   "eng_name": "Centipede",
+   "library": "Mon_7",
+   "shape": 6,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.482
+   "similarity": 0.548
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 51
  },
  {
   "id": "mob-99",
@@ -5285,18 +5293,18 @@
   ],
   "totalSpawnCount": 1650,
   "game": {
-   "sprite": "/images/mob/game/Red_Boar.png",
-   "eng_name": "Red Boar",
+   "sprite": "/images/mob/game/Fierce_Black_Boar.png",
+   "eng_name": "Fierce Black Boar",
    "library": "Mon_8",
-   "shape": 6,
+   "shape": 7,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.552
+   "similarity": 0.618
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 394
  },
  {
   "id": "mob-100",
@@ -5317,18 +5325,18 @@
   ],
   "totalSpawnCount": 800,
   "game": {
-   "sprite": "/images/mob/game/Dragon.png",
-   "eng_name": "Dragon",
-   "library": "Mon_34",
-   "shape": 4,
+   "sprite": "/images/mob/game/Fierce_Poison_Dragon.png",
+   "eng_name": "Fierce Poison Dragon",
+   "library": "Mon_6",
+   "shape": 7,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.465
+   "similarity": 0.46
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 385
  },
  {
   "id": "mob-101",
@@ -5399,7 +5407,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 125
  },
  {
   "id": "mob-102",
@@ -5421,7 +5429,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 127
  },
  {
   "id": "mob-103",
@@ -5433,18 +5441,18 @@
   "spawns": [],
   "totalSpawnCount": 0,
   "game": {
-   "sprite": "/images/mob/game/Black_Boar.png",
-   "eng_name": "Black Boar",
+   "sprite": "/images/mob/game/Tusk_Lord.png",
+   "eng_name": "Tusk Lord",
    "library": "Mon_8",
-   "shape": 7,
+   "shape": 8,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.489
+   "similarity": 0.606
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 128
  },
  {
   "id": "mob-104",
@@ -5460,13 +5468,14 @@
    "eng_name": "Cave Bat",
    "library": "Mon_3",
    "shape": 9,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.242
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 24
  },
  {
   "id": "mob-105",
@@ -5543,7 +5552,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 124
  },
  {
   "id": "mob-106",
@@ -5596,7 +5605,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 126
  },
  {
   "id": "mob-107",
@@ -5608,17 +5617,18 @@
   "spawns": [],
   "totalSpawnCount": 0,
   "game": {
-   "sprite": "/images/mob/game/Evil_Snake.png",
-   "eng_name": "Evil Snake",
-   "library": "Mon_9",
-   "shape": 0,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "sprite": "/images/mob/game/Red_Snake.png",
+   "eng_name": "Red Snake",
+   "library": "Mon_6",
+   "shape": 4,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.417
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 277
  },
  {
   "id": "mob-108",
@@ -5695,7 +5705,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 61
  },
  {
   "id": "mob-109",
@@ -5750,18 +5760,17 @@
   ],
   "totalSpawnCount": 295,
   "game": {
-   "sprite": "/images/mob/game/Crazed_Warrior.png",
-   "eng_name": "Crazed Warrior",
-   "library": "Mon_16",
-   "shape": 7,
-   "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.46
+   "sprite": "/images/mob/game/Uma_Infidel.png",
+   "eng_name": "Uma Infidel",
+   "library": "Mon_5",
+   "shape": 1,
+   "match_method": "exact",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 62
  },
  {
   "id": "mob-110",
@@ -5773,17 +5782,18 @@
   "spawns": [],
   "totalSpawnCount": 0,
   "game": {
-   "sprite": "/images/mob/game/Uma_Infidel.png",
-   "eng_name": "Uma Infidel",
+   "sprite": "/images/mob/game/Uma_Flame_Thrower.png",
+   "eng_name": "Uma Flame Thrower",
    "library": "Mon_5",
-   "shape": 1,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "shape": 3,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.269
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 63
  },
  {
   "id": "mob-111",
@@ -5860,13 +5870,14 @@
    "eng_name": "Uma Anguisher",
    "library": "Mon_5",
    "shape": 4,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.441
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 64
  },
  {
   "id": "mob-112",
@@ -5878,18 +5889,18 @@
   "spawns": [],
   "totalSpawnCount": 0,
   "game": {
-   "sprite": "/images/mob/game/Uma_Infidel.png",
-   "eng_name": "Uma Infidel",
+   "sprite": "/images/mob/game/Uma_Anguisher.png",
+   "eng_name": "Uma Anguisher",
    "library": "Mon_5",
-   "shape": 1,
+   "shape": 4,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.413
+   "similarity": 0.349
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 64
  },
  {
   "id": "mob-113",
@@ -5960,7 +5971,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 63
  },
  {
   "id": "mob-114",
@@ -5972,18 +5983,18 @@
   "spawns": [],
   "totalSpawnCount": 0,
   "game": {
-   "sprite": "/images/mob/game/Uma_Flame_Thrower.png",
-   "eng_name": "Uma Flame Thrower",
+   "sprite": "/images/mob/game/Uma_King.png",
+   "eng_name": "Uma King",
    "library": "Mon_5",
-   "shape": 3,
+   "shape": 5,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.346
+   "similarity": 0.421
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 65
  },
  {
   "id": "mob-115",
@@ -6020,7 +6031,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 65
  },
  {
   "id": "mob-116",
@@ -6067,7 +6078,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 79
  },
  {
   "id": "mob-117",
@@ -6144,7 +6155,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 76
  },
  {
   "id": "mob-118",
@@ -6209,7 +6220,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 77
  },
  {
   "id": "mob-119",
@@ -6304,7 +6315,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 78
  },
  {
   "id": "mob-120",
@@ -6338,17 +6349,18 @@
   ],
   "totalSpawnCount": 3,
   "game": {
-   "sprite": "/images/mob/game/Zuma_Keeper.png",
-   "eng_name": "Zuma Keeper",
+   "sprite": "/images/mob/game/Zuma_Guardian.png",
+   "eng_name": "Zuma Guardian",
    "library": "Mon_9",
    "shape": 4,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.39
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 78
  },
  {
   "id": "mob-121",
@@ -6389,7 +6401,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 81
  },
  {
   "id": "mob-122",
@@ -6432,18 +6444,18 @@
   ],
   "totalSpawnCount": 146,
   "game": {
-   "sprite": "/images/mob/game/Bone_Soldier.png",
-   "eng_name": "Bone Soldier",
+   "sprite": "/images/mob/game/Bone_Archer.png",
+   "eng_name": "Bone Archer",
    "library": "Mon_15",
-   "shape": 2,
+   "shape": 4,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.422
+   "similarity": 0.463
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 116
  },
  {
   "id": "mob-123",
@@ -6459,13 +6471,14 @@
    "eng_name": "Bone Bladesman",
    "library": "Mon_15",
    "shape": 3,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.376
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 117
  },
  {
   "id": "mob-124",
@@ -6548,7 +6561,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 116
  },
  {
   "id": "mob-125",
@@ -6627,13 +6640,14 @@
    "eng_name": "Bone Bladesman",
    "library": "Mon_15",
    "shape": 3,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.481
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 117
  },
  {
   "id": "mob-126",
@@ -6664,7 +6678,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 120
  },
  {
   "id": "mob-127",
@@ -6699,7 +6713,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 121
  },
  {
   "id": "mob-128",
@@ -6794,7 +6808,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 186
  },
  {
   "id": "mob-129",
@@ -6899,12 +6913,12 @@
    "shape": 7,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.277
+   "similarity": 0.35
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 390
  },
  {
   "id": "mob-130",
@@ -6991,18 +7005,18 @@
   ],
   "totalSpawnCount": 935,
   "game": {
-   "sprite": "/images/mob/game/Banya_Guardian.png",
-   "eng_name": "Banya Guardian",
-   "library": "Mon_14",
-   "shape": 7,
+   "sprite": "/images/mob/game/Sama_Wind_Guardian.png",
+   "eng_name": "Sama Wind Guardian",
+   "library": "Mon_25",
+   "shape": 3,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.298
+   "similarity": 0.439
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 252
  },
  {
   "id": "mob-131",
@@ -7113,12 +7127,12 @@
    "shape": 6,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.291
+   "similarity": 0.321
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 113
  },
  {
   "id": "mob-132",
@@ -7229,12 +7243,12 @@
    "shape": 1,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.356
+   "similarity": 0.391
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 458
  },
  {
   "id": "mob-133",
@@ -7322,17 +7336,18 @@
   ],
   "totalSpawnCount": 674,
   "game": {
-   "sprite": "/images/mob/game/Banya_Left_Guard.png",
-   "eng_name": "Banya Left Guard",
-   "library": "Mon_14",
-   "shape": 1,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "sprite": "/images/mob/game/Light_Armed_Soldier.png",
+   "eng_name": "Light Armed Soldier",
+   "library": "Mon_1",
+   "shape": 6,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.393
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 152
  },
  {
   "id": "mob-134",
@@ -7420,17 +7435,18 @@
   ],
   "totalSpawnCount": 603,
   "game": {
-   "sprite": "/images/mob/game/Banya_Right_Guard.png",
-   "eng_name": "Banya Right Guard",
-   "library": "Mon_14",
-   "shape": 0,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "sprite": "/images/mob/game/Light_Armed_Soldier.png",
+   "eng_name": "Light Armed Soldier",
+   "library": "Mon_1",
+   "shape": 6,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.609
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 152
  },
  {
   "id": "mob-135",
@@ -7512,17 +7528,18 @@
   ],
   "totalSpawnCount": 22,
   "game": {
-   "sprite": "/images/mob/game/Banya_Guardian.png",
-   "eng_name": "Banya Guardian",
-   "library": "Mon_14",
-   "shape": 7,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "sprite": "/images/mob/game/Pachon_The_Chaos_bringer.png",
+   "eng_name": "Pachon The Chaos bringer",
+   "library": "Mon_13",
+   "shape": 0,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.343
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 160
  },
  {
   "id": "mob-136",
@@ -7584,7 +7601,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 113
  },
  {
   "id": "mob-137",
@@ -7655,7 +7672,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 421
  },
  {
   "id": "mob-138",
@@ -7726,7 +7743,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 412
  },
  {
   "id": "mob-139",
@@ -7784,13 +7801,14 @@
    "eng_name": "Mutant Lizard",
    "library": "Mon_20",
    "shape": 3,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.331
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 106
  },
  {
   "id": "mob-140",
@@ -7885,7 +7903,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 409
  },
  {
   "id": "mob-141",
@@ -7939,18 +7957,18 @@
   ],
   "totalSpawnCount": 46,
   "game": {
-   "sprite": "/images/mob/game/Evil_Monkey.png",
-   "eng_name": "Evil Monkey",
-   "library": "Mon_16",
-   "shape": 4,
+   "sprite": "/images/mob/game/Oyoung_Beast.png",
+   "eng_name": "Oyoung Beast",
+   "library": "Mon_23",
+   "shape": 3,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.479
+   "similarity": 0.482
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 221
  },
  {
   "id": "mob-142",
@@ -8008,7 +8026,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 416
  },
  {
   "id": "mob-143",
@@ -8108,7 +8126,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 425
  },
  {
   "id": "mob-144",
@@ -8197,7 +8215,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 418
  },
  {
   "id": "mob-145",
@@ -8252,18 +8270,18 @@
   ],
   "totalSpawnCount": 4,
   "game": {
-   "sprite": "/images/mob/game/Emperor_Sa'Woo.png",
-   "eng_name": "Emperor Sa'Woo",
-   "library": "Mon_14",
-   "shape": 9,
+   "sprite": "/images/mob/game/Infernal_Soldier.png",
+   "eng_name": "Infernal Soldier",
+   "library": "Mon_26",
+   "shape": 0,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.378
+   "similarity": 0.418
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 147
  },
  {
   "id": "mob-146",
@@ -8316,7 +8334,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 115
  },
  {
   "id": "mob-147",
@@ -8387,7 +8405,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 448
  },
  {
   "id": "mob-148",
@@ -8446,7 +8464,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 484
  },
  {
   "id": "mob-149",
@@ -8487,13 +8505,14 @@
    "eng_name": "Numa Royal Guard",
    "library": "Mon_19",
    "shape": 5,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.564
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 164
  },
  {
   "id": "mob-150",
@@ -8509,13 +8528,14 @@
    "eng_name": "Dungeon Goddess 1",
    "library": "Mon_16",
    "shape": 2,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.325
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 395
  },
  {
   "id": "mob-151",
@@ -8564,17 +8584,18 @@
   ],
   "totalSpawnCount": 1215,
   "game": {
-   "sprite": "/images/mob/game/Dungeon_Goddess_1.png",
-   "eng_name": "Dungeon Goddess 1",
+   "sprite": "/images/mob/game/Dungeon_Goddess_3.png",
+   "eng_name": "Dungeon Goddess 3",
    "library": "Mon_16",
    "shape": 2,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.305
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 397
  },
  {
   "id": "mob-152",
@@ -8633,13 +8654,14 @@
    "eng_name": "Monkey",
    "library": "Mon_16",
    "shape": 4,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.576
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 83
  },
  {
   "id": "mob-153",
@@ -8658,17 +8680,18 @@
   ],
   "totalSpawnCount": 1,
   "game": {
-   "sprite": "/images/mob/game/Evil_Monkey.png",
-   "eng_name": "Evil Monkey",
-   "library": "Mon_16",
-   "shape": 4,
-   "match_method": "exact",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+   "sprite": "/images/mob/game/Jinchon_Warlord.png",
+   "eng_name": "Jinchon Warlord",
+   "library": "Mon_17",
+   "shape": 1,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.56
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 139
  },
  {
   "id": "mob-154",
@@ -8684,18 +8707,18 @@
   "spawns": [],
   "totalSpawnCount": 0,
   "game": {
-   "sprite": "/images/mob/game/TownGuard.png",
-   "eng_name": "TownGuard",
-   "library": "Mon_12",
-   "shape": 4,
+   "sprite": "/images/mob/game/Guard.png",
+   "eng_name": "Guard",
+   "library": "Mon_3",
+   "shape": 6,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.431
+   "similarity": 0.535
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 1
  },
  {
   "id": "mob-155",
@@ -8711,18 +8734,18 @@
   "spawns": [],
   "totalSpawnCount": 0,
   "game": {
-   "sprite": "/images/mob/game/Banya_Right_Guard.png",
-   "eng_name": "Banya Right Guard",
-   "library": "Mon_14",
-   "shape": 0,
+   "sprite": "/images/mob/game/TownGuard.png",
+   "eng_name": "TownGuard",
+   "library": "Mon_12",
+   "shape": 4,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.515
+   "similarity": 0.572
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 1
  },
  {
   "id": "mob-156",
@@ -8744,12 +8767,12 @@
    "shape": 3,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.438
+   "similarity": 0.459
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 1
  },
  {
   "id": "mob-157",
@@ -8771,12 +8794,12 @@
    "shape": 5,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.396
+   "similarity": 0.442
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 1
  },
  {
   "id": "mob-158",
@@ -8798,12 +8821,12 @@
    "shape": 6,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.505
+   "similarity": 0.595
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 1
  },
  {
   "id": "mob-159",
@@ -8820,18 +8843,18 @@
   "spawns": [],
   "totalSpawnCount": 0,
   "game": {
-   "sprite": "/images/mob/game/Skeleton.png",
-   "eng_name": "Skeleton",
+   "sprite": "/images/mob/game/White_Bone.png",
+   "eng_name": "WhiteBone",
    "library": "Mon_6",
    "shape": 6,
    "match_method": "alias",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.374
+   "similarity": 0.425
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 144
  },
  {
   "id": "mob-160",
@@ -8858,7 +8881,7 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 145
  },
  {
   "id": "mob-161",
@@ -8885,6 +8908,6 @@
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": null
+  "zircon_index": 146
  }
 ]

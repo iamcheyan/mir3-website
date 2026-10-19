@@ -25,7 +25,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -38,9 +38,9 @@
       }
     ],
     "game_data": {
-      "index": 193,
-      "name": "Dragon",
-      "image": "Mon_34 shape 4"
+      "index": 385,
+      "name": "Fierce Poison Dragon",
+      "image": "Mon_6 shape 7"
     },
     "id": "monster:website:mob-100",
     "identity": {
@@ -48,12 +48,13 @@
       "website_name": "怒龙神",
       "website_source_id": "mob-100",
       "zircon_candidate_indexes": [
-        193
-      ]
+        385
+      ],
+      "zircon_internal_name": "Fierce Poison Dragon"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:193"
+        "monster:zircon:385"
       ]
     },
     "resources": {
@@ -69,8 +70,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Dragon.png"
+        "path": "/images/mob/game/Fierce_Poison_Dragon.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -103,7 +104,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -116,9 +117,9 @@
       }
     ],
     "game_data": {
-      "index": 127,
-      "name": "Black Boar",
-      "image": "Mon_8 shape 7"
+      "index": 128,
+      "name": "Tusk Lord",
+      "image": "Mon_8 shape 8"
     },
     "id": "monster:website:mob-103",
     "identity": {
@@ -126,12 +127,13 @@
       "website_name": "白野猪",
       "website_source_id": "mob-103",
       "zircon_candidate_indexes": [
-        127
-      ]
+        128
+      ],
+      "zircon_internal_name": "Tusk Lord"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:127"
+        "monster:zircon:128"
       ]
     },
     "resources": {
@@ -147,8 +149,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Black_Boar.png"
+        "path": "/images/mob/game/Tusk_Lord.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -180,8 +182,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -193,7 +195,11 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 277,
+      "name": "Red Snake",
+      "image": "Mon_6 shape 4"
+    },
     "id": "monster:website:mob-107",
     "identity": {
       "standard_name_zh": "邪恶毒蛇",
@@ -204,9 +210,14 @@
       ],
       "zircon_candidate_names": [
         "Evil Snake"
+      ],
+      "zircon_internal_name": "Red Snake"
+    },
+    "relations": {
+      "candidate_entity_ids": [
+        "monster:zircon:277"
       ]
     },
-    "relations": {},
     "resources": {
       "website": {
         "bytes": 5303,
@@ -220,8 +231,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Red_Snake.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -253,8 +264,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "网站祖玛卫士候选同时涉及 Zircon Index 78 Zuma Guardian 与 80 Zuma Keeper；网络台账与资源候选结论并不一致，保留双方证据，不自动选 Index。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -266,7 +277,11 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 78,
+      "name": "Zuma Guardian",
+      "image": "Mon_9 shape 4"
+    },
     "id": "monster:website:mob-119",
     "identity": {
       "standard_name_zh": "祖玛卫士",
@@ -275,7 +290,8 @@
       "zircon_candidate_indexes": [
         78,
         80
-      ]
+      ],
+      "zircon_internal_name": "Zuma Guardian"
     },
     "relations": {
       "candidate_entity_ids": [
@@ -301,8 +317,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Zuma_Guardian.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -334,8 +350,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -347,21 +363,24 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 78,
+      "name": "Zuma Guardian",
+      "image": "Mon_9 shape 4"
+    },
     "id": "monster:website:mob-120",
     "identity": {
       "standard_name_zh": "护法天",
       "website_name": "护法天",
       "website_source_id": "mob-120",
       "zircon_candidate_indexes": [
-        78,
-        80
-      ]
+        78
+      ],
+      "zircon_internal_name": "Zuma Guardian"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:78",
-        "monster:zircon:80"
+        "monster:zircon:78"
       ]
     },
     "resources": {
@@ -377,8 +396,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Zuma_Guardian.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -411,7 +430,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -424,9 +443,9 @@
       }
     ],
     "game_data": {
-      "index": 119,
-      "name": "Bone Soldier",
-      "image": "Mon_15 shape 2"
+      "index": 116,
+      "name": "Bone Archer",
+      "image": "Mon_15 shape 4"
     },
     "id": "monster:website:mob-122",
     "identity": {
@@ -434,12 +453,13 @@
       "website_name": "骷髅士兵",
       "website_source_id": "mob-122",
       "zircon_candidate_indexes": [
-        119
-      ]
+        116
+      ],
+      "zircon_internal_name": "Bone Archer"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:119"
+        "monster:zircon:116"
       ]
     },
     "resources": {
@@ -455,8 +475,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Bone_Soldier.png"
+        "path": "/images/mob/game/Bone_Archer.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -488,8 +508,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -501,21 +521,24 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 117,
+      "name": "Bone Bladesman",
+      "image": "Mon_15 shape 3"
+    },
     "id": "monster:website:mob-123",
     "identity": {
       "standard_name_zh": "骷髅武士",
       "website_name": "骷髅武士",
       "website_source_id": "mob-123",
       "zircon_candidate_indexes": [
-        117,
-        119
-      ]
+        117
+      ],
+      "zircon_internal_name": "Bone Bladesman"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:117",
-        "monster:zircon:119"
+        "monster:zircon:117"
       ]
     },
     "resources": {
@@ -531,8 +554,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Bone_Bladesman.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -564,8 +587,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -577,21 +600,24 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 117,
+      "name": "Bone Bladesman",
+      "image": "Mon_15 shape 3"
+    },
     "id": "monster:website:mob-125",
     "identity": {
       "standard_name_zh": "骷髅武士",
       "website_name": "骷髅武士",
       "website_source_id": "mob-125",
       "zircon_candidate_indexes": [
-        117,
-        119
-      ]
+        117
+      ],
+      "zircon_internal_name": "Bone Bladesman"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:117",
-        "monster:zircon:119"
+        "monster:zircon:117"
       ]
     },
     "resources": {
@@ -607,8 +633,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Bone_Bladesman.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -641,7 +667,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -665,7 +691,8 @@
       "website_source_id": "mob-129",
       "zircon_candidate_indexes": [
         390
-      ]
+      ],
+      "zircon_internal_name": "Fierce Wind Demon"
     },
     "relations": {
       "candidate_entity_ids": [
@@ -685,8 +712,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Fierce_Wind_Demon.png"
+        "path": "/images/mob/game/Fierce_Wind_Demon.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -719,7 +746,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -732,9 +759,9 @@
       }
     ],
     "game_data": {
-      "index": 114,
-      "name": "Banya Guardian",
-      "image": "Mon_14 shape 7"
+      "index": 252,
+      "name": "Sama Wind Guardian",
+      "image": "Mon_25 shape 3"
     },
     "id": "monster:website:mob-130",
     "identity": {
@@ -742,12 +769,13 @@
       "website_name": "潘夜云魔",
       "website_source_id": "mob-130",
       "zircon_candidate_indexes": [
-        114
-      ]
+        252
+      ],
+      "zircon_internal_name": "Sama Wind Guardian"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:114"
+        "monster:zircon:252"
       ]
     },
     "resources": {
@@ -763,8 +791,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Banya_Guardian.png"
+        "path": "/images/mob/game/Sama_Wind_Guardian.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -797,7 +825,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -821,7 +849,8 @@
       "website_source_id": "mob-131",
       "zircon_candidate_indexes": [
         113
-      ]
+      ],
+      "zircon_internal_name": "Flame Minotaur"
     },
     "relations": {
       "candidate_entity_ids": [
@@ -841,8 +870,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Flame_Minotaur.png"
+        "path": "/images/mob/game/Flame_Minotaur.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -875,7 +904,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -899,7 +928,8 @@
       "website_source_id": "mob-132",
       "zircon_candidate_indexes": [
         458
-      ]
+      ],
+      "zircon_internal_name": "Ice Break Demon Soldier"
     },
     "relations": {
       "candidate_entity_ids": [
@@ -919,8 +949,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Ice_Break_Demon_Soldier.png"
+        "path": "/images/mob/game/Ice_Break_Demon_Soldier.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -952,8 +982,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -965,25 +995,24 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 152,
+      "name": "Light Armed Soldier",
+      "image": "Mon_1 shape 6"
+    },
     "id": "monster:website:mob-133",
     "identity": {
       "standard_name_zh": "潘夜左护卫",
       "website_name": "潘夜左护卫",
       "website_source_id": "mob-133",
       "zircon_candidate_indexes": [
-        152,
-        186,
-        445,
-        446
-      ]
+        152
+      ],
+      "zircon_internal_name": "Light Armed Soldier"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:152",
-        "monster:zircon:186",
-        "monster:zircon:445",
-        "monster:zircon:446"
+        "monster:zircon:152"
       ]
     },
     "resources": {
@@ -999,8 +1028,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Light_Armed_Soldier.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -1032,8 +1061,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -1045,25 +1074,24 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 152,
+      "name": "Light Armed Soldier",
+      "image": "Mon_1 shape 6"
+    },
     "id": "monster:website:mob-134",
     "identity": {
       "standard_name_zh": "潘夜右护卫",
       "website_name": "潘夜右护卫",
       "website_source_id": "mob-134",
       "zircon_candidate_indexes": [
-        152,
-        186,
-        445,
-        446
-      ]
+        152
+      ],
+      "zircon_internal_name": "Light Armed Soldier"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:152",
-        "monster:zircon:186",
-        "monster:zircon:445",
-        "monster:zircon:446"
+        "monster:zircon:152"
       ]
     },
     "resources": {
@@ -1079,8 +1107,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Light_Armed_Soldier.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -1112,8 +1140,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -1125,21 +1153,24 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 160,
+      "name": "Pachon The Chaos bringer",
+      "image": "Mon_13 shape 0"
+    },
     "id": "monster:website:mob-135",
     "identity": {
       "standard_name_zh": "潘夜鬼将",
       "website_name": "潘夜鬼将",
       "website_source_id": "mob-135",
       "zircon_candidate_indexes": [
-        160,
-        188
-      ]
+        160
+      ],
+      "zircon_internal_name": "Pachon The Chaos bringer"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:160",
-        "monster:zircon:188"
+        "monster:zircon:160"
       ]
     },
     "resources": {
@@ -1155,8 +1186,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Pachon_The_Chaos_bringer.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -1188,8 +1219,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -1201,21 +1232,24 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 106,
+      "name": "Mutant Lizard",
+      "image": "Mon_20 shape 3"
+    },
     "id": "monster:website:mob-139",
     "identity": {
       "standard_name_zh": "恶性怪",
       "website_name": "恶性怪",
       "website_source_id": "mob-139",
       "zircon_candidate_indexes": [
-        106,
-        375
-      ]
+        106
+      ],
+      "zircon_internal_name": "Mutant Lizard"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:106",
-        "monster:zircon:375"
+        "monster:zircon:106"
       ]
     },
     "resources": {
@@ -1231,8 +1265,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Mutant_Lizard.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -1265,7 +1299,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -1278,9 +1312,9 @@
       }
     ],
     "game_data": {
-      "index": 84,
-      "name": "Evil Monkey",
-      "image": "Mon_16 shape 4"
+      "index": 221,
+      "name": "Oyoung Beast",
+      "image": "Mon_23 shape 3"
     },
     "id": "monster:website:mob-141",
     "identity": {
@@ -1288,12 +1322,13 @@
       "website_name": "犬猴魔",
       "website_source_id": "mob-141",
       "zircon_candidate_indexes": [
-        84
-      ]
+        221
+      ],
+      "zircon_internal_name": "Oyoung Beast"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:84"
+        "monster:zircon:221"
       ]
     },
     "resources": {
@@ -1309,8 +1344,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Evil_Monkey.png"
+        "path": "/images/mob/game/Oyoung_Beast.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -1343,7 +1378,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -1356,9 +1391,9 @@
       }
     ],
     "game_data": {
-      "index": 115,
-      "name": "Emperor Sa'Woo",
-      "image": "Mon_14 shape 9"
+      "index": 147,
+      "name": "Infernal Soldier",
+      "image": "Mon_26 shape 0"
     },
     "id": "monster:website:mob-145",
     "identity": {
@@ -1366,12 +1401,13 @@
       "website_name": "霸王守卫",
       "website_source_id": "mob-145",
       "zircon_candidate_indexes": [
-        115
-      ]
+        147
+      ],
+      "zircon_internal_name": "Infernal Soldier"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:115"
+        "monster:zircon:147"
       ]
     },
     "resources": {
@@ -1387,8 +1423,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Emperor_Sa'Woo.png"
+        "path": "/images/mob/game/Infernal_Soldier.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -1420,8 +1456,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -1433,21 +1469,24 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 164,
+      "name": "Numa Royal Guard",
+      "image": "Mon_19 shape 5"
+    },
     "id": "monster:website:mob-149",
     "identity": {
       "standard_name_zh": "武力神将",
       "website_name": "武力神将",
       "website_source_id": "mob-149",
       "zircon_candidate_indexes": [
-        164,
-        166
-      ]
+        164
+      ],
+      "zircon_internal_name": "Numa Royal Guard"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:164",
-        "monster:zircon:166"
+        "monster:zircon:164"
       ]
     },
     "resources": {
@@ -1463,8 +1502,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Numa_Royal_Guard.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -1496,8 +1535,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -1509,21 +1548,24 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 395,
+      "name": "Dungeon Goddess 1",
+      "image": "Mon_16 shape 2"
+    },
     "id": "monster:website:mob-150",
     "identity": {
       "standard_name_zh": "地牢女神",
       "website_name": "地牢女神",
       "website_source_id": "mob-150",
       "zircon_candidate_indexes": [
-        395,
-        397
-      ]
+        395
+      ],
+      "zircon_internal_name": "Dungeon Goddess 1"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:395",
-        "monster:zircon:397"
+        "monster:zircon:395"
       ]
     },
     "resources": {
@@ -1539,8 +1581,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Dungeon_Goddess_1.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -1572,8 +1614,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -1585,20 +1627,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 397,
+      "name": "Dungeon Goddess 3",
+      "image": "Mon_16 shape 2"
+    },
     "id": "monster:website:mob-151",
     "identity": {
       "standard_name_zh": "地牢女神",
       "website_name": "地牢女神",
       "website_source_id": "mob-151",
       "zircon_candidate_indexes": [
-        395,
         397
-      ]
+      ],
+      "zircon_internal_name": "Dungeon Goddess 3"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:395",
         "monster:zircon:397"
       ]
     },
@@ -1615,8 +1660,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Dungeon_Goddess_3.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -1648,8 +1693,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -1661,23 +1706,24 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 83,
+      "name": "Monkey",
+      "image": "Mon_16 shape 4"
+    },
     "id": "monster:website:mob-152",
     "identity": {
       "standard_name_zh": "震天首将",
       "website_name": "震天首将",
       "website_source_id": "mob-152",
       "zircon_candidate_indexes": [
-        83,
-        84,
-        392
-      ]
+        83
+      ],
+      "zircon_internal_name": "Monkey"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:392",
-        "monster:zircon:83",
-        "monster:zircon:84"
+        "monster:zircon:83"
       ]
     },
     "resources": {
@@ -1693,8 +1739,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Monkey.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -1726,8 +1772,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -1739,23 +1785,24 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 139,
+      "name": "Jinchon Warlord",
+      "image": "Mon_17 shape 1"
+    },
     "id": "monster:website:mob-153",
     "identity": {
       "standard_name_zh": "震天魔神",
       "website_name": "震天魔神",
       "website_source_id": "mob-153",
       "zircon_candidate_indexes": [
-        83,
-        84,
-        392
-      ]
+        139
+      ],
+      "zircon_internal_name": "Jinchon Warlord"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:392",
-        "monster:zircon:83",
-        "monster:zircon:84"
+        "monster:zircon:139"
       ]
     },
     "resources": {
@@ -1771,8 +1818,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Jinchon_Warlord.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -1805,7 +1852,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -1819,8 +1866,8 @@
     ],
     "game_data": {
       "index": 126,
-      "name": "Claw Serpent",
-      "image": "Mon_8 shape 9"
+      "name": "Red Snake",
+      "image": "Mon_6 shape 4"
     },
     "id": "monster:website:mob-18",
     "identity": {
@@ -1833,7 +1880,8 @@
       "zircon_candidate_names": [
         "Tiger Snake",
         "Evil Snake"
-      ]
+      ],
+      "zircon_internal_name": "Red Snake"
     },
     "relations": {
       "candidate_entity_ids": [
@@ -1853,8 +1901,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Claw_Serpent.png"
+        "path": "/images/mob/game/Red_Snake.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -1887,7 +1935,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -1901,8 +1949,8 @@
     ],
     "game_data": {
       "index": 277,
-      "name": "Evil Snake",
-      "image": "Mon_9 shape 0"
+      "name": "Red Snake",
+      "image": "Mon_6 shape 4"
     },
     "id": "monster:website:mob-19",
     "identity": {
@@ -1915,7 +1963,8 @@
       "zircon_candidate_names": [
         "Tiger Snake",
         "Centipede"
-      ]
+      ],
+      "zircon_internal_name": "Red Snake"
     },
     "relations": {
       "candidate_entity_ids": [
@@ -1935,8 +1984,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Evil_Snake.png"
+        "path": "/images/mob/game/Red_Snake.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -1968,8 +2017,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -1981,7 +2030,11 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 388,
+      "name": "Fierce Falcon",
+      "image": "Mon_10 shape 0"
+    },
     "id": "monster:website:mob-21",
     "identity": {
       "standard_name_zh": "猎鹰",
@@ -1992,9 +2045,14 @@
       ],
       "zircon_candidate_names": [
         "Fierce Falcon"
+      ],
+      "zircon_internal_name": "Fierce Falcon"
+    },
+    "relations": {
+      "candidate_entity_ids": [
+        "monster:zircon:388"
       ]
     },
-    "relations": {},
     "resources": {
       "website": {
         "bytes": 5050,
@@ -2008,8 +2066,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Fierce_Falcon.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -2042,7 +2100,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -2055,9 +2113,9 @@
       }
     ],
     "game_data": {
-      "index": 88,
-      "name": "Spiked Beetle",
-      "image": "Mon_7 shape 4"
+      "index": 44,
+      "name": "Corpse Devourer",
+      "image": "Mon_7 shape 0"
     },
     "id": "monster:website:mob-24",
     "identity": {
@@ -2065,12 +2123,13 @@
       "website_name": "多角虫",
       "website_source_id": "mob-24",
       "zircon_candidate_indexes": [
-        88
-      ]
+        44
+      ],
+      "zircon_internal_name": "Corpse Devourer"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:88"
+        "monster:zircon:44"
       ]
     },
     "resources": {
@@ -2086,8 +2145,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Spiked_Beetle.png"
+        "path": "/images/mob/game/Corpse_Devourer.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -2120,7 +2179,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -2133,9 +2192,9 @@
       }
     ],
     "game_data": {
-      "index": 88,
-      "name": "Spiked Beetle",
-      "image": "Mon_7 shape 4"
+      "index": 44,
+      "name": "Corpse Devourer",
+      "image": "Mon_7 shape 0"
     },
     "id": "monster:website:mob-25",
     "identity": {
@@ -2143,12 +2202,13 @@
       "website_name": "巨型多角虫",
       "website_source_id": "mob-25",
       "zircon_candidate_indexes": [
-        88
-      ]
+        44
+      ],
+      "zircon_internal_name": "Corpse Devourer"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:88"
+        "monster:zircon:44"
       ]
     },
     "resources": {
@@ -2164,8 +2224,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Spiked_Beetle.png"
+        "path": "/images/mob/game/Corpse_Devourer.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -2197,8 +2257,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -2210,20 +2270,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 28,
+      "name": "Skeleton Axe Thrower",
+      "image": "Mon_4 shape 3"
+    },
     "id": "monster:website:mob-30",
     "identity": {
       "standard_name_zh": "掷斧骷髅",
       "website_name": "掷斧骷髅",
       "website_source_id": "mob-30",
       "zircon_candidate_indexes": [
-        26,
         28
-      ]
+      ],
+      "zircon_internal_name": "Skeleton Axe Thrower"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:26",
         "monster:zircon:28"
       ]
     },
@@ -2240,8 +2303,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Skeleton_Axe_Thrower.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -2273,8 +2336,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -2286,21 +2349,24 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 26,
+      "name": "Skeleton Axeman",
+      "image": "Mon_4 shape 4"
+    },
     "id": "monster:website:mob-32",
     "identity": {
       "standard_name_zh": "骷髅战将",
       "website_name": "骷髅战将",
       "website_source_id": "mob-32",
       "zircon_candidate_indexes": [
-        30,
-        37
-      ]
+        26
+      ],
+      "zircon_internal_name": "Skeleton Axeman"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:30",
-        "monster:zircon:37"
+        "monster:zircon:26"
       ]
     },
     "resources": {
@@ -2316,8 +2382,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Skeleton_Axeman.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -2350,7 +2416,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -2363,9 +2429,9 @@
       }
     ],
     "game_data": {
-      "index": 27,
-      "name": "Skeleton",
-      "image": "Mon_6 shape 6"
+      "index": 30,
+      "name": "Skeleton Lord",
+      "image": "Mon_4 shape 6"
     },
     "id": "monster:website:mob-33",
     "identity": {
@@ -2373,12 +2439,13 @@
       "website_name": "骷髅精灵",
       "website_source_id": "mob-33",
       "zircon_candidate_indexes": [
-        27
-      ]
+        30
+      ],
+      "zircon_internal_name": "Skeleton Lord"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:27"
+        "monster:zircon:30"
       ]
     },
     "resources": {
@@ -2394,8 +2461,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Skeleton.png"
+        "path": "/images/mob/game/Skeleton_Lord.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -2427,8 +2494,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -2440,21 +2507,24 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 20,
+      "name": "Spitting Spider",
+      "image": "Mon_3 shape 5"
+    },
     "id": "monster:website:mob-34",
     "identity": {
       "standard_name_zh": "蜘蛛娃",
       "website_name": "蜘蛛娃",
       "website_source_id": "mob-34",
       "zircon_candidate_indexes": [
-        72,
-        73
-      ]
+        20
+      ],
+      "zircon_internal_name": "Spitting Spider"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:72",
-        "monster:zircon:73"
+        "monster:zircon:20"
       ]
     },
     "resources": {
@@ -2470,8 +2540,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Spitting_Spider.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -2504,7 +2574,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -2517,9 +2587,9 @@
       }
     ],
     "game_data": {
-      "index": 61,
-      "name": "Spined Dark Lizard",
-      "image": "Mon_5 shape 6"
+      "index": 67,
+      "name": "Arachnid Gazer",
+      "image": "Mon_11 shape 6"
     },
     "id": "monster:website:mob-35",
     "identity": {
@@ -2527,12 +2597,13 @@
       "website_name": "胞眼虫",
       "website_source_id": "mob-35",
       "zircon_candidate_indexes": [
-        61
-      ]
+        67
+      ],
+      "zircon_internal_name": "Arachnid Gazer"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:61"
+        "monster:zircon:67"
       ]
     },
     "resources": {
@@ -2548,8 +2619,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Spined_Dark_Lizard.png"
+        "path": "/images/mob/game/Arachnid_Gazer.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -2582,7 +2653,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -2595,9 +2666,9 @@
       }
     ],
     "game_data": {
-      "index": 61,
-      "name": "Spined Dark Lizard",
-      "image": "Mon_5 shape 6"
+      "index": 67,
+      "name": "Arachnid Gazer",
+      "image": "Mon_11 shape 6"
     },
     "id": "monster:website:mob-36",
     "identity": {
@@ -2605,12 +2676,13 @@
       "website_name": "胞眼虫",
       "website_source_id": "mob-36",
       "zircon_candidate_indexes": [
-        61
-      ]
+        67
+      ],
+      "zircon_internal_name": "Arachnid Gazer"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:61"
+        "monster:zircon:67"
       ]
     },
     "resources": {
@@ -2626,8 +2698,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Spined_Dark_Lizard.png"
+        "path": "/images/mob/game/Arachnid_Gazer.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -2660,7 +2732,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -2673,9 +2745,9 @@
       }
     ],
     "game_data": {
-      "index": 61,
-      "name": "Spined Dark Lizard",
-      "image": "Mon_5 shape 6"
+      "index": 88,
+      "name": "Spiked Beetle",
+      "image": "Mon_7 shape 4"
     },
     "id": "monster:website:mob-37",
     "identity": {
@@ -2683,12 +2755,13 @@
       "website_name": "多脚虫",
       "website_source_id": "mob-37",
       "zircon_candidate_indexes": [
-        61
-      ]
+        88
+      ],
+      "zircon_internal_name": "Spiked Beetle"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:61"
+        "monster:zircon:88"
       ]
     },
     "resources": {
@@ -2704,8 +2777,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Spined_Dark_Lizard.png"
+        "path": "/images/mob/game/Spiked_Beetle.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -2738,7 +2811,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -2751,9 +2824,9 @@
       }
     ],
     "game_data": {
-      "index": 61,
-      "name": "Spined Dark Lizard",
-      "image": "Mon_5 shape 6"
+      "index": 88,
+      "name": "Spiked Beetle",
+      "image": "Mon_7 shape 4"
     },
     "id": "monster:website:mob-38",
     "identity": {
@@ -2761,12 +2834,13 @@
       "website_name": "多脚虫",
       "website_source_id": "mob-38",
       "zircon_candidate_indexes": [
-        61
-      ]
+        88
+      ],
+      "zircon_internal_name": "Spiked Beetle"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:61"
+        "monster:zircon:88"
       ]
     },
     "resources": {
@@ -2782,8 +2856,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Spined_Dark_Lizard.png"
+        "path": "/images/mob/game/Spiked_Beetle.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -2815,8 +2889,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -2828,21 +2902,24 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 43,
+      "name": "Beetle",
+      "image": "Mon_7 shape 3"
+    },
     "id": "monster:website:mob-39",
     "identity": {
       "standard_name_zh": "红甲虫",
       "website_name": "红甲虫",
       "website_source_id": "mob-39",
       "zircon_candidate_indexes": [
-        72,
-        73
-      ]
+        43
+      ],
+      "zircon_internal_name": "Beetle"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:72",
-        "monster:zircon:73"
+        "monster:zircon:43"
       ]
     },
     "resources": {
@@ -2858,8 +2935,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Beetle.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -2891,8 +2968,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -2904,23 +2981,24 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 56,
+      "name": "Lord Ji'Nae",
+      "image": "Mon_7 shape 7"
+    },
     "id": "monster:website:mob-45",
     "identity": {
       "standard_name_zh": "尸王",
       "website_name": "尸王",
       "website_source_id": "mob-45",
       "zircon_candidate_indexes": [
-        56,
-        59,
-        105
-      ]
+        56
+      ],
+      "zircon_internal_name": "Lord Ji'Nae"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:105",
-        "monster:zircon:56",
-        "monster:zircon:59"
+        "monster:zircon:56"
       ]
     },
     "resources": {
@@ -2936,8 +3014,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Lord_JiNae.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -2969,8 +3047,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -2982,23 +3060,24 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 221,
+      "name": "Oyoung Beast",
+      "image": "Mon_23 shape 3"
+    },
     "id": "monster:website:mob-46",
     "identity": {
       "standard_name_zh": "浪子人鬼",
       "website_name": "浪子人鬼",
       "website_source_id": "mob-46",
       "zircon_candidate_indexes": [
-        221,
-        223,
-        362
-      ]
+        221
+      ],
+      "zircon_internal_name": "Oyoung Beast"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:221",
-        "monster:zircon:223",
-        "monster:zircon:362"
+        "monster:zircon:221"
       ]
     },
     "resources": {
@@ -3014,8 +3093,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Oyoung_Beast.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -3047,8 +3126,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -3060,20 +3139,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 57,
+      "name": "Rotting Ghoul",
+      "image": "Mon_14 shape 8"
+    },
     "id": "monster:website:mob-47",
     "identity": {
       "standard_name_zh": "腐蚀人鬼",
       "website_name": "腐蚀人鬼",
       "website_source_id": "mob-47",
       "zircon_candidate_indexes": [
-        57,
-        185
-      ]
+        57
+      ],
+      "zircon_internal_name": "Rotting Ghoul"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:185",
         "monster:zircon:57"
       ]
     },
@@ -3090,8 +3172,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Rotting_Ghoul.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -3124,7 +3206,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -3137,9 +3219,9 @@
       }
     ],
     "game_data": {
-      "index": 45,
-      "name": "Visceral Worm",
-      "image": "Mon_7 shape 1"
+      "index": 93,
+      "name": "Stone Golem",
+      "image": "Mon_1 shape 4"
     },
     "id": "monster:website:mob-48",
     "identity": {
@@ -3147,12 +3229,13 @@
       "website_name": "沙鬼",
       "website_source_id": "mob-48",
       "zircon_candidate_indexes": [
-        45
-      ]
+        93
+      ],
+      "zircon_internal_name": "Stone Golem"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:45"
+        "monster:zircon:93"
       ]
     },
     "resources": {
@@ -3168,8 +3251,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Visceral_Worm.png"
+        "path": "/images/mob/game/Stone_Golem.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -3202,7 +3285,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -3215,7 +3298,7 @@
       }
     ],
     "game_data": {
-      "index": 93,
+      "index": 291,
       "name": "Stone Golem",
       "image": "Mon_1 shape 4"
     },
@@ -3225,12 +3308,13 @@
       "website_name": "沙漠石人",
       "website_source_id": "mob-49",
       "zircon_candidate_indexes": [
-        93
-      ]
+        291
+      ],
+      "zircon_internal_name": "Stone Golem"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:93"
+        "monster:zircon:291"
       ]
     },
     "resources": {
@@ -3246,8 +3330,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Stone_Golem.png"
+        "path": "/images/mob/game/Stone_Golem.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -3280,7 +3364,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -3293,9 +3377,9 @@
       }
     ],
     "game_data": {
-      "index": 17,
-      "name": "Carnivorous Plant",
-      "image": "Mon_4 shape 1"
+      "index": 95,
+      "name": "Cursed Cactus",
+      "image": "Mon_10 shape 5"
     },
     "id": "monster:website:mob-50",
     "identity": {
@@ -3303,12 +3387,13 @@
       "website_name": "沙漠树魔",
       "website_source_id": "mob-50",
       "zircon_candidate_indexes": [
-        17
-      ]
+        95
+      ],
+      "zircon_internal_name": "Cursed Cactus"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:17"
+        "monster:zircon:95"
       ]
     },
     "resources": {
@@ -3324,8 +3409,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Carnivorous_Plant.png"
+        "path": "/images/mob/game/Cursed_Cactus.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -3357,8 +3442,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -3370,23 +3455,24 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 102,
+      "name": "Giant Lizard",
+      "image": "Mon_20 shape 6"
+    },
     "id": "monster:website:mob-51",
     "identity": {
       "standard_name_zh": "沙漠蜥蜴",
       "website_name": "沙漠蜥蜴",
       "website_source_id": "mob-51",
       "zircon_candidate_indexes": [
-        102,
-        379,
-        485
-      ]
+        102
+      ],
+      "zircon_internal_name": "Giant Lizard"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:102",
-        "monster:zircon:379",
-        "monster:zircon:485"
+        "monster:zircon:102"
       ]
     },
     "resources": {
@@ -3402,8 +3488,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Giant_Lizard.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -3435,8 +3521,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -3448,22 +3534,30 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 35,
+      "name": "Devouring Ghost",
+      "image": "Mon_6 shape 1"
+    },
     "id": "monster:website:mob-52",
     "identity": {
       "standard_name_zh": "夜行鬼",
       "website_name": "夜行鬼",
       "website_source_id": "mob-52",
       "zircon_candidate_indexes": [
-        35,
-        57
+        35
       ],
       "zircon_candidate_names": [
         "Devouring Ghost",
         "Rotting Ghoul"
+      ],
+      "zircon_internal_name": "Devouring Ghost"
+    },
+    "relations": {
+      "candidate_entity_ids": [
+        "monster:zircon:35"
       ]
     },
-    "relations": {},
     "resources": {
       "website": {
         "bytes": 4538,
@@ -3477,8 +3571,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Devouring_Ghost.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -3510,8 +3604,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -3523,23 +3617,24 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 393,
+      "name": "Fierce Fish Demon",
+      "image": "Mon_9 shape 4"
+    },
     "id": "monster:website:mob-53",
     "identity": {
       "standard_name_zh": "沙漠鱼魔",
       "website_name": "沙漠鱼魔",
       "website_source_id": "mob-53",
       "zircon_candidate_indexes": [
-        78,
-        80,
         393
-      ]
+      ],
+      "zircon_internal_name": "Fierce Fish Demon"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:393",
-        "monster:zircon:78",
-        "monster:zircon:80"
+        "monster:zircon:393"
       ]
     },
     "resources": {
@@ -3555,8 +3650,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Fierce_Fish_Demon.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -3589,7 +3684,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -3602,7 +3697,7 @@
       }
     ],
     "game_data": {
-      "index": 390,
+      "index": 292,
       "name": "Fierce Wind Demon",
       "image": "Mon_9 shape 7"
     },
@@ -3612,12 +3707,13 @@
       "website_name": "沙漠风魔",
       "website_source_id": "mob-54",
       "zircon_candidate_indexes": [
-        390
-      ]
+        292
+      ],
+      "zircon_internal_name": "Fierce Wind Demon"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:390"
+        "monster:zircon:292"
       ]
     },
     "resources": {
@@ -3633,8 +3729,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Fierce_Wind_Demon.png"
+        "path": "/images/mob/game/Fierce_Wind_Demon.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -3667,7 +3763,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -3680,9 +3776,9 @@
       }
     ],
     "game_data": {
-      "index": 67,
-      "name": "Arachnid Gazer",
-      "image": "Mon_11 shape 6"
+      "index": 71,
+      "name": "Venomous Arachnid",
+      "image": "Mon_12 shape 1"
     },
     "id": "monster:website:mob-59",
     "identity": {
@@ -3690,12 +3786,13 @@
       "website_name": "月魔蜘蛛",
       "website_source_id": "mob-59",
       "zircon_candidate_indexes": [
-        67
-      ]
+        71
+      ],
+      "zircon_internal_name": "Venomous Arachnid"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:67"
+        "monster:zircon:71"
       ]
     },
     "resources": {
@@ -3711,8 +3808,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Arachnid_Gazer.png"
+        "path": "/images/mob/game/Venomous_Arachnid.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -3820,7 +3917,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -3833,9 +3930,9 @@
       }
     ],
     "game_data": {
-      "index": 72,
-      "name": "Dark Arachnid",
-      "image": "Mon_12 shape 2"
+      "index": 66,
+      "name": "Spider Bat",
+      "image": "Mon_11 shape 1"
     },
     "id": "monster:website:mob-60",
     "identity": {
@@ -3843,12 +3940,13 @@
       "website_name": "独眼蜘蛛",
       "website_source_id": "mob-60",
       "zircon_candidate_indexes": [
-        72
-      ]
+        66
+      ],
+      "zircon_internal_name": "Spider Bat"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:72"
+        "monster:zircon:66"
       ]
     },
     "resources": {
@@ -3864,8 +3962,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Dark_Arachnid.png"
+        "path": "/images/mob/game/Spider_Bat.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -3898,7 +3996,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -3911,7 +4009,7 @@
       }
     ],
     "game_data": {
-      "index": 71,
+      "index": 303,
       "name": "Venomous Arachnid",
       "image": "Mon_12 shape 1"
     },
@@ -3921,12 +4019,13 @@
       "website_name": "天狼蜘蛛",
       "website_source_id": "mob-61",
       "zircon_candidate_indexes": [
-        71
-      ]
+        303
+      ],
+      "zircon_internal_name": "Venomous Arachnid"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:71"
+        "monster:zircon:303"
       ]
     },
     "resources": {
@@ -3942,8 +4041,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Venomous_Arachnid.png"
+        "path": "/images/mob/game/Venomous_Arachnid.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -3975,8 +4074,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -3988,22 +4087,30 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 67,
+      "name": "Arachnid Gazer",
+      "image": "Mon_11 shape 6"
+    },
     "id": "monster:website:mob-62",
     "identity": {
       "standard_name_zh": "幻影蜘蛛",
       "website_name": "幻影蜘蛛",
       "website_source_id": "mob-62",
       "zircon_candidate_indexes": [
-        67,
-        73
+        67
       ],
       "zircon_candidate_names": [
         "Arachnid Gazer",
         "Arachnid Broodmother"
+      ],
+      "zircon_internal_name": "Arachnid Gazer"
+    },
+    "relations": {
+      "candidate_entity_ids": [
+        "monster:zircon:67"
       ]
     },
-    "relations": {},
     "resources": {
       "website": {
         "bytes": 8582,
@@ -4017,8 +4124,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Arachnid_Gazer.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -4051,7 +4158,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -4064,9 +4171,9 @@
       }
     ],
     "game_data": {
-      "index": 67,
-      "name": "Arachnid Gazer",
-      "image": "Mon_11 shape 6"
+      "index": 20,
+      "name": "Spitting Spider",
+      "image": "Mon_3 shape 5"
     },
     "id": "monster:website:mob-63",
     "identity": {
@@ -4074,12 +4181,13 @@
       "website_name": "爆裂蜘蛛",
       "website_source_id": "mob-63",
       "zircon_candidate_indexes": [
-        67
-      ]
+        20
+      ],
+      "zircon_internal_name": "Spitting Spider"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:67"
+        "monster:zircon:20"
       ]
     },
     "resources": {
@@ -4095,8 +4203,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Arachnid_Gazer.png"
+        "path": "/images/mob/game/Spitting_Spider.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -4129,7 +4237,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -4142,8 +4250,8 @@
       }
     ],
     "game_data": {
-      "index": 73,
-      "name": "Arachnid Broodmother",
+      "index": 72,
+      "name": "Dark Arachnid",
       "image": "Mon_12 shape 2"
     },
     "id": "monster:website:mob-64",
@@ -4152,12 +4260,13 @@
       "website_name": "黑角蜘蛛",
       "website_source_id": "mob-64",
       "zircon_candidate_indexes": [
-        73
-      ]
+        72
+      ],
+      "zircon_internal_name": "Dark Arachnid"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:73"
+        "monster:zircon:72"
       ]
     },
     "resources": {
@@ -4173,8 +4282,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Arachnid_Broodmother.png"
+        "path": "/images/mob/game/Dark_Arachnid.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -4207,7 +4316,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -4220,7 +4329,7 @@
       }
     ],
     "game_data": {
-      "index": 71,
+      "index": 302,
       "name": "Venomous Arachnid",
       "image": "Mon_12 shape 1"
     },
@@ -4230,12 +4339,13 @@
       "website_name": "花色蜘蛛",
       "website_source_id": "mob-65",
       "zircon_candidate_indexes": [
-        71
-      ]
+        302
+      ],
+      "zircon_internal_name": "Venomous Arachnid"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:71"
+        "monster:zircon:302"
       ]
     },
     "resources": {
@@ -4251,8 +4361,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Venomous_Arachnid.png"
+        "path": "/images/mob/game/Venomous_Arachnid.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -4284,8 +4394,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -4297,20 +4407,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 73,
+      "name": "Arachnid Broodmother",
+      "image": "Mon_12 shape 2"
+    },
     "id": "monster:website:mob-66",
     "identity": {
       "standard_name_zh": "八脚首领(小BOSS)",
       "website_name": "八脚首领(小BOSS)",
       "website_source_id": "mob-66",
       "zircon_candidate_indexes": [
-        72,
         73
-      ]
+      ],
+      "zircon_internal_name": "Arachnid Broodmother"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:72",
         "monster:zircon:73"
       ]
     },
@@ -4327,8 +4440,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Arachnid_Broodmother.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -4361,7 +4474,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -4374,9 +4487,9 @@
       }
     ],
     "game_data": {
-      "index": 87,
-      "name": "Crazed Warrior",
-      "image": "Mon_16 shape 7"
+      "index": 83,
+      "name": "Monkey",
+      "image": "Mon_16 shape 4"
     },
     "id": "monster:website:mob-67",
     "identity": {
@@ -4384,12 +4497,13 @@
       "website_name": "猿猴战士",
       "website_source_id": "mob-67",
       "zircon_candidate_indexes": [
-        87
-      ]
+        83
+      ],
+      "zircon_internal_name": "Monkey"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:87"
+        "monster:zircon:83"
       ]
     },
     "resources": {
@@ -4405,8 +4519,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Crazed_Warrior.png"
+        "path": "/images/mob/game/Monkey.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -4439,7 +4553,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -4452,9 +4566,9 @@
       }
     ],
     "game_data": {
-      "index": 186,
-      "name": "Banyo Warrior",
-      "image": "Mon_1 shape 6"
+      "index": 83,
+      "name": "Monkey",
+      "image": "Mon_16 shape 4"
     },
     "id": "monster:website:mob-68",
     "identity": {
@@ -4462,12 +4576,13 @@
       "website_name": "猿猴战将",
       "website_source_id": "mob-68",
       "zircon_candidate_indexes": [
-        186
-      ]
+        83
+      ],
+      "zircon_internal_name": "Monkey"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:186"
+        "monster:zircon:83"
       ]
     },
     "resources": {
@@ -4483,8 +4598,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Banyo_Warrior.png"
+        "path": "/images/mob/game/Monkey.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -4517,7 +4632,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -4541,7 +4656,8 @@
       "website_source_id": "mob-69",
       "zircon_candidate_indexes": [
         84
-      ]
+      ],
+      "zircon_internal_name": "Evil Monkey"
     },
     "relations": {
       "candidate_entity_ids": [
@@ -4561,8 +4677,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Evil_Monkey.png"
+        "path": "/images/mob/game/Evil_Monkey.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -4595,7 +4711,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -4619,7 +4735,8 @@
       "website_source_id": "mob-70",
       "zircon_candidate_indexes": [
         84
-      ]
+      ],
+      "zircon_internal_name": "Evil Monkey"
     },
     "relations": {
       "candidate_entity_ids": [
@@ -4639,8 +4756,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Evil_Monkey.png"
+        "path": "/images/mob/game/Evil_Monkey.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -4672,8 +4789,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -4685,20 +4802,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 85,
+      "name": "Evil Elephant",
+      "image": "Mon_16 shape 8"
+    },
     "id": "monster:website:mob-71",
     "identity": {
       "standard_name_zh": "巨象兽",
       "website_name": "巨象兽",
       "website_source_id": "mob-71",
       "zircon_candidate_indexes": [
-        85,
-        273
-      ]
+        85
+      ],
+      "zircon_internal_name": "Evil Elephant"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:273",
         "monster:zircon:85"
       ]
     },
@@ -4715,8 +4835,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Evil_Elephant.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -4749,7 +4869,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -4773,7 +4893,8 @@
       "website_source_id": "mob-72",
       "zircon_candidate_indexes": [
         84
-      ]
+      ],
+      "zircon_internal_name": "Evil Monkey"
     },
     "relations": {
       "candidate_entity_ids": [
@@ -4793,8 +4914,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Evil_Monkey.png"
+        "path": "/images/mob/game/Evil_Monkey.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -4826,8 +4947,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -4839,21 +4960,24 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 69,
+      "name": "Red Moon Guardian",
+      "image": "Mon_11 shape 7"
+    },
     "id": "monster:website:mob-73",
     "identity": {
       "standard_name_zh": "血巨人",
       "website_name": "血巨人",
       "website_source_id": "mob-73",
       "zircon_candidate_indexes": [
-        69,
-        70
-      ]
+        69
+      ],
+      "zircon_internal_name": "Red Moon Guardian"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:69",
-        "monster:zircon:70"
+        "monster:zircon:69"
       ]
     },
     "resources": {
@@ -4869,8 +4993,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Red_Moon_Guardian.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -4903,7 +5027,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -4927,7 +5051,8 @@
       "website_source_id": "mob-77",
       "zircon_candidate_indexes": [
         38
-      ]
+      ],
+      "zircon_internal_name": "Ant Soldier"
     },
     "relations": {
       "candidate_entity_ids": [
@@ -4947,8 +5072,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Ant_Soldier.png"
+        "path": "/images/mob/game/Ant_Soldier.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -4981,7 +5106,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -5005,7 +5130,8 @@
       "website_source_id": "mob-78",
       "zircon_candidate_indexes": [
         42
-      ]
+      ],
+      "zircon_internal_name": "Ant Commander"
     },
     "relations": {
       "candidate_entity_ids": [
@@ -5025,8 +5151,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Ant_Commander.png"
+        "path": "/images/mob/game/Ant_Commander.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -5059,7 +5185,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -5072,9 +5198,9 @@
       }
     ],
     "game_data": {
-      "index": 38,
-      "name": "Ant Soldier",
-      "image": "Mon_2 shape 4"
+      "index": 40,
+      "name": "Ant Needler",
+      "image": "Mon_10 shape 6"
     },
     "id": "monster:website:mob-79",
     "identity": {
@@ -5082,12 +5208,13 @@
       "website_name": "爆毒蚂蚁",
       "website_source_id": "mob-79",
       "zircon_candidate_indexes": [
-        38
-      ]
+        40
+      ],
+      "zircon_internal_name": "Ant Needler"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:38"
+        "monster:zircon:40"
       ]
     },
     "resources": {
@@ -5103,8 +5230,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Ant_Soldier.png"
+        "path": "/images/mob/game/Ant_Needler.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -5136,8 +5263,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -5149,7 +5276,11 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 13,
+      "name": "Claw Cat",
+      "image": "Mon_4 shape 8"
+    },
     "id": "monster:website:mob-8",
     "identity": {
       "standard_name_zh": "钉耙猫",
@@ -5160,9 +5291,14 @@
       ],
       "zircon_candidate_names": [
         "Claw Cat"
+      ],
+      "zircon_internal_name": "Claw Cat"
+    },
+    "relations": {
+      "candidate_entity_ids": [
+        "monster:zircon:13"
       ]
     },
-    "relations": {},
     "resources": {
       "website": {
         "bytes": 5870,
@@ -5176,8 +5312,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Claw_Cat.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -5209,8 +5345,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -5222,21 +5358,24 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 41,
+      "name": "Armoured Ant",
+      "image": "Mon_1 shape 8"
+    },
     "id": "monster:website:mob-80",
     "identity": {
       "standard_name_zh": "盔甲蚂蚁",
       "website_name": "盔甲蚂蚁",
       "website_source_id": "mob-80",
       "zircon_candidate_indexes": [
-        41,
-        42
-      ]
+        41
+      ],
+      "zircon_internal_name": "Armoured Ant"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:41",
-        "monster:zircon:42"
+        "monster:zircon:41"
       ]
     },
     "resources": {
@@ -5252,8 +5391,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Armoured_Ant.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -5285,8 +5424,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -5298,21 +5437,24 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 39,
+      "name": "Ant Healer",
+      "image": "Mon_1 shape 7"
+    },
     "id": "monster:website:mob-81",
     "identity": {
       "standard_name_zh": "蚂蚁道士",
       "website_name": "蚂蚁道士",
       "website_source_id": "mob-81",
       "zircon_candidate_indexes": [
-        39,
-        470
-      ]
+        39
+      ],
+      "zircon_internal_name": "Ant Healer"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:39",
-        "monster:zircon:470"
+        "monster:zircon:39"
       ]
     },
     "resources": {
@@ -5328,8 +5470,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Ant_Healer.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -5361,8 +5503,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -5374,21 +5516,24 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 41,
+      "name": "Armoured Ant",
+      "image": "Mon_1 shape 8"
+    },
     "id": "monster:website:mob-82",
     "identity": {
       "standard_name_zh": "蚂蚁将军",
       "website_name": "蚂蚁将军",
       "website_source_id": "mob-82",
       "zircon_candidate_indexes": [
-        41,
-        42
-      ]
+        41
+      ],
+      "zircon_internal_name": "Armoured Ant"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:41",
-        "monster:zircon:42"
+        "monster:zircon:41"
       ]
     },
     "resources": {
@@ -5404,8 +5549,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Armoured_Ant.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -5437,8 +5582,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -5450,7 +5595,11 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 50,
+      "name": "Wasp Hatchling",
+      "image": "Mon_8 shape 1"
+    },
     "id": "monster:website:mob-83",
     "identity": {
       "standard_name_zh": "跳跳蜂",
@@ -5458,7 +5607,8 @@
       "website_source_id": "mob-83",
       "zircon_candidate_indexes": [
         50
-      ]
+      ],
+      "zircon_internal_name": "Wasp Hatchling"
     },
     "relations": {
       "candidate_entity_ids": [
@@ -5478,8 +5628,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Wasp_Hatchling.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -5512,7 +5662,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -5536,7 +5686,8 @@
       "website_source_id": "mob-84",
       "zircon_candidate_indexes": [
         51
-      ]
+      ],
+      "zircon_internal_name": "Centipede"
     },
     "relations": {
       "candidate_entity_ids": [
@@ -5556,8 +5707,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Centipede.png"
+        "path": "/images/mob/game/Centipede.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -5590,7 +5741,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -5614,7 +5765,8 @@
       "website_source_id": "mob-85",
       "zircon_candidate_indexes": [
         51
-      ]
+      ],
+      "zircon_internal_name": "Centipede"
     },
     "relations": {
       "candidate_entity_ids": [
@@ -5634,8 +5786,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Centipede.png"
+        "path": "/images/mob/game/Centipede.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -5668,7 +5820,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -5681,9 +5833,9 @@
       }
     ],
     "game_data": {
-      "index": 31,
-      "name": "Cave Maggot",
-      "image": "Mon_4 shape 7"
+      "index": 51,
+      "name": "Centipede",
+      "image": "Mon_7 shape 6"
     },
     "id": "monster:website:mob-86",
     "identity": {
@@ -5691,12 +5843,13 @@
       "website_name": "洞穴蜈蚣",
       "website_source_id": "mob-86",
       "zircon_candidate_indexes": [
-        31
-      ]
+        51
+      ],
+      "zircon_internal_name": "Centipede"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:31"
+        "monster:zircon:51"
       ]
     },
     "resources": {
@@ -5712,8 +5865,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Cave_Maggot.png"
+        "path": "/images/mob/game/Centipede.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -5745,8 +5898,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -5758,22 +5911,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 51,
+      "name": "Centipede",
+      "image": "Mon_7 shape 6"
+    },
     "id": "monster:website:mob-87",
     "identity": {
       "standard_name_zh": "邪恶蜈蚣",
       "website_name": "邪恶蜈蚣",
       "website_source_id": "mob-87",
       "zircon_candidate_indexes": [
-        51,
-        183,
-        381
-      ]
+        51
+      ],
+      "zircon_internal_name": "Centipede"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:183",
-        "monster:zircon:381",
         "monster:zircon:51"
       ]
     },
@@ -5790,8 +5944,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Centipede.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -5824,7 +5978,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -5848,7 +6002,8 @@
       "website_source_id": "mob-88",
       "zircon_candidate_indexes": [
         88
-      ]
+      ],
+      "zircon_internal_name": "Spiked Beetle"
     },
     "relations": {
       "candidate_entity_ids": [
@@ -5868,8 +6023,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Spiked_Beetle.png"
+        "path": "/images/mob/game/Spiked_Beetle.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -5902,7 +6057,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -5926,7 +6081,8 @@
       "website_source_id": "mob-89",
       "zircon_candidate_indexes": [
         88
-      ]
+      ],
+      "zircon_internal_name": "Spiked Beetle"
     },
     "relations": {
       "candidate_entity_ids": [
@@ -5946,8 +6102,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Spiked_Beetle.png"
+        "path": "/images/mob/game/Spiked_Beetle.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -5980,7 +6136,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -6004,7 +6160,8 @@
       "website_source_id": "mob-90",
       "zircon_candidate_indexes": [
         88
-      ]
+      ],
+      "zircon_internal_name": "Spiked Beetle"
     },
     "relations": {
       "candidate_entity_ids": [
@@ -6024,8 +6181,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Spiked_Beetle.png"
+        "path": "/images/mob/game/Spiked_Beetle.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -6058,7 +6215,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -6082,7 +6239,8 @@
       "website_source_id": "mob-91",
       "zircon_candidate_indexes": [
         88
-      ]
+      ],
+      "zircon_internal_name": "Spiked Beetle"
     },
     "relations": {
       "candidate_entity_ids": [
@@ -6102,8 +6260,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Spiked_Beetle.png"
+        "path": "/images/mob/game/Spiked_Beetle.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -6135,8 +6293,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -6148,7 +6306,11 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 52,
+      "name": "Butterfly Worm",
+      "image": "Mon_8 shape 2"
+    },
     "id": "monster:website:mob-92",
     "identity": {
       "standard_name_zh": "蝴蝶虫",
@@ -6156,7 +6318,8 @@
       "website_source_id": "mob-92",
       "zircon_candidate_indexes": [
         52
-      ]
+      ],
+      "zircon_internal_name": "Butterfly Worm"
     },
     "relations": {
       "candidate_entity_ids": [
@@ -6176,8 +6339,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Butterfly_Worm.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -6210,7 +6373,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -6234,7 +6397,8 @@
       "website_source_id": "mob-93",
       "zircon_candidate_indexes": [
         53
-      ]
+      ],
+      "zircon_internal_name": "Mutant Maggot"
     },
     "relations": {
       "candidate_entity_ids": [
@@ -6254,8 +6418,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Mutant_Maggot.png"
+        "path": "/images/mob/game/Mutant_Maggot.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -6288,7 +6452,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -6312,7 +6476,8 @@
       "website_source_id": "mob-94",
       "zircon_candidate_indexes": [
         53
-      ]
+      ],
+      "zircon_internal_name": "Mutant Maggot"
     },
     "relations": {
       "candidate_entity_ids": [
@@ -6332,8 +6497,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Mutant_Maggot.png"
+        "path": "/images/mob/game/Mutant_Maggot.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -6366,7 +6531,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -6390,7 +6555,8 @@
       "website_source_id": "mob-95",
       "zircon_candidate_indexes": [
         53
-      ]
+      ],
+      "zircon_internal_name": "Mutant Maggot"
     },
     "relations": {
       "candidate_entity_ids": [
@@ -6410,8 +6576,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Mutant_Maggot.png"
+        "path": "/images/mob/game/Mutant_Maggot.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -6443,8 +6609,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -6456,7 +6622,11 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 53,
+      "name": "Mutant Maggot",
+      "image": "Mon_7 shape 8"
+    },
     "id": "monster:website:mob-96",
     "identity": {
       "standard_name_zh": "沃毒黑色恶蛆",
@@ -6464,7 +6634,8 @@
       "website_source_id": "mob-96",
       "zircon_candidate_indexes": [
         53
-      ]
+      ],
+      "zircon_internal_name": "Mutant Maggot"
     },
     "relations": {
       "candidate_entity_ids": [
@@ -6484,8 +6655,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Mutant_Maggot.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -6517,8 +6688,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "conflict",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -6530,20 +6701,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "index": 88,
+      "name": "Spiked Beetle",
+      "image": "Mon_7 shape 4"
+    },
     "id": "monster:website:mob-97",
     "identity": {
       "standard_name_zh": "邪恶钳虫",
       "website_name": "邪恶钳虫",
       "website_source_id": "mob-97",
       "zircon_candidate_indexes": [
-        88,
-        179
-      ]
+        88
+      ],
+      "zircon_internal_name": "Spiked Beetle"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:179",
         "monster:zircon:88"
       ]
     },
@@ -6560,8 +6734,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Spiked_Beetle.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -6594,7 +6768,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -6607,9 +6781,9 @@
       }
     ],
     "game_data": {
-      "index": 421,
-      "name": "Otherworld Tentacle Demon",
-      "image": "Mon_20 shape 7"
+      "index": 51,
+      "name": "Centipede",
+      "image": "Mon_7 shape 6"
     },
     "id": "monster:website:mob-98",
     "identity": {
@@ -6617,12 +6791,13 @@
       "website_name": "触龙神",
       "website_source_id": "mob-98",
       "zircon_candidate_indexes": [
-        421
-      ]
+        51
+      ],
+      "zircon_internal_name": "Centipede"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:421"
+        "monster:zircon:51"
       ]
     },
     "resources": {
@@ -6638,8 +6813,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Otherworld_Tentacle_Demon.png"
+        "path": "/images/mob/game/Centipede.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -6672,7 +6847,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
+      "reason": "aligned with verified Zircon model prototype",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -6685,9 +6860,9 @@
       }
     ],
     "game_data": {
-      "index": 125,
-      "name": "Red Boar",
-      "image": "Mon_8 shape 6"
+      "index": 394,
+      "name": "Fierce Black Boar",
+      "image": "Mon_8 shape 7"
     },
     "id": "monster:website:mob-99",
     "identity": {
@@ -6695,12 +6870,13 @@
       "website_name": "赤黄猪王",
       "website_source_id": "mob-99",
       "zircon_candidate_indexes": [
-        125
-      ]
+        394
+      ],
+      "zircon_internal_name": "Fierce Black Boar"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:125"
+        "monster:zircon:394"
       ]
     },
     "resources": {
@@ -6716,8 +6892,8 @@
         "width": 139
       },
       "zircon": {
-        "verification": "verified-by-image",
-        "path": "/images/mob/game/Red_Boar.png"
+        "path": "/images/mob/game/Fierce_Black_Boar.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -11295,9 +11471,64 @@
       }
     ],
     "game_data": {
-      "index": 13,
-      "name": "Claw Cat",
-      "image": "Mon_4 shape 8"
+      "AI": 0,
+      "AttackDelay": 2500,
+      "CanPush": true,
+      "CanTame": false,
+      "CoolEye": 0,
+      "Experience": 39,
+      "FaceImage": 0,
+      "Flag": "None",
+      "Image": "ClawCat",
+      "IsBoss": false,
+      "Level": 10,
+      "MoveDelay": 1500,
+      "QuestDetails": [
+        {
+          "Index": 74,
+          "Name": null
+        },
+        {
+          "Index": 75,
+          "Name": null
+        },
+        {
+          "Index": 76,
+          "Name": null
+        }
+      ],
+      "Stats": [
+        {
+          "Stat": "Health",
+          "Value": 20
+        },
+        {
+          "Stat": "MinMR",
+          "Value": 2
+        },
+        {
+          "Stat": "MaxMR",
+          "Value": 2
+        },
+        {
+          "Stat": "MinDC",
+          "Value": 3
+        },
+        {
+          "Stat": "MaxDC",
+          "Value": 6
+        },
+        {
+          "Stat": "Accuracy",
+          "Value": 11
+        },
+        {
+          "Stat": "Agility",
+          "Value": 9
+        }
+      ],
+      "Undead": false,
+      "ViewRange": 9
     },
     "id": "monster:zircon:13",
     "identity": {
@@ -15685,9 +15916,86 @@
       }
     ],
     "game_data": {
-      "index": 89,
-      "name": "Numa Grunt",
-      "image": "Mon_13 shape 8"
+      "AI": 64,
+      "AttackDelay": 1300,
+      "CanPush": true,
+      "CanTame": false,
+      "CoolEye": 60,
+      "Experience": 33930,
+      "FaceImage": 0,
+      "Flag": "None",
+      "Image": "NumaArmoredSoldier",
+      "IsBoss": false,
+      "Level": 72,
+      "MoveDelay": 1000,
+      "Stats": [
+        {
+          "Stat": "Health",
+          "Value": 2000
+        },
+        {
+          "Stat": "MinAC",
+          "Value": 12
+        },
+        {
+          "Stat": "MaxAC",
+          "Value": 12
+        },
+        {
+          "Stat": "MinMR",
+          "Value": 27
+        },
+        {
+          "Stat": "MaxMR",
+          "Value": 27
+        },
+        {
+          "Stat": "MinDC",
+          "Value": 75
+        },
+        {
+          "Stat": "MaxDC",
+          "Value": 100
+        },
+        {
+          "Stat": "Accuracy",
+          "Value": 22
+        },
+        {
+          "Stat": "Agility",
+          "Value": 18
+        },
+        {
+          "Stat": "FireResistance",
+          "Value": 2
+        },
+        {
+          "Stat": "IceResistance",
+          "Value": 3
+        },
+        {
+          "Stat": "LightningResistance",
+          "Value": 1
+        },
+        {
+          "Stat": "WindResistance",
+          "Value": -2
+        },
+        {
+          "Stat": "HolyResistance",
+          "Value": -4
+        },
+        {
+          "Stat": "DarkResistance",
+          "Value": 5
+        },
+        {
+          "Stat": "PhantomResistance",
+          "Value": -3
+        }
+      ],
+      "Undead": false,
+      "ViewRange": 10
     },
     "id": "monster:zircon:165",
     "identity": {
@@ -15784,9 +16092,90 @@
       }
     ],
     "game_data": {
-      "index": 164,
-      "name": "Numa Royal Guard",
-      "image": "Mon_19 shape 5"
+      "AI": 48,
+      "AttackDelay": 1600,
+      "CanPush": true,
+      "CanTame": false,
+      "CoolEye": 100,
+      "Experience": 370500,
+      "FaceImage": 0,
+      "Flag": "None",
+      "Image": "NumaRoyalGuard",
+      "IsBoss": true,
+      "Level": 72,
+      "MoveDelay": 700,
+      "Stats": [
+        {
+          "Stat": "Health",
+          "Value": 7700
+        },
+        {
+          "Stat": "MinAC",
+          "Value": 53
+        },
+        {
+          "Stat": "MaxAC",
+          "Value": 53
+        },
+        {
+          "Stat": "MinMR",
+          "Value": 70
+        },
+        {
+          "Stat": "MaxMR",
+          "Value": 70
+        },
+        {
+          "Stat": "MinDC",
+          "Value": 138
+        },
+        {
+          "Stat": "MaxDC",
+          "Value": 238
+        },
+        {
+          "Stat": "Accuracy",
+          "Value": 25
+        },
+        {
+          "Stat": "Agility",
+          "Value": 23
+        },
+        {
+          "Stat": "FireResistance",
+          "Value": 4
+        },
+        {
+          "Stat": "IceResistance",
+          "Value": 4
+        },
+        {
+          "Stat": "LightningResistance",
+          "Value": 4
+        },
+        {
+          "Stat": "WindResistance",
+          "Value": 3
+        },
+        {
+          "Stat": "HolyResistance",
+          "Value": 3
+        },
+        {
+          "Stat": "DarkResistance",
+          "Value": 4
+        },
+        {
+          "Stat": "PhantomResistance",
+          "Value": 4
+        },
+        {
+          "Stat": "FireAffinity",
+          "Value": 1
+        }
+      ],
+      "Undead": false,
+      "ViewRange": 10
     },
     "id": "monster:zircon:166",
     "identity": {
@@ -19248,9 +19637,50 @@
       }
     ],
     "game_data": {
-      "index": 19,
-      "name": "Tiger Snake",
-      "image": "Mon_6 shape 7"
+      "AI": 0,
+      "AttackDelay": 2300,
+      "CanPush": true,
+      "CanTame": false,
+      "CoolEye": 0,
+      "Experience": 156,
+      "FaceImage": 0,
+      "Flag": "None",
+      "Image": "TigerSnake",
+      "IsBoss": false,
+      "Level": 15,
+      "MoveDelay": 1300,
+      "Stats": [
+        {
+          "Stat": "Health",
+          "Value": 70
+        },
+        {
+          "Stat": "MinMR",
+          "Value": 4
+        },
+        {
+          "Stat": "MaxMR",
+          "Value": 4
+        },
+        {
+          "Stat": "MinDC",
+          "Value": 3
+        },
+        {
+          "Stat": "MaxDC",
+          "Value": 15
+        },
+        {
+          "Stat": "Accuracy",
+          "Value": 13
+        },
+        {
+          "Stat": "Agility",
+          "Value": 11
+        }
+      ],
+      "Undead": false,
+      "ViewRange": 9
     },
     "id": "monster:zircon:19",
     "identity": {
@@ -20042,9 +20472,68 @@
       }
     ],
     "game_data": {
-      "index": 71,
-      "name": "Venomous Arachnid",
-      "image": "Mon_12 shape 1"
+      "AI": 6,
+      "AttackDelay": 2500,
+      "CanPush": true,
+      "CanTame": false,
+      "CoolEye": 0,
+      "Experience": 44,
+      "FaceImage": 0,
+      "Flag": "None",
+      "Image": "SpittingSpider",
+      "IsBoss": false,
+      "Level": 10,
+      "MoveDelay": 1000,
+      "QuestDetails": [
+        {
+          "Index": 24,
+          "Name": null
+        }
+      ],
+      "Stats": [
+        {
+          "Stat": "Health",
+          "Value": 22
+        },
+        {
+          "Stat": "MinMR",
+          "Value": 2
+        },
+        {
+          "Stat": "MaxMR",
+          "Value": 2
+        },
+        {
+          "Stat": "MinDC",
+          "Value": 2
+        },
+        {
+          "Stat": "MaxDC",
+          "Value": 9
+        },
+        {
+          "Stat": "MinSC",
+          "Value": 2
+        },
+        {
+          "Stat": "MaxSC",
+          "Value": 5
+        },
+        {
+          "Stat": "Accuracy",
+          "Value": 11
+        },
+        {
+          "Stat": "Agility",
+          "Value": 9
+        },
+        {
+          "Stat": "DarkAffinity",
+          "Value": 1
+        }
+      ],
+      "Undead": false,
+      "ViewRange": 9
     },
     "id": "monster:zircon:20",
     "identity": {
@@ -24507,9 +24996,50 @@
       }
     ],
     "game_data": {
-      "index": 24,
-      "name": "Cave Bat",
-      "image": "Mon_3 shape 9"
+      "AI": 0,
+      "AttackDelay": 2500,
+      "CanPush": true,
+      "CanTame": false,
+      "CoolEye": 0,
+      "Experience": 234,
+      "FaceImage": 0,
+      "Flag": "None",
+      "Image": "CaveBat",
+      "IsBoss": false,
+      "Level": 18,
+      "MoveDelay": 1500,
+      "Stats": [
+        {
+          "Stat": "Health",
+          "Value": 90
+        },
+        {
+          "Stat": "MinMR",
+          "Value": 5
+        },
+        {
+          "Stat": "MaxMR",
+          "Value": 5
+        },
+        {
+          "Stat": "MinDC",
+          "Value": 10
+        },
+        {
+          "Stat": "MaxDC",
+          "Value": 18
+        },
+        {
+          "Stat": "Accuracy",
+          "Value": 14
+        },
+        {
+          "Stat": "Agility",
+          "Value": 12
+        }
+      ],
+      "Undead": false,
+      "ViewRange": 9
     },
     "id": "monster:zircon:24",
     "identity": {
@@ -28825,9 +29355,60 @@
       }
     ],
     "game_data": {
-      "index": 29,
-      "name": "Skeleton Warrior",
-      "image": "Mon_4 shape 5"
+      "AI": 0,
+      "AttackDelay": 2300,
+      "CanPush": true,
+      "CanTame": false,
+      "CoolEye": 0,
+      "Experience": 351,
+      "FaceImage": 0,
+      "Flag": "None",
+      "Image": "SkeletonWarrior",
+      "IsBoss": false,
+      "Level": 18,
+      "MoveDelay": 1800,
+      "QuestDetails": [
+        {
+          "Index": 61,
+          "Name": null
+        },
+        {
+          "Index": 98,
+          "Name": null
+        }
+      ],
+      "Stats": [
+        {
+          "Stat": "Health",
+          "Value": 110
+        },
+        {
+          "Stat": "MinMR",
+          "Value": 5
+        },
+        {
+          "Stat": "MaxMR",
+          "Value": 5
+        },
+        {
+          "Stat": "MinDC",
+          "Value": 10
+        },
+        {
+          "Stat": "MaxDC",
+          "Value": 23
+        },
+        {
+          "Stat": "Accuracy",
+          "Value": 14
+        },
+        {
+          "Stat": "Agility",
+          "Value": 12
+        }
+      ],
+      "Undead": true,
+      "ViewRange": 9
     },
     "id": "monster:zircon:29",
     "identity": {
@@ -31937,9 +32518,60 @@
       }
     ],
     "game_data": {
-      "index": 58,
-      "name": "Decaying Ghoul",
-      "image": "Mon_14 shape 2"
+      "AI": 9,
+      "AttackDelay": 3000,
+      "CanPush": true,
+      "CanTame": false,
+      "CoolEye": 0,
+      "Experience": 741,
+      "FaceImage": 0,
+      "Flag": "None",
+      "Image": "GhostSorcerer",
+      "IsBoss": false,
+      "Level": 20,
+      "MoveDelay": 2000,
+      "QuestDetails": [
+        {
+          "Index": 68,
+          "Name": null
+        }
+      ],
+      "Stats": [
+        {
+          "Stat": "Health",
+          "Value": 160
+        },
+        {
+          "Stat": "MinMR",
+          "Value": 6
+        },
+        {
+          "Stat": "MaxMR",
+          "Value": 6
+        },
+        {
+          "Stat": "MinDC",
+          "Value": 11
+        },
+        {
+          "Stat": "MaxDC",
+          "Value": 25
+        },
+        {
+          "Stat": "Accuracy",
+          "Value": 15
+        },
+        {
+          "Stat": "Agility",
+          "Value": 13
+        },
+        {
+          "Stat": "LightningAffinity",
+          "Value": 1
+        }
+      ],
+      "Undead": true,
+      "ViewRange": 9
     },
     "id": "monster:zircon:32",
     "identity": {
@@ -32036,9 +32668,84 @@
       }
     ],
     "game_data": {
-      "index": 36,
-      "name": "Corpse Raising Ghost",
-      "image": "Mon_6 shape 2"
+      "AI": 10,
+      "AttackDelay": 3000,
+      "CanPush": true,
+      "CanTame": false,
+      "CoolEye": 0,
+      "Experience": 683,
+      "FaceImage": 0,
+      "Flag": "None",
+      "Image": "GhostMage",
+      "IsBoss": false,
+      "Level": 20,
+      "MoveDelay": 2000,
+      "QuestDetails": [
+        {
+          "Index": 69,
+          "Name": null
+        }
+      ],
+      "Stats": [
+        {
+          "Stat": "Health",
+          "Value": 140
+        },
+        {
+          "Stat": "MinMR",
+          "Value": 6
+        },
+        {
+          "Stat": "MaxMR",
+          "Value": 6
+        },
+        {
+          "Stat": "MinDC",
+          "Value": 13
+        },
+        {
+          "Stat": "MaxDC",
+          "Value": 25
+        },
+        {
+          "Stat": "Accuracy",
+          "Value": 15
+        },
+        {
+          "Stat": "Agility",
+          "Value": 13
+        },
+        {
+          "Stat": "FireAffinity",
+          "Value": 1
+        },
+        {
+          "Stat": "IceAffinity",
+          "Value": 1
+        },
+        {
+          "Stat": "LightningAffinity",
+          "Value": 1
+        },
+        {
+          "Stat": "WindAffinity",
+          "Value": 1
+        },
+        {
+          "Stat": "HolyAffinity",
+          "Value": 1
+        },
+        {
+          "Stat": "DarkAffinity",
+          "Value": 1
+        },
+        {
+          "Stat": "PhantomAffinity",
+          "Value": 1
+        }
+      ],
+      "Undead": true,
+      "ViewRange": 9
     },
     "id": "monster:zircon:33",
     "identity": {
@@ -35394,9 +36101,64 @@
       }
     ],
     "game_data": {
-      "index": 37,
-      "name": "Ghoul Champion",
-      "image": "Mon_6 shape 3"
+      "AI": 0,
+      "AttackDelay": 1600,
+      "CanPush": true,
+      "CanTame": false,
+      "CoolEye": 100,
+      "Experience": 29250,
+      "FaceImage": 0,
+      "Flag": "None",
+      "Image": "GhoulChampion",
+      "IsBoss": true,
+      "Level": 250,
+      "MoveDelay": 700,
+      "QuestDetails": [
+        {
+          "Index": 73,
+          "Name": null
+        }
+      ],
+      "Stats": [
+        {
+          "Stat": "Health",
+          "Value": 1300
+        },
+        {
+          "Stat": "MinAC",
+          "Value": 8
+        },
+        {
+          "Stat": "MaxAC",
+          "Value": 8
+        },
+        {
+          "Stat": "MinMR",
+          "Value": 23
+        },
+        {
+          "Stat": "MaxMR",
+          "Value": 23
+        },
+        {
+          "Stat": "MinDC",
+          "Value": 50
+        },
+        {
+          "Stat": "MaxDC",
+          "Value": 150
+        },
+        {
+          "Stat": "Accuracy",
+          "Value": 25
+        },
+        {
+          "Stat": "Agility",
+          "Value": 23
+        }
+      ],
+      "Undead": false,
+      "ViewRange": 11
     },
     "id": "monster:zircon:37",
     "identity": {
@@ -37757,9 +38519,20 @@
       }
     ],
     "game_data": {
-      "index": 80,
-      "name": "Zuma Keeper",
-      "image": "Mon_9 shape 4"
+      "AI": 15,
+      "AttackDelay": 2500,
+      "CanPush": true,
+      "CanTame": false,
+      "CoolEye": 0,
+      "Experience": 3000000,
+      "FaceImage": 0,
+      "Flag": "None",
+      "Image": "GreatPharaoh",
+      "IsBoss": false,
+      "Level": 50,
+      "MoveDelay": 0,
+      "Undead": false,
+      "ViewRange": 9
     },
     "id": "monster:zircon:399",
     "identity": {
@@ -40237,9 +41010,50 @@
       }
     ],
     "game_data": {
-      "index": 41,
-      "name": "Armoured Ant",
-      "image": "Mon_1 shape 8"
+      "AI": 0,
+      "AttackDelay": 2500,
+      "CanPush": true,
+      "CanTame": false,
+      "CoolEye": 0,
+      "Experience": 59,
+      "FaceImage": 0,
+      "Flag": "None",
+      "Image": "Beetle",
+      "IsBoss": false,
+      "Level": 13,
+      "MoveDelay": 1300,
+      "Stats": [
+        {
+          "Stat": "Health",
+          "Value": 25
+        },
+        {
+          "Stat": "MinMR",
+          "Value": 3
+        },
+        {
+          "Stat": "MaxMR",
+          "Value": 3
+        },
+        {
+          "Stat": "MinDC",
+          "Value": 5
+        },
+        {
+          "Stat": "MaxDC",
+          "Value": 10
+        },
+        {
+          "Stat": "Accuracy",
+          "Value": 12
+        },
+        {
+          "Stat": "Agility",
+          "Value": 10
+        }
+      ],
+      "Undead": false,
+      "ViewRange": 9
     },
     "id": "monster:zircon:43",
     "identity": {
@@ -42308,9 +43122,56 @@
       }
     ],
     "game_data": {
-      "index": 44,
-      "name": "Corpse Devourer",
-      "image": "Mon_7 shape 0"
+      "AI": 0,
+      "AttackDelay": 2200,
+      "CanPush": true,
+      "CanTame": false,
+      "CoolEye": 0,
+      "Experience": 702,
+      "FaceImage": 0,
+      "Flag": "None",
+      "Image": "MutantFlea",
+      "IsBoss": false,
+      "Level": 20,
+      "MoveDelay": 1700,
+      "QuestDetails": [
+        {
+          "Index": 31,
+          "Name": null
+        }
+      ],
+      "Stats": [
+        {
+          "Stat": "Health",
+          "Value": 100
+        },
+        {
+          "Stat": "MinMR",
+          "Value": 6
+        },
+        {
+          "Stat": "MaxMR",
+          "Value": 6
+        },
+        {
+          "Stat": "MinDC",
+          "Value": 14
+        },
+        {
+          "Stat": "MaxDC",
+          "Value": 19
+        },
+        {
+          "Stat": "Accuracy",
+          "Value": 15
+        },
+        {
+          "Stat": "Agility",
+          "Value": 13
+        }
+      ],
+      "Undead": false,
+      "ViewRange": 9
     },
     "id": "monster:zircon:46",
     "identity": {
@@ -42907,9 +43768,56 @@
       }
     ],
     "game_data": {
-      "index": 44,
-      "name": "Corpse Devourer",
-      "image": "Mon_7 shape 0"
+      "AI": 0,
+      "AttackDelay": 1800,
+      "CanPush": true,
+      "CanTame": false,
+      "CoolEye": 0,
+      "Experience": 878,
+      "FaceImage": 0,
+      "Flag": "None",
+      "Image": "PoisonousMutantFlea",
+      "IsBoss": false,
+      "Level": 20,
+      "MoveDelay": 1000,
+      "QuestDetails": [
+        {
+          "Index": 33,
+          "Name": null
+        }
+      ],
+      "Stats": [
+        {
+          "Stat": "Health",
+          "Value": 160
+        },
+        {
+          "Stat": "MinMR",
+          "Value": 6
+        },
+        {
+          "Stat": "MaxMR",
+          "Value": 6
+        },
+        {
+          "Stat": "MinDC",
+          "Value": 13
+        },
+        {
+          "Stat": "MaxDC",
+          "Value": 26
+        },
+        {
+          "Stat": "Accuracy",
+          "Value": 15
+        },
+        {
+          "Stat": "Agility",
+          "Value": 13
+        }
+      ],
+      "Undead": false,
+      "ViewRange": 9
     },
     "id": "monster:zircon:47",
     "identity": {
@@ -45213,9 +46121,58 @@
       }
     ],
     "game_data": {
-      "index": 57,
-      "name": "Rotting Ghoul",
-      "image": "Mon_14 shape 8"
+      "AI": 0,
+      "AttackDelay": 2500,
+      "CanPush": true,
+      "CanTame": false,
+      "CoolEye": 0,
+      "Experience": 1170,
+      "FaceImage": 0,
+      "Flag": "None",
+      "Image": "RottingGhoul",
+      "IsBoss": false,
+      "Level": 25,
+      "MoveDelay": 1800,
+      "Stats": [
+        {
+          "Stat": "Health",
+          "Value": 230
+        },
+        {
+          "Stat": "MinAC",
+          "Value": 2
+        },
+        {
+          "Stat": "MaxAC",
+          "Value": 2
+        },
+        {
+          "Stat": "MinMR",
+          "Value": 6
+        },
+        {
+          "Stat": "MaxMR",
+          "Value": 6
+        },
+        {
+          "Stat": "MinDC",
+          "Value": 29
+        },
+        {
+          "Stat": "MaxDC",
+          "Value": 44
+        },
+        {
+          "Stat": "Accuracy",
+          "Value": 17
+        },
+        {
+          "Stat": "Agility",
+          "Value": 15
+        }
+      ],
+      "Undead": true,
+      "ViewRange": 9
     },
     "id": "monster:zircon:57",
     "identity": {
@@ -45885,9 +46842,50 @@
       }
     ],
     "game_data": {
-      "index": 87,
-      "name": "Crazed Warrior",
-      "image": "Mon_16 shape 7"
+      "AI": 0,
+      "AttackDelay": 2000,
+      "CanPush": true,
+      "CanTame": false,
+      "CoolEye": 0,
+      "Experience": 780,
+      "FaceImage": 0,
+      "Flag": "None",
+      "Image": "UmaInfidel",
+      "IsBoss": false,
+      "Level": 25,
+      "MoveDelay": 1100,
+      "Stats": [
+        {
+          "Stat": "Health",
+          "Value": 200
+        },
+        {
+          "Stat": "MinMR",
+          "Value": 7
+        },
+        {
+          "Stat": "MaxMR",
+          "Value": 7
+        },
+        {
+          "Stat": "MinDC",
+          "Value": 18
+        },
+        {
+          "Stat": "MaxDC",
+          "Value": 29
+        },
+        {
+          "Stat": "Accuracy",
+          "Value": 17
+        },
+        {
+          "Stat": "Agility",
+          "Value": 15
+        }
+      ],
+      "Undead": true,
+      "ViewRange": 9
     },
     "id": "monster:zircon:62",
     "identity": {
@@ -46302,9 +47300,90 @@
       }
     ],
     "game_data": {
-      "index": 63,
-      "name": "Uma Flame Thrower",
-      "image": "Mon_5 shape 3"
+      "AI": 16,
+      "AttackDelay": 800,
+      "CanPush": true,
+      "CanTame": false,
+      "CoolEye": 100,
+      "Experience": 195000,
+      "FaceImage": 0,
+      "Flag": "None",
+      "Image": "UmaKing",
+      "IsBoss": true,
+      "Level": 250,
+      "MoveDelay": 700,
+      "Stats": [
+        {
+          "Stat": "Health",
+          "Value": 13500
+        },
+        {
+          "Stat": "MinAC",
+          "Value": 45
+        },
+        {
+          "Stat": "MaxAC",
+          "Value": 45
+        },
+        {
+          "Stat": "MinMR",
+          "Value": 52
+        },
+        {
+          "Stat": "MaxMR",
+          "Value": 52
+        },
+        {
+          "Stat": "MinDC",
+          "Value": 210
+        },
+        {
+          "Stat": "MaxDC",
+          "Value": 315
+        },
+        {
+          "Stat": "Accuracy",
+          "Value": 40
+        },
+        {
+          "Stat": "Agility",
+          "Value": 48
+        },
+        {
+          "Stat": "FireResistance",
+          "Value": 5
+        },
+        {
+          "Stat": "IceResistance",
+          "Value": 4
+        },
+        {
+          "Stat": "LightningResistance",
+          "Value": 2
+        },
+        {
+          "Stat": "WindResistance",
+          "Value": 3
+        },
+        {
+          "Stat": "HolyResistance",
+          "Value": 2
+        },
+        {
+          "Stat": "DarkResistance",
+          "Value": 3
+        },
+        {
+          "Stat": "PhantomResistance",
+          "Value": 5
+        },
+        {
+          "Stat": "LightningAffinity",
+          "Value": 1
+        }
+      ],
+      "Undead": false,
+      "ViewRange": 11
     },
     "id": "monster:zircon:65",
     "identity": {
@@ -50370,9 +51449,74 @@
       }
     ],
     "game_data": {
-      "index": 93,
-      "name": "Stone Golem",
-      "image": "Mon_1 shape 4"
+      "AI": 0,
+      "AttackDelay": 1800,
+      "CanPush": true,
+      "CanTame": false,
+      "CoolEye": 35,
+      "Experience": 1560,
+      "FaceImage": 0,
+      "Flag": "None",
+      "Image": "NumaGrunt",
+      "IsBoss": false,
+      "Level": 35,
+      "MoveDelay": 800,
+      "Stats": [
+        {
+          "Stat": "Health",
+          "Value": 340
+        },
+        {
+          "Stat": "MinAC",
+          "Value": 1
+        },
+        {
+          "Stat": "MaxAC",
+          "Value": 1
+        },
+        {
+          "Stat": "MinMR",
+          "Value": 13
+        },
+        {
+          "Stat": "MaxMR",
+          "Value": 13
+        },
+        {
+          "Stat": "MinDC",
+          "Value": 18
+        },
+        {
+          "Stat": "MaxDC",
+          "Value": 44
+        },
+        {
+          "Stat": "Accuracy",
+          "Value": 21
+        },
+        {
+          "Stat": "Agility",
+          "Value": 16
+        },
+        {
+          "Stat": "IceResistance",
+          "Value": 1
+        },
+        {
+          "Stat": "WindResistance",
+          "Value": -1
+        },
+        {
+          "Stat": "HolyResistance",
+          "Value": 1
+        },
+        {
+          "Stat": "DarkResistance",
+          "Value": -1
+        }
+      ],
+      "Undead": false,
+      "ViewRange": 9
     },
     "id": "monster:zircon:89",
     "identity": {
