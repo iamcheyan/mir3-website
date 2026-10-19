@@ -38,6 +38,7 @@
    "eng_name": "Chicken",
    "library": "Mon_3",
    "shape": 0,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -80,6 +81,7 @@
    "eng_name": "Pig",
    "library": "Mon_12",
    "shape": 9,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -122,6 +124,7 @@
    "eng_name": "Cow",
    "library": "Mon_13",
    "shape": 1,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -152,6 +155,7 @@
    "eng_name": "Sheep",
    "library": "Mon_6",
    "shape": 8,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -194,6 +198,7 @@
    "eng_name": "Deer",
    "library": "Mon_3",
    "shape": 1,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -236,6 +241,7 @@
    "eng_name": "Scarecrow",
    "library": "Mon_5",
    "shape": 0,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -247,7 +253,8 @@
   "description": "如果你达到第四级，你就能很容易地杀死这个怪物。它们出没在河边，数量不多。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game_missing_reason": "游戏侧没有独立形象（该条为站内独有条目）"
  },
  {
   "id": "mob-7",
@@ -288,7 +295,16 @@
     "delay": "10/60分"
    }
   ],
-  "totalSpawnCount": 733
+  "totalSpawnCount": 733,
+  "game": {
+   "sprite": "/images/mob/game/Claw_Cat.png",
+   "eng_name": "Claw Cat",
+   "library": "Mon_4",
+   "shape": 8,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.319
+  }
  },
  {
   "id": "mob-8",
@@ -304,6 +320,7 @@
    "eng_name": "Claw Cat",
    "library": "Mon_4",
    "shape": 8,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -358,6 +375,7 @@
    "eng_name": "Wolf",
    "library": "Mon_7",
    "shape": 5,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -436,7 +454,16 @@
     "delay": "10分"
    }
   ],
-  "totalSpawnCount": 1384
+  "totalSpawnCount": 1384,
+  "game": {
+   "sprite": "/images/mob/game/Venomous_Arachnid.png",
+   "eng_name": "Venomous Arachnid",
+   "library": "Mon_12",
+   "shape": 1,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.39
+  }
  },
  {
   "id": "mob-11",
@@ -471,6 +498,7 @@
    "eng_name": "Carnivorous Plant",
    "library": "Mon_4",
    "shape": 1,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -525,6 +553,7 @@
    "eng_name": "Oma",
    "library": "Mon_3",
    "shape": 3,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -549,6 +578,7 @@
    "eng_name": "Oma Warrior",
    "library": "Mon_3",
    "shape": 3,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -603,6 +633,7 @@
    "eng_name": "Forest Yeti",
    "library": "Mon_4",
    "shape": 0,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -624,6 +655,7 @@
    "eng_name": "Oma Hero",
    "library": "Mon_3",
    "shape": 4,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -648,7 +680,16 @@
     "delay": "5分"
    }
   ],
-  "totalSpawnCount": 480
+  "totalSpawnCount": 480,
+  "game": {
+   "sprite": "/images/mob/game/Tiger_Snake.png",
+   "eng_name": "Tiger Snake",
+   "library": "Mon_6",
+   "shape": 7,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.357
+  }
  },
  {
   "id": "mob-17",
@@ -664,6 +705,7 @@
    "eng_name": "Tiger Snake",
    "library": "Mon_6",
    "shape": 7,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -685,7 +727,16 @@
     "delay": "1分"
    }
   ],
-  "totalSpawnCount": 150
+  "totalSpawnCount": 150,
+  "game": {
+   "sprite": "/images/mob/game/Claw_Serpent.png",
+   "eng_name": "Claw Serpent",
+   "library": "Mon_8",
+   "shape": 9,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.574
+  }
  },
  {
   "id": "mob-19",
@@ -867,7 +918,16 @@
     "delay": "11/60分"
    }
   ],
-  "totalSpawnCount": 3926
+  "totalSpawnCount": 3926,
+  "game": {
+   "sprite": "/images/mob/game/Evil_Snake.png",
+   "eng_name": "Evil Snake",
+   "library": "Mon_9",
+   "shape": 0,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.523
+  }
  },
  {
   "id": "mob-20",
@@ -980,7 +1040,16 @@
     "delay": "60分"
    }
   ],
-  "totalSpawnCount": 29
+  "totalSpawnCount": 29,
+  "game": {
+   "sprite": "/images/mob/game/Armoured_Ant.png",
+   "eng_name": "Armoured Ant",
+   "library": "Mon_1",
+   "shape": 8,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.343
+  }
  },
  {
   "id": "mob-21",
@@ -1021,6 +1090,7 @@
    "eng_name": "Fierce Falcon",
    "library": "Mon_10",
    "shape": 0,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -1032,7 +1102,16 @@
   "description": "全身由内脏组成的奇怪生物，通过喷口喷出的毒液进行攻击。毒液腐蚀性强，味臭，使人昏迷。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Corpse_Devourer.png",
+   "eng_name": "Corpse Devourer",
+   "library": "Mon_7",
+   "shape": 0,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.486
+  }
  },
  {
   "id": "mob-23",
@@ -1042,7 +1121,16 @@
   "description": "威斯而小虫适应沙漠变形而成的。和威斯而小虫一样用毒性很强的毒液进行攻击。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Corpse_Devourer.png",
+   "eng_name": "Corpse Devourer",
+   "library": "Mon_7",
+   "shape": 0,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.478
+  }
  },
  {
   "id": "mob-24",
@@ -1052,7 +1140,16 @@
   "description": "一种生活在牧场的飞行昆虫，它用长在前额的坚硬的角攻击你。一般的攻击是不能杀死它们的，因为它们身上有层硬壳。不过，你能够从硬壳与硬壳间的裂缝或空隙很容易地杀掉它们。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Spiked_Beetle.png",
+   "eng_name": "Spiked Beetle",
+   "library": "Mon_7",
+   "shape": 4,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.487
+  }
  },
  {
   "id": "mob-25",
@@ -1066,7 +1163,16 @@
    "所在地图": "盟重"
   },
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Spiked_Beetle.png",
+   "eng_name": "Spiked Beetle",
+   "library": "Mon_7",
+   "shape": 4,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.466
+  }
  },
  {
   "id": "mob-26",
@@ -1125,7 +1231,16 @@
     "delay": "20分"
    }
   ],
-  "totalSpawnCount": 105
+  "totalSpawnCount": 105,
+  "game": {
+   "sprite": "/images/mob/game/Cave_Bat.png",
+   "eng_name": "Cave Bat",
+   "library": "Mon_3",
+   "shape": 9,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.382
+  }
  },
  {
   "id": "mob-27",
@@ -1160,6 +1275,7 @@
    "eng_name": "Scorpion",
    "library": "Mon_3",
    "shape": 8,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -1250,6 +1366,7 @@
    "eng_name": "Cave Maggot",
    "library": "Mon_4",
    "shape": 7,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -1316,6 +1433,7 @@
    "eng_name": "Skeleton",
    "library": "Mon_6",
    "shape": 6,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -1376,6 +1494,7 @@
    "eng_name": "Skeleton Axe Thrower",
    "library": "Mon_4",
    "shape": 3,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -1448,7 +1567,16 @@
     "delay": "20分"
    }
   ],
-  "totalSpawnCount": 134
+  "totalSpawnCount": 134,
+  "game": {
+   "sprite": "/images/mob/game/Skeleton_Warrior.png",
+   "eng_name": "Skeleton Warrior",
+   "library": "Mon_4",
+   "shape": 5,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.433
+  }
  },
  {
   "id": "mob-32",
@@ -1525,6 +1653,7 @@
    "eng_name": "Skeleton Lord",
    "library": "Mon_4",
    "shape": 6,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -1536,7 +1665,16 @@
   "description": "也出现在地牢里，并可以肯定是半兽勇士死去后的重生，有着恶魔般的红色外表。不象其它骷髅类，它们行动迅速。不是重复简单模式的攻击，而是用一种叫做\"Bigacha\"的武器，同时进行进攻和防御的组合式的复杂攻击。这是一种可怕的怪物，具有强大的能量、敏捷的动作和致命的破坏力量。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Skeleton.png",
+   "eng_name": "Skeleton",
+   "library": "Mon_6",
+   "shape": 6,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.326
+  }
  },
  {
   "id": "mob-34",
@@ -1552,6 +1690,7 @@
    "eng_name": "Spitting Spider",
    "library": "Mon_3",
    "shape": 5,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -1563,7 +1702,16 @@
   "description": "生活在银杏村周围废矿里的奇怪的虫子，只有一只大眼睛和两只脚。它用它的大眼睛攻击你，虽然不能远距离进攻，一旦触到敌人身上，它就会爆炸。不要被它可爱小巧的外形骗了哦。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Spined_Dark_Lizard.png",
+   "eng_name": "Spined Dark Lizard",
+   "library": "Mon_5",
+   "shape": 6,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.266
+  }
  },
  {
   "id": "mob-36",
@@ -1573,7 +1721,16 @@
   "description": "生活在银杏村周围废矿里的奇怪的虫子，只有一只大眼睛和两只脚。它用它的大眼睛攻击你，虽然不能远距离进攻，一旦触到敌人身上，它就会爆炸。不要被它可爱小巧的外形骗了哦。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Spined_Dark_Lizard.png",
+   "eng_name": "Spined Dark Lizard",
+   "library": "Mon_5",
+   "shape": 6,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.266
+  }
  },
  {
   "id": "mob-37",
@@ -1583,7 +1740,16 @@
   "description": "生活在银杏村周围的废矿里的奇怪的虫子，头上有无数只眼睛。它乍一看相只蜘蛛，走路一跳一跳的，发现食物就用大嘴和锋利的牙齿咬碎。如果敌人在远处，他就发射头上的眼睛来攻击。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Spined_Dark_Lizard.png",
+   "eng_name": "Spined Dark Lizard",
+   "library": "Mon_5",
+   "shape": 6,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.341
+  }
  },
  {
   "id": "mob-38",
@@ -1684,7 +1850,16 @@
     "delay": "30分"
    }
   ],
-  "totalSpawnCount": 278
+  "totalSpawnCount": 278,
+  "game": {
+   "sprite": "/images/mob/game/Spined_Dark_Lizard.png",
+   "eng_name": "Spined Dark Lizard",
+   "library": "Mon_5",
+   "shape": 6,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.341
+  }
  },
  {
   "id": "mob-39",
@@ -1700,6 +1875,7 @@
    "eng_name": "Beetle",
    "library": "Mon_7",
    "shape": 3,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -1952,6 +2128,7 @@
    "eng_name": "GhostSorcerer",
    "library": "Mon_5",
    "shape": 8,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -1963,7 +2140,16 @@
   "description": "由腐烂程度较深的尸体复活而成，缺胳膊少腿四肢不全，只能爬行移动。不容易被发现，他们抓住人腿或用手抓破攻击。他具有复活力，可以重生很多次。只能像对付僵尸一样，将他打碎。但以为他是爬行的，速度慢，所以容易逃走。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Rotting_Ghoul.png",
+   "eng_name": "Rotting Ghoul",
+   "library": "Mon_14",
+   "shape": 8,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.297
+  }
  },
  {
   "id": "mob-42",
@@ -1973,7 +2159,16 @@
   "description": "除了全身有看不懂的文字，和一般僵尸没什么两样。他也是主要以露着骨头的手猛击的方式攻击，如果不完全烧毁或弄碎，他仍会复活。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Decaying_Ghoul.png",
+   "eng_name": "Decaying Ghoul",
+   "library": "Mon_14",
+   "shape": 2,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.334
+  }
  },
  {
   "id": "mob-43",
@@ -1983,7 +2178,16 @@
   "description": "是因犯下错误而被赶出庙的和尚的尸体受山洞中奇怪力量复活而成。平常在地下，一旦听到有脚步声就会从地下爬出来，用双手猛抓。和其他僵尸不同，他不能重生。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Ghoul_Champion.png",
+   "eng_name": "Ghoul Champion",
+   "library": "Mon_6",
+   "shape": 3,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.296
+  }
  },
  {
   "id": "mob-44",
@@ -1993,7 +2197,16 @@
   "description": "他生前是使用强有力的魔法的法师，他的尸体原先放在山洞附近，是受奇怪力量作用成为僵尸，会使用强大的电击魔法。这种魔法使聚在一起的人同时受攻击，所以最好尽量散开。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Corpse_Raising_Ghost.png",
+   "eng_name": "Corpse Raising Ghost",
+   "library": "Mon_6",
+   "shape": 2,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.32
+  }
  },
  {
   "id": "mob-45",
@@ -2320,6 +2533,7 @@
    "eng_name": "Ghoul Champion",
    "library": "Mon_6",
    "shape": 3,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -2344,6 +2558,7 @@
    "eng_name": "Rotting Ghoul",
    "library": "Mon_14",
    "shape": 8,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -2368,6 +2583,7 @@
    "eng_name": "Decaying Ghoul",
    "library": "Mon_14",
    "shape": 2,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -2434,7 +2650,16 @@
     "delay": "1分"
    }
   ],
-  "totalSpawnCount": 3125
+  "totalSpawnCount": 3125,
+  "game": {
+   "sprite": "/images/mob/game/Visceral_Worm.png",
+   "eng_name": "Visceral Worm",
+   "library": "Mon_7",
+   "shape": 1,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.327
+  }
  },
  {
   "id": "mob-49",
@@ -2444,7 +2669,16 @@
   "description": "由石头垒成的巨大怪物。 坚硬的石头身体使他具有超强的攻击力和防御力。 主要现身在戈壁上，有时也会在沙漠深处出现。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Stone_Golem.png",
+   "eng_name": "Stone Golem",
+   "library": "Mon_1",
+   "shape": 4,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.407
+  }
  },
  {
   "id": "mob-50",
@@ -2454,7 +2688,16 @@
   "description": "与沙漠中的仙人掌长得一摸一样，故敌人往往意识不到危险。但敌人靠近时，它会射出带刺的果实发动攻击。它本身并不能移动， 所以只要远离就可以避开它的攻击",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Carnivorous_Plant.png",
+   "eng_name": "Carnivorous Plant",
+   "library": "Mon_4",
+   "shape": 1,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.191
+  }
  },
  {
   "id": "mob-51",
@@ -2519,6 +2762,7 @@
    "eng_name": "Giant Lizard",
    "library": "Mon_20",
    "shape": 6,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -2549,6 +2793,7 @@
    "eng_name": "Devouring Ghost",
    "library": "Mon_6",
    "shape": 1,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -2591,6 +2836,7 @@
    "eng_name": "Sand Shark",
    "library": "Mon_10",
    "shape": 4,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -2602,7 +2848,16 @@
   "description": "由于长期的沙漠生活，导致他的防御力很强，虽然没有直接的攻击力，但是手中的扇子据说可以呼风唤雨，碰到她一定要小心！",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Fierce_Wind_Demon.png",
+   "eng_name": "Fierce Wind Demon",
+   "library": "Mon_9",
+   "shape": 7,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.207
+  }
  },
  {
   "id": "mob-55",
@@ -2612,7 +2867,16 @@
   "description": "诺玛族中属于下级的诺玛，在沙漠里游荡，寻找周边的攻击对象和找出制造各种各样道具的资料来做必要的道具是主任务。当然战斗也是主任务，一旦进入战斗就会拼命打，决不退缩。以自己做的皮衣和用骨头做的护身服和武器来装备自己。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Stone_Golem.png",
+   "eng_name": "Stone Golem",
+   "library": "Mon_1",
+   "shape": 4,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.361
+  }
  },
  {
   "id": "mob-56",
@@ -2622,7 +2886,16 @@
   "description": "具有很强的体力和力气的长官级诺玛，性格暴躁。不像下级诺玛那样到沙漠里去采集和侦查，而是专门出现在战斗地点进行战斗。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Numa_Grunt.png",
+   "eng_name": "Numa Grunt",
+   "library": "Mon_13",
+   "shape": 8,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.355
+  }
  },
  {
   "id": "mob-57",
@@ -2632,7 +2905,16 @@
   "description": "守卫诺玛王的守卫，它们具有出色的力气和体力，但最重要的是会用魔法。4只为一组，一旦诺玛王受到攻击就会分开在4个不同的方向，以诺马王为中心做一个一定的空间让诺玛王不受攻击。但这不是诺玛的力量而造成的，只是它们的魔法拐棍的力量，只要破坏拐棍，保护空间就会消失。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Numa_Royal_Guard.png",
+   "eng_name": "Numa Royal Guard",
+   "library": "Mon_19",
+   "shape": 5,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.391
+  }
  },
  {
   "id": "mob-58",
@@ -2644,7 +2926,16 @@
    "可爆": "诺玛牌武器"
   },
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Zuma_Keeper.png",
+   "eng_name": "Zuma Keeper",
+   "library": "Mon_9",
+   "shape": 4,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.316
+  }
  },
  {
   "id": "mob-59",
@@ -2661,7 +2952,16 @@
     "delay": "10分"
    }
   ],
-  "totalSpawnCount": 40
+  "totalSpawnCount": 40,
+  "game": {
+   "sprite": "/images/mob/game/Arachnid_Gazer.png",
+   "eng_name": "Arachnid Gazer",
+   "library": "Mon_11",
+   "shape": 6,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": -1
+  }
  },
  {
   "id": "mob-60",
@@ -2671,7 +2971,16 @@
   "description": "同样也是被赤月恶魔改造过的怪物。虽然不大，但它有坚硬强壮的身体和剃刀一样锋利的牙齿，闪着独眼，一旦发现猎物，它就会迅速靠近并让撕裂它们。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Dark_Arachnid.png",
+   "eng_name": "Dark Arachnid",
+   "library": "Mon_12",
+   "shape": 2,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.447
+  }
  },
  {
   "id": "mob-61",
@@ -2700,7 +3009,16 @@
     "delay": "10/60分"
    }
   ],
-  "totalSpawnCount": 800
+  "totalSpawnCount": 800,
+  "game": {
+   "sprite": "/images/mob/game/Venomous_Arachnid.png",
+   "eng_name": "Venomous Arachnid",
+   "library": "Mon_12",
+   "shape": 1,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.532
+  }
  },
  {
   "id": "mob-62",
@@ -2710,7 +3028,15 @@
   "description": "这种蜘蛛的幼虫寄生在老树的根部或者一些动物的体内，从寄主身上获取营养。一旦找到合适的新居所，幼虫就会很快孵化为成熟的幻影蜘蛛。在忽隐忽现中，它们恐怖的攻击力和远程攻击方式、让人无法逃脱！",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Arachnid_Gazer.png",
+   "eng_name": "Arachnid Gazer",
+   "library": "Mon_11",
+   "shape": 6,
+   "match_method": "exact",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+  }
  },
  {
   "id": "mob-63",
@@ -2720,7 +3046,16 @@
   "description": "它是幻影蜘蛛的幼虫，平时隐藏在幻影蜘蛛身体里。当幻影蜘蛛受到攻击或猎物靠近时会不顾一切的冲向敌人，同敌人同归于尽！母体死后，有生殖功能的爆裂蜘蛛分散成长为幻影蜘蛛。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Arachnid_Gazer.png",
+   "eng_name": "Arachnid Gazer",
+   "library": "Mon_11",
+   "shape": 6,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": -1
+  }
  },
  {
   "id": "mob-64",
@@ -2749,7 +3084,16 @@
     "delay": "10/60分"
    }
   ],
-  "totalSpawnCount": 700
+  "totalSpawnCount": 700,
+  "game": {
+   "sprite": "/images/mob/game/Arachnid_Broodmother.png",
+   "eng_name": "Arachnid Broodmother",
+   "library": "Mon_12",
+   "shape": 2,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.435
+  }
  },
  {
   "id": "mob-65",
@@ -2759,7 +3103,16 @@
   "description": "这种蜘蛛看起来就像一朵美丽的花。赤月恶魔把这种巨大的怪物变成了一种用外表诱惑猎物，再用毒液毒死它们的魔鬼。毫无疑问，它的毒液是致命的。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Venomous_Arachnid.png",
+   "eng_name": "Venomous Arachnid",
+   "library": "Mon_12",
+   "shape": 1,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.398
+  }
  },
  {
   "id": "mob-66",
@@ -2780,6 +3133,7 @@
    "eng_name": "Arachnid Broodmother",
    "library": "Mon_12",
    "shape": 2,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -2791,7 +3145,16 @@
   "description": "生活在树林中的猴子被震天魔神的邪恶力量催化称为怪物。看起来和生活在茂密树林中的一版猴子没有很大区别，可如果被这样的外形迷惑而放松警惕的话会吃大亏。这些家伙会穷追不舍地跟在身后，发起群攻。掉队单个活动的猿猴战士没有很大威力，但遇到一群的时候要格外小心。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Crazed_Warrior.png",
+   "eng_name": "Crazed Warrior",
+   "library": "Mon_16",
+   "shape": 7,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.386
+  }
  },
  {
   "id": "mob-68",
@@ -2801,7 +3164,16 @@
   "description": "成怪的猴子寿命比一般猴子长，达到一定年龄的猴子毛色会变白。猿猴战将和猿猴战士能力上没有很大区别，成群活动时似乎可以看出猿猴战将的身形稍显矫捷。它们不仅起阻挡入侵者作用，而且还作为震天魔神的守望兵。震天魔神通过和这些猴子们的感应来掌控密林中的草草木木。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Banyo_Warrior.png",
+   "eng_name": "Banyo Warrior",
+   "library": "Mon_1",
+   "shape": 6,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.488
+  }
  },
  {
   "id": "mob-69",
@@ -2811,7 +3183,16 @@
   "description": "陷入癫狂的王国的文明很快便没落下去，倒退了几百年。它们丧失了所有生产手段，仅依靠最原始的采集方式来延续生命。每天都要在密林中为了找到猎物而寻寻觅觅，临近树林村落中被称作“**”的村民也成为了它们的猎杀对象。魔神怪不具备意识或思想，有的只是疯狂的杀戮情绪和对震天魔神盲目的崇信。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Evil_Monkey.png",
+   "eng_name": "Evil Monkey",
+   "library": "Mon_16",
+   "shape": 4,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.307
+  }
  },
  {
   "id": "mob-70",
@@ -2821,7 +3202,16 @@
   "description": "已经丧失了本身的意识和思想的怪物只剩下无止境的敌对情绪和杀戮本能。它们使用的短圆形剑由于进攻方向变化多端，因此很难防守。不知疲倦的这种怪物不分昼夜地出没在各个角落来寻找牺牲品。一旦被抓获，不是被它们吃掉就是作为祭品供给震天魔神。它们永远都不会摆脱震天魔神的控制，就算死掉也无法重获自由。死后也无法进入阴间，而是作为震天魔神力量之源泉，永远在地狱忍受各种煎熬。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Evil_Monkey.png",
+   "eng_name": "Evil Monkey",
+   "library": "Mon_16",
+   "shape": 4,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.355
+  }
  },
  {
   "id": "mob-71",
@@ -2837,6 +3227,7 @@
    "eng_name": "Evil Elephant",
    "library": "Mon_16",
    "shape": 8,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -2850,7 +3241,16 @@
    "可暴": "金刚系列"
   },
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Evil_Monkey.png",
+   "eng_name": "Evil Monkey",
+   "library": "Mon_16",
+   "shape": 4,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.355
+  }
  },
  {
   "id": "mob-73",
@@ -2963,6 +3363,7 @@
    "eng_name": "Red Moon Guardian",
    "library": "Mon_11",
    "shape": 7,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -3029,6 +3430,7 @@
    "eng_name": "Red Moon Protector",
    "library": "Mon_11",
    "shape": 8,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -3044,7 +3446,16 @@
    "可爆物品": "虹魔套装"
   },
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Ghoul_Champion.png",
+   "eng_name": "Ghoul Champion",
+   "library": "Mon_6",
+   "shape": 3,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.377
+  }
  },
  {
   "id": "mob-76",
@@ -3067,7 +3478,15 @@
     "delay": "120分"
    }
   ],
-  "totalSpawnCount": 801
+  "totalSpawnCount": 801,
+  "game": {
+   "sprite": "/images/mob/game/Red_Moon_The_Fallen.png",
+   "eng_name": "Red Moon The Fallen",
+   "library": "Mon_11",
+   "shape": 4,
+   "match_method": "exact",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+  }
  },
  {
   "id": "mob-77",
@@ -3077,7 +3496,16 @@
   "description": "蚂蚁种族中主要负担各种杂事的工人。 从事多种活动，比如侦察、打猎、运输等等。 一般不参与战斗，但非常时刻却能爆发出自己的战斗力。活动范围很广，在离蚂蚁窝较远的地方也经常可以看到它们的踪迹。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Ant_Soldier.png",
+   "eng_name": "Ant Soldier",
+   "library": "Mon_2",
+   "shape": 4,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.357
+  }
  },
  {
   "id": "mob-78",
@@ -3268,7 +3696,16 @@
     "delay": "10分"
    }
   ],
-  "totalSpawnCount": 3238
+  "totalSpawnCount": 3238,
+  "game": {
+   "sprite": "/images/mob/game/Ant_Commander.png",
+   "eng_name": "Ant Commander",
+   "library": "Mon_1",
+   "shape": 8,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.35
+  }
  },
  {
   "id": "mob-79",
@@ -3278,7 +3715,16 @@
   "description": "这种蚂蚁的小腹上有用来喷射毒汁的射管，可以对敌人进行远程攻击。 但身体上用来近距离格斗的器官，如前额钳子和肢爪等，并不发达， 所以作战时它会和敌人保持一定的距离。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Ant_Soldier.png",
+   "eng_name": "Ant Soldier",
+   "library": "Mon_2",
+   "shape": 4,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.363
+  }
  },
  {
   "id": "mob-80",
@@ -3493,6 +3939,7 @@
    "eng_name": "Armoured Ant",
    "library": "Mon_1",
    "shape": 8,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -3565,6 +4012,7 @@
    "eng_name": "Ant Healer",
    "library": "Mon_1",
    "shape": 7,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -3701,6 +4149,7 @@
    "eng_name": "Ant Commander",
    "library": "Mon_1",
    "shape": 8,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -3839,6 +4288,7 @@
    "eng_name": "Wasp Hatchling",
    "library": "Mon_8",
    "shape": 1,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -3850,7 +4300,16 @@
   "description": "它们居住在洞穴深处，尽管没有很强的力量，但快速的行动和攻击却能使你防不胜防。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Centipede.png",
+   "eng_name": "Centipede",
+   "library": "Mon_7",
+   "shape": 6,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.263
+  }
  },
  {
   "id": "mob-85",
@@ -3860,7 +4319,16 @@
   "description": "它们居住在洞穴深处，尽管没有很强的力量，但快速的行动和攻击却能使你防不胜防，尤其是对道士。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Centipede.png",
+   "eng_name": "Centipede",
+   "library": "Mon_7",
+   "shape": 6,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.229
+  }
  },
  {
   "id": "mob-86",
@@ -3870,7 +4338,16 @@
   "description": "它们居住在洞穴深处，尽管没有很强的力量，但快速的行动和攻击却能使你防不胜防，尤其是对法师。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Cave_Maggot.png",
+   "eng_name": "Cave Maggot",
+   "library": "Mon_4",
+   "shape": 7,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.188
+  }
  },
  {
   "id": "mob-87",
@@ -3886,6 +4363,7 @@
    "eng_name": "Centipede",
    "library": "Mon_7",
    "shape": 6,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -3897,7 +4375,16 @@
   "description": "这是一种用长在前额的巨大的、锋利的钳子进攻的，强有力的昆虫类生物。它们有坚硬的外壳保护身体，进攻敌人时会以六条腿快速移动。一定要当心被它坚硬的表皮伤害。由于长期生活在黑暗的洞穴中，它们已经丧失了视力，但它们敏锐的触角可以通过气味或湿度来感知敌人的威胁。你应该用强有力的武器攻击它们，而不是用剑。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Spiked_Beetle.png",
+   "eng_name": "Spiked Beetle",
+   "library": "Mon_7",
+   "shape": 4,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.36
+  }
  },
  {
   "id": "mob-89",
@@ -3907,7 +4394,16 @@
   "description": "这是一种用长在前额的巨大的、锋利的钳子进攻的，强有力的昆虫类生物。它们有坚硬的外壳保护身体，进攻敌人时会以六条腿快速移动。一定要当心被它坚硬的表皮伤害。由于长期生活在黑暗的洞穴中，它们已经丧失了视力，但它们敏锐的触角可以通过气味或湿度来感知敌人的威胁。你应该用强有力的武器攻击它们，而不是用剑。对道士的威胁大。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Spiked_Beetle.png",
+   "eng_name": "Spiked Beetle",
+   "library": "Mon_7",
+   "shape": 4,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.41
+  }
  },
  {
   "id": "mob-90",
@@ -3917,7 +4413,16 @@
   "description": "这是一种用长在前额的巨大的、锋利的钳子进攻的，强有力的昆虫类生物。它们有坚硬的外壳保护身体，进攻敌人时会以六条腿快速移动。一定要当心被它坚硬的表皮伤害。由于长期生活在黑暗的洞穴中，它们已经丧失了视力，但它们敏锐的触角可以通过气味或湿度来感知敌人的威胁。你应该用强有力的武器攻击它们，而不是用剑。对法师的威胁大。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Spiked_Beetle.png",
+   "eng_name": "Spiked Beetle",
+   "library": "Mon_7",
+   "shape": 4,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.376
+  }
  },
  {
   "id": "mob-91",
@@ -3927,7 +4432,16 @@
   "description": "这是一种用长在前额的巨大的、锋利的钳子进攻的，强有力的昆虫类生物。它们有坚硬的外壳保护身体，进攻敌人时会以六条腿快速移动。一定要当心被它坚硬的表皮伤害。由于长期生活在黑暗的洞穴中，它们已经丧失了视力，但它们敏锐的触角可以通过气味或湿度来感知敌人的威胁。你应该用强有力的武器攻击它们，而不是用剑。对战士的威胁大。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Spiked_Beetle.png",
+   "eng_name": "Spiked Beetle",
+   "library": "Mon_7",
+   "shape": 4,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.328
+  }
  },
  {
   "id": "mob-92",
@@ -4064,6 +4578,7 @@
    "eng_name": "Butterfly Worm",
    "library": "Mon_8",
    "shape": 2,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -4130,7 +4645,16 @@
     "delay": "11分"
    }
   ],
-  "totalSpawnCount": 147
+  "totalSpawnCount": 147,
+  "game": {
+   "sprite": "/images/mob/game/Mutant_Maggot.png",
+   "eng_name": "Mutant Maggot",
+   "library": "Mon_7",
+   "shape": 8,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.349
+  }
  },
  {
   "id": "mob-94",
@@ -4140,7 +4664,16 @@
   "description": "它们由蛆的尸体变异而来，以高速旋转的身体为武器向人们进攻。它们会对所有靠近的人发起攻击，由于他们速度这样快，被攻击的人很难逃开。尤其对法师威胁大。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Mutant_Maggot.png",
+   "eng_name": "Mutant Maggot",
+   "library": "Mon_7",
+   "shape": 8,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.375
+  }
  },
  {
   "id": "mob-95",
@@ -4150,7 +4683,16 @@
   "description": "它们由蛆的尸体变异而来，以高速旋转的身体为武器向人们进攻。它们会对所有靠近的人发起攻击，由于他们速度这样快，被攻击的人很难逃开。尤其对战士威胁大。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Mutant_Maggot.png",
+   "eng_name": "Mutant Maggot",
+   "library": "Mon_7",
+   "shape": 8,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.33
+  }
  },
  {
   "id": "mob-96",
@@ -4166,6 +4708,7 @@
    "eng_name": "Mutant Maggot",
    "library": "Mon_7",
    "shape": 8,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -4187,6 +4730,7 @@
    "eng_name": "Spiked Beetle",
    "library": "Mon_7",
    "shape": 4,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -4241,7 +4785,16 @@
     "delay": "120分"
    }
   ],
-  "totalSpawnCount": 25
+  "totalSpawnCount": 25,
+  "game": {
+   "sprite": "/images/mob/game/Otherworld_Tentacle_Demon.png",
+   "eng_name": "Otherworld Tentacle Demon",
+   "library": "Mon_20",
+   "shape": 7,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.482
+  }
  },
  {
   "id": "mob-99",
@@ -4338,7 +4891,16 @@
     "delay": "60分"
    }
   ],
-  "totalSpawnCount": 1650
+  "totalSpawnCount": 1650,
+  "game": {
+   "sprite": "/images/mob/game/Red_Boar.png",
+   "eng_name": "Red Boar",
+   "library": "Mon_8",
+   "shape": 6,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.552
+  }
  },
  {
   "id": "mob-100",
@@ -4357,7 +4919,16 @@
     "delay": "1分"
    }
   ],
-  "totalSpawnCount": 800
+  "totalSpawnCount": 800,
+  "game": {
+   "sprite": "/images/mob/game/Dragon.png",
+   "eng_name": "Dragon",
+   "library": "Mon_34",
+   "shape": 4,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.465
+  }
  },
  {
   "id": "mob-101",
@@ -4422,6 +4993,7 @@
    "eng_name": "Red Boar",
    "library": "Mon_8",
    "shape": 6,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -4439,6 +5011,7 @@
    "eng_name": "Black Boar",
    "library": "Mon_8",
    "shape": 7,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -4450,7 +5023,16 @@
   "description": "它们是红色野猪的领头者，不知道它们已活了多久。由于更长的寿命，他们的皮肤变白，而且比红色野猪更大的体形和更强的破坏力。此外，它们的行动速度可以和黑色野猪相比。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Black_Boar.png",
+   "eng_name": "Black Boar",
+   "library": "Mon_8",
+   "shape": 7,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.489
+  }
  },
  {
   "id": "mob-104",
@@ -4466,6 +5048,7 @@
    "eng_name": "Cave Bat",
    "library": "Mon_3",
    "shape": 9,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -4538,6 +5121,7 @@
    "eng_name": "Wedge Moth",
    "library": "Mon_8",
    "shape": 5,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -4586,6 +5170,7 @@
    "eng_name": "Claw Serpent",
    "library": "Mon_8",
    "shape": 9,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -4603,6 +5188,7 @@
    "eng_name": "Evil Snake",
    "library": "Mon_9",
    "shape": 0,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -4675,6 +5261,7 @@
    "eng_name": "Spined Dark Lizard",
    "library": "Mon_5",
    "shape": 6,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -4729,7 +5316,16 @@
     "delay": "30/60分"
    }
   ],
-  "totalSpawnCount": 295
+  "totalSpawnCount": 295,
+  "game": {
+   "sprite": "/images/mob/game/Crazed_Warrior.png",
+   "eng_name": "Crazed Warrior",
+   "library": "Mon_16",
+   "shape": 7,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.46
+  }
  },
  {
   "id": "mob-110",
@@ -4745,6 +5341,7 @@
    "eng_name": "Uma Infidel",
    "library": "Mon_5",
    "shape": 1,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -4823,6 +5420,7 @@
    "eng_name": "Uma Anguisher",
    "library": "Mon_5",
    "shape": 4,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -4834,7 +5432,16 @@
   "description": "沃玛神殿的保卫者，他们曾是沃玛教的成员，沃玛教主复活后他们被杀死，死后的尸体变成沃玛战将。它们主动向敢于进入神殿的人发起攻击。在这里他们很强大，但同样不能走出神殿外。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Uma_Infidel.png",
+   "eng_name": "Uma Infidel",
+   "library": "Mon_5",
+   "shape": 1,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.413
+  }
  },
  {
   "id": "mob-113",
@@ -4899,6 +5506,7 @@
    "eng_name": "Uma Flame Thrower",
    "library": "Mon_5",
    "shape": 3,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -4910,7 +5518,16 @@
   "description": "沃玛卫士在神殿中保卫沃玛教主，并为保护教主重生竭尽全力。他们将魔力吹进沃玛教徒身上，使他们成为沃玛战士。他们是邪恶世界的生物，有着强大的魔法力量，该力量来自他们操纵的两种武器。一种是\"Guzee-gyum\"，含有黑暗的魔法，\"Banwall-do\"则有强大的破坏力量。它们难以战胜，但要杀掉沃玛教主就必须先解决掉它们。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Uma_Flame_Thrower.png",
+   "eng_name": "Uma Flame Thrower",
+   "library": "Mon_5",
+   "shape": 3,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.346
+  }
  },
  {
   "id": "mob-115",
@@ -4941,6 +5558,7 @@
    "eng_name": "Uma King",
    "library": "Mon_5",
    "shape": 5,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -4983,6 +5601,7 @@
    "eng_name": "Vicious Rat",
    "library": "Mon_9",
    "shape": 1,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -5055,6 +5674,7 @@
    "eng_name": "Zuma Sharpshooter",
    "library": "Mon_9",
    "shape": 2,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -5115,6 +5735,7 @@
    "eng_name": "Zuma Fanatic",
    "library": "Mon_9",
    "shape": 3,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -5205,6 +5826,7 @@
    "eng_name": "Zuma Guardian",
    "library": "Mon_9",
    "shape": 4,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -5244,6 +5866,7 @@
    "eng_name": "Zuma Keeper",
    "library": "Mon_9",
    "shape": 4,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -5280,6 +5903,7 @@
    "eng_name": "Zuma King",
    "library": "Mon_9",
    "shape": 5,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -5322,7 +5946,16 @@
     "delay": "10/60分"
    }
   ],
-  "totalSpawnCount": 146
+  "totalSpawnCount": 146,
+  "game": {
+   "sprite": "/images/mob/game/Bone_Soldier.png",
+   "eng_name": "Bone Soldier",
+   "library": "Mon_15",
+   "shape": 2,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.422
+  }
  },
  {
   "id": "mob-123",
@@ -5332,7 +5965,15 @@
   "description": "他是很久以前追随武林宗师同魔界怪物战斗的武士的尸体在山洞里受魔力复活的。恐怖，仇恨和战斗成了他的本能，使用的武器是刀背上有两个环的刀，刀法很出众。可以获得经验值380。",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Bone_Bladesman.png",
+   "eng_name": "Bone Bladesman",
+   "library": "Mon_15",
+   "shape": 3,
+   "match_method": "exact",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+  }
  },
  {
   "id": "mob-124",
@@ -5409,6 +6050,7 @@
    "eng_name": "Bone Archer",
    "library": "Mon_15",
    "shape": 4,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -5489,6 +6131,7 @@
    "eng_name": "Bone Bladesman",
    "library": "Mon_15",
    "shape": 3,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -5515,6 +6158,7 @@
    "eng_name": "Skeleton Enforcer",
    "library": "Mon_15",
    "shape": 0,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -5545,6 +6189,7 @@
    "eng_name": "Arch Lich Taedu",
    "library": "Mon_15",
    "shape": 1,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -5635,6 +6280,7 @@
    "eng_name": "Banyo Warrior",
    "library": "Mon_1",
    "shape": 6,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -5733,7 +6379,16 @@
     "delay": "1分"
    }
   ],
-  "totalSpawnCount": 1120
+  "totalSpawnCount": 1120,
+  "game": {
+   "sprite": "/images/mob/game/Fierce_Wind_Demon.png",
+   "eng_name": "Fierce Wind Demon",
+   "library": "Mon_9",
+   "shape": 7,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.277
+  }
  },
  {
   "id": "mob-130",
@@ -5818,7 +6473,16 @@
     "delay": "10分"
    }
   ],
-  "totalSpawnCount": 935
+  "totalSpawnCount": 935,
+  "game": {
+   "sprite": "/images/mob/game/Banya_Guardian.png",
+   "eng_name": "Banya Guardian",
+   "library": "Mon_14",
+   "shape": 7,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.298
+  }
  },
  {
   "id": "mob-131",
@@ -5921,7 +6585,16 @@
     "delay": "10分"
    }
   ],
-  "totalSpawnCount": 1535
+  "totalSpawnCount": 1535,
+  "game": {
+   "sprite": "/images/mob/game/Flame_Minotaur.png",
+   "eng_name": "Flame Minotaur",
+   "library": "Mon_14",
+   "shape": 6,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.291
+  }
  },
  {
   "id": "mob-132",
@@ -6024,7 +6697,16 @@
     "delay": "10分"
    }
   ],
-  "totalSpawnCount": 1445
+  "totalSpawnCount": 1445,
+  "game": {
+   "sprite": "/images/mob/game/Ice_Break_Demon_Soldier.png",
+   "eng_name": "Ice Break Demon Soldier",
+   "library": "Mon_24",
+   "shape": 1,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.356
+  }
  },
  {
   "id": "mob-133",
@@ -6116,6 +6798,7 @@
    "eng_name": "Banya Left Guard",
    "library": "Mon_14",
    "shape": 1,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -6209,6 +6892,7 @@
    "eng_name": "Banya Right Guard",
    "library": "Mon_14",
    "shape": 0,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -6296,6 +6980,7 @@
    "eng_name": "Banya Guardian",
    "library": "Mon_14",
    "shape": 7,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -6353,6 +7038,7 @@
    "eng_name": "Flame Minotaur",
    "library": "Mon_14",
    "shape": 6,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -6419,6 +7105,7 @@
    "eng_name": "Otherworld Tentacle Demon",
    "library": "Mon_20",
    "shape": 7,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -6485,6 +7172,7 @@
    "eng_name": "Otherworld Poison Demon",
    "library": "Mon_20",
    "shape": 4,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -6544,6 +7232,7 @@
    "eng_name": "Mutant Lizard",
    "library": "Mon_20",
    "shape": 3,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -6628,7 +7317,15 @@
     "delay": "10分"
    }
   ],
-  "totalSpawnCount": 995
+  "totalSpawnCount": 995,
+  "game": {
+   "sprite": "/images/mob/game/Otherworld_Sea_General.png",
+   "eng_name": "Otherworld Sea General",
+   "library": "Mon_1",
+   "shape": 5,
+   "match_method": "exact",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+  }
  },
  {
   "id": "mob-141",
@@ -6680,7 +7377,16 @@
     "delay": "20分"
    }
   ],
-  "totalSpawnCount": 46
+  "totalSpawnCount": 46,
+  "game": {
+   "sprite": "/images/mob/game/Evil_Monkey.png",
+   "eng_name": "Evil Monkey",
+   "library": "Mon_16",
+   "shape": 4,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.479
+  }
  },
  {
   "id": "mob-142",
@@ -6732,6 +7438,7 @@
    "eng_name": "Otherworld Ship Guard",
    "library": "Mon_26",
    "shape": 0,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -6821,7 +7528,15 @@
     "delay": "10分"
    }
   ],
-  "totalSpawnCount": 1095
+  "totalSpawnCount": 1095,
+  "game": {
+   "sprite": "/images/mob/game/Otherworld_Light_Guard.png",
+   "eng_name": "Otherworld Light Guard",
+   "library": "Mon_19",
+   "shape": 7,
+   "match_method": "exact",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+  }
  },
  {
   "id": "mob-144",
@@ -6904,6 +7619,7 @@
    "eng_name": "Otherworld Red Mage",
    "library": "Mon_47",
    "shape": 6,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -6958,7 +7674,16 @@
     "delay": "60分"
    }
   ],
-  "totalSpawnCount": 4
+  "totalSpawnCount": 4,
+  "game": {
+   "sprite": "/images/mob/game/Emperor_Sa'Woo.png",
+   "eng_name": "Emperor Sa'Woo",
+   "library": "Mon_14",
+   "shape": 9,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.378
+  }
  },
  {
   "id": "mob-146",
@@ -7005,6 +7730,7 @@
    "eng_name": "Emperor Sa'Woo",
    "library": "Mon_14",
    "shape": 9,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -7071,6 +7797,7 @@
    "eng_name": "Flame Lion",
    "library": "Mon_22",
    "shape": 5,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -7125,6 +7852,7 @@
    "eng_name": "Stone Lion",
    "library": "Mon_16",
    "shape": 0,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -7167,6 +7895,7 @@
    "eng_name": "Numa Royal Guard",
    "library": "Mon_19",
    "shape": 5,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -7178,7 +7907,15 @@
   "description": "真天宫和黑度宫里的女神",
   "attrs": {},
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Dungeon_Goddess_1.png",
+   "eng_name": "Dungeon Goddess 1",
+   "library": "Mon_16",
+   "shape": 2,
+   "match_method": "exact",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+  }
  },
  {
   "id": "mob-151",
@@ -7231,6 +7968,7 @@
    "eng_name": "Dungeon Goddess 1",
    "library": "Mon_16",
    "shape": 2,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -7291,6 +8029,7 @@
    "eng_name": "Monkey",
    "library": "Mon_16",
    "shape": 4,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -7315,6 +8054,7 @@
    "eng_name": "Evil Monkey",
    "library": "Mon_16",
    "shape": 4,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -7330,7 +8070,16 @@
    "Zircon 模型": "Guard · Mon_3 Shape 6"
   },
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/TownGuard.png",
+   "eng_name": "TownGuard",
+   "library": "Mon_12",
+   "shape": 4,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.431
+  }
  },
  {
   "id": "mob-155",
@@ -7344,7 +8093,16 @@
    "Zircon 模型": "TownGuard · Mon_12 Shape 4"
   },
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Banya_Right_Guard.png",
+   "eng_name": "Banya Right Guard",
+   "library": "Mon_14",
+   "shape": 0,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.515
+  }
  },
  {
   "id": "mob-156",
@@ -7358,7 +8116,16 @@
    "Zircon 模型": "ForestGuard · Mon_12 Shape 3"
   },
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/ForestGuard.png",
+   "eng_name": "ForestGuard",
+   "library": "Mon_12",
+   "shape": 3,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.438
+  }
  },
  {
   "id": "mob-157",
@@ -7372,7 +8139,16 @@
    "Zircon 模型": "SandGuard · Mon_12 Shape 5"
   },
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/SandGuard.png",
+   "eng_name": "SandGuard",
+   "library": "Mon_12",
+   "shape": 5,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.396
+  }
  },
  {
   "id": "mob-158",
@@ -7386,7 +8162,16 @@
    "Zircon 模型": "ArcherGuard · Mon_9 Shape 6"
   },
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/ArcherGuard.png",
+   "eng_name": "ArcherGuard",
+   "library": "Mon_9",
+   "shape": 6,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.505
+  }
  },
  {
   "id": "mob-159",
@@ -7401,7 +8186,16 @@
    "实体": "MonsterInfo:144"
   },
   "spawns": [],
-  "totalSpawnCount": 0
+  "totalSpawnCount": 0,
+  "game": {
+   "sprite": "/images/mob/game/Skeleton.png",
+   "eng_name": "Skeleton",
+   "library": "Mon_6",
+   "shape": 6,
+   "match_method": "alias",
+   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
+   "similarity": 0.374
+  }
  },
  {
   "id": "mob-160",
@@ -7422,6 +8216,7 @@
    "eng_name": "Jin Skeleton",
    "library": "Mon_6",
    "shape": 6,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  },
@@ -7444,6 +8239,7 @@
    "eng_name": "Shinsu",
    "library": "Mon_10",
    "shape": 0,
+   "match_method": "exact",
    "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
   }
  }

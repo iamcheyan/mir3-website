@@ -1023,3 +1023,5 @@ body.match-open,body.export-open { overflow: hidden; }
 .game-badge { position: absolute; left: 6px; top: 6px; font-size: 10px; line-height: 1.5; padding: 0 6px; border-radius: 999px; letter-spacing: .04em; }
 .game-badge.has { color: #14100a; background: var(--gold-bright); }
 .game-badge.missing { color: var(--text-soft); background: rgba(0,0,0,.62); border: 1px solid var(--line-soft); }
+.mm-alias { color: #c98b4b; }
+.mm-exact { color: #6f9f6f; }
