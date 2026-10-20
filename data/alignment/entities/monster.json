@@ -5837,7 +5837,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "aligned with verified Zircon model prototype",
+      "reason": "沃毒蜈蚣（Mon_7 shape 6 赤毒紫红变种），克制道士，与 62.gif 原画吻合",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -5850,8 +5850,8 @@
       }
     ],
     "game_data": {
-      "index": 51,
-      "name": "Centipede",
+      "index": 50,
+      "name": "Venom Centipede",
       "image": "Mon_7 shape 6"
     },
     "id": "monster:website:mob-85",
@@ -5860,13 +5860,13 @@
       "website_name": "沃毒蜈蚣",
       "website_source_id": "mob-85",
       "zircon_candidate_indexes": [
-        51
+        50
       ],
-      "zircon_internal_name": "Centipede"
+      "zircon_internal_name": "Venom Centipede"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:51"
+        "monster:zircon:50"
       ]
     },
     "resources": {
@@ -5882,7 +5882,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Centipede.png",
+        "path": "/images/mob/game/Venom_Centipede.png",
         "verification": "verified-by-image"
       }
     },
@@ -5916,7 +5916,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "aligned with verified Zircon model prototype",
+      "reason": "洞穴蜈蚣（Mon_7 shape 6 洞穴暗青灰变种），克制法师，与 63.gif 原画吻合",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -5929,8 +5929,8 @@
       }
     ],
     "game_data": {
-      "index": 51,
-      "name": "Centipede",
+      "index": 50,
+      "name": "Cave Centipede",
       "image": "Mon_7 shape 6"
     },
     "id": "monster:website:mob-86",
@@ -5939,13 +5939,13 @@
       "website_name": "洞穴蜈蚣",
       "website_source_id": "mob-86",
       "zircon_candidate_indexes": [
-        51
+        50
       ],
-      "zircon_internal_name": "Centipede"
+      "zircon_internal_name": "Cave Centipede"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:51"
+        "monster:zircon:50"
       ]
     },
     "resources": {
@@ -5961,7 +5961,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Centipede.png",
+        "path": "/images/mob/game/Cave_Centipede.png",
         "verification": "verified-by-image"
       }
     },
@@ -5995,7 +5995,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "aligned with verified Zircon model prototype",
+      "reason": "邪恶蜈蚣（Mon_7 shape 6 苍白邪恶变种），克制战士，与 64.gif 原画吻合",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -6008,8 +6008,8 @@
       }
     ],
     "game_data": {
-      "index": 51,
-      "name": "Centipede",
+      "index": 50,
+      "name": "Evil Centipede",
       "image": "Mon_7 shape 6"
     },
     "id": "monster:website:mob-87",
@@ -6018,13 +6018,13 @@
       "website_name": "邪恶蜈蚣",
       "website_source_id": "mob-87",
       "zircon_candidate_indexes": [
-        51
+        50
       ],
-      "zircon_internal_name": "Centipede"
+      "zircon_internal_name": "Evil Centipede"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:51"
+        "monster:zircon:50"
       ]
     },
     "resources": {
@@ -6040,7 +6040,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Centipede.png",
+        "path": "/images/mob/game/Evil_Centipede.png",
         "verification": "verified-by-image"
       }
     },

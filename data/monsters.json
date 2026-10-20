@@ -6253,18 +6253,17 @@
     "spawns": [],
     "totalSpawnCount": 0,
     "game": {
-      "sprite": "/images/mob/game/Centipede.png",
-      "eng_name": "Centipede",
+      "sprite": "/images/mob/game/Venom_Centipede.png",
+      "eng_name": "Venom Centipede",
       "library": "Mon_7",
       "shape": 6,
-      "match_method": "alias",
-      "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-      "similarity": 0.288
+      "match_method": "exact",
+      "note": "沃毒蜈蚣（Mon_7 shape 6 赤毒紫红变种），克制道士，与 62.gif 原画吻合"
     },
     "zircon_match": {
       "state": "matched"
     },
-    "zircon_index": 51
+    "zircon_index": 50
   },
   {
     "id": "mob-86",
@@ -6276,18 +6275,17 @@
     "spawns": [],
     "totalSpawnCount": 0,
     "game": {
-      "sprite": "/images/mob/game/Centipede.png",
-      "eng_name": "Centipede",
+      "sprite": "/images/mob/game/Cave_Centipede.png",
+      "eng_name": "Cave Centipede",
       "library": "Mon_7",
       "shape": 6,
-      "match_method": "alias",
-      "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-      "similarity": 0.263
+      "match_method": "exact",
+      "note": "洞穴蜈蚣（Mon_7 shape 6 洞穴暗青灰变种），克制法师，与 63.gif 原画吻合"
     },
     "zircon_match": {
       "state": "matched"
     },
-    "zircon_index": 51
+    "zircon_index": 50
   },
   {
     "id": "mob-87",
@@ -6299,18 +6297,17 @@
     "spawns": [],
     "totalSpawnCount": 0,
     "game": {
-      "sprite": "/images/mob/game/Centipede.png",
-      "eng_name": "Centipede",
+      "sprite": "/images/mob/game/Evil_Centipede.png",
+      "eng_name": "Evil Centipede",
       "library": "Mon_7",
       "shape": 6,
-      "match_method": "alias",
-      "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-      "similarity": 0.297
+      "match_method": "exact",
+      "note": "邪恶蜈蚣（Mon_7 shape 6 苍白邪恶变种），克制战士，与 64.gif 原画吻合"
     },
     "zircon_match": {
       "state": "matched"
     },
-    "zircon_index": 51
+    "zircon_index": 50
   },
   {
     "id": "mob-88",
