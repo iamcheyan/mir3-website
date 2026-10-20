@@ -30,7 +30,7 @@ class MatchPreviewCatalogTests(unittest.TestCase):
             and (record.get("identity") or {}).get("website_source_id")
             and isinstance((record.get("identity") or {}).get("zircon_index"), int)
         ]
-        self.assertEqual(len(linked_rows), 167)
+        self.assertEqual(len(linked_rows), 185)
 
     def test_candidate_preview_index_is_local_safe_and_assets_exist(self):
         index = self.preview_index

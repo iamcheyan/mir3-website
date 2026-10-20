@@ -680,9 +680,9 @@
       }
     ],
     "game_data": {
-      "index": 390,
-      "name": "Fierce Wind Demon",
-      "image": "Mon_9 shape 7"
+      "index": 112,
+      "name": "Fury Minotaur",
+      "image": "Mon_14 shape 5"
     },
     "id": "monster:website:mob-129",
     "identity": {
@@ -690,13 +690,16 @@
       "website_name": "潘夜风魔",
       "website_source_id": "mob-129",
       "zircon_candidate_indexes": [
-        390
+        112
       ],
-      "zircon_internal_name": "Fierce Wind Demon"
+      "zircon_internal_name": "Fury Minotaur",
+      "zircon_candidate_names": [
+        "Fury Minotaur"
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:390"
+        "monster:zircon:112"
       ]
     },
     "resources": {
@@ -712,7 +715,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Fierce_Wind_Demon.png",
+        "path": "/images/mob/game/Fury_Minotaur.png",
         "verification": "verified-by-image"
       }
     },
@@ -759,9 +762,9 @@
       }
     ],
     "game_data": {
-      "index": 252,
-      "name": "Sama Wind Guardian",
-      "image": "Mon_25 shape 3"
+      "index": 110,
+      "name": "Shock Minotaur",
+      "image": "Mon_14 shape 4"
     },
     "id": "monster:website:mob-130",
     "identity": {
@@ -769,13 +772,16 @@
       "website_name": "潘夜云魔",
       "website_source_id": "mob-130",
       "zircon_candidate_indexes": [
-        252
+        110
       ],
-      "zircon_internal_name": "Sama Wind Guardian"
+      "zircon_internal_name": "Shock Minotaur",
+      "zircon_candidate_names": [
+        "Shock Minotaur"
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:252"
+        "monster:zircon:110"
       ]
     },
     "resources": {
@@ -791,7 +797,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Sama_Wind_Guardian.png",
+        "path": "/images/mob/game/Shock_Minotaur.png",
         "verification": "verified-by-image"
       }
     },
@@ -850,7 +856,10 @@
       "zircon_candidate_indexes": [
         113
       ],
-      "zircon_internal_name": "Flame Minotaur"
+      "zircon_internal_name": "Flame Minotaur",
+      "zircon_candidate_names": [
+        "Flame Minotaur"
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
@@ -917,9 +926,9 @@
       }
     ],
     "game_data": {
-      "index": 458,
-      "name": "Ice Break Demon Soldier",
-      "image": "Mon_24 shape 1"
+      "index": 108,
+      "name": "Frost Minotaur",
+      "image": "Mon_14 shape 3"
     },
     "id": "monster:website:mob-132",
     "identity": {
@@ -927,13 +936,16 @@
       "website_name": "潘夜冰魔",
       "website_source_id": "mob-132",
       "zircon_candidate_indexes": [
-        458
+        108
       ],
-      "zircon_internal_name": "Ice Break Demon Soldier"
+      "zircon_internal_name": "Frost Minotaur",
+      "zircon_candidate_names": [
+        "Frost Minotaur"
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:458"
+        "monster:zircon:108"
       ]
     },
     "resources": {
@@ -949,7 +961,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Ice_Break_Demon_Soldier.png",
+        "path": "/images/mob/game/Frost_Minotaur.png",
         "verification": "verified-by-image"
       }
     },
@@ -1160,9 +1172,9 @@
       }
     ],
     "game_data": {
-      "index": 160,
-      "name": "Pachon The Chaos bringer",
-      "image": "Mon_13 shape 0"
+      "index": 114,
+      "name": "Banya Guardian",
+      "image": "Mon_14 shape 7"
     },
     "id": "monster:website:mob-135",
     "identity": {
@@ -1170,13 +1182,16 @@
       "website_name": "潘夜鬼将",
       "website_source_id": "mob-135",
       "zircon_candidate_indexes": [
-        160
+        114
       ],
-      "zircon_internal_name": "Pachon The Chaos bringer"
+      "zircon_internal_name": "Banya Guardian",
+      "zircon_candidate_names": [
+        "Banya Guardian"
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:160"
+        "monster:zircon:114"
       ]
     },
     "resources": {
@@ -1192,7 +1207,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Pachon_The_Chaos_bringer.png",
+        "path": "/images/mob/game/Minotaur.png",
         "verification": "verified-by-image"
       }
     },
@@ -1318,9 +1333,9 @@
       }
     ],
     "game_data": {
-      "index": 221,
-      "name": "Oyoung Beast",
-      "image": "Mon_23 shape 3"
+      "index": 151,
+      "name": "Corpse Stalker",
+      "image": "Mon_2 shape 2"
     },
     "id": "monster:website:mob-141",
     "identity": {
@@ -1328,13 +1343,16 @@
       "website_name": "犬猴魔",
       "website_source_id": "mob-141",
       "zircon_candidate_indexes": [
-        221
+        151
       ],
-      "zircon_internal_name": "Oyoung Beast"
+      "zircon_internal_name": "Corpse Stalker",
+      "zircon_candidate_names": [
+        "Corpse Stalker"
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:221"
+        "monster:zircon:151"
       ]
     },
     "resources": {
@@ -1350,7 +1368,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Oyoung_Beast.png",
+        "path": "/images/mob/game/Corpse_Stalker.png",
         "verification": "verified-by-image"
       }
     },
@@ -1397,9 +1415,9 @@
       }
     ],
     "game_data": {
-      "index": 147,
-      "name": "Infernal Soldier",
-      "image": "Mon_26 shape 0"
+      "index": 159,
+      "name": "Chaos Knight",
+      "image": "Mon_2 shape 0"
     },
     "id": "monster:website:mob-145",
     "identity": {
@@ -1407,13 +1425,16 @@
       "website_name": "霸王守卫",
       "website_source_id": "mob-145",
       "zircon_candidate_indexes": [
-        147
+        159
       ],
-      "zircon_internal_name": "Infernal Soldier"
+      "zircon_internal_name": "Chaos Knight",
+      "zircon_candidate_names": [
+        "Chaos Knight"
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:147"
+        "monster:zircon:159"
       ]
     },
     "resources": {
@@ -1429,7 +1450,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Infernal_Soldier.png",
+        "path": "/images/mob/game/Chaos_Knight.png",
         "verification": "verified-by-image"
       }
     },
@@ -2119,7 +2140,7 @@
     ],
     "game_data": {
       "index": 44,
-      "name": "ShellNipper",
+      "name": "Corpse Devourer",
       "image": "Mon_7 shape 0"
     },
     "id": "monster:website:mob-24",
@@ -2130,10 +2151,9 @@
       "zircon_candidate_indexes": [
         44
       ],
-      "zircon_internal_name": "ShellNipper",
+      "zircon_internal_name": "Corpse Devourer",
       "zircon_candidate_names": [
-        "Corpse Devourer",
-        "ShellNipper"
+        "Corpse Devourer"
       ]
     },
     "relations": {
@@ -2768,7 +2788,7 @@
     "game_data": {
       "index": 46,
       "name": "Mutant Flea",
-      "image": "Mon_15 shape 5"
+      "image": "Mon_15 shape 6"
     },
     "id": "monster:website:mob-37",
     "identity": {
@@ -3096,7 +3116,7 @@
     "game_data": {
       "index": 57,
       "name": "Rotting Ghoul",
-      "image": "Mon_14 shape 8"
+      "image": "Mon_6 shape 5"
     },
     "id": "monster:website:mob-46",
     "identity": {
@@ -3178,7 +3198,7 @@
     "game_data": {
       "index": 58,
       "name": "Decaying Ghoul",
-      "image": "Mon_14 shape 2"
+      "image": "Mon_6 shape 8"
     },
     "id": "monster:website:mob-47",
     "identity": {
@@ -6067,9 +6087,9 @@
       }
     ],
     "game_data": {
-      "index": 88,
-      "name": "Spiked Beetle",
-      "image": "Mon_7 shape 4"
+      "index": 54,
+      "name": "Earwig",
+      "image": "Mon_7 shape 9"
     },
     "id": "monster:website:mob-88",
     "identity": {
@@ -6077,13 +6097,16 @@
       "website_name": "钳虫",
       "website_source_id": "mob-88",
       "zircon_candidate_indexes": [
-        88
+        54
       ],
-      "zircon_internal_name": "Spiked Beetle"
+      "zircon_internal_name": "Earwig",
+      "zircon_candidate_names": [
+        "Earwig"
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:88"
+        "monster:zircon:54"
       ]
     },
     "resources": {
@@ -6099,7 +6122,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Spiked_Beetle.png",
+        "path": "/images/mob/game/Earwig.png",
         "verification": "verified-by-image"
       }
     },
@@ -6778,9 +6801,9 @@
       }
     ],
     "game_data": {
-      "index": 88,
-      "name": "Spiked Beetle",
-      "image": "Mon_7 shape 4"
+      "index": 55,
+      "name": "Iron Lance",
+      "image": "Mon_8 shape 0"
     },
     "id": "monster:website:mob-97",
     "identity": {
@@ -6788,13 +6811,16 @@
       "website_name": "邪恶钳虫",
       "website_source_id": "mob-97",
       "zircon_candidate_indexes": [
-        88
+        55
       ],
-      "zircon_internal_name": "Spiked Beetle"
+      "zircon_internal_name": "Iron Lance",
+      "zircon_candidate_names": [
+        "Iron Lance"
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:88"
+        "monster:zircon:55"
       ]
     },
     "resources": {
@@ -6810,7 +6836,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Spiked_Beetle.png",
+        "path": "/images/mob/game/Iron_Lance.png",
         "verification": "verified-by-image"
       }
     },
@@ -6857,9 +6883,9 @@
       }
     ],
     "game_data": {
-      "index": 51,
-      "name": "Centipede",
-      "image": "Mon_7 shape 6"
+      "index": 56,
+      "name": "Lord Ji'Nae",
+      "image": "Mon_7 shape 7"
     },
     "id": "monster:website:mob-98",
     "identity": {
@@ -6867,13 +6893,16 @@
       "website_name": "触龙神",
       "website_source_id": "mob-98",
       "zircon_candidate_indexes": [
-        51
+        56
       ],
-      "zircon_internal_name": "Centipede"
+      "zircon_internal_name": "Lord Ji'Nae",
+      "zircon_candidate_names": [
+        "Lord Ji'Nae"
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:51"
+        "monster:zircon:56"
       ]
     },
     "resources": {
@@ -6889,7 +6918,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Centipede.png",
+        "path": "/images/mob/game/Lord_JiNae.png",
         "verification": "verified-by-image"
       }
     },
@@ -8175,7 +8204,20 @@
         "zh": "牛头人"
       },
       "zircon_index": 107,
-      "zircon_internal_name": "Minotaur"
+      "zircon_internal_name": "Minotaur",
+      "website_source_id": "mob-128",
+      "website_name": "潘夜战士",
+      "standard_name_zh": "潘夜战士",
+      "candidate_website_names": [
+        {
+          "candidate_indexes": [
+            107
+          ],
+          "name": "潘夜战士",
+          "source_id": "mob-128",
+          "source_status": "confirmed"
+        }
+      ]
     },
     "relations": {},
     "resources": {
@@ -8190,7 +8232,8 @@
       "web-audit:monster:216"
     ],
     "assessment": {
-      "overall_status": "confirmed"
+      "overall_status": "confirmed",
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     }
   },
   {
@@ -8295,7 +8338,20 @@
         "zh": "冰霜牛头人"
       },
       "zircon_index": 108,
-      "zircon_internal_name": "Frost Minotaur"
+      "zircon_internal_name": "Frost Minotaur",
+      "website_source_id": "mob-132",
+      "website_name": "潘夜冰魔",
+      "standard_name_zh": "潘夜冰魔",
+      "candidate_website_names": [
+        {
+          "candidate_indexes": [
+            108
+          ],
+          "name": "潘夜冰魔",
+          "source_id": "mob-132",
+          "source_status": "confirmed"
+        }
+      ]
     },
     "relations": {},
     "resources": {
@@ -8310,7 +8366,8 @@
       "web-audit:monster:217"
     ],
     "assessment": {
-      "overall_status": "confirmed"
+      "overall_status": "confirmed",
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     }
   },
   {
@@ -8415,7 +8472,20 @@
         "zh": "潘夜右卫士"
       },
       "zircon_index": 109,
-      "zircon_internal_name": "Banya Right Guard"
+      "zircon_internal_name": "Banya Right Guard",
+      "website_source_id": "mob-134",
+      "website_name": "潘夜右护卫",
+      "standard_name_zh": "潘夜右护卫",
+      "candidate_website_names": [
+        {
+          "candidate_indexes": [
+            109
+          ],
+          "name": "潘夜右护卫",
+          "source_id": "mob-134",
+          "source_status": "confirmed"
+        }
+      ]
     },
     "relations": {},
     "resources": {
@@ -8430,7 +8500,8 @@
       "web-audit:monster:218"
     ],
     "assessment": {
-      "overall_status": "confirmed"
+      "overall_status": "confirmed",
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     }
   },
   {
@@ -8670,7 +8741,20 @@
         "zh": "电击牛头人"
       },
       "zircon_index": 110,
-      "zircon_internal_name": "Shock Minotaur"
+      "zircon_internal_name": "Shock Minotaur",
+      "website_source_id": "mob-130",
+      "website_name": "潘夜云魔",
+      "standard_name_zh": "潘夜云魔",
+      "candidate_website_names": [
+        {
+          "candidate_indexes": [
+            110
+          ],
+          "name": "潘夜云魔",
+          "source_id": "mob-130",
+          "source_status": "confirmed"
+        }
+      ]
     },
     "relations": {},
     "resources": {
@@ -8685,7 +8769,8 @@
       "web-audit:monster:219"
     ],
     "assessment": {
-      "overall_status": "confirmed"
+      "overall_status": "confirmed",
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     }
   },
   {
@@ -8790,7 +8875,20 @@
         "zh": "潘夜左卫士"
       },
       "zircon_index": 111,
-      "zircon_internal_name": "Banya Left Guard"
+      "zircon_internal_name": "Banya Left Guard",
+      "website_source_id": "mob-133",
+      "website_name": "潘夜左护卫",
+      "standard_name_zh": "潘夜左护卫",
+      "candidate_website_names": [
+        {
+          "candidate_indexes": [
+            111
+          ],
+          "name": "潘夜左护卫",
+          "source_id": "mob-133",
+          "source_status": "confirmed"
+        }
+      ]
     },
     "relations": {},
     "resources": {
@@ -8805,7 +8903,8 @@
       "web-audit:monster:220"
     ],
     "assessment": {
-      "overall_status": "confirmed"
+      "overall_status": "confirmed",
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     }
   },
   {
@@ -8910,7 +9009,20 @@
         "zh": "狂怒牛头人"
       },
       "zircon_index": 112,
-      "zircon_internal_name": "Fury Minotaur"
+      "zircon_internal_name": "Fury Minotaur",
+      "website_source_id": "mob-129",
+      "website_name": "潘夜风魔",
+      "standard_name_zh": "潘夜风魔",
+      "candidate_website_names": [
+        {
+          "candidate_indexes": [
+            112
+          ],
+          "name": "潘夜风魔",
+          "source_id": "mob-129",
+          "source_status": "confirmed"
+        }
+      ]
     },
     "relations": {},
     "resources": {
@@ -8925,39 +9037,14 @@
       "web-audit:monster:221"
     ],
     "assessment": {
-      "overall_status": "confirmed"
+      "overall_status": "confirmed",
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     }
   },
   {
     "assessment": {
-      "export_enabled": false,
-      "fields": {
-        "display_name": {
-          "reason": "网站标准名与当前中文显示值不同；除明确标记的冲突示例外，不将不同自动判为错误。",
-          "status": "conflict"
-        },
-        "game_data": {
-          "reason": "未完成人工复核；来源事实保留，不自动修正。",
-          "status": "pending_review"
-        },
-        "identity_mapping": {
-          "reason": "来源状态 confirmed，Index 与内部名在当前 Zircon 快照逐项相符；尚非翻译导出批准。",
-          "status": "source_confirmed"
-        },
-        "relations": {
-          "reason": "未完成人工复核；来源事实保留，不自动修正。",
-          "status": "pending_review"
-        },
-        "resource_identity": {
-          "reason": "资源身份必须由可视/索引证据确认。",
-          "status": "pending_evidence"
-        }
-      },
-      "overall_status": "pending_review",
-      "reason": "未完成人工复核；来源事实保留，不自动修正。",
-      "reviewed_at": null,
-      "reviewer": null,
-      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+      "overall_status": "confirmed",
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     },
     "entity_type": "monster",
     "evidence": [
@@ -9058,26 +9145,26 @@
     },
     "id": "monster:zircon:113",
     "identity": {
-      "candidate_website_names": [
-        {
-          "candidate_indexes": [
-            113
-          ],
-          "name": "潘夜牛魔王",
-          "source_id": "mob-136",
-          "source_status": "confirmed"
-        }
-      ],
       "current_game_name": "烈焰牛头人",
       "current_translation": {
         "ja": "フレイムミノタウロス",
         "zh": "烈焰牛头人"
       },
-      "standard_name_zh": "潘夜牛魔王",
-      "website_name": "潘夜牛魔王",
-      "website_source_id": "mob-136",
+      "standard_name_zh": "潘夜火魔",
       "zircon_index": 113,
-      "zircon_internal_name": "Flame Minotaur"
+      "zircon_internal_name": "Flame Minotaur",
+      "website_source_id": "mob-131",
+      "website_name": "潘夜火魔",
+      "candidate_website_names": [
+        {
+          "candidate_indexes": [
+            113
+          ],
+          "name": "潘夜火魔",
+          "source_id": "mob-131",
+          "source_status": "confirmed"
+        }
+      ]
     },
     "relations": {},
     "resources": {
@@ -9193,7 +9280,20 @@
         "zh": "潘夜守护者"
       },
       "zircon_index": 114,
-      "zircon_internal_name": "Banya Guardian"
+      "zircon_internal_name": "Banya Guardian",
+      "website_source_id": "mob-135",
+      "website_name": "潘夜鬼将",
+      "standard_name_zh": "潘夜鬼将",
+      "candidate_website_names": [
+        {
+          "candidate_indexes": [
+            114
+          ],
+          "name": "潘夜鬼将",
+          "source_id": "mob-135",
+          "source_status": "confirmed"
+        }
+      ]
     },
     "relations": {},
     "resources": {
@@ -9208,39 +9308,14 @@
       "web-audit:monster:222"
     ],
     "assessment": {
-      "overall_status": "confirmed"
+      "overall_status": "confirmed",
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     }
   },
   {
     "assessment": {
-      "export_enabled": false,
-      "fields": {
-        "display_name": {
-          "reason": "网站标准名与当前中文显示值不同；除明确标记的冲突示例外，不将不同自动判为错误。",
-          "status": "conflict"
-        },
-        "game_data": {
-          "reason": "未完成人工复核；来源事实保留，不自动修正。",
-          "status": "pending_review"
-        },
-        "identity_mapping": {
-          "reason": "来源状态 confirmed，Index 与内部名在当前 Zircon 快照逐项相符；尚非翻译导出批准。",
-          "status": "source_confirmed"
-        },
-        "relations": {
-          "reason": "未完成人工复核；来源事实保留，不自动修正。",
-          "status": "pending_review"
-        },
-        "resource_identity": {
-          "reason": "资源身份必须由可视/索引证据确认。",
-          "status": "pending_evidence"
-        }
-      },
-      "overall_status": "pending_review",
-      "reason": "未完成人工复核；来源事实保留，不自动修正。",
-      "reviewed_at": null,
-      "reviewer": null,
-      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+      "overall_status": "confirmed",
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     },
     "entity_type": "monster",
     "evidence": [
@@ -9341,26 +9416,26 @@
     },
     "id": "monster:zircon:115",
     "identity": {
-      "candidate_website_names": [
-        {
-          "candidate_indexes": [
-            115
-          ],
-          "name": "霸王教主",
-          "source_id": "mob-146",
-          "source_status": "confirmed"
-        }
-      ],
       "current_game_name": "皇帝萨乌",
       "current_translation": {
         "ja": "皇帝サウー",
         "zh": "皇帝萨乌"
       },
-      "standard_name_zh": "霸王教主",
-      "website_name": "霸王教主",
-      "website_source_id": "mob-146",
+      "standard_name_zh": "潘夜牛魔王",
       "zircon_index": 115,
-      "zircon_internal_name": "Emperor Sa'Woo"
+      "zircon_internal_name": "Emperor Sa'Woo",
+      "website_source_id": "mob-136",
+      "website_name": "潘夜牛魔王",
+      "candidate_website_names": [
+        {
+          "candidate_indexes": [
+            115
+          ],
+          "name": "潘夜牛魔王",
+          "source_id": "mob-136",
+          "source_status": "confirmed"
+        }
+      ]
     },
     "relations": {},
     "resources": {
@@ -14170,7 +14245,20 @@
         "zh": "尸行者"
       },
       "zircon_index": 151,
-      "zircon_internal_name": "Corpse Stalker"
+      "zircon_internal_name": "Corpse Stalker",
+      "website_source_id": "mob-141",
+      "website_name": "犬猴魔",
+      "standard_name_zh": "犬猴魔",
+      "candidate_website_names": [
+        {
+          "candidate_indexes": [
+            151
+          ],
+          "name": "犬猴魔",
+          "source_id": "mob-141",
+          "source_status": "confirmed"
+        }
+      ]
     },
     "relations": {},
     "resources": {
@@ -14185,7 +14273,8 @@
       "web-audit:monster:249"
     ],
     "assessment": {
-      "overall_status": "confirmed"
+      "overall_status": "confirmed",
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     }
   },
   {
@@ -14283,59 +14372,11 @@
       "candidate_website_names": [
         {
           "candidate_indexes": [
-            152,
-            186,
-            445,
-            446
+            152
           ],
-          "category": "潘夜神殿",
-          "image": {
-            "bytes": 4099,
-            "exists": true,
-            "format": "GIF",
-            "frames": 1,
-            "height": 106,
-            "mode": "P",
-            "path": "images/mob/pic/77.gif",
-            "sha256": "e15acc4a0c6525fb8513dcd68df5ed5319f31c4aa28d5dd634312bb4e999425a",
-            "width": 139
-          },
-          "name": "潘夜左护卫",
-          "source_id": "mob-133",
-          "source_ref": {
-            "record": "manifest.json#monster_identity/mob-133",
-            "source_id": "website-alignment-manifest"
-          },
-          "source_status": "investigate",
-          "standard_name_zh": "潘夜左护卫"
-        },
-        {
-          "candidate_indexes": [
-            152,
-            186,
-            445,
-            446
-          ],
-          "category": "潘夜神殿",
-          "image": {
-            "bytes": 8825,
-            "exists": true,
-            "format": "GIF",
-            "frames": 1,
-            "height": 116,
-            "mode": "P",
-            "path": "images/mob/pic/78.gif",
-            "sha256": "2721bff6981157323309c3c7f83c07eafe83b8e519f34a489a67b252b6aff76a",
-            "width": 139
-          },
-          "name": "潘夜右护卫",
-          "source_id": "mob-134",
-          "source_ref": {
-            "record": "manifest.json#monster_identity/mob-134",
-            "source_id": "website-alignment-manifest"
-          },
-          "source_status": "investigate",
-          "standard_name_zh": "潘夜右护卫"
+          "name": "轻甲守卫",
+          "source_id": "mob-143",
+          "source_status": "confirmed"
         }
       ],
       "current_game_name": "轻装士兵",
@@ -14344,7 +14385,10 @@
         "zh": "轻装士兵"
       },
       "zircon_index": 152,
-      "zircon_internal_name": "Light Armed Soldier"
+      "zircon_internal_name": "Light Armed Soldier",
+      "website_source_id": "mob-143",
+      "website_name": "轻甲守卫",
+      "standard_name_zh": "轻甲守卫"
     },
     "relations": {
       "conflict_counterparts": [
@@ -14364,7 +14408,8 @@
       "web-audit:monster:250"
     ],
     "assessment": {
-      "overall_status": "confirmed"
+      "overall_status": "confirmed",
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     }
   },
   {
@@ -14477,7 +14522,20 @@
         "zh": "腐蚀毒液喷吐者"
       },
       "zircon_index": 153,
-      "zircon_internal_name": "Corrosive Poison Spitter"
+      "zircon_internal_name": "Corrosive Poison Spitter",
+      "website_source_id": "mob-138",
+      "website_name": "爆毒神魔",
+      "standard_name_zh": "爆毒神魔",
+      "candidate_website_names": [
+        {
+          "candidate_indexes": [
+            153
+          ],
+          "name": "爆毒神魔",
+          "source_id": "mob-138",
+          "source_status": "confirmed"
+        }
+      ]
     },
     "relations": {},
     "resources": {
@@ -14492,7 +14550,8 @@
       "web-audit:monster:251"
     ],
     "assessment": {
-      "overall_status": "confirmed"
+      "overall_status": "confirmed",
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     }
   },
   {
@@ -14597,7 +14656,20 @@
         "zh": "幽灵士兵"
       },
       "zircon_index": 154,
-      "zircon_internal_name": "Phantom Soldier"
+      "zircon_internal_name": "Phantom Soldier",
+      "website_source_id": "mob-142",
+      "website_name": "神舰守卫",
+      "standard_name_zh": "神舰守卫",
+      "candidate_website_names": [
+        {
+          "candidate_indexes": [
+            154
+          ],
+          "name": "神舰守卫",
+          "source_id": "mob-142",
+          "source_status": "confirmed"
+        }
+      ]
     },
     "relations": {},
     "resources": {
@@ -14612,7 +14684,8 @@
       "web-audit:monster:252"
     ],
     "assessment": {
-      "overall_status": "confirmed"
+      "overall_status": "confirmed",
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     }
   },
   {
@@ -14717,7 +14790,20 @@
         "zh": "变异章鱼"
       },
       "zircon_index": 155,
-      "zircon_internal_name": "Mutated Octopus"
+      "zircon_internal_name": "Mutated Octopus",
+      "website_source_id": "mob-137",
+      "website_name": "触角神魔",
+      "standard_name_zh": "触角神魔",
+      "candidate_website_names": [
+        {
+          "candidate_indexes": [
+            155
+          ],
+          "name": "触角神魔",
+          "source_id": "mob-137",
+          "source_status": "confirmed"
+        }
+      ]
     },
     "relations": {},
     "resources": {
@@ -14732,7 +14818,8 @@
       "web-audit:monster:253"
     ],
     "assessment": {
-      "overall_status": "confirmed"
+      "overall_status": "confirmed",
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     }
   },
   {
@@ -14957,7 +15044,20 @@
         "zh": "践踏者"
       },
       "zircon_index": 157,
-      "zircon_internal_name": "Stomper"
+      "zircon_internal_name": "Stomper",
+      "website_source_id": "mob-140",
+      "website_name": "海神将领",
+      "standard_name_zh": "海神将领",
+      "candidate_website_names": [
+        {
+          "candidate_indexes": [
+            157
+          ],
+          "name": "海神将领",
+          "source_id": "mob-140",
+          "source_status": "confirmed"
+        }
+      ]
     },
     "relations": {},
     "resources": {
@@ -14972,7 +15072,8 @@
       "web-audit:monster:255"
     ],
     "assessment": {
-      "overall_status": "confirmed"
+      "overall_status": "confirmed",
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     }
   },
   {
@@ -15077,7 +15178,20 @@
         "zh": "深红死灵法师"
       },
       "zircon_index": 158,
-      "zircon_internal_name": "Crimson Necromancer"
+      "zircon_internal_name": "Crimson Necromancer",
+      "website_source_id": "mob-144",
+      "website_name": "红衣法师",
+      "standard_name_zh": "红衣法师",
+      "candidate_website_names": [
+        {
+          "candidate_indexes": [
+            158
+          ],
+          "name": "红衣法师",
+          "source_id": "mob-144",
+          "source_status": "confirmed"
+        }
+      ]
     },
     "relations": {},
     "resources": {
@@ -15092,7 +15206,8 @@
       "web-audit:monster:256"
     ],
     "assessment": {
-      "overall_status": "confirmed"
+      "overall_status": "confirmed",
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     }
   },
   {
@@ -15197,7 +15312,20 @@
         "zh": "混沌骑士"
       },
       "zircon_index": 159,
-      "zircon_internal_name": "Chaos Knight"
+      "zircon_internal_name": "Chaos Knight",
+      "website_source_id": "mob-145",
+      "website_name": "霸王守卫",
+      "standard_name_zh": "霸王守卫",
+      "candidate_website_names": [
+        {
+          "candidate_indexes": [
+            159
+          ],
+          "name": "霸王守卫",
+          "source_id": "mob-145",
+          "source_status": "confirmed"
+        }
+      ]
     },
     "relations": {},
     "resources": {
@@ -15212,7 +15340,8 @@
       "web-audit:monster:257"
     ],
     "assessment": {
-      "overall_status": "confirmed"
+      "overall_status": "confirmed",
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     }
   },
   {
@@ -15392,29 +15521,11 @@
       "candidate_website_names": [
         {
           "candidate_indexes": [
-            160,
-            188
+            160
           ],
-          "category": "潘夜神殿",
-          "image": {
-            "bytes": 3117,
-            "exists": true,
-            "format": "GIF",
-            "frames": 1,
-            "height": 106,
-            "mode": "P",
-            "path": "images/mob/pic/72.gif",
-            "sha256": "1b613b35e12e6e50823c78316626cd1c6a28b7c2e0abbf4ce334992d326c96cc",
-            "width": 139
-          },
-          "name": "潘夜鬼将",
-          "source_id": "mob-135",
-          "source_ref": {
-            "record": "manifest.json#monster_identity/mob-135",
-            "source_id": "website-alignment-manifest"
-          },
-          "source_status": "investigate",
-          "standard_name_zh": "潘夜鬼将"
+          "name": "霸王教主",
+          "source_id": "mob-146",
+          "source_status": "confirmed"
         }
       ],
       "current_game_name": "混沌使者帕琼",
@@ -15423,7 +15534,10 @@
         "zh": "混沌使者帕琼"
       },
       "zircon_index": 160,
-      "zircon_internal_name": "Pachon The Chaos bringer"
+      "zircon_internal_name": "Pachon The Chaos bringer",
+      "website_source_id": "mob-146",
+      "website_name": "霸王教主",
+      "standard_name_zh": "霸王教主"
     },
     "relations": {
       "conflict_counterparts": [
@@ -15442,7 +15556,8 @@
       "web-audit:monster:258"
     ],
     "assessment": {
-      "overall_status": "confirmed"
+      "overall_status": "confirmed",
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     }
   },
   {
@@ -15663,7 +15778,20 @@
         "zh": "诺玛大法师"
       },
       "zircon_index": 162,
-      "zircon_internal_name": "Numa High Mage"
+      "zircon_internal_name": "Numa High Mage",
+      "website_source_id": "mob-57",
+      "website_name": "诺玛法老",
+      "standard_name_zh": "诺玛法老",
+      "candidate_website_names": [
+        {
+          "candidate_indexes": [
+            162
+          ],
+          "name": "诺玛法老",
+          "source_id": "mob-57",
+          "source_status": "confirmed"
+        }
+      ]
     },
     "relations": {},
     "resources": {
@@ -15678,7 +15806,8 @@
       "web-audit:monster:260"
     ],
     "assessment": {
-      "overall_status": "confirmed"
+      "overall_status": "confirmed",
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     }
   },
   {
@@ -16255,50 +16384,12 @@
     },
     "id": "monster:zircon:166",
     "identity": {
-      "candidate_website_names": [
-        {
-          "candidate_indexes": [
-            166
-          ],
-          "name": "诺玛法老",
-          "source_id": "mob-57",
-          "source_status": "confirmed"
-        },
-        {
-          "candidate_indexes": [
-            164,
-            166
-          ],
-          "category": "真天黑度",
-          "image": {
-            "bytes": 5699,
-            "exists": true,
-            "format": "GIF",
-            "frames": 1,
-            "height": 112,
-            "mode": "P",
-            "path": "images/mob/pic/ang_08.gif",
-            "sha256": "7e8d8cafe9191804039353f65fc5f805dec499fea1742fcdf03d79a3ce495e82",
-            "width": 139
-          },
-          "name": "武力神将",
-          "source_id": "mob-149",
-          "source_ref": {
-            "record": "manifest.json#monster_identity/mob-149",
-            "source_id": "website-alignment-manifest"
-          },
-          "source_status": "investigate",
-          "standard_name_zh": "武力神将"
-        }
-      ],
       "current_game_name": "诺玛突袭队长",
       "current_translation": {
         "ja": "ヌマ突撃隊長",
         "zh": "诺玛突袭队长"
       },
       "standard_name_zh": "诺玛法老",
-      "website_name": "诺玛法老",
-      "website_source_id": "mob-57",
       "zircon_index": 166,
       "zircon_internal_name": "Numa Assault Captain",
       "zircon_candidate_indexes": [
@@ -19232,80 +19323,12 @@
     },
     "id": "monster:zircon:186",
     "identity": {
-      "candidate_website_names": [
-        {
-          "candidate_indexes": [
-            186
-          ],
-          "name": "潘夜战士",
-          "source_id": "mob-128",
-          "source_status": "confirmed"
-        },
-        {
-          "candidate_indexes": [
-            152,
-            186,
-            445,
-            446
-          ],
-          "category": "潘夜神殿",
-          "image": {
-            "bytes": 4099,
-            "exists": true,
-            "format": "GIF",
-            "frames": 1,
-            "height": 106,
-            "mode": "P",
-            "path": "images/mob/pic/77.gif",
-            "sha256": "e15acc4a0c6525fb8513dcd68df5ed5319f31c4aa28d5dd634312bb4e999425a",
-            "width": 139
-          },
-          "name": "潘夜左护卫",
-          "source_id": "mob-133",
-          "source_ref": {
-            "record": "manifest.json#monster_identity/mob-133",
-            "source_id": "website-alignment-manifest"
-          },
-          "source_status": "investigate",
-          "standard_name_zh": "潘夜左护卫"
-        },
-        {
-          "candidate_indexes": [
-            152,
-            186,
-            445,
-            446
-          ],
-          "category": "潘夜神殿",
-          "image": {
-            "bytes": 8825,
-            "exists": true,
-            "format": "GIF",
-            "frames": 1,
-            "height": 116,
-            "mode": "P",
-            "path": "images/mob/pic/78.gif",
-            "sha256": "2721bff6981157323309c3c7f83c07eafe83b8e519f34a489a67b252b6aff76a",
-            "width": 139
-          },
-          "name": "潘夜右护卫",
-          "source_id": "mob-134",
-          "source_ref": {
-            "record": "manifest.json#monster_identity/mob-134",
-            "source_id": "website-alignment-manifest"
-          },
-          "source_status": "investigate",
-          "standard_name_zh": "潘夜右护卫"
-        }
-      ],
       "current_game_name": "潘夜战士",
       "current_translation": {
         "ja": "パンヤ戦士",
         "zh": "潘夜战士"
       },
       "standard_name_zh": "潘夜战士",
-      "website_name": "潘夜战士",
-      "website_source_id": "mob-128",
       "zircon_index": 186,
       "zircon_internal_name": "Banyo Warrior"
     },
@@ -19668,34 +19691,8 @@
   },
   {
     "assessment": {
-      "export_enabled": false,
-      "fields": {
-        "display_name": {
-          "reason": "网站标准名与当前中文显示值不同；除明确标记的冲突示例外，不将不同自动判为错误。",
-          "status": "conflict"
-        },
-        "game_data": {
-          "reason": "未完成人工复核；来源事实保留，不自动修正。",
-          "status": "pending_review"
-        },
-        "identity_mapping": {
-          "reason": "来源状态 confirmed，Index 与内部名在当前 Zircon 快照逐项相符；尚非翻译导出批准。",
-          "status": "source_confirmed"
-        },
-        "relations": {
-          "reason": "未完成人工复核；来源事实保留，不自动修正。",
-          "status": "pending_review"
-        },
-        "resource_identity": {
-          "reason": "资源身份必须由可视/索引证据确认。",
-          "status": "pending_evidence"
-        }
-      },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
-      "reviewed_at": null,
-      "reviewer": null,
-      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     },
     "entity_type": "monster",
     "evidence": [
@@ -19760,57 +19757,11 @@
     },
     "id": "monster:zircon:19",
     "identity": {
-      "candidate_website_names": [
-        {
-          "candidate_indexes": [
-            19
-          ],
-          "name": "红蛇",
-          "source_id": "mob-16",
-          "source_status": "confirmed"
-        },
-        {
-          "candidate_indexes": [
-            19
-          ],
-          "name": "虎蛇",
-          "source_id": "mob-17",
-          "source_status": "confirmed"
-        },
-        {
-          "candidate_indexes": [
-            19,
-            385
-          ],
-          "category": "罪孽洞穴",
-          "image": {
-            "bytes": 15164,
-            "exists": true,
-            "format": "GIF",
-            "frames": 1,
-            "height": 106,
-            "mode": "P",
-            "path": "images/mob/pic/nls.gif",
-            "sha256": "db0a8516220783ea7aca226017e398c176ca92062db246530c1600994a91d728",
-            "width": 139
-          },
-          "name": "怒龙神",
-          "source_id": "mob-100",
-          "source_ref": {
-            "record": "manifest.json#monster_identity/mob-100",
-            "source_id": "website-alignment-manifest"
-          },
-          "source_status": "investigate",
-          "standard_name_zh": "怒龙神"
-        }
-      ],
       "current_game_name": "虎蛇",
       "current_translation": {
         "ja": "タイガースネーク",
         "zh": "虎蛇"
       },
-      "website_name": "红蛇",
-      "website_source_id": "mob-16",
       "website_source_ids": [
         "mob-16",
         "mob-17"
@@ -19820,7 +19771,19 @@
       "zircon_candidate_indexes": [
         19
       ],
-      "standard_name_zh": "红蛇"
+      "standard_name_zh": "虎蛇",
+      "website_source_id": "mob-17",
+      "website_name": "虎蛇",
+      "candidate_website_names": [
+        {
+          "candidate_indexes": [
+            19
+          ],
+          "name": "虎蛇",
+          "source_id": "mob-17",
+          "source_status": "confirmed"
+        }
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
@@ -32553,34 +32516,8 @@
   },
   {
     "assessment": {
-      "export_enabled": false,
-      "fields": {
-        "display_name": {
-          "reason": "网站标准名与当前中文显示值不同；除明确标记的冲突示例外，不将不同自动判为错误。",
-          "status": "conflict"
-        },
-        "game_data": {
-          "reason": "未完成人工复核；来源事实保留，不自动修正。",
-          "status": "pending_review"
-        },
-        "identity_mapping": {
-          "reason": "来源状态 confirmed，Index 与内部名在当前 Zircon 快照逐项相符；尚非翻译导出批准。",
-          "status": "source_confirmed"
-        },
-        "relations": {
-          "reason": "未完成人工复核；来源事实保留，不自动修正。",
-          "status": "pending_review"
-        },
-        "resource_identity": {
-          "reason": "资源身份必须由可视/索引证据确认。",
-          "status": "pending_evidence"
-        }
-      },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
-      "reviewed_at": null,
-      "reviewer": null,
-      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     },
     "entity_type": "monster",
     "evidence": [
@@ -32651,28 +32588,28 @@
     },
     "id": "monster:zircon:32",
     "identity": {
-      "candidate_website_names": [
-        {
-          "candidate_indexes": [
-            32
-          ],
-          "name": "老道僵尸",
-          "source_id": "mob-42",
-          "source_status": "confirmed"
-        }
-      ],
       "current_game_name": "幽灵巫师",
       "current_translation": {
         "ja": "ゴーストソーサラー",
         "zh": "幽灵巫师"
       },
-      "standard_name_zh": "老道僵尸",
-      "website_name": "老道僵尸",
-      "website_source_id": "mob-42",
+      "standard_name_zh": "魔咒僵尸",
       "zircon_index": 32,
       "zircon_internal_name": "GhostSorcerer",
       "zircon_candidate_indexes": [
         58
+      ],
+      "website_source_id": "mob-44",
+      "website_name": "魔咒僵尸",
+      "candidate_website_names": [
+        {
+          "candidate_indexes": [
+            32
+          ],
+          "name": "魔咒僵尸",
+          "source_id": "mob-44",
+          "source_status": "confirmed"
+        }
       ]
     },
     "relations": {
@@ -32703,34 +32640,8 @@
   },
   {
     "assessment": {
-      "export_enabled": false,
-      "fields": {
-        "display_name": {
-          "reason": "网站标准名与当前中文显示值不同；除明确标记的冲突示例外，不将不同自动判为错误。",
-          "status": "conflict"
-        },
-        "game_data": {
-          "reason": "未完成人工复核；来源事实保留，不自动修正。",
-          "status": "pending_review"
-        },
-        "identity_mapping": {
-          "reason": "来源状态 confirmed，Index 与内部名在当前 Zircon 快照逐项相符；尚非翻译导出批准。",
-          "status": "source_confirmed"
-        },
-        "relations": {
-          "reason": "未完成人工复核；来源事实保留，不自动修正。",
-          "status": "pending_review"
-        },
-        "resource_identity": {
-          "reason": "资源身份必须由可视/索引证据确认。",
-          "status": "pending_evidence"
-        }
-      },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
-      "reviewed_at": null,
-      "reviewer": null,
-      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     },
     "entity_type": "monster",
     "evidence": [
@@ -32825,28 +32736,28 @@
     },
     "id": "monster:zircon:33",
     "identity": {
-      "candidate_website_names": [
-        {
-          "candidate_indexes": [
-            33
-          ],
-          "name": "魔咒僵尸",
-          "source_id": "mob-44",
-          "source_status": "confirmed"
-        }
-      ],
       "current_game_name": "幽灵法师",
       "current_translation": {
         "ja": "ゴーストメイジ",
         "zh": "幽灵法师"
       },
-      "standard_name_zh": "魔咒僵尸",
-      "website_name": "魔咒僵尸",
-      "website_source_id": "mob-44",
+      "standard_name_zh": "法老僵尸",
       "zircon_index": 33,
       "zircon_internal_name": "Ghost Mage",
       "zircon_candidate_indexes": [
         36
+      ],
+      "website_source_id": "mob-43",
+      "website_name": "法老僵尸",
+      "candidate_website_names": [
+        {
+          "candidate_indexes": [
+            33
+          ],
+          "name": "法老僵尸",
+          "source_id": "mob-43",
+          "source_status": "confirmed"
+        }
       ]
     },
     "relations": {
@@ -33941,7 +33852,20 @@
         "zh": "贪婪幽灵"
       },
       "zircon_index": 34,
-      "zircon_internal_name": "Voracious Ghost"
+      "zircon_internal_name": "Voracious Ghost",
+      "website_source_id": "mob-40",
+      "website_name": "僵尸",
+      "standard_name_zh": "僵尸",
+      "candidate_website_names": [
+        {
+          "candidate_indexes": [
+            34
+          ],
+          "name": "僵尸",
+          "source_id": "mob-40",
+          "source_status": "confirmed"
+        }
+      ]
     },
     "relations": {},
     "resources": {
@@ -33956,7 +33880,8 @@
       "web-audit:monster:161"
     ],
     "assessment": {
-      "overall_status": "confirmed"
+      "overall_status": "confirmed",
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     }
   },
   {
@@ -34995,7 +34920,20 @@
         "zh": "吞噬幽灵"
       },
       "zircon_index": 35,
-      "zircon_internal_name": "Devouring Ghost"
+      "zircon_internal_name": "Devouring Ghost",
+      "website_source_id": "mob-42",
+      "website_name": "老道僵尸",
+      "standard_name_zh": "老道僵尸",
+      "candidate_website_names": [
+        {
+          "candidate_indexes": [
+            35
+          ],
+          "name": "老道僵尸",
+          "source_id": "mob-42",
+          "source_status": "confirmed"
+        }
+      ]
     },
     "relations": {},
     "resources": {
@@ -35010,7 +34948,8 @@
       "web-audit:monster:162"
     ],
     "assessment": {
-      "overall_status": "confirmed"
+      "overall_status": "confirmed",
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     }
   },
   {
@@ -35655,7 +35594,20 @@
         "zh": "起尸鬼"
       },
       "zircon_index": 36,
-      "zircon_internal_name": "Corpse Raising Ghost"
+      "zircon_internal_name": "Corpse Raising Ghost",
+      "website_source_id": "mob-41",
+      "website_name": "烂僵尸",
+      "standard_name_zh": "烂僵尸",
+      "candidate_website_names": [
+        {
+          "candidate_indexes": [
+            36
+          ],
+          "name": "烂僵尸",
+          "source_id": "mob-41",
+          "source_status": "confirmed"
+        }
+      ]
     },
     "relations": {},
     "resources": {
@@ -35670,7 +35622,8 @@
       "web-audit:monster:163"
     ],
     "assessment": {
-      "overall_status": "confirmed"
+      "overall_status": "confirmed",
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     }
   },
   {
@@ -36238,50 +36191,12 @@
     },
     "id": "monster:zircon:37",
     "identity": {
-      "candidate_website_names": [
-        {
-          "candidate_indexes": [
-            30,
-            37
-          ],
-          "category": "天然洞穴",
-          "image": {
-            "bytes": 5367,
-            "exists": true,
-            "format": "GIF",
-            "frames": 1,
-            "height": 106,
-            "mode": "P",
-            "path": "images/mob/pic/06.gif",
-            "sha256": "762b56e8a34f49fa47c26d2061c8f6f39eea81c59ff85fb24ac4697d7589e401",
-            "width": 139
-          },
-          "name": "骷髅战将",
-          "source_id": "mob-32",
-          "source_ref": {
-            "record": "manifest.json#monster_identity/mob-32",
-            "source_id": "website-alignment-manifest"
-          },
-          "source_status": "investigate",
-          "standard_name_zh": "骷髅战将"
-        },
-        {
-          "candidate_indexes": [
-            37
-          ],
-          "name": "法老僵尸",
-          "source_id": "mob-43",
-          "source_status": "confirmed"
-        }
-      ],
       "current_game_name": "食尸鬼冠军",
       "current_translation": {
         "ja": "グールチャンピオン",
         "zh": "食尸鬼冠军"
       },
       "standard_name_zh": "法老僵尸",
-      "website_name": "法老僵尸",
-      "website_source_id": "mob-43",
       "zircon_index": 37,
       "zircon_internal_name": "Ghoul Champion",
       "zircon_candidate_indexes": [
@@ -39317,24 +39232,12 @@
     },
     "id": "monster:zircon:409",
     "identity": {
-      "candidate_website_names": [
-        {
-          "candidate_indexes": [
-            409
-          ],
-          "name": "海神将领",
-          "source_id": "mob-140",
-          "source_status": "confirmed"
-        }
-      ],
       "current_game_name": "异界海将",
       "current_translation": {
         "ja": "異界の海将",
         "zh": "异界海将"
       },
       "standard_name_zh": "海神将领",
-      "website_name": "海神将领",
-      "website_source_id": "mob-140",
       "zircon_index": 409,
       "zircon_internal_name": "Otherworld Sea General"
     },
@@ -39688,24 +39591,12 @@
     },
     "id": "monster:zircon:412",
     "identity": {
-      "candidate_website_names": [
-        {
-          "candidate_indexes": [
-            412
-          ],
-          "name": "爆毒神魔",
-          "source_id": "mob-138",
-          "source_status": "confirmed"
-        }
-      ],
       "current_game_name": "异界毒魔",
       "current_translation": {
         "ja": "異界の毒魔",
         "zh": "异界毒魔"
       },
       "standard_name_zh": "爆毒神魔",
-      "website_name": "爆毒神魔",
-      "website_source_id": "mob-138",
       "zircon_index": 412,
       "zircon_internal_name": "Otherworld Poison Demon"
     },
@@ -39943,52 +39834,12 @@
     },
     "id": "monster:zircon:416",
     "identity": {
-      "candidate_website_names": [
-        {
-          "candidate_indexes": [
-            416
-          ],
-          "name": "神舰守卫",
-          "source_id": "mob-142",
-          "source_status": "confirmed"
-        },
-        {
-          "candidate_indexes": [
-            147,
-            400,
-            416,
-            417
-          ],
-          "category": "神舰",
-          "image": {
-            "bytes": 6112,
-            "exists": true,
-            "format": "GIF",
-            "frames": 1,
-            "height": 106,
-            "mode": "P",
-            "path": "images/mob/pic/image032.gif",
-            "sha256": "db44b01d01de1b7e287908729649a8bd63588360105fac47aa461aed5529eca7",
-            "width": 139
-          },
-          "name": "霸王守卫",
-          "source_id": "mob-145",
-          "source_ref": {
-            "record": "manifest.json#monster_identity/mob-145",
-            "source_id": "website-alignment-manifest"
-          },
-          "source_status": "investigate",
-          "standard_name_zh": "霸王守卫"
-        }
-      ],
       "current_game_name": "异界船卫士",
       "current_translation": {
         "ja": "異界の船守衛",
         "zh": "异界船卫士"
       },
       "standard_name_zh": "神舰守卫",
-      "website_name": "神舰守卫",
-      "website_source_id": "mob-142",
       "zircon_index": 416,
       "zircon_internal_name": "Otherworld Ship Guard"
     },
@@ -40164,24 +40015,12 @@
     },
     "id": "monster:zircon:418",
     "identity": {
-      "candidate_website_names": [
-        {
-          "candidate_indexes": [
-            418
-          ],
-          "name": "红衣法师",
-          "source_id": "mob-144",
-          "source_status": "confirmed"
-        }
-      ],
       "current_game_name": "异界红法师",
       "current_translation": {
         "ja": "異界の赤魔導士",
         "zh": "异界红法师"
       },
       "standard_name_zh": "红衣法师",
-      "website_name": "红衣法师",
-      "website_source_id": "mob-144",
       "zircon_index": 418,
       "zircon_internal_name": "Otherworld Red Mage"
     },
@@ -40543,24 +40382,12 @@
     },
     "id": "monster:zircon:421",
     "identity": {
-      "candidate_website_names": [
-        {
-          "candidate_indexes": [
-            421
-          ],
-          "name": "触角神魔",
-          "source_id": "mob-137",
-          "source_status": "confirmed"
-        }
-      ],
       "current_game_name": "异界触手魔",
       "current_translation": {
         "ja": "異界の触手魔",
         "zh": "异界触手魔"
       },
       "standard_name_zh": "触角神魔",
-      "website_name": "触角神魔",
-      "website_source_id": "mob-137",
       "zircon_index": 421,
       "zircon_internal_name": "Otherworld Tentacle Demon"
     },
@@ -40798,24 +40625,12 @@
     },
     "id": "monster:zircon:425",
     "identity": {
-      "candidate_website_names": [
-        {
-          "candidate_indexes": [
-            425
-          ],
-          "name": "轻甲守卫",
-          "source_id": "mob-143",
-          "source_status": "confirmed"
-        }
-      ],
       "current_game_name": "异界光卫士",
       "current_translation": {
         "ja": "異界の光守衛",
         "zh": "异界光卫士"
       },
       "standard_name_zh": "轻甲守卫",
-      "website_name": "轻甲守卫",
-      "website_source_id": "mob-143",
       "zircon_index": 425,
       "zircon_internal_name": "Otherworld Light Guard"
     },
@@ -41744,51 +41559,9 @@
           "candidate_indexes": [
             44
           ],
-          "category": "盟重",
-          "image": {
-            "bytes": 5698,
-            "exists": true,
-            "format": "GIF",
-            "frames": 1,
-            "height": 106,
-            "mode": "P",
-            "path": "images/mob/pic/f19.gif",
-            "sha256": "ac48656c40004ba6ddc22695c8329cffb766ca8a1d747af3757bd1ac14e09042",
-            "width": 139
-          },
           "name": "多角虫",
           "source_id": "mob-24",
-          "source_ref": {
-            "record": "manifest.json#monster_identity/mob-24",
-            "source_id": "website-alignment-manifest"
-          },
-          "source_status": "investigate",
-          "standard_name_zh": "多角虫"
-        },
-        {
-          "candidate_indexes": [
-            44
-          ],
-          "category": "盟重",
-          "image": {
-            "bytes": 6323,
-            "exists": true,
-            "format": "GIF",
-            "frames": 1,
-            "height": 106,
-            "mode": "P",
-            "path": "images/mob/pic/f21.gif",
-            "sha256": "92a88fef6d52bf83fabae7f12b92c5ef255b1453455396562b1f74e9692c4807",
-            "width": 139
-          },
-          "name": "巨型多角虫",
-          "source_id": "mob-25",
-          "source_ref": {
-            "record": "manifest.json#monster_identity/mob-25",
-            "source_id": "website-alignment-manifest"
-          },
-          "source_status": "investigate",
-          "standard_name_zh": "巨型多角虫"
+          "source_status": "confirmed"
         }
       ],
       "current_game_name": "食尸者",
@@ -41797,7 +41570,10 @@
         "zh": "食尸者"
       },
       "zircon_index": 44,
-      "zircon_internal_name": "Corpse Devourer"
+      "zircon_internal_name": "Corpse Devourer",
+      "website_source_id": "mob-24",
+      "website_name": "多角虫",
+      "standard_name_zh": "多角虫"
     },
     "relations": {
       "conflict_counterparts": [
@@ -41817,7 +41593,8 @@
       "web-audit:monster:169"
     ],
     "assessment": {
-      "overall_status": "confirmed"
+      "overall_status": "confirmed",
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     }
   },
   {
@@ -42606,7 +42383,20 @@
         "zh": "内脏虫"
       },
       "zircon_index": 45,
-      "zircon_internal_name": "Visceral Worm"
+      "zircon_internal_name": "Visceral Worm",
+      "website_source_id": "mob-23",
+      "website_name": "沙漠威斯而小虫",
+      "standard_name_zh": "沙漠威斯而小虫",
+      "candidate_website_names": [
+        {
+          "candidate_indexes": [
+            45
+          ],
+          "name": "沙漠威斯而小虫",
+          "source_id": "mob-23",
+          "source_status": "confirmed"
+        }
+      ]
     },
     "relations": {},
     "resources": {
@@ -42621,7 +42411,8 @@
       "web-audit:monster:170"
     ],
     "assessment": {
-      "overall_status": "confirmed"
+      "overall_status": "confirmed",
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     }
   },
   {
@@ -43157,34 +42948,8 @@
   },
   {
     "assessment": {
-      "export_enabled": false,
-      "fields": {
-        "display_name": {
-          "reason": "网站标准名与当前中文显示值不同；除明确标记的冲突示例外，不将不同自动判为错误。",
-          "status": "conflict"
-        },
-        "game_data": {
-          "reason": "未完成人工复核；来源事实保留，不自动修正。",
-          "status": "pending_review"
-        },
-        "identity_mapping": {
-          "reason": "来源状态 confirmed，Index 与内部名在当前 Zircon 快照逐项相符；尚非翻译导出批准。",
-          "status": "source_confirmed"
-        },
-        "relations": {
-          "reason": "未完成人工复核；来源事实保留，不自动修正。",
-          "status": "pending_review"
-        },
-        "resource_identity": {
-          "reason": "资源身份必须由可视/索引证据确认。",
-          "status": "pending_evidence"
-        }
-      },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
-      "reviewed_at": null,
-      "reviewer": null,
-      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     },
     "entity_type": "monster",
     "evidence": [
@@ -43251,28 +43016,28 @@
     },
     "id": "monster:zircon:46",
     "identity": {
-      "candidate_website_names": [
-        {
-          "candidate_indexes": [
-            46
-          ],
-          "name": "威思而小虫",
-          "source_id": "mob-22",
-          "source_status": "confirmed"
-        }
-      ],
       "current_game_name": "变异跳蚤",
       "current_translation": {
         "ja": "ミュータントノミ",
         "zh": "变异跳蚤"
       },
-      "standard_name_zh": "威思而小虫",
-      "website_name": "威思而小虫",
-      "website_source_id": "mob-22",
+      "standard_name_zh": "多脚虫",
       "zircon_index": 46,
       "zircon_internal_name": "Mutant Flea",
       "zircon_candidate_indexes": [
         44
+      ],
+      "website_source_id": "mob-37",
+      "website_name": "多脚虫",
+      "candidate_website_names": [
+        {
+          "candidate_indexes": [
+            46
+          ],
+          "name": "多脚虫",
+          "source_id": "mob-37",
+          "source_status": "confirmed"
+        }
       ]
     },
     "relations": {
@@ -43803,34 +43568,8 @@
   },
   {
     "assessment": {
-      "export_enabled": false,
-      "fields": {
-        "display_name": {
-          "reason": "网站标准名与当前中文显示值不同；除明确标记的冲突示例外，不将不同自动判为错误。",
-          "status": "conflict"
-        },
-        "game_data": {
-          "reason": "未完成人工复核；来源事实保留，不自动修正。",
-          "status": "pending_review"
-        },
-        "identity_mapping": {
-          "reason": "来源状态 confirmed，Index 与内部名在当前 Zircon 快照逐项相符；尚非翻译导出批准。",
-          "status": "source_confirmed"
-        },
-        "relations": {
-          "reason": "未完成人工复核；来源事实保留，不自动修正。",
-          "status": "pending_review"
-        },
-        "resource_identity": {
-          "reason": "资源身份必须由可视/索引证据确认。",
-          "status": "pending_evidence"
-        }
-      },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
-      "reviewed_at": null,
-      "reviewer": null,
-      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     },
     "entity_type": "monster",
     "evidence": [
@@ -43897,28 +43636,28 @@
     },
     "id": "monster:zircon:47",
     "identity": {
-      "candidate_website_names": [
-        {
-          "candidate_indexes": [
-            47
-          ],
-          "name": "沙漠威斯而小虫",
-          "source_id": "mob-23",
-          "source_status": "confirmed"
-        }
-      ],
       "current_game_name": "剧毒变异跳蚤",
       "current_translation": {
         "ja": "毒ミュータントノミ",
         "zh": "剧毒变异跳蚤"
       },
-      "standard_name_zh": "沙漠威斯而小虫",
-      "website_name": "沙漠威斯而小虫",
-      "website_source_id": "mob-23",
+      "standard_name_zh": "蜘蛛娃",
       "zircon_index": 47,
       "zircon_internal_name": "Poisonous Mutant Flea",
       "zircon_candidate_indexes": [
         44
+      ],
+      "website_source_id": "mob-34",
+      "website_name": "蜘蛛娃",
+      "candidate_website_names": [
+        {
+          "candidate_indexes": [
+            47
+          ],
+          "name": "蜘蛛娃",
+          "source_id": "mob-34",
+          "source_status": "confirmed"
+        }
       ]
     },
     "relations": {
@@ -44547,7 +44286,20 @@
         "zh": "爆裂变异跳蚤"
       },
       "zircon_index": 48,
-      "zircon_internal_name": "Blaster Mutant Flea"
+      "zircon_internal_name": "Blaster Mutant Flea",
+      "website_source_id": "mob-35",
+      "website_name": "胞眼虫",
+      "standard_name_zh": "胞眼虫",
+      "candidate_website_names": [
+        {
+          "candidate_indexes": [
+            48
+          ],
+          "name": "胞眼虫",
+          "source_id": "mob-35",
+          "source_status": "confirmed"
+        }
+      ]
     },
     "relations": {},
     "resources": {
@@ -44562,7 +44314,8 @@
       "web-audit:monster:171"
     ],
     "assessment": {
-      "overall_status": "confirmed"
+      "overall_status": "confirmed",
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     }
   },
   {
@@ -45887,7 +45640,20 @@
         "zh": "剪刀虫"
       },
       "zircon_index": 54,
-      "zircon_internal_name": "Earwig"
+      "zircon_internal_name": "Earwig",
+      "website_source_id": "mob-88",
+      "website_name": "钳虫",
+      "standard_name_zh": "钳虫",
+      "candidate_website_names": [
+        {
+          "candidate_indexes": [
+            54
+          ],
+          "name": "钳虫",
+          "source_id": "mob-88",
+          "source_status": "confirmed"
+        }
+      ]
     },
     "relations": {},
     "resources": {
@@ -45902,7 +45668,8 @@
       "web-audit:monster:177"
     ],
     "assessment": {
-      "overall_status": "confirmed"
+      "overall_status": "confirmed",
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     }
   },
   {
@@ -45975,7 +45742,20 @@
         "zh": "铁枪"
       },
       "zircon_index": 55,
-      "zircon_internal_name": "Iron Lance"
+      "zircon_internal_name": "Iron Lance",
+      "website_source_id": "mob-97",
+      "website_name": "邪恶钳虫",
+      "standard_name_zh": "邪恶钳虫",
+      "candidate_website_names": [
+        {
+          "candidate_indexes": [
+            55
+          ],
+          "name": "邪恶钳虫",
+          "source_id": "mob-97",
+          "source_status": "confirmed"
+        }
+      ]
     },
     "relations": {},
     "resources": {
@@ -45990,7 +45770,8 @@
       "web-audit:monster:178"
     ],
     "assessment": {
-      "overall_status": "confirmed"
+      "overall_status": "confirmed",
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     }
   },
   {
@@ -46100,30 +45881,11 @@
       "candidate_website_names": [
         {
           "candidate_indexes": [
-            56,
-            59,
-            105
+            56
           ],
-          "category": "矿区",
-          "image": {
-            "bytes": 5240,
-            "exists": true,
-            "format": "GIF",
-            "frames": 1,
-            "height": 106,
-            "mode": "P",
-            "path": "images/mob/pic/21.gif",
-            "sha256": "23151b533879596458069b07bf5d4455b256dffc197c249ded00fe77488be404",
-            "width": 139
-          },
-          "name": "尸王",
-          "source_id": "mob-45",
-          "source_ref": {
-            "record": "manifest.json#monster_identity/mob-45",
-            "source_id": "website-alignment-manifest"
-          },
-          "source_status": "investigate",
-          "standard_name_zh": "尸王"
+          "name": "触龙神",
+          "source_id": "mob-98",
+          "source_status": "confirmed"
         }
       ],
       "current_game_name": "领主吉奈",
@@ -46132,7 +45894,10 @@
         "zh": "领主吉奈"
       },
       "zircon_index": 56,
-      "zircon_internal_name": "Lord Ji'Nae"
+      "zircon_internal_name": "Lord Ji'Nae",
+      "website_source_id": "mob-98",
+      "website_name": "触龙神",
+      "standard_name_zh": "触龙神"
     },
     "relations": {
       "conflict_counterparts": [
@@ -46151,39 +45916,14 @@
       "web-audit:monster:179"
     ],
     "assessment": {
-      "overall_status": "confirmed"
+      "overall_status": "confirmed",
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     }
   },
   {
     "assessment": {
-      "export_enabled": false,
-      "fields": {
-        "display_name": {
-          "reason": "网站标准名与当前中文显示值不同；除明确标记的冲突示例外，不将不同自动判为错误。",
-          "status": "conflict"
-        },
-        "game_data": {
-          "reason": "未完成人工复核；来源事实保留，不自动修正。",
-          "status": "pending_review"
-        },
-        "identity_mapping": {
-          "reason": "来源状态 confirmed，Index 与内部名在当前 Zircon 快照逐项相符；尚非翻译导出批准。",
-          "status": "source_confirmed"
-        },
-        "relations": {
-          "reason": "未完成人工复核；来源事实保留，不自动修正。",
-          "status": "pending_review"
-        },
-        "resource_identity": {
-          "reason": "资源身份必须由可视/索引证据确认。",
-          "status": "pending_evidence"
-        }
-      },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
-      "reviewed_at": null,
-      "reviewer": null,
-      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     },
     "entity_type": "monster",
     "evidence": [
@@ -46252,54 +45992,28 @@
     },
     "id": "monster:zircon:57",
     "identity": {
-      "candidate_website_names": [
-        {
-          "candidate_indexes": [
-            57
-          ],
-          "name": "烂僵尸",
-          "source_id": "mob-41",
-          "source_status": "confirmed"
-        },
-        {
-          "candidate_indexes": [
-            57,
-            185
-          ],
-          "category": "潘夜岛",
-          "image": {
-            "bytes": 3870,
-            "exists": true,
-            "format": "GIF",
-            "frames": 1,
-            "height": 106,
-            "mode": "P",
-            "path": "images/mob/pic/66.gif",
-            "sha256": "6e5770d262721a0a08a5bc8538768fe0cbff79dd68ff67480d6608623a576675",
-            "width": 139
-          },
-          "name": "腐蚀人鬼",
-          "source_id": "mob-47",
-          "source_ref": {
-            "record": "manifest.json#monster_identity/mob-47",
-            "source_id": "website-alignment-manifest"
-          },
-          "source_status": "investigate",
-          "standard_name_zh": "腐蚀人鬼"
-        }
-      ],
       "current_game_name": "腐烂食尸鬼",
       "current_translation": {
         "ja": "腐敗グール",
         "zh": "腐烂食尸鬼"
       },
-      "standard_name_zh": "烂僵尸",
-      "website_name": "烂僵尸",
-      "website_source_id": "mob-41",
+      "standard_name_zh": "浪子人鬼",
       "zircon_index": 57,
       "zircon_internal_name": "Rotting Ghoul",
       "zircon_candidate_indexes": [
         57
+      ],
+      "website_source_id": "mob-46",
+      "website_name": "浪子人鬼",
+      "candidate_website_names": [
+        {
+          "candidate_indexes": [
+            57
+          ],
+          "name": "浪子人鬼",
+          "source_id": "mob-46",
+          "source_status": "confirmed"
+        }
       ]
     },
     "relations": {
@@ -46410,7 +46124,20 @@
         "zh": "腐朽食尸鬼"
       },
       "zircon_index": 58,
-      "zircon_internal_name": "Decaying Ghoul"
+      "zircon_internal_name": "Decaying Ghoul",
+      "website_source_id": "mob-47",
+      "website_name": "腐蚀人鬼",
+      "standard_name_zh": "腐蚀人鬼",
+      "candidate_website_names": [
+        {
+          "candidate_indexes": [
+            58
+          ],
+          "name": "腐蚀人鬼",
+          "source_id": "mob-47",
+          "source_status": "confirmed"
+        }
+      ]
     },
     "relations": {},
     "resources": {
@@ -46425,7 +46152,8 @@
       "web-audit:monster:180"
     ],
     "assessment": {
-      "overall_status": "confirmed"
+      "overall_status": "confirmed",
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     }
   },
   {
@@ -46695,24 +46423,12 @@
     },
     "id": "monster:zircon:60",
     "identity": {
-      "candidate_website_names": [
-        {
-          "candidate_indexes": [
-            60
-          ],
-          "name": "僵尸",
-          "source_id": "mob-40",
-          "source_status": "confirmed"
-        }
-      ],
       "current_game_name": "嗜血僵尸",
       "current_translation": {
         "ja": "血に飢えたゾンビ",
         "zh": "嗜血僵尸"
       },
       "standard_name_zh": "僵尸",
-      "website_name": "僵尸",
-      "website_source_id": "mob-40",
       "zircon_index": 60,
       "zircon_internal_name": "Blood Thristy Zombie"
     },
@@ -46742,34 +46458,8 @@
   },
   {
     "assessment": {
-      "export_enabled": false,
-      "fields": {
-        "display_name": {
-          "reason": "网站标准名与当前中文显示值不同；除明确标记的冲突示例外，不将不同自动判为错误。",
-          "status": "conflict"
-        },
-        "game_data": {
-          "reason": "未完成人工复核；来源事实保留，不自动修正。",
-          "status": "pending_review"
-        },
-        "identity_mapping": {
-          "reason": "来源状态 confirmed，Index 与内部名在当前 Zircon 快照逐项相符；尚非翻译导出批准。",
-          "status": "source_confirmed"
-        },
-        "relations": {
-          "reason": "未完成人工复核；来源事实保留，不自动修正。",
-          "status": "pending_review"
-        },
-        "resource_identity": {
-          "reason": "资源身份必须由可视/索引证据确认。",
-          "status": "pending_evidence"
-        }
-      },
-      "overall_status": "pending_review",
-      "reason": "未完成人工复核；来源事实保留，不自动修正。",
-      "reviewed_at": null,
-      "reviewer": null,
-      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+      "overall_status": "confirmed",
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     },
     "entity_type": "monster",
     "evidence": [
@@ -46830,26 +46520,26 @@
     },
     "id": "monster:zircon:61",
     "identity": {
-      "candidate_website_names": [
-        {
-          "candidate_indexes": [
-            61
-          ],
-          "name": "粪虫",
-          "source_id": "mob-108",
-          "source_status": "confirmed"
-        }
-      ],
       "current_game_name": "棘背暗蜥蜴",
       "current_translation": {
         "ja": "トゲ背ダークリザード",
         "zh": "棘背暗蜥蜴"
       },
-      "standard_name_zh": "粪虫",
-      "website_name": "粪虫",
-      "website_source_id": "mob-108",
+      "standard_name_zh": "暗黑战士",
       "zircon_index": 61,
-      "zircon_internal_name": "Spined Dark Lizard"
+      "zircon_internal_name": "Spined Dark Lizard",
+      "website_source_id": "mob-109",
+      "website_name": "暗黑战士",
+      "candidate_website_names": [
+        {
+          "candidate_indexes": [
+            61
+          ],
+          "name": "暗黑战士",
+          "source_id": "mob-109",
+          "source_status": "confirmed"
+        }
+      ]
     },
     "relations": {},
     "resources": {
@@ -46877,34 +46567,8 @@
   },
   {
     "assessment": {
-      "export_enabled": false,
-      "fields": {
-        "display_name": {
-          "reason": "网站标准名与当前中文显示值不同；除明确标记的冲突示例外，不将不同自动判为错误。",
-          "status": "conflict"
-        },
-        "game_data": {
-          "reason": "未完成人工复核；来源事实保留，不自动修正。",
-          "status": "pending_review"
-        },
-        "identity_mapping": {
-          "reason": "来源状态 confirmed，Index 与内部名在当前 Zircon 快照逐项相符；尚非翻译导出批准。",
-          "status": "source_confirmed"
-        },
-        "relations": {
-          "reason": "未完成人工复核；来源事实保留，不自动修正。",
-          "status": "pending_review"
-        },
-        "resource_identity": {
-          "reason": "资源身份必须由可视/索引证据确认。",
-          "status": "pending_evidence"
-        }
-      },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
-      "reviewed_at": null,
-      "reviewer": null,
-      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     },
     "entity_type": "monster",
     "evidence": [
@@ -46965,28 +46629,28 @@
     },
     "id": "monster:zircon:62",
     "identity": {
-      "candidate_website_names": [
-        {
-          "candidate_indexes": [
-            62
-          ],
-          "name": "暗黑战士",
-          "source_id": "mob-109",
-          "source_status": "confirmed"
-        }
-      ],
       "current_game_name": "祖玛异教徒",
       "current_translation": {
         "ja": "ズマ異端者",
         "zh": "祖玛异教徒"
       },
-      "standard_name_zh": "暗黑战士",
-      "website_name": "暗黑战士",
-      "website_source_id": "mob-109",
+      "standard_name_zh": "沃玛战士",
       "zircon_index": 62,
       "zircon_internal_name": "Uma Infidel",
       "zircon_candidate_indexes": [
         87
+      ],
+      "website_source_id": "mob-110",
+      "website_name": "沃玛战士",
+      "candidate_website_names": [
+        {
+          "candidate_indexes": [
+            62
+          ],
+          "name": "沃玛战士",
+          "source_id": "mob-110",
+          "source_status": "confirmed"
+        }
       ]
     },
     "relations": {
@@ -47017,34 +46681,8 @@
   },
   {
     "assessment": {
-      "export_enabled": false,
-      "fields": {
-        "display_name": {
-          "reason": "网站标准名与当前中文显示值不同；除明确标记的冲突示例外，不将不同自动判为错误。",
-          "status": "conflict"
-        },
-        "game_data": {
-          "reason": "未完成人工复核；来源事实保留，不自动修正。",
-          "status": "pending_review"
-        },
-        "identity_mapping": {
-          "reason": "来源状态 confirmed，Index 与内部名在当前 Zircon 快照逐项相符；尚非翻译导出批准。",
-          "status": "source_confirmed"
-        },
-        "relations": {
-          "reason": "未完成人工复核；来源事实保留，不自动修正。",
-          "status": "pending_review"
-        },
-        "resource_identity": {
-          "reason": "资源身份必须由可视/索引证据确认。",
-          "status": "pending_evidence"
-        }
-      },
-      "overall_status": "conflict",
-      "reason": "未完成人工复核；来源事实保留，不自动修正。",
-      "reviewed_at": null,
-      "reviewer": null,
-      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+      "overall_status": "confirmed",
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     },
     "entity_type": "monster",
     "evidence": [
@@ -47113,37 +46751,30 @@
     },
     "id": "monster:zircon:63",
     "identity": {
-      "candidate_website_names": [
-        {
-          "candidate_indexes": [
-            63
-          ],
-          "name": "沃玛战士",
-          "source_id": "mob-110",
-          "source_status": "confirmed"
-        },
-        {
-          "candidate_indexes": [
-            63
-          ],
-          "name": "火焰沃玛",
-          "source_id": "mob-113",
-          "source_status": "confirmed"
-        }
-      ],
       "current_game_name": "祖玛喷火者",
       "current_translation": {
         "ja": "ズマ火炎放射者",
         "zh": "祖玛喷火者"
       },
-      "website_name": "沃玛战士",
-      "website_source_id": "mob-110",
       "website_source_ids": [
         "mob-110",
         "mob-113"
       ],
       "zircon_index": 63,
-      "zircon_internal_name": "Uma Flame Thrower"
+      "zircon_internal_name": "Uma Flame Thrower",
+      "website_source_id": "mob-111",
+      "website_name": "沃玛勇士",
+      "standard_name_zh": "沃玛勇士",
+      "candidate_website_names": [
+        {
+          "candidate_indexes": [
+            63
+          ],
+          "name": "沃玛勇士",
+          "source_id": "mob-111",
+          "source_status": "confirmed"
+        }
+      ]
     },
     "relations": {},
     "resources": {
@@ -47172,34 +46803,8 @@
   },
   {
     "assessment": {
-      "export_enabled": false,
-      "fields": {
-        "display_name": {
-          "reason": "网站标准名与当前中文显示值不同；除明确标记的冲突示例外，不将不同自动判为错误。",
-          "status": "conflict"
-        },
-        "game_data": {
-          "reason": "未完成人工复核；来源事实保留，不自动修正。",
-          "status": "pending_review"
-        },
-        "identity_mapping": {
-          "reason": "来源状态 confirmed，Index 与内部名在当前 Zircon 快照逐项相符；尚非翻译导出批准。",
-          "status": "source_confirmed"
-        },
-        "relations": {
-          "reason": "未完成人工复核；来源事实保留，不自动修正。",
-          "status": "pending_review"
-        },
-        "resource_identity": {
-          "reason": "资源身份必须由可视/索引证据确认。",
-          "status": "pending_evidence"
-        }
-      },
-      "overall_status": "conflict",
-      "reason": "未完成人工复核；来源事实保留，不自动修正。",
-      "reviewed_at": null,
-      "reviewer": null,
-      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+      "overall_status": "confirmed",
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     },
     "entity_type": "monster",
     "evidence": [
@@ -47272,37 +46877,30 @@
     },
     "id": "monster:zircon:64",
     "identity": {
-      "candidate_website_names": [
-        {
-          "candidate_indexes": [
-            64
-          ],
-          "name": "沃玛勇士",
-          "source_id": "mob-111",
-          "source_status": "confirmed"
-        },
-        {
-          "candidate_indexes": [
-            64
-          ],
-          "name": "沃玛战将",
-          "source_id": "mob-112",
-          "source_status": "confirmed"
-        }
-      ],
       "current_game_name": "祖玛折磨者",
       "current_translation": {
         "ja": "ズマアングイッシャー",
         "zh": "祖玛折磨者"
       },
-      "website_name": "沃玛勇士",
-      "website_source_id": "mob-111",
       "website_source_ids": [
         "mob-111",
         "mob-112"
       ],
       "zircon_index": 64,
-      "zircon_internal_name": "Uma Anguisher"
+      "zircon_internal_name": "Uma Anguisher",
+      "website_source_id": "mob-114",
+      "website_name": "沃玛卫士",
+      "standard_name_zh": "沃玛卫士",
+      "candidate_website_names": [
+        {
+          "candidate_indexes": [
+            64
+          ],
+          "name": "沃玛卫士",
+          "source_id": "mob-114",
+          "source_status": "confirmed"
+        }
+      ]
     },
     "relations": {},
     "resources": {
@@ -47331,34 +46929,8 @@
   },
   {
     "assessment": {
-      "export_enabled": false,
-      "fields": {
-        "display_name": {
-          "reason": "网站标准名与当前中文显示值不同；除明确标记的冲突示例外，不将不同自动判为错误。",
-          "status": "conflict"
-        },
-        "game_data": {
-          "reason": "未完成人工复核；来源事实保留，不自动修正。",
-          "status": "pending_review"
-        },
-        "identity_mapping": {
-          "reason": "来源状态 confirmed，Index 与内部名在当前 Zircon 快照逐项相符；尚非翻译导出批准。",
-          "status": "source_confirmed"
-        },
-        "relations": {
-          "reason": "未完成人工复核；来源事实保留，不自动修正。",
-          "status": "pending_review"
-        },
-        "resource_identity": {
-          "reason": "资源身份必须由可视/索引证据确认。",
-          "status": "pending_evidence"
-        }
-      },
       "overall_status": "confirmed",
-      "reason": "manual alias confirmed by image comparison",
-      "reviewed_at": null,
-      "reviewer": null,
-      "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     },
     "entity_type": "monster",
     "evidence": [
@@ -47463,31 +47035,11 @@
     },
     "id": "monster:zircon:65",
     "identity": {
-      "candidate_website_names": [
-        {
-          "candidate_indexes": [
-            65
-          ],
-          "name": "沃玛卫士",
-          "source_id": "mob-114",
-          "source_status": "confirmed"
-        },
-        {
-          "candidate_indexes": [
-            65
-          ],
-          "name": "沃玛教主",
-          "source_id": "mob-115",
-          "source_status": "confirmed"
-        }
-      ],
       "current_game_name": "祖玛王",
       "current_translation": {
         "ja": "ズマ王",
         "zh": "祖玛王"
       },
-      "website_name": "沃玛卫士",
-      "website_source_id": "mob-114",
       "website_source_ids": [
         "mob-114",
         "mob-115"
@@ -47497,7 +47049,19 @@
       "zircon_candidate_indexes": [
         63
       ],
-      "standard_name_zh": "沃玛卫士"
+      "standard_name_zh": "沃玛教主",
+      "website_source_id": "mob-115",
+      "website_name": "沃玛教主",
+      "candidate_website_names": [
+        {
+          "candidate_indexes": [
+            65
+          ],
+          "name": "沃玛教主",
+          "source_id": "mob-115",
+          "source_status": "confirmed"
+        }
+      ]
     },
     "relations": {
       "candidate_entity_ids": [
@@ -51267,185 +50831,11 @@
       "candidate_website_names": [
         {
           "candidate_indexes": [
-            88,
-            179
+            88
           ],
-          "category": "银杏废矿",
-          "image": {
-            "bytes": 5906,
-            "exists": true,
-            "format": "GIF",
-            "frames": 1,
-            "height": 106,
-            "mode": "P",
-            "path": "images/mob/pic/eun_04.gif",
-            "sha256": "7ecff99447c24e2e2e83f8f55d0b32309797aa3e8957a602f61fd427d86a1efc",
-            "width": 139
-          },
-          "name": "多脚虫",
-          "source_id": "mob-37",
-          "source_ref": {
-            "record": "manifest.json#monster_identity/mob-37",
-            "source_id": "website-alignment-manifest"
-          },
-          "source_status": "investigate",
-          "standard_name_zh": "多脚虫"
-        },
-        {
-          "candidate_indexes": [
-            88,
-            179
-          ],
-          "category": "银杏废矿",
-          "image": {
-            "bytes": 5789,
-            "exists": true,
-            "format": "GIF",
-            "frames": 1,
-            "height": 106,
-            "mode": "P",
-            "path": "images/mob/pic/eun_05.gif",
-            "sha256": "e08cba7327c6423824b237d998a61dc330e17cb3e6b8d71943aaccf0a920e177",
-            "width": 139
-          },
-          "name": "多脚虫",
-          "source_id": "mob-38",
-          "source_ref": {
-            "record": "manifest.json#monster_identity/mob-38",
-            "source_id": "website-alignment-manifest"
-          },
-          "source_status": "investigate",
-          "standard_name_zh": "多脚虫"
-        },
-        {
-          "candidate_indexes": [
-            88,
-            179
-          ],
-          "category": "虫峡谷",
-          "image": {
-            "bytes": 4315,
-            "exists": true,
-            "format": "GIF",
-            "frames": 1,
-            "height": 106,
-            "mode": "P",
-            "path": "images/mob/pic/34.gif",
-            "sha256": "71b5e63d6a550c477affa9a218ed83fd71b78ee16c5a2e1795e00cdd4dcedcaf",
-            "width": 139
-          },
-          "name": "钳虫",
-          "source_id": "mob-88",
-          "source_ref": {
-            "record": "manifest.json#monster_identity/mob-88",
-            "source_id": "website-alignment-manifest"
-          },
-          "source_status": "investigate",
-          "standard_name_zh": "钳虫"
-        },
-        {
-          "candidate_indexes": [
-            88,
-            179
-          ],
-          "category": "虫峡谷",
-          "image": {
-            "bytes": 5859,
-            "exists": true,
-            "format": "GIF",
-            "frames": 1,
-            "height": 106,
-            "mode": "P",
-            "path": "images/mob/pic/59.gif",
-            "sha256": "407429200fb703f78d6b1899d7a048927d52719abad428f73499ab65eaad4788",
-            "width": 139
-          },
-          "name": "白眼钳虫",
-          "source_id": "mob-89",
-          "source_ref": {
-            "record": "manifest.json#monster_identity/mob-89",
-            "source_id": "website-alignment-manifest"
-          },
-          "source_status": "investigate",
-          "standard_name_zh": "白眼钳虫"
-        },
-        {
-          "candidate_indexes": [
-            88,
-            179
-          ],
-          "category": "虫峡谷",
-          "image": {
-            "bytes": 5699,
-            "exists": true,
-            "format": "GIF",
-            "frames": 1,
-            "height": 106,
-            "mode": "P",
-            "path": "images/mob/pic/61.gif",
-            "sha256": "416765e5f1ff6320fe1bd261d60b41822db25f658f72e1b887da5768625e2603",
-            "width": 139
-          },
-          "name": "沃角钳虫",
-          "source_id": "mob-90",
-          "source_ref": {
-            "record": "manifest.json#monster_identity/mob-90",
-            "source_id": "website-alignment-manifest"
-          },
-          "source_status": "investigate",
-          "standard_name_zh": "沃角钳虫"
-        },
-        {
-          "candidate_indexes": [
-            88,
-            179
-          ],
-          "category": "虫峡谷",
-          "image": {
-            "bytes": 5690,
-            "exists": true,
-            "format": "GIF",
-            "frames": 1,
-            "height": 106,
-            "mode": "P",
-            "path": "images/mob/pic/60.gif",
-            "sha256": "015bd48aef3f2e2bd6c156dcbe2bf72a5a255667a2aa4a27d0155df3859021d3",
-            "width": 139
-          },
-          "name": "青铜钳虫",
-          "source_id": "mob-91",
-          "source_ref": {
-            "record": "manifest.json#monster_identity/mob-91",
-            "source_id": "website-alignment-manifest"
-          },
-          "source_status": "investigate",
-          "standard_name_zh": "青铜钳虫"
-        },
-        {
-          "candidate_indexes": [
-            88,
-            179
-          ],
-          "category": "虫峡谷",
-          "image": {
-            "bytes": 4978,
-            "exists": true,
-            "format": "GIF",
-            "frames": 1,
-            "height": 106,
-            "mode": "P",
-            "path": "images/mob/pic/35.gif",
-            "sha256": "5930a0fea4fed26ace577b5051d177280a1fbfb6e10fcbbe051bc41c37c929f5",
-            "width": 139
-          },
-          "name": "邪恶钳虫",
-          "source_id": "mob-97",
-          "source_ref": {
-            "record": "manifest.json#monster_identity/mob-97",
-            "source_id": "website-alignment-manifest"
-          },
-          "source_status": "investigate",
-          "standard_name_zh": "邪恶钳虫"
+          "name": "巨型多角虫",
+          "source_id": "mob-25",
+          "source_status": "confirmed"
         }
       ],
       "current_game_name": "尖刺甲虫",
@@ -51454,7 +50844,10 @@
         "zh": "尖刺甲虫"
       },
       "zircon_index": 88,
-      "zircon_internal_name": "Spiked Beetle"
+      "zircon_internal_name": "Spiked Beetle",
+      "website_source_id": "mob-25",
+      "website_name": "巨型多角虫",
+      "standard_name_zh": "巨型多角虫"
     },
     "relations": {
       "conflict_counterparts": [
@@ -51479,7 +50872,8 @@
       "web-audit:monster:198"
     ],
     "assessment": {
-      "overall_status": "confirmed"
+      "overall_status": "confirmed",
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     }
   },
   {
