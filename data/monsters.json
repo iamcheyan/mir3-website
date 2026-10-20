@@ -282,10 +282,10 @@
     "game": {
       "sprite": "/images/mob/game/Toad.png",
       "eng_name": "Toad",
-      "library": "Mon_8 (Mud3)",
-      "shape": 3,
+      "library": "Mon_3 (Mud3)",
+      "shape": 7,
       "match_method": "exact",
-      "note": "从原版 Mud3 Mon-8.wil Shape 3 移植的原版蹲伏蛤蟆原型，与 f04.gif 原画 100% 吻合"
+      "note": "从原版 Mud3 Mon-3.wil Shape 7 移植的绿皮大凸眼蛤蟆真身，与 f04.gif 原画 100% 吻合"
     },
     "zircon_match": {
       "state": "matched"
@@ -357,10 +357,10 @@
     "game": {
       "sprite": "/images/mob/game/Rake_Cat.png",
       "eng_name": "Rake Cat",
-      "library": "Mon_8 (Mud3)",
-      "shape": 1,
+      "library": "Mon_4 (Mud3)",
+      "shape": 8,
       "match_method": "exact",
-      "note": "从原版 Mud3 Mon-8.wil Shape 1 移植的手持钉耙猫妖原型，与 f07.gif 原画 100% 吻合"
+      "note": "从原版 Mud3 Mon-4.wil Shape 8 提取的直立持木叉猫妖真身，与 f07.gif 原画吻合"
     },
     "zircon_match": {
       "state": "matched"
@@ -769,7 +769,7 @@
     "id": "mob-17",
     "name": "虎蛇",
     "category": "毒蛇山谷",
-    "image": "../images/mob/pic/f18.gif",
+    "image": "../images/mob/pic/tiger_snake.png",
     "description": "这是出没在毒蛇谷西南部的大蛇，虽然没有毒液，但它们成群行动，难以对付。它身上长着黄色的横斑，它锋利的牙齿足以在你的盔甲上咬出洞来。",
     "attrs": {},
     "spawns": [],
@@ -780,7 +780,7 @@
       "library": "Mon_6 (Mud3)",
       "shape": 7,
       "match_method": "exact",
-      "note": "从原版 Mud3 Mon-6.wil Shape 7 移植的黄黑虎斑大蛇原型，与 f18.gif 原画 100% 吻合"
+      "note": "从原版 Mud3 Mon-6.wil Shape 7 移植的黄黑虎斑大蛇真身，与切换后的虎蛇图鉴 100% 吻合"
     },
     "zircon_match": {
       "state": "matched"
@@ -1602,7 +1602,7 @@
       "library": "Mon_4",
       "shape": 2,
       "match_method": "exact",
-      "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+      "note": "天然洞穴半兽人骷髅原型（Mon_4 shape 2），矮胖驼背红眼持石斧，与 04.gif 原画 100% 吻合"
     },
     "zircon_match": {
       "state": "matched"
@@ -1745,17 +1745,17 @@
     ],
     "totalSpawnCount": 134,
     "game": {
-      "sprite": "/images/mob/game/Skeleton_Warrior.png",
-      "eng_name": "Skeleton Warrior",
+      "sprite": "/images/mob/game/Skeleton_Axeman.png",
+      "eng_name": "Skeleton Axeman",
       "library": "Mon_4",
-      "shape": 5,
+      "shape": 4,
       "match_method": "exact",
-      "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+      "note": "持阔面大战斧、头戴三叉冠盔骷髅战士（Mon_4 shape 4），与 52.gif 原画 100% 吻合"
     },
     "zircon_match": {
       "state": "matched"
     },
-    "zircon_index": 29
+    "zircon_index": 28
   },
   {
     "id": "mob-32",
@@ -1828,17 +1828,17 @@
     ],
     "totalSpawnCount": 96,
     "game": {
-      "sprite": "/images/mob/game/Skeleton_Axeman.png",
-      "eng_name": "Skeleton Axeman",
+      "sprite": "/images/mob/game/Skeleton_Warrior.png",
+      "eng_name": "Skeleton Warrior",
       "library": "Mon_4",
-      "shape": 4,
+      "shape": 5,
       "match_method": "exact",
-      "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+      "note": "手持长柄死神大镰刀/弯刀骷髅战将（Mon_4 shape 5），与 06.gif 原画 100% 吻合"
     },
     "zircon_match": {
       "state": "matched"
     },
-    "zircon_index": 26
+    "zircon_index": 29
   },
   {
     "id": "mob-33",
@@ -4181,11 +4181,11 @@
     "totalSpawnCount": 280,
     "game": {
       "sprite": "/images/mob/game/Sand_Phantom.png",
-      "eng_name": "Phantom",
-      "library": "Mon_2",
-      "shape": 8,
+      "eng_name": "Sand Golem",
+      "library": "Mon_1 (Mud3)",
+      "shape": 3,
       "match_method": "exact",
-      "note": "荒漠悬空兜帽白袍沙鬼幽灵（Mon_2 shape 8），与 mop_12 原画 100% 吻合"
+      "note": "沙漠流沙沙怪真身（Mon_1 shape 3），双臂连地流沙泥人，与 mop_12.gif 原画 100% 吻合"
     },
     "zircon_match": {
       "state": "matched"
@@ -4748,10 +4748,10 @@
     "game": {
       "sprite": "/images/mob/game/Arachnid_Gazer.png",
       "eng_name": "Arachnid Gazer",
-      "library": "Mon_11",
+      "library": "Mon_11 (Mud3)",
       "shape": 2,
       "match_method": "exact",
-      "note": "灌木林独眼蜘蛛原版原型（Mud3 RaceImg 102 / Mon_11 shape 2），背刺独眼，与 43.gif 原画 100% 吻合"
+      "note": "灌木林独眼大蜘蛛真身（Mon_11.wil shape 2），正中巨圆目，与 43.gif 原画 100% 吻合"
     },
     "zircon_match": {
       "state": "matched"
@@ -4789,10 +4789,10 @@
     "game": {
       "sprite": "/images/mob/game/Red_Moon_Protector.png",
       "eng_name": "Red Moon Protector",
-      "library": "Mon_11",
+      "library": "Mon_11 (Mud3)",
       "shape": 3,
       "match_method": "exact",
-      "note": "灌木林天狼蜘蛛原版原型（Mud3 RaceImg 103 / Mon_11 shape 3），红刺红瘤毒牙伏地，与 44.gif 原画 100% 吻合"
+      "note": "灌木林天狼毒蜘蛛真身（Mon_11.wil shape 3），头部红瘤红刺伏地狼蛛，与 44.gif 原画 100% 吻合"
     },
     "zircon_match": {
       "state": "matched"
