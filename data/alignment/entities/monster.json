@@ -1734,9 +1734,9 @@
       }
     ],
     "game_data": {
-      "index": 83,
-      "name": "Monkey",
-      "image": "Mon_16 shape 4"
+      "index": 139,
+      "name": "Jinchon Warlord",
+      "image": "Mon_17 shape 1"
     },
     "id": "monster:website:mob-152",
     "identity": {
@@ -1744,13 +1744,13 @@
       "website_name": "震天首将",
       "website_source_id": "mob-152",
       "zircon_candidate_indexes": [
-        83
+        139
       ],
-      "zircon_internal_name": "Monkey"
+      "zircon_internal_name": "Jinchon Warlord"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:83"
+        "monster:zircon:139"
       ]
     },
     "resources": {
@@ -1766,7 +1766,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Monkey.png",
+        "path": "/images/mob/game/Jinchon_Warlord.png",
         "verification": "verified-by-image"
       }
     },
@@ -1813,9 +1813,9 @@
       }
     ],
     "game_data": {
-      "index": 139,
-      "name": "Jinchon Warlord",
-      "image": "Mon_17 shape 1"
+      "index": 199,
+      "name": "Jinchon Devil",
+      "image": "Mon_17 shape 4"
     },
     "id": "monster:website:mob-153",
     "identity": {
@@ -1823,13 +1823,13 @@
       "website_name": "震天魔神",
       "website_source_id": "mob-153",
       "zircon_candidate_indexes": [
-        139
+        199
       ],
-      "zircon_internal_name": "Jinchon Warlord"
+      "zircon_internal_name": "Jinchon Devil"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:139"
+        "monster:zircon:199"
       ]
     },
     "resources": {
@@ -1845,7 +1845,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Jinchon_Warlord.png",
+        "path": "/images/mob/game/Jinchon_Devil.png",
         "verification": "verified-by-image"
       }
     },
@@ -10620,7 +10620,10 @@
         "zh": "楔蛾幼虫"
       },
       "zircon_index": 122,
-      "zircon_internal_name": "Wedge Moth Larva"
+      "zircon_internal_name": "Wedge Moth Larva",
+      "website_source_id": "mob-104",
+      "website_name": "角蝇，蝙蝠",
+      "standard_name_zh": "角蝇"
     },
     "relations": {},
     "resources": {
@@ -10635,7 +10638,8 @@
       "web-audit:monster:226"
     ],
     "assessment": {
-      "overall_status": "confirmed"
+      "overall_status": "confirmed",
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     }
   },
   {
@@ -12931,7 +12935,10 @@
         "zh": "金村战将"
       },
       "zircon_index": 139,
-      "zircon_internal_name": "Jinchon Warlord"
+      "zircon_internal_name": "Jinchon Warlord",
+      "website_source_id": "mob-152",
+      "website_name": "震天首将",
+      "standard_name_zh": "震天首将"
     },
     "relations": {},
     "resources": {
@@ -12946,7 +12953,8 @@
       "web-audit:monster:239"
     ],
     "assessment": {
-      "overall_status": "confirmed"
+      "overall_status": "confirmed",
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     }
   },
   {
@@ -20450,7 +20458,10 @@
         "zh": "金村恶魔"
       },
       "zircon_index": 199,
-      "zircon_internal_name": "Jinchon Devil"
+      "zircon_internal_name": "Jinchon Devil",
+      "website_source_id": "mob-153",
+      "website_name": "震天魔神",
+      "standard_name_zh": "震天魔神"
     },
     "relations": {},
     "resources": {
@@ -20465,7 +20476,8 @@
       "web-audit:monster:294"
     ],
     "assessment": {
-      "overall_status": "confirmed"
+      "overall_status": "confirmed",
+      "suggested_action": "已确认匹配；保持当前游戏翻译与实体索引不变。"
     }
   },
   {

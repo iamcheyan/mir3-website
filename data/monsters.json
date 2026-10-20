@@ -7060,18 +7060,17 @@
   "spawns": [],
   "totalSpawnCount": 0,
   "game": {
-   "sprite": "/images/mob/game/Cave_Bat.png",
-   "eng_name": "Cave Bat",
-   "library": "Mon_3",
-   "shape": 9,
-   "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.242
+   "sprite": "/images/mob/game/Wedge_Moth_Larva.png",
+   "eng_name": "Wedge Moth Larva",
+   "library": "Mon_8",
+   "shape": 3,
+   "match_method": "exact",
+   "note": "Zircon 客户端图库实测形象（角蝇巢穴多帧）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": 24
+  "zircon_index": 122
  },
  {
   "id": "mob-105",
@@ -10233,18 +10232,17 @@
   ],
   "totalSpawnCount": 14,
   "game": {
-   "sprite": "/images/mob/game/Monkey.png",
-   "eng_name": "Monkey",
-   "library": "Mon_16",
-   "shape": 4,
-   "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.576
+   "sprite": "/images/mob/game/Jinchon_Warlord.png",
+   "eng_name": "Jinchon Warlord",
+   "library": "Mon_17",
+   "shape": 1,
+   "match_method": "exact",
+   "note": "Zircon 客户端图库实测形象（金村战将/震天首将）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": 83
+  "zircon_index": 139
  },
  {
   "id": "mob-153",
@@ -10263,18 +10261,17 @@
   ],
   "totalSpawnCount": 1,
   "game": {
-   "sprite": "/images/mob/game/Jinchon_Warlord.png",
-   "eng_name": "Jinchon Warlord",
+   "sprite": "/images/mob/game/Jinchon_Devil.png",
+   "eng_name": "Jinchon Devil",
    "library": "Mon_17",
-   "shape": 1,
-   "match_method": "alias",
-   "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-   "similarity": 0.56
+   "shape": 4,
+   "match_method": "exact",
+   "note": "Zircon 客户端图库实测形象（震天魔神大BOSS）"
   },
   "zircon_match": {
    "state": "matched"
   },
-  "zircon_index": 139
+  "zircon_index": 199
  },
  {
   "id": "mob-154",
