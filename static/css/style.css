@@ -1012,20 +1012,427 @@ body.match-open,body.export-open { overflow: hidden; }
 .compare-hint { font-size: 12px; color: var(--text-soft); margin-top: 8px; }
 @media (max-width: 700px) { .compare-shot img { max-height: 140px; } .compareshot.game-shot img, .compare-shot.game-shot img { max-height: 130px; } }
 
-/* 所有怪物使用完整客户端精灵帧条，避免列表只显示无法辨认的单帧小图 */
-.mob-card-portraits { display: grid; grid-template-columns: minmax(92px, .72fr) minmax(0, 1.8fr); width: min(46%, 300px); flex: 0 0 min(46%, 300px); min-height: 184px; background: var(--panel-deep); border-right: 1px solid var(--line-faint); }
-.mob-card-portrait { position: relative; min-width: 0; overflow: hidden; }
-.data-card:has(.mob-card-portraits) { align-items: stretch; }
-.mob-card-portrait-game img.game-model-strip { width: auto; max-width: none; height: 132px; max-height: none; margin: 34px 12px 0; flex: 0 0 auto; object-fit: contain; image-rendering: pixelated; }
-.mob-card-portrait-game-strip { position: relative; align-items: flex-start; justify-content: flex-start; overflow-x: auto; overflow-y: hidden; scrollbar-width: thin; scrollbar-color: var(--gold-dim) transparent; }
-.mob-card-portrait-game-strip .game-badge { position: absolute; right: 8px; bottom: 8px; left: auto; top: auto; transform: none; }
-@media (max-width: 620px) {
-  .mob-card-portraits { display: flex; flex: 0 0 100%; flex-direction: row; width: 100%; min-height: 184px; }
-  .mob-card-portrait-reference { display: grid; }
-  .mob-card-portrait-game-strip { min-height: 184px; height: auto; width: auto; flex: 1 1 0; border-left: 0 !important; }
-  .mob-card-portrait-game figcaption { top: 10px; font-size: 11px; }
-  .mob-card-portrait-game img.game-model-strip { height: 184px; margin: 34px 12px 0; }
-  .mob-card-portrait-game-strip .game-badge { bottom: 7px; }
+/* ==========================================================================
+   怪物对比图鉴卡片 (Panoramic Parity Stage Card)
+   专为“单张原画立绘 VS 横向多帧动作条”对比设计的卡片架构
+   ========================================================================== */
+
+/* 怪物专用的响应式网格：PC 上 2 列宽屏并排（保证每张卡片至少 540px 宽度，提供充足的横向动作条展开空间） */
+.card-grid--mobs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(540px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 1220px) {
+  .card-grid--mobs {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+/* 怪物卡片外框 */
+.data-card.mob-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  padding: 0;
+  background: linear-gradient(180deg, rgba(24, 30, 44, 0.95), rgba(13, 17, 26, 0.98));
+  border: 1px solid var(--line-soft);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.45);
+  border-radius: 4px;
+  overflow: hidden;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.data-card.mob-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--line);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.65), 0 0 20px rgba(214, 178, 102, 0.09);
+}
+
+/* 1. 顶部身份栏 (Header Bar) */
+.mob-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 16px;
+  background: rgba(10, 13, 20, 0.88);
+  border-bottom: 1px solid var(--line-faint);
+  flex-wrap: wrap;
+}
+
+.mob-card-title-wrap {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  min-width: 0;
+  flex-wrap: wrap;
+}
+
+.mob-card-id {
+  font-family: var(--latin);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--gold-dim);
+  background: rgba(214, 178, 102, 0.1);
+  padding: 2px 6px;
+  border-radius: 3px;
+  border: 1px solid rgba(214, 178, 102, 0.2);
+  line-height: 1.4;
+}
+
+.mob-card-name {
+  margin: 0;
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: 19px;
+  letter-spacing: 0.04em;
+  line-height: 1.25;
+}
+
+.mob-card-name a {
+  color: var(--gold-bright);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.mob-card-name a:hover {
+  color: #fff;
+  text-shadow: 0 0 12px rgba(214, 178, 102, 0.5);
+}
+
+.mob-card-eng-name {
+  font-family: var(--latin);
+  font-size: 12px;
+  color: var(--text-soft);
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.mob-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+  flex-wrap: wrap;
+}
+
+.mob-card-meta .zircon-match {
+  margin: 0;
+}
+
+/* 2. 双栏对比舞台 (Dual Comparison Stage) */
+.mob-compare-stage {
+  display: grid;
+  grid-template-columns: 148px 1px 1fr;
+  align-items: stretch;
+  background: var(--panel-deep);
+  position: relative;
+  min-height: 168px;
+}
+
+/* 舞台内各区域标签栏 */
+.mob-stage-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 6px 12px;
+  background: rgba(0, 0, 0, 0.38);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  font-size: 11px;
+}
+
+.mob-stage-tag {
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.mob-stage-tag.ref-tag {
+  color: #a4b2c6;
+}
+
+.mob-stage-tag.game-tag {
+  color: var(--gold);
+}
+
+.mob-stage-sub {
+  color: var(--text-faint);
+  font-size: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mob-stage-sub.text-warn {
+  color: #d18d48;
+}
+
+.mob-scroll-hint {
+  font-size: 10px;
+  color: var(--gold-dim);
+  letter-spacing: 0.02em;
+  margin-left: auto;
+  opacity: 0.85;
+}
+
+/* 左侧：资料站立绘展示框 (一张的) */
+.mob-stage-reference {
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(circle at 50% 55%, rgba(214, 178, 102, 0.06), transparent 75%), rgba(12, 16, 24, 0.7);
+  border-right: 0;
+}
+
+.mob-stage-frame.ref-frame {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  min-height: 124px;
+}
+
+.mob-ref-img {
+  max-width: 120px;
+  max-height: 116px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  image-rendering: pixelated;
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.8));
+  transition: transform 0.2s ease;
+}
+
+.mob-stage-reference:hover .mob-ref-img {
+  transform: scale(1.05);
+}
+
+/* 中间分割线与 VS 徽章 */
+.mob-compare-divider {
+  position: relative;
+  background: var(--line-faint);
+  width: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mob-vs-badge {
+  position: absolute;
+  font-family: var(--latin);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--gold-dim);
+  background: #111622;
+  border: 1px solid var(--line-soft);
+  padding: 2px 4px;
+  border-radius: 999px;
+  line-height: 1;
+  transform: translateY(-50%);
+  top: 50%;
+  z-index: 2;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+/* 右侧：游戏内动作序列画卷 (一个列表) */
+.mob-stage-game {
+  display: flex;
+  flex-direction: column;
+  min-width: 0; /* 允许在 grid 中自由收缩以激活内部横向滚动 */
+  background: radial-gradient(ellipse at 50% 60%, rgba(214, 178, 102, 0.04), transparent 70%), rgba(9, 12, 18, 0.85);
+  position: relative;
+}
+
+.mob-stage-frame.game-frame {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.mob-strip-scroller {
+  width: 100%;
+  height: 100%;
+  min-height: 124px;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 8px 14px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(214, 178, 102, 0.35) transparent;
+  scroll-behavior: smooth;
+}
+
+.mob-strip-scroller::-webkit-scrollbar {
+  height: 6px;
+}
+
+.mob-strip-scroller::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.mob-strip-scroller::-webkit-scrollbar-thumb {
+  background: rgba(214, 178, 102, 0.3);
+  border-radius: 3px;
+}
+
+.mob-strip-scroller::-webkit-scrollbar-thumb:hover {
+  background: var(--gold);
+}
+
+.mob-strip-img {
+  height: 110px;
+  width: auto;
+  max-width: none;
+  object-fit: contain;
+  image-rendering: pixelated;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.75));
+}
+
+.mob-stage-frame.game-frame .game-badge {
+  position: absolute;
+  right: 10px;
+  bottom: 8px;
+  left: auto;
+  top: auto;
+  transform: none;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+
+.mob-strip-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 124px;
+  color: var(--text-faint);
+  font-size: 12px;
+  gap: 8px;
+}
+
+/* 3. 底部描述栏 (Footer Bar) */
+.mob-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 9px 16px;
+  background: rgba(14, 18, 28, 0.95);
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.mob-card-desc {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 11.5px;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex: 1;
+}
+
+.mob-card-detail-link {
+  color: var(--gold-dim);
+  font-size: 11.5px;
+  white-space: nowrap;
+  text-decoration: none;
+  padding: 3px 8px;
+  border-radius: 3px;
+  background: rgba(214, 178, 102, 0.08);
+  border: 1px solid rgba(214, 178, 102, 0.18);
+  transition: all 0.15s ease;
+}
+
+.mob-card-detail-link:hover {
+  color: var(--gold-bright);
+  background: rgba(214, 178, 102, 0.18);
+  border-color: var(--gold);
+}
+
+/* 4. 移动端专门适配 (Mobile Responsive, <= 640px) */
+@media (max-width: 640px) {
+  .card-grid--mobs {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .mob-card-header {
+    padding: 10px 12px;
+    gap: 8px;
+  }
+
+  .mob-card-name {
+    font-size: 18px;
+  }
+
+  .mob-card-eng-name {
+    display: none;
+  }
+
+  /* 移动端将舞台上下拆分：上面是清晰居中的图鉴立绘，下面是占满屏幕宽度的横向滑动帧条 */
+  .mob-compare-stage {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .mob-compare-divider {
+    display: none;
+  }
+
+  .mob-stage-reference {
+    border-right: 0;
+    border-bottom: 1px dashed var(--line-faint);
+  }
+
+  .mob-stage-frame.ref-frame {
+    min-height: 110px;
+    padding: 8px;
+  }
+
+  .mob-ref-img {
+    max-height: 100px;
+  }
+
+  .mob-stage-game {
+    width: 100%;
+  }
+
+  .mob-strip-scroller {
+    min-height: 116px;
+    padding: 8px 12px;
+  }
+
+  .mob-strip-img {
+    height: 96px;
+  }
+
+  .mob-card-footer {
+    padding: 8px 12px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+  }
+
+  .mob-card-desc {
+    -webkit-line-clamp: 2;
+    font-size: 11px;
+  }
+
+  .mob-card-detail-link {
+    text-align: center;
+    padding: 5px 0;
+  }
 }
 
 /* 怪物列表：游戏内形象有无 的徽标与筛选 */

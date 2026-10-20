@@ -37,21 +37,88 @@
 {% for g in groups %}
 <section class="group" id="cat-{{ loop.index }}">
   <div class="group-heading"><h2 class="group-title">{{ g.name }}</h2><span class="group-count">{{ '%02d'|format(g['items']|length) }}</span></div>
-  <div class="card-grid">
+  <div class="card-grid{% if kind == 'mob' %} card-grid--mobs{% endif %}">
     {% for it in g['items'] %}
-    {% if kind == 'map' %}
+    {% if kind == 'mob' %}
+    <article class="data-card mob-card" data-name="{{ it.name }}" data-zircon-state="{{ it.zircon_match.state }}" data-game-image="{{ 'has' if it.game else 'missing' }}">
+      <header class="mob-card-header">
+        <div class="mob-card-title-wrap">
+          <span class="mob-card-id">{{ it.id }}</span>
+          <h3 class="mob-card-name"><a href="{{ prefix }}/mobs/{{ it.id }}.html">{{ it.name }}</a></h3>
+          {% if it.game and it.game.eng_name %}
+            <span class="mob-card-eng-name">{{ it.game.eng_name }}</span>
+          {% endif %}
+        </div>
+        <div class="mob-card-meta">
+          {% set zircon_match = it.zircon_match %}
+          {% include "_zircon_match.html" %}
+          <button type="button" class="match-row-button catalog-match-button" data-source-id="{{ it.alignment_source_id }}">{% if zircon_match.state == 'matched' %}已匹配 · 修改{% else %}匹配{% endif %}</button>
+        </div>
+      </header>
+
+      <div class="mob-compare-stage">
+        <div class="mob-stage-reference">
+          <div class="mob-stage-label">
+            <span class="mob-stage-tag ref-tag">资料站图鉴</span>
+            <span class="mob-stage-sub">原版画风</span>
+          </div>
+          <div class="mob-stage-frame ref-frame">
+            {% if it.image %}
+              <img src="{{ it.image|img }}" alt="{{ it.name }} 资料站形象" loading="lazy" class="mob-ref-img">
+            {% else %}
+              <span class="img-placeholder big">?</span>
+            {% endif %}
+          </div>
+        </div>
+
+        <div class="mob-compare-divider" aria-hidden="true">
+          <span class="mob-vs-badge">VS</span>
+        </div>
+
+        <div class="mob-stage-game">
+          <div class="mob-stage-label">
+            <span class="mob-stage-tag game-tag">游戏客户端实际模型</span>
+            {% if it.game %}
+              <span class="mob-stage-sub">{{ it.game.library }} shape {{ it.game.shape }}</span>
+              <span class="mob-scroll-hint">左右滑动 ❯❯</span>
+            {% else %}
+              <span class="mob-stage-sub text-warn">待补模型</span>
+            {% endif %}
+          </div>
+          <div class="mob-stage-frame game-frame">
+            {% if it.game and it.game.sprite %}
+              <div class="mob-strip-scroller" title="左右滑动查看全套动作序列（站立/行走/攻击/死亡）">
+                <img class="mob-strip-img" src="{{ it.game.sprite|img }}" alt="{{ it.name }} 游戏内模型 · {{ it.game.eng_name }}" loading="lazy" title="{{ it.game.eng_name }} · {{ it.game.library }} shape {{ it.game.shape }}">
+              </div>
+              <span class="game-badge has">可核对</span>
+            {% else %}
+              <div class="mob-strip-empty">
+                <span class="portrait-missing">游戏客户端暂无此模型条目</span>
+                <span class="game-badge missing">待补</span>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+      <footer class="mob-card-footer">
+        <p class="mob-card-desc" title="{{ it.description }}">{{ it.description }}</p>
+        <a href="{{ prefix }}/mobs/{{ it.id }}.html" class="mob-card-detail-link">详情与分布 ❯</a>
+      </footer>
+    </article>
+    {% elif kind == 'map' %}
     <div class="data-card" data-name="{{ it.title }}" data-zircon-state="{{ it.zircon_match.state }}">
       <div class="card-img map-card-img">{% if it.areas %}<img src="{{ it.areas[0].image|img }}" alt="{{ it.title }}" loading="lazy">{% else %}<span class="img-placeholder">?</span>{% endif %}</div>
       <div class="card-body"><h3 class="card-name">{{ it.title }}</h3>{% set zircon_match = it.zircon_match %}{% include "_zircon_match.html" %}<p class="card-tags"><span class="tag">{{ it.areas|length }} 张地图</span></p><p class="map-card-hint">见页内地图展示</p></div>
     </div>
     {% else %}
-    <div class="data-card" data-name="{{ it.name }}" data-zircon-state="{{ it.zircon_match.state }}"{% if kind == 'mob' %} data-game-image="{{ 'has' if it.game else 'missing' }}"{% endif %}>
-      {% if kind == 'mob' %}<div class="mob-card-portraits"><figure class="mob-card-portrait mob-card-portrait-reference"><figcaption>资料站形象</figcaption>{% if it.image %}<img src="{{ it.image|img }}" alt="{{ it.name }} 资料站形象" loading="lazy">{% else %}<span class="img-placeholder">?</span>{% endif %}</figure><figure class="mob-card-portrait mob-card-portrait-game mob-card-portrait-game-strip"><figcaption>游戏内模型 · 动作帧预览（可横向查看）</figcaption>{% if it.game %}<img class="game-model-image game-model-strip" src="{{ it.game.sprite|img }}" alt="{{ it.name }} 游戏内模型 · {{ it.game.eng_name }}" loading="lazy" title="{{ it.game.eng_name }} · {{ it.game.library }} shape {{ it.game.shape }}"><span class="game-badge has">可核对</span>{% else %}<span class="portrait-missing">暂无模型</span><span class="game-badge missing">待补</span>{% endif %}</figure></div>{% elif kind == 'item' or kind == 'skill' %}<div class="card-img">{% if it.image %}<img src="{{ it.image|img }}" alt="{{ it.name }}" loading="lazy">{% else %}<span class="img-placeholder">?</span>{% endif %}</div>{% endif %}
+    <div class="data-card" data-name="{{ it.name }}" data-zircon-state="{{ it.zircon_match.state }}">
+      <div class="card-img">{% if it.image %}<img src="{{ it.image|img }}" alt="{{ it.name }}" loading="lazy">{% else %}<span class="img-placeholder">?</span>{% endif %}</div>
       <div class="card-body">
         <h3 class="card-name"><a href="{{ prefix }}/{{ kind }}s/{{ it.id }}.html">{{ it.name if kind != 'mission' else it.title }}</a></h3>
         {% set zircon_match = it.zircon_match %}{% include "_zircon_match.html" %}
-        {% if kind in ['mob', 'item', 'skill'] %}<button type="button" class="match-row-button catalog-match-button" data-source-id="{{ it.alignment_source_id }}">{% if zircon_match.state == 'matched' %}已匹配 · 修改{% else %}匹配{% endif %}</button>{% endif %}
-        {% if kind == 'mob' or kind == 'skill' %}<p class="card-desc">{{ it.description[:66] }}{% if it.description|length > 66 %}…{% endif %}</p>
+        {% if kind in ['item', 'skill'] %}<button type="button" class="match-row-button catalog-match-button" data-source-id="{{ it.alignment_source_id }}">{% if zircon_match.state == 'matched' %}已匹配 · 修改{% else %}匹配{% endif %}</button>{% endif %}
+        {% if kind == 'skill' %}<p class="card-desc">{{ it.description[:66] }}{% if it.description|length > 66 %}…{% endif %}</p>
         {% elif kind == 'item' %}<p class="card-tags">{% if it.get('等级') %}<span class="tag">等级 {{ it['等级'] }}</span>{% endif %}{% if it.get('破坏') %}<span class="tag">破坏 {{ it['破坏'] }}</span>{% endif %}{% if it.get('魔法') %}<span class="tag">魔法 {{ it['魔法'] }}</span>{% endif %}</p>
         {% elif kind == 'mission' %}<p class="card-tags">{% if it.steps %}<span class="tag">{{ it.steps|length }} 步</span>{% endif %}{% if it.quests %}<span class="tag">{{ it.quests|length }} 条任务</span>{% endif %}</p><p class="card-desc">{{ (it.get('content') or '')[:52] }}{% if (it.get('content') or '')|length > 52 %}…{% endif %}</p>{% endif %}
       </div>
