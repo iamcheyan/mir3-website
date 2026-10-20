@@ -1012,49 +1012,19 @@ body.match-open,body.export-open { overflow: hidden; }
 .compare-hint { font-size: 12px; color: var(--text-soft); margin-top: 8px; }
 @media (max-width: 700px) { .compare-shot img { max-height: 140px; } .compareshot.game-shot img, .compare-shot.game-shot img { max-height: 130px; } }
 
-/* 怪物列表卡片：桌面并排、手机改为上下大图，保证模型可辨认 */
-.mob-card-portraits { display: grid; grid-template-columns: 1fr 1fr; width: 148px; flex: 0 0 148px; min-height: 174px; background: var(--panel-deep); border-right: 1px solid var(--line-faint); }
-.mob-card-portrait { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 0; margin: 0; overflow: hidden; }
-.mob-card-portrait + .mob-card-portrait { border-left: 1px solid var(--line-faint); }
-.mob-card-portrait figcaption { position: absolute; top: 7px; left: 0; right: 0; z-index: 1; color: var(--text-faint); font-size: 9px; text-align: center; }
-.mob-card-portrait img { max-width: 64px; max-height: 112px; margin-top: 12px; object-fit: contain; image-rendering: pixelated; filter: drop-shadow(0 5px 8px rgba(0,0,0,.7)); }
-.mob-card-portrait .game-badge { position: absolute; top: auto; bottom: 5px; left: 50%; margin: 0; padding: 1px 5px; transform: translateX(-50%); font-size: 8px; white-space: nowrap; }
-.portrait-missing { margin-top: 14px; color: var(--text-faint); font-size: 9px; text-align: center; }
-@media (min-width: 1280px) {
-  .container:has(.cat-nav) { width: min(var(--max), calc(100% - 64px)); }
-  .cat-nav { overflow-x: auto; }
-}
-.card-grid { grid-template-columns: repeat(auto-fill, minmax(min(235px, 100%), 1fr)); }
+/* 所有怪物使用完整客户端精灵帧条，避免列表只显示无法辨认的单帧小图 */
+.mob-card-portraits { display: grid; grid-template-columns: minmax(92px, .72fr) minmax(0, 1.8fr); width: 100%; flex: 1 1 auto; min-height: 184px; background: var(--panel-deep); border-right: 1px solid var(--line-faint); }
 .mob-card-portrait-game { background: radial-gradient(circle at 50% 54%, rgba(214,178,102,.11), transparent 68%); }
-.mob-card-portrait-game img.game-model-image { max-width: 88px; max-height: 142px; }
-.mob-card-portrait-game img.game-model-strip { width: 168px; max-width: none; height: auto; max-height: none; flex: 0 0 auto; }
-.mob-card-portrait-game:has(.game-model-strip) { align-items: flex-start; justify-content: flex-start; overflow-x: auto; overflow-y: hidden; scrollbar-width: thin; scrollbar-color: var(--gold-dim) transparent; }
-.mob-card-portrait-game:has(.game-model-strip) img { margin: 42px 6px 0; }
+.mob-card-portrait-game img.game-model-strip { width: auto; max-width: none; height: 132px; max-height: none; margin: 34px 12px 0; flex: 0 0 auto; object-fit: contain; image-rendering: pixelated; }
+.mob-card-portrait-game-strip { align-items: flex-start; justify-content: flex-start; overflow-x: auto; overflow-y: hidden; scrollbar-width: thin; scrollbar-color: var(--gold-dim) transparent; }
+.mob-card-portrait-game-strip .game-badge { position: absolute; right: 8px; bottom: 8px; left: auto; transform: none; }
 @media (max-width: 620px) {
-  .mob-card-portrait-game { grid-column: 1 / -1; min-height: 194px; }
-  .mob-card-portrait-game-strip { grid-column: 1; min-height: 220px; overflow: hidden; }
-  .mob-card-portrait-game-strip img.game-model-strip { width: 100%; max-width: 100%; height: auto; max-height: none; margin: 48px auto 0; object-fit: contain; }
-  .data-card:has(.game-model-strip) .mob-card-portraits { grid-template-columns: 1fr; }
-  .data-card:has(.game-model-strip) .mob-card-portrait-reference-strip { display: none; }
-  .data-card:has(.game-model-strip) .card-desc { -webkit-line-clamp: unset; }
-  .card-grid { grid-template-columns: 1fr; gap: 12px; }
-  .data-card { display: grid; grid-template-columns: minmax(0,1fr); min-height: 0; }
-  .mob-card-portraits { width: 100%; min-height: 0; grid-template-columns: 1fr 1fr; border-right: 0; border-bottom: 1px solid var(--line-faint); }
-  .mob-card-portrait { min-height: 194px; background: radial-gradient(circle at 50% 54%, rgba(214,178,102,.11), transparent 68%); }
-  .mob-card-portrait-game { grid-column: 1 / -1; min-height: 194px; }
-  .mob-card-portrait + .mob-card-portrait { border-left: 1px solid var(--line-faint); }
-  .mob-card-portrait figcaption { top: 9px; font-size: 11px; }
-  .mob-card-portrait img { max-width: 94px; max-height: 142px; margin-top: 13px; }
-  .mob-card-portrait-game img.game-model-strip { width: 184px; max-width: none; height: auto; max-height: none; margin: 33px 6px 0; }
-  .mob-card-portrait .game-badge { bottom: 7px; padding: 2px 8px; font-size: 9px; }
-  .portrait-missing { margin-top: 18px; font-size: 11px; }
-  .data-card .card-body { padding: 13px 14px 15px; }
-  .data-card .card-name { margin-bottom: 8px; font-size: 19px; }
-  .data-card .zircon-match { grid-template-columns: 1fr; margin: 2px 0 9px; }
-  .data-card .zircon-match-label { font-size: 11px; }
-  .data-card .zircon-match-details { font-size: 10px; }
-  .data-card .match-row-button { align-self: flex-start; min-height: 36px; margin-bottom: 10px; padding: 6px 14px; font-size: 12px; }
-  .data-card .card-desc { display: block; overflow: visible; font-size: 12px; line-height: 1.8; }
+  .mob-card-portraits { display: flex; flex-direction: column; }
+  .mob-card-portrait-reference { display: none; }
+  .mob-card-portrait-game-strip { min-height: 0; height: 230px; width: 100%; border-left: 0 !important; }
+  .mob-card-portrait-game figcaption { top: 10px; font-size: 11px; }
+  .mob-card-portrait-game img.game-model-strip { height: 184px; margin: 34px 12px 0; }
+  .mob-card-portrait-game-strip .game-badge { bottom: 7px; }
 }
 
 /* 怪物列表：游戏内形象有无 的徽标与筛选 */
