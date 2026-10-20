@@ -1274,18 +1274,17 @@
     ],
     "totalSpawnCount": 7,
     "game": {
-      "sprite": "/images/mob/game/Shell_Nipper.png",
-      "eng_name": "ShellNipper",
+      "sprite": "/images/mob/game/Beetle.png",
+      "eng_name": "Beetle",
       "library": "Mon_7",
-      "shape": 0,
-      "match_method": "alias",
-      "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-      "similarity": 0.52
+      "shape": 3,
+      "match_method": "exact",
+      "note": "多角虫甲虫原型（Mon_7 shape 3），与 f19 原画 100% 吻合"
     },
     "zircon_match": {
       "state": "matched"
     },
-    "zircon_index": 44
+    "zircon_index": 43
   },
   {
     "id": "mob-25",
@@ -4175,17 +4174,17 @@
     ],
     "totalSpawnCount": 280,
     "game": {
-      "sprite": "/images/mob/game/Ant_Needler.png",
-      "eng_name": "Ant Needler",
-      "library": "Mon_10",
-      "shape": 6,
+      "sprite": "/images/mob/game/Sand_Phantom.png",
+      "eng_name": "Phantom",
+      "library": "Mon_2",
+      "shape": 8,
       "match_method": "exact",
-      "note": "沙漠细长折腿尾部长刺沙鬼（Mon_10 shape 6），与 mop_03 原画 100% 吻合"
+      "note": "荒漠悬空兜帽白袍沙鬼幽灵（Mon_2 shape 8），与 mop_12 原画 100% 吻合"
     },
     "zircon_match": {
       "state": "matched"
     },
-    "zircon_index": 92
+    "zircon_index": 127
   },
   {
     "id": "mob-49",
@@ -4659,17 +4658,17 @@
     ],
     "totalSpawnCount": 1,
     "game": {
-      "sprite": "/images/mob/game/Numa_High_Mage.png",
-      "eng_name": "Numa High Mage",
-      "library": "Mon_19",
-      "shape": 4,
+      "sprite": "/images/mob/game/Numa_Mage.png",
+      "eng_name": "Numa Mage",
+      "library": "Mon_2",
+      "shape": 3,
       "match_method": "exact",
-      "note": "诺玛沙漠高阶司祭大法老（Mon_19 shape 4），守卫诺玛王的四大法老"
+      "note": "诺玛法老同系司祭（Mon_2 shape 3），与 mop_19 原画完全一致"
     },
     "zircon_match": {
       "state": "matched"
     },
-    "zircon_index": 399
+    "zircon_index": 90
   },
   {
     "id": "mob-59",
@@ -4746,12 +4745,12 @@
       "library": "Mon_11",
       "shape": 6,
       "match_method": "exact",
-      "note": "灌木林巨型背刺大眼蜘蛛（Mon_11 shape 6），与 43.gif 原画一致"
+      "note": "灌木林背刺独眼蜘蛛（Mon_11 shape 6），与 43.gif 原画一致"
     },
     "zircon_match": {
       "state": "matched"
     },
-    "zircon_index": 66
+    "zircon_index": 67
   },
   {
     "id": "mob-61",
@@ -4787,7 +4786,7 @@
       "library": "Mon_11",
       "shape": 8,
       "match_method": "exact",
-      "note": "灌木林背刺红瘤天狼蜘蛛（Mon_11 shape 8），与 44.gif 原画一致"
+      "note": "灌木林伏地红瘤天狼蜘蛛（Mon_11 shape 8），与 44.gif 原画一致"
     },
     "zircon_match": {
       "state": "matched"
@@ -5121,18 +5120,17 @@
     "spawns": [],
     "totalSpawnCount": 0,
     "game": {
-      "sprite": "/images/mob/game/Evil_Monkey.png",
-      "eng_name": "Evil Monkey",
+      "sprite": "/images/mob/game/Evil_Fanatic.png",
+      "eng_name": "Evil Fanatic",
       "library": "Mon_16",
-      "shape": 4,
-      "match_method": "alias",
-      "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-      "similarity": 0.404
+      "shape": 7,
+      "match_method": "exact",
+      "note": "失乐园双手弯刃狂信徒（Mon_16 shape 7），与 image037 原画完全一致"
     },
     "zircon_match": {
       "state": "matched"
     },
-    "zircon_index": 84
+    "zircon_index": 82
   },
   {
     "id": "mob-73",
@@ -5602,18 +5600,17 @@
     ],
     "totalSpawnCount": 3238,
     "game": {
-      "sprite": "/images/mob/game/Ant_Commander.png",
-      "eng_name": "Ant Commander",
-      "library": "Mon_1",
-      "shape": 8,
-      "match_method": "alias",
-      "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-      "similarity": 0.456
+      "sprite": "/images/mob/game/Ant_Soldier.png",
+      "eng_name": "Ant Soldier",
+      "library": "Mon_2",
+      "shape": 4,
+      "match_method": "exact",
+      "note": "蚂蚁洞手持双刃长兵器蚂蚁战士（Mon_2 shape 4），与 mop_02 原画一致"
     },
     "zircon_match": {
       "state": "matched"
     },
-    "zircon_index": 42
+    "zircon_index": 38
   },
   {
     "id": "mob-79",
@@ -6634,13 +6631,12 @@
     "spawns": [],
     "totalSpawnCount": 0,
     "game": {
-      "sprite": "/images/mob/game/Mutant_Maggot.png",
-      "eng_name": "Mutant Maggot",
+      "sprite": "/images/mob/game/White_Maggot.png",
+      "eng_name": "White Maggot",
       "library": "Mon_7",
       "shape": 8,
-      "match_method": "alias",
-      "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-      "similarity": 0.409
+      "match_method": "exact",
+      "note": "白月冷光变异恶蛆（Mon_7 shape 8 银白变种），克制法师，与 58.gif 原画吻合"
     },
     "zircon_match": {
       "state": "matched"
@@ -6657,13 +6653,12 @@
     "spawns": [],
     "totalSpawnCount": 0,
     "game": {
-      "sprite": "/images/mob/game/Mutant_Maggot.png",
-      "eng_name": "Mutant Maggot",
+      "sprite": "/images/mob/game/Golden_Maggot.png",
+      "eng_name": "Golden Maggot",
       "library": "Mon_7",
       "shape": 8,
-      "match_method": "alias",
-      "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-      "similarity": 0.368
+      "match_method": "exact",
+      "note": "金刚赤褐变异恶蛆（Mon_7 shape 8 赤褐变种），克制战士，与 56.gif 原画吻合"
     },
     "zircon_match": {
       "state": "matched"
@@ -6680,13 +6675,12 @@
     "spawns": [],
     "totalSpawnCount": 0,
     "game": {
-      "sprite": "/images/mob/game/Mutant_Maggot.png",
-      "eng_name": "Mutant Maggot",
+      "sprite": "/images/mob/game/Venom_Maggot.png",
+      "eng_name": "Venom Maggot",
       "library": "Mon_7",
       "shape": 8,
-      "match_method": "alias",
-      "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-      "similarity": 0.367
+      "match_method": "exact",
+      "note": "沃毒幽青变异恶蛆（Mon_7 shape 8 毒青变种），克制道士，与 57.gif 原画吻合"
     },
     "zircon_match": {
       "state": "matched"
@@ -6881,18 +6875,17 @@
     ],
     "totalSpawnCount": 1650,
     "game": {
-      "sprite": "/images/mob/game/Fierce_Black_Boar.png",
-      "eng_name": "Fierce Black Boar",
+      "sprite": "/images/mob/game/Tusk_Lord.png",
+      "eng_name": "Tusk Lord",
       "library": "Mon_8",
-      "shape": 7,
-      "match_method": "alias",
-      "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-      "similarity": 0.618
+      "shape": 8,
+      "match_method": "exact",
+      "note": "石墓野猪洞大Boss獠牙猪王（Mon_8 shape 8），身披重甲持流星战锤，与 zndx 原画吻合"
     },
     "zircon_match": {
       "state": "matched"
     },
-    "zircon_index": 394
+    "zircon_index": 121
   },
   {
     "id": "mob-100",
@@ -6913,18 +6906,17 @@
     ],
     "totalSpawnCount": 800,
     "game": {
-      "sprite": "/images/mob/game/Fierce_Poison_Dragon.png",
-      "eng_name": "Fierce Poison Dragon",
-      "library": "Mon_6",
-      "shape": 7,
-      "match_method": "alias",
-      "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-      "similarity": 0.46
+      "sprite": "/images/mob/game/Dragon_Lord.png",
+      "eng_name": "Dragon Lord",
+      "library": "Mon_23",
+      "shape": 1,
+      "match_method": "exact",
+      "note": "蜈蚣洞大Boss触龙神真身（Mon_23 shape 1），钻地百足巨龙神，与 nls 原画 100% 吻合"
     },
     "zircon_match": {
       "state": "matched"
     },
-    "zircon_index": 385
+    "zircon_index": 232
   },
   {
     "id": "mob-101",
@@ -7451,17 +7443,17 @@
     ],
     "totalSpawnCount": 434,
     "game": {
-      "sprite": "/images/mob/game/Uma_Flame_Thrower.png",
-      "eng_name": "Uma Flame Thrower",
+      "sprite": "/images/mob/game/Uma_Warrior.png",
+      "eng_name": "Uma Warrior",
       "library": "Mon_5",
-      "shape": 3,
-      "match_method": "alias",
-      "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+      "shape": 2,
+      "match_method": "exact",
+      "note": "沃玛寺庙持长弯刀沃玛勇士（Mon_5 shape 2），与 11.gif 原画吻合"
     },
     "zircon_match": {
       "state": "matched"
     },
-    "zircon_index": 63
+    "zircon_index": 62
   },
   {
     "id": "mob-112",
@@ -7473,12 +7465,12 @@
     "spawns": [],
     "totalSpawnCount": 0,
     "game": {
-      "sprite": "/images/mob/game/Uma_Anguisher.png",
-      "eng_name": "Uma Anguisher",
+      "sprite": "/images/mob/game/Uma_Warlord.png",
+      "eng_name": "Uma Warlord",
       "library": "Mon_5",
       "shape": 4,
-      "match_method": "alias",
-      "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+      "match_method": "exact",
+      "note": "沃玛寺庙高阶统领沃玛战将（Mon_5 shape 4），身披战甲手持巨武，与 12.gif 原画吻合"
     },
     "zircon_match": {
       "state": "matched"

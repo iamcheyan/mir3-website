@@ -25,7 +25,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "aligned with verified Zircon model prototype",
+      "reason": "蜈蚣洞大Boss触龙神真身（Mon_23 shape 1），钻地百足巨龙神，与 nls 原画 100% 吻合",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -38,9 +38,9 @@
       }
     ],
     "game_data": {
-      "index": 385,
-      "name": "Fierce Poison Dragon",
-      "image": "Mon_6 shape 7"
+      "index": 232,
+      "name": "Dragon Lord",
+      "image": "Mon_23 shape 1"
     },
     "id": "monster:website:mob-100",
     "identity": {
@@ -48,13 +48,13 @@
       "website_name": "怒龙神",
       "website_source_id": "mob-100",
       "zircon_candidate_indexes": [
-        385
+        232
       ],
-      "zircon_internal_name": "Fierce Poison Dragon"
+      "zircon_internal_name": "Dragon Lord"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:385"
+        "monster:zircon:232"
       ]
     },
     "resources": {
@@ -70,7 +70,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Fierce_Poison_Dragon.png",
+        "path": "/images/mob/game/Dragon_Lord.png",
         "verification": "verified-by-image"
       }
     },
@@ -2126,7 +2126,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "aligned with verified Zircon model prototype",
+      "reason": "多角虫甲虫原型（Mon_7 shape 3），与 f19 原画 100% 吻合",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -2139,9 +2139,9 @@
       }
     ],
     "game_data": {
-      "index": 44,
-      "name": "Corpse Devourer",
-      "image": "Mon_7 shape 0"
+      "index": 43,
+      "name": "Beetle",
+      "image": "Mon_7 shape 3"
     },
     "id": "monster:website:mob-24",
     "identity": {
@@ -2149,16 +2149,16 @@
       "website_name": "多角虫",
       "website_source_id": "mob-24",
       "zircon_candidate_indexes": [
-        44
+        43
       ],
-      "zircon_internal_name": "Corpse Devourer",
+      "zircon_internal_name": "Beetle",
       "zircon_candidate_names": [
         "Corpse Devourer"
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:44"
+        "monster:zircon:43"
       ]
     },
     "resources": {
@@ -2174,7 +2174,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Shell_Nipper.png",
+        "path": "/images/mob/game/Beetle.png",
         "verification": "verified-by-image"
       }
     },
@@ -3265,7 +3265,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "aligned with verified Zircon model prototype",
+      "reason": "荒漠悬空兜帽白袍沙鬼幽灵（Mon_2 shape 8），与 mop_12 原画 100% 吻合",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -3278,9 +3278,9 @@
       }
     ],
     "game_data": {
-      "index": 92,
-      "name": "Sand Shark",
-      "image": "Mon_10 shape 4"
+      "index": 127,
+      "name": "Phantom",
+      "image": "Mon_2 shape 8"
     },
     "id": "monster:website:mob-48",
     "identity": {
@@ -3288,16 +3288,16 @@
       "website_name": "沙鬼",
       "website_source_id": "mob-48",
       "zircon_candidate_indexes": [
-        92
+        127
       ],
-      "zircon_internal_name": "Sand Shark",
+      "zircon_internal_name": "Phantom",
       "zircon_candidate_names": [
         "Sand Shark"
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:92"
+        "monster:zircon:127"
       ]
     },
     "resources": {
@@ -3313,7 +3313,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Sand_Shark.png",
+        "path": "/images/mob/game/Sand_Phantom.png",
         "verification": "verified-by-image"
       }
     },
@@ -3996,7 +3996,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "aligned with verified Zircon model prototype",
+      "reason": "灌木林背刺独眼蜘蛛（Mon_11 shape 6），与 43.gif 原画一致",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -4009,9 +4009,9 @@
       }
     ],
     "game_data": {
-      "index": 66,
-      "name": "Spider Bat",
-      "image": "Mon_11 shape 1"
+      "index": 67,
+      "name": "Arachnid Gazer",
+      "image": "Mon_11 shape 6"
     },
     "id": "monster:website:mob-60",
     "identity": {
@@ -4019,16 +4019,16 @@
       "website_name": "独眼蜘蛛",
       "website_source_id": "mob-60",
       "zircon_candidate_indexes": [
-        66
+        67
       ],
-      "zircon_internal_name": "Spider Bat",
+      "zircon_internal_name": "Arachnid Gazer",
       "zircon_candidate_names": [
         "Spider Bat"
       ]
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:66"
+        "monster:zircon:67"
       ]
     },
     "resources": {
@@ -4044,7 +4044,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Spider_Bat.png",
+        "path": "/images/mob/game/Arachnid_Gazer.png",
         "verification": "verified-by-image"
       }
     },
@@ -4078,7 +4078,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "aligned with verified Zircon model prototype",
+      "reason": "灌木林伏地红瘤天狼蜘蛛（Mon_11 shape 8），与 44.gif 原画一致",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -4965,7 +4965,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "aligned with verified Zircon model prototype",
+      "reason": "失乐园双手弯刃狂信徒（Mon_16 shape 7），与 image037 原画完全一致",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -4978,9 +4978,9 @@
       }
     ],
     "game_data": {
-      "index": 84,
-      "name": "Evil Monkey",
-      "image": "Mon_16 shape 4"
+      "index": 82,
+      "name": "Evil Fanatic",
+      "image": "Mon_16 shape 7"
     },
     "id": "monster:website:mob-72",
     "identity": {
@@ -4988,13 +4988,13 @@
       "website_name": "疯狂魔神盗1",
       "website_source_id": "mob-72",
       "zircon_candidate_indexes": [
-        84
+        82
       ],
-      "zircon_internal_name": "Evil Monkey"
+      "zircon_internal_name": "Evil Fanatic"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:84"
+        "monster:zircon:82"
       ]
     },
     "resources": {
@@ -5010,7 +5010,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Evil_Monkey.png",
+        "path": "/images/mob/game/Evil_Fanatic.png",
         "verification": "verified-by-image"
       }
     },
@@ -5202,7 +5202,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "aligned with verified Zircon model prototype",
+      "reason": "蚂蚁洞手持双刃长兵器蚂蚁战士（Mon_2 shape 4），与 mop_02 原画一致",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -5215,9 +5215,9 @@
       }
     ],
     "game_data": {
-      "index": 42,
-      "name": "Ant Commander",
-      "image": "Mon_1 shape 8"
+      "index": 38,
+      "name": "Ant Soldier",
+      "image": "Mon_2 shape 4"
     },
     "id": "monster:website:mob-78",
     "identity": {
@@ -5225,13 +5225,13 @@
       "website_name": "蚂蚁战士",
       "website_source_id": "mob-78",
       "zircon_candidate_indexes": [
-        42
+        38
       ],
-      "zircon_internal_name": "Ant Commander"
+      "zircon_internal_name": "Ant Soldier"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:42"
+        "monster:zircon:38"
       ]
     },
     "resources": {
@@ -5247,7 +5247,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Ant_Commander.png",
+        "path": "/images/mob/game/Ant_Soldier.png",
         "verification": "verified-by-image"
       }
     },
@@ -6551,7 +6551,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "aligned with verified Zircon model prototype",
+      "reason": "白月冷光变异恶蛆（Mon_7 shape 8 银白变种），克制法师，与 58.gif 原画吻合",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -6565,7 +6565,7 @@
     ],
     "game_data": {
       "index": 53,
-      "name": "Mutant Maggot",
+      "name": "White Maggot",
       "image": "Mon_7 shape 8"
     },
     "id": "monster:website:mob-94",
@@ -6576,7 +6576,7 @@
       "zircon_candidate_indexes": [
         53
       ],
-      "zircon_internal_name": "Mutant Maggot"
+      "zircon_internal_name": "White Maggot"
     },
     "relations": {
       "candidate_entity_ids": [
@@ -6596,7 +6596,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Mutant_Maggot.png",
+        "path": "/images/mob/game/White_Maggot.png",
         "verification": "verified-by-image"
       }
     },
@@ -6630,7 +6630,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "aligned with verified Zircon model prototype",
+      "reason": "金刚赤褐变异恶蛆（Mon_7 shape 8 赤褐变种），克制战士，与 56.gif 原画吻合",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -6644,7 +6644,7 @@
     ],
     "game_data": {
       "index": 53,
-      "name": "Mutant Maggot",
+      "name": "Golden Maggot",
       "image": "Mon_7 shape 8"
     },
     "id": "monster:website:mob-95",
@@ -6655,7 +6655,7 @@
       "zircon_candidate_indexes": [
         53
       ],
-      "zircon_internal_name": "Mutant Maggot"
+      "zircon_internal_name": "Golden Maggot"
     },
     "relations": {
       "candidate_entity_ids": [
@@ -6675,7 +6675,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Mutant_Maggot.png",
+        "path": "/images/mob/game/Golden_Maggot.png",
         "verification": "verified-by-image"
       }
     },
@@ -6709,7 +6709,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "aligned with verified Zircon model prototype",
+      "reason": "沃毒幽青变异恶蛆（Mon_7 shape 8 毒青变种），克制道士，与 57.gif 原画吻合",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -6723,7 +6723,7 @@
     ],
     "game_data": {
       "index": 53,
-      "name": "Mutant Maggot",
+      "name": "Venom Maggot",
       "image": "Mon_7 shape 8"
     },
     "id": "monster:website:mob-96",
@@ -6734,7 +6734,7 @@
       "zircon_candidate_indexes": [
         53
       ],
-      "zircon_internal_name": "Mutant Maggot"
+      "zircon_internal_name": "Venom Maggot"
     },
     "relations": {
       "candidate_entity_ids": [
@@ -6754,7 +6754,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Mutant_Maggot.png",
+        "path": "/images/mob/game/Venom_Maggot.png",
         "verification": "verified-by-image"
       }
     },
@@ -6952,7 +6952,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "aligned with verified Zircon model prototype",
+      "reason": "石墓野猪洞大Boss獠牙猪王（Mon_8 shape 8），身披重甲持流星战锤，与 zndx 原画吻合",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -6965,9 +6965,9 @@
       }
     ],
     "game_data": {
-      "index": 394,
-      "name": "Fierce Black Boar",
-      "image": "Mon_8 shape 7"
+      "index": 121,
+      "name": "Tusk Lord",
+      "image": "Mon_8 shape 8"
     },
     "id": "monster:website:mob-99",
     "identity": {
@@ -6975,13 +6975,13 @@
       "website_name": "赤黄猪王",
       "website_source_id": "mob-99",
       "zircon_candidate_indexes": [
-        394
+        121
       ],
-      "zircon_internal_name": "Fierce Black Boar"
+      "zircon_internal_name": "Tusk Lord"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:394"
+        "monster:zircon:121"
       ]
     },
     "resources": {
@@ -6997,7 +6997,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Fierce_Black_Boar.png",
+        "path": "/images/mob/game/Tusk_Lord.png",
         "verification": "verified-by-image"
       }
     },
