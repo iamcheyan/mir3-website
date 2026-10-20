@@ -3996,7 +3996,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "灌木林背刺独眼蜘蛛（Mon_11 shape 6），与 43.gif 原画一致",
+      "reason": "灌木林独眼蜘蛛原版原型（Mud3 RaceImg 102 / Mon_11 shape 2），背刺独眼，与 43.gif 原画 100% 吻合",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -4011,7 +4011,7 @@
     "game_data": {
       "index": 67,
       "name": "Arachnid Gazer",
-      "image": "Mon_11 shape 6"
+      "image": "Mon_11 shape 2"
     },
     "id": "monster:website:mob-60",
     "identity": {
@@ -4078,7 +4078,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "灌木林伏地红瘤天狼蜘蛛（Mon_11 shape 8），与 44.gif 原画一致",
+      "reason": "灌木林天狼蜘蛛原版原型（Mud3 RaceImg 103 / Mon_11 shape 3），红刺红瘤毒牙伏地，与 44.gif 原画 100% 吻合",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -4093,7 +4093,7 @@
     "game_data": {
       "index": 70,
       "name": "Red Moon Protector",
-      "image": "Mon_11 shape 8"
+      "image": "Mon_11 shape 3"
     },
     "id": "monster:website:mob-61",
     "identity": {
@@ -5123,7 +5123,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "aligned with verified Zircon model prototype",
+      "reason": "蚂蚁洞爬行工蚁原型（Mon_1 shape 8），六足爬行长须，与 mop_01 原画 100% 吻合",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -5136,9 +5136,9 @@
       }
     ],
     "game_data": {
-      "index": 38,
-      "name": "Ant Soldier",
-      "image": "Mon_2 shape 4"
+      "index": 41,
+      "name": "Armoured Ant",
+      "image": "Mon_1 shape 8"
     },
     "id": "monster:website:mob-77",
     "identity": {
@@ -5146,13 +5146,13 @@
       "website_name": "劳动蚂蚁",
       "website_source_id": "mob-77",
       "zircon_candidate_indexes": [
-        38
+        41
       ],
-      "zircon_internal_name": "Ant Soldier"
+      "zircon_internal_name": "Armoured Ant"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:38"
+        "monster:zircon:41"
       ]
     },
     "resources": {
@@ -5168,7 +5168,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Ant_Soldier.png",
+        "path": "/images/mob/game/Worker_Ant.png",
         "verification": "verified-by-image"
       }
     },
@@ -5202,7 +5202,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "蚂蚁洞手持双刃长兵器蚂蚁战士（Mon_2 shape 4），与 mop_02 原画一致",
+      "reason": "蚂蚁洞直立持长戈兵器战士（Mon_2 shape 4），与 mop_02 原画 100% 吻合",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"

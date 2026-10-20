@@ -1120,17 +1120,17 @@
     ],
     "totalSpawnCount": 29,
     "game": {
-      "sprite": "/images/mob/game/Beetle.png",
-      "eng_name": "Beetle",
+      "sprite": "/images/mob/game/Armored_Beetle.png",
+      "eng_name": "Armored Beetle",
       "library": "Mon_7",
-      "shape": 3,
+      "shape": 0,
       "match_method": "exact",
-      "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+      "note": "比奇省双开合螯钳盔甲虫原型（Mud3 RaceImg 60 / Mon_7 shape 0），与 f12.gif 原画 100% 吻合"
     },
     "zircon_match": {
       "state": "matched"
     },
-    "zircon_index": 43
+    "zircon_index": 44
   },
   {
     "id": "mob-21",
@@ -4743,9 +4743,9 @@
       "sprite": "/images/mob/game/Arachnid_Gazer.png",
       "eng_name": "Arachnid Gazer",
       "library": "Mon_11",
-      "shape": 6,
+      "shape": 2,
       "match_method": "exact",
-      "note": "灌木林背刺独眼蜘蛛（Mon_11 shape 6），与 43.gif 原画一致"
+      "note": "灌木林独眼蜘蛛原版原型（Mud3 RaceImg 102 / Mon_11 shape 2），背刺独眼，与 43.gif 原画 100% 吻合"
     },
     "zircon_match": {
       "state": "matched"
@@ -4784,9 +4784,9 @@
       "sprite": "/images/mob/game/Red_Moon_Protector.png",
       "eng_name": "Red Moon Protector",
       "library": "Mon_11",
-      "shape": 8,
+      "shape": 3,
       "match_method": "exact",
-      "note": "灌木林伏地红瘤天狼蜘蛛（Mon_11 shape 8），与 44.gif 原画一致"
+      "note": "灌木林天狼蜘蛛原版原型（Mud3 RaceImg 103 / Mon_11 shape 3），红刺红瘤毒牙伏地，与 44.gif 原画 100% 吻合"
     },
     "zircon_match": {
       "state": "matched"
@@ -5396,18 +5396,17 @@
     "spawns": [],
     "totalSpawnCount": 0,
     "game": {
-      "sprite": "/images/mob/game/Ant_Soldier.png",
-      "eng_name": "Ant Soldier",
-      "library": "Mon_2",
-      "shape": 4,
-      "match_method": "alias",
-      "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-      "similarity": 0.457
+      "sprite": "/images/mob/game/Worker_Ant.png",
+      "eng_name": "Armoured Ant",
+      "library": "Mon_1",
+      "shape": 8,
+      "match_method": "exact",
+      "note": "蚂蚁洞爬行工蚁原型（Mon_1 shape 8），六足爬行长须，与 mop_01 原画 100% 吻合"
     },
     "zircon_match": {
       "state": "matched"
     },
-    "zircon_index": 38
+    "zircon_index": 41
   },
   {
     "id": "mob-78",
@@ -5605,7 +5604,7 @@
       "library": "Mon_2",
       "shape": 4,
       "match_method": "exact",
-      "note": "蚂蚁洞手持双刃长兵器蚂蚁战士（Mon_2 shape 4），与 mop_02 原画一致"
+      "note": "蚂蚁洞直立持长戈兵器战士（Mon_2 shape 4），与 mop_02 原画 100% 吻合"
     },
     "zircon_match": {
       "state": "matched"
