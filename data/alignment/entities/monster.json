@@ -25,7 +25,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "蜈蚣洞大Boss触龙神真身（Mon_23 shape 1），钻地百足巨龙神，与 nls 原画 100% 吻合",
+      "reason": "从原版 Mud3 Mon-21.Zl Shape 5 移植的钻地暗褐百足怒龙神原型，与 nls.gif 原画 100% 吻合",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -40,7 +40,7 @@
     "game_data": {
       "index": 232,
       "name": "Dragon Lord",
-      "image": "Mon_23 shape 1"
+      "image": "Mon_21 (Mud3) shape 5"
     },
     "id": "monster:website:mob-100",
     "identity": {
@@ -3920,8 +3920,8 @@
           "status": "pending_evidence"
         }
       },
-      "overall_status": "pending_review",
-      "reason": "来源没有唯一闭合到当前 Zircon Index；保留候选并等待人工复核。",
+      "overall_status": "confirmed",
+      "reason": "从原版 Mud3 Mon-8.wil Shape 3 移植的原版蹲伏蛤蟆原型，与 f04.gif 原画 100% 吻合",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -3933,20 +3933,23 @@
         "source_id": "website-alignment-manifest"
       }
     ],
-    "game_data": {},
+    "game_data": {
+      "name": "Toad",
+      "image": "Mon_8 (Mud3) shape 3"
+    },
     "id": "monster:website:mob-6",
     "identity": {
       "standard_name_zh": "蛤蟆",
       "website_name": "蛤蟆",
       "website_source_id": "mob-6",
       "zircon_candidate_indexes": [
-        9,
-        12
+        2006
       ],
       "zircon_candidate_names": [
         "Pig",
         "Sheep"
-      ]
+      ],
+      "zircon_internal_name": "Toad"
     },
     "relations": {},
     "resources": {
@@ -3962,8 +3965,8 @@
         "width": 139
       },
       "zircon": {
-        "evidence_refs": [],
-        "verification": "pending"
+        "path": "/images/mob/game/Toad.png",
+        "verification": "verified-by-image"
       }
     },
     "source_findings": [
@@ -5360,7 +5363,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "aligned with verified Zircon model prototype",
+      "reason": "从原版 Mud3 Mon-8.wil Shape 1 移植的手持钉耙猫妖原型，与 f07.gif 原画 100% 吻合",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -5374,8 +5377,8 @@
     ],
     "game_data": {
       "index": 13,
-      "name": "Claw Cat",
-      "image": "Mon_4 shape 8"
+      "name": "Rake Cat",
+      "image": "Mon_8 (Mud3) shape 1"
     },
     "id": "monster:website:mob-8",
     "identity": {
@@ -5388,7 +5391,7 @@
       "zircon_candidate_names": [
         "Claw Cat"
       ],
-      "zircon_internal_name": "Claw Cat"
+      "zircon_internal_name": "Rake Cat"
     },
     "relations": {
       "candidate_entity_ids": [
@@ -5408,7 +5411,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Claw_Cat.png",
+        "path": "/images/mob/game/Rake_Cat.png",
         "verification": "verified-by-image"
       }
     },
@@ -6952,7 +6955,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "石墓野猪洞大Boss獠牙猪王（Mon_8 shape 8），身披重甲持流星战锤，与 zndx 原画吻合",
+      "reason": "从原版 Mud3 Mon-21.Zl Shape 6 移植的石墓赤黄猪王原型（右上方高举流星重锤巨刃战斧），与 zndx.jpg 原画 100% 吻合",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -6967,7 +6970,7 @@
     "game_data": {
       "index": 121,
       "name": "Tusk Lord",
-      "image": "Mon_8 shape 8"
+      "image": "Mon_21 (Mud3) shape 6"
     },
     "id": "monster:website:mob-99",
     "identity": {
