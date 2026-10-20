@@ -1012,9 +1012,16 @@ body.match-open,body.export-open { overflow: hidden; }
 .compare-hint { font-size: 12px; color: var(--text-soft); margin-top: 8px; }
 @media (max-width: 700px) { .compare-shot img { max-height: 140px; } .compareshot.game-shot img, .compare-shot.game-shot img { max-height: 130px; } }
 
-/* 列表卡片：左下角叠加游戏内实际形象缩略图，方便一眼比对 */
-.card-img { position: relative; }
-.card-img-game { position: absolute; right: 6px; bottom: 6px; max-width: 46% !important; max-height: 42px !important; background: rgba(0,0,0,.55); border: 1px solid var(--line-soft); border-radius: 6px; padding: 2px 4px; }
+/* 怪物列表卡片：资料站形象与游戏内模型并排展示，便于逐条核对 */
+.mob-card-portraits { display: grid; grid-template-columns: 1fr 1fr; width: 128px; flex: 0 0 128px; min-height: 150px; background: var(--panel-deep); border-right: 1px solid var(--line-faint); }
+.mob-card-portrait { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 0; margin: 0; overflow: hidden; }
+.mob-card-portrait + .mob-card-portrait { border-left: 1px solid var(--line-faint); }
+.mob-card-portrait figcaption { position: absolute; top: 5px; left: 0; right: 0; z-index: 1; color: var(--text-faint); font-size: 9px; text-align: center; }
+.mob-card-portrait img { max-width: 58px; max-height: 90px; object-fit: contain; image-rendering: pixelated; filter: drop-shadow(0 5px 8px rgba(0,0,0,.7)); }
+.mob-card-portrait-game img { max-width: 58px; max-height: 84px; margin-top: 12px; }
+.mob-card-portrait .game-badge { position: static; display: inline-block; margin-left: 3px; padding: 0 4px; font-size: 8px; vertical-align: 1px; }
+.portrait-missing { margin-top: 14px; color: var(--text-faint); font-size: 9px; text-align: center; }
+@media (max-width: 520px) { .mob-card-portraits { width: 112px; flex-basis: 112px; } .mob-card-portrait img { max-width: 50px; } }
 
 /* 怪物列表：游戏内形象有无 的徽标与筛选 */
 .game-filter { display: flex; flex-wrap: wrap; align-items: baseline; gap: 14px; margin-top: 14px; }
