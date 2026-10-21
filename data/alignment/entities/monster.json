@@ -104,7 +104,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "aligned with verified Zircon model prototype",
+      "reason": "Mon-8 shape 8 流星铁球锤经典白野猪真身，与 40.gif 原画 100% 吻合",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -149,7 +149,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Tusk_Lord.png",
+        "path": "/images/mob/game/White_Boar.png",
         "verification": "verified-by-image"
       }
     },
@@ -4129,7 +4129,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Red_Moon_Protector.png",
+        "path": "/images/mob/game/Wolf_Spider.png",
         "verification": "verified-by-image"
       }
     },
@@ -4163,7 +4163,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "aligned with verified Zircon model prototype",
+      "reason": "Mon-11 shape 6 幻影蜘蛛母蛛巢穴原型（背部带骷髅印记与蛛网巨蛛），与 45.gif 原画 100% 吻合",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -4211,7 +4211,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Arachnid_Gazer.png",
+        "path": "/images/mob/game/Phantom_Spider.png",
         "verification": "verified-by-image"
       }
     },
@@ -5363,7 +5363,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "从原版 Mud3 Mon-4.wil Shape 8 提取的直立持木叉猫妖真身，与 f07.gif 原画吻合",
+      "reason": "Zircon 原生 Mon_28 shape 6 钉耙猫真身，双手横持木柄铁齿钉耙，与 f07.gif 原画 100% 吻合",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -5376,7 +5376,7 @@
       }
     ],
     "game_data": {
-      "image": "Mon_4 (Mud3) shape 8",
+      "image": "Mon_28 shape 6",
       "index": 13,
       "name": "Rake Cat"
     },
