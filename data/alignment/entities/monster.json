@@ -1241,7 +1241,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "aligned with verified Zircon model prototype",
+      "reason": "Mon-10 shape 2 水蜥蜴/恶形鬼真身（头顶白尖刺绿色双足长爪蜥魔），与 image026.gif 原画 100% 吻合",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -1254,9 +1254,9 @@
       }
     ],
     "game_data": {
-      "image": "Mon_20 shape 3",
-      "index": 106,
-      "name": "Mutant Lizard"
+      "image": "Mon_10 shape 2",
+      "index": 156,
+      "name": "Aqua Lizard"
     },
     "id": "monster:website:mob-139",
     "identity": {
@@ -1264,13 +1264,13 @@
       "website_name": "恶性怪",
       "website_source_id": "mob-139",
       "zircon_candidate_indexes": [
-        106
+        156
       ],
-      "zircon_internal_name": "Mutant Lizard"
+      "zircon_internal_name": "Aqua Lizard"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:106"
+        "monster:zircon:156"
       ]
     },
     "resources": {
@@ -1286,7 +1286,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Mutant_Lizard.png",
+        "path": "/images/mob/game/Aqua_Lizard.png",
         "verification": "verified-by-image"
       }
     },

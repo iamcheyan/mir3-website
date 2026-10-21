@@ -7443,11 +7443,11 @@
     "totalSpawnCount": 434,
     "game": {
       "sprite": "/images/mob/game/Uma_Warrior.png",
-      "eng_name": "Uma Warrior",
-      "library": "Mon_5",
-      "shape": 2,
+      "eng_name": "Uma Trident Infidel",
+      "library": "Mon_28",
+      "shape": 7,
       "match_method": "exact",
-      "note": "沃玛寺庙持长弯刀沃玛勇士（Mon_5 shape 2），与 11.gif 原画吻合"
+      "note": "Zircon 原生 Mon_28 shape 7 沃玛勇士真身（双手持长柄红杆金叉三叉戟），与 11.gif 原画 100% 吻合"
     },
     "zircon_match": {
       "state": "matched"
@@ -7465,11 +7465,11 @@
     "totalSpawnCount": 0,
     "game": {
       "sprite": "/images/mob/game/Uma_Warlord.png",
-      "eng_name": "Uma Warlord",
-      "library": "Mon_5",
-      "shape": 4,
+      "eng_name": "Uma Mace Infidel",
+      "library": "Mon_27",
+      "shape": 8,
       "match_method": "exact",
-      "note": "沃玛寺庙高阶统领沃玛战将（Mon_5 shape 4），身披战甲手持巨武，与 12.gif 原画吻合"
+      "note": "Zircon 原生 Mon_27 shape 8 沃玛战将真身（手持带钩金刺大骨锤），与 12.gif 原画 100% 吻合"
     },
     "zircon_match": {
       "state": "matched"
@@ -9363,18 +9363,17 @@
     ],
     "totalSpawnCount": 490,
     "game": {
-      "sprite": "/images/mob/game/Mutant_Lizard.png",
-      "eng_name": "Mutant Lizard",
-      "library": "Mon_20",
-      "shape": 3,
-      "match_method": "alias",
-      "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-      "similarity": 0.331
+      "sprite": "/images/mob/game/Aqua_Lizard.png",
+      "eng_name": "Aqua Lizard",
+      "library": "Mon_10",
+      "shape": 2,
+      "match_method": "exact",
+      "note": "Mon-10 shape 2 水蜥蜴/恶形鬼真身（头顶白尖刺绿色双足长爪蜥魔），与 image026.gif 原画 100% 吻合"
     },
     "zircon_match": {
       "state": "matched"
     },
-    "zircon_index": 106
+    "zircon_index": 156
   },
   {
     "id": "mob-140",
