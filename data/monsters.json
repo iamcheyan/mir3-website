@@ -9313,7 +9313,7 @@
   },
   {
     "id": "mob-139",
-    "name": "恶性怪",
+    "name": "水蜥蜴",
     "category": "神舰",
     "image": "../images/mob/pic/image026.gif",
     "description": "利用尖锐有利的指甲挠抓对方，加以伤害。",
@@ -9368,7 +9368,7 @@
       "library": "Mon_10",
       "shape": 2,
       "match_method": "exact",
-      "note": "Mon-10 shape 2 水蜥蜴/恶形鬼真身（头顶白尖刺绿色双足长爪蜥魔），与 image026.gif 原画 100% 吻合"
+      "note": "Mon-10 shape 2 水蜥蜴真身（头顶白尖刺绿色双足长爪蜥魔），与 image026.gif 原画 100% 吻合"
     },
     "zircon_match": {
       "state": "matched"

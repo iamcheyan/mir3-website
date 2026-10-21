@@ -1412,7 +1412,7 @@
       {
         "count": 521,
         "path": "entities/monster.json",
-        "sha256": "3b45addb3477340bcecc4fe2644a2d6edb60e585f3a110ee9b6c4c21c44dfeb6"
+        "sha256": "3b6b45eea731dba6abf3ba808d8f59ee62ce6b130c445f7008dcf8fa6cc8f62e"
       },
       {
         "count": 294,
@@ -1469,7 +1469,7 @@
       {
         "count": 5408,
         "path": "research_findings.json",
-        "sha256": "93a8dda680bdd1973202552716f0b1673a200d12876ab43a093b47879ad85026"
+        "sha256": "c4949fb104878e30d7b20265ce7060683728ca252436e7b71cafb56e5a11b3ad"
       }
     ],
     "source_observations": [

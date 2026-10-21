@@ -1241,7 +1241,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "Mon-10 shape 2 水蜥蜴/恶形鬼真身（头顶白尖刺绿色双足长爪蜥魔），与 image026.gif 原画 100% 吻合",
+      "reason": "Mon-10 shape 2 水蜥蜴真身（头顶白尖刺绿色双足长爪蜥魔），与 image026.gif 原画 100% 吻合",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -1260,8 +1260,8 @@
     },
     "id": "monster:website:mob-139",
     "identity": {
-      "standard_name_zh": "恶性怪",
-      "website_name": "恶性怪",
+      "standard_name_zh": "水蜥蜴",
+      "website_name": "水蜥蜴",
       "website_source_id": "mob-139",
       "zircon_candidate_indexes": [
         156
@@ -8074,14 +8074,14 @@
             "sha256": "7ef6c9a190796e68b2907407a076cb3821ef05c0d9a757bf44d289e7cf69f2fa",
             "width": 139
           },
-          "name": "恶性怪",
+          "name": "水蜥蜴",
           "source_id": "mob-139",
           "source_ref": {
             "record": "manifest.json#monster_identity/mob-139",
             "source_id": "website-alignment-manifest"
           },
           "source_status": "investigate",
-          "standard_name_zh": "恶性怪"
+          "standard_name_zh": "水蜥蜴"
         }
       ],
       "current_game_name": "变异蜥蜴",
@@ -36541,14 +36541,14 @@
             "sha256": "7ef6c9a190796e68b2907407a076cb3821ef05c0d9a757bf44d289e7cf69f2fa",
             "width": 139
           },
-          "name": "恶性怪",
+          "name": "水蜥蜴",
           "source_id": "mob-139",
           "source_ref": {
             "record": "manifest.json#monster_identity/mob-139",
             "source_id": "website-alignment-manifest"
           },
           "source_status": "investigate",
-          "standard_name_zh": "恶性怪"
+          "standard_name_zh": "水蜥蜴"
         }
       ],
       "current_game_name": "冰宫法师",
