@@ -114,6 +114,12 @@ def main():
         strip_boar.save(IMG_DIR / "White_Boar.png")
         print(f"[Sprite] Exported White_Boar.png (Mon-8 shape 8): {strip_boar.size}")
 
+    # F. 半兽人 (Mon-28.Zl Shape 4, 棕黄肉色皮肤蓝护腕手持石刀真身，区别于墨绿皮肤半兽战士)
+    strip_oma = extract_zl_strip(ZL_DIR / "Mon-28.Zl", 4, [40, 41, 42, 43, 120, 121, 122, 123, 124, 125, 200, 201, 202, 203, 204, 205, 360, 361, 362, 363])
+    if strip_oma:
+        strip_oma.save(IMG_DIR / "Oma.png")
+        print(f"[Sprite] Exported Oma.png (Mon-28 shape 4): {strip_oma.size}")
+
     # 2. 更新 data/monsters.json
     with open(ROOT / "data" / "monsters.json", "r", encoding="utf-8") as f:
         monsters = json.load(f)
@@ -128,6 +134,24 @@ def main():
                 "shape": 6,
                 "match_method": "exact",
                 "note": "Zircon 原生 Mon_28 shape 6 钉耙猫真身，双手横持木柄铁齿钉耙，与 f07.gif 原画 100% 吻合"
+            }
+        elif mid == "mob-12":
+            m["game"] = {
+                "sprite": "/images/mob/game/Oma.png",
+                "eng_name": "Oma",
+                "library": "Mon_28",
+                "shape": 4,
+                "match_method": "exact",
+                "note": "Zircon 原生 Mon_28 shape 4 半兽人真身（棕黄肉色皮肤、双腕双踝蓝护圈手持石刀），与 f09.gif 原画 100% 吻合"
+            }
+        elif mid == "mob-13":
+            m["game"] = {
+                "sprite": "/images/mob/game/Oma_Warrior.png",
+                "eng_name": "Oma Warrior",
+                "library": "Mon_3",
+                "shape": 3,
+                "match_method": "exact",
+                "note": "Mon_3 shape 3 半兽战士（墨绿皮肤、红护腕手持兽骨棒之半兽族长老），与 f10.gif 原画 100% 吻合"
             }
         elif mid == "mob-60":
             m["game"] = {

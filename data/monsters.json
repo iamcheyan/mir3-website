@@ -605,10 +605,10 @@
     "game": {
       "sprite": "/images/mob/game/Oma.png",
       "eng_name": "Oma",
-      "library": "Mon_3",
-      "shape": 3,
+      "library": "Mon_28",
+      "shape": 4,
       "match_method": "exact",
-      "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+      "note": "Zircon 原生 Mon_28 shape 4 半兽人真身（棕黄肉色皮肤、双腕双踝蓝护圈手持石刀），与 f09.gif 原画 100% 吻合"
     },
     "zircon_match": {
       "state": "matched"
@@ -637,7 +637,7 @@
       "library": "Mon_3",
       "shape": 3,
       "match_method": "exact",
-      "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）"
+      "note": "Mon_3 shape 3 半兽战士（墨绿皮肤、红护腕手持兽骨棒之半兽族长老），与 f10.gif 原画 100% 吻合"
     },
     "zircon_match": {
       "state": "matched"
