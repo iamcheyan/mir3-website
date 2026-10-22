@@ -10467,5 +10467,1062 @@
       "state": "matched"
     },
     "zircon_index": 146
+  },
+  {
+    "id": "mob-162",
+    "name": "半兽统领",
+    "category": "兽人古墓",
+    "image": "../images/mob/pic/mob-162.png",
+    "description": "半兽人一族的最高统帅，身材魁梧力大无穷，双手各持一柄沉重开山战斧。不仅近战劈砍势大力沉，更擅长掷出远程回旋飞斧，是冒险者在兽人领地的噩梦。",
+    "attrs": {
+      "生命": "1900",
+      "经验值": "3800",
+      "防御力": "28",
+      "魔法防御": "24",
+      "攻击力": "45-95"
+    },
+    "spawns": [
+      {
+        "mapId": "d022",
+        "mapNameZh": "天然洞穴2层",
+        "count": 2,
+        "delay": "60分"
+      },
+      {
+        "mapId": "d032",
+        "mapNameZh": "兽人古墓2层",
+        "count": 2,
+        "delay": "60分"
+      }
+    ],
+    "totalSpawnCount": 4,
+    "game": {
+      "sprite": "/images/mob/game/Oma_Warlord.png",
+      "eng_name": "Oma Warlord",
+      "library": "Mon_3",
+      "shape": 7,
+      "match_method": "exact",
+      "note": "兽人古墓半兽统领真身（Mon_3 shape 7），经典扩充怪物"
+    },
+    "zircon_match": {
+      "state": "matched"
+    },
+    "zircon_index": 210
+  },
+  {
+    "id": "mob-163",
+    "name": "半兽祭司",
+    "category": "兽人古墓",
+    "image": "../images/mob/pic/mob-163.png",
+    "description": "半兽人部落中精通古老祭祀法术的萨满施法者，手握蛮骨法杖，能借助先祖狂怒召唤暗黑雷电与虚弱诅咒，极大强化了半兽部落的综合作战能力。",
+    "attrs": {
+      "生命": "10000",
+      "经验值": "25000",
+      "防御力": "35",
+      "魔法防御": "45",
+      "攻击力": "60-140"
+    },
+    "spawns": [
+      {
+        "mapId": "d033",
+        "mapNameZh": "兽人古墓3层",
+        "count": 1,
+        "delay": "120分"
+      }
+    ],
+    "totalSpawnCount": 1,
+    "game": {
+      "sprite": "/images/mob/game/Oma_Mage.png",
+      "eng_name": "Oma Mage",
+      "library": "Mon_29",
+      "shape": 9,
+      "match_method": "exact",
+      "note": "兽人古墓半兽祭司真身（Mon_29 shape 9），经典扩充怪物"
+    },
+    "zircon_match": {
+      "state": "matched"
+    },
+    "zircon_index": 284
+  },
+  {
+    "id": "mob-164",
+    "name": "剃刀獠牙",
+    "category": "石墓",
+    "image": "../images/mob/pic/mob-164.png",
+    "description": "石墓深处存活千年的巨型獠牙战猪领主，体型比白野猪还要庞大数倍，披挂着厚重铁甲，双角獠牙如锋利剃刀般足以撕裂钢铁。",
+    "attrs": {
+      "生命": "18000",
+      "经验值": "45000",
+      "防御力": "45",
+      "魔法防御": "35",
+      "攻击力": "85-180"
+    },
+    "spawns": [
+      {
+        "mapId": "d047",
+        "mapNameZh": "石墓7层",
+        "count": 1,
+        "delay": "180分"
+      }
+    ],
+    "totalSpawnCount": 1,
+    "game": {
+      "sprite": "/images/mob/game/Razor_Tusk.png",
+      "eng_name": "Razor Tusk",
+      "library": "Mon_16",
+      "shape": 0,
+      "match_method": "exact",
+      "note": "石墓剃刀獠牙真身（Mon_16 shape 0），经典扩充怪物"
+    },
+    "zircon_match": {
+      "state": "matched"
+    },
+    "zircon_index": 129
+  },
+  {
+    "id": "mob-165",
+    "name": "狂暴深山野猪",
+    "category": "盟重省",
+    "image": "../images/mob/pic/mob-165.png",
+    "description": "栖息在盟重边境山林与石墓周边的凶暴纯种野猪，皮糙肉厚，具有极强的领地攻击性，常成群结队横冲直撞。",
+    "attrs": {
+      "生命": "2900",
+      "经验值": "4200",
+      "防御力": "22",
+      "魔法防御": "18",
+      "攻击力": "35-70"
+    },
+    "spawns": [
+      {
+        "mapId": "01",
+        "mapNameZh": "盟重省野外",
+        "count": 30,
+        "delay": "15分"
+      }
+    ],
+    "totalSpawnCount": 30,
+    "game": {
+      "sprite": "/images/mob/game/Wild_Boar.png",
+      "eng_name": "Wild Boar",
+      "library": "Mon_18",
+      "shape": 1,
+      "match_method": "exact",
+      "note": "盟重省狂暴深山野猪真身（Mon_18 shape 1），经典扩充怪物"
+    },
+    "zircon_match": {
+      "state": "matched"
+    },
+    "zircon_index": 176
+  },
+  {
+    "id": "mob-166",
+    "name": "掷斧骷髅",
+    "category": "骷髅洞",
+    "image": "../images/mob/pic/mob-166.png",
+    "description": "骷髅洞中最狡黠的远程死灵兵种，手握磨尖的骨质飞斧，能在阴暗角落以极高攻速对入侵者连续投掷白骨飞斧。",
+    "attrs": {
+      "生命": "320",
+      "经验值": "650",
+      "防御力": "12",
+      "魔法防御": "15",
+      "攻击力": "18-35"
+    },
+    "spawns": [
+      {
+        "mapId": "d021",
+        "mapNameZh": "天然洞穴1层",
+        "count": 25,
+        "delay": "10分"
+      },
+      {
+        "mapId": "d031",
+        "mapNameZh": "兽人古墓1层",
+        "count": 25,
+        "delay": "10分"
+      }
+    ],
+    "totalSpawnCount": 50,
+    "game": {
+      "sprite": "/images/mob/game/Skeleton_Axe_Thrower.png",
+      "eng_name": "Skeleton Axe Thrower",
+      "library": "Mon_4",
+      "shape": 3,
+      "match_method": "exact",
+      "note": "骷髅洞掷斧骷髅真身（Mon_4 shape 3），经典扩充怪物"
+    },
+    "zircon_match": {
+      "state": "matched"
+    },
+    "zircon_index": 43
+  },
+  {
+    "id": "mob-167",
+    "name": "骷髅斧手",
+    "category": "骷髅洞",
+    "image": "../images/mob/pic/mob-167.png",
+    "description": "双手挥舞两把厚重白骨短斧的狂暴骷髅武士，近身连续劈砍迅捷而致命，冲锋凶猛。",
+    "attrs": {
+      "生命": "400",
+      "经验值": "800",
+      "防御力": "15",
+      "魔法防御": "15",
+      "攻击力": "22-42"
+    },
+    "spawns": [
+      {
+        "mapId": "d022",
+        "mapNameZh": "天然洞穴2层",
+        "count": 20,
+        "delay": "10分"
+      },
+      {
+        "mapId": "d032",
+        "mapNameZh": "兽人古墓2层",
+        "count": 20,
+        "delay": "10分"
+      }
+    ],
+    "totalSpawnCount": 40,
+    "game": {
+      "sprite": "/images/mob/game/Skeleton_Axe_Man.png",
+      "eng_name": "Skeleton Axe Man",
+      "library": "Mon_4",
+      "shape": 4,
+      "match_method": "exact",
+      "note": "骷髅洞骷髅斧手真身（Mon_4 shape 4），经典扩充怪物"
+    },
+    "zircon_match": {
+      "state": "matched"
+    },
+    "zircon_index": 44
+  },
+  {
+    "id": "mob-168",
+    "name": "白骨骷髅",
+    "category": "骷髅洞",
+    "image": "../images/mob/pic/mob-168.png",
+    "description": "受地底精纯死灵煞气滋养而化的晶莹白骨骷髅，骨质坚硬如铁，防御力和魔御远超普通骷髅。",
+    "attrs": {
+      "生命": "650",
+      "经验值": "1350",
+      "防御力": "22",
+      "魔法防御": "20",
+      "攻击力": "28-55"
+    },
+    "spawns": [
+      {
+        "mapId": "d023",
+        "mapNameZh": "绝命谷深处",
+        "count": 15,
+        "delay": "15分"
+      }
+    ],
+    "totalSpawnCount": 15,
+    "game": {
+      "sprite": "/images/mob/game/White_Bone.png",
+      "eng_name": "White Bone",
+      "library": "Mon_6",
+      "shape": 6,
+      "match_method": "exact",
+      "note": "骷髅洞白骨骷髅真身（Mon_6 shape 6），经典扩充怪物"
+    },
+    "zircon_match": {
+      "state": "matched"
+    },
+    "zircon_index": 56
+  },
+  {
+    "id": "mob-169",
+    "name": "幽灵黑骑士",
+    "category": "潘夜石窟",
+    "image": "../images/mob/pic/mob-169.png",
+    "description": "曾誓死守卫潘夜古战场的禁卫军骑兵，身披黑铁战甲骑乘骸骨战马，手持重型破阵骑枪冲锋，震慑地底一切生灵。",
+    "attrs": {
+      "生命": "2800",
+      "经验值": "5200",
+      "防御力": "32",
+      "魔法防御": "28",
+      "攻击力": "50-105"
+    },
+    "spawns": [
+      {
+        "mapId": "d1214",
+        "mapNameZh": "潘夜石窟4层",
+        "count": 10,
+        "delay": "20分"
+      },
+      {
+        "mapId": "d1215",
+        "mapNameZh": "潘夜石窟5层",
+        "count": 12,
+        "delay": "20分"
+      }
+    ],
+    "totalSpawnCount": 22,
+    "game": {
+      "sprite": "/images/mob/game/Ghost_Knight.png",
+      "eng_name": "Ghost Knight",
+      "library": "Mon_21",
+      "shape": 4,
+      "match_method": "exact",
+      "note": "潘夜石窟幽灵黑骑士真身（Mon_21 shape 4），经典扩充怪物"
+    },
+    "zircon_match": {
+      "state": "matched"
+    },
+    "zircon_index": 171
+  },
+  {
+    "id": "mob-170",
+    "name": "幻影士兵",
+    "category": "潘夜石窟",
+    "image": "../images/mob/pic/mob-170.png",
+    "description": "古代帝国阵亡的精锐步兵亡魂，手握长枪严守地底结界，攻击带有微弱的破甲死系魔法。",
+    "attrs": {
+      "生命": "3300",
+      "经验值": "6000",
+      "防御力": "26",
+      "魔法防御": "24",
+      "攻击力": "45-90"
+    },
+    "spawns": [
+      {
+        "mapId": "d1213",
+        "mapNameZh": "潘夜石窟3层",
+        "count": 20,
+        "delay": "15分"
+      }
+    ],
+    "totalSpawnCount": 20,
+    "game": {
+      "sprite": "/images/mob/game/Apparition_Soldier.png",
+      "eng_name": "Apparition Soldier",
+      "library": "Mon_15",
+      "shape": 2,
+      "match_method": "exact",
+      "note": "潘夜石窟幻影士兵真身（Mon_15 shape 2），经典扩充怪物"
+    },
+    "zircon_match": {
+      "state": "matched"
+    },
+    "zircon_index": 143
+  },
+  {
+    "id": "mob-171",
+    "name": "幻影刀手",
+    "category": "潘夜石窟",
+    "image": "../images/mob/pic/mob-171.png",
+    "description": "擅长快步近身劈杀的幻影刀手，双手握持宽刃双环刀，刀法精湛，连斩极难招架。",
+    "attrs": {
+      "生命": "3300",
+      "经验值": "6000",
+      "防御力": "28",
+      "魔法防御": "22",
+      "攻击力": "48-96"
+    },
+    "spawns": [
+      {
+        "mapId": "d1214",
+        "mapNameZh": "潘夜石窟4层",
+        "count": 20,
+        "delay": "15分"
+      }
+    ],
+    "totalSpawnCount": 20,
+    "game": {
+      "sprite": "/images/mob/game/Apparition_Bladesman.png",
+      "eng_name": "Apparition Bladesman",
+      "library": "Mon_15",
+      "shape": 3,
+      "match_method": "exact",
+      "note": "潘夜石窟幻影刀手真身（Mon_15 shape 3），经典扩充怪物"
+    },
+    "zircon_match": {
+      "state": "matched"
+    },
+    "zircon_index": 142
+  },
+  {
+    "id": "mob-172",
+    "name": "幻影弓手",
+    "category": "潘夜石窟",
+    "image": "../images/mob/pic/mob-172.png",
+    "description": "古代精锐神射手的死灵形态，百步穿杨，弓弦所向箭无虚发，能在远距离形成密集弹幕。",
+    "attrs": {
+      "生命": "3300",
+      "经验值": "6000",
+      "防御力": "20",
+      "魔法防御": "30",
+      "攻击力": "55-110"
+    },
+    "spawns": [
+      {
+        "mapId": "d1213",
+        "mapNameZh": "潘夜石窟3层",
+        "count": 15,
+        "delay": "15分"
+      },
+      {
+        "mapId": "d1214",
+        "mapNameZh": "潘夜石窟4层",
+        "count": 15,
+        "delay": "15分"
+      }
+    ],
+    "totalSpawnCount": 30,
+    "game": {
+      "sprite": "/images/mob/game/Apparition_Archer.png",
+      "eng_name": "Apparition Archer",
+      "library": "Mon_15",
+      "shape": 4,
+      "match_method": "exact",
+      "note": "潘夜石窟幻影弓手真身（Mon_15 shape 4），经典扩充怪物"
+    },
+    "zircon_match": {
+      "state": "matched"
+    },
+    "zircon_index": 141
+  },
+  {
+    "id": "mob-173",
+    "name": "嗜血食尸鬼",
+    "category": "比奇矿区",
+    "image": "../images/mob/pic/mob-173.png",
+    "description": "长期藏匿于矿区阴暗矿道深处的恶性食尸生物，伏地疾驰，长爪带有令人麻痹减速的尸毒。",
+    "attrs": {
+      "生命": "3800",
+      "经验值": "7500",
+      "防御力": "24",
+      "魔法防御": "20",
+      "攻击力": "45-88"
+    },
+    "spawns": [
+      {
+        "mapId": "d101",
+        "mapNameZh": "废矿2层",
+        "count": 8,
+        "delay": "20分"
+      }
+    ],
+    "totalSpawnCount": 8,
+    "game": {
+      "sprite": "/images/mob/game/Blood_Thirsty_Ghoul.png",
+      "eng_name": "Blood Thirsty Ghoul",
+      "library": "Mon_5",
+      "shape": 2,
+      "match_method": "exact",
+      "note": "比奇矿区嗜血食尸鬼真身（Mon_5 shape 2），经典扩充怪物"
+    },
+    "zircon_match": {
+      "state": "matched"
+    },
+    "zircon_index": 59
+  },
+  {
+    "id": "mob-174",
+    "name": "嗜血僵尸",
+    "category": "比奇矿区",
+    "image": "../images/mob/pic/mob-174.png",
+    "description": "饱饮生者鲜血发生异变的赤红色高阶僵尸，生命力极端顽强，受击后狂性大发狂暴反击。",
+    "attrs": {
+      "生命": "6000",
+      "经验值": "12000",
+      "防御力": "30",
+      "魔法防御": "25",
+      "攻击力": "55-105"
+    },
+    "spawns": [
+      {
+        "mapId": "d102",
+        "mapNameZh": "废矿3层",
+        "count": 5,
+        "delay": "30分"
+      }
+    ],
+    "totalSpawnCount": 5,
+    "game": {
+      "sprite": "/images/mob/game/Blood_Thirsty_Zombie.png",
+      "eng_name": "Blood Thirsty Zombie",
+      "library": "Mon_5",
+      "shape": 2,
+      "match_method": "exact",
+      "note": "比奇矿区嗜血僵尸真身（Mon_5 shape 2），经典扩充怪物"
+    },
+    "zircon_match": {
+      "state": "matched"
+    },
+    "zircon_index": 60
+  },
+  {
+    "id": "mob-175",
+    "name": "爆裂变异跳蚤",
+    "category": "潘夜石窟",
+    "image": "../images/mob/pic/mob-175.png",
+    "description": "寄生在石窟底层的异种爆裂跳蚤，腹部聚集着高温灼毒，濒死时会引爆体内腺体造成大范围烈火伤害。",
+    "attrs": {
+      "生命": "1200",
+      "经验值": "2200",
+      "防御力": "16",
+      "魔法防御": "18",
+      "攻击力": "30-65"
+    },
+    "spawns": [
+      {
+        "mapId": "d1211",
+        "mapNameZh": "潘夜石窟1层",
+        "count": 30,
+        "delay": "10分"
+      },
+      {
+        "mapId": "d12121",
+        "mapNameZh": "潘夜石窟2层西部",
+        "count": 30,
+        "delay": "10分"
+      }
+    ],
+    "totalSpawnCount": 60,
+    "game": {
+      "sprite": "/images/mob/game/Blaster_Mutant_Flea.png",
+      "eng_name": "Blaster Mutant Flea",
+      "library": "Mon_15",
+      "shape": 7,
+      "match_method": "exact",
+      "note": "潘夜石窟爆裂变异跳蚤真身（Mon_15 shape 7），经典扩充怪物"
+    },
+    "zircon_match": {
+      "state": "matched"
+    },
+    "zircon_index": 135
+  },
+  {
+    "id": "mob-176",
+    "name": "剧毒变异跳蚤",
+    "category": "潘夜石窟",
+    "image": "../images/mob/pic/mob-176.png",
+    "description": "通体墨绿的变种毒跳蚤，能在远距离喷射浓缩神经毒液，使中招者中毒且行动迟缓。",
+    "attrs": {
+      "生命": "1400",
+      "经验值": "2600",
+      "防御力": "18",
+      "魔法防御": "22",
+      "攻击力": "32-70"
+    },
+    "spawns": [
+      {
+        "mapId": "d12121",
+        "mapNameZh": "潘夜石窟2层西部",
+        "count": 25,
+        "delay": "10分"
+      },
+      {
+        "mapId": "d1213",
+        "mapNameZh": "潘夜石窟3层",
+        "count": 25,
+        "delay": "10分"
+      }
+    ],
+    "totalSpawnCount": 50,
+    "game": {
+      "sprite": "/images/mob/game/Poisonous_Mutant_Flea.png",
+      "eng_name": "Poisonous Mutant Flea",
+      "library": "Mon_15",
+      "shape": 9,
+      "match_method": "exact",
+      "note": "潘夜石窟剧毒变异跳蚤真身（Mon_15 shape 9），经典扩充怪物"
+    },
+    "zircon_match": {
+      "state": "matched"
+    },
+    "zircon_index": 136
+  },
+  {
+    "id": "mob-177",
+    "name": "尖刺血武装甲虫",
+    "category": "蜈蚣洞",
+    "image": "../images/mob/pic/mob-177.png",
+    "description": "地牢虫穴深处的重铠巨甲虫，背部长满尖锐骨刺，具有极高的物理防御并能反震近身伤害。",
+    "attrs": {
+      "生命": "5000",
+      "经验值": "9500",
+      "防御力": "40",
+      "魔法防御": "28",
+      "攻击力": "50-95"
+    },
+    "spawns": [
+      {
+        "mapId": "d024",
+        "mapNameZh": "地牢1层北",
+        "count": 15,
+        "delay": "15分"
+      }
+    ],
+    "totalSpawnCount": 15,
+    "game": {
+      "sprite": "/images/mob/game/Spiked_Beetle.png",
+      "eng_name": "Bloody Armed Beetle",
+      "library": "Mon_7",
+      "shape": 4,
+      "match_method": "exact",
+      "note": "蜈蚣洞尖刺血武装甲虫真身（Mon_7 shape 4），经典扩充怪物"
+    },
+    "zircon_match": {
+      "state": "matched"
+    },
+    "zircon_index": 179
+  },
+  {
+    "id": "mob-178",
+    "name": "黄金甲虫",
+    "category": "蜈蚣洞",
+    "image": "../images/mob/pic/mob-178.png",
+    "description": "地牢罕见的稀世变异金甲虫，通体金光闪闪敏捷极高，击败后可爆落巨量金币与珍稀矿石宝石。",
+    "attrs": {
+      "生命": "1300",
+      "经验值": "8000",
+      "防御力": "35",
+      "魔法防御": "35",
+      "攻击力": "20-40"
+    },
+    "spawns": [
+      {
+        "mapId": "d024",
+        "mapNameZh": "地牢1层北",
+        "count": 3,
+        "delay": "60分"
+      }
+    ],
+    "totalSpawnCount": 3,
+    "game": {
+      "sprite": "/images/mob/game/Golden_Armored_Beetle.png",
+      "eng_name": "Golden Armored Beetle",
+      "library": "Mon_7",
+      "shape": 3,
+      "match_method": "exact",
+      "note": "蜈蚣洞黄金甲虫真身（Mon_7 shape 3），经典扩充怪物"
+    },
+    "zircon_match": {
+      "state": "matched"
+    },
+    "zircon_index": 180
+  },
+  {
+    "id": "mob-179",
+    "name": "剪刀虫王",
+    "category": "蜈蚣洞",
+    "image": "../images/mob/pic/mob-179.png",
+    "description": "蜈蚣洞中进化出巨大双铁螯的霸王巨虫，双剪合拢足以夹断精钢铠甲，统领地底万虫。",
+    "attrs": {
+      "生命": "5000",
+      "经验值": "11000",
+      "防御力": "38",
+      "魔法防御": "30",
+      "攻击力": "60-120"
+    },
+    "spawns": [
+      {
+        "mapId": "d024",
+        "mapNameZh": "死亡棺材",
+        "count": 2,
+        "delay": "90分"
+      }
+    ],
+    "totalSpawnCount": 2,
+    "game": {
+      "sprite": "/images/mob/game/Earwig_King.png",
+      "eng_name": "Earwig King",
+      "library": "Mon_8",
+      "shape": 0,
+      "match_method": "exact",
+      "note": "蜈蚣洞剪刀虫王真身（Mon_8 shape 0），经典扩充怪物"
+    },
+    "zircon_match": {
+      "state": "matched"
+    },
+    "zircon_index": 181
+  },
+  {
+    "id": "mob-180",
+    "name": "变异狼人",
+    "category": "沃玛森林",
+    "image": "../images/mob/pic/mob-180.png",
+    "description": "潜伏在沃玛森林深处的半人半狼异变狂兽，长爪獠牙，拥有惊人的撕扯力与夜间爆发速度。",
+    "attrs": {
+      "生命": "2400",
+      "经验值": "4800",
+      "防御力": "25",
+      "魔法防御": "22",
+      "攻击力": "45-92"
+    },
+    "spawns": [
+      {
+        "mapId": "02",
+        "mapNameZh": "沃玛森林深处",
+        "count": 20,
+        "delay": "15分"
+      }
+    ],
+    "totalSpawnCount": 20,
+    "game": {
+      "sprite": "/images/mob/game/Werewolf.png",
+      "eng_name": "Werewolf",
+      "library": "Mon_21",
+      "shape": 7,
+      "match_method": "exact",
+      "note": "沃玛森林变异狼人真身（Mon_21 shape 7），经典扩充怪物"
+    },
+    "zircon_match": {
+      "state": "matched"
+    },
+    "zircon_index": 173
+  },
+  {
+    "id": "mob-181",
+    "name": "苍白狼王「白牙」",
+    "category": "沃玛森林",
+    "image": "../images/mob/pic/mob-181.png",
+    "description": "玛法大陆极北雪线流浪至此的巨型苍白巨狼之王，银鬃胜雪，嚎叫能大幅激励附近群狼协同围杀。",
+    "attrs": {
+      "生命": "2500",
+      "经验值": "6000",
+      "防御力": "28",
+      "魔法防御": "25",
+      "攻击力": "50-100"
+    },
+    "spawns": [
+      {
+        "mapId": "02",
+        "mapNameZh": "沃玛森林深处",
+        "count": 2,
+        "delay": "60分"
+      }
+    ],
+    "totalSpawnCount": 2,
+    "game": {
+      "sprite": "/images/mob/game/Whitefang.png",
+      "eng_name": "Whitefang",
+      "library": "Mon_21",
+      "shape": 8,
+      "match_method": "exact",
+      "note": "沃玛森林苍白狼王「白牙」真身（Mon_21 shape 8），经典扩充怪物"
+    },
+    "zircon_match": {
+      "state": "matched"
+    },
+    "zircon_index": 174
+  },
+  {
+    "id": "mob-182",
+    "name": "林地猛虎",
+    "category": "道观周围",
+    "image": "../images/mob/pic/mob-182.png",
+    "description": "道观外密林深处游弋的斑斓猛虎，威风凛凛百兽之王，一扑一咬皆具千钧之力。",
+    "attrs": {
+      "生命": "4000",
+      "经验值": "5500",
+      "防御力": "25",
+      "魔法防御": "20",
+      "攻击力": "50-85"
+    },
+    "spawns": [
+      {
+        "mapId": "03",
+        "mapNameZh": "道观密林",
+        "count": 15,
+        "delay": "15分"
+      }
+    ],
+    "totalSpawnCount": 15,
+    "game": {
+      "sprite": "/images/mob/game/Tiger.png",
+      "eng_name": "Tiger",
+      "library": "Mon_35",
+      "shape": 1,
+      "match_method": "exact",
+      "note": "道观周围林地猛虎真身（Mon_35 shape 1），经典扩充怪物"
+    },
+    "zircon_match": {
+      "state": "matched"
+    },
+    "zircon_index": 265
+  },
+  {
+    "id": "mob-183",
+    "name": "暴雪虎",
+    "category": "道观周围",
+    "image": "../images/mob/pic/mob-183.png",
+    "description": "通体雪白带冰蓝斑纹的异种猛虎，爪击附带刺骨冰霜减速效果，凶悍莫测。",
+    "attrs": {
+      "生命": "4500",
+      "经验值": "7500",
+      "防御力": "32",
+      "魔法防御": "35",
+      "攻击力": "65-115"
+    },
+    "spawns": [
+      {
+        "mapId": "03",
+        "mapNameZh": "灌木林北部",
+        "count": 8,
+        "delay": "25分"
+      }
+    ],
+    "totalSpawnCount": 8,
+    "game": {
+      "sprite": "/images/mob/game/Blizzard_Tiger.png",
+      "eng_name": "Blizzard Tiger",
+      "library": "Mon_35",
+      "shape": 3,
+      "match_method": "exact",
+      "note": "道观周围暴雪虎真身（Mon_35 shape 3），经典扩充怪物"
+    },
+    "zircon_match": {
+      "state": "matched"
+    },
+    "zircon_index": 267
+  },
+  {
+    "id": "mob-184",
+    "name": "狂暴野象",
+    "category": "盟重省",
+    "image": "../images/mob/pic/mob-184.png",
+    "description": "沙漠边陲迁徙的大体量荒野巨象，巨足踏地可震晕近身目标，冲撞势不可挡。",
+    "attrs": {
+      "生命": "4000",
+      "经验值": "6200",
+      "防御力": "35",
+      "魔法防御": "22",
+      "攻击力": "45-80"
+    },
+    "spawns": [
+      {
+        "mapId": "01",
+        "mapNameZh": "盟重荒漠",
+        "count": 12,
+        "delay": "20分"
+      }
+    ],
+    "totalSpawnCount": 12,
+    "game": {
+      "sprite": "/images/mob/game/Wild_Elephant.png",
+      "eng_name": "Wild Elephant",
+      "library": "Mon_16",
+      "shape": 8,
+      "match_method": "exact",
+      "note": "盟重省狂暴野象真身（Mon_16 shape 8），经典扩充怪物"
+    },
+    "zircon_match": {
+      "state": "matched"
+    },
+    "zircon_index": 273
+  },
+  {
+    "id": "mob-185",
+    "name": "祖玛神射手",
+    "category": "祖玛神殿",
+    "image": "../images/mob/pic/mob-185.png",
+    "description": "祖玛教主以黑曜石精雕而成的神射石像，手持祖玛长弓，精准狙击一切胆敢靠近祭坛的凡人。",
+    "attrs": {
+      "生命": "900",
+      "经验值": "2100",
+      "防御力": "22",
+      "魔法防御": "28",
+      "攻击力": "42-85"
+    },
+    "spawns": [
+      {
+        "mapId": "d055",
+        "mapNameZh": "祖玛神殿5层",
+        "count": 30,
+        "delay": "10分"
+      }
+    ],
+    "totalSpawnCount": 30,
+    "game": {
+      "sprite": "/images/mob/game/Zuma_Sharp_Shooter.png",
+      "eng_name": "Zuma Sharp Shooter",
+      "library": "Mon_9",
+      "shape": 2,
+      "match_method": "exact",
+      "note": "祖玛神殿祖玛神射手真身（Mon_9 shape 2），经典扩充怪物"
+    },
+    "zircon_match": {
+      "state": "matched"
+    },
+    "zircon_index": 82
+  },
+  {
+    "id": "mob-186",
+    "name": "祖玛守卫长",
+    "category": "祖玛神殿",
+    "image": "../images/mob/pic/mob-186.png",
+    "description": "祖玛近卫军的直属统领大头目，双手巨锤威能巨大，统率大群祖玛卫士誓死保卫神殿深渊。",
+    "attrs": {
+      "生命": "3300",
+      "经验值": "9500",
+      "防御力": "38",
+      "魔法防御": "32",
+      "攻击力": "68-135"
+    },
+    "spawns": [
+      {
+        "mapId": "d057",
+        "mapNameZh": "祖玛神殿7层",
+        "count": 5,
+        "delay": "45分"
+      }
+    ],
+    "totalSpawnCount": 5,
+    "game": {
+      "sprite": "/images/mob/game/Zuma_Keeper.png",
+      "eng_name": "Zuma Keeper",
+      "library": "Mon_9",
+      "shape": 4,
+      "match_method": "exact",
+      "note": "祖玛神殿祖玛守卫长真身（Mon_9 shape 4），经典扩充怪物"
+    },
+    "zircon_match": {
+      "state": "matched"
+    },
+    "zircon_index": 80
+  },
+  {
+    "id": "mob-187",
+    "name": "蛮牛狂暴将军",
+    "category": "潘夜神殿",
+    "image": "../images/mob/pic/mob-187.png",
+    "description": "身披黑红战甲、双眼充血的狂暴牛魔大将，双持沉重开山斧，越战越勇无人能挡。",
+    "attrs": {
+      "生命": "5000",
+      "经验值": "13000",
+      "防御力": "35",
+      "魔法防御": "28",
+      "攻击力": "75-145"
+    },
+    "spawns": [
+      {
+        "mapId": "d1226",
+        "mapNameZh": "潘夜神殿6层",
+        "count": 6,
+        "delay": "40分"
+      }
+    ],
+    "totalSpawnCount": 6,
+    "game": {
+      "sprite": "/images/mob/game/Ox_Feral_General.png",
+      "eng_name": "Ox Feral General",
+      "library": "Mon_5",
+      "shape": 4,
+      "match_method": "exact",
+      "note": "潘夜神殿蛮牛狂暴将军真身（Mon_5 shape 4），经典扩充怪物"
+    },
+    "zircon_match": {
+      "state": "matched"
+    },
+    "zircon_index": 205
+  },
+  {
+    "id": "mob-188",
+    "name": "潘夜领主古扎克",
+    "category": "潘夜神殿",
+    "image": "../images/mob/pic/mob-188.png",
+    "description": "潘夜一族在地底深渊供奉的至高魔王，生命值高达 100,000，掌控暗黑混沌之力的终极巨兽。",
+    "attrs": {
+      "生命": "100000",
+      "经验值": "250000",
+      "防御力": "65",
+      "魔法防御": "55",
+      "攻击力": "140-280"
+    },
+    "spawns": [
+      {
+        "mapId": "d1227",
+        "mapNameZh": "潘夜神殿深渊祭坛",
+        "count": 1,
+        "delay": "360分"
+      }
+    ],
+    "totalSpawnCount": 1,
+    "game": {
+      "sprite": "/images/mob/game/Banyo_Lord_Guzak.png",
+      "eng_name": "Banyo Lord Guzak",
+      "library": "Mon_13",
+      "shape": 0,
+      "match_method": "exact",
+      "note": "潘夜神殿潘夜领主古扎克真身（Mon_13 shape 0），经典扩充怪物"
+    },
+    "zircon_match": {
+      "state": "matched"
+    },
+    "zircon_index": 188
+  },
+  {
+    "id": "mob-189",
+    "name": "诺玛突击骑兵",
+    "category": "绿洲沙漠",
+    "image": "../images/mob/pic/mob-189.png",
+    "description": "诺玛一族的精锐游击骑兵，胯下骑乘凶悍沙漠独角战兽，持矛突刺冲锋，来去如风。",
+    "attrs": {
+      "生命": "1700",
+      "经验值": "3800",
+      "防御力": "24",
+      "魔法防御": "22",
+      "攻击力": "40-85"
+    },
+    "spawns": [
+      {
+        "mapId": "d2001",
+        "mapNameZh": "绿洲沙漠遗迹",
+        "count": 30,
+        "delay": "15分"
+      }
+    ],
+    "totalSpawnCount": 30,
+    "game": {
+      "sprite": "/images/mob/game/Numa_Cavalry.png",
+      "eng_name": "Numa Cavalry",
+      "library": "Mon_19",
+      "shape": 0,
+      "match_method": "exact",
+      "note": "绿洲沙漠诺玛突击骑兵真身（Mon_19 shape 0），经典扩充怪物"
+    },
+    "zircon_match": {
+      "state": "matched"
+    },
+    "zircon_index": 161
+  },
+  {
+    "id": "mob-190",
+    "name": "诺玛大军阀",
+    "category": "绿洲沙漠",
+    "image": "../images/mob/pic/mob-190.png",
+    "description": "统率诺玛大营地全军的终极军事统帅，身披千层重铠手持巨刀，号令沙漠百千诺玛战士。",
+    "attrs": {
+      "生命": "35000",
+      "经验值": "80000",
+      "防御力": "50",
+      "魔法防御": "45",
+      "攻击力": "110-220"
+    },
+    "spawns": [
+      {
+        "mapId": "d2005",
+        "mapNameZh": "诺玛大营地大厅",
+        "count": 1,
+        "delay": "240分"
+      }
+    ],
+    "totalSpawnCount": 1,
+    "game": {
+      "sprite": "/images/mob/game/Numa_Warlord.png",
+      "eng_name": "Numa Warlord",
+      "library": "Mon_19",
+      "shape": 6,
+      "match_method": "exact",
+      "note": "绿洲沙漠诺玛大军阀真身（Mon_19 shape 6），经典扩充怪物"
+    },
+    "zircon_match": {
+      "state": "matched"
+    },
+    "zircon_index": 167
   }
 ]
