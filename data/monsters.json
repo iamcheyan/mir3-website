@@ -8017,18 +8017,17 @@
     ],
     "totalSpawnCount": 146,
     "game": {
-      "sprite": "/images/mob/game/Bone_Archer.png",
-      "eng_name": "Bone Archer",
+      "sprite": "/images/mob/game/Bone_Soldier.png",
+      "eng_name": "Bone Soldier",
       "library": "Mon_15",
-      "shape": 4,
-      "match_method": "alias",
-      "note": "Zircon 客户端图库实测形象（站立/行走/攻击/死亡 多帧）",
-      "similarity": 0.463
+      "shape": 2,
+      "match_method": "exact",
+      "note": "潘夜石窟骷髅士兵真身（Mon_15 shape 2），手持带旗长枪，与 67.gif 原画 100% 吻合"
     },
     "zircon_match": {
       "state": "matched"
     },
-    "zircon_index": 116
+    "zircon_index": 119
   },
   {
     "id": "mob-123",

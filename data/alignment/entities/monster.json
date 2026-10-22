@@ -430,7 +430,7 @@
         }
       },
       "overall_status": "confirmed",
-      "reason": "aligned with verified Zircon model prototype",
+      "reason": "潘夜石窟骷髅士兵真身（Mon_15 shape 2），手持带旗长枪，与 67.gif 原画 100% 吻合",
       "reviewed_at": null,
       "reviewer": null,
       "suggested_action": "人工复核；保持当前游戏翻译与实体索引不变。"
@@ -443,9 +443,9 @@
       }
     ],
     "game_data": {
-      "image": "Mon_15 shape 4",
-      "index": 116,
-      "name": "Bone Archer"
+      "image": "Mon_15 shape 2",
+      "index": 119,
+      "name": "Bone Soldier"
     },
     "id": "monster:website:mob-122",
     "identity": {
@@ -453,13 +453,13 @@
       "website_name": "骷髅士兵",
       "website_source_id": "mob-122",
       "zircon_candidate_indexes": [
-        116
+        119
       ],
-      "zircon_internal_name": "Bone Archer"
+      "zircon_internal_name": "Bone Soldier"
     },
     "relations": {
       "candidate_entity_ids": [
-        "monster:zircon:116"
+        "monster:zircon:119"
       ]
     },
     "resources": {
@@ -475,7 +475,7 @@
         "width": 139
       },
       "zircon": {
-        "path": "/images/mob/game/Bone_Archer.png",
+        "path": "/images/mob/game/Bone_Soldier.png",
         "verification": "verified-by-image"
       }
     },
@@ -9616,9 +9616,7 @@
       "zircon_internal_name": "Bone Archer"
     },
     "relations": {
-      "conflict_counterparts": [
-        "monster:website:mob-122"
-      ]
+      "conflict_counterparts": []
     },
     "resources": {
       "website": {
