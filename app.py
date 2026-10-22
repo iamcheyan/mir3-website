@@ -201,7 +201,7 @@ def mob_cards(mob):
 
 def item_props(item):
     """物品详情页: 把属性字段(非基础字段)整理为有序键值对。"""
-    base = {"id", "name", "category", "image", "description", "zircon_match", "alignment_source_id"}
+    base = {"id", "name", "category", "image", "description", "zircon_match", "alignment_source_id", "game", "game_missing_reason"}
     props = [(k, v) for k, v in item.items() if k not in base and v not in ("", "-", None)]
     return props
 

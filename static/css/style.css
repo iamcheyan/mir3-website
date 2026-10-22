@@ -1449,3 +1449,73 @@ body.match-open,body.export-open { overflow: hidden; }
 .game-filter .zircon-filter-button.is-active { color: var(--gold-bright); border-bottom-color: var(--gold); font-weight: 600; }
 .game-filter .zircon-filter-button.is-active .gf-count { color: var(--gold-dim); }
 .group.empty-group .group-heading { opacity: .45; }
+
+/* ==========================================================================
+   物品大全双图对比 (Item Dual Icon Card & Parity Section)
+   ========================================================================== */
+.item-card-dual {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 8px 8px 0 0;
+  padding: 12px 10px;
+  min-height: 76px;
+  border-bottom: 1px solid var(--line-faint, rgba(255, 255, 255, 0.05));
+}
+.item-dual-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+.item-dual-slot img {
+  max-width: 44px;
+  max-height: 44px;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+.item-slot-label {
+  position: absolute;
+  bottom: -6px;
+  font-size: 10px;
+  padding: 0 4px;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.75);
+  color: var(--text-soft, #888);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  line-height: 1.2;
+}
+.item-dual-slot.game-slot .item-slot-label {
+  color: var(--gold-bright, #ffd269);
+  border-color: rgba(255, 210, 105, 0.35);
+}
+.item-dual-divider {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-faint, rgba(255, 255, 255, 0.3));
+  text-transform: uppercase;
+}
+.item-eng-line {
+  font-size: 11px;
+  color: var(--text-soft, #8a99a8);
+  margin-top: 2px;
+  margin-bottom: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.item-compare .compare-shot.game-shot img,
+.item-compare .compare-shot.site-shot img {
+  max-height: 80px;
+  image-rendering: pixelated;
+  transform: scale(1.6);
+  transform-origin: center;
+}
+
