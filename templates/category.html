@@ -17,6 +17,15 @@
     <span class="zircon-filter-count game-filter-count" aria-live="polite"></span>
   </div>
   <p class="zircon-filter-note">“没有”= 游戏侧中文名表里找不到该怪物（译名差异或游戏中不存在），因此还无法生成游戏内形象对比。</p>
+  {% elif kind == 'item' %}
+  <div class="game-filter" role="group" aria-label="按游戏内图标收录筛选">
+    <span class="zircon-filter-label">游戏内图标</span>
+    <button type="button" class="zircon-filter-button is-active" data-game-filter="all" aria-pressed="true">全部 <span class="gf-count" data-gf="all"></span></button>
+    <button type="button" class="zircon-filter-button" data-game-filter="has" aria-pressed="false">已收录（可对比） <span class="gf-count" data-gf="has"></span></button>
+    <button type="button" class="zircon-filter-button" data-game-filter="missing" aria-pressed="false">未收录（变种/待补） <span class="gf-count" data-gf="missing"></span></button>
+    <span class="zircon-filter-count game-filter-count" aria-live="polite"></span>
+  </div>
+  <p class="zircon-filter-note">“未收录”= 客户端当前数据库无此变种/独立词缀物品条目；“已收录”= 可左右对比站内图鉴与客户端实际图标差异。</p>
   {% endif %}
   <div class="zircon-filter" role="group" aria-label="按 Zircon 对照状态筛选">
     <span class="zircon-filter-label">ZIRCON 状态</span>
@@ -37,7 +46,7 @@
 {% for g in groups %}
 <section class="group" id="cat-{{ loop.index }}">
   <div class="group-heading"><h2 class="group-title">{{ g.name }}</h2><span class="group-count">{{ '%02d'|format(g['items']|length) }}</span></div>
-  <div class="card-grid{% if kind == 'mob' %} card-grid--mobs{% endif %}">
+  <div class="card-grid{% if kind == 'mob' %} card-grid--mobs{% elif kind == 'item' %} card-grid--items{% endif %}">
     {% for it in g['items'] %}
     {% if kind == 'mob' %}
     <article class="data-card mob-card" data-name="{{ it.name }}" data-zircon-state="{{ it.zircon_match.state }}" data-game-image="{{ 'has' if it.game else 'missing' }}">
@@ -112,26 +121,81 @@
       <div class="card-body"><h3 class="card-name">{{ it.title }}</h3>{% set zircon_match = it.zircon_match %}{% include "_zircon_match.html" %}<p class="card-tags"><span class="tag">{{ it.areas|length }} 张地图</span></p><p class="map-card-hint">见页内地图展示</p></div>
     </div>
     {% elif kind == 'item' %}
-    <div class="data-card item-card" data-name="{{ it.name }}" data-zircon-state="{{ it.zircon_match.state }}">
-      <div class="item-card-dual">
-        <div class="item-dual-slot" title="网站图鉴（预期）">
-          {% if it.image %}<img src="{{ it.image|img }}" alt="{{ it.name }} 网站图鉴" loading="lazy">{% else %}<span class="img-placeholder">?</span>{% endif %}
-          <span class="item-slot-label">站内</span>
+    <article class="data-card item-card" data-name="{{ it.name }}" data-zircon-state="{{ it.zircon_match.state }}" data-game-image="{{ 'has' if it.game else 'missing' }}">
+      <!-- 1. 顶部大展示台：左右大图对比，空间充分展开 -->
+      <div class="item-compare-stage">
+        <div class="item-stage-box site-box" title="站内资料图鉴">
+          <div class="item-stage-header">
+            <span class="item-box-tag site-tag">站内图鉴</span>
+          </div>
+          <div class="item-stage-viewport">
+            {% if it.image %}
+              <img src="{{ it.image|img }}" alt="{{ it.name }} 网站图鉴" loading="lazy" class="item-img-pixel">
+            {% else %}
+              <span class="img-placeholder">?</span>
+            {% endif %}
+          </div>
         </div>
-        <div class="item-dual-divider">vs</div>
-        <div class="item-dual-slot game-slot" title="游戏客户端实测（Storeitems）">
-          {% if it.game and it.game.icon %}<img src="{{ it.game.icon|img }}" alt="{{ it.name }} 客户端实际" loading="lazy">{% else %}<span class="img-placeholder">?</span>{% endif %}
-          <span class="item-slot-label">游戏</span>
+
+        <div class="item-stage-vs" aria-hidden="true">
+          <span class="item-vs-badge">VS</span>
+        </div>
+
+        <div class="item-stage-box game-box" title="游戏客户端实际（Storeitems）">
+          <div class="item-stage-header">
+            <span class="item-box-tag {% if it.game %}game-tag{% else %}missing-tag{% endif %}">
+              {% if it.game %}游戏实测{% else %}未收录{% endif %}
+            </span>
+          </div>
+          <div class="item-stage-viewport">
+            {% if it.game and it.game.icon %}
+              <img src="{{ it.game.icon|img }}" alt="{{ it.name }} 游戏实测图标" loading="lazy" class="item-img-pixel">
+            {% else %}
+              <div class="item-unrecorded-box">
+                <span class="unrecorded-text">未收录</span>
+              </div>
+            {% endif %}
+          </div>
         </div>
       </div>
-      <div class="card-body">
-        <h3 class="card-name"><a href="{{ prefix }}/items/{{ it.id }}.html">{{ it.name }}</a></h3>
-        {% if it.game and it.game.eng_name %}<div class="item-eng-line">{{ it.game.eng_name }} · 图号 {{ it.game.image_index }}</div>{% endif %}
-        {% set zircon_match = it.zircon_match %}{% include "_zircon_match.html" %}
-        <button type="button" class="match-row-button catalog-match-button" data-source-id="{{ it.alignment_source_id }}">{% if zircon_match.state == 'matched' %}已匹配 · 修改{% else %}匹配{% endif %}</button>
-        <p class="card-tags">{% if it.get('等级') %}<span class="tag">等级 {{ it['等级'] }}</span>{% endif %}{% if it.get('破坏') %}<span class="tag">破坏 {{ it['破坏'] }}</span>{% endif %}{% if it.get('魔法') %}<span class="tag">魔法 {{ it['魔法'] }}</span>{% endif %}</p>
+
+      <!-- 2. 下部信息区：名字放下面，空间更大更清晰 -->
+      <div class="item-card-body">
+        <div class="item-card-title-row">
+          <h3 class="item-card-name"><a href="{{ prefix }}/items/{{ it.id }}.html">{{ it.name }}</a></h3>
+          <span class="item-card-cat">{{ it.category }}</span>
+        </div>
+
+        {% if it.game %}
+          <div class="item-card-meta">
+            <span class="item-meta-eng">{{ it.game.eng_name }}</span>
+            <span class="item-meta-sep">·</span>
+            <span class="item-meta-img">图号 {{ it.game.image_index }}</span>
+            <span class="item-meta-sep">·</span>
+            <span class="item-meta-idx">#{{ it.game.zircon_index }}</span>
+          </div>
+        {% else %}
+          <div class="item-card-meta text-soft">
+            <span class="meta-absent-hint">{{ it.game_missing_reason or '数据库暂无独立条目' }}</span>
+          </div>
+        {% endif %}
+
+        <div class="card-tags">
+          {% if it.get('等级') %}<span class="tag">等级 {{ it['等级'] }}</span>{% endif %}
+          {% if it.get('破坏') %}<span class="tag">破坏 {{ it['破坏'] }}</span>{% endif %}
+          {% if it.get('魔法') %}<span class="tag">魔法 {{ it['魔法'] }}</span>{% endif %}
+          {% if it.get('道术') %}<span class="tag">道术 {{ it['道术'] }}</span>{% endif %}
+          {% if it.get('防御') %}<span class="tag">防御 {{ it['防御'] }}</span>{% endif %}
+          {% if it.get('魔防') %}<span class="tag">魔防 {{ it['魔防'] }}</span>{% endif %}
+        </div>
+
+        <div class="item-card-footer">
+          {% set zircon_match = it.zircon_match %}
+          {% include "_zircon_match.html" %}
+          <button type="button" class="match-row-button catalog-match-button" data-source-id="{{ it.alignment_source_id }}">{% if zircon_match.state == 'matched' %}已匹配 · 修改{% else %}匹配{% endif %}</button>
+        </div>
       </div>
-    </div>
+    </article>
     {% else %}
     <div class="data-card" data-name="{{ it.name }}" data-zircon-state="{{ it.zircon_match.state }}">
       <div class="card-img">{% if it.image %}<img src="{{ it.image|img }}" alt="{{ it.name }}" loading="lazy">{% else %}<span class="img-placeholder">?</span>{% endif %}</div>
