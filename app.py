@@ -47,6 +47,7 @@ NAV = [
     ("任务攻略", "missions/index.html", "missions"),
     ("地图资料", "maps/index.html", "maps"),
     ("NPC名录", "npcs/index.html", "npcs"),
+    ("Zircon 怪物", "zircon-mobs/index.html", "zircon-mobs"),
     ("数据审计", "audit/index.html", "audit"),
 ]
 
@@ -84,12 +85,12 @@ def _match_badge(entity):
     direct = identity.get("zircon_index")
     if isinstance(direct, int):
         indexes.append(direct)
-    indexes.extend(i for i in identity.get("zircon_candidate_indexes", [])
+    indexes.extend(i for i in (identity.get("zircon_candidate_indexes") or [])
                    if isinstance(i, int) and i not in indexes)
     names = []
     if identity.get("zircon_internal_name"):
         names.append(str(identity["zircon_internal_name"]))
-    for name in identity.get("zircon_candidate_names", []):
+    for name in (identity.get("zircon_candidate_names") or []):
         if name and str(name) not in names:
             names.append(str(name))
     if status in {"conflict", "cross_entity_conflict", "ambiguous"}:
@@ -106,6 +107,121 @@ def _match_badge(entity):
     if current and current not in names:
         details.append(f"游戏当前名：{current}")
     return {"label": label, "state": state, "details": details}
+
+
+def _copy_block(*lines):
+    """Build a compact, newline-separated clipboard block, dropping empty fields."""
+    parts = []
+    for line in lines:
+        if line is None:
+            continue
+        text = str(line).strip()
+        if text and text not in {"·", "-"}:
+            parts.append(text)
+    return "\n".join(parts)
+
+
+def _copy_meta(label, value):
+    if value in (None, "", "-"):
+        return None
+    return f"· {label} {value}"
+
+
+def _copy_id(index, item_id, prefix="#"):
+    has_index = index not in (None, "")
+    if has_index and item_id:
+        return f"· {prefix}{index}  {item_id}"
+    if has_index:
+        return f"· {prefix}{index}"
+    return f"· {item_id}" if item_id else None
+
+
+def _monster_copy_text(it):
+    game = it.get("game") or {}
+    shape = game.get("shape")
+    shape_line = f"· {game['library']} shape {shape}" if game.get("library") and shape is not None else None
+    return _copy_block(
+        it.get("name"),
+        it.get("category"),
+        game.get("eng_name"),
+        shape_line,
+        _copy_id(it.get("zircon_index"), it.get("id")),
+    )
+
+
+def _item_copy_text(it):
+    game = it.get("game") or {}
+    return _copy_block(
+        it.get("name"),
+        it.get("category"),
+        game.get("eng_name"),
+        _copy_meta("图号", game.get("image_index")),
+        _copy_id(game.get("zircon_index"), it.get("id")),
+    )
+
+
+def _skill_copy_text(it):
+    return _copy_block(it.get("name"), it.get("class"), "技能", f"· {it.get('id')}")
+
+
+def _mission_copy_text(it):
+    kind = " · ".join(x for x in (it.get("category"), it.get("class")) if x)
+    return _copy_block(it.get("title"), kind, "任务攻略", f"· {it.get('id')}")
+
+
+def _npc_copy_text(it):
+    coords = None
+    if it.get("x") is not None and it.get("y") is not None:
+        coords = f"· {it.get('map_name_zh', '')} ({it['x']}, {it['y']})"
+    return _copy_block(
+        it.get("name_zh"),
+        it.get("category"),
+        it.get("name_en"),
+        _copy_id(it.get("npc_index"), "NPC"),
+        coords,
+    )
+
+
+def _zircon_copy_text(it):
+    kind = {
+        "boss": "BOSS",
+        "companion": "伙伴 / 坐骑",
+        "object": "特殊实体",
+    }.get(it.get("kind"), "普通怪物")
+    primary = it.get("primary_map") or {}
+    primary_line = (
+        f"· 主刷图 {primary.get('code', '')} {primary.get('name', '')}".strip()
+        if primary.get("code") else None
+    )
+    return _copy_block(
+        it.get("name"),
+        kind,
+        it.get("name_en"),
+        _copy_id(it.get("index"), it.get("id"), prefix="Zircon #"),
+        primary_line,
+    )
+
+
+def _map_copy_text(it):
+    name_zh = it.get("nameZh") or it.get("name")
+    name_en = it.get("name")
+    return _copy_block(
+        name_zh,
+        it.get("category"),
+        name_en if name_en and name_en != name_zh else None,
+        f"· {it.get('id')}" if it.get("id") else None,
+    )
+
+
+def _attach_map_copy_text(node):
+    if isinstance(node, dict):
+        if node.get("id") and node.get("category") and node.get("name") and ("index" in node or "width" in node):
+            node["copy_text"] = _map_copy_text(node)
+        for value in node.values():
+            _attach_map_copy_text(value)
+    elif isinstance(node, list):
+        for value in node:
+            _attach_map_copy_text(value)
 
 
 def load_data():
@@ -147,6 +263,34 @@ def load_data():
             elif record:
                 it["details"] = ["网站地图是区域集合；游戏侧按单张地图记录，需逐区域核对。"]
             group["zircon_match"] = it
+    # Zircon 未收录怪物目录是独立静态快照，不参与网站来源对照。
+    zircon_remaining = DATA_DIR / "zircon_remaining.json"
+    if zircon_remaining.is_file():
+        out["zircon_remaining"] = json.loads(zircon_remaining.read_text(encoding="utf-8"))
+
+    # 供“复制条目信息”按钮使用的紧凑文本。
+    for it in out["monsters"]:
+        it["copy_text"] = _monster_copy_text(it)
+    for it in out["items"]:
+        it["copy_text"] = _item_copy_text(it)
+    for it in out["skills"]:
+        it["copy_text"] = _skill_copy_text(it)
+    for it in out["missions"]:
+        it["copy_text"] = _mission_copy_text(it)
+    for it in out.get("npcs", []):
+        it["copy_text"] = _npc_copy_text(it)
+    if out.get("zircon_remaining"):
+        zr = out["zircon_remaining"]
+        for it in zr.get("items", []):
+            it["copy_text"] = _zircon_copy_text(it)
+        # JSON 中分组卡片与 items 是各自的对象，需要分别补上复制文本。
+        for group in zr.get("groups", []):
+            for mapping in group.get("maps", []):
+                for it in mapping.get("items", []):
+                    it["copy_text"] = _zircon_copy_text(it)
+        for it in (zr.get("unspawned") or {}).get("items", []):
+            it["copy_text"] = _zircon_copy_text(it)
+    _attach_map_copy_text(out["maps"])
     return out
 
 
@@ -339,6 +483,15 @@ def render_all(data, env):
     if "npcs" in data:
         render("npcs.html", "npcs/index.html", npcs_ctx(data))
 
+    # ---------- Zircon 未收录怪物目录 ----------
+    if data.get("zircon_remaining"):
+        render("zircon_mobs.html", "zircon-mobs/index.html", zircon_ctx(data))
+        for it in data["zircon_remaining"]["items"]:
+            render("zircon_mob_detail.html", f"zircon-mobs/{it['id']}.html", {
+                **page_ctx(data, "zircon-mobs", ".."),
+                "it": it,
+            })
+
 
 def _group_by(items, key):
     """按字段分组, 保持出现顺序。"""
@@ -419,6 +572,22 @@ def npcs_ctx(data):
         "desc": f"共收录全服 {len(npcs)} 位活动 NPC，涵盖各大城镇与地牢，支持按地图与职能检索",
         "groups": groups,
         "stats": stats,
+    }
+
+
+def zircon_ctx(data):
+    """Zircon 未收录怪物目录上下文：按地图套图分组，展示待选怪物。"""
+    doc = data["zircon_remaining"]
+    stats = doc.get("stats", {})
+    return {
+        **page_ctx(data, "zircon-mobs", ".."),
+        "title": doc.get("title", "Zircon 怪物总库"),
+        "desc": doc.get("description", ""),
+        "groups": doc.get("groups", []),
+        "unspawned": doc.get("unspawned", {"name": "无刷新记录", "desc": "", "items": []}),
+        "stats": stats,
+        "source": doc.get("source", {}),
+        "generated_at": doc.get("generated_at", ""),
     }
 
 
@@ -617,6 +786,24 @@ def cmd_serve(port=5000):
     @app.get("/npcs/index.html")
     def npcs_list():
         return render_named("npcs.html", "npcs", npcs_ctx(data))
+
+    @app.get("/zircon-mobs/")
+    @app.get("/zircon-mobs/index.html")
+    def zircon_mobs_list():
+        if not data.get("zircon_remaining"):
+            abort(404)
+        return render_named("zircon_mobs.html", "zircon-mobs", zircon_ctx(data))
+
+    @app.get("/zircon-mobs/<id_>")
+    def zircon_mob_detail(id_):
+        doc = data.get("zircon_remaining") or {}
+        item = find(doc.get("items", []), id_)
+        if not item:
+            abort(404)
+        return render_named("zircon_mob_detail.html", "zircon-mob", {
+            **page_ctx(data, "zircon-mobs", ".."),
+            "it": item,
+        })
 
     @app.get("/audit/")
     @app.get("/audit/index.html")

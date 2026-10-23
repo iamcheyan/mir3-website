@@ -22,7 +22,7 @@ class MatchPreviewCatalogTests(unittest.TestCase):
             and (record.get("identity") or {}).get("website_source_id")
             and not isinstance((record.get("identity") or {}).get("zircon_index"), int)
         ]
-        self.assertEqual(len(source_rows), 438)
+        self.assertEqual(len(source_rows), 431)
         self.assertEqual({record["entity_type"] for record in source_rows}, TYPE_CONFIG)
         linked_rows = [
             record for record in self.master["entities"]
@@ -30,7 +30,7 @@ class MatchPreviewCatalogTests(unittest.TestCase):
             and (record.get("identity") or {}).get("website_source_id")
             and isinstance((record.get("identity") or {}).get("zircon_index"), int)
         ]
-        self.assertEqual(len(linked_rows), 188)
+        self.assertEqual(len(linked_rows), 195)
 
     def test_candidate_preview_index_is_local_safe_and_assets_exist(self):
         index = self.preview_index

@@ -5703,12 +5703,12 @@
     "描述": "这是古代Mir人类发明的一种药品，用它可以使道具成为幸运道具，使用幸运道具会使人发挥自己的最大潜能。用它可以使诅咒道具的诅咒值减少1，一般的道具会成为幸运武器，幸运值最多会增加+7。",
     "category": "普通道具",
     "game": {
-      "icon": "/images/zircon-match/item/53.webp",
-      "eng_name": "Oil Of Conservation",
-      "zircon_index": 297,
-      "image_index": 53,
-      "match_method": "exact",
-      "note": "Zircon 客户端 Storeitems 道具图标"
+      "icon": "/images/zircon-match/item/63.webp",
+      "eng_name": "Oil Of Benediction",
+      "zircon_index": 296,
+      "image_index": 63,
+      "match_method": "classic",
+      "note": "Zircon 官方原生（Index 296 / Looks 63 葫芦青瓶）"
     },
     "game_missing_reason": null
   },
@@ -5722,8 +5722,8 @@
       "eng_name": "Oil Of The War God",
       "zircon_index": 298,
       "image_index": 61,
-      "match_method": "exact",
-      "note": "Zircon 客户端 Storeitems 道具图标"
+      "match_method": "classic",
+      "note": "Zircon 官方原生（Index 298 / Looks 61 红瓶）"
     },
     "game_missing_reason": null
   },
@@ -5734,11 +5734,11 @@
     "category": "普通道具",
     "game": {
       "icon": "/images/zircon-match/item/53.webp",
-      "eng_name": "Repair Oil",
+      "eng_name": "Oil Of Conservation",
       "zircon_index": 297,
       "image_index": 53,
-      "match_method": "exact",
-      "note": "Zircon 客户端 Storeitems 道具图标"
+      "match_method": "classic",
+      "note": "Zircon 官方原生（Index 297 / Looks 53 黄罐）"
     },
     "game_missing_reason": null
   },
@@ -5748,12 +5748,12 @@
     "描述": "(小) 5分钟体力值提高50 (中) 10分钟体力值提高80 (大) 20分钟体力值提高120 (特) 30分钟体力值提高170.",
     "category": "普通道具",
     "game": {
-      "icon": "/images/zircon-match/item/64.webp",
+      "icon": "/images/zircon-match/item/85.webp",
       "eng_name": "Superior Body Elixir",
-      "zircon_index": 226,
-      "image_index": 64,
+      "zircon_index": 0,
+      "image_index": 85,
       "match_method": "classic",
-      "note": "光通原版经典图库（Looks 64）"
+      "note": "光通原版经典图库（Looks 85 红瓶）"
     },
     "game_missing_reason": null
   },
@@ -5763,12 +5763,12 @@
     "描述": "(小) 5分钟魔力值提高50 (中) 10分钟魔力值提高80 (大) 20分钟魔力值提高120 (特) 30分钟魔力值提高170.",
     "category": "普通道具",
     "game": {
-      "icon": "/images/zircon-match/item/64.webp",
+      "icon": "/images/zircon-match/item/83.webp",
       "eng_name": "Superior Magic Elixir",
-      "zircon_index": 226,
-      "image_index": 64,
+      "zircon_index": 0,
+      "image_index": 83,
       "match_method": "classic",
-      "note": "光通原版经典图库（Looks 64）"
+      "note": "光通原版经典图库（Looks 83 深蓝瓶）"
     },
     "game_missing_reason": null
   },
@@ -5778,12 +5778,12 @@
     "描述": "(小) 5分钟破坏值提高5 (中) 10分钟破坏值提高8 (大) 20分钟破坏值提高12 (特) 30分钟破坏值提高17.",
     "category": "普通道具",
     "game": {
-      "icon": "/images/zircon-match/item/64.webp",
+      "icon": "/images/zircon-match/item/84.webp",
       "eng_name": "Attack Elixir",
-      "zircon_index": 226,
-      "image_index": 64,
+      "zircon_index": 0,
+      "image_index": 84,
       "match_method": "classic",
-      "note": "光通原版经典图库（Looks 64）"
+      "note": "光通原版经典图库（Looks 84 橘红瓶）"
     },
     "game_missing_reason": null
   },
@@ -5793,12 +5793,12 @@
     "描述": "(小) 5分钟魔法值提高3 (中) 10分钟魔法值提高6 (大) 20分钟魔法值提高10 (特) 30分钟魔法值提高15",
     "category": "普通道具",
     "game": {
-      "icon": "/images/zircon-match/item/64.webp",
+      "icon": "/images/zircon-match/item/82.webp",
       "eng_name": "Nature Elixir",
-      "zircon_index": 226,
-      "image_index": 64,
+      "zircon_index": 0,
+      "image_index": 82,
       "match_method": "classic",
-      "note": "光通原版经典图库（Looks 64）"
+      "note": "光通原版经典图库（Looks 82 天蓝瓶）"
     },
     "game_missing_reason": null
   },
@@ -5808,12 +5808,12 @@
     "描述": "(小) 5分钟道力值提高3 (中) 10分钟道力值提高6 (大) 20分钟道力值提高10 (特) 30分钟道力值提高15",
     "category": "普通道具",
     "game": {
-      "icon": "/images/zircon-match/item/64.webp",
+      "icon": "/images/zircon-match/item/81.webp",
       "eng_name": "Soul Elixir",
-      "zircon_index": 226,
-      "image_index": 64,
+      "zircon_index": 0,
+      "image_index": 81,
       "match_method": "classic",
-      "note": "光通原版经典图库（Looks 64）"
+      "note": "光通原版经典图库（Looks 81 金黄瓶）"
     },
     "game_missing_reason": null
   },
@@ -5823,12 +5823,12 @@
     "描述": "(小) 5分钟，提高进攻速度 (中) 10分钟，提高进攻速度 (大) 20分钟，提高进攻速度 (特) 30分钟，提高进攻速度",
     "category": "普通道具",
     "game": {
-      "icon": "/images/zircon-match/item/64.webp",
+      "icon": "/images/zircon-match/item/80.webp",
       "eng_name": "Wind Elixir",
-      "zircon_index": 226,
-      "image_index": 64,
+      "zircon_index": 0,
+      "image_index": 80,
       "match_method": "classic",
-      "note": "光通原版经典图库（Looks 64）"
+      "note": "光通原版经典图库（Looks 80 深褐瓶）"
     },
     "game_missing_reason": null
   },
@@ -5974,11 +5974,11 @@
     "category": "普通道具",
     "game": {
       "icon": "/images/zircon-match/item/131.webp",
-      "eng_name": "Green Poison",
-      "zircon_index": 229,
+      "eng_name": "Grey Poison Powder",
+      "zircon_index": 0,
       "image_index": 131,
-      "match_method": "exact",
-      "note": "Zircon 客户端 Storeitems 道具图标"
+      "match_method": "classic",
+      "note": "光通原版经典图库（灰色毒粉袋 Looks 131）"
     },
     "game_missing_reason": null
   },
@@ -5989,11 +5989,11 @@
     "category": "普通道具",
     "game": {
       "icon": "/images/zircon-match/item/130.webp",
-      "eng_name": "Red Poison",
-      "zircon_index": 230,
+      "eng_name": "Yellow Poison Powder",
+      "zircon_index": 0,
       "image_index": 130,
-      "match_method": "exact",
-      "note": "Zircon 客户端 Storeitems 道具图标"
+      "match_method": "classic",
+      "note": "光通原版经典图库（黄色毒粉袋 Looks 130）"
     },
     "game_missing_reason": null
   },
@@ -6007,8 +6007,8 @@
       "eng_name": "Talisman",
       "zircon_index": 220,
       "image_index": 330,
-      "match_method": "exact",
-      "note": "Zircon 客户端 Storeitems 道具图标"
+      "match_method": "classic",
+      "note": "光通原版经典图库（道家护身符 Looks 330）"
     },
     "game_missing_reason": null
   },
@@ -6018,12 +6018,12 @@
     "描述": "可以在村子杂货商那里买到，道士使用灵魂火符、幽灵盾、神圣战甲术时需要的物品，加强了火系属性，因此会提高火系能力。",
     "category": "普通道具",
     "game": {
-      "icon": "/images/zircon-match/item/1152.webp",
+      "icon": "/images/zircon-match/item/331.webp",
       "eng_name": "Talisman Of Fire",
-      "zircon_index": 222,
-      "image_index": 1152,
-      "match_method": "exact",
-      "note": "Zircon 客户端 Storeitems 道具图标"
+      "zircon_index": 1351,
+      "image_index": 331,
+      "match_method": "classic",
+      "note": "光通原版经典图库（火焰护身符 Looks 331）"
     },
     "game_missing_reason": null
   },
@@ -6033,12 +6033,12 @@
     "描述": "可以在村子杂货商那里买到，道士使用灵魂火符、幽灵盾、神圣战甲术时需要的物品，加强了冰系属性，因此会提高冰系能力。",
     "category": "普通道具",
     "game": {
-      "icon": "/images/zircon-match/item/1153.webp",
+      "icon": "/images/zircon-match/item/332.webp",
       "eng_name": "Talisman Of Ice",
-      "zircon_index": 224,
-      "image_index": 1153,
-      "match_method": "exact",
-      "note": "Zircon 客户端 Storeitems 道具图标"
+      "zircon_index": 1353,
+      "image_index": 332,
+      "match_method": "classic",
+      "note": "光通原版经典图库（寒气护身符 Looks 332）"
     },
     "game_missing_reason": null
   },
@@ -6048,12 +6048,12 @@
     "描述": "可以在村子杂货商那里买到，道士使用灵魂火符、幽灵盾、神圣战甲术时需要的物品，加强了雷系属性，因此会提高雷系能力。可以使用100次制作原料为骷髅骨2个，鸡血4个、食人花叶2个。",
     "category": "普通道具",
     "game": {
-      "icon": "/images/zircon-match/item/1154.webp",
+      "icon": "/images/zircon-match/item/333.webp",
       "eng_name": "Talisman Of Lightning",
-      "zircon_index": 226,
-      "image_index": 1154,
-      "match_method": "exact",
-      "note": "Zircon 客户端 Storeitems 道具图标"
+      "zircon_index": 1355,
+      "image_index": 333,
+      "match_method": "classic",
+      "note": "光通原版经典图库（霹雷护身符 Looks 333）"
     },
     "game_missing_reason": null
   },
@@ -6063,12 +6063,12 @@
     "描述": "可以在村子杂货商那里买到，道士使用灵魂火符、幽灵盾、神圣战甲术时需要的物品，加强了风系属性，因此会提高风系能力。",
     "category": "普通道具",
     "game": {
-      "icon": "/images/zircon-match/item/1155.webp",
+      "icon": "/images/zircon-match/item/334.webp",
       "eng_name": "Talisman Of Wind Storm",
-      "zircon_index": 227,
-      "image_index": 1155,
-      "match_method": "exact",
-      "note": "Zircon 客户端 Storeitems 道具图标"
+      "zircon_index": 1356,
+      "image_index": 334,
+      "match_method": "classic",
+      "note": "光通原版经典图库（狂风护身符 Looks 334）"
     },
     "game_missing_reason": null
   },
@@ -6080,10 +6080,10 @@
     "game": {
       "icon": "/images/zircon-match/item/335.webp",
       "eng_name": "Holy Talisman",
-      "zircon_index": 860,
+      "zircon_index": 0,
       "image_index": 335,
       "match_method": "classic",
-      "note": "光通原版经典图库（Looks 335）"
+      "note": "光通原版经典图库（神圣道符 Looks 335）"
     },
     "game_missing_reason": null
   },
@@ -6095,10 +6095,10 @@
     "game": {
       "icon": "/images/zircon-match/item/1150.webp",
       "eng_name": "Talisman Of Soul",
-      "zircon_index": 228,
+      "zircon_index": 1357,
       "image_index": 1150,
-      "match_method": "exact",
-      "note": "Zircon 客户端 Storeitems 道具图标"
+      "match_method": "classic",
+      "note": "光通原版经典图库（灵魂道符 Looks 1150）"
     },
     "game_missing_reason": null
   },
