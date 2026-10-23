@@ -15,7 +15,6 @@
       "eng_name": "Wood Sword",
       "zircon_index": 126,
       "image_index": 1042,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -37,7 +36,6 @@
       "eng_name": "Dagger",
       "zircon_index": 174,
       "image_index": 1045,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -59,7 +57,6 @@
       "eng_name": "Bronze Sword",
       "zircon_index": 439,
       "image_index": 1043,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -81,8 +78,7 @@
       "eng_name": "Iron Sword",
       "zircon_index": 176,
       "image_index": 1043,
-      "item_type": "Weapon",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -103,7 +99,6 @@
       "eng_name": "Arisu Wood Sword",
       "zircon_index": 178,
       "image_index": 1042,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -125,7 +120,6 @@
       "eng_name": "Pick Axe",
       "zircon_index": 816,
       "image_index": 1040,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -147,7 +141,6 @@
       "eng_name": "Pick Axe Of Wind",
       "zircon_index": 817,
       "image_index": 1048,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -164,8 +157,15 @@
     "其它": "任务",
     "等级": "0",
     "category": "武器",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/1122.webp",
+      "eng_name": "Assault Iron Sword",
+      "zircon_index": 512,
+      "image_index": 1122,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 1122）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic1/item_35.gif",
@@ -178,8 +178,15 @@
     "其它": "任务",
     "等级": "0",
     "category": "武器",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/1121.webp",
+      "eng_name": "Blazing Sword",
+      "zircon_index": 799,
+      "image_index": 1121,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 1121）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic1/item_30.gif",
@@ -192,8 +199,15 @@
     "其它": "任务",
     "等级": "0",
     "category": "武器",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/1122.webp",
+      "eng_name": "Thin Blade",
+      "zircon_index": 512,
+      "image_index": 1122,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 1122）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic1/item_30.gif",
@@ -206,8 +220,15 @@
     "其它": "任务",
     "等级": "0",
     "category": "武器",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/1122.webp",
+      "eng_name": "Wave Rain Scimitar",
+      "zircon_index": 539,
+      "image_index": 1122,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 1122）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic1/item_30.gif",
@@ -220,8 +241,15 @@
     "其它": "任务",
     "等级": "0",
     "category": "武器",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/1122.webp",
+      "eng_name": "White Tiger Sword",
+      "zircon_index": 541,
+      "image_index": 1122,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 1122）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic1/item_34.gif",
@@ -234,8 +262,15 @@
     "其它": "-",
     "等级": "10",
     "category": "武器",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/1052.webp",
+      "eng_name": "Soul Breaker",
+      "zircon_index": 37,
+      "image_index": 1052,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 1052）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic1/item_35.gif",
@@ -248,8 +283,15 @@
     "其它": "-",
     "等级": "30",
     "category": "武器",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/1121.webp",
+      "eng_name": "Red Blood Sword",
+      "zircon_index": 281,
+      "image_index": 1121,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 1121）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic1/item_13.gif",
@@ -267,8 +309,7 @@
       "eng_name": "Iron Sword",
       "zircon_index": 176,
       "image_index": 1043,
-      "item_type": "Weapon",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -289,7 +330,6 @@
       "eng_name": "Bronze Axe",
       "zircon_index": 184,
       "image_index": 1060,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -306,8 +346,15 @@
     "其它": "-",
     "等级": "15",
     "category": "武器",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/1053.webp",
+      "eng_name": "Eight Extremes Blade",
+      "zircon_index": 56,
+      "image_index": 1053,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 1053）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic1/item_09.gif",
@@ -320,8 +367,15 @@
     "其它": "-",
     "等级": "17",
     "category": "武器",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/1055.webp",
+      "eng_name": "Wind Slicer",
+      "zircon_index": 36,
+      "image_index": 1055,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 1055）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic1/item_10.gif",
@@ -334,8 +388,15 @@
     "其它": "-",
     "等级": "18",
     "category": "武器",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/1042.webp",
+      "eng_name": "Hidden Blade",
+      "zircon_index": 126,
+      "image_index": 1042,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 1042）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic1/item_12.gif",
@@ -353,7 +414,6 @@
       "eng_name": "Power Axe",
       "zircon_index": 306,
       "image_index": 1065,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -370,8 +430,15 @@
     "其它": "速度+1",
     "等级": "23",
     "category": "武器",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/1252.webp",
+      "eng_name": "Woma Power Axe",
+      "zircon_index": 746,
+      "image_index": 1252,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 1252）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic1/item_07.gif",
@@ -389,7 +456,6 @@
       "eng_name": "Sword Of Purification",
       "zircon_index": 357,
       "image_index": 1210,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -411,7 +477,6 @@
       "eng_name": "Numa Power Axe",
       "zircon_index": 494,
       "image_index": 1250,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -433,7 +498,6 @@
       "eng_name": "Bone Claymore",
       "zircon_index": 328,
       "image_index": 1044,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -450,8 +514,15 @@
     "其它": "-",
     "等级": "29",
     "category": "武器",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/1240.webp",
+      "eng_name": "Forged Great Axe",
+      "zircon_index": 742,
+      "image_index": 1240,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 1240）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic1/item_15.gif",
@@ -469,7 +540,6 @@
       "eng_name": "Enchanted Blade",
       "zircon_index": 363,
       "image_index": 1067,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -491,7 +561,6 @@
       "eng_name": "Great Axe",
       "zircon_index": 428,
       "image_index": 1066,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -513,7 +582,6 @@
       "eng_name": "Forged Scimitar",
       "zircon_index": 547,
       "image_index": 1068,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -535,7 +603,6 @@
       "eng_name": "Zuma Judgement Mace",
       "zircon_index": 402,
       "image_index": 1302,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -557,7 +624,6 @@
       "eng_name": "Enchanted Blade Of Banya",
       "zircon_index": 507,
       "image_index": 1170,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -579,7 +645,6 @@
       "eng_name": "Judgement Mace",
       "zircon_index": 549,
       "image_index": 1069,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -601,7 +666,6 @@
       "eng_name": "Sword Of Abyss",
       "zircon_index": 635,
       "image_index": 1074,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -623,7 +687,6 @@
       "eng_name": "Apocalypse",
       "zircon_index": 683,
       "image_index": 1041,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -645,7 +708,6 @@
       "eng_name": "Fury Blade",
       "zircon_index": 621,
       "image_index": 1049,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -667,7 +729,6 @@
       "eng_name": "Obsidian Giant Blade",
       "zircon_index": 819,
       "image_index": 1070,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -684,8 +745,15 @@
     "其它": "-",
     "等级": "11",
     "category": "武器",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/1080.webp",
+      "eng_name": "Cursed Trident",
+      "zircon_index": 826,
+      "image_index": 1080,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 1080）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic1/item_25.gif",
@@ -703,7 +771,6 @@
       "eng_name": "Trident",
       "zircon_index": 186,
       "image_index": 1080,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -725,7 +792,6 @@
       "eng_name": "War Spear",
       "zircon_index": 201,
       "image_index": 1081,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -742,8 +808,15 @@
     "其它": "-",
     "等级": "20",
     "category": "武器",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/1081.webp",
+      "eng_name": "Crimson War Spear",
+      "zircon_index": 724,
+      "image_index": 1081,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 1081）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic1/item_26.gif",
@@ -756,8 +829,15 @@
     "其它": "-",
     "等级": "23",
     "category": "武器",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/1310.webp",
+      "eng_name": "Woma War Spear",
+      "zircon_index": 748,
+      "image_index": 1310,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 1310）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic1/item_24.gif",
@@ -775,7 +855,6 @@
       "eng_name": "Mage Staff",
       "zircon_index": 329,
       "image_index": 1082,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -797,7 +876,6 @@
       "eng_name": "Numa Mage Staff",
       "zircon_index": 495,
       "image_index": 1280,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -819,7 +897,6 @@
       "eng_name": "Mage Sword",
       "zircon_index": 429,
       "image_index": 1083,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -841,7 +918,6 @@
       "eng_name": "Banya Mage Staff",
       "zircon_index": 524,
       "image_index": 1281,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -863,7 +939,6 @@
       "eng_name": "Zuma Dragon Bone Staff",
       "zircon_index": 404,
       "image_index": 1193,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -885,7 +960,6 @@
       "eng_name": "Mage Sword Of Banya",
       "zircon_index": 509,
       "image_index": 1083,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -907,7 +981,6 @@
       "eng_name": "Dragon Bone Staff",
       "zircon_index": 550,
       "image_index": 1084,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -929,7 +1002,6 @@
       "eng_name": "Glaive Of Doom",
       "zircon_index": 636,
       "image_index": 1086,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -951,7 +1023,6 @@
       "eng_name": "Muk's Staff Of Retribution",
       "zircon_index": 825,
       "image_index": 1085,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -973,7 +1044,6 @@
       "eng_name": "Twisted Blade Of Souls",
       "zircon_index": 622,
       "image_index": 1061,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -995,7 +1065,6 @@
       "eng_name": "Heavenly Staff Of Immortality",
       "zircon_index": 684,
       "image_index": 1047,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -1012,8 +1081,15 @@
     "其它": "-",
     "等级": "11",
     "category": "武器",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/1100.webp",
+      "eng_name": "Cursed Scimitar",
+      "zircon_index": 828,
+      "image_index": 1100,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 1100）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic1/item_29.gif",
@@ -1031,7 +1107,6 @@
       "eng_name": "Scimitar",
       "zircon_index": 187,
       "image_index": 1100,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -1053,7 +1128,6 @@
       "eng_name": "War Blade",
       "zircon_index": 202,
       "image_index": 1101,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -1070,8 +1144,15 @@
     "其它": "-",
     "等级": "20",
     "category": "武器",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/1101.webp",
+      "eng_name": "Black Light War Blade",
+      "zircon_index": 725,
+      "image_index": 1101,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 1101）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic1/item_27.gif",
@@ -1084,8 +1165,15 @@
     "其它": "幸运+1",
     "等级": "23",
     "category": "武器",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/1163.webp",
+      "eng_name": "Woma War Blade",
+      "zircon_index": 747,
+      "image_index": 1163,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 1163）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic1/item_28.gif",
@@ -1103,7 +1191,6 @@
       "eng_name": "Serpent Sword",
       "zircon_index": 330,
       "image_index": 1102,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -1125,7 +1212,6 @@
       "eng_name": "Cursed Serpent Sword",
       "zircon_index": 497,
       "image_index": 1231,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -1147,7 +1233,6 @@
       "eng_name": "Valor Blade",
       "zircon_index": 430,
       "image_index": 1062,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -1169,7 +1254,6 @@
       "eng_name": "Serpent Sword Of Banya",
       "zircon_index": 523,
       "image_index": 1233,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -1191,7 +1275,6 @@
       "eng_name": "Zuma Runed Staff",
       "zircon_index": 403,
       "image_index": 1260,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -1213,7 +1296,6 @@
       "eng_name": "Runed Staff Of Banya",
       "zircon_index": 510,
       "image_index": 1263,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -1235,7 +1317,6 @@
       "eng_name": "Runed Staff",
       "zircon_index": 548,
       "image_index": 1103,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -1257,7 +1338,6 @@
       "eng_name": "Warden's Fan Of Obedience",
       "zircon_index": 637,
       "image_index": 1105,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -1279,7 +1359,6 @@
       "eng_name": "Divine Blade Of Judgement",
       "zircon_index": 820,
       "image_index": 1104,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -1301,7 +1380,6 @@
       "eng_name": "Celestial Blade",
       "zircon_index": 632,
       "image_index": 1046,
-      "item_type": "Weapon",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -1323,8 +1401,7 @@
       "eng_name": "Commoner Outfit (M)",
       "zircon_index": 127,
       "image_index": 941,
-      "item_type": "Armour",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -1345,8 +1422,7 @@
       "eng_name": "Light Armour (M)",
       "zircon_index": 188,
       "image_index": 942,
-      "item_type": "Armour",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -1362,8 +1438,15 @@
     "魔法": "-",
     "需要等级": "11",
     "category": "盔甲",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/942.webp",
+      "eng_name": "Custom Light Armour",
+      "zircon_index": 188,
+      "image_index": 942,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 942）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic2/item22.gif",
@@ -1381,8 +1464,7 @@
       "eng_name": "Flame Robe (M)",
       "zircon_index": 194,
       "image_index": 1020,
-      "item_type": "Armour",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -1398,8 +1480,15 @@
     "魔法": "自然 0-3",
     "需要等级": "22",
     "category": "盔甲",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/1020.webp",
+      "eng_name": "Resin Magic Robe",
+      "zircon_index": 194,
+      "image_index": 1020,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 1020）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic2/item24.gif",
@@ -1417,8 +1506,7 @@
       "eng_name": "Robe Of Dark Flame (M)",
       "zircon_index": 337,
       "image_index": 1021,
-      "item_type": "Armour",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -1434,8 +1522,15 @@
     "魔法": "自然 0-5",
     "需要等级": "38",
     "category": "盔甲",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/1022.webp",
+      "eng_name": "Yuanling Robe",
+      "zircon_index": 839,
+      "image_index": 1022,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 1022）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic2/item28.gif",
@@ -1453,8 +1548,7 @@
       "eng_name": "Medium Armour (M)",
       "zircon_index": 192,
       "image_index": 980,
-      "item_type": "Armour",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -1470,8 +1564,15 @@
     "魔法": "-",
     "需要等级": "23",
     "category": "盔甲",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/980.webp",
+      "eng_name": "Numa Heavy Armour",
+      "zircon_index": 533,
+      "image_index": 980,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 980）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic2/item30.gif",
@@ -1489,8 +1590,7 @@
       "eng_name": "Iron Plate Armour (M)",
       "zircon_index": 335,
       "image_index": 981,
-      "item_type": "Armour",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -1506,8 +1606,15 @@
     "魔法": "-",
     "需要等级": "38",
     "category": "盔甲",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/982.webp",
+      "eng_name": "Dragon Scale Armour",
+      "zircon_index": 837,
+      "image_index": 982,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 982）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic2/item16.gif",
@@ -1525,8 +1632,7 @@
       "eng_name": "Faith Robe (M)",
       "zircon_index": 196,
       "image_index": 1000,
-      "item_type": "Armour",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -1542,8 +1648,15 @@
     "魔法": "灵魂 0-3",
     "需要等级": "23",
     "category": "盔甲",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/1000.webp",
+      "eng_name": "Miraculous Soul Robe",
+      "zircon_index": 535,
+      "image_index": 1000,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 1000）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic2/item18.gif",
@@ -1561,8 +1674,7 @@
       "eng_name": "Robe Of Balance (M)",
       "zircon_index": 339,
       "image_index": 1001,
-      "item_type": "Armour",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -1578,8 +1690,15 @@
     "魔法": "灵魂 0-5",
     "需要等级": "38",
     "category": "盔甲",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/1002.webp",
+      "eng_name": "Tianji Taoist Robe",
+      "zircon_index": 841,
+      "image_index": 1002,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 1002）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic3/item02.gif",
@@ -1599,7 +1718,6 @@
       "eng_name": "Iron Bracer",
       "zircon_index": 161,
       "image_index": 646,
-      "item_type": "Bracelet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -1618,8 +1736,15 @@
     "其它": "准确+1",
     "需要能力": "3",
     "category": "手镯",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/646.webp",
+      "eng_name": "Durable Iron Bracer",
+      "zircon_index": 161,
+      "image_index": 646,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 646）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic3/item11.gif",
@@ -1639,7 +1764,6 @@
       "eng_name": "Bracelet Of Exertion",
       "zircon_index": 171,
       "image_index": 660,
-      "item_type": "Bracelet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -1663,7 +1787,6 @@
       "eng_name": "Silver Bracelet",
       "zircon_index": 163,
       "image_index": 722,
-      "item_type": "Bracelet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -1687,7 +1810,6 @@
       "eng_name": "Steel Bracelet",
       "zircon_index": 443,
       "image_index": 646,
-      "item_type": "Bracelet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -1711,7 +1833,6 @@
       "eng_name": "Golden Bracelet",
       "zircon_index": 168,
       "image_index": 644,
-      "item_type": "Bracelet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -1735,7 +1856,6 @@
       "eng_name": "Dark Blade",
       "zircon_index": 487,
       "image_index": 721,
-      "item_type": "Bracelet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -1754,8 +1874,15 @@
     "其它": "敏捷+2",
     "需要能力": "9",
     "category": "手镯",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/723.webp",
+      "eng_name": "Bracelet Of Evasion",
+      "zircon_index": 488,
+      "image_index": 723,
+      "match_method": "exact",
+      "note": "Zircon 客户端 Storeitems 道具图标"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic3/item12.gif",
@@ -1775,7 +1902,6 @@
       "eng_name": "Magic Bracelet",
       "zircon_index": 169,
       "image_index": 647,
-      "item_type": "Bracelet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -1794,8 +1920,15 @@
     "其它": "-",
     "需要能力": "17",
     "category": "手镯",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/645.webp",
+      "eng_name": "Ripple Bracelet",
+      "zircon_index": 540,
+      "image_index": 645,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 645）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic3/item13.gif",
@@ -1815,7 +1948,6 @@
       "eng_name": "Gold Plated Bracelet",
       "zircon_index": 381,
       "image_index": 645,
-      "item_type": "Bracelet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -1839,7 +1971,6 @@
       "eng_name": "Bracer Of Magic",
       "zircon_index": 451,
       "image_index": 680,
-      "item_type": "Bracelet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -1858,8 +1989,15 @@
     "其它": "准确+2",
     "需要能力": "10",
     "category": "手镯",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/646.webp",
+      "eng_name": "Soul Iron Bracer",
+      "zircon_index": 161,
+      "image_index": 646,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 646）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic3/item19.gif",
@@ -1874,8 +2012,15 @@
     "其它": "-",
     "需要能力": "16",
     "category": "手镯",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/680.webp",
+      "eng_name": "Wojiao Bracelet",
+      "zircon_index": 716,
+      "image_index": 680,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 680）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic3/item20.gif",
@@ -1895,7 +2040,6 @@
       "eng_name": "Bracelet Of Three Eyes",
       "zircon_index": 470,
       "image_index": 681,
-      "item_type": "Bracelet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -1919,7 +2063,6 @@
       "eng_name": "Holy Bracer",
       "zircon_index": 505,
       "image_index": 682,
-      "item_type": "Bracelet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -1943,7 +2086,6 @@
       "eng_name": "Bracer Of Artisan",
       "zircon_index": 375,
       "image_index": 663,
-      "item_type": "Bracelet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -1967,7 +2109,6 @@
       "eng_name": "Bracelet Of Ascension",
       "zircon_index": 666,
       "image_index": 725,
-      "item_type": "Bracelet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -1986,8 +2127,15 @@
     "其它": "-",
     "需要能力": "10",
     "category": "手镯",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/660.webp",
+      "eng_name": "Warrior Bracelet",
+      "zircon_index": 846,
+      "image_index": 660,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 660）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic3/item11.gif",
@@ -2007,7 +2155,6 @@
       "eng_name": "Bracelet Of Exertion",
       "zircon_index": 171,
       "image_index": 660,
-      "item_type": "Bracelet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -2015,7 +2162,7 @@
   },
   {
     "image": "../images/item/pic3/item04.gif",
-    "name": "伏�x手镯",
+    "name": "伏羲手镯",
     "重量": "1",
     "持久": "8",
     "防御": "-",
@@ -2026,8 +2173,15 @@
     "其它": "-",
     "需要能力": "15",
     "category": "手镯",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/660.webp",
+      "eng_name": "Fuxi Bracelet",
+      "zircon_index": 556,
+      "image_index": 660,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 660）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic3/item04.gif",
@@ -2042,8 +2196,15 @@
     "其它": "-",
     "需要能力": "需要 破坏 27",
     "category": "手镯",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/660.webp",
+      "eng_name": "Wodu Small Bracelet",
+      "zircon_index": 171,
+      "image_index": 660,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 660）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic3/item06.gif",
@@ -2063,8 +2224,7 @@
       "eng_name": "Gauntlet Of Deathbringer",
       "zircon_index": 210,
       "image_index": 661,
-      "item_type": "Bracelet",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -2087,7 +2247,6 @@
       "eng_name": "Hero's Bracelet",
       "zircon_index": 504,
       "image_index": 662,
-      "item_type": "Bracelet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -2111,7 +2270,6 @@
       "eng_name": "Tainted Bracelet",
       "zircon_index": 377,
       "image_index": 684,
-      "item_type": "Bracelet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -2135,7 +2293,6 @@
       "eng_name": "Bracer Of Revelation",
       "zircon_index": 664,
       "image_index": 685,
-      "item_type": "Bracelet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -2159,7 +2316,6 @@
       "eng_name": "Arisu Bracelet",
       "zircon_index": 170,
       "image_index": 700,
-      "item_type": "Bracelet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -2178,8 +2334,15 @@
     "其它": "-",
     "需要能力": "11",
     "category": "手镯",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/684.webp",
+      "eng_name": "Tainted Bracelet",
+      "zircon_index": 377,
+      "image_index": 684,
+      "match_method": "exact",
+      "note": "Zircon 客户端 Storeitems 道具图标"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic3/item18.gif",
@@ -2199,7 +2362,6 @@
       "eng_name": "Bracelet Of Sorcery",
       "zircon_index": 211,
       "image_index": 701,
-      "item_type": "Bracelet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -2218,8 +2380,15 @@
     "其它": "-",
     "需要能力": "23",
     "category": "手镯",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/760.webp",
+      "eng_name": "Moonstone Bracelet",
+      "zircon_index": 552,
+      "image_index": 760,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 760）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic3/item16.gif",
@@ -2239,7 +2408,6 @@
       "eng_name": "Wyvern Bracelet",
       "zircon_index": 506,
       "image_index": 702,
-      "item_type": "Bracelet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -2263,7 +2431,6 @@
       "eng_name": "Ring Of Destruction",
       "zircon_index": 480,
       "image_index": 683,
-      "item_type": "Bracelet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -2287,7 +2454,6 @@
       "eng_name": "Ring Of Enlightenment",
       "zircon_index": 665,
       "image_index": 703,
-      "item_type": "Bracelet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -2306,8 +2472,15 @@
     "其它": "-",
     "需要能力": "稀有",
     "category": "手镯",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/649.webp",
+      "eng_name": "Magic Order Bracelet",
+      "zircon_index": 603,
+      "image_index": 649,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 649）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/up/luomapic/image032.gif",
@@ -2327,7 +2500,6 @@
       "eng_name": "Holy Bracer Of Grace",
       "zircon_index": 867,
       "image_index": 741,
-      "item_type": "Bracelet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -2350,7 +2522,6 @@
       "eng_name": "Horned Ring",
       "zircon_index": 165,
       "image_index": 470,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -2373,7 +2544,6 @@
       "eng_name": "Blue Crystal Ring",
       "zircon_index": 441,
       "image_index": 472,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -2396,7 +2566,6 @@
       "eng_name": "Copper Ring",
       "zircon_index": 440,
       "image_index": 530,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -2419,7 +2588,6 @@
       "eng_name": "Black Crystal Ring",
       "zircon_index": 172,
       "image_index": 531,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -2442,7 +2610,6 @@
       "eng_name": "Skeleton Ring",
       "zircon_index": 581,
       "image_index": 532,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -2460,8 +2627,15 @@
     "其它": "-",
     "装备要求": "15",
     "category": "戒指",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/491.webp",
+      "eng_name": "Black Pearl Ring",
+      "zircon_index": 173,
+      "image_index": 491,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 491）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic4/item24.gif",
@@ -2480,7 +2654,6 @@
       "eng_name": "Gale Ring",
       "zircon_index": 354,
       "image_index": 550,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -2503,7 +2676,6 @@
       "eng_name": "Coral Ring",
       "zircon_index": 208,
       "image_index": 533,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -2521,8 +2693,15 @@
     "其它": "-",
     "装备要求": "20",
     "category": "戒指",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/475.webp",
+      "eng_name": "Loop Of Reincarnation",
+      "zircon_index": 559,
+      "image_index": 475,
+      "match_method": "exact",
+      "note": "Zircon 客户端 Storeitems 道具图标"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic4/item07.gif",
@@ -2536,8 +2715,15 @@
     "其它": "-",
     "装备要求": "20",
     "category": "戒指",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/537.webp",
+      "eng_name": "Universe Ring",
+      "zircon_index": 627,
+      "image_index": 537,
+      "match_method": "exact",
+      "note": "Zircon 客户端 Storeitems 道具图标"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic4/item07.gif",
@@ -2551,8 +2737,15 @@
     "其它": "-",
     "装备要求": "20",
     "category": "戒指",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/532.webp",
+      "eng_name": "Skeleton Ring",
+      "zircon_index": 581,
+      "image_index": 532,
+      "match_method": "exact",
+      "note": "Zircon 客户端 Storeitems 道具图标"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic4/item06.gif",
@@ -2571,7 +2764,6 @@
       "eng_name": "Gold Dragon Ring",
       "zircon_index": 533,
       "image_index": 534,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -2594,7 +2786,6 @@
       "eng_name": "Red Maple Ring",
       "zircon_index": 492,
       "image_index": 499,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -2617,7 +2808,6 @@
       "eng_name": "Spiked Ring",
       "zircon_index": 489,
       "image_index": 535,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -2640,7 +2830,6 @@
       "eng_name": "Ring Of Sovereignty",
       "zircon_index": 568,
       "image_index": 515,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -2663,7 +2852,6 @@
       "eng_name": "Ring Of Unification",
       "zircon_index": 530,
       "image_index": 498,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -2686,7 +2874,6 @@
       "eng_name": "Ancient Myrmidon Band",
       "zircon_index": 397,
       "image_index": 497,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -2709,7 +2896,6 @@
       "eng_name": "Loop Of Endless Combat",
       "zircon_index": 398,
       "image_index": 496,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -2732,7 +2918,6 @@
       "eng_name": "Perfection Ring",
       "zircon_index": 626,
       "image_index": 536,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -2755,7 +2940,6 @@
       "eng_name": "Universe Ring",
       "zircon_index": 627,
       "image_index": 537,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -2778,7 +2962,6 @@
       "eng_name": "Signet Of Myrmidon",
       "zircon_index": 658,
       "image_index": 538,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -2801,7 +2984,6 @@
       "eng_name": "Glass Ring",
       "zircon_index": 166,
       "image_index": 490,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -2824,7 +3006,6 @@
       "eng_name": "Pearl Ring",
       "zircon_index": 173,
       "image_index": 491,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -2842,8 +3023,15 @@
     "其它": "-",
     "装备要求": "19",
     "category": "戒指",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/491.webp",
+      "eng_name": "White Eye Pearl Ring",
+      "zircon_index": 173,
+      "image_index": 491,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 491）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic4/item19.gif",
@@ -2862,7 +3050,6 @@
       "eng_name": "Ring Of Discipline",
       "zircon_index": 468,
       "image_index": 492,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -2880,8 +3067,15 @@
     "其它": "神圣 1",
     "装备要求": "20",
     "category": "戒指",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/536.webp",
+      "eng_name": "Perfection Ring",
+      "zircon_index": 626,
+      "image_index": 536,
+      "match_method": "exact",
+      "note": "Zircon 客户端 Storeitems 道具图标"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic4/item14.gif",
@@ -2897,12 +3091,11 @@
     "category": "戒指",
     "game": {
       "icon": "/images/zircon-match/item/474.webp",
-      "eng_name": "Ring Of Exorcism",
-      "zircon_index": 333,
+      "eng_name": "Classic 黑除魔戒指",
+      "zircon_index": 766,
       "image_index": 474,
-      "item_type": "Ring",
-      "match_method": "alias",
-      "note": "Zircon 客户端 Storeitems 道具图标"
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 474）"
     },
     "game_missing_reason": null
   },
@@ -2923,7 +3116,6 @@
       "eng_name": "Gold Ring",
       "zircon_index": 307,
       "image_index": 473,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -2946,8 +3138,7 @@
       "eng_name": "Ring Of Exorcism",
       "zircon_index": 333,
       "image_index": 474,
-      "item_type": "Ring",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -2969,7 +3160,6 @@
       "eng_name": "Platinum Ring",
       "zircon_index": 532,
       "image_index": 493,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -2987,8 +3177,15 @@
     "其它": "神圣 1",
     "装备要求": "26",
     "category": "戒指",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/493.webp",
+      "eng_name": "Platinum Ring",
+      "zircon_index": 532,
+      "image_index": 493,
+      "match_method": "exact",
+      "note": "Zircon 客户端 Storeitems 道具图标"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic4/item17.gif",
@@ -3007,7 +3204,6 @@
       "eng_name": "Hieroglyphic Ring",
       "zircon_index": 491,
       "image_index": 494,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -3030,7 +3226,6 @@
       "eng_name": "Loop Of Reincarnation",
       "zircon_index": 559,
       "image_index": 475,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -3053,7 +3248,6 @@
       "eng_name": "Loop Of Secrets",
       "zircon_index": 536,
       "image_index": 479,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -3076,7 +3270,6 @@
       "eng_name": "Ring Of Endless Circle",
       "zircon_index": 396,
       "image_index": 476,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -3099,7 +3292,6 @@
       "eng_name": "Band Of Netherworld",
       "zircon_index": 624,
       "image_index": 495,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -3122,7 +3314,6 @@
       "eng_name": "Signet Of Vicar",
       "zircon_index": 660,
       "image_index": 553,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -3145,7 +3336,6 @@
       "eng_name": "Hexagonal Ring",
       "zircon_index": 442,
       "image_index": 510,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -3168,8 +3358,7 @@
       "eng_name": "Iron Ring",
       "zircon_index": 582,
       "image_index": 471,
-      "item_type": "Ring",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -3191,7 +3380,6 @@
       "eng_name": "Serpent Ring",
       "zircon_index": 452,
       "image_index": 511,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -3209,8 +3397,15 @@
     "其它": "雷 1",
     "装备要求": "14",
     "category": "戒指",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/857.webp",
+      "eng_name": "Blue Jade Signet",
+      "zircon_index": 558,
+      "image_index": 857,
+      "match_method": "exact",
+      "note": "Zircon 客户端 Storeitems 道具图标"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic4/item12.gif",
@@ -3229,7 +3424,6 @@
       "eng_name": "Band Of Sorcery",
       "zircon_index": 308,
       "image_index": 512,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -3252,7 +3446,6 @@
       "eng_name": "White Serpent Ring",
       "zircon_index": 209,
       "image_index": 511,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -3275,7 +3468,6 @@
       "eng_name": "Ruby Ring",
       "zircon_index": 531,
       "image_index": 513,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -3298,7 +3490,6 @@
       "eng_name": "Opal Ring",
       "zircon_index": 490,
       "image_index": 514,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -3321,7 +3512,6 @@
       "eng_name": "Blue Jade Signet",
       "zircon_index": 558,
       "image_index": 857,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -3344,7 +3534,6 @@
       "eng_name": "Glowing Diamond Band",
       "zircon_index": 326,
       "image_index": 477,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -3367,7 +3556,6 @@
       "eng_name": "Loop Of Seven Gems",
       "zircon_index": 399,
       "image_index": 478,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -3390,7 +3578,6 @@
       "eng_name": "Diamond Encrusted Band",
       "zircon_index": 625,
       "image_index": 516,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -3413,7 +3600,6 @@
       "eng_name": "Signet Of Evoker",
       "zircon_index": 659,
       "image_index": 518,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -3436,7 +3622,6 @@
       "eng_name": "Hero's Band Of Supremacy",
       "zircon_index": 682,
       "image_index": 517,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -3460,7 +3645,6 @@
       "eng_name": "Gold Necklace",
       "zircon_index": 164,
       "image_index": 870,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -3484,7 +3668,6 @@
       "eng_name": "Necklace Of Tranquility",
       "zircon_index": 162,
       "image_index": 873,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -3508,7 +3691,6 @@
       "eng_name": "Necklace Of Lantern",
       "zircon_index": 205,
       "image_index": 872,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -3532,7 +3714,6 @@
       "eng_name": "White Tiger Tooth Necklace",
       "zircon_index": 207,
       "image_index": 871,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -3556,7 +3737,6 @@
       "eng_name": "Gale Necklace",
       "zircon_index": 355,
       "image_index": 877,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -3580,7 +3760,6 @@
       "eng_name": "Yellow Crystal Necklace",
       "zircon_index": 450,
       "image_index": 830,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -3599,8 +3778,15 @@
     "其他": "-",
     "装备要求": "14",
     "category": "项链",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/831.webp",
+      "eng_name": "Celestial Pearl",
+      "zircon_index": 553,
+      "image_index": 831,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 831）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic5/item09.gif",
@@ -3620,7 +3806,6 @@
       "eng_name": "Necklace Of Meditation",
       "zircon_index": 206,
       "image_index": 830,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -3639,8 +3824,15 @@
     "其他": "-",
     "装备要求": "需要 灵魂魔法 17",
     "category": "项链",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/831.webp",
+      "eng_name": "Dark Phoenix Pearl",
+      "zircon_index": 577,
+      "image_index": 831,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 831）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic5/item13.gif",
@@ -3657,10 +3849,9 @@
     "category": "项链",
     "game": {
       "icon": "/images/zircon-match/item/832.webp",
-      "eng_name": "Bamboo Necklace",
+      "eng_name": "Bamboo Flute",
       "zircon_index": 469,
       "image_index": 832,
-      "item_type": "Necklace",
       "match_method": "alias",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -3679,8 +3870,15 @@
     "其他": "-",
     "装备要求": "19",
     "category": "项链",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/831.webp",
+      "eng_name": "Phoenix Pearl",
+      "zircon_index": 122,
+      "image_index": 831,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 831）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic5/item13.gif",
@@ -3695,8 +3893,15 @@
     "其他": "-",
     "装备要求": "20",
     "category": "项链",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/832.webp",
+      "eng_name": "Dark Bamboo Flute",
+      "zircon_index": 578,
+      "image_index": 832,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 832）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic5/item14.gif",
@@ -3711,8 +3916,15 @@
     "其他": "-",
     "装备要求": "20",
     "category": "项链",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/1333.webp",
+      "eng_name": "Phantom Jade Bead",
+      "zircon_index": 765,
+      "image_index": 1333,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 1333）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic5/item13.gif",
@@ -3729,11 +3941,10 @@
     "category": "项链",
     "game": {
       "icon": "/images/zircon-match/item/832.webp",
-      "eng_name": "Bamboo Necklace",
+      "eng_name": "Bamboo Flute",
       "zircon_index": 469,
       "image_index": 832,
-      "item_type": "Necklace",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -3751,8 +3962,15 @@
     "其他": "-",
     "装备要求": "25",
     "category": "项链",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/895.webp",
+      "eng_name": "Lotus Mirror",
+      "zircon_index": 343,
+      "image_index": 895,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 895）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic5/item35.gif",
@@ -3772,7 +3990,6 @@
       "eng_name": "Tri Stone Necklace",
       "zircon_index": 343,
       "image_index": 895,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -3791,8 +4008,15 @@
     "其他": "-",
     "装备要求": "需要 灵魂魔法 22",
     "category": "项链",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/830.webp",
+      "eng_name": "Heavenly Bead Necklace",
+      "zircon_index": 206,
+      "image_index": 830,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 830）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic5/item28.gif",
@@ -3807,8 +4031,15 @@
     "其他": "敏捷+3",
     "装备要求": "20",
     "category": "项链",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/874.webp",
+      "eng_name": "Necklace Of Evasion",
+      "zircon_index": 486,
+      "image_index": 874,
+      "match_method": "exact",
+      "note": "Zircon 客户端 Storeitems 道具图标"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic5/item15.gif",
@@ -3828,7 +4059,6 @@
       "eng_name": "Pendent Of Holy Spirit",
       "zircon_index": 478,
       "image_index": 834,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -3852,7 +4082,6 @@
       "eng_name": "Amulet Of Wisdom",
       "zircon_index": 477,
       "image_index": 838,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -3876,7 +4105,6 @@
       "eng_name": "Amulet Of Vanquishment",
       "zircon_index": 395,
       "image_index": 815,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -3900,7 +4128,6 @@
       "eng_name": "Amulet Of The Enlightened",
       "zircon_index": 518,
       "image_index": 897,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -3924,7 +4151,6 @@
       "eng_name": "Soul Trapped Necklace",
       "zircon_index": 631,
       "image_index": 894,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -3948,7 +4174,6 @@
       "eng_name": "Amulet Of Absorption",
       "zircon_index": 629,
       "image_index": 892,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -3972,7 +4197,6 @@
       "eng_name": "Pendant Of Purification",
       "zircon_index": 663,
       "image_index": 839,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -3996,7 +4220,6 @@
       "eng_name": "Black Crystal Necklace",
       "zircon_index": 212,
       "image_index": 810,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -4020,8 +4243,7 @@
       "eng_name": "Naga Necklace",
       "zircon_index": 204,
       "image_index": 811,
-      "item_type": "Necklace",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -4044,7 +4266,6 @@
       "eng_name": "Blue Jade Necklace",
       "zircon_index": 309,
       "image_index": 812,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -4068,8 +4289,7 @@
       "eng_name": "Claw Necklace",
       "zircon_index": 334,
       "image_index": 813,
-      "item_type": "Necklace",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -4087,8 +4307,15 @@
     "其他": "-",
     "装备要求": "25",
     "category": "项链",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/2013.webp",
+      "eng_name": "Honor Necklace",
+      "zircon_index": 349,
+      "image_index": 2013,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 2013）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic5/item33.gif",
@@ -4108,7 +4335,6 @@
       "eng_name": "Butcher's Necklace",
       "zircon_index": 344,
       "image_index": 835,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -4132,7 +4358,6 @@
       "eng_name": "Green Bead Necklace",
       "zircon_index": 370,
       "image_index": 814,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -4156,7 +4381,6 @@
       "eng_name": "Pendant Of Courage",
       "zircon_index": 368,
       "image_index": 818,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -4180,7 +4404,6 @@
       "eng_name": "Pendant Of Destruction",
       "zircon_index": 482,
       "image_index": 836,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -4204,7 +4427,6 @@
       "eng_name": "Meteorite Pendant",
       "zircon_index": 400,
       "image_index": 898,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -4223,8 +4445,15 @@
     "其他": "-",
     "装备要求": "41",
     "category": "项链",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/836.webp",
+      "eng_name": "Destruction Necklace",
+      "zircon_index": 482,
+      "image_index": 836,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 836）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic5/item42.gif",
@@ -4244,7 +4473,6 @@
       "eng_name": "Amulet Of Empowerment",
       "zircon_index": 387,
       "image_index": 916,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -4268,7 +4496,6 @@
       "eng_name": "Pendant Of Destruction",
       "zircon_index": 482,
       "image_index": 836,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -4292,7 +4519,6 @@
       "eng_name": "Pendant Of Wind Elemental",
       "zircon_index": 630,
       "image_index": 893,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -4316,7 +4542,6 @@
       "eng_name": "Charm Of The Destroyer",
       "zircon_index": 661,
       "image_index": 819,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -4340,7 +4565,6 @@
       "eng_name": "Arisu Necklace",
       "zircon_index": 213,
       "image_index": 850,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -4359,8 +4583,15 @@
     "其他": "-",
     "装备要求": "14",
     "category": "项链",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/850.webp",
+      "eng_name": "Arisu Wind Necklace",
+      "zircon_index": 213,
+      "image_index": 850,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 850）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic5/item21.gif",
@@ -4380,7 +4611,6 @@
       "eng_name": "Platinum Necklace",
       "zircon_index": 295,
       "image_index": 851,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -4404,7 +4634,6 @@
       "eng_name": "Amber Necklace",
       "zircon_index": 453,
       "image_index": 852,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -4423,8 +4652,15 @@
     "其他": "-",
     "装备要求": "17",
     "category": "项链",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/898.webp",
+      "eng_name": "Meteorite Jade",
+      "zircon_index": 400,
+      "image_index": 898,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 898）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic5/item32.gif",
@@ -4439,8 +4675,15 @@
     "其他": "-",
     "装备要求": "19",
     "category": "项链",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/915.webp",
+      "eng_name": "Five Element Mirror",
+      "zircon_index": 517,
+      "image_index": 915,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 915）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic5/item19.gif",
@@ -4455,8 +4698,15 @@
     "其他": "-",
     "装备要求": "19",
     "category": "项链",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/894.webp",
+      "eng_name": "Mojia Necklace",
+      "zircon_index": 631,
+      "image_index": 894,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 894）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic5/item20.gif",
@@ -4476,7 +4726,6 @@
       "eng_name": "Pendant Of Image",
       "zircon_index": 310,
       "image_index": 853,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -4495,8 +4744,15 @@
     "其他": "-",
     "装备要求": "25",
     "category": "项链",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/856.webp",
+      "eng_name": "Wrath Bell (Fire)",
+      "zircon_index": 475,
+      "image_index": 856,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 856）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic5/item22.gif",
@@ -4511,8 +4767,15 @@
     "其他": "-",
     "装备要求": "25",
     "category": "项链",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/856.webp",
+      "eng_name": "Wrath Bell (Ice)",
+      "zircon_index": 475,
+      "image_index": 856,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 856）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic5/item22.gif",
@@ -4527,8 +4790,15 @@
     "其他": "-",
     "装备要求": "25",
     "category": "项链",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/856.webp",
+      "eng_name": "Wrath Bell (Thunder)",
+      "zircon_index": 475,
+      "image_index": 856,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 856）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic5/item22.gif",
@@ -4543,8 +4813,15 @@
     "其他": "-",
     "装备要求": "25",
     "category": "项链",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/856.webp",
+      "eng_name": "Wrath Bell (Wind)",
+      "zircon_index": 475,
+      "image_index": 856,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 856）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic5/item37.gif",
@@ -4564,7 +4841,6 @@
       "eng_name": "Necklace Of Nature",
       "zircon_index": 473,
       "image_index": 896,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -4583,8 +4859,15 @@
     "其他": "-",
     "装备要求": "需要 自然魔法 25",
     "category": "项链",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/854.webp",
+      "eng_name": "Life Necklace",
+      "zircon_index": 181,
+      "image_index": 854,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 854）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic5/item26.gif",
@@ -4604,8 +4887,7 @@
       "eng_name": "Anti Evil Necklace",
       "zircon_index": 371,
       "image_index": 855,
-      "item_type": "Necklace",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -4623,8 +4905,15 @@
     "其他": "-",
     "装备要求": "需要 自然魔法 43",
     "category": "项链",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/858.webp",
+      "eng_name": "Spirit Calling Necklace",
+      "zircon_index": 389,
+      "image_index": 858,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 858）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic5/item27.gif",
@@ -4639,8 +4928,15 @@
     "其他": "-",
     "装备要求": "36",
     "category": "项链",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/816.webp",
+      "eng_name": "Dim Seal Necklace",
+      "zircon_index": 344,
+      "image_index": 816,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 816）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic5/item38.gif",
@@ -4660,7 +4956,6 @@
       "eng_name": "Amulet Of Five Elements",
       "zircon_index": 517,
       "image_index": 915,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -4684,7 +4979,6 @@
       "eng_name": "Amulet Of Dark Sorcery",
       "zircon_index": 662,
       "image_index": 859,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -4708,7 +5002,6 @@
       "eng_name": "Symbol Of Holy Grounds",
       "zircon_index": 866,
       "image_index": 879,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -4719,7 +5012,7 @@
     "name": "记忆套装",
     "category": "套装道具",
     "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game_missing_reason": "套装总览展示（非单件装备，详见各散件）"
   },
   {
     "image": "../images/item/pic6/item11.gif",
@@ -4730,7 +5023,6 @@
       "eng_name": "Amulet Of Summoning",
       "zircon_index": 360,
       "image_index": 910,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -4745,7 +5037,6 @@
       "eng_name": "Head-Guard Of Summoning",
       "zircon_index": 362,
       "image_index": 390,
-      "item_type": "Helmet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -4760,7 +5051,6 @@
       "eng_name": "Signet Of Summoning",
       "zircon_index": 359,
       "image_index": 590,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -4775,7 +5065,6 @@
       "eng_name": "Bracelet Of Summoning",
       "zircon_index": 361,
       "image_index": 760,
-      "item_type": "Bracelet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -4786,7 +5075,7 @@
     "name": "虹魔套装",
     "category": "套装道具",
     "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game_missing_reason": "套装总览展示（非单件装备，详见各散件）"
   },
   {
     "image": "../images/item/pic6/item29.gif",
@@ -4797,7 +5086,6 @@
       "eng_name": "Pendant Of Life Stealing",
       "zircon_index": 374,
       "image_index": 912,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -4812,7 +5100,6 @@
       "eng_name": "Wrist Guard Of Life Stealing",
       "zircon_index": 373,
       "image_index": 762,
-      "item_type": "Bracelet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -4827,7 +5114,6 @@
       "eng_name": "Ring Of Life Stealing",
       "zircon_index": 372,
       "image_index": 592,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -4838,7 +5124,7 @@
     "name": "魔血套装",
     "category": "套装道具",
     "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game_missing_reason": "套装总览展示（非单件装备，详见各散件）"
   },
   {
     "image": "../images/item/pic6/item24.gif",
@@ -4849,7 +5135,6 @@
       "eng_name": "Pendant Of Vigor",
       "zircon_index": 366,
       "image_index": 913,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -4864,7 +5149,6 @@
       "eng_name": "Arm Wrap Of Vigor",
       "zircon_index": 365,
       "image_index": 763,
-      "item_type": "Bracelet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -4879,7 +5163,6 @@
       "eng_name": "Signet Of Vigor",
       "zircon_index": 364,
       "image_index": 593,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -4890,7 +5173,7 @@
     "name": "金刚套装",
     "category": "套装道具",
     "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game_missing_reason": "套装总览展示（非单件装备，详见各散件）"
   },
   {
     "image": "../images/item/pic6/item30.gif",
@@ -4901,7 +5184,6 @@
       "eng_name": "Amulet Of Ancient Kingdom",
       "zircon_index": 432,
       "image_index": 914,
-      "item_type": "Necklace",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -4916,7 +5198,6 @@
       "eng_name": "Armoured Bracer Of Ancient Kingdom",
       "zircon_index": 435,
       "image_index": 764,
-      "item_type": "Bracelet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -4931,7 +5212,6 @@
       "eng_name": "Holy Bracer Of Ancient Kingdom",
       "zircon_index": 436,
       "image_index": 764,
-      "item_type": "Bracelet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -4946,7 +5226,6 @@
       "eng_name": "Spirit Band Of Ancient Kingdom",
       "zircon_index": 434,
       "image_index": 594,
-      "item_type": "Ring",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -4956,58 +5235,107 @@
     "image": "../images/item/pic6/item32.gif",
     "name": "金刚魔法戒指",
     "category": "套装道具",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/594.webp",
+      "eng_name": "Spirit Band Of Ancient Kingdom",
+      "zircon_index": 434,
+      "image_index": 594,
+      "match_method": "exact",
+      "note": "Zircon 客户端 Storeitems 道具图标"
+    },
+    "game_missing_reason": null
   },
   {
     "image": null,
     "name": "诺玛套装",
     "category": "套装道具",
     "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game_missing_reason": "套装总览展示（非单件装备，详见各散件）"
   },
   {
     "image": "../images/item/pic6/image006.gif",
     "name": "诺玛勇气",
     "category": "套装道具",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/917.webp",
+      "eng_name": "Courage Of Kelsar",
+      "zircon_index": 649,
+      "image_index": 917,
+      "match_method": "exact",
+      "note": "Zircon 客户端 Storeitems 道具图标"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic6/image007.gif",
     "name": "诺玛智慧手镯",
     "category": "套装道具",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/5510.webp",
+      "eng_name": "Garnet Bracelet",
+      "zircon_index": 1015,
+      "image_index": 5510,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 5510）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic6/image008.gif",
     "name": "诺玛正义手镯",
     "category": "套装道具",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/5511.webp",
+      "eng_name": "Lapis Lazuli Bracelet",
+      "zircon_index": 1016,
+      "image_index": 5511,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 5511）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic6/image009.gif",
     "name": "诺玛防御手套",
     "category": "套装道具",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/643.webp",
+      "eng_name": "Augmented Bronze Gauntlet",
+      "zircon_index": 556,
+      "image_index": 643,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 643）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic6/image010.gif",
     "name": "诺玛魔法手套",
     "category": "套装道具",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/764.webp",
+      "eng_name": "Holy Bracer Of Ancient Kingdom",
+      "zircon_index": 436,
+      "image_index": 764,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 764）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic7/item21.gif",
     "name": "肉块",
     "描述": "杀死鹿,狼牛和猪得到的肉，价格因品质而异，早期的赚钱手段之一",
     "category": "普通道具",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/300.webp",
+      "eng_name": "Meat",
+      "zircon_index": 180,
+      "image_index": 300,
+      "match_method": "exact",
+      "note": "Zircon 客户端 Storeitems 道具图标"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic7/item45.gif",
@@ -5019,7 +5347,6 @@
       "eng_name": "Chicken Meat",
       "zircon_index": 179,
       "image_index": 301,
-      "item_type": "Meat",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -5030,16 +5357,30 @@
     "name": "金条",
     "描述": "相当于100万金币的高额货币",
     "category": "普通道具",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/125.webp",
+      "eng_name": "Gold Bar",
+      "zircon_index": 221,
+      "image_index": 125,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 125）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic7/m-item209.gif",
     "name": "金条包",
     "描述": "相当于5个金条价值的高额货币(=5,000,000金币)",
     "category": "普通道具",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/126.webp",
+      "eng_name": "Bundle Of Gold Bars",
+      "zircon_index": 260,
+      "image_index": 126,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 126）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic7/m-item210.gif",
@@ -5051,7 +5392,6 @@
       "eng_name": "Gold Chest",
       "zircon_index": 1097,
       "image_index": 127,
-      "item_type": "Nothing",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -5067,8 +5407,7 @@
       "eng_name": "Healing Potion",
       "zircon_index": 133,
       "image_index": 5,
-      "item_type": "Consumable",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -5083,8 +5422,7 @@
       "eng_name": "Healing Potion (II)",
       "zircon_index": 134,
       "image_index": 6,
-      "item_type": "Consumable",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -5099,8 +5437,7 @@
       "eng_name": "Healing Potion (III)",
       "zircon_index": 135,
       "image_index": 7,
-      "item_type": "Consumable",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -5115,8 +5452,7 @@
       "eng_name": "Healing Potion (IV)",
       "zircon_index": 136,
       "image_index": 8,
-      "item_type": "Consumable",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -5131,8 +5467,7 @@
       "eng_name": "Mana Potion",
       "zircon_index": 143,
       "image_index": 15,
-      "item_type": "Consumable",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -5147,8 +5482,7 @@
       "eng_name": "Mana Potion (II)",
       "zircon_index": 144,
       "image_index": 16,
-      "item_type": "Consumable",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -5163,8 +5497,7 @@
       "eng_name": "Mana Potion (III)",
       "zircon_index": 145,
       "image_index": 17,
-      "item_type": "Consumable",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -5179,8 +5512,7 @@
       "eng_name": "Mana Potion (IV)",
       "zircon_index": 146,
       "image_index": 18,
-      "item_type": "Consumable",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -5195,7 +5527,6 @@
       "eng_name": "Rejuvenation Potion",
       "zircon_index": 153,
       "image_index": 20,
-      "item_type": "Consumable",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -5206,8 +5537,15 @@
     "name": "太阳水(强效)",
     "描述": "传说由古代技艺高超的药师制作而成，可秘方已失传，因此没有人能配制出来。太阳水(强效) : 体力值恢复110、魔法值恢复180 。",
     "category": "普通道具",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/21.webp",
+      "eng_name": "Rejuvenation Potion (II)",
+      "zircon_index": 154,
+      "image_index": 21,
+      "match_method": "exact",
+      "note": "Zircon 客户端 Storeitems 道具图标"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic7/m-item196.gif",
@@ -5219,7 +5557,6 @@
       "eng_name": "Ginseng Of Eternity",
       "zircon_index": 323,
       "image_index": 70,
-      "item_type": "Consumable",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -5235,7 +5572,6 @@
       "eng_name": "Copper Ore",
       "zircon_index": 537,
       "image_index": 216,
-      "item_type": "Ore",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -5251,7 +5587,6 @@
       "eng_name": "Silver Ore",
       "zircon_index": 539,
       "image_index": 215,
-      "item_type": "Ore",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -5267,7 +5602,6 @@
       "eng_name": "Iron Ore",
       "zircon_index": 538,
       "image_index": 211,
-      "item_type": "Ore",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -5283,7 +5617,6 @@
       "eng_name": "Gold Ore",
       "zircon_index": 540,
       "image_index": 210,
-      "item_type": "Ore",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -5299,7 +5632,6 @@
       "eng_name": "Black Iron Ore",
       "zircon_index": 541,
       "image_index": 214,
-      "item_type": "Ore",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -5315,7 +5647,6 @@
       "eng_name": "Amethyst",
       "zircon_index": 542,
       "image_index": 217,
-      "item_type": "Ore",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -5331,7 +5662,6 @@
       "eng_name": "Garnet",
       "zircon_index": 543,
       "image_index": 218,
-      "item_type": "Ore",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -5347,7 +5677,6 @@
       "eng_name": "Diamond",
       "zircon_index": 544,
       "image_index": 219,
-      "item_type": "Ore",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -5358,8 +5687,15 @@
     "name": "刚玉石",
     "描述": "可以在石矿开采到。",
     "category": "普通道具",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/210.webp",
+      "eng_name": "Corundum Stone",
+      "zircon_index": 540,
+      "image_index": 210,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 210）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic7/m-item152.gif",
@@ -5367,12 +5703,11 @@
     "描述": "这是古代Mir人类发明的一种药品，用它可以使道具成为幸运道具，使用幸运道具会使人发挥自己的最大潜能。用它可以使诅咒道具的诅咒值减少1，一般的道具会成为幸运武器，幸运值最多会增加+7。",
     "category": "普通道具",
     "game": {
-      "icon": "/images/zircon-match/item/63.webp",
-      "eng_name": "Oil Of Benediction",
-      "zircon_index": 296,
-      "image_index": 63,
-      "item_type": "Consumable",
-      "match_method": "alias",
+      "icon": "/images/zircon-match/item/53.webp",
+      "eng_name": "Oil Of Conservation",
+      "zircon_index": 297,
+      "image_index": 53,
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -5387,8 +5722,7 @@
       "eng_name": "Oil Of The War God",
       "zircon_index": 298,
       "image_index": 61,
-      "item_type": "Consumable",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -5398,80 +5732,150 @@
     "name": "修复油",
     "描述": "提高耐久力的修复油但不能进行特殊修复，因此如果连续使用，整体耐久力会下降。",
     "category": "普通道具",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/53.webp",
+      "eng_name": "Repair Oil",
+      "zircon_index": 297,
+      "image_index": 53,
+      "match_method": "exact",
+      "note": "Zircon 客户端 Storeitems 道具图标"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic7/m-item205.gif",
     "name": "体力强效神水",
     "描述": "(小) 5分钟体力值提高50 (中) 10分钟体力值提高80 (大) 20分钟体力值提高120 (特) 30分钟体力值提高170.",
     "category": "普通道具",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/64.webp",
+      "eng_name": "Superior Body Elixir",
+      "zircon_index": 226,
+      "image_index": 64,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 64）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic7/m-item203.gif",
     "name": "魔法强效神水",
     "描述": "(小) 5分钟魔力值提高50 (中) 10分钟魔力值提高80 (大) 20分钟魔力值提高120 (特) 30分钟魔力值提高170.",
     "category": "普通道具",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/64.webp",
+      "eng_name": "Superior Magic Elixir",
+      "zircon_index": 226,
+      "image_index": 64,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 64）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic7/m-item206.gif",
     "name": "攻击神水",
     "描述": "(小) 5分钟破坏值提高5 (中) 10分钟破坏值提高8 (大) 20分钟破坏值提高12 (特) 30分钟破坏值提高17.",
     "category": "普通道具",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/64.webp",
+      "eng_name": "Attack Elixir",
+      "zircon_index": 226,
+      "image_index": 64,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 64）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic7/m-item208.gif",
     "name": "自然神水",
     "描述": "(小) 5分钟魔法值提高3 (中) 10分钟魔法值提高6 (大) 20分钟魔法值提高10 (特) 30分钟魔法值提高15",
     "category": "普通道具",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/64.webp",
+      "eng_name": "Nature Elixir",
+      "zircon_index": 226,
+      "image_index": 64,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 64）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic7/m-item207.gif",
     "name": "灵魂神水",
     "描述": "(小) 5分钟道力值提高3 (中) 10分钟道力值提高6 (大) 20分钟道力值提高10 (特) 30分钟道力值提高15",
     "category": "普通道具",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/64.webp",
+      "eng_name": "Soul Elixir",
+      "zircon_index": 226,
+      "image_index": 64,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 64）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic7/m-item204.gif",
     "name": "疾风神水",
     "描述": "(小) 5分钟，提高进攻速度 (中) 10分钟，提高进攻速度 (大) 20分钟，提高进攻速度 (特) 30分钟，提高进攻速度",
     "category": "普通道具",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/64.webp",
+      "eng_name": "Wind Elixir",
+      "zircon_index": 226,
+      "image_index": 64,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 64）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic7/00.gif",
     "name": "蜡烛",
     "描述": "可以从村子里的杂货商那里购买。可以带在左手最下面，在黑暗的地方照亮视野",
     "category": "普通道具",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/290.webp",
+      "eng_name": "Candle",
+      "zircon_index": 132,
+      "image_index": 290,
+      "match_method": "exact",
+      "note": "Zircon 客户端 Storeitems 道具图标"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic7/m-item171.gif",
     "name": "火把",
     "描述": "可以从村子里的杂货商那里购买。可以带在左手最下面，在黑暗的地方照亮视野",
     "category": "普通道具",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/291.webp",
+      "eng_name": "Torch",
+      "zircon_index": 158,
+      "image_index": 291,
+      "match_method": "exact",
+      "note": "Zircon 客户端 Storeitems 道具图标"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic7/m-item193.gif",
     "name": "彩卷",
     "描述": "可以在城内商店购买1等奖 : 100 万金币2等奖: 20万金币3等奖: 10万金币4等奖: 1万金币5等奖: 1000 金币6等奖: 500 金币",
     "category": "普通道具",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/192.webp",
+      "eng_name": "Colour Scroll",
+      "zircon_index": 199,
+      "image_index": 192,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 192）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic7/m-item37.gif",
@@ -5483,7 +5887,6 @@
       "eng_name": "Horn Of Uma King",
       "zircon_index": 358,
       "image_index": 100,
-      "item_type": "Nothing",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -5499,7 +5902,6 @@
       "eng_name": "Fragment Of Zuma King",
       "zircon_index": 394,
       "image_index": 101,
-      "item_type": "Nothing",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -5510,8 +5912,15 @@
     "name": "地牢逃脱卷",
     "描述": "使用它可以逃离洞穴里恶魔的攻击。",
     "category": "普通道具",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/206.webp",
+      "eng_name": "Dungeon Escape Scroll",
+      "zircon_index": 80,
+      "image_index": 206,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 206）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic7/m-item147.gif",
@@ -5523,7 +5932,6 @@
       "eng_name": "Scroll Of Random Teleport",
       "zircon_index": 155,
       "image_index": 205,
-      "item_type": "Consumable",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -5534,8 +5942,15 @@
     "name": "行会回城卷",
     "描述": "占领沙巴克的行会成员用它进入沙巴克城里，一般人用它没有任何效果。",
     "category": "普通道具",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/204.webp",
+      "eng_name": "Guild Return Scroll",
+      "zircon_index": 177,
+      "image_index": 204,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 204）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic7/m-item148.gif",
@@ -5543,11 +5958,10 @@
     "描述": "古代Mir人曾使用的包含各种有用知识的书籍，探险或旅游中迷路时借助它找到归路。用它可以回到最后到达过的村子。目前用的比较多的‘地牢逃脱卷’是模仿回城卷而制作的，不过功能上仍存在显著差异。由于制作回城卷的技术已失传，因此无法在一般商店买到，只能偶尔从怪物身上得到。",
     "category": "普通道具",
     "game": {
-      "icon": "/images/zircon-match/item/207.webp",
-      "eng_name": "Scroll Of Town Portal",
-      "zircon_index": 156,
-      "image_index": 207,
-      "item_type": "Consumable",
+      "icon": "/images/zircon-match/item/180.webp",
+      "eng_name": "Freedom Pass",
+      "zircon_index": 483,
+      "image_index": 180,
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -5558,72 +5972,135 @@
     "name": "灰色药粉",
     "描述": "灰色药粉,用于道士施绿毒,可让对手持续掉血.",
     "category": "普通道具",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/131.webp",
+      "eng_name": "Green Poison",
+      "zircon_index": 229,
+      "image_index": 131,
+      "match_method": "exact",
+      "note": "Zircon 客户端 Storeitems 道具图标"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic7/m-item27.gif",
     "name": "黄色药粉",
     "描述": "黄色药粉,用于道士施绿毒,可让对手减少防御.",
     "category": "普通道具",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/130.webp",
+      "eng_name": "Red Poison",
+      "zircon_index": 230,
+      "image_index": 130,
+      "match_method": "exact",
+      "note": "Zircon 客户端 Storeitems 道具图标"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic7/m-item103.gif",
     "name": "护身符",
     "描述": "可以在村子杂货商那里买到，道士使用灵魂火符、幽灵盾、神圣战甲术时需要的物品，戴在左手镯的位置。",
     "category": "普通道具",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/330.webp",
+      "eng_name": "Talisman",
+      "zircon_index": 220,
+      "image_index": 330,
+      "match_method": "exact",
+      "note": "Zircon 客户端 Storeitems 道具图标"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic7/m-item103.gif",
     "name": "护身符(火)",
     "描述": "可以在村子杂货商那里买到，道士使用灵魂火符、幽灵盾、神圣战甲术时需要的物品，加强了火系属性，因此会提高火系能力。",
     "category": "普通道具",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/1152.webp",
+      "eng_name": "Talisman Of Fire",
+      "zircon_index": 222,
+      "image_index": 1152,
+      "match_method": "exact",
+      "note": "Zircon 客户端 Storeitems 道具图标"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic7/m-item103.gif",
     "name": "护身符(冰)",
     "描述": "可以在村子杂货商那里买到，道士使用灵魂火符、幽灵盾、神圣战甲术时需要的物品，加强了冰系属性，因此会提高冰系能力。",
     "category": "普通道具",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/1153.webp",
+      "eng_name": "Talisman Of Ice",
+      "zircon_index": 224,
+      "image_index": 1153,
+      "match_method": "exact",
+      "note": "Zircon 客户端 Storeitems 道具图标"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic7/m-item103.gif",
     "name": "护身符(雷)",
     "描述": "可以在村子杂货商那里买到，道士使用灵魂火符、幽灵盾、神圣战甲术时需要的物品，加强了雷系属性，因此会提高雷系能力。可以使用100次制作原料为骷髅骨2个，鸡血4个、食人花叶2个。",
     "category": "普通道具",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/1154.webp",
+      "eng_name": "Talisman Of Lightning",
+      "zircon_index": 226,
+      "image_index": 1154,
+      "match_method": "exact",
+      "note": "Zircon 客户端 Storeitems 道具图标"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic7/m-item103.gif",
     "name": "护身符(风)",
     "描述": "可以在村子杂货商那里买到，道士使用灵魂火符、幽灵盾、神圣战甲术时需要的物品，加强了风系属性，因此会提高风系能力。",
     "category": "普通道具",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/1155.webp",
+      "eng_name": "Talisman Of Wind Storm",
+      "zircon_index": 227,
+      "image_index": 1155,
+      "match_method": "exact",
+      "note": "Zircon 客户端 Storeitems 道具图标"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic7/item_01.gif",
     "name": "神圣护身符",
     "描述": "可以在村子杂货商那里买到，提高道士神圣系的攻击力。",
     "category": "普通道具",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/335.webp",
+      "eng_name": "Holy Talisman",
+      "zircon_index": 860,
+      "image_index": 335,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 335）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic7/item_01.gif",
     "name": "灵魂护身符",
     "描述": "可以在村子杂货商那里买到，道士使用灵魂系魔法时使用的护身符。",
     "category": "普通道具",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/1150.webp",
+      "eng_name": "Talisman Of Soul",
+      "zircon_index": 228,
+      "image_index": 1150,
+      "match_method": "exact",
+      "note": "Zircon 客户端 Storeitems 道具图标"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic8/m-item14.gif",
@@ -5635,7 +6112,6 @@
       "eng_name": "Carnivorous Plant Leaf",
       "zircon_index": 241,
       "image_index": 113,
-      "item_type": "Nothing",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -5651,7 +6127,6 @@
       "eng_name": "Spitting Spider Tooth",
       "zircon_index": 244,
       "image_index": 111,
-      "item_type": "Nothing",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -5662,16 +6137,30 @@
     "name": "食人树果实",
     "描述": "只能在开花结果的食人树上发现的稀有物品。",
     "category": "任务道具",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/114.webp",
+      "eng_name": "Carnivorous Plant Fruit",
+      "zircon_index": 242,
+      "image_index": 114,
+      "match_method": "exact",
+      "note": "Zircon 客户端 Storeitems 道具图标"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic8/m-item19.gif",
     "name": "蝎子尾巴",
     "描述": "蝎子尾巴里有一种会腐蚀防御器具的强酸液体。",
     "category": "任务道具",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/112.webp",
+      "eng_name": "Scorpion Tail",
+      "zircon_index": 257,
+      "image_index": 112,
+      "match_method": "exact",
+      "note": "Zircon 客户端 Storeitems 道具图标"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic8/m-item2.gif",
@@ -5683,7 +6172,6 @@
       "eng_name": "Maggot Pill",
       "zircon_index": 259,
       "image_index": 110,
-      "item_type": "Nothing",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -5694,8 +6182,15 @@
     "name": "毒蛇胆汁",
     "描述": "在毒蛇山谷或沙巴克打死毒蛇会以一定概率得到毒蛇胆汁。拿到村子里出售的话，价格是每一个50金币，是可以单独服用的材料，但通常和其它东西组合后用于融化某种物品。",
     "category": "任务道具",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/1341.webp",
+      "eng_name": "Snake Gall",
+      "zircon_index": 243,
+      "image_index": 1341,
+      "match_method": "exact",
+      "note": "Zircon 客户端 Storeitems 道具图标"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic8/image019.gif",
@@ -5707,7 +6202,6 @@
       "eng_name": "Skeleton Bone",
       "zircon_index": 256,
       "image_index": 103,
-      "item_type": "Nothing",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -5723,7 +6217,6 @@
       "eng_name": "Zombie Bone",
       "zircon_index": 258,
       "image_index": 1149,
-      "item_type": "Nothing",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -5739,7 +6232,6 @@
       "eng_name": "Flea Husk",
       "zircon_index": 261,
       "image_index": 1444,
-      "item_type": "Nothing",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -5755,7 +6247,6 @@
       "eng_name": "Ant Egg",
       "zircon_index": 260,
       "image_index": 102,
-      "item_type": "Nothing",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -5771,7 +6262,6 @@
       "eng_name": "Horn",
       "zircon_index": 356,
       "image_index": 1338,
-      "item_type": "Nothing",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -5787,7 +6277,6 @@
       "eng_name": "Banya Gem Stone",
       "zircon_index": 332,
       "image_index": 1349,
-      "item_type": "Nothing",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -5803,7 +6292,6 @@
       "eng_name": "Husk",
       "zircon_index": 322,
       "image_index": 107,
-      "item_type": "Nothing",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -5819,7 +6307,6 @@
       "eng_name": "Tooth",
       "zircon_index": 245,
       "image_index": 1431,
-      "item_type": "Nothing",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -5835,7 +6322,6 @@
       "eng_name": "Tears Of Banya",
       "zircon_index": 528,
       "image_index": 1348,
-      "item_type": "Nothing",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -5851,7 +6337,6 @@
       "eng_name": "Jewel",
       "zircon_index": 493,
       "image_index": 1424,
-      "item_type": "Nothing",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -5867,7 +6352,6 @@
       "eng_name": "Spider Web Thread",
       "zircon_index": 369,
       "image_index": 105,
-      "item_type": "Nothing",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -5878,8 +6362,15 @@
     "name": "灵魂",
     "描述": "载有其灵魂",
     "category": "任务道具",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/1441.webp",
+      "eng_name": "Soul Fragment",
+      "zircon_index": 804,
+      "image_index": 1441,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 1441）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": null,
@@ -5891,7 +6382,6 @@
       "eng_name": "Claw",
       "zircon_index": 378,
       "image_index": 1340,
-      "item_type": "Nothing",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -5907,7 +6397,6 @@
       "eng_name": "Statue Fragment",
       "zircon_index": 405,
       "image_index": 1430,
-      "item_type": "Nothing",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -5923,7 +6412,6 @@
       "eng_name": "Dark Banya Gem Stone",
       "zircon_index": 508,
       "image_index": 1350,
-      "item_type": "Nothing",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -5945,8 +6433,7 @@
       "eng_name": "Leather Glove",
       "zircon_index": 167,
       "image_index": 640,
-      "item_type": "Bracelet",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -5967,8 +6454,7 @@
       "eng_name": "Rugged Leather Gauntlet",
       "zircon_index": 293,
       "image_index": 642,
-      "item_type": "Bracelet",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -5989,8 +6475,7 @@
       "eng_name": "Bronze Gauntlet",
       "zircon_index": 380,
       "image_index": 641,
-      "item_type": "Bracelet",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -6011,8 +6496,7 @@
       "eng_name": "Gauntlet Of Deathbringer",
       "zircon_index": 210,
       "image_index": 661,
-      "item_type": "Bracelet",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -6033,8 +6517,7 @@
       "eng_name": "Gloves Of Black Guard",
       "zircon_index": 388,
       "image_index": 669,
-      "item_type": "Bracelet",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -6055,8 +6538,7 @@
       "eng_name": "Augmented Bronze Gauntlet",
       "zircon_index": 556,
       "image_index": 643,
-      "item_type": "Bracelet",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -6077,7 +6559,6 @@
       "eng_name": "Dark Iron Gauntlet",
       "zircon_index": 376,
       "image_index": 667,
-      "item_type": "Bracelet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -6099,8 +6580,7 @@
       "eng_name": "Gauntlet Of Hero",
       "zircon_index": 389,
       "image_index": 666,
-      "item_type": "Bracelet",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -6122,8 +6602,7 @@
       "eng_name": "Straw Sandles",
       "zircon_index": 235,
       "image_index": 1360,
-      "item_type": "Shoes",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -6145,8 +6624,7 @@
       "eng_name": "Leather Shoes",
       "zircon_index": 236,
       "image_index": 1361,
-      "item_type": "Shoes",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -6168,8 +6646,7 @@
       "eng_name": "Brightly Coloured Shoes",
       "zircon_index": 390,
       "image_index": 1374,
-      "item_type": "Shoes",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -6191,8 +6668,7 @@
       "eng_name": "Rugged Leather Boots",
       "zircon_index": 525,
       "image_index": 1363,
-      "item_type": "Shoes",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -6214,8 +6690,7 @@
       "eng_name": "Silk Boots",
       "zircon_index": 527,
       "image_index": 1362,
-      "item_type": "Shoes",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -6237,8 +6712,7 @@
       "eng_name": "Boots Of Black Tortoise",
       "zircon_index": 526,
       "image_index": 1364,
-      "item_type": "Shoes",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -6260,8 +6734,7 @@
       "eng_name": "Boots Of Levitation",
       "zircon_index": 521,
       "image_index": 1377,
-      "item_type": "Shoes",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -6283,8 +6756,7 @@
       "eng_name": "Boots Of Despair",
       "zircon_index": 519,
       "image_index": 1371,
-      "item_type": "Shoes",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -6306,8 +6778,7 @@
       "eng_name": "Boots Of Swiftness",
       "zircon_index": 520,
       "image_index": 1375,
-      "item_type": "Shoes",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -6329,8 +6800,7 @@
       "eng_name": "Shadow Chaser",
       "zircon_index": 587,
       "image_index": 1373,
-      "item_type": "Shoes",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -6352,8 +6822,7 @@
       "eng_name": "Boots Of Crimson Steed",
       "zircon_index": 318,
       "image_index": 1376,
-      "item_type": "Shoes",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -6375,7 +6844,6 @@
       "eng_name": "Bronze Helmet",
       "zircon_index": 231,
       "image_index": 370,
-      "item_type": "Helmet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -6398,7 +6866,6 @@
       "eng_name": "Magic Bronze Helmet",
       "zircon_index": 234,
       "image_index": 370,
-      "item_type": "Helmet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -6416,8 +6883,15 @@
     "其他效果": "-",
     "需要等级": "18",
     "category": "头盔",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/370.webp",
+      "eng_name": "Lucky Bronze Helmet",
+      "zircon_index": 231,
+      "image_index": 370,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 370）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic2/item02.gif",
@@ -6436,7 +6910,6 @@
       "eng_name": "Helmet Of Shaman",
       "zircon_index": 311,
       "image_index": 372,
-      "item_type": "Helmet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -6454,8 +6927,15 @@
     "其他效果": "-",
     "需要等级": "22",
     "category": "头盔",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/372.webp",
+      "eng_name": "Rotten Taoist Helmet",
+      "zircon_index": 311,
+      "image_index": 372,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 372）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic2/item03.gif",
@@ -6474,7 +6954,6 @@
       "eng_name": "White Skull Helmet",
       "zircon_index": 317,
       "image_index": 373,
-      "item_type": "Helmet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -6492,8 +6971,15 @@
     "其他效果": "-",
     "需要等级": "需要攻击 30",
     "category": "头盔",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/373.webp",
+      "eng_name": "Skull Helmet",
+      "zircon_index": 114,
+      "image_index": 373,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 373）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic2/item06.gif",
@@ -6512,7 +6998,6 @@
       "eng_name": "Bamboo Hat",
       "zircon_index": 382,
       "image_index": 411,
-      "item_type": "Helmet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -6535,7 +7020,6 @@
       "eng_name": "Iron Wood Helmet",
       "zircon_index": 391,
       "image_index": 410,
-      "item_type": "Helmet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -6553,8 +7037,15 @@
     "其他效果": "-",
     "需要等级": "33",
     "category": "头盔",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/411.webp",
+      "eng_name": "Lucky Bamboo Hat",
+      "zircon_index": 382,
+      "image_index": 411,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 411）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic2/item03.gif",
@@ -6573,7 +7064,6 @@
       "eng_name": "Laurel Mask",
       "zircon_index": 407,
       "image_index": 2107,
-      "item_type": "Helmet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -6596,7 +7086,6 @@
       "eng_name": "Turban Of Discipline",
       "zircon_index": 560,
       "image_index": 413,
-      "item_type": "Helmet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -6619,7 +7108,6 @@
       "eng_name": "Helmet Of The Conqueror",
       "zircon_index": 561,
       "image_index": 412,
-      "item_type": "Helmet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -6637,8 +7125,15 @@
     "其他效果": "-",
     "需要等级": "37",
     "category": "头盔",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/372.webp",
+      "eng_name": "Blessed Taoist Helmet",
+      "zircon_index": 311,
+      "image_index": 372,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 372）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic2/item05.gif",
@@ -6657,7 +7152,6 @@
       "eng_name": "Crown Of Dark Crusader",
       "zircon_index": 557,
       "image_index": 374,
-      "item_type": "Helmet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -6680,7 +7174,6 @@
       "eng_name": "Crown Of Feral Lord",
       "zircon_index": 325,
       "image_index": 415,
-      "item_type": "Helmet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -6703,7 +7196,6 @@
       "eng_name": "Helmet Of The War God",
       "zircon_index": 324,
       "image_index": 414,
-      "item_type": "Helmet",
       "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
@@ -6726,8 +7218,7 @@
       "eng_name": "Loop Of Teleportation",
       "zircon_index": 299,
       "image_index": 573,
-      "item_type": "Ring",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -6749,8 +7240,7 @@
       "eng_name": "Loop Of Paralysis",
       "zircon_index": 300,
       "image_index": 571,
-      "item_type": "Ring",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -6772,8 +7262,7 @@
       "eng_name": "Loop Of Ressurection",
       "zircon_index": 302,
       "image_index": 575,
-      "item_type": "Ring",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -6795,8 +7284,7 @@
       "eng_name": "Loop Of Protection",
       "zircon_index": 303,
       "image_index": 576,
-      "item_type": "Ring",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -6818,8 +7306,7 @@
       "eng_name": "Seal Of Titans",
       "zircon_index": 454,
       "image_index": 572,
-      "item_type": "Ring",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -6841,8 +7328,7 @@
       "eng_name": "Loop Of Invisibility",
       "zircon_index": 304,
       "image_index": 574,
-      "item_type": "Ring",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -6859,8 +7345,15 @@
     "功能": "佩带者能使用1级小火球",
     "需要等级": "20",
     "category": "特殊饰品",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/577.webp",
+      "eng_name": "Flame Ring",
+      "zircon_index": 138,
+      "image_index": 577,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 577）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic6/item01.gif",
@@ -6874,8 +7367,15 @@
     "功能": "佩戴者能使用1级治疗术",
     "需要等级": "20",
     "category": "特殊饰品",
-    "game": null,
-    "game_missing_reason": "客户端数据库未收录此条目"
+    "game": {
+      "icon": "/images/zircon-match/item/570.webp",
+      "eng_name": "Defense Ring",
+      "zircon_index": 139,
+      "image_index": 570,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 570）"
+    },
+    "game_missing_reason": null
   },
   {
     "image": "../images/item/pic6/item10.gif",
@@ -6894,8 +7394,7 @@
       "eng_name": "Choker Of Learning",
       "zircon_index": 301,
       "image_index": 891,
-      "item_type": "Necklace",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
@@ -6917,8 +7416,7 @@
       "eng_name": "Pendant Of Tracking",
       "zircon_index": 305,
       "image_index": 890,
-      "item_type": "Necklace",
-      "match_method": "alias",
+      "match_method": "exact",
       "note": "Zircon 客户端 Storeitems 道具图标"
     },
     "game_missing_reason": null
