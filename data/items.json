@@ -2628,12 +2628,12 @@
     "装备要求": "15",
     "category": "戒指",
     "game": {
-      "icon": "/images/zircon-match/item/491.webp",
+      "icon": "/images/zircon-match/item/531.webp",
       "eng_name": "Black Pearl Ring",
       "zircon_index": 173,
-      "image_index": 491,
+      "image_index": 531,
       "match_method": "classic",
-      "note": "光通原版经典图库（Looks 491）"
+      "note": "光通原版经典图库（Looks 531）"
     },
     "game_missing_reason": null
   },
@@ -2694,12 +2694,12 @@
     "装备要求": "20",
     "category": "戒指",
     "game": {
-      "icon": "/images/zircon-match/item/475.webp",
-      "eng_name": "Loop Of Reincarnation",
+      "icon": "/images/zircon-match/item/532.webp",
+      "eng_name": "Undead Ring",
       "zircon_index": 559,
-      "image_index": 475,
-      "match_method": "exact",
-      "note": "Zircon 客户端 Storeitems 道具图标"
+      "image_index": 532,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 532）"
     },
     "game_missing_reason": null
   },
@@ -2716,12 +2716,12 @@
     "装备要求": "20",
     "category": "戒指",
     "game": {
-      "icon": "/images/zircon-match/item/537.webp",
-      "eng_name": "Universe Ring",
+      "icon": "/images/zircon-match/item/532.webp",
+      "eng_name": "Dragon Bone Ring",
       "zircon_index": 627,
-      "image_index": 537,
-      "match_method": "exact",
-      "note": "Zircon 客户端 Storeitems 道具图标"
+      "image_index": 532,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 532）"
     },
     "game_missing_reason": null
   },
@@ -3068,12 +3068,12 @@
     "装备要求": "20",
     "category": "戒指",
     "game": {
-      "icon": "/images/zircon-match/item/536.webp",
-      "eng_name": "Perfection Ring",
+      "icon": "/images/zircon-match/item/590.webp",
+      "eng_name": "Tai Chi Ring",
       "zircon_index": 626,
-      "image_index": 536,
-      "match_method": "exact",
-      "note": "Zircon 客户端 Storeitems 道具图标"
+      "image_index": 590,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 590）"
     },
     "game_missing_reason": null
   },
@@ -3398,12 +3398,12 @@
     "装备要求": "14",
     "category": "戒指",
     "game": {
-      "icon": "/images/zircon-match/item/857.webp",
-      "eng_name": "Blue Jade Signet",
+      "icon": "/images/zircon-match/item/511.webp",
+      "eng_name": "Lightning Eye Ring",
       "zircon_index": 558,
-      "image_index": 857,
-      "match_method": "exact",
-      "note": "Zircon 客户端 Storeitems 道具图标"
+      "image_index": 511,
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 511）"
     },
     "game_missing_reason": null
   },
@@ -3806,8 +3806,8 @@
       "eng_name": "Necklace Of Meditation",
       "zircon_index": 206,
       "image_index": 830,
-      "match_method": "exact",
-      "note": "Zircon 客户端 Storeitems 道具图标"
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 830）"
     },
     "game_missing_reason": null
   },
@@ -3917,12 +3917,12 @@
     "装备要求": "20",
     "category": "项链",
     "game": {
-      "icon": "/images/zircon-match/item/1333.webp",
+      "icon": "/images/zircon-match/item/831.webp",
       "eng_name": "Phantom Jade Bead",
       "zircon_index": 765,
-      "image_index": 1333,
+      "image_index": 831,
       "match_method": "classic",
-      "note": "光通原版经典图库（Looks 1333）"
+      "note": "光通原版经典图库（Looks 831）"
     },
     "game_missing_reason": null
   },
@@ -3963,12 +3963,12 @@
     "装备要求": "25",
     "category": "项链",
     "game": {
-      "icon": "/images/zircon-match/item/895.webp",
+      "icon": "/images/zircon-match/item/817.webp",
       "eng_name": "Lotus Mirror",
       "zircon_index": 343,
-      "image_index": 895,
+      "image_index": 817,
       "match_method": "classic",
-      "note": "光通原版经典图库（Looks 895）"
+      "note": "光通原版经典图库（Looks 817）"
     },
     "game_missing_reason": null
   },
@@ -4009,12 +4009,12 @@
     "装备要求": "需要 灵魂魔法 22",
     "category": "项链",
     "game": {
-      "icon": "/images/zircon-match/item/830.webp",
+      "icon": "/images/zircon-match/item/833.webp",
       "eng_name": "Heavenly Bead Necklace",
       "zircon_index": 206,
-      "image_index": 830,
+      "image_index": 833,
       "match_method": "classic",
-      "note": "光通原版经典图库（Looks 830）"
+      "note": "光通原版经典图库（Looks 833）"
     },
     "game_missing_reason": null
   },
@@ -4308,12 +4308,12 @@
     "装备要求": "25",
     "category": "项链",
     "game": {
-      "icon": "/images/zircon-match/item/2013.webp",
+      "icon": "/images/zircon-match/item/837.webp",
       "eng_name": "Honor Necklace",
       "zircon_index": 349,
-      "image_index": 2013,
+      "image_index": 837,
       "match_method": "classic",
-      "note": "光通原版经典图库（Looks 2013）"
+      "note": "光通原版经典图库（Looks 837）"
     },
     "game_missing_reason": null
   },
@@ -4404,8 +4404,8 @@
       "eng_name": "Pendant Of Destruction",
       "zircon_index": 482,
       "image_index": 836,
-      "match_method": "exact",
-      "note": "Zircon 客户端 Storeitems 道具图标"
+      "match_method": "classic",
+      "note": "光通原版经典图库（Looks 836）"
     },
     "game_missing_reason": null
   },
@@ -4446,12 +4446,12 @@
     "装备要求": "41",
     "category": "项链",
     "game": {
-      "icon": "/images/zircon-match/item/836.webp",
+      "icon": "/images/zircon-match/item/899.webp",
       "eng_name": "Destruction Necklace",
       "zircon_index": 482,
-      "image_index": 836,
+      "image_index": 899,
       "match_method": "classic",
-      "note": "光通原版经典图库（Looks 836）"
+      "note": "光通原版经典图库（毁灭魔链 Looks 899）"
     },
     "game_missing_reason": null
   },
@@ -4492,12 +4492,12 @@
     "装备要求": "稀有",
     "category": "项链",
     "game": {
-      "icon": "/images/zircon-match/item/836.webp",
-      "eng_name": "Pendant Of Destruction",
+      "icon": "/images/zircon-match/item/878.webp",
+      "eng_name": "Rare Pendant Of Destruction",
       "zircon_index": 482,
-      "image_index": 836,
-      "match_method": "exact",
-      "note": "Zircon 客户端 Storeitems 道具图标"
+      "image_index": 878,
+      "match_method": "classic",
+      "note": "光通原版经典图库（稀有铭牌 Looks 878）"
     },
     "game_missing_reason": null
   },
@@ -4653,12 +4653,12 @@
     "装备要求": "17",
     "category": "项链",
     "game": {
-      "icon": "/images/zircon-match/item/898.webp",
+      "icon": "/images/zircon-match/item/853.webp",
       "eng_name": "Meteorite Jade",
       "zircon_index": 400,
-      "image_index": 898,
+      "image_index": 853,
       "match_method": "classic",
-      "note": "光通原版经典图库（Looks 898）"
+      "note": "光通原版经典图库（Looks 853）"
     },
     "game_missing_reason": null
   },
@@ -4676,12 +4676,12 @@
     "装备要求": "19",
     "category": "项链",
     "game": {
-      "icon": "/images/zircon-match/item/915.webp",
+      "icon": "/images/zircon-match/item/913.webp",
       "eng_name": "Five Element Mirror",
       "zircon_index": 517,
-      "image_index": 915,
+      "image_index": 913,
       "match_method": "classic",
-      "note": "光通原版经典图库（Looks 915）"
+      "note": "光通原版经典图库（Looks 913）"
     },
     "game_missing_reason": null
   },
@@ -4699,12 +4699,12 @@
     "装备要求": "19",
     "category": "项链",
     "game": {
-      "icon": "/images/zircon-match/item/894.webp",
+      "icon": "/images/zircon-match/item/850.webp",
       "eng_name": "Mojia Necklace",
       "zircon_index": 631,
-      "image_index": 894,
+      "image_index": 850,
       "match_method": "classic",
-      "note": "光通原版经典图库（Looks 894）"
+      "note": "光通原版经典图库（Looks 850）"
     },
     "game_missing_reason": null
   },
@@ -5271,12 +5271,12 @@
     "name": "诺玛智慧手镯",
     "category": "套装道具",
     "game": {
-      "icon": "/images/zircon-match/item/5510.webp",
-      "eng_name": "Garnet Bracelet",
+      "icon": "/images/zircon-match/item/595.webp",
+      "eng_name": "Noma Wisdom Bracelet",
       "zircon_index": 1015,
-      "image_index": 5510,
+      "image_index": 595,
       "match_method": "classic",
-      "note": "光通原版经典图库（Looks 5510）"
+      "note": "光通原版经典图库（Looks 595）"
     },
     "game_missing_reason": null
   },
@@ -5285,12 +5285,12 @@
     "name": "诺玛正义手镯",
     "category": "套装道具",
     "game": {
-      "icon": "/images/zircon-match/item/5511.webp",
-      "eng_name": "Lapis Lazuli Bracelet",
+      "icon": "/images/zircon-match/item/596.webp",
+      "eng_name": "Noma Justice Bracelet",
       "zircon_index": 1016,
-      "image_index": 5511,
+      "image_index": 596,
       "match_method": "classic",
-      "note": "光通原版经典图库（Looks 5511）"
+      "note": "光通原版经典图库（Looks 596）"
     },
     "game_missing_reason": null
   },
@@ -5299,12 +5299,12 @@
     "name": "诺玛防御手套",
     "category": "套装道具",
     "game": {
-      "icon": "/images/zircon-match/item/643.webp",
-      "eng_name": "Augmented Bronze Gauntlet",
+      "icon": "/images/zircon-match/item/765.webp",
+      "eng_name": "Noma Defense Gauntlet",
       "zircon_index": 556,
-      "image_index": 643,
+      "image_index": 765,
       "match_method": "classic",
-      "note": "光通原版经典图库（Looks 643）"
+      "note": "光通原版经典图库（Looks 765）"
     },
     "game_missing_reason": null
   },
@@ -5313,12 +5313,12 @@
     "name": "诺玛魔法手套",
     "category": "套装道具",
     "game": {
-      "icon": "/images/zircon-match/item/764.webp",
-      "eng_name": "Holy Bracer Of Ancient Kingdom",
+      "icon": "/images/zircon-match/item/766.webp",
+      "eng_name": "Noma Magic Gauntlet",
       "zircon_index": 436,
-      "image_index": 764,
+      "image_index": 766,
       "match_method": "classic",
-      "note": "光通原版经典图库（Looks 764）"
+      "note": "光通原版经典图库（Looks 766）"
     },
     "game_missing_reason": null
   },
